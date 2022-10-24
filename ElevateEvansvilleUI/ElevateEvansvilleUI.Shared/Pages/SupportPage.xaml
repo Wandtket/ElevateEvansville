@@ -1,0 +1,632 @@
+﻿<Page
+    x:Class="ElevateEvansvilleUI.Pages.SupportPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElevateEvansvilleUI.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:toolkit="using:Uno.UI.Toolkit"
+    mc:Ignorable="d"
+    d:DesignHeight="2000"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Page.Resources>
+        <ContentDialog x:Name="Disclaimer" CloseButtonText="Acknowledge">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock FontSize="30" Grid.Row="0">
+                        <Bold>NO BLIND DONATIONS</Bold>
+                </TextBlock>
+
+                <TextBlock FontSize="20" Margin="25,15,0,20" Grid.Row="1">
+                        Faith in our institutions is at an all-time low.
+                </TextBlock>
+
+                <TextBlock FontSize="20" Margin="25,0,0,0" Grid.Row="2">
+                        Instead of asking you to blindly donate money,
+                </TextBlock>
+
+                <TextBlock FontSize="20" Margin="25,0,0,20" Grid.Row="3">
+                        I would like for you to...
+                </TextBlock>
+
+                <TextBlock FontSize="20" Margin="25,0,0,0" Grid.Row="4">
+                        <Underline><Bold>Choose your own support method.</Bold></Underline>
+                </TextBlock>
+            </Grid>
+        </ContentDialog>
+
+        <ContentDialog x:Name="PromoteDialog" PrimaryButtonText="Proceed to Paypal" CloseButtonText="Cancel" PrimaryButtonClick="Paypal_Click">
+            <ContentDialog.Title>
+                <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                    <Image x:Name="PromoteLogo" Source="/Assets/Images/Logos/Facebook.png" Height="50" Width="50"/>
+                    <TextBlock x:Name="PromoteTitle" Text="Amount: " Width="185" FontSize="26" VerticalAlignment="Center" FontWeight="Bold" TextWrapping="Wrap"/>
+                </StackPanel>
+            </ContentDialog.Title>
+
+            <StackPanel Orientation="Horizontal" Height="35" Spacing="5" HorizontalAlignment="Center">
+                <TextBlock Text="$" VerticalAlignment="Top" Margin="0,7,0,0"/>
+                <TextBox x:Name="PromoteAmount" PlaceholderText="Max: $25.00" Width="150"/>
+            </StackPanel>
+                        
+        </ContentDialog>
+    </Page.Resources>
+
+
+    <Grid>
+        <ScrollViewer Grid.Row="0" HorizontalAlignment="Stretch">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <controls:WrapPanel HorizontalAlignment="Center" Margin="0,130,0,0" >
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="Calendar"
+                                MaxWidth="550"
+                                Background="{ThemeResource SubColor}"                        
+                                Elevation="10" 
+                                ShadowColor="#80000000">
+                            <Grid>
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="458"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Calendar.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>Add to Calendar</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                        The most important step is obviously to vote.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2" Margin="25,0,0,0">
+                                        Politics isn't something the general public should need to focus on every
+                                        waking moment of their lives, it's supposed to be either boring or exciting.
+                                        Not something that causes existential dread and animosity toward your neighbors.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="3" Margin="25,0,0,0">
+                                        Add election day to your calendar and I'll remind you when the time comes.
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Add to Calendar" Click="Calendar_Click" Tag="Distribute"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="Facebook"
+                                MaxWidth="550"
+                                Background="{ThemeResource SubColor}"                        
+                                Elevation="10" 
+                                ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="400"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Facebook.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>Facebook / Instagram</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                        The most popular social media site in Evansville, IN is Facebook.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2"  Margin="25,0,0,0">
+                                        To promote this campaign on Meta Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="3" Margin="25,0,0,0">
+                                        Once the threshold has been reached the server will load it into Facebook and the ads will be published.
+                                    </TextBlock>
+
+                                     <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Promote" Click="Promote_Click" Tag="Facebook"/>
+                                        <Button Content="Share" Click="Share_Click" Tag="Facebook"/>
+                                        <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3"/>
+                                    </StackPanel>
+
+
+
+
+
+                                    <ProgressBar x:Name="FacebookProgress" Maximum="100" Minimum="0" Value="50" Grid.Column="1" Background="Transparent" BorderBrush="Black" Foreground="Green" BorderThickness="1" Grid.RowSpan="6" Margin="0,280,-190,-60"  Height="60" Width="250" >
+
+                                        <ProgressBar.RenderTransform>
+                                            <RotateTransform Angle="270"/>
+                                        </ProgressBar.RenderTransform>
+                                    </ProgressBar>
+        
+                                    <Grid Grid.Row="0" Grid.RowSpan="6" Grid.Column="1" VerticalAlignment="Stretch">
+                                        <TextBlock Text="$72.00" VerticalAlignment="Top" HorizontalAlignment="Center"  FontWeight="Bold" Margin="0,40,0,0"/>
+
+                                        <TextBlock Text="$0.00" Margin="0,0,0,12" VerticalAlignment="Bottom" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                                    </Grid>
+
+                                    
+
+                                </Grid>
+                            </Grid>
+
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0">
+                        <toolkit:ElevatedView x:Name="VistaPrint" 
+                            Background="{ThemeResource SubColor}" 
+                            MaxWidth="550"
+                            Elevation="10" 
+                            ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="30,15,30,30"  Height="350" RowSpacing="20">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Vistaprint.png" Height="65" Width="65" Margin="-10"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center" >
+                                    <Bold>VistaPrint</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                    Yard signs, bumper stickers, and banners.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2" Margin="25,0,0,0">
+                                        Instead of ordering yard signs in bulk and having wasteful overstock at the end of an election I would like to try an <Bold>on-demand approach.</Bold>
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="3"  Margin="25,0,0,0">
+                                    Showing support in your workplace or business is a time-honored tradition, to purchase your own merchandise, select and download a template, click 'Order from Vistaprint', and then select the template you downloaded.
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="4" Margin="25,0,0,0" Spacing="5">
+                                        <Button Content="Download Template"/>
+                                        <Button Content="Order from Vistaprint"/>
+                                    </StackPanel>
+
+                                </Grid>
+                            </Grid>
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="YouTube"
+                        MaxWidth="550"
+                        Background="{ThemeResource SubColor}"                        
+                        Elevation="10" 
+                        ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="400"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Youtube.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>YouTube / Google</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                    Google Adsense is the advertising platform for promoting content on Google searches and YouTube videos.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2"  Margin="25,0,0,0">
+                                    To promote this campaign on Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="3" Margin="25,0,0,0">
+                                 Once the threshold has been reached the server will load it into Adsense and the ads will be published.
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Promote" Click="Promote_Click" Tag="Google"/>
+                                        <Button Content="Share" Visibility="Collapsed"/>
+                                        <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3"/>
+
+                                    </StackPanel>
+
+
+
+
+
+                                    <ProgressBar x:Name="GoogleProgress" Maximum="100" Minimum="0" Value="50" Grid.Column="1" Background="Transparent" BorderBrush="Black" Foreground="Green" BorderThickness="1" Grid.RowSpan="6" Margin="0,280,-190,-60"  Height="60" Width="250" >
+
+                                        <ProgressBar.RenderTransform>
+                                            <RotateTransform Angle="270"/>
+                                        </ProgressBar.RenderTransform>
+                                    </ProgressBar>
+
+                                    <Grid Grid.Row="0" Grid.RowSpan="6" Grid.Column="1" VerticalAlignment="Stretch">
+                                        <TextBlock Text="$72.00" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,40,0,0"/>
+
+                                        <TextBlock Text="$0.00" Margin="0,0,0,12" VerticalAlignment="Bottom" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                                    </Grid>
+
+
+
+                                </Grid>
+
+                            </Grid>
+
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="TikTok"
+                        MaxWidth="550"
+                        Background="{ThemeResource SubColor}"                        
+                        Elevation="10" 
+                        ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="400"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Tiktok.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>TikTok</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                    TikTok is a rising social media platform among younger people.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2"  Margin="25,0,0,0">
+                                    To promote this campaign on TikTok, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="3" Margin="25,0,0,0">
+                                 Once the threshold has been reached the server will load it into Tiktok and the ads will be published.
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Promote" Click="Promote_Click" Tag="TikTok"/>
+                                        <Button Content="Share"/>
+                                        <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3"/>
+
+                                    </StackPanel>
+
+
+
+
+
+                                    <ProgressBar x:Name="TikTokProgress" Maximum="100" Minimum="0" Value="50" Grid.Column="1" Background="Transparent" BorderBrush="Black" Foreground="Green" BorderThickness="1" Grid.RowSpan="6" Margin="0,280,-190,-60"  Height="60" Width="250" >
+
+                                        <ProgressBar.RenderTransform>
+                                            <RotateTransform Angle="270"/>
+                                        </ProgressBar.RenderTransform>
+                                    </ProgressBar>
+
+                                    <Grid Grid.Row="0" Grid.RowSpan="6" Grid.Column="1" VerticalAlignment="Stretch">
+                                        <TextBlock Text="$72.00" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,40,0,0"/>
+
+                                        <TextBlock Text="$0.00" Margin="0,0,0,12" VerticalAlignment="Bottom" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                                    </Grid>
+
+
+
+                                </Grid>
+
+                            </Grid>
+
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="Twitter"
+                                MaxWidth="550"
+                                Background="{ThemeResource SubColor}"                        
+                                Elevation="10" 
+                                ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="400"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Twitter.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>Twitter</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                    Google Adsense is the advertising platform for promoting content on Google searches and YouTube videos.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2"  Margin="25,0,0,0">
+                                    To promote this campaign on Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="3" Margin="25,0,0,0">
+                                 Once the threshold has been reached the server will load it into Adsense and the ads will be published.
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Promote" Click="Promote_Click" Tag="Google"/>
+                                        <Button Content="Share" Click="Share_Click" Tag="Twitter" />
+                                        <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3"/>
+                                    </StackPanel>
+
+                                    <ProgressBar x:Name="TwitterProgress" Maximum="100" Minimum="0" Value="50" Grid.Column="1" Background="Transparent" BorderBrush="Black" Foreground="Green" BorderThickness="1" Grid.RowSpan="6" Margin="0,280,-190,-60"  Height="60" Width="250" >
+
+                                        <ProgressBar.RenderTransform>
+                                            <RotateTransform Angle="270"/>
+                                        </ProgressBar.RenderTransform>
+                                    </ProgressBar>
+
+                                    <Grid Grid.Row="0" Grid.RowSpan="6" Grid.Column="1" VerticalAlignment="Stretch">
+                                        <TextBlock Text="$72.00" VerticalAlignment="Top" HorizontalAlignment="Center" FontWeight="Bold" Margin="0,40,0,0"/>
+                                        <TextBlock Text="$0.00" Margin="0,0,0,12" VerticalAlignment="Bottom" HorizontalAlignment="Center"  FontWeight="Bold"/>
+                                    </Grid>
+
+
+
+                                </Grid>
+
+                            </Grid>
+
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="Billboard"
+                                MaxWidth="550"
+                                Background="{ThemeResource SubColor}"                        
+                                Elevation="10" 
+                                ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="430"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/BillboardsIn.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>Billboards</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                    Contributing to the billboard budget will allow me to strategically place physical ads around town to have a wider reach than just social media.
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2"  Margin="25,0,0,0">
+                                    There is no threshold for billboard advertising due to various price fluctuations, Instead the meter will just report the total contribution.
+                                    </TextBlock>
+
+
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Contribute" Click="Promote_Click" Tag="Billboards"/>
+                                        <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3"/>
+                                    </StackPanel>
+
+
+
+
+                                </Grid>
+
+                            </Grid>
+
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                    <Viewbox MaxHeight="350" MaxWidth="550" Margin="25,25,25,0" >
+                        <toolkit:ElevatedView x:Name="DistributeAll"
+                                MaxWidth="550"
+                                Background="{ThemeResource SubColor}"                        
+                                Elevation="10" 
+                                ShadowColor="#80000000">
+                            <Grid>
+
+                                <Grid Padding="15" RowSpacing="20" ColumnSpacing="15">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="430"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="15">
+                                        <Image Source="/Assets/Images/Logos/Logo.png" Height="50" Width="50"/>
+                                        <TextBlock FontSize="26" VerticalAlignment="Center">
+                                    <Bold>All Platforms</Bold>
+                                        </TextBlock>
+                                    </StackPanel>
+
+                                    <TextBlock Grid.Row="1" Margin="25,0,0,0">
+                                        Can't decide what to contribute to?
+                                    </TextBlock>
+
+                                    <TextBlock Grid.Row="2"  Margin="25,0,0,0">
+                                        Choose a dollar amount and distribute to all platforms evenly. Your money will not be used beyond the scope of these platforms.
+                                        New platforms may be added in the future so be sure to keep checking this page.
+                                    </TextBlock>
+
+                                    <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="25,0,0,0">
+                                        <Button Content="Distribute" Click="Promote_Click" Tag="Distribute"/>
+                                        <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3"/>
+                                    </StackPanel>
+
+                                </Grid>
+
+                            </Grid>
+
+                        </toolkit:ElevatedView>
+                    </Viewbox>
+
+                </controls:WrapPanel>
+
+            </Grid>
+
+
+        </ScrollViewer>
+
+
+
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="150">
+            <Grid.Background>
+                <AcrylicBrush 
+                        AlwaysUseFallback="False" 
+                        TintColor="Transparent" 
+                        TintOpacity="0.5" />
+            </Grid.Background>
+
+            <Viewbox MaxHeight="150" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" Spacing="25" HorizontalAlignment="Center" Margin="10,90,10,0" Padding="10" CornerRadius="10">
+                    <StackPanel>
+                        <TextBlock Text="Step 1: " HorizontalAlignment="Center" FontWeight="Bold" FontSize="22" TextWrapping="NoWrap"/>
+                        <HyperlinkButton NavigateUri="https://indianavoters.in.gov/" FontSize="18">
+                            Register to Vote
+                        </HyperlinkButton>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock Text="Step 2: " HorizontalAlignment="Center" FontWeight="Bold" FontSize="22" TextWrapping="NoWrap"/>
+                        <HyperlinkButton NavigateUri="https://chng.it/KpyRpHW2" FontSize="18">
+                            Sign the Petition
+                        </HyperlinkButton>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <TextBlock Text="Step 3:" HorizontalAlignment="Center" FontWeight="Bold" FontSize="22" TextWrapping="NoWrap"/>
+                        <TextBlock Text="Choose Below:" FontSize="18" Margin="0,7,0,0" />
+                    </StackPanel>
+                </StackPanel>
+            </Viewbox>
+
+        </Grid>
+
+        <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,10" Orientation="Horizontal" Grid.Row="1">
+            <Button x:Name="Support"
+                Background="Green" Foreground="White" FontSize="18" Padding="10" CornerRadius="10" x:FieldModifier="public">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Assets/Images/Logos/Paypal.png" Height="25"/>
+                        <TextBlock Text="View Paypal Transactions"/>
+                    </StackPanel>
+                </Button.Content>
+                
+                <Button.Flyout>
+                    <Flyout>
+                        <Grid Height="450" Width="250">
+                          
+                        </Grid>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+
+
+</Page>

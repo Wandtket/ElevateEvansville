@@ -1,0 +1,374 @@
+﻿<Page
+    x:Class="ElevateEvansvilleUI.Pages.PlatformPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElevateEvansvilleUI.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:toolkit="using:Uno.UI.Toolkit"
+    mc:Ignorable="d"  
+    d:DesignWidth="1000"
+    d:DesignHeight="3000"   
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <Style TargetType="StackPanel">
+            <Setter Property="Spacing" Value="10"/>
+        </Style>
+
+        <Style TargetType="controls:Expander">
+            <Setter Property="IsExpanded" Value="True"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+    </Page.Resources>
+
+    <ScrollViewer>
+        <Grid Padding="20,75,20,75" RowSpacing="20" HorizontalAlignment="Center" MaxWidth="900">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+
+            <controls:Expander Grid.Row="1">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="City Council" FontWeight="Bold"/>
+                        <TextBlock  HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="CityCouncilSuggestion" 
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=City%20Council%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            All powers of the mayor will be dedicated to improving the quality of life and reducing 
+                            the cost of living for the working class of Evansville IN. If the decisions of the city 
+                            council do not align with that premise, the powers of the mayor will be used to stall or 
+                            hinder the degradation of the city.
+                        </TextBlock>
+                    </StackPanel>
+                </controls:Expander.Content>
+            </controls:Expander>
+
+            <controls:Expander Grid.Row="1" Visibility="Collapsed">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Business Relations and Permits" FontWeight="Bold"/>
+                        <TextBlock  HorizontalAlignment="Right" FontWeight="Bold" >
+                            <Hyperlink x:Name="PermitsSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Business%20Relations%20and%20Permits%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            The city of Evansville will be prioritizing companies, businesses, enterprises, ventures, and
+                            organizations that will have a direct or indirect impact on human longevity. They must value the 
+                            objective good above any obligation they may have to shareholders or partners.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Business endeavors in the following fields will be highly regarded by the office of the mayor:
+                        </TextBlock>
+
+                        <TextBlock>
+                            <Hyperlink NavigateUri="https://www.health.harvard.edu/topics/exercise-and-fitness#:~:text=Exercising%20regularly%2C%20every%20day%20if%20possible%2C%20is%20the,disease%2C%20stroke%2C%20diabetes%2C%20dementia%2C%20depression%2C%20and%20many%20cancers.">
+                                Health and Fitness
+                            </Hyperlink>
+                        </TextBlock>
+
+                        <TextBlock>
+                            <Hyperlink NavigateUri="https://en.wikipedia.org/wiki/Vertical_farming">
+                                Vertical Farming
+                            </Hyperlink>
+                        </TextBlock>
+
+                        <TextBlock>
+                            Broadband / Fibre Optic Internet Expansion
+                        </TextBlock>
+
+                        <TextBlock>
+                            Grocery Delivery Services
+                        </TextBlock>
+
+                        <TextBlock>
+                            Innovative Transportation Solutions
+                        </TextBlock>
+
+                        <TextBlock>
+                            Research and Development Institutions 
+                        </TextBlock>
+
+                        <TextBlock>
+                            Education and Medical Facilities
+                        </TextBlock>
+
+                        <TextBlock>
+                            Solar and Nuclear Energy Solutions
+                        </TextBlock>
+
+
+                    </StackPanel>
+                </controls:Expander.Content>
+            </controls:Expander>
+            
+            
+            <controls:Expander  Grid.Row="2">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Police" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="PoliceSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Police%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            The Evansville Vanderburgh Police Department will at no point be utilized as an occupying 
+                            force to harass, intimidate, coerce or discourage the working class of Evansville, IN.
+                        </TextBlock>
+
+                        <TextBlock>
+                            The police will not be utilized as a personal militia for the advancement of private capital.
+                        </TextBlock>
+
+                        <TextBlock>
+                            The police will recognize all protests that value equality, justice, and the objective good. 
+                            Actors that wish to subvert, minimize, or halt these causes through violent means will not be 
+                            tolerated.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Rehabilitation will be the primary focus of future crime prevention.
+                        </TextBlock>
+                       
+                        <TextBlock>
+                            Recreational drugs will not be criminalized unless in extreme circumstances such as large-scale illegal smuggling.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Teenagers and children who have been unlawfully arrested for non-violent, perceived, behavioral issues by 
+                            school-stationed police will have their records cleared. Repeating juveniles will also be given every opportunity
+                            for rehabilitation by the appropriate servicing agents.
+                        </TextBlock>
+
+                        <TextBlock>
+                            The Evansville Police Department will <Bold>NOT</Bold> be defunded. The city budget will be allocated accordingly to 
+                            ensure maximum efficiency and professionalism of policing, mental health services, and domestic abuse responders.
+                        </TextBlock>
+
+                        <TextBlock>
+                            A police registrar will be available for citizens to rate the performance and behavior of each individual officer. 
+                            If the officer has been flagged enough for behavioral issues that officer will be released or placed on desk duties 
+                            depending on the severity of their actions.
+                        </TextBlock>
+                                            
+                    </StackPanel>
+
+                </controls:Expander.Content>
+            </controls:Expander>
+
+            <controls:Expander Grid.Row="3">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Crime Reduction" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="CrimeReductionSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Crime%20Reduction%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            There is one common denominator among all petty crimes in every city around the world, <Underline>Poverty.</Underline>
+                        </TextBlock>
+                        <TextBlock>
+                            The core platform of this campaign is to reduce the cost of living and increase the quality of life.
+                            If successful, the crime rate of Evansville will naturally decrease as its citizens begin to 
+                            thrive economically.
+                        </TextBlock>
+                        <TextBlock>
+                            Once economic situation of the working class of Evansville has improved, the core focus of crime reduction
+                            will be shifted to <Hyperlink NavigateUri="https://www.fbi.gov/investigate/white-collar-crime">white-collar crimes.</Hyperlink>
+                        </TextBlock>
+
+                        <TextBlock>
+                            Fines for petty crimes such as illegal parking or speeding through an intersection will scale with the individuals income rather
+                            than being a fixed rate, crimes committed by juveniles will be fined based on their parents income.
+                        </TextBlock>
+                    </StackPanel>
+                </controls:Expander.Content>
+            </controls:Expander>
+
+            <controls:Expander  Grid.Row="4">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="School Board" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="SchoolBoardSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=School%20Board%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            The Evansville Vanderburgh School Corporation will in no way discriminate, minimize, 
+                            ignore, or deny the existence of minority groups of people or atrocities of history 
+                            despite any efforts to limit exposure by State or Federal officials.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Teachers will be paid proportionally in accordance with inflation to allow a comfortable and decent 
+                            standard of living.
+                        </TextBlock>
+
+                        <TextBlock>
+                            All students Grades 1-12 will be provided free, nutritious, high quality meals for breakfast and lunch.
+                        </TextBlock>
+
+                        <TextBlock>
+                            School hours will be adjusted to match the average of the local working class hours. (9 a.m. – 3.p.m)
+                        </TextBlock>
+                        
+                    </StackPanel>
+
+                </controls:Expander.Content>
+            </controls:Expander>
+
+            <controls:Expander  Grid.Row="5">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Housing" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="HousingSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Housing%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            The city of Evansville will be modifying the existing affordable housing program and the 
+                            Evansville Housing Authority into a newly formed Housing Department.
+                        </TextBlock>
+
+                        <TextBlock>
+                            The Evansville Public Housing Department (EVPHD) will invest in and renovate old buildings 
+                            and failing apartment complexes randomly across the city, these new investments will be marked 
+                            40-50% cheaper than their private counterparts. The quality of these dwellings will also vary 
+                            depending on location and probable tenets will not be aware of what is city managed and what it 
+                            is privately managed.
+                        </TextBlock>
+
+                        <TextBlock>
+                            The housing provided by the EVPHD will become a direct source of revenue for city, once enacted it 
+                            will give the city the opportunity to reach an equilibrium and lower property taxes across the board, 
+                            thus decreasing the cost of living for all.
+                        </TextBlock>
+
+                    </StackPanel>
+
+                </controls:Expander.Content>
+            </controls:Expander>
+
+            <controls:Expander  Grid.Row="6">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Transportation and Services" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="TransportationSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Transportation%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            The city of Evansville will undergo a large-scale endeavor to reduce its dependence on vehicles and 
+                            fossil fuels through the utilization of <Hyperlink NavigateUri="https://en.wikipedia.org/wiki/Light_rail"> light rail infrastructure. </Hyperlink> 
+                            Where applicable, existing roads will be converted into light rail tracks.
+                        </TextBlock>
+
+                        <TextBlock>
+                            To offset traffic congestion any and all intersections that are capable will be converted into 
+                            <Hyperlink NavigateUri="https://en.wikipedia.org/wiki/Roundabout#:~:text=A%20roundabout%20is%20a%20type%20of%20circular%20intersection,typically%20given%20to%20traffic%20already%20in%20the%20junction.">
+                                roundabouts.
+                            </Hyperlink>
+                        </TextBlock>
+
+                        <TextBlock>
+                            Residents of Evansville will ideally never be more than a 20-30 minute walk from a light rail station.
+                        </TextBlock>
+
+                        <TextBlock>
+                            The Metropolitan Evansville Transit System will be converted to primarily run light rail scheduling with 
+                            supplemental busses wherever the need arises.
+                        </TextBlock>
+                    </StackPanel>
+
+                </controls:Expander.Content>
+            </controls:Expander>
+
+            <controls:Expander  Grid.Row="7">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Parks and Recreations" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="RecreationsSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Parks%20and%20Recreations%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            As the city moves forward with its transportation overhaul, the parks and recreation department will 
+                            spearhead the forestation and walkability of the city. Fully-grown adult trees will be relocated 
+                            within city limits and will be strategically placed to cover exposed asphalt, blacktop, and concrete. 
+                            New trees will be planted from wherever the old ones were located.
+                        </TextBlock>
+                    </StackPanel>
+
+                </controls:Expander.Content>
+            </controls:Expander>
+
+        </Grid>
+    </ScrollViewer>
+
+</Page>

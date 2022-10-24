@@ -1,0 +1,262 @@
+﻿<Page
+    x:Class="ElevateEvansvilleUI.Pages.Featured.RailroadPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElevateEvansvilleUI.Pages.Featured"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    d:DesignWidth="2000"
+    d:DesignHeight="10000"   
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="Paragraph">
+            <Setter Target="FontSize" Value="24"/>
+            <Setter Target="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Header">
+            <Setter Target="FontSize" Value="30"/>
+            <Setter Target="TextWrapping" Value="Wrap"/>
+            <Setter Target="Margin" Value="0,15,0,10"/>
+        </Style>
+    </Page.Resources>
+    
+    
+    <ScrollViewer>
+        <Grid Padding="20,75,20,75" RowSpacing="20" HorizontalAlignment="Center" MaxWidth="900">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Header}">
+                    <Bold>
+                        First: A Brief History of Railroad in Evansville
+                    </Bold>
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}">
+                    Prior to WW2 Evansville had roughly 40 miles of streetcar track that carried passengers 
+                    to and from their destinations. These streetcars were effective for those who didn’t own automobiles.
+                </TextBlock>
+
+                <FlipView Grid.Row="2" Margin="0,10,0,10">
+                    <FlipViewItem>
+                        <!--Last Train on Division St.-->
+                        <Image Stretch="Uniform" Source="https://i.imgur.com/5ZFVkYx.jpg"/>
+                    </FlipViewItem>
+                    <FlipViewItem>
+                        <!--Last Train on Division St. 2-->
+                        <Image Stretch="Uniform" Source="https://i.imgur.com/4SHfP45.jpg"/>
+                    </FlipViewItem>
+                    <FlipViewItem>
+                        <!--Koch Studio 493 Musuem-->
+                        <Image Stretch="Uniform" Source="https://i.imgur.com/LcSJTZW.jpg"/>
+                    </FlipViewItem>
+                </FlipView>
+            </Grid>
+
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Header}">
+                    <Bold>
+                        The Rise of the Automobile Industry,
+                    </Bold>
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}">
+                    Many cities around America had these streetcar services and Evansville was no exception, 
+                    after the war, the automobile industry famously lobbied to have the streetcar tracks 
+                    removed from city centers in favor of favor of cheap mass produced automobiles, with the new 
+                    interstate highway being built many people didn’t see a need for streetcars.
+                </TextBlock>
+            </Grid>
+
+
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Header}">
+                <Bold>Left Behind</Bold>
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}">
+                    While America was busy dismantling its passenger rail infrastructure, 
+                    Europe was doubling down. Cities in Europe had already been largely designed to be walk-centric for 
+                    hundreds of years and building large parking lots and roads that ran right through city centers were not 
+                    appealing to Europeans.
+                </TextBlock>
+
+            </Grid>
+
+
+            <controls:WrapPanel Grid.Row="3">
+                <Grid MaxWidth="600">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBlock Grid.Row="0" Style="{StaticResource Header}">
+                    <Bold>Evansville and the founding of Amtrak,</Bold>
+                    </TextBlock>
+
+                    <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}">
+                    Vance Hartke graduated from the University of Evansville in 1940, 
+                    he served as Mayor of Evansville between 1956 and 1958. In 1958 Hartke 
+                    went on to become a Senator and served as the chairman of the 
+                    Subcommittee on Surface Transportation.
+                    </TextBlock>
+
+                    <TextBlock Grid.Row="2" Margin="0,5,0,0" Style="{StaticResource Paragraph}">
+                    As chairman, Senator Hartke helped establish <Bold>Amtrak</Bold>, The only interstate passenger rail service in America.
+                    </TextBlock>
+
+                </Grid>
+                
+                              
+                <!--Hartke-->
+                <Image Source="https://i.imgur.com/uOhlKVh.jpg" Stretch="Uniform" Height="300"
+                       VerticalAlignment="Top" Margin="5" />
+
+            </controls:WrapPanel>
+
+
+            <Grid Grid.Row="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Header}">
+                    <Bold>Amtrak and High Speed Rail</Bold>
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}">
+                    Amtrak shares the same network of rail that the freight trains use, 
+                    which is why it is slower than many trains you would find in both Europe and Asia. 
+                    As of this writing there are efforts to establish high speed rail networks across America.
+                </TextBlock>
+
+                <TextBlock Grid.Row="2" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    Passenger trains are experiencing a resurgence, they are an excellent piece of 
+                    infrastructure that is cheaper and more comfortable than air travel without the 
+                    hassle of airport security, and while being slower than air they are also faster 
+                    and more consistent than a bus.
+                </TextBlock>
+            </Grid>
+
+
+            <Grid Grid.Row="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Header}">
+                <Bold>My Mission</Bold>
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}">
+                 I was stationed at Osan AB, Korea and Aviano AB, Italy while serving 
+                    in the United States Air Force. It’s safe to say I had grown fond of 
+                    utilizing the passenger rail there, I would take the train from a 
+                    little town called Pordenone into Venice for less than $20 round trip, 
+                    and not once have to worry about parking.
+                </TextBlock>
+
+                <TextBlock Grid.Row="2" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                  The first phase of this plan will be to turn the demolition lot of the 
+                    Old National Bank skyscraper into a hybrid light rail and interstate station.
+                </TextBlock>
+
+                <TextBlock Grid.Row="3" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                   As Mayor I will commission this station and connect the Ford Center,
+                    Event Halls, and all of Downtown with the Airport. I will also have a larger, 
+                    easier to navigate parking lot constructed at the Airport. People who live on 
+                    the north side or those who are flying in will be incentivized to utilize the 
+                    light rail to get downtown.
+                </TextBlock>
+
+                <TextBlock Grid.Row="4" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    This effort will decrease downtown traffic congestion while increasing foot traffic. 
+                    Those who commute downtown from further away will also have the ability to take the
+                    Evansville Rail Service reducing the need for parking.
+                </TextBlock>
+
+                <TextBlock Grid.Row="5" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    This effort will decrease downtown traffic congestion while increasing foot traffic.
+                    Those who commute downtown from further away will also have the ability to take the 
+                    Evansville Rail Service reducing the need for parking.
+                </TextBlock>
+
+                <TextBlock Grid.Row="6" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    Roughly one mile down Sycamore St. is an old main-line railroad track that takes you 
+                    directly to the Evansville Regional Airport. Due to the existing infrastructure in place, 
+                    a conservative estimate for Phase one of the Evansville Rail Initiative will cost around $5 million.
+                </TextBlock>
+
+                <TextBlock Grid.Row="7" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    Phase two will include connecting the University of Evansville and the 
+                    University of Southern Indiana to Downtown.
+                </TextBlock>
+
+                <TextBlock Grid.Row="8" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    Phase three will be to connect all of the high schools together, once completed 
+                    students will ride for free anywhere in the city and will take the train instead of a 
+                    bus, ideally you should never be more than a 30 minute walk to any station and the 
+                    trains will run at 15 minute intervals. It’s too early to have pricing but for your 
+                    average citizen a one way train ticket will cost approximately $5, for those who will
+                    use the service frequently a monthly subscription of $60 will grant you unlimited 
+                    access to the service.
+                </TextBlock>
+
+                <TextBlock Grid.Row="9" Margin="0,10,0,0" Style="{StaticResource Paragraph}">
+                    Once phase three is complete, we will then work on connecting major points of interest.
+                </TextBlock>
+
+
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Page>

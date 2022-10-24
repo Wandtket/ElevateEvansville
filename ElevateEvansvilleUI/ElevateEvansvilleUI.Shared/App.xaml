@@ -1,0 +1,47 @@
+﻿<Application
+    x:Class="ElevateEvansvilleUI.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElevateEvansvilleUI">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="TextBlock">
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
+
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Dark">
+                    <Brush x:Key="TitleBarColor">Black</Brush>
+
+                    <Brush x:Key="SubColor">#FF2D2D30</Brush>
+                    <Brush x:Key="FontColor">White</Brush>
+                    
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Light">
+                    <Brush x:Key="TitleBarColor">White</Brush>
+
+                    <Brush x:Key="SubColor">#FFEBEBEB</Brush>
+                    <Brush x:Key="FontColor">Black</Brush>
+
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- Load WinUI resources -->
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                
+                <!-- Load custom application resources -->
+                <!-- ... -->
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+        
+        
+    </Application.Resources>
+
+</Application>
