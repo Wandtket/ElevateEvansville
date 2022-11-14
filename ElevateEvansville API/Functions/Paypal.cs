@@ -10,7 +10,9 @@ namespace ElevateEvansville_API.Functions
     public class Paypal
     {
 
-
+        public static string APIUserName = "";
+        public static string APIPassword = "";
+        public static string APISignature = "";
 
         public static class Configuration
         {
@@ -22,21 +24,11 @@ namespace ElevateEvansville_API.Functions
                 configMap = GetConfig();
 
                 // Signature Credential
-                configMap.Add("account1.apiUsername", "paypal_api1.elevateevansville.com");
-                configMap.Add("account1.apiPassword", "6PB4D7BAVFDE8EXX");
-                configMap.Add("account1.apiSignature", "AnxFOYvIYNiXtDtuord169Zt-Pd5AlxJ72pMxxuglJK2dLUHJIARtk3w");
-                //configMap.Add("account1.apiSecret", "EKy7y6X2G5B4G_Bji4s1YxlTfgdgXcPe3jcjHmA2tTSsCzFmisjVkTDqEh_m3XeKBf7sBb1174nsZH_E-q644Tv0yF");
 
-                // Optional
-                //configMap.Add("account1.subject", "testSubject");
+                configMap.Add("account1.apiUsername", APIUserName);
+                configMap.Add("account1.apiPassword", APIPassword);
+                configMap.Add("account1.apiSignature", APISignature);
 
-                // Sample Certificate Credential
-                // configMap.Add("account2.apiUsername", "certuser_biz_api1.paypal.com");
-                // configMap.Add("account2.apiPassword", "D6JNKKULHN3G5B8A");
-                // configMap.Add("account2.apiCertificate", "resource/sdk-cert.p12");
-                // configMap.Add("account2.privateKeyPassword", "password");
-                // Optional
-                // configMap.Add("account2.subject", "");
                 return configMap;
             }
 

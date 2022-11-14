@@ -67,6 +67,11 @@ namespace ElevateEvansville_API
             services.AddTransient<IBalanceRepository, BalanceRepository>();
             services.AddTransient<ITransactionRepository, TransactionsRepository>();
 
+
+            //Fetch Paypal API configuration
+            Paypal.APIUserName = Configuration.GetConnectionString("paypalapiUsername") ?? "";
+            Paypal.APIPassword = Configuration.GetConnectionString("paypalapiPassword") ?? "";
+            Paypal.APISignature = Configuration.GetConnectionString("paypalapiSignature") ?? "";
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

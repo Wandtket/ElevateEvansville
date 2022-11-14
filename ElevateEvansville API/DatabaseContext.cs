@@ -10,7 +10,5 @@ namespace ElevateEvansville_API
         public DbSet<Transactions> Transactions { get; set;  }
 
         public DatabaseContext(DbContextOptions options) : base(options) { }
-
-
     }
 }
