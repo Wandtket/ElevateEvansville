@@ -12,7 +12,7 @@ on:
 jobs:
   build_and_deploy_job:
     env:
-        DIST_PATH: ElevateEvansvilleUI/ElevateEvansvilleUI.Wasm/bin/Release/net6.0/dist
+        DIST_PATH: ElevateEvansvilleUI/ElevateEvansvilleUI.Wasm
         
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
