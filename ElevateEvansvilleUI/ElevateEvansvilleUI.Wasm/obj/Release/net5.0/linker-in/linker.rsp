@@ -123,10 +123,10 @@
 -d "C:\Users\wandt\.nuget\packages\system.threading.accesscontrol\6.0.0\runtimes\win\lib\netstandard2.0" 
 -d "C:\Users\wandt\.nuget\packages\system.windows.extensions\6.0.0\runtimes\win\lib\netcoreapp3.1" 
 -d "C:\Users\wandt\AppData\Local\Temp\dotnet-runtime-wasm-windows-bd114dd-53ca85fb900-1877706367-Release\runtimes\browser-wasm\lib\net6.0"
--a "C:\Users\wandt\Source\Repos\Elevate Evansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\linker-in\System.Private.Runtime.InteropServices.JavaScript.dll"
+-a "C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\linker-in\System.Private.Runtime.InteropServices.JavaScript.dll"
  -a "C:\Users\wandt\.nuget\packages\uno.wasm.bootstrap\3.3.1\build\..\tools\support\Uno.Wasm.TimezoneData.dll"
 --deterministic --disable-opt unreachablebodies --used-attrs-only true 
 --keep-metadata all 
 --feature System.Diagnostics.Debugger.IsSupported false --feature System.Diagnostics.Tracing.EventSource.IsSupported false --feature System.GC.Server true --feature System.Globalization.Invariant false --feature System.Net.Http.EnableActivityPropagation false --feature System.Reflection.Metadata.MetadataUpdater.IsSupported false --feature System.Resources.UseSystemResourceKeys true --feature System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization false --feature System.Text.Encoding.EnableUnsafeUTF7Encoding false 
---verbose -b true -a "C:\Users\wandt\Source\Repos\Elevate Evansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\linker-in\ElevateEvansvilleUI.Wasm.dll" -d "C:\Users\wandt\Source\Repos\Elevate Evansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\dist_work\managed"
--out "C:\Users\wandt\Source\Repos\Elevate Evansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\dist_work\managed"
+--verbose -b true -a "C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\linker-in\ElevateEvansvilleUI.Wasm.dll" -d "C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\dist_work\managed"
+-out "C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\dist_work\managed"
