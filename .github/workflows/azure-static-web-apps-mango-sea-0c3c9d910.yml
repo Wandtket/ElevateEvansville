@@ -18,6 +18,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1.7.2
+        with:
+            dotnet-version: '6.0.402'
+      - run: |
+          cd src/ElevateEvansvilleUI.Wasm
+          dotnet build -c Release
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -27,7 +34,7 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/ElevateEvansvilleUI/" # App source code path
+          app_location: "src/ElevateEvansvilleUI.Wasm/bin/Debug/net5.0/dist" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
