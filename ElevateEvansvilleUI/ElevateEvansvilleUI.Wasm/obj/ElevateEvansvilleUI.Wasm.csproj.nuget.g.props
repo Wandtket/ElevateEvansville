@@ -22,5 +22,6 @@
     <PkgUno_Wasm_Bootstrap_DevServer Condition=" '$(PkgUno_Wasm_Bootstrap_DevServer)' == '' ">C:\Users\wandt\.nuget\packages\uno.wasm.bootstrap.devserver\3.3.1</PkgUno_Wasm_Bootstrap_DevServer>
     <PkgUno_Wasm_Bootstrap Condition=" '$(PkgUno_Wasm_Bootstrap)' == '' ">C:\Users\wandt\.nuget\packages\uno.wasm.bootstrap\3.3.1</PkgUno_Wasm_Bootstrap>
     <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\wandt\.nuget\packages\uno.ui\4.6.19</PkgUno_UI>
+    <PkgUno_UI_RemoteControl Condition=" '$(PkgUno_UI_RemoteControl)' == '' ">C:\Users\wandt\.nuget\packages\uno.ui.remotecontrol\4.6.19</PkgUno_UI_RemoteControl>
   </PropertyGroup>
 </Project>
