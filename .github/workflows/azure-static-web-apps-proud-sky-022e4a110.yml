@@ -12,7 +12,7 @@ on:
 jobs:
   build_and_deploy_job:
     env:
-        DIST_PATH: ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Wasm/bin/Release/net6.0/dist
+        DIST_PATH: ElevateEvansvilleUI/ElevateEvansvilleUI.Wasm/bin/Release/net6.0/dist
         
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
         run: dotnet --version
       - name: Build
         run: |
-          cd ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Wasm
+          cd ElevateEvansvilleUI/ElevateEvansvilleUI.Wasm
           dotnet build -bl:../../myartifact/output.binlog -c Release
       - name:  Deploy
         uses: actions/upload-artifact@v3
