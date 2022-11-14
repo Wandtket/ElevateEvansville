@@ -7,6 +7,7 @@
 		<WasmShellIndexHtmlPath>index.html</WasmShellIndexHtmlPath>
 		<WasmPWAManifestFile>manifest.json</WasmPWAManifestFile>
 		<WasmShellWebAppBasePath>/</WasmShellWebAppBasePath>
+		<WasmShellILLinkerEnabled>false</WasmShellILLinkerEnabled>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<MonoRuntimeDebuggerEnabled>true</MonoRuntimeDebuggerEnabled>
@@ -83,11 +84,12 @@
 		<PackageReference Include="Uno.Foundation.Logging" Version="4.6.19" />
 		<PackageReference Include="Uno.Foundation.Runtime.WebAssembly" Version="4.6.19" />
 		<PackageReference Include="Uno.Toolkit.UI" Version="2.3.0" />
+		<PackageReference Include="Uno.UI" Version="4.6.19" />
 		<PackageReference Include="Uno.UI.WebAssembly" Version="4.6.19" />
 		<PackageReference Include="Uno.UI.RemoteControl" Version="4.6.19" Condition="'$(Configuration)'=='Debug'" />
 		<PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.6.19" />
-		<PackageReference Include="Uno.Wasm.Bootstrap" Version="3.3.1" />
-		<PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="3.3.1" />
+		<PackageReference Include="Uno.Wasm.Bootstrap" Version="7.0.7" />
+		<PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="7.0.7" />
 	</ItemGroup>
 	<Import Project="..\ElevateEvansvilleUI.Shared\ElevateEvansvilleUI.Shared.projitems" Label="Shared" Condition="Exists('..\ElevateEvansvilleUI.Shared\ElevateEvansvilleUI.Shared.projitems')" />
 	<ItemGroup>

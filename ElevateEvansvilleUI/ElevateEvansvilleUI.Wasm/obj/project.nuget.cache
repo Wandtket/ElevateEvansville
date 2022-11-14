@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wdIfKkxclrMeQ7sl39TQGYwNo9FX4BhGQnGBth+EOKgF1f6RHNrxXSCyACpA2FAjahP91+AB7MYpQatEqepNTA==",
+  "dgSpecHash": "zTlQDd8/6ZD2WWakijG2JTvcdmvrQ4Nsyb+DJxp+zH0bRiJOJVOdHPYaHj29DxCxv1Y82V2nkWpkbaINYJ3WfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\wandt\\source\\Workspaces\\ElevateEvansville\\ElevateEvansvilleUI\\ElevateEvansvilleUI.Wasm\\ElevateEvansvilleUI.Wasm.csproj",
   "expectedPackageFiles": [
@@ -120,8 +120,8 @@
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.6.19\\uno.ui.adapter.microsoft.extensions.logging.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.runtime.webassembly\\4.6.19\\uno.ui.runtime.webassembly.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.webassembly\\4.6.19\\uno.ui.webassembly.4.6.19.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap\\3.3.1\\uno.wasm.bootstrap.3.3.1.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\3.3.1\\uno.wasm.bootstrap.devserver.3.3.1.nupkg.sha512"
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap\\7.0.7\\uno.wasm.bootstrap.7.0.7.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\7.0.7\\uno.wasm.bootstrap.devserver.7.0.7.nupkg.sha512"
   ],
   "logs": []
 }

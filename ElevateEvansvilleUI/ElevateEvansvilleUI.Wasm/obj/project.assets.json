@@ -2050,14 +2050,26 @@
           "build/Uno.UI.WebAssembly.targets": {}
         }
       },
-      "Uno.Wasm.Bootstrap/3.3.1": {
+      "Uno.Wasm.Bootstrap/7.0.7": {
         "type": "package",
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/obj/uno-bootstrap.d.ts": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netstandard2.0/obj/uno-bootstrap.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
         "build": {
           "build/Uno.Wasm.Bootstrap.props": {},
           "build/Uno.Wasm.Bootstrap.targets": {}
         }
       },
-      "Uno.Wasm.Bootstrap.DevServer/3.3.1": {
+      "Uno.Wasm.Bootstrap.DevServer/7.0.7": {
         "type": "package",
         "build": {
           "build/Uno.Wasm.Bootstrap.DevServer.targets": {}
@@ -7439,10 +7451,10 @@
         "uno.ui.webassembly.nuspec"
       ]
     },
-    "Uno.Wasm.Bootstrap/3.3.1": {
-      "sha512": "qRO1D8bjOHr5tQC5KD8Tj9vQJaqCot5AIZaa1/GNv8fBkSVq8KiL28PDPRmMPKCRo/0meLMCvSEMtqANuo1IQg==",
+    "Uno.Wasm.Bootstrap/7.0.7": {
+      "sha512": "lIqDlIp5g4lnuhnJfTx9pm7i3Oaiq1qX1u/+qQk1ezAKPGTKKFb2VEPl3ST1o/hkoOOHqrELalHPBgmxEv55IQ==",
       "type": "package",
-      "path": "uno.wasm.bootstrap/3.3.1",
+      "path": "uno.wasm.bootstrap/7.0.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -7477,6 +7489,10 @@
         "build/wasm-tuner/net5.0/wasm-tuner.pdb",
         "build/wasm-tuner/net5.0/wasm-tuner.runtimeconfig.dev.json",
         "build/wasm-tuner/net5.0/wasm-tuner.runtimeconfig.json",
+        "content/obj/uno-bootstrap.d.ts",
+        "content/obj/uno-bootstrap.js",
+        "contentFiles/any/netstandard2.0/obj/uno-bootstrap.d.ts",
+        "contentFiles/any/netstandard2.0/obj/uno-bootstrap.js",
         "icon.png",
         "tools/BrotliSharpLib.dll",
         "tools/Mono.Cecil.Mdb.dll",
@@ -7487,8 +7503,8 @@
         "tools/Newtonsoft.Json.dll",
         "tools/System.Memory.dll",
         "tools/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/Uno.Wasm.Bootstrap.vfc89b40db92a14b8f04d4c5c9c72690bdcd7b878.dll",
-        "tools/Uno.Wasm.Bootstrap.vfc89b40db92a14b8f04d4c5c9c72690bdcd7b878.pdb",
+        "tools/Uno.Wasm.Bootstrap.v3b4dced85eb7693a8d1e3d58fb2d4ae80f1d0d19.dll",
+        "tools/Uno.Wasm.Bootstrap.v3b4dced85eb7693a8d1e3d58fb2d4ae80f1d0d19.pdb",
         "tools/support/Uno.Wasm.AotProfiler.deps.json",
         "tools/support/Uno.Wasm.AotProfiler.dll",
         "tools/support/Uno.Wasm.AotProfiler.pdb",
@@ -7502,19 +7518,20 @@
         "tools/support/Uno.Wasm.TimezoneData.dll",
         "tools/support/Uno.Wasm.TimezoneData.pdb",
         "tools/templates/index.html",
-        "uno.wasm.bootstrap.3.3.1.nupkg.sha512",
+        "uno.wasm.bootstrap.7.0.7.nupkg.sha512",
         "uno.wasm.bootstrap.nuspec"
       ]
     },
-    "Uno.Wasm.Bootstrap.DevServer/3.3.1": {
-      "sha512": "rt/sHU7MR77WActM4l0V4IWJ7s6yuNBxCkTS7+6iuf9jEdnKQf+SKtDzQaKdn1DBFN+j42vA24LRbYdAoFyMVg==",
+    "Uno.Wasm.Bootstrap.DevServer/7.0.7": {
+      "sha512": "02g+xrdcJ88gakrmnGjH8DCzdXqJOSbgOSlJDm3krJ+4ChNWrvLaMNw1pRegZHHNPYrx/3klqcSFTIqevqd9XA==",
       "type": "package",
-      "path": "uno.wasm.bootstrap.devserver/3.3.1",
+      "path": "uno.wasm.bootstrap.devserver/7.0.7",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Uno.Wasm.Bootstrap.DevServer.targets",
+        "icon.png",
         "tools/server/net5/Humanizer.dll",
         "tools/server/net5/Microsoft.AspNetCore.JsonPatch.dll",
         "tools/server/net5/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
@@ -7579,7 +7596,39 @@
         "tools/server/net6/dotnet-unowasm.exe",
         "tools/server/net6/dotnet-unowasm.pdb",
         "tools/server/net6/dotnet-unowasm.runtimeconfig.json",
-        "uno.wasm.bootstrap.devserver.3.3.1.nupkg.sha512",
+        "tools/server/net7.0/Humanizer.dll",
+        "tools/server/net7.0/Microsoft.AspNetCore.JsonPatch.dll",
+        "tools/server/net7.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
+        "tools/server/net7.0/Microsoft.AspNetCore.NodeServices.dll",
+        "tools/server/net7.0/Microsoft.AspNetCore.Razor.Language.dll",
+        "tools/server/net7.0/Microsoft.AspNetCore.SpaServices.Extensions.dll",
+        "tools/server/net7.0/Microsoft.AspNetCore.SpaServices.dll",
+        "tools/server/net7.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.Razor.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.Workspaces.dll",
+        "tools/server/net7.0/Microsoft.CodeAnalysis.dll",
+        "tools/server/net7.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tools/server/net7.0/Microsoft.Extensions.CommandLineUtils.dll",
+        "tools/server/net7.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/server/net7.0/Newtonsoft.Json.Bson.dll",
+        "tools/server/net7.0/Newtonsoft.Json.dll",
+        "tools/server/net7.0/System.Composition.AttributedModel.dll",
+        "tools/server/net7.0/System.Composition.Convention.dll",
+        "tools/server/net7.0/System.Composition.Hosting.dll",
+        "tools/server/net7.0/System.Composition.Runtime.dll",
+        "tools/server/net7.0/System.Composition.TypedParts.dll",
+        "tools/server/net7.0/System.Net.WebSockets.WebSocketProtocol.dll",
+        "tools/server/net7.0/System.Security.Permissions.dll",
+        "tools/server/net7.0/dotnet-unowasm.deps.json",
+        "tools/server/net7.0/dotnet-unowasm.dll",
+        "tools/server/net7.0/dotnet-unowasm.exe",
+        "tools/server/net7.0/dotnet-unowasm.pdb",
+        "tools/server/net7.0/dotnet-unowasm.runtimeconfig.json",
+        "uno.wasm.bootstrap.devserver.7.0.7.nupkg.sha512",
         "uno.wasm.bootstrap.devserver.nuspec"
       ]
     }
@@ -7597,10 +7646,11 @@
       "Uno.Foundation.Logging >= 4.6.19",
       "Uno.Foundation.Runtime.WebAssembly >= 4.6.19",
       "Uno.Toolkit.UI >= 2.3.0",
+      "Uno.UI >= 4.6.19",
       "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.19",
       "Uno.UI.WebAssembly >= 4.6.19",
-      "Uno.Wasm.Bootstrap >= 3.3.1",
-      "Uno.Wasm.Bootstrap.DevServer >= 3.3.1"
+      "Uno.Wasm.Bootstrap >= 7.0.7",
+      "Uno.Wasm.Bootstrap.DevServer >= 7.0.7"
     ]
   },
   "packageFolders": {
@@ -7699,6 +7749,10 @@
             "target": "Package",
             "version": "[2.3.0, )"
           },
+          "Uno.UI": {
+            "target": "Package",
+            "version": "[4.6.19, )"
+          },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
             "target": "Package",
             "version": "[4.6.19, )"
@@ -7709,11 +7763,11 @@
           },
           "Uno.Wasm.Bootstrap": {
             "target": "Package",
-            "version": "[3.3.1, )"
+            "version": "[7.0.7, )"
           },
           "Uno.Wasm.Bootstrap.DevServer": {
             "target": "Package",
-            "version": "[3.3.1, )"
+            "version": "[7.0.7, )"
           }
         },
         "imports": [

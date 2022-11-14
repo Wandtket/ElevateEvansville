@@ -96,6 +96,10 @@
               "target": "Package",
               "version": "[2.3.0, )"
             },
+            "Uno.UI": {
+              "target": "Package",
+              "version": "[4.6.19, )"
+            },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
               "version": "[4.6.19, )"
@@ -106,11 +110,11 @@
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[3.3.1, )"
+              "version": "[7.0.7, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[3.3.1, )"
+              "version": "[7.0.7, )"
             }
           },
           "imports": [
