@@ -46,7 +46,20 @@ namespace ElevateEvansvilleUI.Pages
         string SupportType = "";
         private async void Calendar_Click(object sender, RoutedEventArgs args)
         {
+            MenuFlyoutItem item = (MenuFlyoutItem)sender;
 
+            if (item == CalendarGoogle)
+            {
+                await Launcher.LaunchUriAsync(new Uri("https://calendar.google.com/calendar/u/1?cid=MzRmNDlkOTI1NTMyMjc0Y2FlNGI1NzU5N2E3NjRmMDE4MzgzN2Q4MDcwMGY1OTA2MWM2ZTUyMWNhMmQwZjZhNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"));
+            }
+            else if (item == CalendarYahoo)
+            {
+                await Launcher.LaunchUriAsync(new Uri("https://calendar.yahoo.com/sxem6vowrtxs3tgrx2z7erfv2ko5vhbvp6b2mfka"));
+            }
+            else if (item == CalendarOutlook)
+            {
+                await Launcher.LaunchUriAsync(new Uri("https://outlook.office365.com/owa/calendar/b8864392e5cd4188b02d20b42c7e987b@ElevateEvansville.com/35e799d4044f40daae5130677a234e608806982325643298840/calendar.html"));
+            }
         }
 
         private async void Promote_Click(object sender, RoutedEventArgs args)
@@ -82,7 +95,7 @@ namespace ElevateEvansvilleUI.Pages
 
         private async void Paypal_Click(object sender, ContentDialogButtonClickEventArgs args)
         {
-            await Launcher.LaunchUriAsync(new Uri($"https://www.paypal.com/cgi-bin/webscr?business=tyler.wandtke@elevateevansville.com&cmd=_xclick&currency_code=USD&amount={PromoteAmount.Text}&item_name={SupportType}"));
+            await Launcher.LaunchUriAsync(new Uri($"https://www.paypal.com/cgi-bin/webscr?business=paypal@elevateevansville.com&cmd=_xclick&currency_code=&amount={PromoteAmount.SelectedValue}&item_name={SupportType}&return=&cancel_return="));
         }
 
         private async void Share_Click(object sender, RoutedEventArgs args)
@@ -112,7 +125,14 @@ namespace ElevateEvansvilleUI.Pages
         }
 
 
+        private void TextBox_OnBeforeTextChanging(TextBox sender, TextBoxBeforeTextChangingEventArgs args)
+        {
+            args.Cancel = args.NewText.Any(c => !char.IsDigit(c));
+        }
 
-
+        private void Support_Click(object sender, RoutedEventArgs e)
+        {
+            WebUI.AppFrame.Navigate(typeof(PayPalPage));
+        }
     }
 }

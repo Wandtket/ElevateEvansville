@@ -5,10 +5,316 @@
     xmlns:local="using:ElevateEvansvilleUI.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:toolkit="using:Uno.UI.Toolkit"
     mc:Ignorable="d"
+    d:DesignWidth="1500"
+    d:DesignHeight="4000"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        
-    </Grid>
+    
+    <Page.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+            </Style>
+    </Page.Resources>
+
+    <ScrollViewer>
+        <Grid Margin="0,75,0,0" Padding="0,0,0,75" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <controls:WrapPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal">
+                <Viewbox Width="500" MaxHeight="600" Margin="20,0,20,0">
+                    <toolkit:ElevatedView             
+                        Background="{ThemeResource SubColor}"                        
+                        Elevation="10" 
+                        ShadowColor="#80000000"
+                        MaxWidth="500" MaxHeight="480">
+
+                        <FlipView>
+                            <Image x:Name="MilitaryProfile" Source="https://i.imgur.com/Ao4ZYq8.jpg" Stretch="Uniform" />
+                            <Image x:Name="FootballProfile" Source="https://i.imgur.com/IBwjlie.png" Stretch="Uniform" />
+                            <Image x:Name="JeepProfile" Source="https://i.imgur.com/jYY0aux.jpg" Stretch="Uniform" />
+                            <Image x:Name="AlbaniaProfile" Source="https://i.imgur.com/qSMJf57.jpg" Stretch="Uniform" />
+                            <Image x:Name="WaterfallProfile" Source="https://i.imgur.com/UNiameZ.jpg" Stretch="Uniform" />
+                            <Image x:Name="BikingProfile" Source="https://i.imgur.com/RjQMDVR.jpg" Stretch="Uniform" />
+                            <Image x:Name="MountainProfile" Source="https://i.imgur.com/rKeHg8h.jpg" Stretch="Uniform" />
+                            <Image x:Name="PuppyProfile" Source="https://i.imgur.com/cWj0clz.png" Stretch="Uniform" />
+                        </FlipView>
+                    </toolkit:ElevatedView>
+                </Viewbox>
+
+
+                <Grid Margin="0,15,0,0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <toolkit:ElevatedView
+                        Background="{ThemeResource SubColor}"                        
+                        Elevation="10" 
+                        VerticalAlignment="Center"                     
+                        Margin="20,0,20,0"                
+                        ShadowColor="#80000000">
+
+                        <Grid Width="500" Padding="20" RowSpacing="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="Age:" FontWeight="Bold" Grid.Row="0" Grid.Column="0"/>
+                            <TextBlock Text="29" Grid.Row="0" Grid.Column="1"/>
+
+                            <TextBlock Text="Born:" FontWeight="Bold" Grid.Row="1" Grid.Column="0"/>
+                            <TextBlock Text="August, 1993" Grid.Row="1" Grid.Column="1"/>
+
+                            <TextBlock Text="Height:" FontWeight="Bold" Grid.Row="2" Grid.Column="0"/>
+                            <TextBlock Grid.Row="2" Grid.Column="1">
+                                6"2' - 187cm
+                            </TextBlock>
+
+                            <TextBlock Text="Weight:" FontWeight="Bold" Grid.Row="3" Grid.Column="0"/>
+                            <TextBlock Text="190lbs - 86kg" Grid.Row="3" Grid.Column="1"/>
+
+
+                            <TextBlock Text="Hometown:" FontWeight="Bold" Grid.Row="4" Grid.Column="0"/>
+                            <TextBlock Text="Evansville, IN" Grid.Row="4" Grid.Column="1"/>
+
+                            <TextBlock Text="School:" FontWeight="Bold"  Grid.Row="5" Grid.Column="0"/>
+                            <TextBlock Text="North Highschool, SICT" Grid.Row="5" Grid.Column="1"/>
+
+                            <TextBlock Text="Occupation:" FontWeight="Bold"  Grid.Row="6" Grid.Column="0"/>
+                            <TextBlock Text="Full-Stack Software Developer" Grid.Row="6" Grid.Column="1"/>
+
+                            <TextBlock Text="Military Field:" FontWeight="Bold"  Grid.Row="7" Grid.Column="0"/>
+                            <TextBlock Text="Logistics" Grid.Row="7" Grid.Column="1"/>
+
+                            <TextBlock Text="Degree:" FontWeight="Bold"  Grid.Row="8" Grid.Column="0"/>
+                            <TextBlock Text="Applied Science Logistics." Grid.Row="8" Grid.Column="1"/>
+
+                            <TextBlock Text="Veteran Status:" FontWeight="Bold"  Grid.Row="9" Grid.Column="0"/>
+                            <TextBlock Text="U.S. Air Force Separated, Honorable" Grid.Row="9" Grid.Column="1" Margin="0,0,10,0"/>
+                        </Grid>
+                    </toolkit:ElevatedView>
+
+
+                    <toolkit:ElevatedView
+                        Grid.Row="1"
+                        Background="{ThemeResource SubColor}"                        
+                        Elevation="10" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"                          
+                        Margin="20,20,20,0"                       
+                        ShadowColor="#80000000">
+
+                        <Grid Width="500" Padding="10" RowSpacing="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Relevant Documents" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="16"/>
+
+                            <controls:WrapPanel Grid.Row="1" >
+                                <ListView Width="215" SelectionMode="None">
+                                    <TextBlock>
+                                        <Hyperlink NavigateUri="https://i.imgur.com/eXS2MI6.png">Birth Certificate</Hyperlink>
+                                    </TextBlock>
+
+                                    <TextBlock>
+                                        <Hyperlink NavigateUri="https://i.imgur.com/cAwHNiP.png">CCAF Degree</Hyperlink>
+                                    </TextBlock>
+
+                                    <TextBlock TextWrapping="NoWrap">
+                                        <Hyperlink NavigateUri="https://i.imgur.com/dnFdKh9.png">Discharge (DD-214)</Hyperlink>
+                                    </TextBlock>
+                                </ListView>
+
+                                <ListView Width="215" SelectionMode="None">
+                                    <TextBlock>
+                                        <Hyperlink NavigateUri="https://i.imgur.com/dnFdKh9.png">Declaration of Candidacy</Hyperlink>
+                                    </TextBlock>
+
+                                    <TextBlock>
+                                        <Hyperlink NavigateUri="https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/ET7u7eTrMjNAoAJ3xoQvSpUB1HDYorzMsWEGn0Y0WnwpiQ?e=DUfTQt">Tax Returns</Hyperlink>
+                                    </TextBlock>
+
+                                </ListView>
+                            </controls:WrapPanel>
+
+                        </Grid>
+                    </toolkit:ElevatedView>
+                </Grid>
+
+
+
+
+            </controls:WrapPanel>
+
+
+            <Grid Grid.Row="1" Margin="20,0,20,0" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Accomplishments" Grid.Row="1" FontSize="22" FontWeight="Bold"/>
+
+                <TextBlock Grid.Row="2" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    Between the ages of 13 and 18 I had travelled to all 48 continental United States by bicycle. 
+                    At an early age I had witnessed the various differences between states that helped shape my 
+                    political philosophies and my discipline with personal health and well-being.
+                </TextBlock>
+
+                <FlipView Grid.Row="3" Height="300" Width="600">
+                    <Image Source="https://i.imgur.com/aA5vhpt.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/4JOyK82.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/iDUyaLm.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/bb0f1Ff.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/UoCUS2F.jpg" Stretch="Uniform"/>
+                </FlipView>
+
+
+                <TextBlock Grid.Row="4" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    At age 18 I had enlisted with the United States Air Force. Throughout my teen years I had taken note 
+                    of the complete degradation of the educational system in America, the military appeared to be the only 
+                    means to escape student loans and the poverty of the modern student.
+                </TextBlock>
+
+
+                <FlipView Grid.Row="5" Height="300" Width="600">
+                    <Image Source="https://i.imgur.com/6p6HVeX.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/k4dn0Da.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/wPaeWry.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/fKnIKMQ.jpg" Stretch="Uniform"/>
+                    <Image Source="https://i.imgur.com/AUc6fYI.jpg" Stretch="Uniform"/>
+                </FlipView>
+
+                <TextBlock Grid.Row="6" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    While attending the Southern Indiana Career and Technical Center (SICT) my area of study was in Internet 
+                    Technology (I.T.) My recruiter at the time had told me I was likely to be assigned that career field, however,
+                    the contract I was given turned out to be in logistics.
+                </TextBlock>
+
+                <FlipView Grid.Row="7" Height="300" Width="600" Visibility="Collapsed">
+
+                </FlipView>
+
+                <TextBlock Grid.Row="8" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    After basic training in San Antonio Texas, my first duty assignment was at Osan Air Base, South Korea. 
+                    While in Korea I had taken note of the very poor quality of software design and process management of our 
+                    chemical weapons protection unit. Utilizing the skills I had developed at SICT I ended up developing ad-hoc 
+                    software that fixed many of the issues that we were facing. The results were so overwhelmingly positive for 
+                    our tour that I ended up awarded by the Deputy Secretary of Defense.
+                </TextBlock>
+
+
+
+                <TextBlock Grid.Row="10" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    After my tour in Korea I was assigned another duty location at Aviano Air Base, Italy. Here I furthered my 
+                    endeavor into enhancing the existing logistics processes through innovative software development and process 
+                    improvement. Over the years I had restored functionality to hardware devices that had their documentation lost 
+                    and were unusable even though the Air Force had spent millions on them. After I effectively restored those lost 
+                    funds It won the notoriety of 4-Star General Frank Gorenc where I won the Spark Tank Innovation Award from the 
+                    European Air Forces HQ in Rammstein Germany.
+                </TextBlock>
+
+                
+                <TextBlock Grid.Row="12" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    My final tour before leaving the military was at Joint Base Pearl-Harbor Hickham. This assignment was where I 
+                    had honed and nearly perfected my software development process for the military. I had been designated one of 
+                    the top innovators in the entire Air Force and was giving Air Force News Network talks on what it means to 
+                    innovate on process improvements, my videos were played at the officer’s academy at Maxwell AFB as well. 
+                    During this period I was awarded by the Pacific Air Forces Major Command and won prize money for my efforts 
+                    to create a fully modular inventory device and to design the first holographic UI for military use in logistics.
+                </TextBlock>
+
+
+                <TextBlock Grid.Row="14" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    My last year of the military was spent at Maxwell-Gunter Annex in Montgomery Alabama. I had been personally 
+                    scouted by the Pentagon to aid the defense contractors in charge of the backend logistics infrastructure. 
+                    Unfortunately all my years of winning innovation awards had made the defense contractors fear I was attempting 
+                    to replace them. They had brought me under their leadership and told me I was to never do what I did again and 
+                    that I was there for them to copy what they felt like, told me I might be a Russian infiltrator, that I was a 
+                    threat to national security, and that I had the unauthorized ability to bring down the entire Air Force logistics 
+                    infrastructure.
+                </TextBlock>
+
+                <TextBlock Grid.Row="16" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    The same office that had scouted me for the position issued a cease and desist to all 10,000 of my fellow service 
+                    members in my career field telling them that the defense contractor’s software that I had spent 6 years fixing was 
+                    great and that they were to not use what I had made.
+                </TextBlock>
+
+                <TextBlock Grid.Row="18" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    All claims were completely baseless and I demanded that they hold a court martial to prove their accusations, 
+                    they refused and kept the paperwork in the lowest tier possible. After the dust settled the leadership at 
+                    Maxwell constantly asked if I were contemplating suicide or arson for the remainder of my time there.
+                </TextBlock>
+
+                <TextBlock Grid.Row="20" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    I had given the Pentagon an ultimatum, undo what you did, give me back my original assignment, or I walk. 
+                    The response I got can be best summarized as “Deal with it”
+                </TextBlock>
+
+                <TextBlock Grid.Row="22" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    In less than a year I had my military career ended, completely out of my control. Which now brings us to today, 
+                    I currently work as a software developer doing much the same as I was before.
+                </TextBlock>
+
+                <TextBlock Grid.Row="24" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
+                    I want to tell you this though, you should not have to join the military to get the basic necessities a 
+                    country should offer its citizens.
+                </TextBlock>
+
+
+
+            </Grid>
+            
+            
+            
+        </Grid>
+    </ScrollViewer>
 </Page>

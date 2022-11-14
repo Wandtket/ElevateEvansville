@@ -8,28 +8,33 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     xmlns:local="using:ElevateEvansvilleUI"
     xmlns:controls="using:ElevateEvansvilleUI.Controls"
+    xmlns:toolkit="using:Microsoft.Toolkit.Uwp.UI.Controls"
     Loaded="Page_Loaded">
 
     <Page.Resources>
         <Storyboard x:Name="UIFadeIn">
             <DoubleAnimation Storyboard.TargetName="UIGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:1"/>
         </Storyboard>
+
+        <Storyboard x:Name="LoadingFadeIn">
+            <DoubleAnimation Storyboard.TargetName="LoadingGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
+        </Storyboard>
     </Page.Resources>
 
-    <Grid x:Name="UIGrid" Opacity="0">
+    <Grid x:Name="UIGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
-        
-        <Frame x:Name="AppFrame" Navigated="AppFrame_Navigated" Grid.Row="0" Grid.RowSpan="2" />
+
+        <Frame x:Name="AppFrame" Grid.Row="0" Grid.RowSpan="2"/>
+
 
         <CommandBar x:Name="TitleBar" DefaultLabelPosition="Right" OverflowButtonVisibility="Auto" VerticalAlignment="Top">
             <CommandBar.Background>
                 <AcrylicBrush 
                     AlwaysUseFallback="False" 
-                    TintColor="{StaticResource TitleBarColor}" 
+                    TintColor="Black" 
                     TintOpacity="0.5" />
             </CommandBar.Background>
 
@@ -113,7 +118,21 @@
                 Background="Green" Foreground="White" FontSize="18" Padding="10" CornerRadius="10" 
                  x:FieldModifier="public"/>
         </StackPanel>
+
         
+        <Grid x:Name="LoadingGrid" Grid.Row="0" Grid.RowSpan="2" Opacity="0" Visibility="Collapsed">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!--<ProgressRing IsActive="True" Height="50" Width="50"/>-->
+                <TextBlock Text="Loading..." HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Grid.Background>
+                <AcrylicBrush
+                    TintColor="Black"
+                    TintOpacity="0.1"/>
+            </Grid.Background>
+        </Grid>
+
 
     </Grid>
 </Page>

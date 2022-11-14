@@ -5,22 +5,20 @@ using System.Diagnostics.Contracts;
 
 namespace ElevateEvansville_API.Configurations
 {
-    public class BalanceConfiguration : IEntityTypeConfiguration<Balance>
+    public class BalanceConfiguration : IEntityTypeConfiguration<Balances>
     {
-        public void Configure(EntityTypeBuilder<Balance> builder)
+        public void Configure(EntityTypeBuilder<Balances> builder)
         {
-            builder.ToTable("Balance");
+            builder.ToTable("Balances");
 
             builder.HasKey(c => c.Id);
-            builder.Property(c => c.Id)
-                .HasColumnName("BalanceID");
 
-            //builder.Property(c => c.VendorLocationID)
-            //    .HasColumnName("VndLocID");
+            builder.Property(c => c.TotalBalance)
+                .HasColumnName("TotalBalance");
 
             //builder.Property(c => c.ContractYYMM)
             //    .HasColumnName("ContrYYMM");
-        
+
         }
 
     }

@@ -15,27 +15,101 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\BalanceDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\RequestsDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\TransactionsDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Services\PayPalService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\WebApiBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Controls\Dialogs\InputBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Dialogs\MessageBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Messages\PayPalDetailMessage.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Messages\PreviewMessage.xaml.cs">
+      <DependentUpon>PreviewMessage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\Web Navigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Web UI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\CostOfLivingPage.xaml.cs">
+      <DependentUpon>CostOfLivingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\RailroadPage.xaml.cs">
+      <DependentUpon>RailroadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\SolarCanopiesPage.xaml.cs">
+      <DependentUpon>SolarCanopiesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PayPalPage.xaml.cs">
+      <DependentUpon>PayPalPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PlatformPage.xaml.cs">
+      <DependentUpon>PlatformPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\PrivacyPage.xaml.cs">
       <DependentUpon>PrivacyPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml.cs">
+      <DependentUpon>SupportPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\Messages\PayPalDetailMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\Messages\PreviewMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Assets\Fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="$(MSBuildThisFileDirectory)Assets\SharedAssets.md" />
+    <Page Include="$(MSBuildThisFileDirectory)Pages\AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\CostOfLivingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\RailroadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\SolarCanopiesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\PayPalPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\PlatformPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\PrivacyPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
@@ -50,20 +124,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </_Globbled_Page>
-    <Page Include="@(_Globbled_Page)">
-      <SubType>Designer</SubType>
-    </Page>
     <_Globbed_Compile Include="$(MSBuildThisFileDirectory)**/*.xaml.cs" Exclude="@(Compile)">
       <DependentUpon>%(Filename)</DependentUpon>
     </_Globbed_Compile>
     <_Globbed_Compile Include="$(MSBuildThisFileDirectory)**/*.cs" Exclude="@(Compile);@(_Globbed_Compile)" />
-    <Compile Include="@(_Globbed_Compile)" />
     <_Globbed_PRIResource Include="$(MSBuildThisFileDirectory)**/*.resw" Exclude="@(PRIResource)" />
     <PRIResource Include="@(_Globbed_PRIResource)" />
     <_Globbed_Content Include="$(MSBuildThisFileDirectory)Assets/**/*.*" Exclude="@(Content)" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Arrow.png" />
+    <None Include="$(MSBuildThisFileDirectory)Assets\Fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="$(MSBuildThisFileDirectory)Assets\SharedAssets.md" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Bank.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\BillboardsIn.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\BillboardsInFull.png" />
@@ -75,13 +148,11 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Header.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Instagram.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Logo.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Meter.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Multi.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Payment.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Payment2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Paypal.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Queue.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\ScrollDown.gif" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Server.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Tiktok.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Twitter.png" />
@@ -89,5 +160,8 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\YouTube.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Profile\Cover-Collapsed.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Profile\Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Support\" />
   </ItemGroup>
 </Project>

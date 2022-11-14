@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 using Windows.UI.Xaml.Controls;
+using System.IO;
+using System.Linq;
+using Windows.UI.Xaml.Media.Animation;
+using Windows.UI.Xaml;
+using System.ServiceModel.Description;
+using ElevateEvansvilleUI.Controls.Dialogs;
+using System.Threading.Tasks;
 #if __WASM__
 using Uno.Foundation;
 #endif
@@ -16,6 +23,35 @@ namespace ElevateEvansvilleUI.Extensions
         /// </summary>
         public static Frame AppFrame;
 
+        public static Grid LoadingGrid;
+        public static Storyboard LoadingFadeIn;
+
+        public static Button SupportButton;
+
+        private static Type SourceType;
+
+
+        public static void Navigate(Type sourceType)
+        {
+            SourceType = sourceType;
+            LoadingGrid.Visibility = Visibility.Visible;
+            LoadingFadeIn.Begin();
+            SupportButton.Visibility = Visibility.Visible;
+        }
+
+        public static void LoadingFadeIn_Completed(object sender, object e)
+        {
+            AppFrame.Navigate(SourceType);
+        }
+
+        public static void AppFrame_Navigated(object sender, Windows.UI.Xaml.Navigation.NavigationEventArgs e)
+        {
+            LoadingGrid.Visibility = Visibility.Collapsed;
+        }
+
+
+
+
         /// <summary>
         /// Detect the user agent of the browser in Web Assembly for mobile devices.
         /// </summary>
@@ -28,6 +64,8 @@ namespace ElevateEvansvilleUI.Extensions
 
             return false;
         }
+
+
 
 
 

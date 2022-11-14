@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using ElevateEvansville_API.Configurations;
+using ElevateEvansville_API.Functions;
 using ElevateEvansville_API.Mapping;
 using ElevateEvansville_API.Models;
 using ElevateEvansville_API.Repositories;
 using ElevateEvansville_API.Results;
+using ElevateEvansville_API.Services;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
@@ -41,11 +44,28 @@ namespace ElevateEvansville_API
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddDbContext<DatabaseContext>((options) =>
+            {
+#if DEBUG
+                options.EnableSensitiveDataLogging();
+                options.EnableDetailedErrors();
+#endif
+                options.UseSqlServer(Configuration.GetConnectionString("ConStr"),
+                    sqlServerOptionsAction: sqlOptions =>
+                    {
+                        sqlOptions.EnableRetryOnFailure();
+                    });
+            });
+
             services.AddMvc();
 
-            services.AddDbContext<DatabaseContext>(x => x.UseSqlServer(Configuration.GetConnectionString("ConStr")));
-            services.AddTransient<IBalanceRepository, BalanceRepository>();
+            services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
+            services.AddTransient<IEmailService, EmailService>();
 
+            services.AddTransient<IBalanceRepository, BalanceRepository>();
+            services.AddTransient<ITransactionRepository, TransactionsRepository>();
 
         }
 
@@ -56,7 +76,13 @@ namespace ElevateEvansville_API
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ASPNetCoreWebAPiDemo v1"));
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AudubonApi v1");
+                    c.DocExpansion(DocExpansion.None);
+                    c.ShowCommonExtensions();
+                    c.EnableFilter();
+                });
             }
 
             app.UseHttpsRedirection();

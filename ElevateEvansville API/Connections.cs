@@ -24,8 +24,8 @@
         public static ElevateEvansvilleConnection Azure = new ElevateEvansvilleConnection()
         {
             Catalog = "ElevateEvansville",
-            Server = "tcp:wandtket.database.windows.net",
-            UserID = "Wandtket",
+            Server = "elevateevansville.database.windows.net",
+            UserID = "ElevateEvansville",
             Password = ")u9f3]>{Z1hsxIHN,}gw",
         };
     }

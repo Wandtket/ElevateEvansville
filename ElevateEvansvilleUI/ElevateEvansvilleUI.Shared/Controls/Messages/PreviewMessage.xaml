@@ -1,0 +1,65 @@
+﻿<UserControl
+    x:Class="ElevateEvansvilleUI.Controls.Messages.PreviewMessage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElevateEvansvilleUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="375">
+
+    <Grid MaxWidth="375">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0">
+            This site is currently under construction and is subject to change, please check back in periodically for updates.
+        </TextBlock>
+
+        <Grid Grid.Row="1" HorizontalAlignment="Stretch" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" FontWeight="Bold">
+                Changelog:
+            </TextBlock>
+
+            <TextBlock Grid.Column="1" FontSize="11"  HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                Last Updated: 11/06/2022
+            </TextBlock>
+
+        </Grid>
+
+
+        <StackPanel Grid.Row="2" Margin="15,5,0,0" Spacing="5">
+            <TextBlock>
+                Event Calendars now operational for Outlook, Google and Yahoo
+            </TextBlock>
+            <TextBlock>
+                Paypal API operational (UI coming later)
+            </TextBlock>
+            <TextBlock>
+                Added 'Distribute All' support item.
+            </TextBlock>
+            <TextBlock>
+                Fixed application theme on iOS.
+            </TextBlock>
+            <TextBlock>
+                Made support page items more readable on smaller displays.
+            </TextBlock>
+            <TextBlock>
+                Moved mission statement to Platform page
+            </TextBlock>
+        </StackPanel>
+
+
+
+    </Grid>
+
+</UserControl>

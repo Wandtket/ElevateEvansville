@@ -7,15 +7,12 @@ using System.Threading.Tasks;
 
 namespace ElevateEvansvilleUI.DTOs
 {
-    internal class BalanceDTO
+    public class BalanceDTO
     {
         [JsonPropertyName("ID")]
-        public int ID { get; set; }
+        public int BalanceID { get; set; }
 
-
-        [JsonPropertyName("TotalBalance")]
-        public string TotalBalance { get; set; }
-
-        
+        [JsonPropertyName("Balance")]
+        public string Balance { get; set; }
     }
 }

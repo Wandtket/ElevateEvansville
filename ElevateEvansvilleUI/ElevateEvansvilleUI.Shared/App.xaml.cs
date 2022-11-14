@@ -1,23 +1,13 @@
-﻿using ElevateEvansvilleUI.Controls.Dialogs;
-using ElevateEvansvilleUI.Extensions;
+﻿using ElevateEvansvilleUI.Controls;
+using ElevateEvansvilleUI.Controls.Messages;
+using ElevateEvansvilleUI.Pages;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
 
 namespace ElevateEvansvilleUI
 {
@@ -40,7 +30,7 @@ namespace ElevateEvansvilleUI
 
             this.RequestedTheme = ApplicationTheme.Dark;
             
-
+            
 #if HAS_UNO || NETFX_CORE
             this.Suspending += OnSuspending;
 #endif
@@ -97,10 +87,35 @@ namespace ElevateEvansvilleUI
                     // configuring the new page by passing required information as a navigation
                     // parameter
 
-                    await MessageBox.Show("This site is currently under construction and is subject to change, please check back in periodically for updates."
-                        , "NOTICE");
 
+                    //Preview Mode Message
+#if HAS_UNO_WASM
+
+                    ContentDialog dialog = new ContentDialog();
+                    dialog.Title = "PREVIEW MODE";
+                    dialog.SecondaryButtonText = "Continue";
+                    PreviewMessage message = new PreviewMessage();
+                    dialog.Content = message;
+                    await dialog.ShowAsync();
+#endif
+
+                    //string log = "";
+                    //foreach (string item in Changelog.Get()) { log = log + "   " + item + Environment.NewLine; }
+                    //log = log + Environment.NewLine + $"Last Updated: {Changelog.UpdateDate}";
+
+                    //await MessageBox.Show("This site is currently under construction and is subject to change, please check back in periodically for updates." + Environment.NewLine + Environment.NewLine + "Changelog:" + Environment.NewLine + log
+                    //    , $"PREVIEW MODE", "Continue");
+
+
+                    //Navigate to the MainPage
+#if __WASM__
                     rootFrame.Navigate(typeof(MainPage), args.Arguments);
+#elif WINDOWS_UWP
+                    rootFrame.Navigate(typeof(PayPalPage), args.Arguments);
+#endif
+
+
+
                 }
                 // Ensure the current window is active
                 _window.Activate();
@@ -139,7 +154,8 @@ namespace ElevateEvansvilleUI
             var factory = LoggerFactory.Create(builder =>
             {
 #if __WASM__
-                builder.AddProvider(new global::Uno.Extensions.Logging.WebAssembly.WebAssemblyConsoleLoggerProvider());
+                
+                //builder.AddProvider(new global::Uno.Extensions.Logging.WebAssembly.WebAssemblyConsoleLoggerProvider());
 #elif __IOS__
                 builder.AddProvider(new global::Uno.Extensions.Logging.OSLogLoggerProvider());
 #elif NETFX_CORE
@@ -155,6 +171,8 @@ namespace ElevateEvansvilleUI
                 builder.AddFilter("Uno", LogLevel.Warning);
                 builder.AddFilter("Windows", LogLevel.Warning);
                 builder.AddFilter("Microsoft", LogLevel.Warning);
+
+                
 
                 // Generic Xaml events
                 // builder.AddFilter("Windows.UI.Xaml", LogLevel.Debug );

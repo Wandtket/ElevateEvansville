@@ -7,12 +7,49 @@ using System.Threading.Tasks;
 
 namespace ElevateEvansvilleUI.DTOs
 {
-    internal class TransactionsDTO
+    public class TransactionsDTO
     {
         [JsonPropertyName("TransactionID")]
-        public int TransactionID { get; set; }
+        public string TransactionID { get; set; }
 
-        [JsonPropertyName("TransactionType")]
-        public string TransactionType { get; set; }
+        [JsonPropertyName("Class")]
+        public string Class { get; set; }
+
+        [JsonPropertyName("Status")]
+        public string Status { get; set; }
+
+        [JsonPropertyName("Type")]
+        public string Type { get; set; }
+
+        [JsonPropertyName("Name")]
+        public string Name { get; set; }
+
+        [JsonPropertyName("Memo")]
+        public string Memo { get; set; }
+
+        [JsonPropertyName("Payer")]
+        public string Payer { get; set; }
+
+        [JsonPropertyName("PayerDisplayName")]
+        public string PayerDisplayName { get; set; }
+
+        [JsonPropertyName("FeeAmount")]
+        public string FeeAmount { get; set; }
+
+        [JsonPropertyName("GrossAmount")]
+        public string GrossAmount { get; set; }
+
+        [JsonPropertyName("NetAmount")]
+        public string NetAmount { get; set; }
+
+        [JsonPropertyName("Timestamp")]
+        public DateTime Timestamp { get; set; }
     }
+
+    public class TransactionListDTO
+    {
+        [JsonPropertyName("TransactionList")]
+        public IEnumerable<TransactionsDTO> Transactions { get; set; }
+    }
+
 }

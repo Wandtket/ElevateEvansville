@@ -40,8 +40,35 @@
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
+
+            <controls:Expander Grid.Row="0">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Mission Statement" FontWeight="Bold"/>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            For 10 years I've lived all over the world, from Asia to Europe, and I'm ready to 
+                            bring home what I've learned.
+                        </TextBlock>
+                        <TextBlock>
+                            With a background in military logistics, software engineering, and an aptitude for 
+                            disruptive innovation, there is no one better suited to making Evansville one of the 
+                            healthiest cities in America.
+                        </TextBlock>
+                        <TextBlock>
+                            In a world strife with uncertainty about the future, I want you to find inspiration to thrive.
+                        </TextBlock>
+                        
+                    </StackPanel>
+                </controls:Expander.Content>
+            </controls:Expander>
 
             <controls:Expander Grid.Row="1">
                 <controls:Expander.Header>
@@ -62,6 +89,43 @@
                             the cost of living for the working class of Evansville IN. If the decisions of the city 
                             council do not align with that premise, the powers of the mayor will be used to stall or 
                             hinder the degradation of the city.
+                        </TextBlock>
+                    </StackPanel>
+                </controls:Expander.Content>
+            </controls:Expander>
+
+
+            <controls:Expander Grid.Row="2">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Corruption" FontWeight="Bold"/>
+                        <TextBlock  HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="CorruptionSuggestion" 
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Corruption%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            Publicly elected members of the city will only accept income of considerable size from their offices salary.
+                        </TextBlock>
+                        <TextBlock>
+                            Embezzlement of city funds <Bold>will not</Bold> be tolerated at any level.
+                        </TextBlock>
+                        <TextBlock>
+                            A publicly elected member of the city will not use their position of authority to enrich themselves, their close
+                            associates, their friends, or their family.
+                        </TextBlock>
+                        <TextBlock>
+                            Publicly elected officials will be required to forfeit their stock holdings prior to holding office. Owned assets
+                            that will passively generate income must be placed in a blind trust or handed off to a trusted associate.
+                        </TextBlock>
+                        <TextBlock>
+                            <Bold>All</Bold> publicly elected officials will be denied access to their office's authority until proof the prior
+                            requirements are met.
                         </TextBlock>
                     </StackPanel>
                 </controls:Expander.Content>
@@ -133,7 +197,7 @@
             </controls:Expander>
             
             
-            <controls:Expander  Grid.Row="2">
+            <controls:Expander  Grid.Row="3">
                 <controls:Expander.Header>
                     <Grid>
                         <TextBlock Text="Police" FontWeight="Bold"/>
@@ -171,6 +235,11 @@
                         </TextBlock>
 
                         <TextBlock>
+                            On duty officers that are stationed at public schools will <Bold><Underline>not</Underline></Bold> wear their uniforms in an effort
+                            to improve student mental health.
+                        </TextBlock>
+
+                        <TextBlock>
                             Teenagers and children who have been unlawfully arrested for non-violent, perceived, behavioral issues by 
                             school-stationed police will have their records cleared. Repeating juveniles will also be given every opportunity
                             for rehabilitation by the appropriate servicing agents.
@@ -186,13 +255,14 @@
                             If the officer has been flagged enough for behavioral issues that officer will be released or placed on desk duties 
                             depending on the severity of their actions.
                         </TextBlock>
-                                            
+                        
+                        
                     </StackPanel>
 
                 </controls:Expander.Content>
             </controls:Expander>
 
-            <controls:Expander Grid.Row="3">
+            <controls:Expander Grid.Row="4">
                 <controls:Expander.Header>
                     <Grid>
                         <TextBlock Text="Crime Reduction" FontWeight="Bold"/>
@@ -209,25 +279,36 @@
                         <TextBlock>
                             There is one common denominator among all petty crimes in every city around the world, <Underline>Poverty.</Underline>
                         </TextBlock>
+                        
                         <TextBlock>
                             The core platform of this campaign is to reduce the cost of living and increase the quality of life.
                             If successful, the crime rate of Evansville will naturally decrease as its citizens begin to 
                             thrive economically.
                         </TextBlock>
+                        
                         <TextBlock>
-                            Once economic situation of the working class of Evansville has improved, the core focus of crime reduction
+                            Once the economic situation of the working class of Evansville has improved, the core focus of crime reduction
                             will be shifted to <Hyperlink NavigateUri="https://www.fbi.gov/investigate/white-collar-crime">white-collar crimes.</Hyperlink>
                         </TextBlock>
 
                         <TextBlock>
-                            Fines for petty crimes such as illegal parking or speeding through an intersection will scale with the individuals income rather
+                            Fines for crimes such as illegal parking or speeding through an intersection will scale with the individuals income rather
                             than being a fixed rate, crimes committed by juveniles will be fined based on their parents income.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Misdemeanor courts will no longer engage in the practice of 
+                            <Hyperlink NavigateUri="https://www.brennancenter.org/our-work/research-reports/how-cash-bail-works#:~:text=Cash%20bail%20is%20used%20as%20a%20guarantee%20that,have%20broad%20discretion%20to%20raise%20or%20lower%20it.">
+                                cash bails.
+                            </Hyperlink>
+                            
+                            Cash bails for more agregious crimes will scale with an individuals income.
                         </TextBlock>
                     </StackPanel>
                 </controls:Expander.Content>
             </controls:Expander>
 
-            <controls:Expander  Grid.Row="4">
+            <controls:Expander  Grid.Row="5">
                 <controls:Expander.Header>
                     <Grid>
                         <TextBlock Text="School Board" FontWeight="Bold"/>
@@ -265,7 +346,7 @@
                 </controls:Expander.Content>
             </controls:Expander>
 
-            <controls:Expander  Grid.Row="5">
+            <controls:Expander  Grid.Row="6">
                 <controls:Expander.Header>
                     <Grid>
                         <TextBlock Text="Housing" FontWeight="Bold"/>
@@ -303,10 +384,10 @@
                 </controls:Expander.Content>
             </controls:Expander>
 
-            <controls:Expander  Grid.Row="6">
+            <controls:Expander  Grid.Row="7">
                 <controls:Expander.Header>
                     <Grid>
-                        <TextBlock Text="Transportation and Services" FontWeight="Bold"/>
+                        <TextBlock Text="Transportation" FontWeight="Bold"/>
                         <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
                             <Hyperlink x:Name="TransportationSuggestion"
                                        NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Transportation%20Suggestion">
@@ -343,7 +424,7 @@
                 </controls:Expander.Content>
             </controls:Expander>
 
-            <controls:Expander  Grid.Row="7">
+            <controls:Expander  Grid.Row="8">
                 <controls:Expander.Header>
                     <Grid>
                         <TextBlock Text="Parks and Recreations" FontWeight="Bold"/>
@@ -363,6 +444,41 @@
                             within city limits and will be strategically placed to cover exposed asphalt, blacktop, and concrete. 
                             New trees will be planted from wherever the old ones were located.
                         </TextBlock>
+                    </StackPanel>
+
+                </controls:Expander.Content>
+            </controls:Expander>
+
+
+            <controls:Expander Grid.Row="9">
+                <controls:Expander.Header>
+                    <Grid>
+                        <TextBlock Text="Final Remarks" FontWeight="Bold"/>
+                        <TextBlock HorizontalAlignment="Right" FontWeight="Bold">
+                            <Hyperlink x:Name="FinalSuggestion"
+                                       NavigateUri="mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Parks%20and%20Recreations%20Suggestion">
+                                Make a suggestion
+                            </Hyperlink>
+                        </TextBlock>
+                    </Grid>
+                </controls:Expander.Header>
+                <controls:Expander.Content>
+                    <StackPanel>
+                        <TextBlock>
+                            Each item in this platform will be viewed as a task to complete, each one will be accomplished as quickly as the powers 
+                            of the mayor will allow. Some items may need to be accomplished before others to maximize effectiveness.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Delaying the completion of these tasks for election convenience will not be considered.
+                        </TextBlock>
+
+                        <TextBlock>
+                            Opponents to accomplishing these tasks will become highlighted as obstacles to Evansvilles propserity and will need to prepare
+                            their defense to their constituents next election cycle.
+                        </TextBlock>
+                       
+                        
                     </StackPanel>
 
                 </controls:Expander.Content>
