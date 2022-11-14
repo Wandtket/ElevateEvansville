@@ -505,7 +505,7 @@ namespace ElevateEvansvilleUI.Pages
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 102:30)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 102:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -519,31 +519,31 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 105:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 105:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 106:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 106:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 107:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 107:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 108:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 108:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 109:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 109:38)
 															}
 															,
 														}
@@ -553,18 +553,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 113:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 113:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 114:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 114:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 103:34)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 103:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -576,18 +576,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 119:46)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 119:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 120:46)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 120:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 117:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 117:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -596,7 +596,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/Calendar.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Calendar.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 123:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 123:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c40 => 
 																	{
@@ -610,7 +610,7 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 124:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 124:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
@@ -651,13 +651,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 129:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 129:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "The most important step is obviously to vote."/* string/, The most important step is obviously to vote., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 131:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 131:35)
 																	}
 																	,
 																}
@@ -674,13 +674,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 133:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 133:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Politics isn't something the general public should need to focus on every waking moment of their lives, it's supposed to be either boring or exciting. Not something that causes existential dread and animosity toward your neighbors."/* string/, Politics isn't something the general public should need to focus on every waking moment of their lives, it's supposed to be either boring or exciting. Not something that causes existential dread and animosity toward your neighbors., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 137:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 137:35)
 																	}
 																	,
 																}
@@ -697,13 +697,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 139:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 139:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Add the election times to your calendar and I'll remind you when the voting booths are open."/* string/, Add the election times to your calendar and I'll remind you when the voting booths are open., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 141:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 141:35)
 																	}
 																	,
 																}
@@ -721,7 +721,7 @@ namespace ElevateEvansvilleUI.Pages
 																Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 																Spacing = 5d/* double/, 5, StackPanel/Spacing */,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, StackPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 143:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 143:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
@@ -733,7 +733,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Flyout = 																		new global::Windows.UI.Xaml.Controls.MenuFlyout
 																		{
 																			Placement = global::Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode.Top/* Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode/, Top, MenuFlyout/Placement */,
-																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 146:50)
+																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 146:46)
 																			Items = 
 																			{
 																				new global::Windows.UI.Xaml.Controls.MenuFlyoutItem
@@ -741,7 +741,7 @@ namespace ElevateEvansvilleUI.Pages
 																					IsParsing = true,
 																					Name = "CalendarGoogle",
 																					Text = "Google"/* string/, Google, MenuFlyoutItem/Text */,
-																					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 147:54)
+																					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 147:50)
 																				}
 																				.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler9)(c50 => 
 																				{
@@ -758,7 +758,7 @@ namespace ElevateEvansvilleUI.Pages
 																					IsParsing = true,
 																					Name = "CalendarYahoo",
 																					Text = "Yahoo"/* string/, Yahoo, MenuFlyoutItem/Text */,
-																					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 148:54)
+																					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 148:50)
 																				}
 																				.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler9)(c51 => 
 																				{
@@ -775,7 +775,7 @@ namespace ElevateEvansvilleUI.Pages
 																					IsParsing = true,
 																					Name = "CalendarOutlook",
 																					Text = "Outlook"/* string/, Outlook, MenuFlyoutItem/Text */,
-																					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 149:54)
+																					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 149:50)
 																				}
 																				.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler9)(c52 => 
 																				{
@@ -790,7 +790,7 @@ namespace ElevateEvansvilleUI.Pages
 																			}
 																		}
 																		,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 144:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 144:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c54 => 
 																	{
@@ -850,7 +850,7 @@ namespace ElevateEvansvilleUI.Pages
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 165:30)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 165:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -864,31 +864,31 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 169:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 169:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 170:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 170:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 171:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 171:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 172:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 172:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 173:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 173:38)
 															}
 															,
 														}
@@ -898,18 +898,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 177:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 177:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 178:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 178:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 167:34)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 167:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -921,18 +921,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 183:46)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 183:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 184:46)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 184:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 181:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 181:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -941,7 +941,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/Facebook.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Facebook.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 187:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 187:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c68 => 
 																	{
@@ -955,7 +955,7 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 188:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 188:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
@@ -996,13 +996,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 194:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 194:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "The most popular social media site in Evansville, IN is Facebook."/* string/, The most popular social media site in Evansville, IN is Facebook., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 196:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 196:35)
 																	}
 																	,
 																}
@@ -1019,13 +1019,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 198:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 198:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "To promote this campaign on Meta Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,"/* string/, To promote this campaign on Meta Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,, Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 200:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 200:35)
 																	}
 																	,
 																}
@@ -1042,13 +1042,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 202:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 202:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Once the threshold has been reached the server will load it into Facebook and the ads will be published."/* string/, Once the threshold has been reached the server will load it into Facebook and the ads will be published., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 204:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 204:35)
 																	}
 																	,
 																}
@@ -1064,17 +1064,17 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 206:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 206:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
 																	{
 																		IsParsing = true,
 																		Content = @"Promote"/* object/, Promote, Button/Content */,
-																		Tag = @"Facebook"/* object/, Facebook, Button/Tag */,
+																		Tag = @"Elevate Evansville - Facebook"/* object/, Elevate Evansville - Facebook, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 207:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 207:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c78 => 
 																	{
@@ -1091,7 +1091,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Tag = @"Facebook"/* object/, Facebook, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 208:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 208:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c79 => 
 																	{
@@ -1110,7 +1110,7 @@ namespace ElevateEvansvilleUI.Pages
 																		BorderThickness = new global::Windows.UI.Xaml.Thickness(3)/* Windows.UI.Xaml.Thickness/, 3, TextBox/BorderThickness */,
 																		FontSize = 18d/* double/, 18, TextBox/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, TextBox/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 209:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 209:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler13)(c80 => 
 																	{
@@ -1131,7 +1131,7 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Height = 280d/* double/, 280, Grid/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 214:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 213:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.ProgressBar
@@ -1140,7 +1140,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Name = "FacebookProgress",
 																		Maximum = 100d/* double/, 100, ProgressBar/Maximum */,
 																		Minimum = 0d/* double/, 0, ProgressBar/Minimum */,
-																		Value = 50d/* double/, 50, ProgressBar/Value */,
+																		Value = 0d/* double/, 0, ProgressBar/Value */,
 																		Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, ProgressBar/Background */,
 																		BorderBrush = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, ProgressBar/BorderBrush */,
 																		Foreground = SolidColorBrushHelper.Green/* Windows.UI.Xaml.Media.Brush/, Green, ProgressBar/Foreground */,
@@ -1151,10 +1151,10 @@ namespace ElevateEvansvilleUI.Pages
 																		RenderTransform = 																		new global::Windows.UI.Xaml.Media.RotateTransform
 																		{
 																			Angle = 270d/* double/, 270, RotateTransform/Angle */,
-																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 218:50)
+																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 217:46)
 																		}
 																		,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 215:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 214:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler16)(c83 => 
 																	{
@@ -1172,7 +1172,7 @@ namespace ElevateEvansvilleUI.Pages
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(0,30,0,0)/* Windows.UI.Xaml.Thickness/, 0,30,0,0, TextBlock/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 223:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 222:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c84 => 
 																	{
@@ -1188,7 +1188,7 @@ namespace ElevateEvansvilleUI.Pages
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, TextBlock/VerticalAlignment */,
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 225:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 224:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c85 => 
 																	{
@@ -1242,12 +1242,12 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(25,25,25,0)/* Windows.UI.Xaml.Thickness/, 25,25,25,0, ElevatedView/Margin */,
 											Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 											ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 235:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 233:22)
 											ElevatedContent = 
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 241:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 239:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -1260,12 +1260,24 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 245:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 243:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 244:38)
+															}
+															,
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 245:38)
+															}
+															,
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
 																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 246:38)
 															}
 															,
@@ -1275,18 +1287,6 @@ namespace ElevateEvansvilleUI.Pages
 																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 247:38)
 															}
 															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 248:38)
-															}
-															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 249:38)
-															}
-															,
 														}
 														,
 														ColumnDefinitions = 
@@ -1294,18 +1294,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 253:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 251:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 254:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 252:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 243:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 241:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -1317,18 +1317,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 259:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 257:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 260:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 258:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 257:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 255:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -1338,7 +1338,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Height = 65d/* double/, 65, Image/Height */,
 																		Width = 65d/* double/, 65, Image/Width */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(-10)/* Windows.UI.Xaml.Thickness/, -10, Image/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 263:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 261:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c99 => 
 																	{
@@ -1352,18 +1352,18 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 264:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 262:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
 																			{
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 265:42)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 263:42)
 																				Inlines = 
 																				{
 																					new global::Windows.UI.Xaml.Documents.Run
 																					{
 																						Text = "VistaPrint"/* string/, VistaPrint, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 265:59)
+																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 263:59)
 																					}
 																					,
 																				}
@@ -1393,13 +1393,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 270:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 268:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Yard signs, bumper stickers, and banners."/* string/, Yard signs, bumper stickers, and banners., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 272:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 270:35)
 																	}
 																	,
 																}
@@ -1416,24 +1416,24 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 274:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 272:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Instead of ordering yard signs in bulk and having wasteful overstock at the end of an election I would like to try an "/* string/, Instead of ordering yard signs in bulk and having wasteful overstock at the end of an election I would like to try an , Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 275:156)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 273:156)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Documents.Bold
 																	{
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 275:156)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 273:156)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Run
 																			{
 																				Text = "on-demand approach."/* string/, on-demand approach., Run/Text */,
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 275:182)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 273:182)
 																			}
 																			,
 																		}
@@ -1453,13 +1453,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 278:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 276:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Showing support in your workplace or business is a time-honored tradition, to purchase your own merchandise, select and download a template, click 'Order from Vistaprint', and then select the template you downloaded."/* string/, Showing support in your workplace or business is a time-honored tradition, to purchase your own merchandise, select and download a template, click 'Order from Vistaprint', and then select the template you downloaded., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 280:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 278:35)
 																	}
 																	,
 																}
@@ -1476,7 +1476,7 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, WrapPanel/Orientation */,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 282:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 280:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
@@ -1485,7 +1485,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Content = @"Download Template"/* object/, Download Template, Button/Content */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 283:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 281:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c110 => 
 																	{
@@ -1499,7 +1499,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Content = @"Order from Vistaprint"/* object/, Order from Vistaprint, Button/Content */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 284:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 282:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c111 => 
 																	{
@@ -1552,12 +1552,12 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(25,25,25,0)/* Windows.UI.Xaml.Thickness/, 25,25,25,0, ElevatedView/Margin */,
 											Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 											ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 291:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 289:22)
 											ElevatedContent = 
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 297:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 295:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -1568,6 +1568,18 @@ namespace ElevateEvansvilleUI.Pages
 														ColumnSpacing = 15d/* double/, 15, Grid/ColumnSpacing */,
 														RowDefinitions = 
 														{
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 299:38)
+															}
+															,
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 300:38)
+															}
+															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
@@ -1586,18 +1598,6 @@ namespace ElevateEvansvilleUI.Pages
 																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 303:38)
 															}
 															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 304:38)
-															}
-															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 305:38)
-															}
-															,
 														}
 														,
 														ColumnDefinitions = 
@@ -1605,18 +1605,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 309:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 307:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 310:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 308:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 299:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 297:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -1628,18 +1628,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 315:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 313:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 316:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 314:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 313:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 311:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -1648,7 +1648,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/Youtube.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Youtube.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 319:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 317:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c125 => 
 																	{
@@ -1662,18 +1662,18 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 320:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 318:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
 																			{
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 321:42)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 319:42)
 																				Inlines = 
 																				{
 																					new global::Windows.UI.Xaml.Documents.Run
 																					{
 																						Text = "YouTube / Google"/* string/, YouTube / Google, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 321:65)
+																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 319:65)
 																					}
 																					,
 																				}
@@ -1703,13 +1703,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 326:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 324:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Google Adsense is the advertising platform for promoting content on Google searches and YouTube videos."/* string/, Google Adsense is the advertising platform for promoting content on Google searches and YouTube videos., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 328:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 326:35)
 																	}
 																	,
 																}
@@ -1726,13 +1726,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 330:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 328:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "To promote this campaign on Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,"/* string/, To promote this campaign on Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,, Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 332:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 330:35)
 																	}
 																	,
 																}
@@ -1749,13 +1749,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 334:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 332:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Once the threshold has been reached the server will load it into Adsense and the ads will be published."/* string/, Once the threshold has been reached the server will load it into Adsense and the ads will be published., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 336:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 334:35)
 																	}
 																	,
 																}
@@ -1772,13 +1772,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 338:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 336:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Once the threshold has been reached the server will load it into Adsense and the ads will be published."/* string/, Once the threshold has been reached the server will load it into Adsense and the ads will be published., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 340:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 338:35)
 																	}
 																	,
 																}
@@ -1794,17 +1794,17 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,15,0,0)/* Windows.UI.Xaml.Thickness/, 25,15,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 342:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 340:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
 																	{
 																		IsParsing = true,
 																		Content = @"Promote"/* object/, Promote, Button/Content */,
-																		Tag = @"Google"/* object/, Google, Button/Tag */,
+																		Tag = @"Elevate Evansville - Google"/* object/, Elevate Evansville - Google, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 343:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 341:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c137 => 
 																	{
@@ -1821,7 +1821,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Button/Visibility */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 344:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 342:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c138 => 
 																	{
@@ -1838,7 +1838,7 @@ namespace ElevateEvansvilleUI.Pages
 																		BorderThickness = new global::Windows.UI.Xaml.Thickness(3)/* Windows.UI.Xaml.Thickness/, 3, TextBox/BorderThickness */,
 																		FontSize = 18d/* double/, 18, TextBox/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, TextBox/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 345:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 343:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler13)(c139 => 
 																	{
@@ -1859,7 +1859,7 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Height = 280d/* double/, 280, Grid/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 350:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 348:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.ProgressBar
@@ -1868,7 +1868,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Name = "GoogleProgress",
 																		Maximum = 100d/* double/, 100, ProgressBar/Maximum */,
 																		Minimum = 0d/* double/, 0, ProgressBar/Minimum */,
-																		Value = 50d/* double/, 50, ProgressBar/Value */,
+																		Value = 0d/* double/, 0, ProgressBar/Value */,
 																		Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, ProgressBar/Background */,
 																		BorderBrush = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, ProgressBar/BorderBrush */,
 																		Foreground = SolidColorBrushHelper.Green/* Windows.UI.Xaml.Media.Brush/, Green, ProgressBar/Foreground */,
@@ -1879,10 +1879,10 @@ namespace ElevateEvansvilleUI.Pages
 																		RenderTransform = 																		new global::Windows.UI.Xaml.Media.RotateTransform
 																		{
 																			Angle = 270d/* double/, 270, RotateTransform/Angle */,
-																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 354:46)
+																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 352:46)
 																		}
 																		,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 351:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 349:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler16)(c142 => 
 																	{
@@ -1900,7 +1900,7 @@ namespace ElevateEvansvilleUI.Pages
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(0,30,0,0)/* Windows.UI.Xaml.Thickness/, 0,30,0,0, TextBlock/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 359:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 357:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c143 => 
 																	{
@@ -1916,7 +1916,7 @@ namespace ElevateEvansvilleUI.Pages
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, TextBlock/VerticalAlignment */,
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 361:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 359:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c144 => 
 																	{
@@ -1970,12 +1970,12 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(25,25,25,0)/* Windows.UI.Xaml.Thickness/, 25,25,25,0, ElevatedView/Margin */,
 											Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 											ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 374:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 372:22)
 											ElevatedContent = 
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 380:30)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 378:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -1989,31 +1989,31 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 384:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 382:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 385:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 383:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 386:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 384:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 387:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 385:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 388:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 386:38)
 															}
 															,
 														}
@@ -2023,18 +2023,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 392:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 390:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 393:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 391:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 382:34)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 380:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -2046,18 +2046,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 398:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 396:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 399:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 397:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 396:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 394:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -2066,7 +2066,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/Tiktok.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Tiktok.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 402:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 400:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c158 => 
 																	{
@@ -2080,18 +2080,18 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 403:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 401:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
 																			{
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 404:42)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 402:42)
 																				Inlines = 
 																				{
 																					new global::Windows.UI.Xaml.Documents.Run
 																					{
 																						Text = "TikTok"/* string/, TikTok, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 404:55)
+																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 402:55)
 																					}
 																					,
 																				}
@@ -2121,13 +2121,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 410:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 408:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "TikTok is a rising social media platform among younger people."/* string/, TikTok is a rising social media platform among younger people., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 412:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 410:35)
 																	}
 																	,
 																}
@@ -2144,13 +2144,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 414:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 412:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "To promote this campaign on TikTok, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,"/* string/, To promote this campaign on TikTok, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,, Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 416:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 414:35)
 																	}
 																	,
 																}
@@ -2167,13 +2167,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 418:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 416:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Once the threshold has been reached the server will load it into Tiktok and the ads will be published."/* string/, Once the threshold has been reached the server will load it into Tiktok and the ads will be published., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 420:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 418:35)
 																	}
 																	,
 																}
@@ -2189,17 +2189,17 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 422:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 420:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
 																	{
 																		IsParsing = true,
 																		Content = @"Promote"/* object/, Promote, Button/Content */,
-																		Tag = @"TikTok"/* object/, TikTok, Button/Tag */,
+																		Tag = @"Elevate Evansville - TikTok"/* object/, Elevate Evansville - TikTok, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 423:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 421:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c168 => 
 																	{
@@ -2215,7 +2215,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Content = @"Share"/* object/, Share, Button/Content */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 424:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 422:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c169 => 
 																	{
@@ -2232,7 +2232,7 @@ namespace ElevateEvansvilleUI.Pages
 																		BorderThickness = new global::Windows.UI.Xaml.Thickness(3)/* Windows.UI.Xaml.Thickness/, 3, TextBox/BorderThickness */,
 																		FontSize = 18d/* double/, 18, TextBox/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, TextBox/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 425:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 423:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler13)(c170 => 
 																	{
@@ -2253,7 +2253,7 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Height = 280d/* double/, 280, Grid/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 430:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 428:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.ProgressBar
@@ -2262,7 +2262,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Name = "TikTokProgress",
 																		Maximum = 100d/* double/, 100, ProgressBar/Maximum */,
 																		Minimum = 0d/* double/, 0, ProgressBar/Minimum */,
-																		Value = 50d/* double/, 50, ProgressBar/Value */,
+																		Value = 0d/* double/, 0, ProgressBar/Value */,
 																		Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, ProgressBar/Background */,
 																		BorderBrush = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, ProgressBar/BorderBrush */,
 																		Foreground = SolidColorBrushHelper.Green/* Windows.UI.Xaml.Media.Brush/, Green, ProgressBar/Foreground */,
@@ -2273,10 +2273,10 @@ namespace ElevateEvansvilleUI.Pages
 																		RenderTransform = 																		new global::Windows.UI.Xaml.Media.RotateTransform
 																		{
 																			Angle = 270d/* double/, 270, RotateTransform/Angle */,
-																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 434:46)
+																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 432:46)
 																		}
 																		,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 431:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 429:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler16)(c173 => 
 																	{
@@ -2294,7 +2294,7 @@ namespace ElevateEvansvilleUI.Pages
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(0,30,0,0)/* Windows.UI.Xaml.Thickness/, 0,30,0,0, TextBlock/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 439:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 437:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c174 => 
 																	{
@@ -2310,7 +2310,7 @@ namespace ElevateEvansvilleUI.Pages
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, TextBlock/VerticalAlignment */,
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 441:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 439:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c175 => 
 																	{
@@ -2364,12 +2364,12 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(25,25,25,0)/* Windows.UI.Xaml.Thickness/, 25,25,25,0, ElevatedView/Margin */,
 											Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 											ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 455:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 453:22)
 											ElevatedContent = 
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 461:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 459:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -2380,6 +2380,18 @@ namespace ElevateEvansvilleUI.Pages
 														ColumnSpacing = 15d/* double/, 15, Grid/ColumnSpacing */,
 														RowDefinitions = 
 														{
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 462:38)
+															}
+															,
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 463:38)
+															}
+															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
@@ -2398,18 +2410,6 @@ namespace ElevateEvansvilleUI.Pages
 																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 466:38)
 															}
 															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 467:38)
-															}
-															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 468:38)
-															}
-															,
 														}
 														,
 														ColumnDefinitions = 
@@ -2417,18 +2417,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 472:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 470:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 473:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 471:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 462:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 460:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -2440,18 +2440,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 478:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 476:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 479:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 477:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 476:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 474:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -2460,7 +2460,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/Twitter.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Twitter.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 482:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 480:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c189 => 
 																	{
@@ -2474,18 +2474,18 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 483:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 481:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
 																			{
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 484:42)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 482:42)
 																				Inlines = 
 																				{
 																					new global::Windows.UI.Xaml.Documents.Run
 																					{
 																						Text = "Twitter"/* string/, Twitter, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 484:56)
+																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 482:56)
 																					}
 																					,
 																				}
@@ -2515,13 +2515,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 490:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 488:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Google Adsense is the advertising platform for promoting content on Google searches and YouTube videos."/* string/, Google Adsense is the advertising platform for promoting content on Google searches and YouTube videos., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 492:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 490:35)
 																	}
 																	,
 																}
@@ -2538,13 +2538,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 494:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 492:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "To promote this campaign on Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,"/* string/, To promote this campaign on Adsense, specify a dollar amount you wish to provide, you'll then be redirected to a paypal request screen,, Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 496:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 494:35)
 																	}
 																	,
 																}
@@ -2561,13 +2561,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 498:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 496:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Once the threshold has been reached the server will load it into Adsense and the ads will be published."/* string/, Once the threshold has been reached the server will load it into Adsense and the ads will be published., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 500:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 498:35)
 																	}
 																	,
 																}
@@ -2583,17 +2583,17 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 502:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 500:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
 																	{
 																		IsParsing = true,
 																		Content = @"Promote"/* object/, Promote, Button/Content */,
-																		Tag = @"Google"/* object/, Google, Button/Tag */,
+																		Tag = @"Elevate Evansville - Twitter"/* object/, Elevate Evansville - Twitter, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 503:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 501:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c199 => 
 																	{
@@ -2610,7 +2610,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Tag = @"Twitter"/* object/, Twitter, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 504:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 502:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c200 => 
 																	{
@@ -2629,7 +2629,7 @@ namespace ElevateEvansvilleUI.Pages
 																		BorderThickness = new global::Windows.UI.Xaml.Thickness(3)/* Windows.UI.Xaml.Thickness/, 3, TextBox/BorderThickness */,
 																		FontSize = 18d/* double/, 18, TextBox/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, TextBox/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 505:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 503:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler13)(c201 => 
 																	{
@@ -2650,7 +2650,7 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Height = 280d/* double/, 280, Grid/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 508:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 506:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.ProgressBar
@@ -2659,7 +2659,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Name = "TwitterProgress",
 																		Maximum = 100d/* double/, 100, ProgressBar/Maximum */,
 																		Minimum = 0d/* double/, 0, ProgressBar/Minimum */,
-																		Value = 50d/* double/, 50, ProgressBar/Value */,
+																		Value = 0d/* double/, 0, ProgressBar/Value */,
 																		Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, ProgressBar/Background */,
 																		BorderBrush = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, ProgressBar/BorderBrush */,
 																		Foreground = SolidColorBrushHelper.Green/* Windows.UI.Xaml.Media.Brush/, Green, ProgressBar/Foreground */,
@@ -2670,10 +2670,10 @@ namespace ElevateEvansvilleUI.Pages
 																		RenderTransform = 																		new global::Windows.UI.Xaml.Media.RotateTransform
 																		{
 																			Angle = 270d/* double/, 270, RotateTransform/Angle */,
-																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 512:46)
+																			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 510:46)
 																		}
 																		,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 509:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 507:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler16)(c204 => 
 																	{
@@ -2691,7 +2691,7 @@ namespace ElevateEvansvilleUI.Pages
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(0,30,0,0)/* Windows.UI.Xaml.Thickness/, 0,30,0,0, TextBlock/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 517:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 515:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c205 => 
 																	{
@@ -2707,7 +2707,7 @@ namespace ElevateEvansvilleUI.Pages
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, TextBlock/VerticalAlignment */,
 																		HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 																		FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 519:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 517:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c206 => 
 																	{
@@ -2761,12 +2761,12 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(25,25,25,0)/* Windows.UI.Xaml.Thickness/, 25,25,25,0, ElevatedView/Margin */,
 											Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 											ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 527:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 525:22)
 											ElevatedContent = 
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 533:30)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 531:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -2780,31 +2780,31 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 537:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 535:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 538:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 536:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 539:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 537:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 540:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 538:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 541:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 539:38)
 															}
 															,
 														}
@@ -2814,18 +2814,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 545:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 543:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 546:42)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 544:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 535:34)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 533:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -2837,18 +2837,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 551:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 549:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 552:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 550:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 549:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 547:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -2857,7 +2857,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/BillboardsIn.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/BillboardsIn.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 555:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 553:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c220 => 
 																	{
@@ -2871,18 +2871,18 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 556:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 554:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
 																			{
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 557:42)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 555:42)
 																				Inlines = 
 																				{
 																					new global::Windows.UI.Xaml.Documents.Run
 																					{
 																						Text = "Billboards"/* string/, Billboards, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 557:59)
+																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 555:59)
 																					}
 																					,
 																				}
@@ -2912,13 +2912,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 563:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 561:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Contributing to the billboard budget will allow me to strategically place physical ads around town to have a wider reach than just social media."/* string/, Contributing to the billboard budget will allow me to strategically place physical ads around town to have a wider reach than just social media., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 565:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 563:35)
 																	}
 																	,
 																}
@@ -2935,13 +2935,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 567:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 565:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "There is no threshold for billboard advertising due to various price fluctuations, Instead the meter will just report the total contribution."/* string/, There is no threshold for billboard advertising due to various price fluctuations, Instead the meter will just report the total contribution., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 569:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 567:35)
 																	}
 																	,
 																}
@@ -2957,17 +2957,17 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,20,0,0)/* Windows.UI.Xaml.Thickness/, 25,20,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 572:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 570:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
 																	{
 																		IsParsing = true,
 																		Content = @"Contribute"/* object/, Contribute, Button/Content */,
-																		Tag = @"Billboards"/* object/, Billboards, Button/Tag */,
+																		Tag = @"Elevate Evansville - Billboards"/* object/, Elevate Evansville - Billboards, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 573:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 571:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c228 => 
 																	{
@@ -2986,7 +2986,7 @@ namespace ElevateEvansvilleUI.Pages
 																		BorderThickness = new global::Windows.UI.Xaml.Thickness(3)/* Windows.UI.Xaml.Thickness/, 3, TextBox/BorderThickness */,
 																		FontSize = 18d/* double/, 18, TextBox/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, TextBox/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 574:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 572:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler13)(c229 => 
 																	{
@@ -3039,12 +3039,12 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(25,25,25,0)/* Windows.UI.Xaml.Thickness/, 25,25,25,0, ElevatedView/Margin */,
 											Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 											ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 586:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 584:22)
 											ElevatedContent = 
 											new global::Windows.UI.Xaml.Controls.Grid
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 592:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 590:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.Grid
@@ -3055,6 +3055,18 @@ namespace ElevateEvansvilleUI.Pages
 														ColumnSpacing = 15d/* double/, 15, Grid/ColumnSpacing */,
 														RowDefinitions = 
 														{
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 594:38)
+															}
+															,
+															new global::Windows.UI.Xaml.Controls.RowDefinition
+															{
+																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 595:38)
+															}
+															,
 															new global::Windows.UI.Xaml.Controls.RowDefinition
 															{
 																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
@@ -3073,18 +3085,6 @@ namespace ElevateEvansvilleUI.Pages
 																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 598:38)
 															}
 															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 599:38)
-															}
-															,
-															new global::Windows.UI.Xaml.Controls.RowDefinition
-															{
-																Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 600:38)
-															}
-															,
 														}
 														,
 														ColumnDefinitions = 
@@ -3092,18 +3092,18 @@ namespace ElevateEvansvilleUI.Pages
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 604:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 602:38)
 															}
 															,
 															new global::Windows.UI.Xaml.Controls.ColumnDefinition
 															{
 																Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 605:38)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 603:38)
 															}
 															,
 														}
 														,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 594:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 592:30)
 														Children = 
 														{
 															new global::Windows.UI.Xaml.Controls.Grid
@@ -3115,18 +3115,18 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 610:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 608:42)
 																	}
 																	,
 																	new global::Windows.UI.Xaml.Controls.ColumnDefinition
 																	{
 																		Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 611:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 609:42)
 																	}
 																	,
 																}
 																,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 608:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 606:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Image
@@ -3135,7 +3135,7 @@ namespace ElevateEvansvilleUI.Pages
 																		Source = "/Assets/Images/Logos/Logo.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Logo.png, Image/Source */,
 																		Height = 50d/* double/, 50, Image/Height */,
 																		Width = 50d/* double/, 50, Image/Width */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 614:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 612:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c243 => 
 																	{
@@ -3149,18 +3149,18 @@ namespace ElevateEvansvilleUI.Pages
 																		IsParsing = true,
 																		FontSize = 26d/* double/, 26, TextBlock/FontSize */,
 																		VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 615:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 613:38)
 																		Inlines = 
 																		{
 																			new global::Windows.UI.Xaml.Documents.Bold
 																			{
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 616:42)
+																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 614:42)
 																				Inlines = 
 																				{
 																					new global::Windows.UI.Xaml.Documents.Run
 																					{
 																						Text = "All Platforms"/* string/, All Platforms, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 616:62)
+																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 614:62)
 																					}
 																					,
 																				}
@@ -3190,13 +3190,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 621:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 619:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Can't decide what to contribute to?"/* string/, Can't decide what to contribute to?, Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 623:39)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 621:35)
 																	}
 																	,
 																}
@@ -3213,13 +3213,13 @@ namespace ElevateEvansvilleUI.Pages
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,0,0,0)/* Windows.UI.Xaml.Thickness/, 25,0,0,0, TextBlock/Margin */,
 																FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 625:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 623:34)
 																Inlines = 
 																{
 																	new global::Windows.UI.Xaml.Documents.Run
 																	{
 																		Text = "Choose a dollar amount and distribute to all platforms evenly. Your money will not be used beyond the scope of these platforms. New platforms may be added in the future so be sure to keep checking this page."/* string/, Choose a dollar amount and distribute to all platforms evenly. Your money will not be used beyond the scope of these platforms. New platforms may be added in the future so be sure to keep checking this page., Run/Text */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 628:35)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 626:35)
 																	}
 																	,
 																}
@@ -3235,17 +3235,17 @@ namespace ElevateEvansvilleUI.Pages
 															{
 																IsParsing = true,
 																Margin = new global::Windows.UI.Xaml.Thickness(25,15,0,0)/* Windows.UI.Xaml.Thickness/, 25,15,0,0, WrapPanel/Margin */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 630:34)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 628:34)
 																Children = 
 																{
 																	new global::Windows.UI.Xaml.Controls.Button
 																	{
 																		IsParsing = true,
 																		Content = @"Distribute"/* object/, Distribute, Button/Content */,
-																		Tag = @"Distribute"/* object/, Distribute, Button/Tag */,
+																		Tag = @"Elevate Evansville - Distribute All"/* object/, Elevate Evansville - Distribute All, Button/Tag */,
 																		FontSize = 18d/* double/, 18, Button/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 631:42)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 629:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c251 => 
 																	{
@@ -3264,7 +3264,7 @@ namespace ElevateEvansvilleUI.Pages
 																		BorderThickness = new global::Windows.UI.Xaml.Thickness(3)/* Windows.UI.Xaml.Thickness/, 3, TextBox/BorderThickness */,
 																		FontSize = 18d/* double/, 18, TextBox/FontSize */,
 																		Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, TextBox/Margin */,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 632:38)
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 630:38)
 																	}
 																	.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler13)(c252 => 
 																	{
@@ -3344,18 +3344,18 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(48f, Windows.UI.Xaml.GridUnitType.Pixel)/* Windows.UI.Xaml.GridLength/, 48, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 652:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 650:18)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 653:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 651:18)
 							}
 							,
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 650:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 648:10)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Grid
@@ -3366,10 +3366,10 @@ namespace ElevateEvansvilleUI.Pages
 									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
 									TintColor = global::Windows.UI.Colors.Transparent/* Windows.UI.Color/, Transparent, AcrylicBrush/TintColor */,
 									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 658:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 656:22)
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 656:14)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 654:14)
 								Children = 
 								{
 									new global::Windows.UI.Xaml.Controls.Viewbox
@@ -3377,7 +3377,7 @@ namespace ElevateEvansvilleUI.Pages
 										IsParsing = true,
 										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Viewbox/VerticalAlignment */,
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Stretch/* Windows.UI.Xaml.HorizontalAlignment/, Stretch, Viewbox/HorizontalAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 664:18)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 662:18)
 										Child = 
 										new global::Windows.UI.Xaml.Controls.StackPanel
 										{
@@ -3388,13 +3388,13 @@ namespace ElevateEvansvilleUI.Pages
 											Margin = new global::Windows.UI.Xaml.Thickness(10,0,10,0)/* Windows.UI.Xaml.Thickness/, 10,0,10,0, StackPanel/Margin */,
 											Padding = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, StackPanel/Padding */,
 											CornerRadius = new Windows.UI.Xaml.CornerRadius(10)/* Windows.UI.Xaml.CornerRadius/, 10, StackPanel/CornerRadius */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 665:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 663:22)
 											Children = 
 											{
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 666:26)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 664:26)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.TextBlock
@@ -3405,7 +3405,7 @@ namespace ElevateEvansvilleUI.Pages
 															FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 															FontSize = 22d/* double/, 22, TextBlock/FontSize */,
 															TextWrapping = global::Windows.UI.Xaml.TextWrapping.NoWrap/* Windows.UI.Xaml.TextWrapping/, NoWrap, TextBlock/TextWrapping */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 667:30)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 665:30)
 														}
 														.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c263 => 
 														{
@@ -3418,7 +3418,7 @@ namespace ElevateEvansvilleUI.Pages
 															IsParsing = true,
 															NavigateUri = new System.Uri("https://indianavoters.in.gov/", global::System.UriKind.RelativeOrAbsolute)/* System.Uri/, https://indianavoters.in.gov/, HyperlinkButton/NavigateUri */,
 															FontSize = 18d/* double/, 18, HyperlinkButton/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 668:30)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 666:30)
 															Content = "Register to Vote"
 															,
 														}
@@ -3439,7 +3439,7 @@ namespace ElevateEvansvilleUI.Pages
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 673:26)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 671:26)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.TextBlock
@@ -3450,7 +3450,7 @@ namespace ElevateEvansvilleUI.Pages
 															FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 															FontSize = 22d/* double/, 22, TextBlock/FontSize */,
 															TextWrapping = global::Windows.UI.Xaml.TextWrapping.NoWrap/* Windows.UI.Xaml.TextWrapping/, NoWrap, TextBlock/TextWrapping */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 674:30)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 672:30)
 														}
 														.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c266 => 
 														{
@@ -3463,7 +3463,7 @@ namespace ElevateEvansvilleUI.Pages
 															IsParsing = true,
 															NavigateUri = new System.Uri("https://chng.it/KpyRpHW2", global::System.UriKind.RelativeOrAbsolute)/* System.Uri/, https://chng.it/KpyRpHW2, HyperlinkButton/NavigateUri */,
 															FontSize = 18d/* double/, 18, HyperlinkButton/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 675:30)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 673:30)
 															Content = "Sign the Petition"
 															,
 														}
@@ -3484,7 +3484,7 @@ namespace ElevateEvansvilleUI.Pages
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 680:26)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 678:26)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.TextBlock
@@ -3495,7 +3495,7 @@ namespace ElevateEvansvilleUI.Pages
 															FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 															FontSize = 22d/* double/, 22, TextBlock/FontSize */,
 															TextWrapping = global::Windows.UI.Xaml.TextWrapping.NoWrap/* Windows.UI.Xaml.TextWrapping/, NoWrap, TextBlock/TextWrapping */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 681:30)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 679:30)
 														}
 														.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c269 => 
 														{
@@ -3509,7 +3509,7 @@ namespace ElevateEvansvilleUI.Pages
 															Text = "Choose Below:"/* string/, Choose Below:, TextBlock/Text */,
 															FontSize = 18d/* double/, 18, TextBlock/FontSize */,
 															Margin = new global::Windows.UI.Xaml.Thickness(0,7,0,0)/* Windows.UI.Xaml.Thickness/, 0,7,0,0, TextBlock/Margin */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 682:30)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 680:30)
 														}
 														.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c270 => 
 														{
@@ -3564,7 +3564,7 @@ namespace ElevateEvansvilleUI.Pages
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
 						Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,10)/* Windows.UI.Xaml.Thickness/, 0,0,0,10, StackPanel/Margin */,
 						Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 689:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 687:10)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Button
@@ -3580,14 +3580,14 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 693:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 691:22)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Grid
 										{
 											IsParsing = true,
 											Padding = new global::Windows.UI.Xaml.Thickness(0,0,5,0)/* Windows.UI.Xaml.Thickness/, 0,0,5,0, Grid/Padding */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 694:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 692:26)
 											Children = 
 											{
 												new global::Windows.UI.Xaml.Controls.Image
@@ -3595,7 +3595,7 @@ namespace ElevateEvansvilleUI.Pages
 													IsParsing = true,
 													Source = "/Assets/Images/Logos/Paypal.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Paypal.png, Image/Source */,
 													Height = 25d/* double/, 25, Image/Height */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 695:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 693:30)
 												}
 												.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler5)(c276 => 
 												{
@@ -3615,7 +3615,7 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											IsParsing = true,
 											Text = "View Campaign Finances"/* string/, View Campaign Finances, TextBlock/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 697:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 695:26)
 										}
 										.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler2)(c278 => 
 										{
@@ -3631,7 +3631,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								))
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 690:14)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 688:14)
 							}
 							.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler11)(c280 => 
 							{
