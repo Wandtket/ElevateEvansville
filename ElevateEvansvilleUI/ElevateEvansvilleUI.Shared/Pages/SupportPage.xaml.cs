@@ -132,7 +132,7 @@ namespace ElevateEvansvilleUI.Pages
 
         private void Support_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.AppFrame.Navigate(typeof(PayPalPage));
+            UI.Navigate(typeof(FinancePage));
         }
     }
 }

@@ -140,17 +140,17 @@ namespace ElevateEvansvilleUI.Pages
 
         private void RailroadButton_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.Navigate(typeof(RailroadPage));
+            UI.Navigate(typeof(RailroadPage));
         }
 
         private void SolorCanopiesButton_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.Navigate(typeof(SolarCanopiesPage));
+            UI.Navigate(typeof(EnergyPage));
         }
 
         private void CostOfLivingButton_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.Navigate(typeof(CostOfLivingPage));
+            UI.Navigate(typeof(HousingPage));
         }
 
 

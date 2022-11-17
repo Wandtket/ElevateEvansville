@@ -20,9 +20,9 @@ namespace ElevateEvansvilleUI.Pages.Featured
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SolarCanopiesPage : Page
+    public sealed partial class EnergyPage : Page
     {
-        public SolarCanopiesPage()
+        public EnergyPage()
         {
             this.InitializeComponent();
         }

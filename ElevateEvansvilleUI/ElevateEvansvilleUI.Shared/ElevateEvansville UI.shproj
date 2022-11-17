@@ -24,7 +24,6 @@
     <_Globbed_Compile Remove="Controls\PayPalDetailMessage.xaml.cs" />
     <_Globbed_Compile Remove="Controls\PreviewMessage.cs" />
     <_Globbed_Compile Remove="Controls\PreviewMessage.xaml.cs" />
-    <_Globbed_Compile Remove="Extensions\Web Navigation.cs" />
     <_Globbed_Compile Remove="Pages\PayPalPage.xaml.cs" />
     <_Globbed_Compile Remove="Pages\PrivacyPage.xaml.cs" />
   </ItemGroup>
@@ -39,6 +38,5 @@
     <_Globbled_Page Remove="Controls\Messages\PayPalDetailMessage.xaml" />
     <_Globbled_Page Remove="Controls\PayPalDetailMessage.xaml" />
     <_Globbled_Page Remove="Controls\PreviewMessage.xaml" />
-    <_Globbled_Page Remove="Pages\PayPalPage.xaml" />
   </ItemGroup>
 </Project>

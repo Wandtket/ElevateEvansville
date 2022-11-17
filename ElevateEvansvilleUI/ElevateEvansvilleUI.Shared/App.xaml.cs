@@ -1,5 +1,6 @@
 ﻿using ElevateEvansvilleUI.Controls;
 using ElevateEvansvilleUI.Controls.Messages;
+using ElevateEvansvilleUI.Extensions;
 using ElevateEvansvilleUI.Pages;
 using Microsoft.Extensions.Logging;
 using System;
@@ -87,10 +88,8 @@ namespace ElevateEvansvilleUI
                     // configuring the new page by passing required information as a navigation
                     // parameter
 
-
+#if __WASM__
                     //Preview Mode Message
-#if HAS_UNO_WASM
-
                     ContentDialog dialog = new ContentDialog();
                     dialog.Title = "PREVIEW MODE";
                     dialog.SecondaryButtonText = "Continue";
@@ -111,7 +110,7 @@ namespace ElevateEvansvilleUI
 #if __WASM__
                     rootFrame.Navigate(typeof(MainPage), args.Arguments);
 #elif WINDOWS_UWP
-                    rootFrame.Navigate(typeof(PayPalPage), args.Arguments);
+                    rootFrame.Navigate(typeof(MainPage), args.Arguments);
 #endif
 
 

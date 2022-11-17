@@ -27,9 +27,9 @@ namespace ElevateEvansvilleUI.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PayPalPage : Page
+    public sealed partial class FinancePage : Page
     {
-        public PayPalPage()
+        public FinancePage()
         {
             this.InitializeComponent();
         }

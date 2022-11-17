@@ -72,16 +72,16 @@ namespace ElevateEvansvilleUI.Wasm
 				_stylesRegistered = true;
 				RegisterDefaultStyles_AboutPage_59657eb4f94c92d5744849fdf92fde46();
 				RegisterDefaultStyles_App_3fa65cb8d7e5f7a028affefc869f119d();
-				RegisterDefaultStyles_CostOfLivingPage_a4e195469194e516dbccd3625dabb099();
+				RegisterDefaultStyles_EnergyPage_a7cb2421b433102b6d2decd840320e15();
+				RegisterDefaultStyles_FinancePage_c389dd525b595ace9bd568be6bf9a144();
 				RegisterDefaultStyles_HomePage_a442339bfe6eec45a99b44926e6b8f70();
+				RegisterDefaultStyles_HousingPage_005444f8b2b3d80bf3d12a74f7572034();
 				RegisterDefaultStyles_MainPage_3af1f3f12a93ba9809ceae47e9031eea();
 				RegisterDefaultStyles_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f();
-				RegisterDefaultStyles_PayPalPage_a36e779433b705c67ddb196a53582fee();
 				RegisterDefaultStyles_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c();
 				RegisterDefaultStyles_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a();
 				RegisterDefaultStyles_PrivacyPage_3fcb2ab55d64b5eee94a76357880ef2d();
 				RegisterDefaultStyles_RailroadPage_67e18ba6c0d30315621678b5bcff722a();
-				RegisterDefaultStyles_SolarCanopiesPage_60c6ca6147c8a5bb6d8af74941fc1d59();
 				RegisterDefaultStyles_SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c();
 			}
 		}
@@ -99,16 +99,16 @@ namespace ElevateEvansvilleUI.Wasm
 		}
 		static partial void RegisterDefaultStyles_AboutPage_59657eb4f94c92d5744849fdf92fde46();
 		static partial void RegisterDefaultStyles_App_3fa65cb8d7e5f7a028affefc869f119d();
-		static partial void RegisterDefaultStyles_CostOfLivingPage_a4e195469194e516dbccd3625dabb099();
+		static partial void RegisterDefaultStyles_EnergyPage_a7cb2421b433102b6d2decd840320e15();
+		static partial void RegisterDefaultStyles_FinancePage_c389dd525b595ace9bd568be6bf9a144();
 		static partial void RegisterDefaultStyles_HomePage_a442339bfe6eec45a99b44926e6b8f70();
+		static partial void RegisterDefaultStyles_HousingPage_005444f8b2b3d80bf3d12a74f7572034();
 		static partial void RegisterDefaultStyles_MainPage_3af1f3f12a93ba9809ceae47e9031eea();
 		static partial void RegisterDefaultStyles_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f();
-		static partial void RegisterDefaultStyles_PayPalPage_a36e779433b705c67ddb196a53582fee();
 		static partial void RegisterDefaultStyles_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c();
 		static partial void RegisterDefaultStyles_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a();
 		static partial void RegisterDefaultStyles_PrivacyPage_3fcb2ab55d64b5eee94a76357880ef2d();
 		static partial void RegisterDefaultStyles_RailroadPage_67e18ba6c0d30315621678b5bcff722a();
-		static partial void RegisterDefaultStyles_SolarCanopiesPage_60c6ca6147c8a5bb6d8af74941fc1d59();
 		static partial void RegisterDefaultStyles_SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c();
 		[global::System.Obsolete("This method is provided for binary backward compatibility. It will always return null.")]
 		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]

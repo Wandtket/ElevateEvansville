@@ -28,28 +28,28 @@
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Messages\PreviewMessage.xaml.cs">
       <DependentUpon>PreviewMessage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Web Navigation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Web UI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Navigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\UI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\CostOfLivingPage.xaml.cs">
-      <DependentUpon>CostOfLivingPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\HousingPage.xaml.cs">
+      <DependentUpon>HousingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\RailroadPage.xaml.cs">
       <DependentUpon>RailroadPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\SolarCanopiesPage.xaml.cs">
-      <DependentUpon>SolarCanopiesPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Featured\EnergyPage.xaml.cs">
+      <DependentUpon>EnergyPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\PayPalPage.xaml.cs">
-      <DependentUpon>PayPalPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\FinancePage.xaml.cs">
+      <DependentUpon>FinancePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\PlatformPage.xaml.cs">
       <DependentUpon>PlatformPage.xaml</DependentUpon>
@@ -78,7 +78,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\CostOfLivingPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\HousingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -86,7 +86,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\SolarCanopiesPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Featured\EnergyPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,7 +94,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\PayPalPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\FinancePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -37,39 +37,45 @@ namespace ElevateEvansvilleUI
             UIGrid.Opacity = 0;
 
             //Set the static AppFrame so it can be accessed anywhere in the app.
-            WebUI.AppFrame = this.AppFrame;
-            WebUI.LoadingGrid = this.LoadingGrid;
-            WebUI.LoadingFadeIn = this.LoadingFadeIn;
-            WebUI.SupportButton = this.Support;
+            UI.AppFrame = this.AppFrame;
+            UI.LoadingGrid = this.LoadingGrid;
+            UI.LoadingFadeIn = this.LoadingFadeIn;
+            UI.SupportButton = this.Support;
 
-            this.AppFrame.Navigated += WebUI.AppFrame_Navigated;
-            this.LoadingFadeIn.Completed += WebUI.LoadingFadeIn_Completed;
+            this.AppFrame.Navigated += UI.AppFrame_Navigated;
+            this.LoadingFadeIn.Completed += UI.LoadingFadeIn_Completed;           
         }
 
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            AppFrame.Navigate(typeof(HomePage));
+
+#if __WASM__
+            Navigation.HandleURI();
+#elif WINDOWS_UWP
+            UI.Navigate(typeof(HomePage));
+#endif
 
             await Task.Delay(1500);
             UIFadeIn.Begin();
         }
 
 
+
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.Navigate(typeof(HomePage));
+            UI.Navigate(typeof(HomePage));
         }
 
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.Navigate(typeof(AboutPage));
+            UI.Navigate(typeof(AboutPage));
         }
 
         private void Platform_Click(object sender, RoutedEventArgs e)
         {
-            WebUI.Navigate(typeof(PlatformPage));
+            UI.Navigate(typeof(PlatformPage));
         }
 
         private async void ContactQuestion_Click(object sender, RoutedEventArgs e)
@@ -116,33 +122,8 @@ namespace ElevateEvansvilleUI
 
         private async void Support_Click(object sender, RoutedEventArgs e)
         {
-            //var file = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Assets/Election Day Calendar.ics"));
-            //await Launcher.LaunchUriAsync(new Uri("ms-appx:///Assets/Election Day Calendar.ics"));
-
-            //string Message = await APIClient.Get();
-            //TransactionSearchApi client = new TransactionSearchApi();
-            //TransactionListDTO list = await client.SearchTransactions();
-
-            ////Support.Content = List.Count().ToString();
-
-            ////var list = await APIClient.Get();
-
-            //string Message = "";
-
-
-
-            //await MessageBox.Show(list.Transactions.Count().ToString());
-
-            //foreach (TransactionsDTO DTO in list.Transactions)
-            //{
-            //    Message = Message + DTO.Payer + Environment.NewLine;
-            //}
-
-            //await MessageBox.Show(Message);
-            //await MessageBox.Show(list.Count().ToString());
-
-            WebUI.Navigate(typeof(SupportPage));
             Support.Visibility = Visibility.Collapsed;
+            UI.Navigate(typeof(SupportPage));
 
 #if __WASM__
                     //this.ExecuteJavascript("requestPermission();");

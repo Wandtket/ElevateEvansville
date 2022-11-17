@@ -24259,7 +24259,7 @@ namespace ElevateEvansvilleUI.Wasm
 	}
 
 	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.PayPalPage
+	/// Builder for ElevateEvansvilleUI.Pages.FinancePage
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24278,7 +24278,7 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.PayPalPage));
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.FinancePage));
 			MetadataBuilder_354.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
 			if(parent == null)
 			{
@@ -24286,7 +24286,7 @@ namespace ElevateEvansvilleUI.Wasm
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.PayPalPage();
+		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.FinancePage();
 	}
 
 	/// <summary>
@@ -24383,7 +24383,7 @@ namespace ElevateEvansvilleUI.Wasm
 	}
 
 	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.Featured.CostOfLivingPage
+	/// Builder for ElevateEvansvilleUI.Pages.Featured.HousingPage
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24402,7 +24402,7 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.Featured.CostOfLivingPage));
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.Featured.HousingPage));
 			MetadataBuilder_354.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
 			if(parent == null)
 			{
@@ -24410,7 +24410,7 @@ namespace ElevateEvansvilleUI.Wasm
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.Featured.CostOfLivingPage();
+		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.Featured.HousingPage();
 	}
 
 	/// <summary>
@@ -24445,7 +24445,7 @@ namespace ElevateEvansvilleUI.Wasm
 	}
 
 	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.Featured.SolarCanopiesPage
+	/// Builder for ElevateEvansvilleUI.Pages.Featured.EnergyPage
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24464,7 +24464,7 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.Featured.SolarCanopiesPage));
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.Featured.EnergyPage));
 			MetadataBuilder_354.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
 			if(parent == null)
 			{
@@ -24472,7 +24472,7 @@ namespace ElevateEvansvilleUI.Wasm
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.Featured.SolarCanopiesPage();
+		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.Featured.EnergyPage();
 	}
 
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
@@ -29184,7 +29184,7 @@ namespace ElevateEvansvilleUI.Wasm
 					_bindableType667 = MetadataBuilder_667.Build();
 				}
 				return _bindableType667;
-				case "ElevateEvansvilleUI.Pages.PayPalPage":
+				case "ElevateEvansvilleUI.Pages.FinancePage":
 				if(_bindableType668 == null)
 				{
 					_bindableType668 = MetadataBuilder_668.Build();
@@ -29208,7 +29208,7 @@ namespace ElevateEvansvilleUI.Wasm
 					_bindableType671 = MetadataBuilder_671.Build();
 				}
 				return _bindableType671;
-				case "ElevateEvansvilleUI.Pages.Featured.CostOfLivingPage":
+				case "ElevateEvansvilleUI.Pages.Featured.HousingPage":
 				if(_bindableType672 == null)
 				{
 					_bindableType672 = MetadataBuilder_672.Build();
@@ -29220,7 +29220,7 @@ namespace ElevateEvansvilleUI.Wasm
 					_bindableType673 = MetadataBuilder_673.Build();
 				}
 				return _bindableType673;
-				case "ElevateEvansvilleUI.Pages.Featured.SolarCanopiesPage":
+				case "ElevateEvansvilleUI.Pages.Featured.EnergyPage":
 				if(_bindableType674 == null)
 				{
 					_bindableType674 = MetadataBuilder_674.Build();

@@ -10,13 +10,14 @@ using Windows.UI.Xaml;
 using System.ServiceModel.Description;
 using ElevateEvansvilleUI.Controls.Dialogs;
 using System.Threading.Tasks;
+using System.Security.AccessControl;
 #if __WASM__
 using Uno.Foundation;
 #endif
 
 namespace ElevateEvansvilleUI.Extensions
 {
-    public static class WebUI
+    public static class UI
     {
         /// <summary>
         /// Access the MainPage's AppFrame from anywhere.
@@ -30,26 +31,24 @@ namespace ElevateEvansvilleUI.Extensions
 
         private static Type SourceType;
 
-
         public static void Navigate(Type sourceType)
         {
             SourceType = sourceType;
             LoadingGrid.Visibility = Visibility.Visible;
             LoadingFadeIn.Begin();
-            SupportButton.Visibility = Visibility.Visible;
         }
 
-        public static void LoadingFadeIn_Completed(object sender, object e)
+        public static async void LoadingFadeIn_Completed(object sender, object e)
         {
+            Navigation.PushURI(SourceType.Name.Replace("Page", ""));
             AppFrame.Navigate(SourceType);
+
         }
 
         public static void AppFrame_Navigated(object sender, Windows.UI.Xaml.Navigation.NavigationEventArgs e)
         {
             LoadingGrid.Visibility = Visibility.Collapsed;
         }
-
-
 
 
         /// <summary>
@@ -61,7 +60,6 @@ namespace ElevateEvansvilleUI.Extensions
 #if __WASM__
             return Convert.ToBoolean(WebAssemblyRuntime.InvokeJS("IsDeviceMobile();"));                 
 #endif
-
             return false;
         }
 
