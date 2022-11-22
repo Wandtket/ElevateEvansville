@@ -35,8 +35,20 @@
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
+        <Storyboard x:Name="FWF3StoryBoard">
+            <DoubleAnimation x:Name="FWF3Animation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F3" Duration="0:0:1">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseInOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation x:Name="FWF3Animation2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F4" Duration="0:0:1">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseInOut"/>
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
         <Storyboard x:Name="FWFinalStoryBoard">
-            <DoubleAnimation x:Name="FWFinalAnimation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F3" Duration="0:0:1">
+            <DoubleAnimation x:Name="FWFinalAnimation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F4" Duration="0:0:1">
                 <DoubleAnimation.EasingFunction>
                     <CircleEase EasingMode="EaseInOut" />
                 </DoubleAnimation.EasingFunction>
@@ -47,7 +59,9 @@
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
+        
 
+        
         <!--Animate Backward StoryBoards-->
         <Storyboard x:Name="BWBeginStoryBoard">
             <DoubleAnimation x:Name="BWBeginAnimation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F1" Duration="0:0:1">
@@ -55,7 +69,7 @@
                     <CircleEase EasingMode="EaseInOut" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
-            <DoubleAnimation x:Name="BWBeginAnimation2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F3" Duration="0:0:1">
+            <DoubleAnimation x:Name="BWBeginAnimation2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F4" Duration="0:0:1">
                 <DoubleAnimation.EasingFunction>
                     <CircleEase EasingMode="EaseInOut" />
                 </DoubleAnimation.EasingFunction>
@@ -73,13 +87,25 @@
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
         </Storyboard>
-        <Storyboard x:Name="BWFinalStoryBoard">
-            <DoubleAnimation x:Name="BWFinalAnimation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F3" Duration="0:0:1">
+        <Storyboard x:Name="BWF3StoryBoard">
+            <DoubleAnimation x:Name="BWF3Animation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F3" Duration="0:0:1">
                 <DoubleAnimation.EasingFunction>
                     <CircleEase EasingMode="EaseInOut" />
                 </DoubleAnimation.EasingFunction>
             </DoubleAnimation>
-            <DoubleAnimation x:Name="BWFinalAnimation2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F2" Duration="0:0:1">
+            <DoubleAnimation x:Name="BWF3Animation2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F2" Duration="0:0:1">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseInOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>
+        <Storyboard x:Name="BWFinalStoryBoard">
+            <DoubleAnimation x:Name="BWFinalAnimation1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F4" Duration="0:0:1">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseInOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation x:Name="BWFinalAnimation2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)" Storyboard.TargetName="F3" Duration="0:0:1">
                 <DoubleAnimation.EasingFunction>
                     <CircleEase EasingMode="EaseInOut" />
                 </DoubleAnimation.EasingFunction>
@@ -131,7 +157,23 @@
             <DoubleAnimation Storyboard.TargetProperty="Opacity" Storyboard.TargetName="F3Before" From="0" To="1" Duration="0:0:2"/>
         </Storyboard>
 
+        
+        <!--Feature 4 FadeInOut StoryBoards-->
+        <Storyboard x:Name="F4Transition1" Completed="F4Transition1_Completed">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" Storyboard.TargetName="F4Before" From="1" To="1" Duration="0:0:3"/>
+        </Storyboard>
+        <Storyboard x:Name="F4Transition2" Completed="F4Transition2_Completed">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" Storyboard.TargetName="F4Before" From="1" To="0" Duration="0:0:2"/>
+        </Storyboard>
+        <Storyboard x:Name="F4Transition3" Completed="F4Transition3_Completed">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" Storyboard.TargetName="F4Before" From="0" To="0" Duration="0:0:3"/>
+        </Storyboard>
+        <Storyboard x:Name="F4Transition4" Completed="F4Transition4_Completed">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity" Storyboard.TargetName="F4Before" From="0" To="1" Duration="0:0:2"/>
+        </Storyboard>
 
+        
+        
         <!--Profile Image Slide/Fade In Storyboards-->
         <Storyboard x:Name="ProfileStoryBoardSlideIn">
             <DoubleAnimation x:Name="ProfileSlideInAnimation" Storyboard.TargetName="Profile" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"  Duration="0:0:1"/>
@@ -151,14 +193,50 @@
     
     
     <Grid x:Name="FeaturedGrid" x:FieldModifier="public" Opacity="0">
+            <Grid x:Name="F4" >
+                <!--Transparency (After)-->
+                <Image x:Name="F4After" Source="https://i.imgur.com/5mup43B.png" Stretch="UniformToFill" VerticalAlignment="Center" Visibility="Collapsed"/>
+
+                <!--Transparency (Before)-->
+                <Image x:Name="F4Before" Source="https://i.imgur.com/JGPw85I.png" Stretch="UniformToFill" VerticalAlignment="Center" Visibility="Collapsed"/>
+
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
+                    <Grid.Background>
+                        <AcrylicBrush 
+                            AlwaysUseFallback="False" 
+                            TintColor="Black" 
+                            TintOpacity="0.5" />
+                    </Grid.Background>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="The most transparent campaign in American History." FontSize="30" FontFamily="Times New Roman" TextWrapping="WrapWholeWords" TextAlignment="Center"/>
+                <Button x:Name="TransparencyButton" Click="TransparencyButton_Click"
+                            Content="View Campaign Finance" 
+                            FontSize="18" Grid.Row="1" HorizontalAlignment="Center" Background="CornflowerBlue"/>
+                    
+                </Grid>
+
+                <Grid.RenderTransform>
+                    <TranslateTransform/>
+                </Grid.RenderTransform>
+            </Grid>
+
             <Grid x:Name="F3" >
                 <!--Price Map (After)-->
-                <Image x:Name="F3After" Source="https://i.imgur.com/xk8gxZy.jpg" Stretch="UniformToFill" Visibility="Collapsed"/>
+                <Image x:Name="F3After" Source="https://i.imgur.com/xk8gxZy.jpg" Stretch="UniformToFill" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center"
+                       Visibility="Collapsed"/>
 
                 <!--Price Map (Before)-->
-                <Image x:Name="F3Before" Source="https://i.imgur.com/KQheCkB.jpg" Stretch="UniformToFill" Visibility="Collapsed"/>
+                <Image x:Name="F3Before" Source="https://i.imgur.com/KQheCkB.jpg" Stretch="UniformToFill" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center"
+                       Visibility="Collapsed"/>
 
-                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="0,75,0,0" RowSpacing="5">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>
                         <AcrylicBrush 
                         AlwaysUseFallback="False" 
@@ -190,7 +268,7 @@
                 <!--Parking Lot-->
                 <Image x:Name="F2Before" Source="https://i.imgur.com/J6atM2p.jpg" Stretch="UniformToFill" Visibility="Collapsed"/>
 
-                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="0,75,0,0" RowSpacing="5">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>
                         <AcrylicBrush 
                         AlwaysUseFallback="False" 
@@ -216,12 +294,16 @@
 
             <Grid x:Name="F1">
                 <!--Victory Square-->
-                <Image x:Name="F1After" Source="https://i.imgur.com/Tx3bFyC.jpg" Stretch="UniformToFill" Visibility="Collapsed"/>
+                <Image x:Name="F1After" Source="https://i.imgur.com/Tx3bFyC.jpg" Stretch="UniformToFill" 
+                       VerticalAlignment="Center"
+                       Visibility="Collapsed"/>
 
                 <!--Demolition Lot-->
-                <Image x:Name="F1Before" Source="https://i.imgur.com/OrtIL7t.jpg" Stretch="UniformToFill" Visibility="Collapsed" Loaded="F1Before_Loaded"/>
+                <Image x:Name="F1Before" Source="https://i.imgur.com/OrtIL7t.jpg" Stretch="UniformToFill" 
+                       VerticalAlignment="Center"
+                       Visibility="Collapsed" Loaded="F1Before_Loaded"/>
 
-                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="0,75,0,0" RowSpacing="5">
+                <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>
                         <AcrylicBrush 
                         AlwaysUseFallback="False" 
@@ -248,19 +330,19 @@
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition x:Name="ProfileWidth" Width="2*"/>
                 </Grid.ColumnDefinitions>
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition x:Name="ProfileHeight" Height="2*"/>
                 </Grid.RowDefinitions>
 
 
                 <Image x:Name="Profile" Source="/Assets/Images/Profile/Cover.png"  
                    Grid.Row="1" Grid.Column="1" Stretch="Uniform" 
                    VerticalAlignment="Bottom" HorizontalAlignment="Right"
-                   Visibility="Collapsed" Opacity="0">
+                   Visibility="Visible" Opacity="0">
 
                     <Image.RenderTransform>
                         <TranslateTransform/>

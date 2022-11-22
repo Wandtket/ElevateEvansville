@@ -28,8 +28,10 @@ namespace ElevateEvansvilleUI.Pages
     {
         Begin,
         F2,
+        F3,
         Final,
     }
+
 
     public sealed partial class HomePage : Page
     {
@@ -44,7 +46,12 @@ namespace ElevateEvansvilleUI.Pages
 
         private async void F1Before_Loaded(object sender, RoutedEventArgs e)
         {
+            if (UI.IsDeviceMobile() == true) 
+            { AdjustForMobile(); }
+
+
             F1Transition1.Begin();
+
             AutoScrollOver();
 
             await Task.Delay(1500);
@@ -53,18 +60,36 @@ namespace ElevateEvansvilleUI.Pages
             ProfileSlideIn();
         }
 
+        private void AdjustForMobile()
+        {
+            ProfileWidth.Width = new GridLength(1, GridUnitType.Star);
+            ProfileHeight.Height = new GridLength(1, GridUnitType.Star);
 
-        public static CancellationToken CancelToken = new CancellationToken();
+            F1Before.Margin = new Thickness(-100, 0, 0, 0);
+            F1After.Margin = new Thickness(-100, 0, 0, 0);
 
+            F4Before.Margin = new Thickness(-100, 0, 0, 0);
+            F4After.Margin = new Thickness(-100, 0, 0, 0);
+        }
+
+
+        CancellationTokenSource CancelToken = new CancellationTokenSource();
         private bool Interacted = false;
+
         private async void AutoScrollOver()
         {
             if (Interacted == false)
-            {
-                await Task.Delay(10000, CancelToken);
-                GoForward();
+            {         
+                //Cancel the auto scroll over if the user clicks the next button
+                try 
+                { 
+                    await Task.Delay(10000, CancelToken.Token);
 
-                AutoScrollOver();
+                    GoForward();
+                    AutoScrollOver();
+
+                } catch { }
+               
             }
         }
 
@@ -75,10 +100,12 @@ namespace ElevateEvansvilleUI.Pages
             F1After.Visibility = Visibility.Visible;
             F2After.Visibility = Visibility.Visible;
             F3After.Visibility = Visibility.Visible;
+            F4After.Visibility = Visibility.Visible;
 
             F1Before.Visibility = Visibility.Visible;
             F2Before.Visibility = Visibility.Visible;
             F3Before.Visibility = Visibility.Visible;
+            F4Before.Visibility = Visibility.Visible;
 
             UIFadeIn.Begin();
         }
@@ -88,12 +115,14 @@ namespace ElevateEvansvilleUI.Pages
         private void Forward_Click(object sender, RoutedEventArgs e)
         {
             Interacted = true;
+            CancelToken.Cancel();
             GoForward();
         }
 
         private void Backward_Click(object sender, RoutedEventArgs e)
         {
             Interacted = true;
+            CancelToken.Cancel();
             GoBackward();
         }
 
@@ -110,6 +139,10 @@ namespace ElevateEvansvilleUI.Pages
             else if (CurrentItem == CurrentFeaturedlItem.F2)
             {
                 AnimateForwardF2();
+            }
+            else if (CurrentItem == CurrentFeaturedlItem.F3)
+            {
+                AnimateForwardF3();
             }
             else if (CurrentItem == CurrentFeaturedlItem.Final)
             {
@@ -129,6 +162,10 @@ namespace ElevateEvansvilleUI.Pages
             else if (CurrentItem == CurrentFeaturedlItem.F2)
             {
                 AnimateBackwardF2();
+            }
+            else if (CurrentItem == CurrentFeaturedlItem.F3)
+            {
+                AnimateBackwardF3();
             }
             else if (CurrentItem == CurrentFeaturedlItem.Final)
             {
@@ -153,6 +190,12 @@ namespace ElevateEvansvilleUI.Pages
             UI.Navigate(typeof(HousingPage));
         }
 
+        private void TransparencyButton_Click(object sender, RoutedEventArgs e)
+        {
+            UI.Navigate(typeof(FinancePage));
+        }
+
+
 
         #region Animations
         public void AnimateForwardBegin()
@@ -169,11 +212,11 @@ namespace ElevateEvansvilleUI.Pages
 
             FWBeginStoryBoard.Completed += delegate (object sender, object e)
             {
+                F1TransitionStop();
                 F1.Visibility = Visibility.Collapsed;
                 Forward.IsEnabled = true;
                 Backward.IsEnabled = true;
             };
-
 
             F2Transition1.Begin();
             CurrentItem = CurrentFeaturedlItem.F2;
@@ -193,12 +236,37 @@ namespace ElevateEvansvilleUI.Pages
 
             FWF2StoryBoard.Completed += delegate (object sender, object e)
             {
+                F2TransitionStop();
                 F2.Visibility = Visibility.Collapsed;
                 Forward.IsEnabled = true;
                 Backward.IsEnabled = true;
             };
 
             F3Transition1.Begin();
+            CurrentItem = CurrentFeaturedlItem.F3;
+        }
+
+        public void AnimateForwardF3()
+        {
+            F4.Visibility = Visibility.Visible;
+
+            FWF3Animation1.From = (double)0;
+            FWF3Animation1.To = -(double)F3.ActualWidth;
+
+            FWF3Animation2.From = (double)F3.ActualWidth;
+            FWF3Animation2.To = (double)0;
+
+            FWF3StoryBoard.Begin();
+
+            FWF3StoryBoard.Completed += delegate (object sender, object e)
+            {
+                F3TransitionStop();
+                F3.Visibility = Visibility.Collapsed;
+                Forward.IsEnabled = true;
+                Backward.IsEnabled = true;
+            };
+            
+            F4Transition1.Begin();
             CurrentItem = CurrentFeaturedlItem.Final;
         }
 
@@ -207,28 +275,32 @@ namespace ElevateEvansvilleUI.Pages
             F1.Visibility = Visibility.Visible;
 
             FWFinalAnimation1.From = (double)0;
-            FWFinalAnimation1.To = -(double)F3.ActualWidth;
+            FWFinalAnimation1.To = -(double)F4.ActualWidth;
 
-            FWFinalAnimation2.From = (double)F3.ActualWidth;
+            FWFinalAnimation2.From = (double)F4.ActualWidth;
             FWFinalAnimation2.To = (double)0;
 
             FWFinalStoryBoard.Begin();
 
             FWFinalStoryBoard.Completed += delegate (object sender, object e)
             {
-                F3.Visibility = Visibility.Collapsed;
+                F4TransitionStop();
+                F4.Visibility = Visibility.Collapsed;
                 Forward.IsEnabled = true;
                 Backward.IsEnabled = true;
             };
 
+            F1Transition1.Begin();
             CurrentItem = CurrentFeaturedlItem.Begin;
         }
 
 
+
         public void AnimateBackwardBegin()
         {
-            F3.Visibility = Visibility.Visible;
+            F4.Visibility = Visibility.Visible;
             F2.Visibility = Visibility.Collapsed;
+            F3.Visibility = Visibility.Collapsed;
 
             BWBeginAnimation1.From = (double)0;
             BWBeginAnimation1.To = (double)F1.ActualWidth;
@@ -240,11 +312,13 @@ namespace ElevateEvansvilleUI.Pages
 
             BWBeginStoryBoard.Completed += delegate (object sender, object e)
             {
+                F1TransitionStop();
                 F1.Visibility = Visibility.Collapsed;
                 Forward.IsEnabled = true;
                 Backward.IsEnabled = true;
             };
 
+            F4Transition1.Begin();
             CurrentItem = CurrentFeaturedlItem.Final;
         }
 
@@ -262,17 +336,43 @@ namespace ElevateEvansvilleUI.Pages
 
             BWF2StoryBoard.Completed += delegate (object sender, object e)
             {
+                F2TransitionStop();
                 F2.Visibility = Visibility.Collapsed;
                 Forward.IsEnabled = true;
                 Backward.IsEnabled = true;
             };
 
+            F1Transition1.Begin();
             CurrentItem = CurrentFeaturedlItem.Begin;
+        }
+
+        public void AnimateBackwardF3()
+        {
+            F2.Visibility = Visibility.Visible;
+
+            BWF3Animation1.From = (double)0;
+            BWF3Animation1.To = (double)F3.ActualWidth;
+
+            BWF3Animation2.From = -(double)F3.ActualWidth;
+            BWF3Animation2.To = (double)0;
+
+            BWF3StoryBoard.Begin();
+
+            BWF3StoryBoard.Completed += delegate (object sender, object e)
+            {
+                F3TransitionStop();
+                F3.Visibility = Visibility.Collapsed;
+                Forward.IsEnabled = true;
+                Backward.IsEnabled = true;
+            };
+
+            F2Transition1.Begin();
+            CurrentItem = CurrentFeaturedlItem.F2;
         }
 
         public void AnimateBackwardFinal()
         {
-            F2.Visibility = Visibility.Visible;
+            F3.Visibility = Visibility.Visible;
 
             BWFinalAnimation1.From = (double)0;
             BWFinalAnimation1.To = (double)F3.ActualWidth;
@@ -284,12 +384,14 @@ namespace ElevateEvansvilleUI.Pages
 
             BWFinalStoryBoard.Completed += delegate (object sender, object e)
             {
-                F3.Visibility = Visibility.Collapsed;
+                F4TransitionStop();
+                F4.Visibility = Visibility.Collapsed;
                 Forward.IsEnabled = true;
                 Backward.IsEnabled = true;
             };
 
-            CurrentItem = CurrentFeaturedlItem.F2;
+            F3Transition1.Begin();
+            CurrentItem = CurrentFeaturedlItem.F3;
         }
 
 
@@ -297,6 +399,7 @@ namespace ElevateEvansvilleUI.Pages
         private bool ProfileShown = false;
         private void ProfileSlideIn()
         {
+
             ProfileShown = true;
 
             //ProfileStoryBoardFadeIn.Begin();
@@ -310,6 +413,14 @@ namespace ElevateEvansvilleUI.Pages
             ProfileStoryBoardFadeIn.Begin();
         }
 
+
+        private void F1TransitionStop()
+        {
+            F1Transition1.Stop();
+            F1Transition2.Stop();
+            F1Transition3.Stop();
+            F1Transition4.Stop();
+        }
 
         private void F1Transition1_Completed(object sender, object e)
         {
@@ -332,6 +443,13 @@ namespace ElevateEvansvilleUI.Pages
         }
 
 
+        private void F2TransitionStop()
+        {
+            F2Transition1.Stop();
+            F2Transition2.Stop();
+            F2Transition3.Stop();
+            F2Transition4.Stop();
+        }
 
         private void F2Transition1_Completed(object sender, object e)
         {
@@ -354,6 +472,13 @@ namespace ElevateEvansvilleUI.Pages
         }
 
 
+        private void F3TransitionStop()
+        {
+            F3Transition1.Stop();
+            F3Transition2.Stop();
+            F3Transition3.Stop();
+            F3Transition4.Stop();
+        }
 
         private void F3Transition1_Completed(object sender, object e)
         {
@@ -374,6 +499,40 @@ namespace ElevateEvansvilleUI.Pages
         {
             F3Transition1.Begin();
         }
+
+
+        private void F4TransitionStop()
+        {
+            F4Transition1.Stop();
+            F4Transition2.Stop();
+            F4Transition3.Stop();
+            F4Transition4.Stop();
+        }
+
+        private void F4Transition1_Completed(object sender, object e)
+        {
+            F4Transition2.Begin();
+        }
+
+        private void F4Transition2_Completed(object sender, object e)
+        {
+            F4Transition3.Begin();
+        }
+
+        private void F4Transition3_Completed(object sender, object e)
+        {
+            F4Transition4.Begin();
+        }
+
+        private void F4Transition4_Completed(object sender, object e)
+        {
+            F4Transition1.Begin();
+        }
+
+
+
+
+
 
         #endregion
     }

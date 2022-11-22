@@ -170,7 +170,7 @@ namespace ElevateEvansvilleUI.Pages
 			))
 			;
 			Resources[
-			"FWFinalStoryBoard"
+			"FWF3StoryBoard"
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
@@ -190,8 +190,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c11 => 
 					{
-						nameScope.RegisterName("FWFinalAnimation1", c11);
-						this.FWFinalAnimation1 = c11;
+						nameScope.RegisterName("FWF3Animation1", c11);
+						this.FWF3Animation1 = c11;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c11, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c11, "F3");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c11, _F3Subject);
@@ -211,11 +211,11 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c13 => 
 					{
-						nameScope.RegisterName("FWFinalAnimation2", c13);
-						this.FWFinalAnimation2 = c13;
+						nameScope.RegisterName("FWF3Animation2", c13);
+						this.FWF3Animation2 = c13;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c13, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c13, "F1");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c13, _F1Subject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c13, "F4");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c13, _F4Subject);
 					}
 					))
 					,
@@ -223,8 +223,67 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c14 => 
 			{
-				nameScope.RegisterName("FWFinalStoryBoard", c14);
-				this.FWFinalStoryBoard = c14;
+				nameScope.RegisterName("FWF3StoryBoard", c14);
+				this.FWF3StoryBoard = c14;
+			}
+			))
+			;
+			Resources[
+			"FWFinalStoryBoard"
+			] = 
+			new global::Windows.UI.Xaml.Media.Animation.Storyboard
+			{
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 50:10)
+				Children = 
+				{
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
+						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
+						{
+							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 53:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 51:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c16 => 
+					{
+						nameScope.RegisterName("FWFinalAnimation1", c16);
+						this.FWFinalAnimation1 = c16;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c16, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c16, "F4");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c16, _F4Subject);
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
+						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
+						{
+							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 58:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 56:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c18 => 
+					{
+						nameScope.RegisterName("FWFinalAnimation2", c18);
+						this.FWFinalAnimation2 = c18;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c18, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c18, "F1");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c18, _F1Subject);
+					}
+					))
+					,
+				}
+			}
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c19 => 
+			{
+				nameScope.RegisterName("FWFinalStoryBoard", c19);
+				this.FWFinalStoryBoard = c19;
 			}
 			))
 			;
@@ -233,7 +292,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 52:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 66:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -242,18 +301,18 @@ namespace ElevateEvansvilleUI.Pages
 						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
 						{
 							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 55:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 69:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 53:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 67:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c16 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c21 => 
 					{
-						nameScope.RegisterName("BWBeginAnimation1", c16);
-						this.BWBeginAnimation1 = c16;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c16, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c16, "F1");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c16, _F1Subject);
+						nameScope.RegisterName("BWBeginAnimation1", c21);
+						this.BWBeginAnimation1 = c21;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c21, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c21, "F1");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c21, _F1Subject);
 					}
 					))
 					,
@@ -263,27 +322,27 @@ namespace ElevateEvansvilleUI.Pages
 						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
 						{
 							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 60:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 74:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 58:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 72:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c18 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c23 => 
 					{
-						nameScope.RegisterName("BWBeginAnimation2", c18);
-						this.BWBeginAnimation2 = c18;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c18, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c18, "F3");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c18, _F3Subject);
+						nameScope.RegisterName("BWBeginAnimation2", c23);
+						this.BWBeginAnimation2 = c23;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c23, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c23, "F4");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c23, _F4Subject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c19 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c24 => 
 			{
-				nameScope.RegisterName("BWBeginStoryBoard", c19);
-				this.BWBeginStoryBoard = c19;
+				nameScope.RegisterName("BWBeginStoryBoard", c24);
+				this.BWBeginStoryBoard = c24;
 			}
 			))
 			;
@@ -292,7 +351,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 64:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 78:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -301,18 +360,18 @@ namespace ElevateEvansvilleUI.Pages
 						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
 						{
 							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 67:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 81:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 65:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 79:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c21 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c26 => 
 					{
-						nameScope.RegisterName("BWF2Animation1", c21);
-						this.BWF2Animation1 = c21;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c21, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c21, "F2");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c21, _F2Subject);
+						nameScope.RegisterName("BWF2Animation1", c26);
+						this.BWF2Animation1 = c26;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c26, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c26, "F2");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c26, _F2Subject);
 					}
 					))
 					,
@@ -322,27 +381,86 @@ namespace ElevateEvansvilleUI.Pages
 						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
 						{
 							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 72:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 86:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 70:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 84:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c23 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c28 => 
 					{
-						nameScope.RegisterName("BWF2Animation2", c23);
-						this.BWF2Animation2 = c23;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c23, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c23, "F1");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c23, _F1Subject);
+						nameScope.RegisterName("BWF2Animation2", c28);
+						this.BWF2Animation2 = c28;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c28, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c28, "F1");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c28, _F1Subject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c24 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c29 => 
 			{
-				nameScope.RegisterName("BWF2StoryBoard", c24);
-				this.BWF2StoryBoard = c24;
+				nameScope.RegisterName("BWF2StoryBoard", c29);
+				this.BWF2StoryBoard = c29;
+			}
+			))
+			;
+			Resources[
+			"BWF3StoryBoard"
+			] = 
+			new global::Windows.UI.Xaml.Media.Animation.Storyboard
+			{
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 90:10)
+				Children = 
+				{
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
+						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
+						{
+							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 93:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 91:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c31 => 
+					{
+						nameScope.RegisterName("BWF3Animation1", c31);
+						this.BWF3Animation1 = c31;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c31, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c31, "F3");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c31, _F3Subject);
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
+						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
+						{
+							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 98:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 96:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c33 => 
+					{
+						nameScope.RegisterName("BWF3Animation2", c33);
+						this.BWF3Animation2 = c33;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c33, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c33, "F2");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c33, _F2Subject);
+					}
+					))
+					,
+				}
+			}
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c34 => 
+			{
+				nameScope.RegisterName("BWF3StoryBoard", c34);
+				this.BWF3StoryBoard = c34;
 			}
 			))
 			;
@@ -351,7 +469,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 76:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 102:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -360,18 +478,18 @@ namespace ElevateEvansvilleUI.Pages
 						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
 						{
 							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 79:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 105:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 77:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 103:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c26 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c36 => 
 					{
-						nameScope.RegisterName("BWFinalAnimation1", c26);
-						this.BWFinalAnimation1 = c26;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c26, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c26, "F3");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c26, _F3Subject);
+						nameScope.RegisterName("BWFinalAnimation1", c36);
+						this.BWFinalAnimation1 = c36;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c36, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c36, "F4");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c36, _F4Subject);
 					}
 					))
 					,
@@ -381,27 +499,27 @@ namespace ElevateEvansvilleUI.Pages
 						EasingFunction = 						new global::Windows.UI.Xaml.Media.Animation.CircleEase
 						{
 							EasingMode = global::Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut/* Windows.UI.Xaml.Media.Animation.EasingMode/, EaseInOut, CircleEase/EasingMode */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 84:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 110:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 82:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 108:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c28 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c38 => 
 					{
-						nameScope.RegisterName("BWFinalAnimation2", c28);
-						this.BWFinalAnimation2 = c28;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c28, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c28, "F2");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c28, _F2Subject);
+						nameScope.RegisterName("BWFinalAnimation2", c38);
+						this.BWFinalAnimation2 = c38;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c38, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c38, "F3");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c38, _F3Subject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c29 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c39 => 
 			{
-				nameScope.RegisterName("BWFinalStoryBoard", c29);
-				this.BWFinalStoryBoard = c29;
+				nameScope.RegisterName("BWFinalStoryBoard", c39);
+				this.BWFinalStoryBoard = c39;
 			}
 			))
 			;
@@ -410,7 +528,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 91:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 117:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -418,24 +536,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 1d/* double/, 1, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 92:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 118:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c30 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c40 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c30, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c30, "F1Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c30, _F1BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c40, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c40, "F1Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c40, _F1BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c31 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c41 => 
 			{
-				nameScope.RegisterName("F1Transition1", c31);
-				this.F1Transition1 = c31;
+				nameScope.RegisterName("F1Transition1", c41);
+				this.F1Transition1 = c41;
 				var Completed_F1Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c31.Completed += (F1Transition1_Completed_sender,F1Transition1_Completed_e) => (Completed_F1Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition1_Completed(F1Transition1_Completed_sender,F1Transition1_Completed_e);
+				/* second level */ c41.Completed += (F1Transition1_Completed_sender,F1Transition1_Completed_e) => (Completed_F1Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition1_Completed(F1Transition1_Completed_sender,F1Transition1_Completed_e);
 			}
 			))
 			;
@@ -444,7 +562,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 94:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 120:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -452,24 +570,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 1d/* double/, 1, DoubleAnimation/From */,
 						To = 0d/* double/, 0, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 95:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 121:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c32 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c42 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c32, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c32, "F1Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c32, _F1BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c42, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c42, "F1Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c42, _F1BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c33 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c43 => 
 			{
-				nameScope.RegisterName("F1Transition2", c33);
-				this.F1Transition2 = c33;
+				nameScope.RegisterName("F1Transition2", c43);
+				this.F1Transition2 = c43;
 				var Completed_F1Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c33.Completed += (F1Transition2_Completed_sender,F1Transition2_Completed_e) => (Completed_F1Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition2_Completed(F1Transition2_Completed_sender,F1Transition2_Completed_e);
+				/* second level */ c43.Completed += (F1Transition2_Completed_sender,F1Transition2_Completed_e) => (Completed_F1Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition2_Completed(F1Transition2_Completed_sender,F1Transition2_Completed_e);
 			}
 			))
 			;
@@ -478,7 +596,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 97:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 123:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -486,24 +604,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 0d/* double/, 0, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 98:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 124:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c34 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c44 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c34, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c34, "F1Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c34, _F1BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c44, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c44, "F1Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c44, _F1BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c35 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c45 => 
 			{
-				nameScope.RegisterName("F1Transition3", c35);
-				this.F1Transition3 = c35;
+				nameScope.RegisterName("F1Transition3", c45);
+				this.F1Transition3 = c45;
 				var Completed_F1Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c35.Completed += (F1Transition3_Completed_sender,F1Transition3_Completed_e) => (Completed_F1Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition3_Completed(F1Transition3_Completed_sender,F1Transition3_Completed_e);
+				/* second level */ c45.Completed += (F1Transition3_Completed_sender,F1Transition3_Completed_e) => (Completed_F1Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition3_Completed(F1Transition3_Completed_sender,F1Transition3_Completed_e);
 			}
 			))
 			;
@@ -512,7 +630,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 100:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 126:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -520,24 +638,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 101:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 127:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c36 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c46 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c36, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c36, "F1Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c36, _F1BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c46, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c46, "F1Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c46, _F1BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c37 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c47 => 
 			{
-				nameScope.RegisterName("F1Transition4", c37);
-				this.F1Transition4 = c37;
+				nameScope.RegisterName("F1Transition4", c47);
+				this.F1Transition4 = c47;
 				var Completed_F1Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c37.Completed += (F1Transition4_Completed_sender,F1Transition4_Completed_e) => (Completed_F1Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition4_Completed(F1Transition4_Completed_sender,F1Transition4_Completed_e);
+				/* second level */ c47.Completed += (F1Transition4_Completed_sender,F1Transition4_Completed_e) => (Completed_F1Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition4_Completed(F1Transition4_Completed_sender,F1Transition4_Completed_e);
 			}
 			))
 			;
@@ -546,7 +664,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 106:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 132:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -554,24 +672,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 1d/* double/, 1, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 107:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 133:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c38 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c48 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c38, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c38, "F2Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c38, _F2BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c48, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c48, "F2Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c48, _F2BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c39 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c49 => 
 			{
-				nameScope.RegisterName("F2Transition1", c39);
-				this.F2Transition1 = c39;
+				nameScope.RegisterName("F2Transition1", c49);
+				this.F2Transition1 = c49;
 				var Completed_F2Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c39.Completed += (F2Transition1_Completed_sender,F2Transition1_Completed_e) => (Completed_F2Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition1_Completed(F2Transition1_Completed_sender,F2Transition1_Completed_e);
+				/* second level */ c49.Completed += (F2Transition1_Completed_sender,F2Transition1_Completed_e) => (Completed_F2Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition1_Completed(F2Transition1_Completed_sender,F2Transition1_Completed_e);
 			}
 			))
 			;
@@ -580,7 +698,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 109:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 135:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -588,24 +706,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 1d/* double/, 1, DoubleAnimation/From */,
 						To = 0d/* double/, 0, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 110:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 136:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c40 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c50 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c40, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c40, "F2Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c40, _F2BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c50, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c50, "F2Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c50, _F2BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c41 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c51 => 
 			{
-				nameScope.RegisterName("F2Transition2", c41);
-				this.F2Transition2 = c41;
+				nameScope.RegisterName("F2Transition2", c51);
+				this.F2Transition2 = c51;
 				var Completed_F2Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c41.Completed += (F2Transition2_Completed_sender,F2Transition2_Completed_e) => (Completed_F2Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition2_Completed(F2Transition2_Completed_sender,F2Transition2_Completed_e);
+				/* second level */ c51.Completed += (F2Transition2_Completed_sender,F2Transition2_Completed_e) => (Completed_F2Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition2_Completed(F2Transition2_Completed_sender,F2Transition2_Completed_e);
 			}
 			))
 			;
@@ -614,7 +732,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 112:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 138:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -622,24 +740,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 0d/* double/, 0, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 113:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 139:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c42 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c52 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c42, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c42, "F2Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c42, _F2BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c52, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c52, "F2Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c52, _F2BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c43 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c53 => 
 			{
-				nameScope.RegisterName("F2Transition3", c43);
-				this.F2Transition3 = c43;
+				nameScope.RegisterName("F2Transition3", c53);
+				this.F2Transition3 = c53;
 				var Completed_F2Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c43.Completed += (F2Transition3_Completed_sender,F2Transition3_Completed_e) => (Completed_F2Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition3_Completed(F2Transition3_Completed_sender,F2Transition3_Completed_e);
+				/* second level */ c53.Completed += (F2Transition3_Completed_sender,F2Transition3_Completed_e) => (Completed_F2Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition3_Completed(F2Transition3_Completed_sender,F2Transition3_Completed_e);
 			}
 			))
 			;
@@ -648,7 +766,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 115:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 141:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -656,24 +774,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 116:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 142:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c44 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c54 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c44, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c44, "F2Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c44, _F2BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c54, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c54, "F2Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c54, _F2BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c45 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c55 => 
 			{
-				nameScope.RegisterName("F2Transition4", c45);
-				this.F2Transition4 = c45;
+				nameScope.RegisterName("F2Transition4", c55);
+				this.F2Transition4 = c55;
 				var Completed_F2Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c45.Completed += (F2Transition4_Completed_sender,F2Transition4_Completed_e) => (Completed_F2Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition4_Completed(F2Transition4_Completed_sender,F2Transition4_Completed_e);
+				/* second level */ c55.Completed += (F2Transition4_Completed_sender,F2Transition4_Completed_e) => (Completed_F2Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition4_Completed(F2Transition4_Completed_sender,F2Transition4_Completed_e);
 			}
 			))
 			;
@@ -682,7 +800,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 121:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 147:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -690,24 +808,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 1d/* double/, 1, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 122:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 148:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c46 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c56 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c46, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c46, "F3Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c46, _F3BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c56, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c56, "F3Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c56, _F3BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c47 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c57 => 
 			{
-				nameScope.RegisterName("F3Transition1", c47);
-				this.F3Transition1 = c47;
+				nameScope.RegisterName("F3Transition1", c57);
+				this.F3Transition1 = c57;
 				var Completed_F3Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c47.Completed += (F3Transition1_Completed_sender,F3Transition1_Completed_e) => (Completed_F3Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition1_Completed(F3Transition1_Completed_sender,F3Transition1_Completed_e);
+				/* second level */ c57.Completed += (F3Transition1_Completed_sender,F3Transition1_Completed_e) => (Completed_F3Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition1_Completed(F3Transition1_Completed_sender,F3Transition1_Completed_e);
 			}
 			))
 			;
@@ -716,7 +834,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 124:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 150:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -724,24 +842,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 1d/* double/, 1, DoubleAnimation/From */,
 						To = 0d/* double/, 0, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 125:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 151:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c48 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c58 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c48, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c48, "F3Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c48, _F3BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c58, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c58, "F3Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c58, _F3BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c49 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c59 => 
 			{
-				nameScope.RegisterName("F3Transition2", c49);
-				this.F3Transition2 = c49;
+				nameScope.RegisterName("F3Transition2", c59);
+				this.F3Transition2 = c59;
 				var Completed_F3Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c49.Completed += (F3Transition2_Completed_sender,F3Transition2_Completed_e) => (Completed_F3Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition2_Completed(F3Transition2_Completed_sender,F3Transition2_Completed_e);
+				/* second level */ c59.Completed += (F3Transition2_Completed_sender,F3Transition2_Completed_e) => (Completed_F3Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition2_Completed(F3Transition2_Completed_sender,F3Transition2_Completed_e);
 			}
 			))
 			;
@@ -750,7 +868,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 127:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 153:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -758,24 +876,24 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 0d/* double/, 0, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 128:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 154:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c50 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c60 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c50, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c50, "F3Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c50, _F3BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c60, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c60, "F3Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c60, _F3BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c51 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c61 => 
 			{
-				nameScope.RegisterName("F3Transition3", c51);
-				this.F3Transition3 = c51;
+				nameScope.RegisterName("F3Transition3", c61);
+				this.F3Transition3 = c61;
 				var Completed_F3Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c51.Completed += (F3Transition3_Completed_sender,F3Transition3_Completed_e) => (Completed_F3Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition3_Completed(F3Transition3_Completed_sender,F3Transition3_Completed_e);
+				/* second level */ c61.Completed += (F3Transition3_Completed_sender,F3Transition3_Completed_e) => (Completed_F3Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition3_Completed(F3Transition3_Completed_sender,F3Transition3_Completed_e);
 			}
 			))
 			;
@@ -784,7 +902,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 130:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 156:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -792,24 +910,160 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 131:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 157:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c52 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c62 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c52, "Opacity");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c52, "F3Before");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c52, _F3BeforeSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c62, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c62, "F3Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c62, _F3BeforeSubject);
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c53 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c63 => 
 			{
-				nameScope.RegisterName("F3Transition4", c53);
-				this.F3Transition4 = c53;
+				nameScope.RegisterName("F3Transition4", c63);
+				this.F3Transition4 = c63;
 				var Completed_F3Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c53.Completed += (F3Transition4_Completed_sender,F3Transition4_Completed_e) => (Completed_F3Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition4_Completed(F3Transition4_Completed_sender,F3Transition4_Completed_e);
+				/* second level */ c63.Completed += (F3Transition4_Completed_sender,F3Transition4_Completed_e) => (Completed_F3Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition4_Completed(F3Transition4_Completed_sender,F3Transition4_Completed_e);
+			}
+			))
+			;
+			Resources[
+			"F4Transition1"
+			] = 
+			new global::Windows.UI.Xaml.Media.Animation.Storyboard
+			{
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 162:10)
+				Children = 
+				{
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						From = 1d/* double/, 1, DoubleAnimation/From */,
+						To = 1d/* double/, 1, DoubleAnimation/To */,
+						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 163:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c64 => 
+					{
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c64, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c64, "F4Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c64, _F4BeforeSubject);
+					}
+					))
+					,
+				}
+			}
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c65 => 
+			{
+				nameScope.RegisterName("F4Transition1", c65);
+				this.F4Transition1 = c65;
+				var Completed_F4Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				/* second level */ c65.Completed += (F4Transition1_Completed_sender,F4Transition1_Completed_e) => (Completed_F4Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition1_Completed(F4Transition1_Completed_sender,F4Transition1_Completed_e);
+			}
+			))
+			;
+			Resources[
+			"F4Transition2"
+			] = 
+			new global::Windows.UI.Xaml.Media.Animation.Storyboard
+			{
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 165:10)
+				Children = 
+				{
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						From = 1d/* double/, 1, DoubleAnimation/From */,
+						To = 0d/* double/, 0, DoubleAnimation/To */,
+						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 166:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c66 => 
+					{
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c66, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c66, "F4Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c66, _F4BeforeSubject);
+					}
+					))
+					,
+				}
+			}
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c67 => 
+			{
+				nameScope.RegisterName("F4Transition2", c67);
+				this.F4Transition2 = c67;
+				var Completed_F4Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				/* second level */ c67.Completed += (F4Transition2_Completed_sender,F4Transition2_Completed_e) => (Completed_F4Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition2_Completed(F4Transition2_Completed_sender,F4Transition2_Completed_e);
+			}
+			))
+			;
+			Resources[
+			"F4Transition3"
+			] = 
+			new global::Windows.UI.Xaml.Media.Animation.Storyboard
+			{
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 168:10)
+				Children = 
+				{
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						From = 0d/* double/, 0, DoubleAnimation/From */,
+						To = 0d/* double/, 0, DoubleAnimation/To */,
+						Duration = new Duration(global::System.TimeSpan.FromTicks(30000000 /* 0:0:3 */))/* Windows.UI.Xaml.Duration/, 0:0:3, DoubleAnimation/Duration */,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 169:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c68 => 
+					{
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c68, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c68, "F4Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c68, _F4BeforeSubject);
+					}
+					))
+					,
+				}
+			}
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c69 => 
+			{
+				nameScope.RegisterName("F4Transition3", c69);
+				this.F4Transition3 = c69;
+				var Completed_F4Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				/* second level */ c69.Completed += (F4Transition3_Completed_sender,F4Transition3_Completed_e) => (Completed_F4Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition3_Completed(F4Transition3_Completed_sender,F4Transition3_Completed_e);
+			}
+			))
+			;
+			Resources[
+			"F4Transition4"
+			] = 
+			new global::Windows.UI.Xaml.Media.Animation.Storyboard
+			{
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 171:10)
+				Children = 
+				{
+					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+					{
+						From = 0d/* double/, 0, DoubleAnimation/From */,
+						To = 1d/* double/, 1, DoubleAnimation/To */,
+						Duration = new Duration(global::System.TimeSpan.FromTicks(20000000 /* 0:0:2 */))/* Windows.UI.Xaml.Duration/, 0:0:2, DoubleAnimation/Duration */,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 172:14)
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c70 => 
+					{
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c70, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c70, "F4Before");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c70, _F4BeforeSubject);
+					}
+					))
+					,
+				}
+			}
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c71 => 
+			{
+				nameScope.RegisterName("F4Transition4", c71);
+				this.F4Transition4 = c71;
+				var Completed_F4Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				/* second level */ c71.Completed += (F4Transition4_Completed_sender,F4Transition4_Completed_e) => (Completed_F4Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition4_Completed(F4Transition4_Completed_sender,F4Transition4_Completed_e);
 			}
 			))
 			;
@@ -818,30 +1072,30 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 136:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 178:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
 					{
 						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 137:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 179:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c54 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c72 => 
 					{
-						nameScope.RegisterName("ProfileSlideInAnimation", c54);
-						this.ProfileSlideInAnimation = c54;
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c54, "Profile");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c54, _ProfileSubject);
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c54, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.Y)");
+						nameScope.RegisterName("ProfileSlideInAnimation", c72);
+						this.ProfileSlideInAnimation = c72;
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c72, "Profile");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c72, _ProfileSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c72, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.Y)");
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c55 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c73 => 
 			{
-				nameScope.RegisterName("ProfileStoryBoardSlideIn", c55);
-				this.ProfileStoryBoardSlideIn = c55;
+				nameScope.RegisterName("ProfileStoryBoardSlideIn", c73);
+				this.ProfileStoryBoardSlideIn = c73;
 			}
 			))
 			;
@@ -850,7 +1104,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 139:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 181:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -858,22 +1112,22 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 140:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 182:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c56 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c74 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c56, "Profile");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c56, _ProfileSubject);
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c56, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c74, "Profile");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c74, _ProfileSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c74, "Opacity");
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c57 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c75 => 
 			{
-				nameScope.RegisterName("ProfileStoryBoardFadeIn", c57);
-				this.ProfileStoryBoardFadeIn = c57;
+				nameScope.RegisterName("ProfileStoryBoardFadeIn", c75);
+				this.ProfileStoryBoardFadeIn = c75;
 			}
 			))
 			;
@@ -882,7 +1136,7 @@ namespace ElevateEvansvilleUI.Pages
 			] = 
 			new global::Windows.UI.Xaml.Media.Animation.Storyboard
 			{
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 143:10)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 185:10)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
@@ -890,22 +1144,22 @@ namespace ElevateEvansvilleUI.Pages
 						From = 0d/* double/, 0, DoubleAnimation/From */,
 						To = 1d/* double/, 1, DoubleAnimation/To */,
 						Duration = new Duration(global::System.TimeSpan.FromTicks(10000000 /* 0:0:1 */))/* Windows.UI.Xaml.Duration/, 0:0:1, DoubleAnimation/Duration */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 144:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 186:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c58 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c76 => 
 					{
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c58, "FeaturedGrid");
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c58, _FeaturedGridSubject);
-						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c58, "Opacity");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c76, "FeaturedGrid");
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c76, _FeaturedGridSubject);
+						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c76, "Opacity");
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c59 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c77 => 
 			{
-				nameScope.RegisterName("UIFadeIn", c59);
-				this.UIFadeIn = c59;
+				nameScope.RegisterName("UIFadeIn", c77);
+				this.UIFadeIn = c77;
 			}
 			))
 			;
@@ -916,308 +1170,35 @@ namespace ElevateEvansvilleUI.Pages
 				IsParsing = true,
 				Name = "FeaturedGrid",
 				Opacity = 0d/* double/, 0, Grid/Opacity */,
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 153:6)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 195:6)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Controls.Grid
 					{
 						IsParsing = true,
-						Name = "F3",
+						Name = "F4",
 						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
 						{
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 181:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 224:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 154:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 196:14)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Image
 							{
 								IsParsing = true,
-								Name = "F3After",
-								Source = "https://i.imgur.com/xk8gxZy.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/xk8gxZy.jpg, Image/Source */,
+								Name = "F4After",
+								Source = "https://i.imgur.com/5mup43B.png"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/5mup43B.png, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
 								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 156:18)
-							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c60 => 
-							{
-								nameScope.RegisterName("F3After", c60);
-								this.F3After = c60;
-								c60.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.Image
-							{
-								IsParsing = true,
-								Name = "F3Before",
-								Source = "https://i.imgur.com/KQheCkB.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/KQheCkB.jpg, Image/Source */,
-								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 159:18)
-							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c61 => 
-							{
-								nameScope.RegisterName("F3Before", c61);
-								this.F3Before = c61;
-								c61.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.Grid
-							{
-								IsParsing = true,
-								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Grid/VerticalAlignment */,
-								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
-								CornerRadius = new Windows.UI.Xaml.CornerRadius(5)/* Windows.UI.Xaml.CornerRadius/, 5, Grid/CornerRadius */,
-								Padding = new global::Windows.UI.Xaml.Thickness(40,10,40,10)/* Windows.UI.Xaml.Thickness/, 40,10,40,10, Grid/Padding */,
-								Margin = new global::Windows.UI.Xaml.Thickness(0,75,0,0)/* Windows.UI.Xaml.Thickness/, 0,75,0,0, Grid/Margin */,
-								RowSpacing = 5d/* double/, 5, Grid/RowSpacing */,
-								Background = 								new global::Windows.UI.Xaml.Media.AcrylicBrush
-								{
-									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
-									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
-									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 163:26)
-								}
-								,
-								RowDefinitions = 
-								{
-									new global::Windows.UI.Xaml.Controls.RowDefinition
-									{
-										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 170:26)
-									}
-									,
-									new global::Windows.UI.Xaml.Controls.RowDefinition
-									{
-										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 171:26)
-									}
-									,
-								}
-								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 161:18)
-								Children = 
-								{
-									new global::Windows.UI.Xaml.Controls.TextBlock
-									{
-										IsParsing = true,
-										Text = "Lowering the cost of living."/* string/, Lowering the cost of living., TextBlock/Text */,
-										FontSize = 30d/* double/, 30, TextBlock/FontSize */,
-										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
-										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
-										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 174:22)
-									}
-									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c65 => 
-									{
-										c65.CreationComplete();
-									}
-									))
-									,
-									new global::Windows.UI.Xaml.Controls.Button
-									{
-										IsParsing = true,
-										Name = "CostOfLivingButton",
-										Content = @"What? How?"/* object/, What? How?, Button/Content */,
-										FontSize = 18d/* double/, 18, Button/FontSize */,
-										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
-										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 175:22)
-									}
-									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c66 => 
-									{
-										nameScope.RegisterName("CostOfLivingButton", c66);
-										this.CostOfLivingButton = c66;
-										var Click_CostOfLivingButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-										/* second level */ c66.Click += (CostOfLivingButton_Click_sender,CostOfLivingButton_Click_e) => (Click_CostOfLivingButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.CostOfLivingButton_Click(CostOfLivingButton_Click_sender,CostOfLivingButton_Click_e);
-										global::Windows.UI.Xaml.Controls.Grid.SetRow(c66, 1/* int/, 1, Grid/Row */);
-										c66.CreationComplete();
-									}
-									))
-									,
-								}
-							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c67 => 
-							{
-								c67.CreationComplete();
-							}
-							))
-							,
-						}
-					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c68 => 
-					{
-						nameScope.RegisterName("F3", c68);
-						this.F3 = c68;
-						c68.CreationComplete();
-					}
-					))
-					,
-					new global::Windows.UI.Xaml.Controls.Grid
-					{
-						IsParsing = true,
-						Name = "F2",
-						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
-						{
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 213:22)
-						}
-						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 185:14)
-						Children = 
-						{
-							new global::Windows.UI.Xaml.Controls.Image
-							{
-								IsParsing = true,
-								Name = "F2After",
-								Source = "https://i.imgur.com/8TLOYGp.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/8TLOYGp.jpg, Image/Source */,
-								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 188:18)
-							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c69 => 
-							{
-								nameScope.RegisterName("F2After", c69);
-								this.F2After = c69;
-								c69.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.Image
-							{
-								IsParsing = true,
-								Name = "F2Before",
-								Source = "https://i.imgur.com/J6atM2p.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/J6atM2p.jpg, Image/Source */,
-								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 191:18)
-							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c70 => 
-							{
-								nameScope.RegisterName("F2Before", c70);
-								this.F2Before = c70;
-								c70.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.Grid
-							{
-								IsParsing = true,
-								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Grid/VerticalAlignment */,
-								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
-								CornerRadius = new Windows.UI.Xaml.CornerRadius(5)/* Windows.UI.Xaml.CornerRadius/, 5, Grid/CornerRadius */,
-								Padding = new global::Windows.UI.Xaml.Thickness(40,10,40,10)/* Windows.UI.Xaml.Thickness/, 40,10,40,10, Grid/Padding */,
-								Margin = new global::Windows.UI.Xaml.Thickness(0,75,0,0)/* Windows.UI.Xaml.Thickness/, 0,75,0,0, Grid/Margin */,
-								RowSpacing = 5d/* double/, 5, Grid/RowSpacing */,
-								Background = 								new global::Windows.UI.Xaml.Media.AcrylicBrush
-								{
-									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
-									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
-									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 195:26)
-								}
-								,
-								RowDefinitions = 
-								{
-									new global::Windows.UI.Xaml.Controls.RowDefinition
-									{
-										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 202:26)
-									}
-									,
-									new global::Windows.UI.Xaml.Controls.RowDefinition
-									{
-										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 203:26)
-									}
-									,
-								}
-								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 193:18)
-								Children = 
-								{
-									new global::Windows.UI.Xaml.Controls.TextBlock
-									{
-										IsParsing = true,
-										Text = "A Better Energy Solution."/* string/, A Better Energy Solution., TextBlock/Text */,
-										FontSize = 30d/* double/, 30, TextBlock/FontSize */,
-										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
-										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
-										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 206:22)
-									}
-									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c74 => 
-									{
-										c74.CreationComplete();
-									}
-									))
-									,
-									new global::Windows.UI.Xaml.Controls.Button
-									{
-										IsParsing = true,
-										Name = "SolorCanopiesButton",
-										Content = @"I'm Interested"/* object/, I'm Interested, Button/Content */,
-										FontSize = 18d/* double/, 18, Button/FontSize */,
-										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
-										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 207:22)
-									}
-									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c75 => 
-									{
-										nameScope.RegisterName("SolorCanopiesButton", c75);
-										this.SolorCanopiesButton = c75;
-										var Click_SolorCanopiesButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-										/* second level */ c75.Click += (SolorCanopiesButton_Click_sender,SolorCanopiesButton_Click_e) => (Click_SolorCanopiesButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.SolorCanopiesButton_Click(SolorCanopiesButton_Click_sender,SolorCanopiesButton_Click_e);
-										global::Windows.UI.Xaml.Controls.Grid.SetRow(c75, 1/* int/, 1, Grid/Row */);
-										c75.CreationComplete();
-									}
-									))
-									,
-								}
-							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c76 => 
-							{
-								c76.CreationComplete();
-							}
-							))
-							,
-						}
-					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c77 => 
-					{
-						nameScope.RegisterName("F2", c77);
-						this.F2 = c77;
-						c77.CreationComplete();
-					}
-					))
-					,
-					new global::Windows.UI.Xaml.Controls.Grid
-					{
-						IsParsing = true,
-						Name = "F1",
-						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
-						{
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 244:22)
-						}
-						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 217:14)
-						Children = 
-						{
-							new global::Windows.UI.Xaml.Controls.Image
-							{
-								IsParsing = true,
-								Name = "F1After",
-								Source = "https://i.imgur.com/Tx3bFyC.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/Tx3bFyC.jpg, Image/Source */,
-								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 219:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 198:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c78 => 
 							{
-								nameScope.RegisterName("F1After", c78);
-								this.F1After = c78;
+								nameScope.RegisterName("F4After", c78);
+								this.F4After = c78;
 								c78.CreationComplete();
 							}
 							))
@@ -1225,18 +1206,17 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.Image
 							{
 								IsParsing = true,
-								Name = "F1Before",
-								Source = "https://i.imgur.com/OrtIL7t.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/OrtIL7t.jpg, Image/Source */,
+								Name = "F4Before",
+								Source = "https://i.imgur.com/JGPw85I.png"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/JGPw85I.png, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
 								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 222:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 201:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c79 => 
 							{
-								nameScope.RegisterName("F1Before", c79);
-								this.F1Before = c79;
-								var Loaded_F1Before_Loaded_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-								/* second level */ c79.Loaded += (F1Before_Loaded_sender,F1Before_Loaded_e) => (Loaded_F1Before_Loaded_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Before_Loaded(F1Before_Loaded_sender,F1Before_Loaded_e);
+								nameScope.RegisterName("F4Before", c79);
+								this.F4Before = c79;
 								c79.CreationComplete();
 							}
 							))
@@ -1248,14 +1228,14 @@ namespace ElevateEvansvilleUI.Pages
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
 								CornerRadius = new Windows.UI.Xaml.CornerRadius(5)/* Windows.UI.Xaml.CornerRadius/, 5, Grid/CornerRadius */,
 								Padding = new global::Windows.UI.Xaml.Thickness(40,10,40,10)/* Windows.UI.Xaml.Thickness/, 40,10,40,10, Grid/Padding */,
-								Margin = new global::Windows.UI.Xaml.Thickness(0,75,0,0)/* Windows.UI.Xaml.Thickness/, 0,75,0,0, Grid/Margin */,
+								Margin = new global::Windows.UI.Xaml.Thickness(5,75,5,0)/* Windows.UI.Xaml.Thickness/, 5,75,5,0, Grid/Margin */,
 								RowSpacing = 5d/* double/, 5, Grid/RowSpacing */,
 								Background = 								new global::Windows.UI.Xaml.Media.AcrylicBrush
 								{
 									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
 									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
 									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 226:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 205:26)
 								}
 								,
 								RowDefinitions = 
@@ -1263,29 +1243,29 @@ namespace ElevateEvansvilleUI.Pages
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 233:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 212:26)
 									}
 									,
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 234:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 213:26)
 									}
 									,
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 224:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 203:18)
 								Children = 
 								{
 									new global::Windows.UI.Xaml.Controls.TextBlock
 									{
 										IsParsing = true,
-										Text = "The Evansville Rail Initiative"/* string/, The Evansville Rail Initiative, TextBlock/Text */,
+										Text = "The most transparent campaign in American History."/* string/, The most transparent campaign in American History., TextBlock/Text */,
 										FontSize = 30d/* double/, 30, TextBlock/FontSize */,
 										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
 										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
 										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 237:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 216:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c83 => 
 									{
@@ -1296,19 +1276,19 @@ namespace ElevateEvansvilleUI.Pages
 									new global::Windows.UI.Xaml.Controls.Button
 									{
 										IsParsing = true,
-										Name = "RailroadButton",
-										Content = @"Find out more"/* object/, Find out more, Button/Content */,
+										Name = "TransparencyButton",
+										Content = @"View Campaign Finance"/* object/, View Campaign Finance, Button/Content */,
 										FontSize = 18d/* double/, 18, Button/FontSize */,
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
 										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 238:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 217:18)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c84 => 
 									{
-										nameScope.RegisterName("RailroadButton", c84);
-										this.RailroadButton = c84;
-										var Click_RailroadButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-										/* second level */ c84.Click += (RailroadButton_Click_sender,RailroadButton_Click_e) => (Click_RailroadButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.RailroadButton_Click(RailroadButton_Click_sender,RailroadButton_Click_e);
+										nameScope.RegisterName("TransparencyButton", c84);
+										this.TransparencyButton = c84;
+										var Click_TransparencyButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										/* second level */ c84.Click += (TransparencyButton_Click_sender,TransparencyButton_Click_e) => (Click_TransparencyButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.TransparencyButton_Click(TransparencyButton_Click_sender,TransparencyButton_Click_e);
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c84, 1/* int/, 1, Grid/Row */);
 										c84.CreationComplete();
 									}
@@ -1326,9 +1306,428 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c86 => 
 					{
-						nameScope.RegisterName("F1", c86);
-						this.F1 = c86;
+						nameScope.RegisterName("F4", c86);
+						this.F4 = c86;
 						c86.CreationComplete();
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Controls.Grid
+					{
+						IsParsing = true,
+						Name = "F3",
+						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
+						{
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 259:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 228:14)
+						Children = 
+						{
+							new global::Windows.UI.Xaml.Controls.Image
+							{
+								IsParsing = true,
+								Name = "F3After",
+								Source = "https://i.imgur.com/xk8gxZy.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/xk8gxZy.jpg, Image/Source */,
+								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
+								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Image/HorizontalAlignment */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 230:18)
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c87 => 
+							{
+								nameScope.RegisterName("F3After", c87);
+								this.F3After = c87;
+								c87.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Image
+							{
+								IsParsing = true,
+								Name = "F3Before",
+								Source = "https://i.imgur.com/KQheCkB.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/KQheCkB.jpg, Image/Source */,
+								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
+								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Image/HorizontalAlignment */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 235:18)
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c88 => 
+							{
+								nameScope.RegisterName("F3Before", c88);
+								this.F3Before = c88;
+								c88.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Grid
+							{
+								IsParsing = true,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Grid/VerticalAlignment */,
+								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
+								CornerRadius = new Windows.UI.Xaml.CornerRadius(5)/* Windows.UI.Xaml.CornerRadius/, 5, Grid/CornerRadius */,
+								Padding = new global::Windows.UI.Xaml.Thickness(40,10,40,10)/* Windows.UI.Xaml.Thickness/, 40,10,40,10, Grid/Padding */,
+								Margin = new global::Windows.UI.Xaml.Thickness(5,75,5,0)/* Windows.UI.Xaml.Thickness/, 5,75,5,0, Grid/Margin */,
+								RowSpacing = 5d/* double/, 5, Grid/RowSpacing */,
+								Background = 								new global::Windows.UI.Xaml.Media.AcrylicBrush
+								{
+									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
+									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
+									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 241:26)
+								}
+								,
+								RowDefinitions = 
+								{
+									new global::Windows.UI.Xaml.Controls.RowDefinition
+									{
+										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 248:26)
+									}
+									,
+									new global::Windows.UI.Xaml.Controls.RowDefinition
+									{
+										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 249:26)
+									}
+									,
+								}
+								,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 239:18)
+								Children = 
+								{
+									new global::Windows.UI.Xaml.Controls.TextBlock
+									{
+										IsParsing = true,
+										Text = "Lowering the cost of living."/* string/, Lowering the cost of living., TextBlock/Text */,
+										FontSize = 30d/* double/, 30, TextBlock/FontSize */,
+										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
+										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
+										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 252:22)
+									}
+									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c92 => 
+									{
+										c92.CreationComplete();
+									}
+									))
+									,
+									new global::Windows.UI.Xaml.Controls.Button
+									{
+										IsParsing = true,
+										Name = "CostOfLivingButton",
+										Content = @"What? How?"/* object/, What? How?, Button/Content */,
+										FontSize = 18d/* double/, 18, Button/FontSize */,
+										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
+										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 253:22)
+									}
+									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c93 => 
+									{
+										nameScope.RegisterName("CostOfLivingButton", c93);
+										this.CostOfLivingButton = c93;
+										var Click_CostOfLivingButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										/* second level */ c93.Click += (CostOfLivingButton_Click_sender,CostOfLivingButton_Click_e) => (Click_CostOfLivingButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.CostOfLivingButton_Click(CostOfLivingButton_Click_sender,CostOfLivingButton_Click_e);
+										global::Windows.UI.Xaml.Controls.Grid.SetRow(c93, 1/* int/, 1, Grid/Row */);
+										c93.CreationComplete();
+									}
+									))
+									,
+								}
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c94 => 
+							{
+								c94.CreationComplete();
+							}
+							))
+							,
+						}
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c95 => 
+					{
+						nameScope.RegisterName("F3", c95);
+						this.F3 = c95;
+						c95.CreationComplete();
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Controls.Grid
+					{
+						IsParsing = true,
+						Name = "F2",
+						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
+						{
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 291:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 263:14)
+						Children = 
+						{
+							new global::Windows.UI.Xaml.Controls.Image
+							{
+								IsParsing = true,
+								Name = "F2After",
+								Source = "https://i.imgur.com/8TLOYGp.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/8TLOYGp.jpg, Image/Source */,
+								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 266:18)
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c96 => 
+							{
+								nameScope.RegisterName("F2After", c96);
+								this.F2After = c96;
+								c96.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Image
+							{
+								IsParsing = true,
+								Name = "F2Before",
+								Source = "https://i.imgur.com/J6atM2p.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/J6atM2p.jpg, Image/Source */,
+								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 269:18)
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c97 => 
+							{
+								nameScope.RegisterName("F2Before", c97);
+								this.F2Before = c97;
+								c97.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Grid
+							{
+								IsParsing = true,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Grid/VerticalAlignment */,
+								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
+								CornerRadius = new Windows.UI.Xaml.CornerRadius(5)/* Windows.UI.Xaml.CornerRadius/, 5, Grid/CornerRadius */,
+								Padding = new global::Windows.UI.Xaml.Thickness(40,10,40,10)/* Windows.UI.Xaml.Thickness/, 40,10,40,10, Grid/Padding */,
+								Margin = new global::Windows.UI.Xaml.Thickness(5,75,5,0)/* Windows.UI.Xaml.Thickness/, 5,75,5,0, Grid/Margin */,
+								RowSpacing = 5d/* double/, 5, Grid/RowSpacing */,
+								Background = 								new global::Windows.UI.Xaml.Media.AcrylicBrush
+								{
+									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
+									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
+									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 273:26)
+								}
+								,
+								RowDefinitions = 
+								{
+									new global::Windows.UI.Xaml.Controls.RowDefinition
+									{
+										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 280:26)
+									}
+									,
+									new global::Windows.UI.Xaml.Controls.RowDefinition
+									{
+										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 281:26)
+									}
+									,
+								}
+								,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 271:18)
+								Children = 
+								{
+									new global::Windows.UI.Xaml.Controls.TextBlock
+									{
+										IsParsing = true,
+										Text = "A Better Energy Solution."/* string/, A Better Energy Solution., TextBlock/Text */,
+										FontSize = 30d/* double/, 30, TextBlock/FontSize */,
+										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
+										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
+										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 284:22)
+									}
+									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c101 => 
+									{
+										c101.CreationComplete();
+									}
+									))
+									,
+									new global::Windows.UI.Xaml.Controls.Button
+									{
+										IsParsing = true,
+										Name = "SolorCanopiesButton",
+										Content = @"I'm Interested"/* object/, I'm Interested, Button/Content */,
+										FontSize = 18d/* double/, 18, Button/FontSize */,
+										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
+										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 285:22)
+									}
+									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c102 => 
+									{
+										nameScope.RegisterName("SolorCanopiesButton", c102);
+										this.SolorCanopiesButton = c102;
+										var Click_SolorCanopiesButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										/* second level */ c102.Click += (SolorCanopiesButton_Click_sender,SolorCanopiesButton_Click_e) => (Click_SolorCanopiesButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.SolorCanopiesButton_Click(SolorCanopiesButton_Click_sender,SolorCanopiesButton_Click_e);
+										global::Windows.UI.Xaml.Controls.Grid.SetRow(c102, 1/* int/, 1, Grid/Row */);
+										c102.CreationComplete();
+									}
+									))
+									,
+								}
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c103 => 
+							{
+								c103.CreationComplete();
+							}
+							))
+							,
+						}
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c104 => 
+					{
+						nameScope.RegisterName("F2", c104);
+						this.F2 = c104;
+						c104.CreationComplete();
+					}
+					))
+					,
+					new global::Windows.UI.Xaml.Controls.Grid
+					{
+						IsParsing = true,
+						Name = "F1",
+						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
+						{
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 326:22)
+						}
+						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 295:14)
+						Children = 
+						{
+							new global::Windows.UI.Xaml.Controls.Image
+							{
+								IsParsing = true,
+								Name = "F1After",
+								Source = "https://i.imgur.com/Tx3bFyC.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/Tx3bFyC.jpg, Image/Source */,
+								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 297:18)
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c105 => 
+							{
+								nameScope.RegisterName("F1After", c105);
+								this.F1After = c105;
+								c105.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Image
+							{
+								IsParsing = true,
+								Name = "F1Before",
+								Source = "https://i.imgur.com/OrtIL7t.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/OrtIL7t.jpg, Image/Source */,
+								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 302:18)
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c106 => 
+							{
+								nameScope.RegisterName("F1Before", c106);
+								this.F1Before = c106;
+								var Loaded_F1Before_Loaded_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+								/* second level */ c106.Loaded += (F1Before_Loaded_sender,F1Before_Loaded_e) => (Loaded_F1Before_Loaded_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Before_Loaded(F1Before_Loaded_sender,F1Before_Loaded_e);
+								c106.CreationComplete();
+							}
+							))
+							,
+							new global::Windows.UI.Xaml.Controls.Grid
+							{
+								IsParsing = true,
+								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Grid/VerticalAlignment */,
+								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
+								CornerRadius = new Windows.UI.Xaml.CornerRadius(5)/* Windows.UI.Xaml.CornerRadius/, 5, Grid/CornerRadius */,
+								Padding = new global::Windows.UI.Xaml.Thickness(40,10,40,10)/* Windows.UI.Xaml.Thickness/, 40,10,40,10, Grid/Padding */,
+								Margin = new global::Windows.UI.Xaml.Thickness(5,75,5,0)/* Windows.UI.Xaml.Thickness/, 5,75,5,0, Grid/Margin */,
+								RowSpacing = 5d/* double/, 5, Grid/RowSpacing */,
+								Background = 								new global::Windows.UI.Xaml.Media.AcrylicBrush
+								{
+									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
+									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
+									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 308:26)
+								}
+								,
+								RowDefinitions = 
+								{
+									new global::Windows.UI.Xaml.Controls.RowDefinition
+									{
+										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 315:26)
+									}
+									,
+									new global::Windows.UI.Xaml.Controls.RowDefinition
+									{
+										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 316:26)
+									}
+									,
+								}
+								,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 306:18)
+								Children = 
+								{
+									new global::Windows.UI.Xaml.Controls.TextBlock
+									{
+										IsParsing = true,
+										Text = "The Evansville Rail Initiative"/* string/, The Evansville Rail Initiative, TextBlock/Text */,
+										FontSize = 30d/* double/, 30, TextBlock/FontSize */,
+										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
+										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
+										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 319:22)
+									}
+									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c110 => 
+									{
+										c110.CreationComplete();
+									}
+									))
+									,
+									new global::Windows.UI.Xaml.Controls.Button
+									{
+										IsParsing = true,
+										Name = "RailroadButton",
+										Content = @"Find out more"/* object/, Find out more, Button/Content */,
+										FontSize = 18d/* double/, 18, Button/FontSize */,
+										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
+										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 320:22)
+									}
+									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c111 => 
+									{
+										nameScope.RegisterName("RailroadButton", c111);
+										this.RailroadButton = c111;
+										var Click_RailroadButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										/* second level */ c111.Click += (RailroadButton_Click_sender,RailroadButton_Click_e) => (Click_RailroadButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.RailroadButton_Click(RailroadButton_Click_sender,RailroadButton_Click_e);
+										global::Windows.UI.Xaml.Controls.Grid.SetRow(c111, 1/* int/, 1, Grid/Row */);
+										c111.CreationComplete();
+									}
+									))
+									,
+								}
+							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c112 => 
+							{
+								c112.CreationComplete();
+							}
+							))
+							,
+						}
+					}
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c113 => 
+					{
+						nameScope.RegisterName("F1", c113);
+						this.F1 = c113;
+						c113.CreationComplete();
 					}
 					))
 					,
@@ -1340,14 +1739,20 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.ColumnDefinition
 							{
 								Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 250:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 332:22)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.ColumnDefinition
 							{
 								Width = new Windows.UI.Xaml.GridLength(2f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, 2*, ColumnDefinition/Width */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 251:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 333:22)
 							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler9)(c115 => 
+							{
+								nameScope.RegisterName("ProfileWidth", c115);
+								this.ProfileWidth = c115;
+							}
+							))
 							,
 						}
 						,
@@ -1356,18 +1761,24 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 255:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 337:22)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(2f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, 2*, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 256:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 338:22)
 							}
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler5)(c117 => 
+							{
+								nameScope.RegisterName("ProfileHeight", c117);
+								this.ProfileHeight = c117;
+							}
+							))
 							,
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 248:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 330:14)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Image
@@ -1378,30 +1789,30 @@ namespace ElevateEvansvilleUI.Pages
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, Image/VerticalAlignment */,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, Image/HorizontalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
+								Visibility = global::Windows.UI.Xaml.Visibility.Visible/* Windows.UI.Xaml.Visibility/, Visible, Image/Visibility */,
 								Opacity = 0d/* double/, 0, Image/Opacity */,
 								RenderTransform = 								new global::Windows.UI.Xaml.Media.TranslateTransform
 								{
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 266:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 348:26)
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 260:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 342:18)
 							}
-							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c91 => 
+							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c118 => 
 							{
-								nameScope.RegisterName("Profile", c91);
-								this.Profile = c91;
-								global::Windows.UI.Xaml.Controls.Grid.SetRow(c91, 1/* int/, 1, Grid/Row */);
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c91, 1/* int/, 1, Grid/Column */);
-								c91.CreationComplete();
+								nameScope.RegisterName("Profile", c118);
+								this.Profile = c118;
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c118, 1/* int/, 1, Grid/Row */);
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c118, 1/* int/, 1, Grid/Column */);
+								c118.CreationComplete();
 							}
 							))
 							,
 						}
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c92 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c119 => 
 					{
-						c92.CreationComplete();
+						c119.CreationComplete();
 					}
 					))
 					,
@@ -1413,15 +1824,15 @@ namespace ElevateEvansvilleUI.Pages
 						VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Stretch/* Windows.UI.Xaml.VerticalAlignment/, Stretch, Button/VerticalAlignment */,
 						Width = 40d/* double/, 40, Button/Width */,
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, Button/HorizontalAlignment */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 271:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 353:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c93 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c120 => 
 					{
-						nameScope.RegisterName("Forward", c93);
-						this.Forward = c93;
+						nameScope.RegisterName("Forward", c120);
+						this.Forward = c120;
 						var Click_Forward_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-						/* second level */ c93.Click += (Forward_Click_sender,Forward_Click_e) => (Click_Forward_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.Forward_Click(Forward_Click_sender,Forward_Click_e);
-						c93.CreationComplete();
+						/* second level */ c120.Click += (Forward_Click_sender,Forward_Click_e) => (Click_Forward_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.Forward_Click(Forward_Click_sender,Forward_Click_e);
+						c120.CreationComplete();
 					}
 					))
 					,
@@ -1433,50 +1844,50 @@ namespace ElevateEvansvilleUI.Pages
 						VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Stretch/* Windows.UI.Xaml.VerticalAlignment/, Stretch, Button/VerticalAlignment */,
 						Width = 40d/* double/, 40, Button/Width */,
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Left/* Windows.UI.Xaml.HorizontalAlignment/, Left, Button/HorizontalAlignment */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 274:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 356:14)
 					}
-					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c94 => 
+					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c121 => 
 					{
-						nameScope.RegisterName("Backward", c94);
-						this.Backward = c94;
+						nameScope.RegisterName("Backward", c121);
+						this.Backward = c121;
 						var Click_Backward_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-						/* second level */ c94.Click += (Backward_Click_sender,Backward_Click_e) => (Click_Backward_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.Backward_Click(Backward_Click_sender,Backward_Click_e);
-						c94.CreationComplete();
+						/* second level */ c121.Click += (Backward_Click_sender,Backward_Click_e) => (Click_Backward_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.Backward_Click(Backward_Click_sender,Backward_Click_e);
+						c121.CreationComplete();
 					}
 					))
 					,
 				}
 			}
-			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c95 => 
+			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c122 => 
 			{
-				nameScope.RegisterName("FeaturedGrid", c95);
-				this.FeaturedGrid = c95;
+				nameScope.RegisterName("FeaturedGrid", c122);
+				this.FeaturedGrid = c122;
 				// FieldModifier public
-				c95.CreationComplete();
+				c122.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c96 => 
+			.GenericApply((c123 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 1:2)
 				
-				// WARNING Property c96.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
-				c96.RenderTransform = 				new global::Windows.UI.Xaml.Media.TranslateTransform
+				// WARNING Property c123.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				c123.RenderTransform = 				new global::Windows.UI.Xaml.Media.TranslateTransform
 				{
-					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 149:10)
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 191:10)
 				}
 				;
 			}
 			))
-			.GenericApply((c97 => 
+			.GenericApply((c124 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.HomePage
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c97, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c124, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_0 = c97;
-				c97.CreationComplete();
+				this._component_0 = c124;
+				c124.CreationComplete();
 			}
 			))
 			;
@@ -1489,50 +1900,64 @@ namespace ElevateEvansvilleUI.Pages
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 26:10)
 			Resources.TryGetValue("FWF2StoryBoard", out _);
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 38:10)
+			Resources.TryGetValue("FWF3StoryBoard", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 50:10)
 			Resources.TryGetValue("FWFinalStoryBoard", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 52:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 66:10)
 			Resources.TryGetValue("BWBeginStoryBoard", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 64:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 78:10)
 			Resources.TryGetValue("BWF2StoryBoard", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 76:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 90:10)
+			Resources.TryGetValue("BWF3StoryBoard", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 102:10)
 			Resources.TryGetValue("BWFinalStoryBoard", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 91:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 117:10)
 			Resources.TryGetValue("F1Transition1", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 94:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 120:10)
 			Resources.TryGetValue("F1Transition2", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 97:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 123:10)
 			Resources.TryGetValue("F1Transition3", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 100:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 126:10)
 			Resources.TryGetValue("F1Transition4", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 106:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 132:10)
 			Resources.TryGetValue("F2Transition1", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 109:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 135:10)
 			Resources.TryGetValue("F2Transition2", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 112:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 138:10)
 			Resources.TryGetValue("F2Transition3", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 115:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 141:10)
 			Resources.TryGetValue("F2Transition4", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 121:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 147:10)
 			Resources.TryGetValue("F3Transition1", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 124:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 150:10)
 			Resources.TryGetValue("F3Transition2", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 127:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 153:10)
 			Resources.TryGetValue("F3Transition3", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 130:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 156:10)
 			Resources.TryGetValue("F3Transition4", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 136:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 162:10)
+			Resources.TryGetValue("F4Transition1", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 165:10)
+			Resources.TryGetValue("F4Transition2", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 168:10)
+			Resources.TryGetValue("F4Transition3", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 171:10)
+			Resources.TryGetValue("F4Transition4", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 178:10)
 			Resources.TryGetValue("ProfileStoryBoardSlideIn", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 139:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 181:10)
 			Resources.TryGetValue("ProfileStoryBoardFadeIn", out _);
-			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 143:10)
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 185:10)
 			Resources.TryGetValue("UIFadeIn", out _);
 			Loading += (s, e) =>
 			{
 				FWBeginStoryBoard.UpdateResourceBindings();
 				FWF2StoryBoard.UpdateResourceBindings();
+				FWF3StoryBoard.UpdateResourceBindings();
 				FWFinalStoryBoard.UpdateResourceBindings();
 				BWBeginStoryBoard.UpdateResourceBindings();
 				BWF2StoryBoard.UpdateResourceBindings();
+				BWF3StoryBoard.UpdateResourceBindings();
 				BWFinalStoryBoard.UpdateResourceBindings();
 				F1Transition1.UpdateResourceBindings();
 				F1Transition2.UpdateResourceBindings();
@@ -1546,6 +1971,10 @@ namespace ElevateEvansvilleUI.Pages
 				F3Transition2.UpdateResourceBindings();
 				F3Transition3.UpdateResourceBindings();
 				F3Transition4.UpdateResourceBindings();
+				F4Transition1.UpdateResourceBindings();
+				F4Transition2.UpdateResourceBindings();
+				F4Transition3.UpdateResourceBindings();
+				F4Transition4.UpdateResourceBindings();
 				ProfileStoryBoardSlideIn.UpdateResourceBindings();
 				ProfileStoryBoardFadeIn.UpdateResourceBindings();
 				UIFadeIn.UpdateResourceBindings();
@@ -1629,6 +2058,42 @@ namespace ElevateEvansvilleUI.Pages
 			set
 			{
 				_FWF2StoryBoardSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _FWF3Animation1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.DoubleAnimation FWF3Animation1
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.DoubleAnimation)_FWF3Animation1Subject.ElementInstance;
+			}
+			set
+			{
+				_FWF3Animation1Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _FWF3Animation2Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.DoubleAnimation FWF3Animation2
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.DoubleAnimation)_FWF3Animation2Subject.ElementInstance;
+			}
+			set
+			{
+				_FWF3Animation2Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _FWF3StoryBoardSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.Storyboard FWF3StoryBoard
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.Storyboard)_FWF3StoryBoardSubject.ElementInstance;
+			}
+			set
+			{
+				_FWF3StoryBoardSubject.ElementInstance = value;
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _FWFinalAnimation1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
@@ -1737,6 +2202,42 @@ namespace ElevateEvansvilleUI.Pages
 			set
 			{
 				_BWF2StoryBoardSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _BWF3Animation1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.DoubleAnimation BWF3Animation1
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.DoubleAnimation)_BWF3Animation1Subject.ElementInstance;
+			}
+			set
+			{
+				_BWF3Animation1Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _BWF3Animation2Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.DoubleAnimation BWF3Animation2
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.DoubleAnimation)_BWF3Animation2Subject.ElementInstance;
+			}
+			set
+			{
+				_BWF3Animation2Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _BWF3StoryBoardSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.Storyboard BWF3StoryBoard
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.Storyboard)_BWF3StoryBoardSubject.ElementInstance;
+			}
+			set
+			{
+				_BWF3StoryBoardSubject.ElementInstance = value;
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _BWFinalAnimation1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
@@ -1919,6 +2420,54 @@ namespace ElevateEvansvilleUI.Pages
 				_F3Transition4Subject.ElementInstance = value;
 			}
 		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4Transition1Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.Storyboard F4Transition1
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.Storyboard)_F4Transition1Subject.ElementInstance;
+			}
+			set
+			{
+				_F4Transition1Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4Transition2Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.Storyboard F4Transition2
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.Storyboard)_F4Transition2Subject.ElementInstance;
+			}
+			set
+			{
+				_F4Transition2Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4Transition3Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.Storyboard F4Transition3
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.Storyboard)_F4Transition3Subject.ElementInstance;
+			}
+			set
+			{
+				_F4Transition3Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4Transition4Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Media.Animation.Storyboard F4Transition4
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Media.Animation.Storyboard)_F4Transition4Subject.ElementInstance;
+			}
+			set
+			{
+				_F4Transition4Subject.ElementInstance = value;
+			}
+		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _ProfileSlideInAnimationSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
 		private global::Windows.UI.Xaml.Media.Animation.DoubleAnimation ProfileSlideInAnimation
 		{
@@ -1965,6 +2514,54 @@ namespace ElevateEvansvilleUI.Pages
 			set
 			{
 				_UIFadeInSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4AfterSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Image F4After
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Image)_F4AfterSubject.ElementInstance;
+			}
+			set
+			{
+				_F4AfterSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4BeforeSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Image F4Before
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Image)_F4BeforeSubject.ElementInstance;
+			}
+			set
+			{
+				_F4BeforeSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _TransparencyButtonSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Button TransparencyButton
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Button)_TransparencyButtonSubject.ElementInstance;
+			}
+			set
+			{
+				_TransparencyButtonSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _F4Subject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.Grid F4
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Grid)_F4Subject.ElementInstance;
+			}
+			set
+			{
+				_F4Subject.ElementInstance = value;
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _F3AfterSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
@@ -2109,6 +2706,30 @@ namespace ElevateEvansvilleUI.Pages
 			set
 			{
 				_F1Subject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ProfileWidthSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ColumnDefinition ProfileWidth
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.ColumnDefinition)_ProfileWidthSubject.ElementInstance;
+			}
+			set
+			{
+				_ProfileWidthSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ProfileHeightSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.RowDefinition ProfileHeight
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.RowDefinition)_ProfileHeightSubject.ElementInstance;
+			}
+			set
+			{
+				_ProfileHeightSubject.ElementInstance = value;
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _ProfileSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
