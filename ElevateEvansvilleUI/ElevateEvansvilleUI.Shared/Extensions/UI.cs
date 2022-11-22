@@ -11,6 +11,7 @@ using System.ServiceModel.Description;
 using ElevateEvansvilleUI.Controls.Dialogs;
 using System.Threading.Tasks;
 using System.Security.AccessControl;
+using ElevateEvansvilleUI.Pages;
 #if __WASM__
 using Uno.Foundation;
 #endif
@@ -27,7 +28,9 @@ namespace ElevateEvansvilleUI.Extensions
         public static Grid LoadingGrid;
         public static Storyboard LoadingFadeIn;
 
+
         public static Button SupportButton;
+        public static Button FinanceButton;
 
         private static Type SourceType;
 
@@ -43,6 +46,15 @@ namespace ElevateEvansvilleUI.Extensions
             Navigation.PushURI(SourceType.Name.Replace("Page", ""));
             AppFrame.Navigate(SourceType);
 
+            //Hide Support Button if on SupportPage
+            if (SourceType != typeof(SupportPage))
+            {
+                SupportButton.Visibility = Visibility.Visible;
+            }
+            else if (SourceType == typeof(SupportPage))
+            {
+                SupportButton.Visibility = Visibility.Collapsed;
+            }
         }
 
         public static void AppFrame_Navigated(object sender, Windows.UI.Xaml.Navigation.NavigationEventArgs e)

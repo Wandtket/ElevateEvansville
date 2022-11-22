@@ -122,7 +122,6 @@ namespace ElevateEvansvilleUI
 
         private async void Support_Click(object sender, RoutedEventArgs e)
         {
-            Support.Visibility = Visibility.Collapsed;
             UI.Navigate(typeof(SupportPage));
 
 #if __WASM__
