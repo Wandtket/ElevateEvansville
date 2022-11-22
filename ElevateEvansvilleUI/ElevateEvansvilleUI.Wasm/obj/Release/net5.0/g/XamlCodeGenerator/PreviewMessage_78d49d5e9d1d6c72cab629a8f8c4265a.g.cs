@@ -160,7 +160,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 								{
 									new global::Windows.UI.Xaml.Documents.Run
 									{
-										Text = "Last Updated: 11/06/2022"/* string/, Last Updated: 11/06/2022, Run/Text */,
+										Text = "Last Updated: 11/20/2022"/* string/, Last Updated: 11/20/2022, Run/Text */,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 35:15)
 									}
 									,
@@ -182,164 +182,46 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					}
 					))
 					,
-					new global::Windows.UI.Xaml.Controls.StackPanel
+					new global::Windows.UI.Xaml.Controls.ListView
 					{
 						IsParsing = true,
-						Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, StackPanel/Margin */,
-						Spacing = 5d/* double/, 5, StackPanel/Spacing */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 40:10)
-						Children = 
-						{
-							new global::Windows.UI.Xaml.Controls.TextBlock
-							{
-								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 41:14)
-								Inlines = 
-								{
-									new global::Windows.UI.Xaml.Documents.Run
-									{
-										Text = "Event Calendars now operational for Outlook, Google and Yahoo"/* string/, Event Calendars now operational for Outlook, Google and Yahoo, Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 43:15)
-									}
-									,
-								}
-							}
-							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c13 => 
-							{
-								c13.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.TextBlock
-							{
-								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 44:14)
-								Inlines = 
-								{
-									new global::Windows.UI.Xaml.Documents.Run
-									{
-										Text = "Paypal API operational (UI coming later)"/* string/, Paypal API operational (UI coming later), Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 46:15)
-									}
-									,
-								}
-							}
-							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c15 => 
-							{
-								c15.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.TextBlock
-							{
-								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 47:14)
-								Inlines = 
-								{
-									new global::Windows.UI.Xaml.Documents.Run
-									{
-										Text = "Added 'Distribute All' support item."/* string/, Added 'Distribute All' support item., Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 49:15)
-									}
-									,
-								}
-							}
-							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c17 => 
-							{
-								c17.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.TextBlock
-							{
-								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 50:14)
-								Inlines = 
-								{
-									new global::Windows.UI.Xaml.Documents.Run
-									{
-										Text = "Fixed application theme on iOS."/* string/, Fixed application theme on iOS., Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 52:15)
-									}
-									,
-								}
-							}
-							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c19 => 
-							{
-								c19.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.TextBlock
-							{
-								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 53:14)
-								Inlines = 
-								{
-									new global::Windows.UI.Xaml.Documents.Run
-									{
-										Text = "Made support page items more readable on smaller displays."/* string/, Made support page items more readable on smaller displays., Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 55:15)
-									}
-									,
-								}
-							}
-							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c21 => 
-							{
-								c21.CreationComplete();
-							}
-							))
-							,
-							new global::Windows.UI.Xaml.Controls.TextBlock
-							{
-								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 56:14)
-								Inlines = 
-								{
-									new global::Windows.UI.Xaml.Documents.Run
-									{
-										Text = "Moved mission statement to Platform page"/* string/, Moved mission statement to Platform page, Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 58:15)
-									}
-									,
-								}
-							}
-							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c23 => 
-							{
-								c23.CreationComplete();
-							}
-							))
-							,
-						}
+						Name = "ChangeItemsListView",
+						Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, ListView/Margin */,
+						Height = 225d/* double/, 225, ListView/Height */,
+						ItemTemplate = 						new global::Windows.UI.Xaml.DataTemplate(this , __owner => 						new _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0().Build(__owner)
+						)						,
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 39:10)
 					}
-					.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler5)(c24 => 
+					.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler5)(c12 => 
 					{
-						global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 2/* int/, 2, Grid/Row */);
-						c24.CreationComplete();
+						nameScope.RegisterName("ChangeItemsListView", c12);
+						this.ChangeItemsListView = c12;
+						global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 2/* int/, 2, Grid/Row */);
+						c12.CreationComplete();
 					}
 					))
 					,
 				}
 			}
-			.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler4)(c25 => 
+			.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler4)(c13 => 
 			{
-				c25.CreationComplete();
+				c13.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c26 => 
+			.GenericApply((c14 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 1:2)
 				
-				// WARNING Property c26.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}UserControl, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c14.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}UserControl, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c27 => 
+			.GenericApply((c15 => 
 			{
 				// Class ElevateEvansvilleUI.Controls.Messages.PreviewMessage
-				c27.CreationComplete();
+				c15.CreationComplete();
 			}
 			))
 			;
@@ -347,6 +229,54 @@ namespace ElevateEvansvilleUI.Controls.Messages
 
 		}
 		partial void OnInitializeCompleted();
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangeItemsListViewSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ListView ChangeItemsListView
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.ListView)_ChangeItemsListViewSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangeItemsListViewSubject.ElementInstance = value;
+			}
+		}
+		private class _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0
+		{
+			public _View Build(object __ResourceOwner_7)
+			{
+				var nameScope = new global::Windows.UI.Xaml.NameScope();
+				_View __rootInstance = null;
+				__rootInstance = 
+				new global::Windows.UI.Xaml.Controls.TextBlock
+				{
+					IsParsing = true,
+					TextWrapping = global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/, Wrap, TextBlock/TextWrapping */,
+					Padding = new global::Windows.UI.Xaml.Thickness(0,5,0,5)/* Windows.UI.Xaml.Thickness/, 0,5,0,5, TextBlock/Padding */,
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 42:22)
+				}
+				.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c16 => 
+				{
+					c16.SetBinding(
+						global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
+						new Windows.UI.Xaml.Data.Binding()
+					);
+					c16.CreationComplete();
+				}
+				))
+				;
+				if (__rootInstance is DependencyObject d)
+				{
+					if (global::Windows.UI.Xaml.NameScope.GetNameScope(d) == null)
+					{
+						global::Windows.UI.Xaml.NameScope.SetNameScope(d, nameScope);
+						nameScope.Owner = d;
+					}
+					global::Uno.UI.FrameworkElementHelper.AddObjectReference(d, this);
+				}
+				return __rootInstance;
+			}
+		}
 
 	}
 }
@@ -389,9 +319,9 @@ namespace ElevateEvansvilleUI.Wasm
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.StackPanel instance);
+		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.ListView instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.StackPanel PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler5 handler)
+		public static global::Windows.UI.Xaml.Controls.ListView PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply(this global::Windows.UI.Xaml.Controls.ListView instance, XamlApplyHandler5 handler)
 		{
 			handler(instance);
 			return instance;

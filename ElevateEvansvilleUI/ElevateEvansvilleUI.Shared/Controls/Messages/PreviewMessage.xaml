@@ -31,34 +31,18 @@
             </TextBlock>
 
             <TextBlock Grid.Column="1" FontSize="11"  HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                Last Updated: 11/06/2022
+                Last Updated: 11/20/2022
             </TextBlock>
-
         </Grid>
 
 
-        <StackPanel Grid.Row="2" Margin="15,5,0,0" Spacing="5">
-            <TextBlock>
-                Event Calendars now operational for Outlook, Google and Yahoo
-            </TextBlock>
-            <TextBlock>
-                Paypal API operational (UI coming later)
-            </TextBlock>
-            <TextBlock>
-                Added 'Distribute All' support item.
-            </TextBlock>
-            <TextBlock>
-                Fixed application theme on iOS.
-            </TextBlock>
-            <TextBlock>
-                Made support page items more readable on smaller displays.
-            </TextBlock>
-            <TextBlock>
-                Moved mission statement to Platform page
-            </TextBlock>
-        </StackPanel>
-
-
+        <ListView x:Name="ChangeItemsListView" Grid.Row="2" Margin="15,5,0,0" Height="225">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap" Padding="0,5,0,5"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </Grid>
 

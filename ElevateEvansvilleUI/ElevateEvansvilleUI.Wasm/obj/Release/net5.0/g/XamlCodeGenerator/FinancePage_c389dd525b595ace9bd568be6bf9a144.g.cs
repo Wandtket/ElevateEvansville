@@ -527,7 +527,7 @@ namespace ElevateEvansvilleUI.Pages
 		}
 		private class _FinancePage_c389dd525b595ace9bd568be6bf9a144_ElevateEvansvilleUIPagesFinancePageSC0
 		{
-			public _View Build(object __ResourceOwner_414)
+			public _View Build(object __ResourceOwner_6)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
@@ -746,7 +746,7 @@ namespace ElevateEvansvilleUI.Pages
 				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c47 => 
 				{
 					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c47, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_414 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_6 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 					/* second level */ c47.Tapped += (ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e) => (Tapped_ReceivedItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.ReceivedItem_Tapped(ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e);
 					/* _isTopLevelDictionary:False */
 					this._component_0 = c47;
@@ -788,7 +788,7 @@ namespace ElevateEvansvilleUI.Pages
 		}
 		private class _FinancePage_c389dd525b595ace9bd568be6bf9a144_ElevateEvansvilleUIPagesFinancePageSC1
 		{
-			public _View Build(object __ResourceOwner_415)
+			public _View Build(object __ResourceOwner_8)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
@@ -968,7 +968,7 @@ namespace ElevateEvansvilleUI.Pages
 				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c60 => 
 				{
 					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c60, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_SentItem_Tapped_That = (__ResourceOwner_415 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					var Tapped_SentItem_Tapped_That = (__ResourceOwner_8 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 					/* second level */ c60.Tapped += (SentItem_Tapped_sender,SentItem_Tapped_e) => (Tapped_SentItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.SentItem_Tapped(SentItem_Tapped_sender,SentItem_Tapped_e);
 					/* _isTopLevelDictionary:False */
 					this._component_0 = c60;
