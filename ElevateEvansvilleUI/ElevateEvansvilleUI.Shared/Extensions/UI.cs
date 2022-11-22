@@ -30,7 +30,6 @@ namespace ElevateEvansvilleUI.Extensions
 
 
         public static Button SupportButton;
-        public static Button FinanceButton;
 
         private static Type SourceType;
 

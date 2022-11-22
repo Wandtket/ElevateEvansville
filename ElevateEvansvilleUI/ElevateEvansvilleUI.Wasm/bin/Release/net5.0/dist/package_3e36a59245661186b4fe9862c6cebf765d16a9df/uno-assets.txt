@@ -32,5 +32,4 @@ Assets/Images/Logos/YouTube.png
 Assets/Images/Profile/Cover-Collapsed.png
 Assets/Images/Profile/Cover.png
 index.html
-ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
 ElevateEvansvilleUI.Wasm.exe
