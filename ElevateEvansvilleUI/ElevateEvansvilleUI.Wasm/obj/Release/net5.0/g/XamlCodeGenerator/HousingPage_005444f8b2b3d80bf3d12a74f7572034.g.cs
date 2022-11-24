@@ -51,35 +51,495 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			var nameScope = new global::Windows.UI.Xaml.NameScope();
 			NameScope.SetNameScope(this, nameScope);
 			base.IsParsing = true;
+			Resources[
+			"Paragraph"
+			] = 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_23 => 
+				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
+				{
+					Setters = 
+					{
+						new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.TextBlock.FontSizeProperty, (double)24d/* double/double, 24, Setter/Value */),
+						new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.TextBlock.TextWrappingProperty, (Windows.UI.Xaml.TextWrapping)global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/Windows.UI.Xaml.TextWrapping, Wrap, Setter/Value */),
+					}
+				}
+			)
+			;
+			Resources[
+			"Header"
+			] = 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_26 => 
+				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
+				{
+					Setters = 
+					{
+						new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.TextBlock.FontSizeProperty, (double)30d/* double/double, 30, Setter/Value */),
+						new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.TextBlock.TextWrappingProperty, (Windows.UI.Xaml.TextWrapping)global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/Windows.UI.Xaml.TextWrapping, Wrap, Setter/Value */),
+						new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.TextBlock.MarginProperty, (Windows.UI.Xaml.Thickness)new global::Windows.UI.Xaml.Thickness(0,15,0,10)/* Windows.UI.Xaml.Thickness/Windows.UI.Xaml.Thickness, 0,15,0,10, Setter/Value */),
+					}
+				}
+			)
+			;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 1:2)
 			base.Content = 
-			new global::Windows.UI.Xaml.Controls.Grid
+			new global::Windows.UI.Xaml.Controls.ScrollViewer
 			{
 				IsParsing = true,
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 11:6)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 25:6)
+				Content = 
+				new global::Windows.UI.Xaml.Controls.Grid
+				{
+					IsParsing = true,
+					Padding = new global::Windows.UI.Xaml.Thickness(20,75,20,75)/* Windows.UI.Xaml.Thickness/, 20,75,20,75, Grid/Padding */,
+					RowSpacing = 20d/* double/, 20, Grid/RowSpacing */,
+					HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
+					MaxWidth = 900d/* double/, 900, Grid/MaxWidth */,
+					RowDefinitions = 
+					{
+						new global::Windows.UI.Xaml.Controls.RowDefinition
+						{
+							Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 28:18)
+						}
+						,
+						new global::Windows.UI.Xaml.Controls.RowDefinition
+						{
+							Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 29:18)
+						}
+						,
+					}
+					,
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 26:10)
+					Children = 
+					{
+						new global::Windows.UI.Xaml.Controls.Grid
+						{
+							IsParsing = true,
+							RowDefinitions = 
+							{
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 34:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 35:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 36:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 37:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 38:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 39:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 40:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 41:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 42:22)
+								}
+								,
+							}
+							,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 32:14)
+							Children = 
+							{
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 46:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "It’s an open secret that America is trending towards a permanent renter’s society where homes are owned by a select handful of entities that wish to passively extract wealth from the working class. The parallels between the art and real estate industries as embezzlement schemes for the ultra-wealthy grow more apparent every day."/* string/, It’s an open secret that America is trending towards a permanent renter’s society where homes are owned by a select handful of entities that wish to passively extract wealth from the working class. The parallels between the art and real estate industries as embezzlement schemes for the ultra-wealthy grow more apparent every day., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 51:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c12 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c12, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_0 = c12;
+									c12.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 53:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "Evansville will become a beacon of resistance against this trend."/* string/, Evansville will become a beacon of resistance against this trend., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 55:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c14 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c14, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c14, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_1 = c14;
+									c14.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 57:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "I will be merging the Evansville Housing Authority, the Affordable Housing Program, and any city services that pertain to housing into a single unified entity called The Evansville Public Housing Department (EVPHD) that will be tasked with acquiring properties across the city."/* string/, I will be merging the Evansville Housing Authority, the Affordable Housing Program, and any city services that pertain to housing into a single unified entity called The Evansville Public Housing Department (EVPHD) that will be tasked with acquiring properties across the city., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 62:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c16 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c16, 2/* int/, 2, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c16, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_2 = c16;
+									c16.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 64:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "Rather than construct new identical homes that can be easily identified as “Affordable Houses” these properties will be located randomly throughout the city and will vary in size and quality, the only indicator that a house is managed by the city will be its rental price. Comparable homes will have their prices observed and the city will take that price and drastically reduce it, fueling competition and a “race to the bottom” while maintaining a high standard of living."/* string/, Rather than construct new identical homes that can be easily identified as “Affordable Houses” these properties will be located randomly throughout the city and will vary in size and quality, the only indicator that a house is managed by the city will be its rental price. Comparable homes will have their prices observed and the city will take that price and drastically reduce it, fueling competition and a “race to the bottom” while maintaining a high standard of living., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 70:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c18 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c18, 3/* int/, 3, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c18, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_3 = c18;
+									c18.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 72:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "These properties will then become a direct source of revenue for the city to fuel its new various infrastructure projects and will provide renters with better protection and ease of mind should another pandemic arise."/* string/, These properties will then become a direct source of revenue for the city to fuel its new various infrastructure projects and will provide renters with better protection and ease of mind should another pandemic arise., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 76:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c20 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c20, 4/* int/, 4, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c20, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_4 = c20;
+									c20.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 78:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "Once the city reaches an equilibrium with its rental properties it will be able to lower the property taxes of existing homeowners, thus reducing the cost of living for everyone."/* string/, Once the city reaches an equilibrium with its rental properties it will be able to lower the property taxes of existing homeowners, thus reducing the cost of living for everyone., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 81:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c22 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c22, 5/* int/, 5, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c22, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_5 = c22;
+									c22.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 83:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "Remember, you can elect a Mayor and a City Council, but you can’t elect a landlord."/* string/, Remember, you can elect a Mayor and a City Council, but you can’t elect a landlord., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 85:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c24 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 6/* int/, 6, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c24, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_6 = c24;
+									c24.CreationComplete();
+								}
+								))
+								,
+							}
+						}
+						.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler3)(c25 => 
+						{
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c25, 0/* int/, 0, Grid/Row */);
+							c25.CreationComplete();
+						}
+						))
+						,
+						new global::Windows.UI.Xaml.Controls.Grid
+						{
+							IsParsing = true,
+							Margin = new global::Windows.UI.Xaml.Thickness(0,75,0,0)/* Windows.UI.Xaml.Thickness/, 0,75,0,0, Grid/Margin */,
+							RowDefinitions = 
+							{
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 92:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 93:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 94:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 95:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 96:22)
+								}
+								,
+							}
+							,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 90:14)
+							Children = 
+							{
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 99:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "On a personal note,"/* string/, On a personal note,, Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 101:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c32 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c32, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c32, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_7 = c32;
+									c32.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 103:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "I firmly believe that the cost of rent should not exceed the cost of a mortgage, if a renter pays in rent the total value of the property over the course of many years, that property must be relinquished to the renter. If the renter does not finish paying for the property before moving on, ownership of the property will be split until the other party pays back what is owed, the new renter will then pay both owners of the property, if the third renter moves on, ownership is then split again, this will keep happening until one party pays in full or the other parties relinquish ownership."/* string/, I firmly believe that the cost of rent should not exceed the cost of a mortgage, if a renter pays in rent the total value of the property over the course of many years, that property must be relinquished to the renter. If the renter does not finish paying for the property before moving on, ownership of the property will be split until the other party pays back what is owed, the new renter will then pay both owners of the property, if the third renter moves on, ownership is then split again, this will keep happening until one party pays in full or the other parties relinquish ownership., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 110:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c34 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c34, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c34, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_8 = c34;
+									c34.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 112:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "All it takes for the price of homes to skyrocket is a butterfly effect of greed, each assessor across the country unaware of the influence of a small handful of entities such as Zillow, or Blackrock."/* string/, All it takes for the price of homes to skyrocket is a butterfly effect of greed, each assessor across the country unaware of the influence of a small handful of entities such as Zillow, or Blackrock., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 115:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c36 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c36, 2/* int/, 2, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c36, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_9 = c36;
+									c36.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 117:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "I will not possess the legislative ability to fix such a broken system of housing, but I can do my small part as mayor to create an example for the rest of the country to follow and mitigate the damage that is being done."/* string/, I will not possess the legislative ability to fix such a broken system of housing, but I can do my small part as mayor to create an example for the rest of the country to follow and mitigate the damage that is being done., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 121:19)
+										}
+										,
+									}
+								}
+								.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler2)(c38 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c38, 3/* int/, 3, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c38, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_10 = c38;
+									c38.CreationComplete();
+								}
+								))
+								,
+							}
+						}
+						.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler3)(c39 => 
+						{
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c39, 1/* int/, 1, Grid/Row */);
+							c39.CreationComplete();
+						}
+						))
+						,
+					}
+				}
+				.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler3)(c40 => 
+				{
+					c40.CreationComplete();
+				}
+				))
+				,
 			}
-			.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler0)(c0 => 
+			.HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply((HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions.XamlApplyHandler4)(c41 => 
 			{
-				c0.CreationComplete();
+				c41.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c1 => 
+			.GenericApply((c42 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml (Line 1:2)
 				
-				// WARNING Property c1.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c42.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c2 => 
+			.GenericApply((c43 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.Featured.HousingPage
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c2, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c43, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_0 = c2;
-				c2.CreationComplete();
+				this._component_11 = c43;
+				c43.CreationComplete();
 			}
 			))
 			;
@@ -94,15 +554,147 @@ namespace ElevateEvansvilleUI.Pages.Featured
 		}
 		partial void OnInitializeCompleted();
 		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
-		private global::Windows.UI.Xaml.Controls.Page _component_0
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_0
 		{
 			get
 			{
-				return (global::Windows.UI.Xaml.Controls.Page)_component_0_Holder.Instance;
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_0_Holder.Instance;
 			}
 			set
 			{
 				_component_0_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_1
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_1_Holder.Instance;
+			}
+			set
+			{
+				_component_1_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_2_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_2
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_2_Holder.Instance;
+			}
+			set
+			{
+				_component_2_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_3_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_3
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_3_Holder.Instance;
+			}
+			set
+			{
+				_component_3_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_4_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_4
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_4_Holder.Instance;
+			}
+			set
+			{
+				_component_4_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_5_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_5
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_5_Holder.Instance;
+			}
+			set
+			{
+				_component_5_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_6_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_6
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_6_Holder.Instance;
+			}
+			set
+			{
+				_component_6_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_7_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_7
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_7_Holder.Instance;
+			}
+			set
+			{
+				_component_7_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_8_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_8
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_8_Holder.Instance;
+			}
+			set
+			{
+				_component_8_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_9_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_9
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_9_Holder.Instance;
+			}
+			set
+			{
+				_component_9_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_10_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_10
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_10_Holder.Instance;
+			}
+			set
+			{
+				_component_10_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_11_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.Page _component_11
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Page)_component_11_Holder.Instance;
+			}
+			set
+			{
+				_component_11_Holder.Instance = value;
 			}
 		}
 		private interface IHousingPage_Bindings
@@ -139,6 +731,17 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			{
 				var owner = Owner;
 				owner._component_0.UpdateResourceBindings();
+				owner._component_1.UpdateResourceBindings();
+				owner._component_2.UpdateResourceBindings();
+				owner._component_3.UpdateResourceBindings();
+				owner._component_4.UpdateResourceBindings();
+				owner._component_5.UpdateResourceBindings();
+				owner._component_6.UpdateResourceBindings();
+				owner._component_7.UpdateResourceBindings();
+				owner._component_8.UpdateResourceBindings();
+				owner._component_9.UpdateResourceBindings();
+				owner._component_10.UpdateResourceBindings();
+				owner._component_11.UpdateResourceBindings();
 			}
 			void IHousingPage_Bindings.StopTracking()
 			{
@@ -151,9 +754,37 @@ namespace ElevateEvansvilleUI.Wasm
 {
 	static class HousingPage_005444f8b2b3d80bf3d12a74f7572034XamlApplyExtensions
 	{
-		public delegate void XamlApplyHandler0(global::Windows.UI.Xaml.Controls.Grid instance);
+		public delegate void XamlApplyHandler0(global::Windows.UI.Xaml.Controls.RowDefinition instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Grid HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler0 handler)
+		public static global::Windows.UI.Xaml.Controls.RowDefinition HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply(this global::Windows.UI.Xaml.Controls.RowDefinition instance, XamlApplyHandler0 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Documents.Run instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Documents.Run HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply(this global::Windows.UI.Xaml.Documents.Run instance, XamlApplyHandler1 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.TextBlock instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.TextBlock HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler2 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.Grid instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.Grid HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler3 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Controls.ScrollViewer instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.ScrollViewer HousingPage_005444f8b2b3d80bf3d12a74f7572034_XamlApply(this global::Windows.UI.Xaml.Controls.ScrollViewer instance, XamlApplyHandler4 handler)
 		{
 			handler(instance);
 			return instance;

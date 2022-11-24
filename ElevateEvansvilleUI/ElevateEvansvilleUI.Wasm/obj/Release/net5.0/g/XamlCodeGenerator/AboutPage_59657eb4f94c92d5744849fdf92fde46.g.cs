@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_2 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_24 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -1503,7 +1503,7 @@ namespace ElevateEvansvilleUI.Pages
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
-											Text = "My final tour before leaving the military was at Joint Base Pearl-Harbor Hickham. This assignment was where I had honed and nearly perfected my software development process for the military. I had been designated one of the top innovators in the entire Air Force and was giving Air Force News Network talks on what it means to innovate on process improvements, my videos were played at the officer’s academy at Maxwell AFB as well. During this period I was awarded by the Pacific Air Forces Major Command and won prize money for my efforts to create a fully modular inventory device and to design the first holographic UI for military use in logistics."/* string/, My final tour before leaving the military was at Joint Base Pearl-Harbor Hickham. This assignment was where I had honed and nearly perfected my software development process for the military. I had been designated one of the top innovators in the entire Air Force and was giving Air Force News Network talks on what it means to innovate on process improvements, my videos were played at the officer’s academy at Maxwell AFB as well. During this period I was awarded by the Pacific Air Forces Major Command and won prize money for my efforts to create a fully modular inventory device and to design the first holographic UI for military use in logistics., Run/Text */,
+											Text = "My final tour before leaving the military was at Joint Base Pearl-Harbor Hickam. This assignment was where I had honed and nearly perfected my software development process for the military. I had been designated one of the top innovators in the entire Air Force and was giving Air Force News Network talks on what it means to innovate on process improvements, my videos were played at the officer’s academy at Maxwell AFB as well. During this period I was awarded by the Pacific Air Forces Major Command and won prize money for my efforts to create a fully modular inventory device and to design the first holographic UI for military use in logistics."/* string/, My final tour before leaving the military was at Joint Base Pearl-Harbor Hickam. This assignment was where I had honed and nearly perfected my software development process for the military. I had been designated one of the top innovators in the entire Air Force and was giving Air Force News Network talks on what it means to innovate on process improvements, my videos were played at the officer’s academy at Maxwell AFB as well. During this period I was awarded by the Pacific Air Forces Major Command and won prize money for my efforts to create a fully modular inventory device and to design the first holographic UI for military use in logistics., Run/Text */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 272:19)
 										}
 										,
@@ -1659,7 +1659,7 @@ namespace ElevateEvansvilleUI.Pages
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
-											Text = "I want to tell you this though, you should not have to join the military to get the basic necessities a country should offer its citizens."/* string/, I want to tell you this though, you should not have to join the military to get the basic necessities a country should offer its citizens., Run/Text */,
+											Text = "For what it's worth, my opinion is this, you should not have to join the military to get the basic necessities a country should offer its citizens."/* string/, For what it's worth, my opinion is this, you should not have to join the military to get the basic necessities a country should offer its citizens., Run/Text */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 310:19)
 										}
 										,

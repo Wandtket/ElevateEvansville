@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			Resources[
 			"Paragraph"
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_0 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_22 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +68,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			Resources[
 			"Header"
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_3 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_28 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -160,6 +160,12 @@ namespace ElevateEvansvilleUI.Pages.Featured
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 43:22)
 								}
 								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 44:22)
+								}
+								,
 							}
 							,
 							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 39:14)
@@ -168,18 +174,18 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 46:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 47:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Bold
 										{
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 47:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 48:22)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "First: A Brief History of Railroad in Evansville"/* string/, First: A Brief History of Railroad in Evansville, Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 49:23)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 50:23)
 												}
 												,
 											}
@@ -187,37 +193,62 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c10 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c11 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c10, 0/* int/, 0, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c10, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c11, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c11, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_0 = c10;
-									c10.CreationComplete();
+									this._component_0 = c11;
+									c11.CreationComplete();
 								}
 								))
 								,
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 52:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 53:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Prior to WW2 Evansville had roughly 40 miles of streetcar track that carried passengers to and from their destinations. These streetcars were effective for those who didn’t own automobiles."/* string/, Prior to WW2 Evansville had roughly 40 miles of streetcar track that carried passengers to and from their destinations. These streetcars were effective for those who didn’t own automobiles., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 55:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 56:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c12 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c13 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 1/* int/, 1, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c12, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c13, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c13, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_1 = c12;
-									c12.CreationComplete();
+									this._component_1 = c13;
+									c13.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,15,0,0)/* Windows.UI.Xaml.Thickness/, 0,15,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 58:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "The photos below were provided by the Willard Library Archive."/* string/, The photos below were provided by the Willard Library Archive., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 60:19)
+										}
+										,
+									}
+								}
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c15 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c15, 2/* int/, 2, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c15, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_2 = c15;
+									c15.CreationComplete();
 								}
 								))
 								,
@@ -225,99 +256,99 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,10)/* Windows.UI.Xaml.Thickness/, 0,10,0,10, FlipView/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 57:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 62:18)
 									Items = 
 									{
 										new global::Windows.UI.Xaml.Controls.FlipViewItem
 										{
 											IsParsing = true,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 58:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 63:22)
 											Content = 
 											new global::Windows.UI.Xaml.Controls.Image
 											{
 												IsParsing = true,
 												Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 												Source = "https://i.imgur.com/5ZFVkYx.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/5ZFVkYx.jpg, Image/Source */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 60:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 65:26)
 											}
-											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c13 => 
+											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c16 => 
 											{
-												c13.CreationComplete();
+												c16.CreationComplete();
 											}
 											))
 											,
 										}
-										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c14 => 
+										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c17 => 
 										{
-											c14.CreationComplete();
+											c17.CreationComplete();
 										}
 										))
 										,
 										new global::Windows.UI.Xaml.Controls.FlipViewItem
 										{
 											IsParsing = true,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 62:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 67:22)
 											Content = 
 											new global::Windows.UI.Xaml.Controls.Image
 											{
 												IsParsing = true,
 												Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 												Source = "https://i.imgur.com/4SHfP45.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/4SHfP45.jpg, Image/Source */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 64:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 69:26)
 											}
-											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c15 => 
+											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c18 => 
 											{
-												c15.CreationComplete();
+												c18.CreationComplete();
 											}
 											))
 											,
 										}
-										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c16 => 
+										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c19 => 
 										{
-											c16.CreationComplete();
+											c19.CreationComplete();
 										}
 										))
 										,
 										new global::Windows.UI.Xaml.Controls.FlipViewItem
 										{
 											IsParsing = true,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 66:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 71:22)
 											Content = 
 											new global::Windows.UI.Xaml.Controls.Image
 											{
 												IsParsing = true,
 												Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 												Source = "https://i.imgur.com/LcSJTZW.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/LcSJTZW.jpg, Image/Source */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 68:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 73:26)
 											}
-											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c17 => 
+											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c20 => 
 											{
-												c17.CreationComplete();
+												c20.CreationComplete();
 											}
 											))
 											,
 										}
-										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c18 => 
+										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c21 => 
 										{
-											c18.CreationComplete();
+											c21.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler5)(c19 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler5)(c22 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c19, 2/* int/, 2, Grid/Row */);
-									c19.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c22, 3/* int/, 3, Grid/Row */);
+									c22.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c20 => 
+						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c23 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c20, 0/* int/, 0, Grid/Row */);
-							c20.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c23, 0/* int/, 0, Grid/Row */);
+							c23.CreationComplete();
 						}
 						))
 						,
@@ -329,35 +360,35 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 76:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 81:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 77:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 82:22)
 								}
 								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 74:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 79:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 80:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 85:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Bold
 										{
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 81:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 86:22)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "The Rise of the Automobile Industry,"/* string/, The Rise of the Automobile Industry,, Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 83:23)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 88:23)
 												}
 												,
 											}
@@ -365,46 +396,46 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c24 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c27 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 0/* int/, 0, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c24, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c27, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_2 = c24;
-									c24.CreationComplete();
+									this._component_3 = c27;
+									c27.CreationComplete();
 								}
 								))
 								,
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 86:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 91:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Many cities around America had these streetcar services and Evansville was no exception, after the war, the automobile industry famously lobbied to have the streetcar tracks removed from city centers in favor of favor of cheap mass produced automobiles, with the new interstate highway being built many people didn’t see a need for streetcars."/* string/, Many cities around America had these streetcar services and Evansville was no exception, after the war, the automobile industry famously lobbied to have the streetcar tracks removed from city centers in favor of favor of cheap mass produced automobiles, with the new interstate highway being built many people didn’t see a need for streetcars., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 91:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 96:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c26 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c29 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c26, 1/* int/, 1, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c26, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c29, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c29, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_3 = c26;
-									c26.CreationComplete();
+									this._component_4 = c29;
+									c29.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c27 => 
+						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c30 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 1/* int/, 1, Grid/Row */);
-							c27.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c30, 1/* int/, 1, Grid/Row */);
+							c30.CreationComplete();
 						}
 						))
 						,
@@ -416,41 +447,41 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 97:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 102:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 98:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 103:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 99:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 104:22)
 								}
 								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 95:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 100:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 103:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 108:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Bold
 										{
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 104:18)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 109:18)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "Left Behind"/* string/, Left Behind, Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 104:36)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 109:36)
 												}
 												,
 											}
@@ -458,53 +489,53 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c32 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c35 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c32, 0/* int/, 0, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c32, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c35, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c35, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_4 = c32;
-									c32.CreationComplete();
+									this._component_5 = c35;
+									c35.CreationComplete();
 								}
 								))
 								,
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 107:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 112:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "While America was busy dismantling its passenger rail infrastructure, Europe was doubling down. Cities in Europe had already been largely designed to be walk-centric for hundreds of years and building large parking lots and roads that ran right through city centers were not appealing to Europeans."/* string/, While America was busy dismantling its passenger rail infrastructure, Europe was doubling down. Cities in Europe had already been largely designed to be walk-centric for hundreds of years and building large parking lots and roads that ran right through city centers were not appealing to Europeans., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 112:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 117:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c34 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c37 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c34, 1/* int/, 1, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c34, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c37, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c37, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_5 = c34;
-									c34.CreationComplete();
+									this._component_6 = c37;
+									c37.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c35 => 
+						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c38 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c35, 2/* int/, 2, Grid/Row */);
-							c35.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c38, 2/* int/, 2, Grid/Row */);
+							c38.CreationComplete();
 						}
 						))
 						,
 						new global::Windows.UI.Xaml.Controls.WrapPanel
 						{
 							IsParsing = true,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 117:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 122:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.Grid
@@ -516,19 +547,19 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										new global::Windows.UI.Xaml.Controls.RowDefinition
 										{
 											Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 120:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 125:26)
 										}
 										,
 										new global::Windows.UI.Xaml.Controls.RowDefinition
 										{
 											Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 121:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 126:26)
 										}
 										,
 										new global::Windows.UI.Xaml.Controls.RowDefinition
 										{
 											Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 122:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 127:26)
 										}
 										,
 									}
@@ -538,29 +569,29 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										new global::Windows.UI.Xaml.Controls.ColumnDefinition
 										{
 											Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 125:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 130:26)
 										}
 										,
 									}
 									,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 118:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 123:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.TextBlock
 										{
 											IsParsing = true,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 129:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 134:22)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Bold
 												{
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 130:22)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 135:22)
 													Inlines = 
 													{
 														new global::Windows.UI.Xaml.Documents.Run
 														{
 															Text = "Evansville and the founding of Amtrak,"/* string/, Evansville and the founding of Amtrak,, Run/Text */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 130:67)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 135:67)
 														}
 														,
 													}
@@ -568,37 +599,37 @@ namespace ElevateEvansvilleUI.Pages.Featured
 												,
 											}
 										}
-										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c41 => 
+										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c44 => 
 										{
-											global::Windows.UI.Xaml.Controls.Grid.SetRow(c41, 0/* int/, 0, Grid/Row */);
-											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c41, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+											global::Windows.UI.Xaml.Controls.Grid.SetRow(c44, 0/* int/, 0, Grid/Row */);
+											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c44, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 											/* _isTopLevelDictionary:False */
-											this._component_6 = c41;
-											c41.CreationComplete();
+											this._component_7 = c44;
+											c44.CreationComplete();
 										}
 										))
 										,
 										new global::Windows.UI.Xaml.Controls.TextBlock
 										{
 											IsParsing = true,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 133:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 138:22)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "Vance Hartke graduated from the University of Evansville in 1940, he served as Mayor of Evansville between 1956 and 1958. In 1958 Hartke went on to become a Senator and served as the chairman of the Subcommittee on Surface Transportation."/* string/, Vance Hartke graduated from the University of Evansville in 1940, he served as Mayor of Evansville between 1956 and 1958. In 1958 Hartke went on to become a Senator and served as the chairman of the Subcommittee on Surface Transportation., Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 138:23)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 143:23)
 												}
 												,
 											}
 										}
-										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c43 => 
+										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c46 => 
 										{
-											global::Windows.UI.Xaml.Controls.Grid.SetRow(c43, 1/* int/, 1, Grid/Row */);
-											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c43, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+											global::Windows.UI.Xaml.Controls.Grid.SetRow(c46, 1/* int/, 1, Grid/Row */);
+											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c46, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 											/* _isTopLevelDictionary:False */
-											this._component_7 = c43;
-											c43.CreationComplete();
+											this._component_8 = c46;
+											c46.CreationComplete();
 										}
 										))
 										,
@@ -606,24 +637,24 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										{
 											IsParsing = true,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,5,0,0)/* Windows.UI.Xaml.Thickness/, 0,5,0,0, TextBlock/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 140:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 145:22)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "As chairman, Senator Hartke helped establish "/* string/, As chairman, Senator Hartke helped establish , Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 141:67)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 146:67)
 												}
 												,
 												new global::Windows.UI.Xaml.Documents.Bold
 												{
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 141:67)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 146:67)
 													Inlines = 
 													{
 														new global::Windows.UI.Xaml.Documents.Run
 														{
 															Text = "Amtrak"/* string/, Amtrak, Run/Text */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 141:80)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 146:80)
 														}
 														,
 													}
@@ -632,26 +663,26 @@ namespace ElevateEvansvilleUI.Pages.Featured
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = ", The only interstate passenger rail service in America."/* string/, , The only interstate passenger rail service in America., Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 142:23)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 147:23)
 												}
 												,
 											}
 										}
-										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c47 => 
+										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c50 => 
 										{
-											global::Windows.UI.Xaml.Controls.Grid.SetRow(c47, 2/* int/, 2, Grid/Row */);
-											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c47, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+											global::Windows.UI.Xaml.Controls.Grid.SetRow(c50, 2/* int/, 2, Grid/Row */);
+											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c50, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 											/* _isTopLevelDictionary:False */
-											this._component_8 = c47;
-											c47.CreationComplete();
+											this._component_9 = c50;
+											c50.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c48 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c51 => 
 								{
-									c48.CreationComplete();
+									c51.CreationComplete();
 								}
 								))
 								,
@@ -663,20 +694,20 @@ namespace ElevateEvansvilleUI.Pages.Featured
 									Height = 300d/* double/, 300, Image/Height */,
 									VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Image/VerticalAlignment */,
 									Margin = new global::Windows.UI.Xaml.Thickness(5)/* Windows.UI.Xaml.Thickness/, 5, Image/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 148:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 153:18)
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c49 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c52 => 
 								{
-									c49.CreationComplete();
+									c52.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler8)(c50 => 
+						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler8)(c53 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c50, 3/* int/, 3, Grid/Row */);
-							c50.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c53, 3/* int/, 3, Grid/Row */);
+							c53.CreationComplete();
 						}
 						))
 						,
@@ -688,41 +719,41 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 156:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 161:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 157:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 162:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 158:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 163:22)
 								}
 								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 154:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 159:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 161:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 166:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Bold
 										{
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 162:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 167:22)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "Amtrak and High Speed Rail"/* string/, Amtrak and High Speed Rail, Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 162:55)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 167:55)
 												}
 												,
 											}
@@ -730,37 +761,37 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c55 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c58 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c55, 0/* int/, 0, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c55, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c58, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c58, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_9 = c55;
-									c55.CreationComplete();
+									this._component_10 = c58;
+									c58.CreationComplete();
 								}
 								))
 								,
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 165:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 170:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Amtrak shares the same network of rail that the freight trains use, which is why it is slower than many trains you would find in both Europe and Asia. As of this writing there are efforts to establish high speed rail networks across America."/* string/, Amtrak shares the same network of rail that the freight trains use, which is why it is slower than many trains you would find in both Europe and Asia. As of this writing there are efforts to establish high speed rail networks across America., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 169:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 174:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c57 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c60 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c57, 1/* int/, 1, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c57, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c60, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c60, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_10 = c57;
-									c57.CreationComplete();
+									this._component_11 = c60;
+									c60.CreationComplete();
 								}
 								))
 								,
@@ -768,33 +799,33 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 171:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 176:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Passenger trains are experiencing a resurgence, they are an excellent piece of infrastructure that is cheaper and more comfortable than air travel without the hassle of airport security, and while being slower than air they are also faster and more consistent than a bus."/* string/, Passenger trains are experiencing a resurgence, they are an excellent piece of infrastructure that is cheaper and more comfortable than air travel without the hassle of airport security, and while being slower than air they are also faster and more consistent than a bus., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 176:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 181:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c59 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c62 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c59, 2/* int/, 2, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c59, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c62, 2/* int/, 2, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c62, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_11 = c59;
-									c59.CreationComplete();
+									this._component_12 = c62;
+									c62.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c60 => 
+						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c63 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c60, 4/* int/, 4, Grid/Row */);
-							c60.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c63, 4/* int/, 4, Grid/Row */);
+							c63.CreationComplete();
 						}
 						))
 						,
@@ -803,36 +834,6 @@ namespace ElevateEvansvilleUI.Pages.Featured
 							IsParsing = true,
 							RowDefinitions = 
 							{
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 182:22)
-								}
-								,
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 183:22)
-								}
-								,
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 184:22)
-								}
-								,
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 185:22)
-								}
-								,
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 186:22)
-								}
-								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
@@ -869,26 +870,56 @@ namespace ElevateEvansvilleUI.Pages.Featured
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 192:22)
 								}
 								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 193:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 194:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 195:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 196:22)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 197:22)
+								}
+								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 180:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 185:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 196:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 201:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Bold
 										{
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 197:18)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 202:18)
 											Inlines = 
 											{
 												new global::Windows.UI.Xaml.Documents.Run
 												{
 													Text = "My Mission"/* string/, My Mission, Run/Text */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 197:35)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 202:35)
 												}
 												,
 											}
@@ -896,62 +927,37 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c73 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c76 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c73, 0/* int/, 0, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c73, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c76, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c76, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_12 = c73;
-									c73.CreationComplete();
+									this._component_13 = c76;
+									c76.CreationComplete();
 								}
 								))
 								,
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 200:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 205:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "I was stationed at Osan AB, Korea and Aviano AB, Italy while serving in the United States Air Force. It’s safe to say I had grown fond of utilizing the passenger rail there, I would take the train from a little town called Pordenone into Venice for less than $20 round trip, and not once have to worry about parking."/* string/, I was stationed at Osan AB, Korea and Aviano AB, Italy while serving in the United States Air Force. It’s safe to say I had grown fond of utilizing the passenger rail there, I would take the train from a little town called Pordenone into Venice for less than $20 round trip, and not once have to worry about parking., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 206:19)
-										}
-										,
-									}
-								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c75 => 
-								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c75, 1/* int/, 1, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c75, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_13 = c75;
-									c75.CreationComplete();
-								}
-								))
-								,
-								new global::Windows.UI.Xaml.Controls.TextBlock
-								{
-									IsParsing = true,
-									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 208:18)
-									Inlines = 
-									{
-										new global::Windows.UI.Xaml.Documents.Run
-										{
-											Text = "The first phase of this plan will be to turn the demolition lot of the Old National Bank skyscraper into a hybrid light rail and interstate station."/* string/, The first phase of this plan will be to turn the demolition lot of the Old National Bank skyscraper into a hybrid light rail and interstate station., Run/Text */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 211:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c77 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c78 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c77, 2/* int/, 2, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c77, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c78, 1/* int/, 1, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c78, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_14 = c77;
-									c77.CreationComplete();
+									this._component_14 = c78;
+									c78.CreationComplete();
 								}
 								))
 								,
@@ -964,19 +970,44 @@ namespace ElevateEvansvilleUI.Pages.Featured
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
+											Text = "The first phase of this plan will be to turn the demolition lot of the Old National Bank skyscraper into a hybrid light rail and interstate station."/* string/, The first phase of this plan will be to turn the demolition lot of the Old National Bank skyscraper into a hybrid light rail and interstate station., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 216:19)
+										}
+										,
+									}
+								}
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c80 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c80, 2/* int/, 2, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c80, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_15 = c80;
+									c80.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 218:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
 											Text = "As Mayor I will commission this station and connect the Ford Center, Event Halls, and all of Downtown with the Airport. I will also have a larger, easier to navigate parking lot constructed at the Airport. People who live on the north side or those who are flying in will be incentivized to utilize the light rail to get downtown."/* string/, As Mayor I will commission this station and connect the Ford Center, Event Halls, and all of Downtown with the Airport. I will also have a larger, easier to navigate parking lot constructed at the Airport. People who live on the north side or those who are flying in will be incentivized to utilize the light rail to get downtown., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 219:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 224:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c79 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c82 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c79, 3/* int/, 3, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c79, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c82, 3/* int/, 3, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c82, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_15 = c79;
-									c79.CreationComplete();
+									this._component_16 = c82;
+									c82.CreationComplete();
 								}
 								))
 								,
@@ -984,24 +1015,24 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 221:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 226:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "This effort will decrease downtown traffic congestion while increasing foot traffic. Those who commute downtown from further away will also have the ability to take the Evansville Rail Service reducing the need for parking."/* string/, This effort will decrease downtown traffic congestion while increasing foot traffic. Those who commute downtown from further away will also have the ability to take the Evansville Rail Service reducing the need for parking., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 225:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 230:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c81 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c84 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c81, 4/* int/, 4, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c81, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c84, 4/* int/, 4, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c84, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_16 = c81;
-									c81.CreationComplete();
+									this._component_17 = c84;
+									c84.CreationComplete();
 								}
 								))
 								,
@@ -1009,24 +1040,24 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 227:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 232:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "This effort will decrease downtown traffic congestion while increasing foot traffic. Those who commute downtown from further away will also have the ability to take the Evansville Rail Service reducing the need for parking."/* string/, This effort will decrease downtown traffic congestion while increasing foot traffic. Those who commute downtown from further away will also have the ability to take the Evansville Rail Service reducing the need for parking., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 231:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 236:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c83 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c86 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c83, 5/* int/, 5, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c83, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c86, 5/* int/, 5, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c86, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_17 = c83;
-									c83.CreationComplete();
+									this._component_18 = c86;
+									c86.CreationComplete();
 								}
 								))
 								,
@@ -1034,49 +1065,24 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 233:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 238:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Roughly one mile down Sycamore St. is an old main-line railroad track that takes you directly to the Evansville Regional Airport. Due to the existing infrastructure in place, a conservative estimate for Phase one of the Evansville Rail Initiative will cost around $5 million."/* string/, Roughly one mile down Sycamore St. is an old main-line railroad track that takes you directly to the Evansville Regional Airport. Due to the existing infrastructure in place, a conservative estimate for Phase one of the Evansville Rail Initiative will cost around $5 million., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 237:19)
-										}
-										,
-									}
-								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c85 => 
-								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c85, 6/* int/, 6, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c85, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_18 = c85;
-									c85.CreationComplete();
-								}
-								))
-								,
-								new global::Windows.UI.Xaml.Controls.TextBlock
-								{
-									IsParsing = true,
-									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 239:18)
-									Inlines = 
-									{
-										new global::Windows.UI.Xaml.Documents.Run
-										{
-											Text = "Phase two will include connecting the University of Evansville and the University of Southern Indiana to Downtown."/* string/, Phase two will include connecting the University of Evansville and the University of Southern Indiana to Downtown., Run/Text */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 242:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c87 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c88 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c87, 7/* int/, 7, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c87, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c88, 6/* int/, 6, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c88, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_19 = c87;
-									c87.CreationComplete();
+									this._component_19 = c88;
+									c88.CreationComplete();
 								}
 								))
 								,
@@ -1089,19 +1095,19 @@ namespace ElevateEvansvilleUI.Pages.Featured
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
-											Text = "Phase three will be to connect all of the high schools together, once completed students will ride for free anywhere in the city and will take the train instead of a bus, ideally you should never be more than a 30 minute walk to any station and the trains will run at 15 minute intervals. It’s too early to have pricing but for your average citizen a one way train ticket will cost approximately $5, for those who will use the service frequently a monthly subscription of $60 will grant you unlimited access to the service."/* string/, Phase three will be to connect all of the high schools together, once completed students will ride for free anywhere in the city and will take the train instead of a bus, ideally you should never be more than a 30 minute walk to any station and the trains will run at 15 minute intervals. It’s too early to have pricing but for your average citizen a one way train ticket will cost approximately $5, for those who will use the service frequently a monthly subscription of $60 will grant you unlimited access to the service., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 252:19)
+											Text = "Phase two will include connecting the University of Evansville and the University of Southern Indiana to Downtown."/* string/, Phase two will include connecting the University of Evansville and the University of Southern Indiana to Downtown., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 247:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c89 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c90 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c89, 8/* int/, 8, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c89, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c90, 7/* int/, 7, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c90, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_20 = c89;
-									c89.CreationComplete();
+									this._component_20 = c90;
+									c90.CreationComplete();
 								}
 								))
 								,
@@ -1109,67 +1115,92 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 254:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 249:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "Phase three will be to connect all of the high schools together, once completed students will ride for free anywhere in the city and will take the train instead of a bus, ideally you should never be more than a 30 minute walk to any station and the trains will run at 15 minute intervals. It’s too early to have pricing but for your average citizen a one way train ticket will cost approximately $5, for those who will use the service frequently a monthly subscription of $60 will grant you unlimited access to the service."/* string/, Phase three will be to connect all of the high schools together, once completed students will ride for free anywhere in the city and will take the train instead of a bus, ideally you should never be more than a 30 minute walk to any station and the trains will run at 15 minute intervals. It’s too early to have pricing but for your average citizen a one way train ticket will cost approximately $5, for those who will use the service frequently a monthly subscription of $60 will grant you unlimited access to the service., Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 257:19)
+										}
+										,
+									}
+								}
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c92 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c92, 8/* int/, 8, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c92, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									/* _isTopLevelDictionary:False */
+									this._component_21 = c92;
+									c92.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(0,10,0,0)/* Windows.UI.Xaml.Thickness/, 0,10,0,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 259:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Once phase three is complete, we will then work on connecting major points of interest."/* string/, Once phase three is complete, we will then work on connecting major points of interest., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 256:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 261:19)
 										}
 										,
 									}
 								}
-								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c91 => 
+								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c94 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c91, 9/* int/, 9, Grid/Row */);
-									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c91, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c94, 9/* int/, 9, Grid/Row */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c94, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 									/* _isTopLevelDictionary:False */
-									this._component_21 = c91;
-									c91.CreationComplete();
+									this._component_22 = c94;
+									c94.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c92 => 
+						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c95 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c92, 5/* int/, 5, Grid/Row */);
-							c92.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c95, 5/* int/, 5, Grid/Row */);
+							c95.CreationComplete();
 						}
 						))
 						,
 					}
 				}
-				.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c93 => 
+				.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c96 => 
 				{
-					c93.CreationComplete();
+					c96.CreationComplete();
 				}
 				))
 				,
 			}
-			.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler9)(c94 => 
+			.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler9)(c97 => 
 			{
-				c94.CreationComplete();
+				c97.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c95 => 
+			.GenericApply((c98 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 1:2)
 				
-				// WARNING Property c95.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c98.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c96 => 
+			.GenericApply((c99 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.Featured.RailroadPage
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c96, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c99, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_22 = c96;
-				c96.CreationComplete();
+				this._component_23 = c99;
+				c99.CreationComplete();
 			}
 			))
 			;
@@ -1448,15 +1479,27 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			}
 		}
 		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_22_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
-		private global::Windows.UI.Xaml.Controls.Page _component_22
+		private global::Windows.UI.Xaml.Controls.TextBlock _component_22
 		{
 			get
 			{
-				return (global::Windows.UI.Xaml.Controls.Page)_component_22_Holder.Instance;
+				return (global::Windows.UI.Xaml.Controls.TextBlock)_component_22_Holder.Instance;
 			}
 			set
 			{
 				_component_22_Holder.Instance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_23_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Controls.Page _component_23
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.Page)_component_23_Holder.Instance;
+			}
+			set
+			{
+				_component_23_Holder.Instance = value;
 			}
 		}
 		private interface IRailroadPage_Bindings
@@ -1515,6 +1558,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				owner._component_20.UpdateResourceBindings();
 				owner._component_21.UpdateResourceBindings();
 				owner._component_22.UpdateResourceBindings();
+				owner._component_23.UpdateResourceBindings();
 			}
 			void IRailroadPage_Bindings.StopTracking()
 			{

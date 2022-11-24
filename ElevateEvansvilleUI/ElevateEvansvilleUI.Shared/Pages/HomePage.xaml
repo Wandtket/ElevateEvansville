@@ -193,12 +193,12 @@
     
     
     <Grid x:Name="FeaturedGrid" x:FieldModifier="public" Opacity="0">
-            <Grid x:Name="F4" >
+            <Grid x:Name="F4" Visibility="Collapsed">
                 <!--Transparency (After)-->
-                <Image x:Name="F4After" Source="https://i.imgur.com/5mup43B.png" Stretch="UniformToFill" VerticalAlignment="Center" Visibility="Collapsed"/>
+                <Image x:Name="F4After" Source="https://i.imgur.com/5mup43B.png" Stretch="UniformToFill" VerticalAlignment="Center"/>
 
                 <!--Transparency (Before)-->
-                <Image x:Name="F4Before" Source="https://i.imgur.com/JGPw85I.png" Stretch="UniformToFill" VerticalAlignment="Center" Visibility="Collapsed"/>
+                <Image x:Name="F4Before" Source="https://i.imgur.com/JGPw85I.png" Stretch="UniformToFill" VerticalAlignment="Center"/>
 
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>
@@ -225,16 +225,14 @@
                 </Grid.RenderTransform>
             </Grid>
 
-            <Grid x:Name="F3" >
+            <Grid x:Name="F3" Visibility="Collapsed">
                 <!--Price Map (After)-->
                 <Image x:Name="F3After" Source="https://i.imgur.com/xk8gxZy.jpg" Stretch="UniformToFill" 
-                       VerticalAlignment="Center" HorizontalAlignment="Center"
-                       Visibility="Collapsed"/>
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
                 <!--Price Map (Before)-->
                 <Image x:Name="F3Before" Source="https://i.imgur.com/KQheCkB.jpg" Stretch="UniformToFill" 
-                       VerticalAlignment="Center" HorizontalAlignment="Center"
-                       Visibility="Collapsed"/>
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>
@@ -260,13 +258,13 @@
                 </Grid.RenderTransform>
             </Grid>
 
-            <Grid x:Name="F2">
+            <Grid x:Name="F2" Visibility="Collapsed">
 
                 <!--Solar Canopies-->
-                <Image x:Name="F2After" Source="https://i.imgur.com/8TLOYGp.jpg" Stretch="UniformToFill" Visibility="Collapsed"/>
+                <Image x:Name="F2After" Source="https://i.imgur.com/8TLOYGp.jpg" Stretch="UniformToFill"/>
 
                 <!--Parking Lot-->
-                <Image x:Name="F2Before" Source="https://i.imgur.com/J6atM2p.jpg" Stretch="UniformToFill" Visibility="Collapsed"/>
+                <Image x:Name="F2Before" Source="https://i.imgur.com/J6atM2p.jpg" Stretch="UniformToFill"/>
 
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>
@@ -292,16 +290,14 @@
                 </Grid.RenderTransform>
             </Grid>
 
-            <Grid x:Name="F1">
+            <Grid x:Name="F1" Visibility="Collapsed">
                 <!--Victory Square-->
                 <Image x:Name="F1After" Source="https://i.imgur.com/Tx3bFyC.jpg" Stretch="UniformToFill" 
-                       VerticalAlignment="Center"
-                       Visibility="Collapsed"/>
+                       VerticalAlignment="Center"/>
 
                 <!--Demolition Lot-->
                 <Image x:Name="F1Before" Source="https://i.imgur.com/OrtIL7t.jpg" Stretch="UniformToFill" 
-                       VerticalAlignment="Center"
-                       Visibility="Collapsed" Loaded="F1Before_Loaded"/>
+                       VerticalAlignment="Center" Loaded="F1Before_Loaded"/>
 
                 <Grid VerticalAlignment="Top" HorizontalAlignment="Center" CornerRadius="5" Padding="40,10,40,10" Margin="5,75,5,0" RowSpacing="5">
                     <Grid.Background>

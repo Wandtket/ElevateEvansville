@@ -55,10 +55,12 @@ var Uno;
         var Bootstrap;
         (function (Bootstrap) {
             class HotReloadSupport {
-                constructor(context) {
+                constructor(context, unoConfig) {
                     this._context = context;
+                    this._unoConfig = unoConfig;
                 }
                 async initializeHotReload() {
+                    const webAppBasePath = this._unoConfig.environmentVariables["UNO_BOOTSTRAP_WEBAPP_BASE_PATH"];
                     (function (Blazor) {
                         Blazor._internal = {
                             initialize: function (BINDING) {
@@ -70,7 +72,6 @@ var Uno;
                                 this.initializeMethod();
                             },
                             applyExisting: async function () {
-                                const webAppBasePath = this._unoConfig.environmentVariables["UNO_BOOTSTRAP_WEBAPP_BASE_PATH"];
                                 var hotreloadConfigResponse = await fetch(`/_framework/unohotreload`);
                                 var modifiableAssemblies = hotreloadConfigResponse.headers.get('DOTNET-MODIFIABLE-ASSEMBLIES');
                                 var aspnetCoreBrowserTools = hotreloadConfigResponse.headers.get('ASPNETCORE-BROWSER-TOOLS');
@@ -91,9 +92,9 @@ var Uno;
                                 this.initialize();
                                 return this.getApplyUpdateCapabilitiesMethod();
                             },
-                            applyHotReload: function (moduleId, metadataDelta, ilDelta) {
+                            applyHotReload: function (moduleId, metadataDelta, ilDelta, pdbDelta) {
                                 this.initialize();
-                                return this.applyHotReloadDeltaMethod(moduleId, metadataDelta, ilDelta);
+                                return this.applyHotReloadDeltaMethod(moduleId, metadataDelta, ilDelta, pdbDelta || "");
                             }
                         };
                     })(window.Blazor || (window.Blazor = {}));
@@ -278,11 +279,10 @@ var Uno;
                     this._context.Module.ENVIRONMENT_IS_NODE = Bootstrapper.ENVIRONMENT_IS_NODE;
                     this.setupRequire();
                     this.setupEmscriptenPreRun();
-                    this.setupHotReload();
                 }
                 setupHotReload() {
                     if (this._context.Module.ENVIRONMENT_IS_WEB && this.hasDebuggingEnabled()) {
-                        this._hotReloadSupport = new Bootstrap.HotReloadSupport(this._context);
+                        this._hotReloadSupport = new Bootstrap.HotReloadSupport(this._context, this._unoConfig);
                     }
                 }
                 setupEmscriptenPreRun() {
@@ -362,6 +362,7 @@ var Uno;
                 async mainInit() {
                     try {
                         this.attachDebuggerHotkey();
+                        this.setupHotReload();
                         this.timezoneSetup();
                         if (this._hotReloadSupport) {
                             await this._hotReloadSupport.initializeHotReload();

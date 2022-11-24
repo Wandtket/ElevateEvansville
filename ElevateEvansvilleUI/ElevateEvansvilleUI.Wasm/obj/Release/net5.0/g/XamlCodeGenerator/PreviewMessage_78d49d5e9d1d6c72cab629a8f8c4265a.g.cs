@@ -188,6 +188,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						Name = "ChangeItemsListView",
 						Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, ListView/Margin */,
 						Height = 225d/* double/, 225, ListView/Height */,
+						SelectionMode = global::Windows.UI.Xaml.Controls.ListViewSelectionMode.None/* Windows.UI.Xaml.Controls.ListViewSelectionMode/, None, ListView/SelectionMode */,
 						ItemTemplate = 						new global::Windows.UI.Xaml.DataTemplate(this , __owner => 						new _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0().Build(__owner)
 						)						,
 						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 39:10)
@@ -243,7 +244,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 		}
 		private class _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0
 		{
-			public _View Build(object __ResourceOwner_6)
+			public _View Build(object __ResourceOwner_31)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;

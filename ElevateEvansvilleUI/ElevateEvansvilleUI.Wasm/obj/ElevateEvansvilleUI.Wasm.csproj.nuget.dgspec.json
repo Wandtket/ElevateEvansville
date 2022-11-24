@@ -110,11 +110,11 @@
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
             }
           },
           "imports": [

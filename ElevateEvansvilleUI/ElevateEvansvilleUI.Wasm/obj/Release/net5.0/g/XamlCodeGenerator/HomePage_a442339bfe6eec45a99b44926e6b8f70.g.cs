@@ -1177,6 +1177,7 @@ namespace ElevateEvansvilleUI.Pages
 					{
 						IsParsing = true,
 						Name = "F4",
+						Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Grid/Visibility */,
 						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
 						{
 							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 224:22)
@@ -1192,7 +1193,6 @@ namespace ElevateEvansvilleUI.Pages
 								Source = "https://i.imgur.com/5mup43B.png"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/5mup43B.png, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 198:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c78 => 
@@ -1210,7 +1210,6 @@ namespace ElevateEvansvilleUI.Pages
 								Source = "https://i.imgur.com/JGPw85I.png"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/JGPw85I.png, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 201:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c79 => 
@@ -1316,9 +1315,10 @@ namespace ElevateEvansvilleUI.Pages
 					{
 						IsParsing = true,
 						Name = "F3",
+						Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Grid/Visibility */,
 						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
 						{
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 259:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 257:22)
 						}
 						,
 						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 228:14)
@@ -1332,7 +1332,6 @@ namespace ElevateEvansvilleUI.Pages
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Image/HorizontalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 230:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c87 => 
@@ -1351,8 +1350,7 @@ namespace ElevateEvansvilleUI.Pages
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Image/HorizontalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 235:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 234:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c88 => 
 							{
@@ -1376,7 +1374,7 @@ namespace ElevateEvansvilleUI.Pages
 									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
 									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
 									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 241:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 239:26)
 								}
 								,
 								RowDefinitions = 
@@ -1384,18 +1382,18 @@ namespace ElevateEvansvilleUI.Pages
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 248:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 246:26)
 									}
 									,
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 249:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 247:26)
 									}
 									,
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 239:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 237:18)
 								Children = 
 								{
 									new global::Windows.UI.Xaml.Controls.TextBlock
@@ -1406,7 +1404,7 @@ namespace ElevateEvansvilleUI.Pages
 										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
 										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
 										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 252:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 250:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c92 => 
 									{
@@ -1422,7 +1420,7 @@ namespace ElevateEvansvilleUI.Pages
 										FontSize = 18d/* double/, 18, Button/FontSize */,
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
 										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 253:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 251:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c93 => 
 									{
@@ -1457,12 +1455,13 @@ namespace ElevateEvansvilleUI.Pages
 					{
 						IsParsing = true,
 						Name = "F2",
+						Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Grid/Visibility */,
 						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
 						{
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 291:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 289:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 263:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 261:14)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Image
@@ -1471,8 +1470,7 @@ namespace ElevateEvansvilleUI.Pages
 								Name = "F2After",
 								Source = "https://i.imgur.com/8TLOYGp.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/8TLOYGp.jpg, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 266:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 264:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c96 => 
 							{
@@ -1488,8 +1486,7 @@ namespace ElevateEvansvilleUI.Pages
 								Name = "F2Before",
 								Source = "https://i.imgur.com/J6atM2p.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/J6atM2p.jpg, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 269:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 267:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c97 => 
 							{
@@ -1513,7 +1510,7 @@ namespace ElevateEvansvilleUI.Pages
 									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
 									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
 									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 273:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 271:26)
 								}
 								,
 								RowDefinitions = 
@@ -1521,18 +1518,18 @@ namespace ElevateEvansvilleUI.Pages
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 280:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 278:26)
 									}
 									,
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 281:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 279:26)
 									}
 									,
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 271:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 269:18)
 								Children = 
 								{
 									new global::Windows.UI.Xaml.Controls.TextBlock
@@ -1543,7 +1540,7 @@ namespace ElevateEvansvilleUI.Pages
 										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
 										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
 										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 284:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 282:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c101 => 
 									{
@@ -1559,7 +1556,7 @@ namespace ElevateEvansvilleUI.Pages
 										FontSize = 18d/* double/, 18, Button/FontSize */,
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
 										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 285:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 283:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c102 => 
 									{
@@ -1594,12 +1591,13 @@ namespace ElevateEvansvilleUI.Pages
 					{
 						IsParsing = true,
 						Name = "F1",
+						Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Grid/Visibility */,
 						RenderTransform = 						new global::Windows.UI.Xaml.Media.TranslateTransform
 						{
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 326:22)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 322:22)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 295:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 293:14)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Image
@@ -1609,8 +1607,7 @@ namespace ElevateEvansvilleUI.Pages
 								Source = "https://i.imgur.com/Tx3bFyC.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/Tx3bFyC.jpg, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 297:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 295:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c105 => 
 							{
@@ -1627,8 +1624,7 @@ namespace ElevateEvansvilleUI.Pages
 								Source = "https://i.imgur.com/OrtIL7t.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/OrtIL7t.jpg, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.UniformToFill/* Windows.UI.Xaml.Media.Stretch/, UniformToFill, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, Image/VerticalAlignment */,
-								Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Image/Visibility */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 302:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 299:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c106 => 
 							{
@@ -1654,7 +1650,7 @@ namespace ElevateEvansvilleUI.Pages
 									AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
 									TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
 									TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 308:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 304:26)
 								}
 								,
 								RowDefinitions = 
@@ -1662,18 +1658,18 @@ namespace ElevateEvansvilleUI.Pages
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 315:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 311:26)
 									}
 									,
 									new global::Windows.UI.Xaml.Controls.RowDefinition
 									{
 										Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 316:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 312:26)
 									}
 									,
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 306:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 302:18)
 								Children = 
 								{
 									new global::Windows.UI.Xaml.Controls.TextBlock
@@ -1684,7 +1680,7 @@ namespace ElevateEvansvilleUI.Pages
 										FontFamily = new Windows.UI.Xaml.Media.FontFamily("Times New Roman")/* Windows.UI.Xaml.Media.FontFamily/, Times New Roman, TextBlock/FontFamily */,
 										TextWrapping = global::Windows.UI.Xaml.TextWrapping.WrapWholeWords/* Windows.UI.Xaml.TextWrapping/, WrapWholeWords, TextBlock/TextWrapping */,
 										TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 319:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 315:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c110 => 
 									{
@@ -1700,7 +1696,7 @@ namespace ElevateEvansvilleUI.Pages
 										FontSize = 18d/* double/, 18, Button/FontSize */,
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
 										Background = SolidColorBrushHelper.CornflowerBlue/* Windows.UI.Xaml.Media.Brush/, CornflowerBlue, Button/Background */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 320:22)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 316:22)
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c111 => 
 									{
@@ -1739,13 +1735,13 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.ColumnDefinition
 							{
 								Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 332:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 328:22)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.ColumnDefinition
 							{
 								Width = new Windows.UI.Xaml.GridLength(2f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, 2*, ColumnDefinition/Width */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 333:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 329:22)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler9)(c115 => 
 							{
@@ -1761,13 +1757,13 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 337:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 333:22)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(2f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, 2*, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 338:22)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 334:22)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler5)(c117 => 
 							{
@@ -1778,7 +1774,7 @@ namespace ElevateEvansvilleUI.Pages
 							,
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 330:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 326:14)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Image
@@ -1793,10 +1789,10 @@ namespace ElevateEvansvilleUI.Pages
 								Opacity = 0d/* double/, 0, Image/Opacity */,
 								RenderTransform = 								new global::Windows.UI.Xaml.Media.TranslateTransform
 								{
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 348:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 344:26)
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 342:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 338:18)
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c118 => 
 							{
@@ -1824,7 +1820,7 @@ namespace ElevateEvansvilleUI.Pages
 						VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Stretch/* Windows.UI.Xaml.VerticalAlignment/, Stretch, Button/VerticalAlignment */,
 						Width = 40d/* double/, 40, Button/Width */,
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, Button/HorizontalAlignment */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 353:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 349:14)
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c120 => 
 					{
@@ -1844,7 +1840,7 @@ namespace ElevateEvansvilleUI.Pages
 						VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Stretch/* Windows.UI.Xaml.VerticalAlignment/, Stretch, Button/VerticalAlignment */,
 						Width = 40d/* double/, 40, Button/Width */,
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Left/* Windows.UI.Xaml.HorizontalAlignment/, Left, Button/HorizontalAlignment */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 356:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 352:14)
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c121 => 
 					{

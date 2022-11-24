@@ -6,9 +6,123 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    d:DesignWidth="2000"
+    d:DesignHeight="10000" 
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="Paragraph">
+            <Setter Target="FontSize" Value="24"/>
+            <Setter Target="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Header">
+            <Setter Target="FontSize" Value="30"/>
+            <Setter Target="TextWrapping" Value="Wrap"/>
+            <Setter Target="Margin" Value="0,15,0,10"/>
+        </Style>
+    </Page.Resources>
 
-    </Grid>
+    <ScrollViewer>
+        <Grid Padding="20,75,20,75" RowSpacing="20" HorizontalAlignment="Center" MaxWidth="900">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Paragraph}">
+                    It’s an open secret that America is trending towards a permanent renter’s society where 
+                    homes are owned by a select handful of entities that wish to passively extract wealth from 
+                    the working class. The parallels between the art and real estate industries as embezzlement 
+                    schemes for the ultra-wealthy grow more apparent every day.
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    Evansville will become a beacon of resistance against this trend.
+                </TextBlock>
+
+                <TextBlock Grid.Row="2" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    I will be merging the Evansville Housing Authority, the Affordable Housing Program, and any 
+                    city services that pertain to housing into a single unified entity called 
+                    The Evansville Public Housing Department (EVPHD) that will be tasked with acquiring properties 
+                    across the city.
+                </TextBlock>
+
+                <TextBlock Grid.Row="3" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    Rather than construct new identical homes that can be easily identified as “Affordable Houses”
+                    these properties will be located randomly throughout the city and will vary in size and quality, 
+                    the only indicator that a house is managed by the city will be its rental price. Comparable homes 
+                    will have their prices observed and the city will take that price and drastically reduce it, fueling 
+                    competition and a “race to the bottom” while maintaining a high standard of living.
+                </TextBlock>
+
+                <TextBlock Grid.Row="4" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    These properties will then become a direct source of revenue for the city to fuel its new various 
+                    infrastructure projects and will provide renters with better protection and ease of mind should 
+                    another pandemic arise.
+                </TextBlock>
+
+                <TextBlock Grid.Row="5" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    Once the city reaches an equilibrium with its rental properties it will be able to lower the property 
+                    taxes of existing homeowners, thus reducing the cost of living for everyone.
+                </TextBlock>
+
+                <TextBlock Grid.Row="6" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    Remember, you can elect a Mayor and a City Council, but you can’t elect a landlord.
+                </TextBlock>
+
+            </Grid>
+
+
+            <Grid Grid.Row="1" Margin="0,75,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Style="{StaticResource Paragraph}">
+                    On a personal note,
+                </TextBlock>
+
+                <TextBlock Grid.Row="1" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    I firmly believe that the cost of rent should not exceed the cost of a mortgage, if a renter pays in 
+                    rent the total value of the property over the course of many years, that property must be relinquished 
+                    to the renter. If the renter does not finish paying for the property before moving on, ownership of the 
+                    property will be split until the other party pays back what is owed, the new renter will then pay both 
+                    owners of the property, if the third renter moves on, ownership is then split again, this will keep 
+                    happening until one party pays in full or the other parties relinquish ownership.
+                </TextBlock>
+
+                <TextBlock Grid.Row="2" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    All it takes for the price of homes to skyrocket is a butterfly effect of greed, each assessor across 
+                    the country unaware of the influence of a small handful of entities such as Zillow, or Blackrock.
+                </TextBlock>
+
+                <TextBlock Grid.Row="3" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    I will not possess the legislative ability to fix such a broken system of housing, but I can do my small 
+                    part as mayor to create an example for the rest of the country to follow and mitigate the damage that is 
+                    being done.
+                </TextBlock>
+
+            </Grid>
+
+
+        </Grid>
+    </ScrollViewer>
 </Page>

@@ -36,8 +36,9 @@
             </Grid.RowDefinitions>
             
 
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" >
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -54,7 +55,11 @@
                     to and from their destinations. These streetcars were effective for those who didn’t own automobiles.
                 </TextBlock>
 
-                <FlipView Grid.Row="2" Margin="0,10,0,10">
+                <TextBlock Grid.Row="2" Style="{StaticResource Paragraph}" Margin="0,15,0,0">
+                    The photos below were provided by the Willard Library Archive.
+                </TextBlock>
+
+                <FlipView Grid.Row="3" Margin="0,10,0,10">
                     <FlipViewItem>
                         <!--Last Train on Division St.-->
                         <Image Stretch="Uniform" Source="https://i.imgur.com/5ZFVkYx.jpg"/>

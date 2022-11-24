@@ -2050,7 +2050,7 @@
           "build/Uno.UI.WebAssembly.targets": {}
         }
       },
-      "Uno.Wasm.Bootstrap/7.0.7": {
+      "Uno.Wasm.Bootstrap/7.0.8": {
         "type": "package",
         "contentFiles": {
           "contentFiles/any/netstandard2.0/obj/uno-bootstrap.d.ts": {
@@ -2069,7 +2069,7 @@
           "build/Uno.Wasm.Bootstrap.targets": {}
         }
       },
-      "Uno.Wasm.Bootstrap.DevServer/7.0.7": {
+      "Uno.Wasm.Bootstrap.DevServer/7.0.8": {
         "type": "package",
         "build": {
           "build/Uno.Wasm.Bootstrap.DevServer.targets": {}
@@ -7451,10 +7451,10 @@
         "uno.ui.webassembly.nuspec"
       ]
     },
-    "Uno.Wasm.Bootstrap/7.0.7": {
-      "sha512": "lIqDlIp5g4lnuhnJfTx9pm7i3Oaiq1qX1u/+qQk1ezAKPGTKKFb2VEPl3ST1o/hkoOOHqrELalHPBgmxEv55IQ==",
+    "Uno.Wasm.Bootstrap/7.0.8": {
+      "sha512": "skhDBoc+x7I4LFWa8Jx94BC7oYtTB48PWEABlAeRipKrS6eBKqf8Tt3I3MQbNU82zWKTGCdD8xuEchggLmq9eQ==",
       "type": "package",
-      "path": "uno.wasm.bootstrap/7.0.7",
+      "path": "uno.wasm.bootstrap/7.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -7503,8 +7503,8 @@
         "tools/Newtonsoft.Json.dll",
         "tools/System.Memory.dll",
         "tools/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/Uno.Wasm.Bootstrap.v3b4dced85eb7693a8d1e3d58fb2d4ae80f1d0d19.dll",
-        "tools/Uno.Wasm.Bootstrap.v3b4dced85eb7693a8d1e3d58fb2d4ae80f1d0d19.pdb",
+        "tools/Uno.Wasm.Bootstrap.vac95ff2d06b69b327de52e47de586563d2647d1d.dll",
+        "tools/Uno.Wasm.Bootstrap.vac95ff2d06b69b327de52e47de586563d2647d1d.pdb",
         "tools/support/Uno.Wasm.AotProfiler.deps.json",
         "tools/support/Uno.Wasm.AotProfiler.dll",
         "tools/support/Uno.Wasm.AotProfiler.pdb",
@@ -7518,14 +7518,14 @@
         "tools/support/Uno.Wasm.TimezoneData.dll",
         "tools/support/Uno.Wasm.TimezoneData.pdb",
         "tools/templates/index.html",
-        "uno.wasm.bootstrap.7.0.7.nupkg.sha512",
+        "uno.wasm.bootstrap.7.0.8.nupkg.sha512",
         "uno.wasm.bootstrap.nuspec"
       ]
     },
-    "Uno.Wasm.Bootstrap.DevServer/7.0.7": {
-      "sha512": "02g+xrdcJ88gakrmnGjH8DCzdXqJOSbgOSlJDm3krJ+4ChNWrvLaMNw1pRegZHHNPYrx/3klqcSFTIqevqd9XA==",
+    "Uno.Wasm.Bootstrap.DevServer/7.0.8": {
+      "sha512": "8uQTwBNwgZyAaaRqwPTE7M1PgX/CoKDSJw/d9NAsKyxhyDUKoUJm8u1ziDLQitJ1Hr6DoMrtqLJtTbSlh7oIhg==",
       "type": "package",
-      "path": "uno.wasm.bootstrap.devserver/7.0.7",
+      "path": "uno.wasm.bootstrap.devserver/7.0.8",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -7628,7 +7628,7 @@
         "tools/server/net7.0/dotnet-unowasm.exe",
         "tools/server/net7.0/dotnet-unowasm.pdb",
         "tools/server/net7.0/dotnet-unowasm.runtimeconfig.json",
-        "uno.wasm.bootstrap.devserver.7.0.7.nupkg.sha512",
+        "uno.wasm.bootstrap.devserver.7.0.8.nupkg.sha512",
         "uno.wasm.bootstrap.devserver.nuspec"
       ]
     }
@@ -7649,8 +7649,8 @@
       "Uno.UI >= 4.6.19",
       "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.19",
       "Uno.UI.WebAssembly >= 4.6.19",
-      "Uno.Wasm.Bootstrap >= 7.0.7",
-      "Uno.Wasm.Bootstrap.DevServer >= 7.0.7"
+      "Uno.Wasm.Bootstrap >= 7.0.8",
+      "Uno.Wasm.Bootstrap.DevServer >= 7.0.8"
     ]
   },
   "packageFolders": {
@@ -7763,11 +7763,11 @@
           },
           "Uno.Wasm.Bootstrap": {
             "target": "Package",
-            "version": "[7.0.7, )"
+            "version": "[7.0.8, )"
           },
           "Uno.Wasm.Bootstrap.DevServer": {
             "target": "Package",
-            "version": "[7.0.7, )"
+            "version": "[7.0.8, )"
           }
         },
         "imports": [

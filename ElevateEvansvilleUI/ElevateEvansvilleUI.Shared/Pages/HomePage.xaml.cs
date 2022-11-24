@@ -97,15 +97,10 @@ namespace ElevateEvansvilleUI.Pages
 
         private void SetVisibility()
         {
-            F1After.Visibility = Visibility.Visible;
-            F2After.Visibility = Visibility.Visible;
-            F3After.Visibility = Visibility.Visible;
-            F4After.Visibility = Visibility.Visible;
-
-            F1Before.Visibility = Visibility.Visible;
-            F2Before.Visibility = Visibility.Visible;
-            F3Before.Visibility = Visibility.Visible;
-            F4Before.Visibility = Visibility.Visible;
+            F1.Visibility = Visibility.Visible;
+            F2.Visibility = Visibility.Visible;
+            F3.Visibility = Visibility.Visible;
+            F4.Visibility = Visibility.Visible;
 
             UIFadeIn.Begin();
         }

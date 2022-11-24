@@ -161,7 +161,4 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Profile\Cover-Collapsed.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Profile\Cover.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Pages\Support\" />
-  </ItemGroup>
 </Project>

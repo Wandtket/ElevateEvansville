@@ -11,7 +11,8 @@ declare namespace Uno.WebAssembly.Bootstrap {
 declare namespace Uno.WebAssembly.Bootstrap {
     class HotReloadSupport {
         private _context?;
-        constructor(context: DotnetPublicAPI);
+        private _unoConfig?;
+        constructor(context: DotnetPublicAPI, unoConfig: UnoConfig);
         initializeHotReload(): Promise<void>;
     }
 }

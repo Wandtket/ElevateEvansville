@@ -263,7 +263,7 @@
 
                 
                 <TextBlock Grid.Row="12" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
-                    My final tour before leaving the military was at Joint Base Pearl-Harbor Hickham. This assignment was where I 
+                    My final tour before leaving the military was at Joint Base Pearl-Harbor Hickam. This assignment was where I 
                     had honed and nearly perfected my software development process for the military. I had been designated one of 
                     the top innovators in the entire Air Force and was giving Air Force News Network talks on what it means to 
                     innovate on process improvements, my videos were played at the officer’s academy at Maxwell AFB as well. 
@@ -305,11 +305,9 @@
                 </TextBlock>
 
                 <TextBlock Grid.Row="24" FontSize="18"  TextWrapping="Wrap" TextAlignment="Left" MaxWidth="1000" Margin="0,10,0,0">
-                    I want to tell you this though, you should not have to join the military to get the basic necessities a 
+                    For what it's worth, my opinion is this, you should not have to join the military to get the basic necessities a 
                     country should offer its citizens.
                 </TextBlock>
-
-
 
             </Grid>
             

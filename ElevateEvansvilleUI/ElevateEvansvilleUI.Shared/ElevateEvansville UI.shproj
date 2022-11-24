@@ -19,7 +19,10 @@
     <_Globbed_Compile Remove="Controls\Dialogs\PreviewDialog.xaml.cs" />
     <_Globbed_Compile Remove="Controls\HTMLControl.cs" />
     <_Globbed_Compile Remove="Controls\HTML\PaypalButton.cs" />
+    <_Globbed_Compile Remove="Controls\Messages\ConstructionMessage.xaml.cs" />
     <_Globbed_Compile Remove="Controls\Messages\PayPalDetailMessage.xaml.cs" />
+    <_Globbed_Compile Remove="Controls\Messages\PreviewMessage - Copy (2).xaml.cs" />
+    <_Globbed_Compile Remove="Controls\Messages\PreviewMessage - Copy - Copy.xaml.cs" />
     <_Globbed_Compile Remove="Controls\Messages\PreviewMessage - Copy.xaml.cs" />
     <_Globbed_Compile Remove="Controls\PayPalDetailMessage.xaml.cs" />
     <_Globbed_Compile Remove="Controls\PreviewMessage.cs" />
@@ -35,7 +38,10 @@
   <ItemGroup>
     <_Globbled_Page Remove="Controls\Dialogs\ContentDialog1.xaml" />
     <_Globbled_Page Remove="Controls\Dialogs\PreviewDialog.xaml" />
+    <_Globbled_Page Remove="Controls\Messages\ConstructionMessage.xaml" />
     <_Globbled_Page Remove="Controls\Messages\PayPalDetailMessage.xaml" />
+    <_Globbled_Page Remove="Controls\Messages\PreviewMessage - Copy (2).xaml" />
+    <_Globbled_Page Remove="Controls\Messages\PreviewMessage - Copy.xaml" />
     <_Globbled_Page Remove="Controls\PayPalDetailMessage.xaml" />
     <_Globbled_Page Remove="Controls\PreviewMessage.xaml" />
   </ItemGroup>

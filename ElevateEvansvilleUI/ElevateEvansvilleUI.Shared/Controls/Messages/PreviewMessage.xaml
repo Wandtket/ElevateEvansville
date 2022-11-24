@@ -36,7 +36,7 @@
         </Grid>
 
 
-        <ListView x:Name="ChangeItemsListView" Grid.Row="2" Margin="15,5,0,0" Height="225">
+        <ListView x:Name="ChangeItemsListView" Grid.Row="2" Margin="15,5,0,0" Height="225" SelectionMode="None">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding}" TextWrapping="Wrap" Padding="0,5,0,5"/>
