@@ -2,6 +2,8 @@
 using ElevateEvansvilleUI.Controls.Dialogs;
 using ElevateEvansvilleUI.Controls.Messages;
 using ElevateEvansvilleUI.DTOs;
+using ElevateEvansvilleUI.Extensions;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -37,7 +39,39 @@ namespace ElevateEvansvilleUI.Pages
         PayPalService service = new PayPalService();
 
 
-        protected override async void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            AdjustUI();
+            FetchFinancialData();
+        }
+
+        private void AdjustUI()
+        {
+            //Desktop
+            if (UI.IsDeviceMobile() == false)
+            {
+                FinanceGrid.Width = 555;
+                FAQGrid.Width = 555;
+
+                FAQButton.Visibility = Visibility.Collapsed;
+
+                FinanceGrid.HorizontalAlignment = HorizontalAlignment.Right;
+                FAQGrid.HorizontalAlignment = HorizontalAlignment.Left;
+            }
+            //Mobile
+            else
+            {
+                FinanceGrid.MaxWidth = 555;
+                FinanceGrid.MinWidth = 280;
+
+                FAQButton.Visibility = Visibility.Visible;
+
+                RootGrid.ColumnDefinitions[1].Width = new GridLength(0);
+                FAQGrid.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private async void FetchFinancialData()
         {
             PayPalAccountBalance.Text = "Loading...";
 
@@ -53,9 +87,25 @@ namespace ElevateEvansvilleUI.Pages
             TransactionsSentListView.ItemsSource = Sent;
 
             APIProgress.Visibility = Visibility.Collapsed;
-            //GenerateTestData();
-
         }
+
+        private async void FAQButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new ContentDialog();
+            dialog.Title = "FAQ";
+            dialog.PrimaryButtonText = "Close";
+            dialog.DefaultButton = ContentDialogButton.Primary;
+
+            //Prepare Content
+            ScrollViewer viewer = new ScrollViewer();
+
+            viewer.Content = FAQContent;
+            dialog.Content = viewer;
+
+            //Show
+            await dialog.ShowAsync();
+        }
+
 
         private async void ReceivedItem_Tapped(object sender, TappedRoutedEventArgs e)
         {          

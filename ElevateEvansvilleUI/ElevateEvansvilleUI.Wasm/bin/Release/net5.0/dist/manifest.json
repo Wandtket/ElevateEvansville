@@ -6,27 +6,27 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "package_890f4b4a5e0f25ebddab4979919a8a2f58566f5b/Assets/AppIcon-16.png",
+      "src": "package_1f0cf2bc9a9a1ee0e4a8c1c5fd45ae7424d20d41/Assets/AppIcon-16.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "package_890f4b4a5e0f25ebddab4979919a8a2f58566f5b/Assets/AppIcon-32.png",
+      "src": "package_1f0cf2bc9a9a1ee0e4a8c1c5fd45ae7424d20d41/Assets/AppIcon-32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "package_890f4b4a5e0f25ebddab4979919a8a2f58566f5b/Assets/AppIcon-128.png",
+      "src": "package_1f0cf2bc9a9a1ee0e4a8c1c5fd45ae7424d20d41/Assets/AppIcon-128.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "package_890f4b4a5e0f25ebddab4979919a8a2f58566f5b/Assets/AppIcon-256.png",
+      "src": "package_1f0cf2bc9a9a1ee0e4a8c1c5fd45ae7424d20d41/Assets/AppIcon-256.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "package_890f4b4a5e0f25ebddab4979919a8a2f58566f5b/Assets/AppIcon-512.png",
+      "src": "package_1f0cf2bc9a9a1ee0e4a8c1c5fd45ae7424d20d41/Assets/AppIcon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

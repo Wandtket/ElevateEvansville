@@ -8,67 +8,76 @@
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
     xmlns:toolkit="using:Uno.UI.Toolkit"
     mc:Ignorable="d"
+    d:DesignWidth="2000"
+    d:DesignHeight="2000" 
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Margin="0,25,0,0" RowSpacing="15">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
 
-        <toolkit:ElevatedView
-                Margin="15,45,15,0"
-                Grid.Row="0"
-                Background="{ThemeResource SubColor}"                        
-                Elevation="10" 
-                MaxWidth="555" MinWidth="280"
-                ShadowColor="#80000000">
-            
-            <Grid ColumnSpacing="10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>  
-                    <RowDefinition Height="auto"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+    <Grid x:Name="RootGrid" HorizontalAlignment="Stretch" Margin="0,25,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-                <Image Source="/Assets/Images/Logos/Paypal.png" 
-                       Grid.RowSpan="2" Grid.Column="0"
-                       Margin="10,0,0,0"
-                       Height="50" Width="50"/>
-
-                <TextBlock Text="Current Total Campaign Funding:"
-                           FontSize="12" VerticalAlignment="Bottom"
-                           Grid.Row="0" Grid.Column="1"/>
-
-                <TextBlock x:Name="PayPalAccountBalance" Text="$0.00" FontSize="30" FontWeight="Bold"
-                           VerticalAlignment="Top" Margin="0,0,0,5"
-                           Grid.Row="1" Grid.Column="1"/>
-
-            </Grid>
-           
-        </toolkit:ElevatedView>
-
-
-        
-        
-        <Grid MaxWidth="555" MinWidth="280" Grid.Row="1" Margin="15,0,15,0">
+        <Grid x:Name="FinanceGrid" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
-            <Grid ColumnSpacing="10" Grid.Row="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="auto"/>
-                </Grid.ColumnDefinitions>
-                
+            <toolkit:ElevatedView
+                Margin="15,45,15,0"
+                Grid.Row="0"
+                Background="{ThemeResource SubColor}"                        
+                Elevation="10"               
+                ShadowColor="#80000000">
 
-                <TextBox PlaceholderText="Search" Grid.Column="0" IsEnabled="False"/>
+                <Grid ColumnSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="/Assets/Images/Logos/Paypal.png" 
+                        Grid.RowSpan="2" Grid.Column="0"
+                        Margin="10,0,0,0"
+                        Height="50" Width="50"/>
+
+                    <TextBlock Text="Current Total Campaign Funding:"
+                        FontSize="12" VerticalAlignment="Bottom"
+                        Grid.Row="0" Grid.Column="1"/>
+
+                    <TextBlock x:Name="PayPalAccountBalance" Text="$0.00" FontSize="30" FontWeight="Bold"
+                        VerticalAlignment="Top" Margin="0,0,0,5"
+                        Grid.Row="1" Grid.Column="1"/>
+
+                    <Button x:Name="FAQButton" Click="FAQButton_Click" Grid.Column="2" Grid.RowSpan="2" Margin="0,0,10,0">
+                        <TextBlock Text="?" FontSize="16"/>
+                    </Button>
+
+                </Grid>
+            </toolkit:ElevatedView>
+
+            <Grid Grid.Row="1" Margin="15,0,15,75">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid ColumnSpacing="10" Grid.Row="0" Margin="0,15,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <TextBox PlaceholderText="Search" Grid.Column="0" IsEnabled="False"/>
 
                     <Button  VerticalAlignment="Bottom" Grid.Column="1" IsEnabled="False">
                         <Button.Content>
@@ -81,114 +90,236 @@
                             <SymbolIcon Symbol="Download"/>
                         </Button.Content>
                     </Button>
+                </Grid>
+
+
+                <Pivot Grid.Row="1">
+                    <PivotItem Header="Received" Margin="0" Padding="0">
+                        <ListView x:Name="TransactionsReceivedListView" Grid.Row="1" Padding="0,5,0,10" 
+                            SelectionMode="Single">
+
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <toolkit:ElevatedView
+                                        Background="{ThemeResource SubColor}"                        
+                                        Elevation="10" 
+                                        ShadowColor="#80000000"
+                                        Margin="-5,5,0,5"
+                                        Tapped="ReceivedItem_Tapped">
+
+                                        <Grid Padding="5,5,5,5" ColumnSpacing="10" RowSpacing="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+
+
+                                            <TextBlock Text="From:" Grid.Column="0" Grid.Row="0"/>
+                                            <TextBlock Text="{Binding PayerDisplayName}" Grid.Column="1" Grid.Row="0"/>
+
+                                            <TextBlock Text="For:" Grid.Column="0" Grid.Row="1"/>
+                                            <TextBlock Text="{Binding Name}"  Grid.Column="1" Grid.Row="1" />
+
+                                            <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center">
+                                                <TextBlock Text="$"/>
+                                                <TextBlock Text="{Binding GrossAmount}"/>
+                                            </StackPanel>
+
+                                            <TextBlock Text="{Binding Timestamp}" Grid.Column="3" 
+                                                HorizontalAlignment="Right" Width="80" VerticalAlignment="Center" Grid.RowSpan="2"
+                                                TextWrapping="Wrap" TextAlignment="Right"/>
+                                        </Grid>
+                                    </toolkit:ElevatedView>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+
+                        </ListView>
+                    </PivotItem>
+                    <PivotItem Header="Sent" Margin="0" Padding="0">
+                        <ListView x:Name="TransactionsSentListView" Grid.Row="1" Padding="0,5,0,10" 
+                            SelectionMode="Single" >
+
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <toolkit:ElevatedView
+                                        Background="{ThemeResource SubColor}"                        
+                                        Elevation="10" 
+                                        ShadowColor="#80000000"
+                                        Margin="-5,5,0,5"
+                                        Tapped="SentItem_Tapped">
+
+                                        <Grid Padding="5,5,5,5" ColumnSpacing="10" RowSpacing="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="auto"/>
+                                                <ColumnDefinition Width="auto"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="auto"/>
+                                            </Grid.RowDefinitions>
+
+                                            <TextBlock Text="To: " Grid.Column="0" Margin="0,0,-5,0" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding PayerDisplayName}" Grid.Column="1" VerticalAlignment="Center" />
+
+                                            <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center">
+                                                <TextBlock Text="$"/>
+                                                <TextBlock Text="{Binding GrossAmount}"/>
+                                            </StackPanel>
+
+                                            <TextBlock Text="{Binding Timestamp}" Grid.Column="3" 
+                                            HorizontalAlignment="Right" Width="80" VerticalAlignment="Center" Grid.RowSpan="2"
+                                            TextWrapping="Wrap" TextAlignment="Right"/>
+
+                                        </Grid>
+                                    </toolkit:ElevatedView>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </PivotItem>
+                </Pivot>
+
+                <ProgressRing x:Name="APIProgress" Grid.Row="2"
+                        IsActive="True" 
+                        Height="50" Width="50" 
+                        VerticalAlignment="Center" 
+                        HorizontalAlignment="Center"/>
             </Grid>
-
-
-            <Pivot Grid.Row="1">
-                <PivotItem Header="Received" Margin="0" Padding="0">
-                    <ListView x:Name="TransactionsReceivedListView" Grid.Row="1" Padding="0,5,0,10" 
-                              SelectionMode="Single">
-                              
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <toolkit:ElevatedView
-                                    Background="{ThemeResource SubColor}"                        
-                                    Elevation="10" 
-                                    ShadowColor="#80000000"
-                                    Margin="-5,5,0,5"
-                                    Tapped="ReceivedItem_Tapped">
-
-                                    <Grid Padding="5,5,5,5" ColumnSpacing="10" RowSpacing="5">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="auto"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="auto"/>
-                                            <ColumnDefinition Width="auto"/>
-                                        </Grid.ColumnDefinitions>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="auto"/>
-                                            <RowDefinition Height="auto"/>
-                                        </Grid.RowDefinitions>
-                                        
-
-                                        <TextBlock Text="From:" Grid.Column="0" Grid.Row="0"/>
-                                        <TextBlock Text="{Binding PayerDisplayName}" Grid.Column="1" Grid.Row="0"/>
-
-                                        <TextBlock Text="For:" Grid.Column="0" Grid.Row="1"/>
-                                        <TextBlock Text="{Binding Name}"  Grid.Column="1" Grid.Row="1" />
-
-                                        <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center">
-                                            <TextBlock Text="$"/>
-                                            <TextBlock Text="{Binding GrossAmount}"/>
-                                        </StackPanel>
-
-                                        <TextBlock Text="{Binding Timestamp}" Grid.Column="3" 
-                                                   HorizontalAlignment="Right" Width="80" VerticalAlignment="Center" Grid.RowSpan="2"
-                                                   TextWrapping="Wrap" TextAlignment="Right"/>
-                                    </Grid>
-                                </toolkit:ElevatedView>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-
-                    </ListView>
-                </PivotItem>
-                <PivotItem Header="Sent" Margin="0" Padding="0">
-                    <ListView x:Name="TransactionsSentListView" Grid.Row="1" Padding="0,5,0,10" 
-                              SelectionMode="Single" >
-                        
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <toolkit:ElevatedView
-                                    Background="{ThemeResource SubColor}"                        
-                                    Elevation="10" 
-                                    ShadowColor="#80000000"
-                                    Margin="-5,5,0,5"
-                                    Tapped="SentItem_Tapped">
-
-                                    <Grid Padding="5,5,5,5" ColumnSpacing="10" RowSpacing="5">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="auto"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="auto"/>
-                                            <ColumnDefinition Width="auto"/>
-                                        </Grid.ColumnDefinitions>
-
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="auto"/>
-                                        </Grid.RowDefinitions>
-
-                                        <TextBlock Text="To: " Grid.Column="0" Margin="0,0,-5,0" VerticalAlignment="Center"/>
-                                        <TextBlock Text="{Binding PayerDisplayName}" Grid.Column="1" VerticalAlignment="Center" />
-
-                                        <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center">
-                                            <TextBlock Text="$"/>
-                                            <TextBlock Text="{Binding GrossAmount}"/>
-                                        </StackPanel>
-
-                                        <TextBlock Text="{Binding Timestamp}" Grid.Column="3" 
-                                               HorizontalAlignment="Right" Width="80" VerticalAlignment="Center" Grid.RowSpan="2"
-                                               TextWrapping="Wrap" TextAlignment="Right"/>
-
-                                    </Grid>
-                                </toolkit:ElevatedView>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </PivotItem>
-            </Pivot>
-            
-            <ProgressRing x:Name="APIProgress" Grid.Row="2"
-                          IsActive="True" 
-                          Height="50" Width="50" 
-                          VerticalAlignment="Center" 
-                          HorizontalAlignment="Center"/>
         </Grid>
 
 
 
+        <toolkit:ElevatedView x:Name="FAQGrid"
+                Grid.Column="1" Margin="15,45,15,75"
+                Background="{ThemeResource SubColor}"                        
+                Elevation="10"               
+                ShadowColor="#80000000">
 
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="FAQ" FontWeight="Bold" FontSize="24" Grid.Row="0" Margin="15,20,0,0"/>
+
+                <ScrollViewer Grid.Row="1" Grid.Column="1" Padding="15,0,15,20">
+                    <Grid x:Name="FAQContent" RowSpacing="15">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="1">
+                            <TextBlock FontWeight="Bold" FontSize="16">
+                                How does this all work?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                All campaign finances are managed and automated through an Application Programming Interface (API).
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="2">
+                            <TextBlock FontWeight="Bold"  FontSize="16">
+                                Is Paypal a bank or credit union?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                No, Paypal is not a bank or a credit union.
+                            </TextBlock>
+
+                            <TextBlock Margin="15,5,0,0">
+                                No bank account is, or ever will be, linked to this Paypal Merchant account.
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="3">
+                            <TextBlock  FontWeight="Bold"  FontSize="16">
+                                How do we know you aren't filtering out transactions or that this is even the real amount?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                The source code for this site and the API will be available for review on Github so you can see exactly what is happening.
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="4">
+                            <TextBlock  FontWeight="Bold"  FontSize="16">
+                                Are you able to use this for purchasing personal items that don't relate to your campaign?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                Yes, however, I will at no point use this account to purchase goods or services that do not
+                                pertain to my campaign.
+                            </TextBlock>
+
+                            <TextBlock Margin="15,5,0,0">
+                                If I use this account to purchase gum at a grocery store you will see it here under the "Sent"
+                                transactions to validate my claims.
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="5">
+                            <TextBlock  FontWeight="Bold"  FontSize="16">
+                                I'm not aware of any politician that has a live transaction feed of everything they do, what's the catch?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                One of my goals for this campaign is to set a precendent for every politician in America moving forward.
+                            </TextBlock>
+
+                            <TextBlock Margin="15,5,0,0">
+                                Money in politics is the #1 reason why people have lost faith in things to ever get better for them.
+                            </TextBlock>
+
+                            <TextBlock Margin="15,5,0,0">
+                                By supporting this campaign you also support creating the infrastructure necessary to fixing our broken political system.
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="6">
+                            <TextBlock  FontWeight="Bold"  FontSize="16">
+                                Do you even have a campaign finance manager?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                No, I intend to prove that the only thing that should separate you from elected office is the merit of your ideas
+                                and your ability to convey them.
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="7">
+                            <TextBlock  FontWeight="Bold"  FontSize="16">
+                                If you're able to do this why can't other politicians?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                Excellent question.
+                            </TextBlock>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
+            </Grid>
+        </toolkit:ElevatedView>
+        
     </Grid>
-    
-    
-    
+
+
+
+
+
 </Page>
