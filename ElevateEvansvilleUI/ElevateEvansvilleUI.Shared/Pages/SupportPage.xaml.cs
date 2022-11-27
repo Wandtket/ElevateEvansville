@@ -22,6 +22,7 @@ using System.ServiceModel.Channels;
 using ElevateEvansvilleUI.Controls.Dialogs;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.System;
+using Microsoft.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -38,9 +39,67 @@ namespace ElevateEvansvilleUI.Pages
             this.InitializeComponent();          
         }
 
+        private bool isMobileDevice = false;
+
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            AdjustUI();
             await Disclaimer.ShowAsync();
+        }
+
+
+        private void AdjustUI()
+        {
+            //Desktop
+            if (UI.IsDeviceMobile() == false)
+            {
+                ExpandAll(true);
+                SetWidth(555);
+            }
+            //Mobile
+            else
+            {
+                ExpandAll(false);
+                SetWidth(UI.GetDeviceWidth() - 55);
+            }
+        }
+
+        private void ExpandAll(bool value)
+        {
+            Calendar.IsExpanded = value;
+            Facebook.IsExpanded = value;
+            VistaPrint.IsExpanded = value;
+            YouTube.IsExpanded = value;
+            TikTok.IsExpanded = value;
+            Twitter.IsExpanded = value;
+            Billboard.IsExpanded = value;
+            DistributeAll.IsExpanded = value;
+        }
+
+        private void SetWidth(double value)
+        {
+            Calendar.Width = value;
+            Facebook.Width = value;
+            VistaPrint.Width = value;
+            YouTube.Width = value;
+            TikTok.Width = value;
+            Twitter.Width = value;
+            Billboard.Width = value;
+            DistributeAll.Width = value;
+
+            Calendar.MaxWidth = value;
+            Facebook.MaxWidth = value;
+            VistaPrint.MaxWidth = value;
+            YouTube.MaxWidth = value;
+            TikTok.MaxWidth = value;
+            Twitter.MaxWidth = value;
+            Billboard.MaxWidth = value;
+            DistributeAll.MaxWidth = value;
+        }
+
+        private void PromoteAmount_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            PromoteDialog.IsPrimaryButtonEnabled = true;
         }
 
         string SupportType = "";
@@ -134,5 +193,6 @@ namespace ElevateEvansvilleUI.Pages
         {
             UI.Navigate(typeof(FinancePage));
         }
+
     }
 }

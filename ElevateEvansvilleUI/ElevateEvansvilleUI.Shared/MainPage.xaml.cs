@@ -38,6 +38,7 @@ namespace ElevateEvansvilleUI
 
             //Set the static AppFrame so it can be accessed anywhere in the app.
             UI.AppFrame = this.AppFrame;
+            UI.MainRoot = this.XamlRoot;
             UI.LoadingGrid = this.LoadingGrid;
             UI.LoadingFadeIn = this.LoadingFadeIn;
             UI.SupportButton = this.Support;

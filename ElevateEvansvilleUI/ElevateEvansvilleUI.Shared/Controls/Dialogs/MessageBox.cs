@@ -16,6 +16,7 @@ namespace ElevateEvansvilleUI.Controls.Dialogs
             {
                 //Prepare Dialog
                 var dialog = new ContentDialog();
+                dialog.XamlRoot = UI.MainRoot;
                 dialog.Title = Title;
                 dialog.PrimaryButtonText = buttonText;
                 dialog.DefaultButton = ContentDialogButton.Primary;

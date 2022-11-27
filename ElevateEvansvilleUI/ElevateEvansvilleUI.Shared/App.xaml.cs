@@ -84,13 +84,14 @@ namespace ElevateEvansvilleUI
             {
                 if (rootFrame.Content == null)
                 {
+                    UI.MainRoot = _window.Content.XamlRoot;
+
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-
 #if __WASM__
                     //Preview Mode Message
-                    ContentDialog dialog = new ContentDialog();
+                    ContentDialog dialog = new ContentDialog();                   
                     dialog.Title = "PREVIEW MODE";
                     dialog.SecondaryButtonText = "Continue";
                     PreviewMessage message = new PreviewMessage();
@@ -110,7 +111,7 @@ namespace ElevateEvansvilleUI
 #if __WASM__
                     rootFrame.Navigate(typeof(MainPage), args.Arguments);
 #elif WINDOWS_UWP
-                    rootFrame.Navigate(typeof(MainPage), args.Arguments);
+                    rootFrame.Navigate(typeof(SupportPage), args.Arguments);
 #endif
 
 

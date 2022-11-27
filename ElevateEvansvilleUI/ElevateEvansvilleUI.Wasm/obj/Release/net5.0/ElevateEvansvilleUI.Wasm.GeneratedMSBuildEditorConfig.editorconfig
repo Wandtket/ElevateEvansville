@@ -130,6 +130,13 @@ build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\Eleva
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
 
+[C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/TestPage.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = Pages\TestPage.xaml
+build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml
+build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/App.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = ApplicationDefinition
 build_metadata.AdditionalFiles.Link = App.xaml

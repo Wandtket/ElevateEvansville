@@ -12,6 +12,7 @@ using ElevateEvansvilleUI.Controls.Dialogs;
 using System.Threading.Tasks;
 using System.Security.AccessControl;
 using ElevateEvansvilleUI.Pages;
+using Windows.Web.AtomPub;
 #if __WASM__
 using Uno.Foundation;
 #endif
@@ -28,6 +29,7 @@ namespace ElevateEvansvilleUI.Extensions
         public static Grid LoadingGrid;
         public static Storyboard LoadingFadeIn;
 
+        public static XamlRoot MainRoot;
 
         public static Button SupportButton;
 
@@ -75,7 +77,17 @@ namespace ElevateEvansvilleUI.Extensions
         }
 
 
-
+        /// <summary>
+        /// Detect the user agent of the browser in Web Assembly for mobile devices.
+        /// </summary>
+        /// <returns></returns>
+        public static double GetDeviceWidth()
+        {
+#if __WASM__
+            return Convert.ToDouble(WebAssemblyRuntime.InvokeJS("window.outerWidth"));                 
+#endif
+            return 400;
+        }
 
 
     }

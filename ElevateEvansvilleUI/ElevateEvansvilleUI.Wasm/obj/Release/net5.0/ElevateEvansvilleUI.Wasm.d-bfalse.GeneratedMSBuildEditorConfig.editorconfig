@@ -21,7 +21,7 @@ build_property.IsHotReloadHost =
 build_property.UseWPF = 
 build_property.IsUnoHead = true
 build_property.WindowsAppSDKWinUI = 
-build_property.UnoRemoteControlPort = 
+build_property.UnoRemoteControlPort = 58572
 build_property.UnoRemoteControlHost = 
 build_property.UnoRemoteControlProcessorsPath = 
 build_property.UseUnoXamlParser = 
@@ -128,6 +128,13 @@ build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\SupportPage.xaml
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml
+build_metadata.AdditionalFiles.XamlRuntime = 
+
+[C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/TestPage.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = Pages\TestPage.xaml
+build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml
+build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
 
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/App.xaml]

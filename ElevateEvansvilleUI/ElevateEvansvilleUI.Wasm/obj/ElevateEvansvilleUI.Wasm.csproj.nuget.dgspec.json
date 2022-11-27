@@ -104,10 +104,6 @@
               "target": "Package",
               "version": "[4.6.19, )"
             },
-            "Uno.UI.RemoteControl": {
-              "target": "Package",
-              "version": "[4.6.19, )"
-            },
             "Uno.UI.WebAssembly": {
               "target": "Package",
               "version": "[4.6.19, )"
