@@ -60,6 +60,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml.cs">
       <DependentUpon>SupportPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\TestPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)Controls\Messages\PayPalDetailMessage.xaml">
@@ -107,6 +108,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\TestPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

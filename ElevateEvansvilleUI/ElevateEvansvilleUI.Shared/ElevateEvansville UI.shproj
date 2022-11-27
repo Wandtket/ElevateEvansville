@@ -29,6 +29,7 @@
     <_Globbed_Compile Remove="Controls\PreviewMessage.xaml.cs" />
     <_Globbed_Compile Remove="Pages\PayPalPage.xaml.cs" />
     <_Globbed_Compile Remove="Pages\PrivacyPage.xaml.cs" />
+    <_Globbed_Compile Remove="Pages\TestPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <_Globbed_Content Remove="Assets\Changelog.txt" />
@@ -44,5 +45,6 @@
     <_Globbled_Page Remove="Controls\Messages\PreviewMessage - Copy.xaml" />
     <_Globbled_Page Remove="Controls\PayPalDetailMessage.xaml" />
     <_Globbled_Page Remove="Controls\PreviewMessage.xaml" />
+    <_Globbled_Page Remove="Pages\TestPage.xaml" />
   </ItemGroup>
 </Project>
