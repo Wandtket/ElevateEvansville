@@ -1473,7 +1473,7 @@ namespace ElevateEvansvilleUI.Pages
 													new global::Windows.UI.Xaml.Controls.Image
 													{
 														IsParsing = true,
-														Source = "/Assets/Images/Logos/Youtube.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Youtube.png, Image/Source */,
+														Source = "/Assets/Images/Logos/YouTube.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/YouTube.png, Image/Source */,
 														Height = 35d/* double/, 35, Image/Height */,
 														Width = 35d/* double/, 35, Image/Width */,
 														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 283:34)
@@ -1842,7 +1842,7 @@ namespace ElevateEvansvilleUI.Pages
 													new global::Windows.UI.Xaml.Controls.Image
 													{
 														IsParsing = true,
-														Source = "/Assets/Images/Logos/TikTok.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/TikTok.png, Image/Source */,
+														Source = "/Assets/Images/Logos/Tiktok.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Tiktok.png, Image/Source */,
 														Height = 25d/* double/, 25, Image/Height */,
 														Width = 35d/* double/, 35, Image/Width */,
 														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 351:34)

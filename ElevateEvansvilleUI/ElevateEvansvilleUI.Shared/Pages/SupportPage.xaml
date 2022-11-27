@@ -280,7 +280,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="/Assets/Images/Logos/Youtube.png" Height="35" Width="35" Grid.Column="0"/>
+                                <Image Source="/Assets/Images/Logos/YouTube.png" Height="35" Width="35" Grid.Column="0"/>
                                 <TextBlock FontSize="20" VerticalAlignment="Center" Grid.Column="1">
                                             <Bold>YouTube / Google</Bold>
                                 </TextBlock>
@@ -348,7 +348,7 @@
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="/Assets/Images/Logos/TikTok.png" Height="25" Width="35" Grid.Column="0"/>
+                                <Image Source="/Assets/Images/Logos/Tiktok.png" Height="25" Width="35" Grid.Column="0"/>
                                 <TextBlock FontSize="20" VerticalAlignment="Center" Grid.Column="1">
                                             <Bold>TikTok</Bold>
                                 </TextBlock>
