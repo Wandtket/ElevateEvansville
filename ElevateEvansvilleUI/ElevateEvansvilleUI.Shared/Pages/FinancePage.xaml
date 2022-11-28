@@ -121,7 +121,7 @@
 
 
                                             <TextBlock Text="From:" Grid.Column="0" Grid.Row="0"/>
-                                            <TextBlock Text="{Binding PayerDisplayName}" Grid.Column="1" Grid.Row="0"/>
+                                            <TextBlock Text="{Binding PayerCensoredName}" Grid.Column="1" Grid.Row="0"/>
 
                                             <TextBlock Text="For:" Grid.Column="0" Grid.Row="1"/>
                                             <TextBlock Text="{Binding Name}"  Grid.Column="1" Grid.Row="1" />
@@ -167,7 +167,7 @@
                                             </Grid.RowDefinitions>
 
                                             <TextBlock Text="To: " Grid.Column="0" Margin="0,0,-5,0" VerticalAlignment="Center"/>
-                                            <TextBlock Text="{Binding PayerDisplayName}" Grid.Column="1" VerticalAlignment="Center" />
+                                            <TextBlock Text="{Binding PayerCensoredName}" Grid.Column="1" VerticalAlignment="Center" />
 
                                             <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center">
                                                 <TextBlock Text="$"/>
@@ -210,44 +210,61 @@
 
                 <TextBlock Text="FAQ" FontWeight="Bold" FontSize="24" Grid.Row="0" Margin="15,20,0,0"/>
 
-                <ScrollViewer Grid.Row="1" Grid.Column="1" Padding="15,0,15,20">
-                    <Grid x:Name="FAQContent" RowSpacing="15">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                            <RowDefinition Height="auto"/>
-                        </Grid.RowDefinitions>
-
-                        <StackPanel Grid.Row="1">
+                <ScrollViewer Grid.Row="1" Grid.Column="1" Padding="15,10,15,20">
+                    <StackPanel x:Name="FAQContent" Spacing="15">
+                        <StackPanel>
                             <TextBlock FontWeight="Bold" FontSize="16">
                                 How does this all work?
                             </TextBlock>
 
                             <TextBlock Margin="15,10,0,0">
-                                All campaign finances are managed and automated through an Application Programming Interface (API).
+                                All campaign finances are automated through an Application Programming Interface (API) in "The Cloud".
                             </TextBlock>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="2">
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold"  FontSize="16">
+                                Will my name show up here if I donate money?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                Your name will be censored to just your initials unless you donate more than $25.00
+                            </TextBlock>
+                        </StackPanel>
+
+                        
+                        <StackPanel>
+                            <TextBlock FontWeight="Bold"  FontSize="16">
+                                I donated a dollar, why didn't the balance go up exactly one dollar?
+                            </TextBlock>
+
+                            <TextBlock Margin="15,10,0,0">
+                                Paypal takes a cut for what seems like a random amount sometimes. To see how much the net amount was,
+                                click on the transaction.
+                            </TextBlock>
+
+                            <TextBlock Margin="15,5,0,0">
+                                Ideally, the U.S. Government would emulate the Paypal model and provide candidates with a campaign 
+                                finance account that can be closely monitored by constituents and the IRS.
+                            </TextBlock>
+                        </StackPanel>
+
+                        <StackPanel>
                             <TextBlock FontWeight="Bold"  FontSize="16">
                                 Is Paypal a bank or credit union?
                             </TextBlock>
 
                             <TextBlock Margin="15,10,0,0">
-                                No, Paypal is not a bank or a credit union.
+                                <Bold>No</Bold>, Paypal is <Bold>NOT</Bold> a bank or a credit union.
                             </TextBlock>
 
                             <TextBlock Margin="15,5,0,0">
-                                No bank account is, or ever will be, linked to this Paypal Merchant account.
+                                No bank account is, <Underline>or ever will be</Underline>, linked to this Paypal Merchant account.
                             </TextBlock>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="3">
+
+                        <StackPanel>
                             <TextBlock  FontWeight="Bold"  FontSize="16">
                                 How do we know you aren't filtering out transactions or that this is even the real amount?
                             </TextBlock>
@@ -257,7 +274,7 @@
                             </TextBlock>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="4">
+                        <StackPanel>
                             <TextBlock  FontWeight="Bold"  FontSize="16">
                                 Are you able to use this for purchasing personal items that don't relate to your campaign?
                             </TextBlock>
@@ -273,7 +290,7 @@
                             </TextBlock>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="5">
+                        <StackPanel>
                             <TextBlock  FontWeight="Bold"  FontSize="16">
                                 I'm not aware of any politician that has a live transaction feed of everything they do, what's the catch?
                             </TextBlock>
@@ -291,7 +308,7 @@
                             </TextBlock>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="6">
+                        <StackPanel>
                             <TextBlock  FontWeight="Bold"  FontSize="16">
                                 Do you even have a campaign finance manager?
                             </TextBlock>
@@ -302,7 +319,7 @@
                             </TextBlock>
                         </StackPanel>
 
-                        <StackPanel Grid.Row="7">
+                        <StackPanel>
                             <TextBlock  FontWeight="Bold"  FontSize="16">
                                 If you're able to do this why can't other politicians?
                             </TextBlock>
@@ -311,7 +328,7 @@
                                 Excellent question.
                             </TextBlock>
                         </StackPanel>
-                    </Grid>
+                    </StackPanel>
                 </ScrollViewer>
             </Grid>
         </toolkit:ElevatedView>

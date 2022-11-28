@@ -27,11 +27,8 @@ namespace ElevateEvansvilleUI.DTOs
         [JsonPropertyName("Memo")]
         public string Memo { get; set; }
 
-        [JsonPropertyName("Payer")]
-        public string Payer { get; set; }
-
-        [JsonPropertyName("PayerDisplayName")]
-        public string PayerDisplayName { get; set; }
+        [JsonPropertyName("PayerCensoredName")]
+        public string PayerCensoredName { get; set; }
 
         [JsonPropertyName("FeeAmount")]
         public string FeeAmount { get; set; }

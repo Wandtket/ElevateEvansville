@@ -23,6 +23,8 @@ namespace ElevateEvansville_API.Models
 
         public string? PayerDisplayName { get; set; }
 
+        public string? PayerCensoredName { get; set; }
+
         public string? FeeAmount { get; set; }
 
         public string? GrossAmount { get; set; }

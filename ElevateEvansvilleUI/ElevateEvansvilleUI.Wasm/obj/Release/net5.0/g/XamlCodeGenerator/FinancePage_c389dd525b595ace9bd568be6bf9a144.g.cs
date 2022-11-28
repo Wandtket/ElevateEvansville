@@ -561,73 +561,21 @@ namespace ElevateEvansvilleUI.Pages
 								new global::Windows.UI.Xaml.Controls.ScrollViewer
 								{
 									IsParsing = true,
-									Padding = new global::Windows.UI.Xaml.Thickness(15,0,15,20)/* Windows.UI.Xaml.Thickness/, 15,0,15,20, ScrollViewer/Padding */,
+									Padding = new global::Windows.UI.Xaml.Thickness(15,10,15,20)/* Windows.UI.Xaml.Thickness/, 15,10,15,20, ScrollViewer/Padding */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 213:18)
 									Content = 
-									new global::Windows.UI.Xaml.Controls.Grid
+									new global::Windows.UI.Xaml.Controls.StackPanel
 									{
 										IsParsing = true,
 										Name = "FAQContent",
-										RowSpacing = 15d/* double/, 15, Grid/RowSpacing */,
-										RowDefinitions = 
-										{
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 216:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 217:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 218:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 219:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 220:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 221:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 222:30)
-											}
-											,
-											new global::Windows.UI.Xaml.Controls.RowDefinition
-											{
-												Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 223:30)
-											}
-											,
-										}
-										,
+										Spacing = 15d/* double/, 15, StackPanel/Spacing */,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 214:22)
 										Children = 
 										{
 											new global::Windows.UI.Xaml.Controls.StackPanel
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 226:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 215:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.TextBlock
@@ -635,20 +583,20 @@ namespace ElevateEvansvilleUI.Pages
 														IsParsing = true,
 														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 227:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 216:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
 																Text = "How does this all work?"/* string/, How does this all work?, Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 229:31)
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 218:31)
 															}
 															,
 														}
 													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c47 => 
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c39 => 
 													{
-														c47.CreationComplete();
+														c39.CreationComplete();
 													}
 													))
 													,
@@ -656,29 +604,85 @@ namespace ElevateEvansvilleUI.Pages
 													{
 														IsParsing = true,
 														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 231:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 220:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "All campaign finances are managed and automated through an Application Programming Interface (API)."/* string/, All campaign finances are managed and automated through an Application Programming Interface (API)., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 233:31)
+																Text = "All campaign finances are automated through an Application Programming Interface (API) in \"The Cloud\"."/* string/, All campaign finances are automated through an Application Programming Interface (API) in "The Cloud"., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 222:31)
 															}
 															,
 														}
 													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c49 => 
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c41 => 
 													{
-														c49.CreationComplete();
+														c41.CreationComplete();
 													}
 													))
 													,
 												}
 											}
-											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c50 => 
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c42 => 
 											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c50, 1/* int/, 1, Grid/Row */);
-												c50.CreationComplete();
+												c42.CreationComplete();
+											}
+											))
+											,
+											new global::Windows.UI.Xaml.Controls.StackPanel
+											{
+												IsParsing = true,
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 225:26)
+												Children = 
+												{
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
+														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 226:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "Will my name show up here if I donate money?"/* string/, Will my name show up here if I donate money?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 228:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c44 => 
+													{
+														c44.CreationComplete();
+													}
+													))
+													,
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 230:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "Your name will be censored to just your initials unless you donate more than $25.00"/* string/, Your name will be censored to just your initials unless you donate more than $25.00, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 232:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c46 => 
+													{
+														c46.CreationComplete();
+													}
+													))
+													,
+												}
+											}
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c47 => 
+											{
+												c47.CreationComplete();
 											}
 											))
 											,
@@ -698,15 +702,15 @@ namespace ElevateEvansvilleUI.Pages
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "Is Paypal a bank or credit union?"/* string/, Is Paypal a bank or credit union?, Run/Text */,
+																Text = "I donated a dollar, why didn't the balance go up exactly one dollar?"/* string/, I donated a dollar, why didn't the balance go up exactly one dollar?, Run/Text */,
 																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 239:31)
 															}
 															,
 														}
 													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c52 => 
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c49 => 
 													{
-														c52.CreationComplete();
+														c49.CreationComplete();
 													}
 													))
 													,
@@ -719,15 +723,15 @@ namespace ElevateEvansvilleUI.Pages
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "No, Paypal is not a bank or a credit union."/* string/, No, Paypal is not a bank or a credit union., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 243:31)
+																Text = "Paypal takes a cut for what seems like a random amount sometimes. To see how much the net amount was, click on the transaction."/* string/, Paypal takes a cut for what seems like a random amount sometimes. To see how much the net amount was, click on the transaction., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 244:31)
 															}
 															,
 														}
 													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c54 => 
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c51 => 
 													{
-														c54.CreationComplete();
+														c51.CreationComplete();
 													}
 													))
 													,
@@ -735,13 +739,49 @@ namespace ElevateEvansvilleUI.Pages
 													{
 														IsParsing = true,
 														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 245:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 246:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "No bank account is, or ever will be, linked to this Paypal Merchant account."/* string/, No bank account is, or ever will be, linked to this Paypal Merchant account., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 247:31)
+																Text = "Ideally, the U.S. Government would emulate the Paypal model and provide candidates with a campaign finance account that can be closely monitored by constituents and the IRS."/* string/, Ideally, the U.S. Government would emulate the Paypal model and provide candidates with a campaign finance account that can be closely monitored by constituents and the IRS., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 249:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c53 => 
+													{
+														c53.CreationComplete();
+													}
+													))
+													,
+												}
+											}
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c54 => 
+											{
+												c54.CreationComplete();
+											}
+											))
+											,
+											new global::Windows.UI.Xaml.Controls.StackPanel
+											{
+												IsParsing = true,
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 252:26)
+												Children = 
+												{
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
+														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 253:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "Is Paypal a bank or credit union?"/* string/, Is Paypal a bank or credit union?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 255:31)
 															}
 															,
 														}
@@ -752,54 +792,51 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													))
 													,
-												}
-											}
-											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c57 => 
-											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c57, 2/* int/, 2, Grid/Row */);
-												c57.CreationComplete();
-											}
-											))
-											,
-											new global::Windows.UI.Xaml.Controls.StackPanel
-											{
-												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 250:26)
-												Children = 
-												{
-													new global::Windows.UI.Xaml.Controls.TextBlock
-													{
-														IsParsing = true,
-														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 251:30)
-														Inlines = 
-														{
-															new global::Windows.UI.Xaml.Documents.Run
-															{
-																Text = "How do we know you aren't filtering out transactions or that this is even the real amount?"/* string/, How do we know you aren't filtering out transactions or that this is even the real amount?, Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 253:31)
-															}
-															,
-														}
-													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c59 => 
-													{
-														c59.CreationComplete();
-													}
-													))
-													,
 													new global::Windows.UI.Xaml.Controls.TextBlock
 													{
 														IsParsing = true,
 														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 255:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 257:30)
 														Inlines = 
 														{
+															new global::Windows.UI.Xaml.Documents.Bold
+															{
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 258:34)
+																Inlines = 
+																{
+																	new global::Windows.UI.Xaml.Documents.Run
+																	{
+																		Text = "No"/* string/, No, Run/Text */,
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 258:43)
+																	}
+																	,
+																}
+															}
+															,
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "The source code for this site and the API will be available for review on Github so you can see exactly what is happening."/* string/, The source code for this site and the API will be available for review on Github so you can see exactly what is happening., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 257:31)
+																Text = ", Paypal is "/* string/, , Paypal is , Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 258:61)
+															}
+															,
+															new global::Windows.UI.Xaml.Documents.Bold
+															{
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 258:61)
+																Inlines = 
+																{
+																	new global::Windows.UI.Xaml.Documents.Run
+																	{
+																		Text = "NOT"/* string/, NOT, Run/Text */,
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 258:71)
+																	}
+																	,
+																}
+															}
+															,
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = " a bank or a credit union."/* string/,  a bank or a credit union., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 259:31)
 															}
 															,
 														}
@@ -810,19 +847,59 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													))
 													,
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 261:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "No bank account is, "/* string/, No bank account is, , Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 262:54)
+															}
+															,
+															new global::Windows.UI.Xaml.Documents.Underline
+															{
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 262:54)
+																Inlines = 
+																{
+																	new global::Windows.UI.Xaml.Documents.Run
+																	{
+																		Text = "or ever will be"/* string/, or ever will be, Run/Text */,
+																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 262:81)
+																	}
+																	,
+																}
+															}
+															,
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = ", linked to this Paypal Merchant account."/* string/, , linked to this Paypal Merchant account., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 263:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c65 => 
+													{
+														c65.CreationComplete();
+													}
+													))
+													,
 												}
 											}
-											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c62 => 
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c66 => 
 											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c62, 3/* int/, 3, Grid/Row */);
-												c62.CreationComplete();
+												c66.CreationComplete();
 											}
 											))
 											,
 											new global::Windows.UI.Xaml.Controls.StackPanel
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 260:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 267:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.TextBlock
@@ -830,55 +907,13 @@ namespace ElevateEvansvilleUI.Pages
 														IsParsing = true,
 														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 261:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 268:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "Are you able to use this for purchasing personal items that don't relate to your campaign?"/* string/, Are you able to use this for purchasing personal items that don't relate to your campaign?, Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 263:31)
-															}
-															,
-														}
-													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c64 => 
-													{
-														c64.CreationComplete();
-													}
-													))
-													,
-													new global::Windows.UI.Xaml.Controls.TextBlock
-													{
-														IsParsing = true,
-														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 265:30)
-														Inlines = 
-														{
-															new global::Windows.UI.Xaml.Documents.Run
-															{
-																Text = "Yes, however, I will at no point use this account to purchase goods or services that do not pertain to my campaign."/* string/, Yes, however, I will at no point use this account to purchase goods or services that do not pertain to my campaign., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 268:31)
-															}
-															,
-														}
-													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c66 => 
-													{
-														c66.CreationComplete();
-													}
-													))
-													,
-													new global::Windows.UI.Xaml.Controls.TextBlock
-													{
-														IsParsing = true,
-														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 270:30)
-														Inlines = 
-														{
-															new global::Windows.UI.Xaml.Documents.Run
-															{
-																Text = "If I use this account to purchase gum at a grocery store you will see it here under the \"Sent\" transactions to validate my claims."/* string/, If I use this account to purchase gum at a grocery store you will see it here under the "Sent" transactions to validate my claims., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 273:31)
+																Text = "How do we know you aren't filtering out transactions or that this is even the real amount?"/* string/, How do we know you aren't filtering out transactions or that this is even the real amount?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 270:31)
 															}
 															,
 														}
@@ -889,19 +924,39 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													))
 													,
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 272:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "The source code for this site and the API will be available for review on Github so you can see exactly what is happening."/* string/, The source code for this site and the API will be available for review on Github so you can see exactly what is happening., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 274:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c70 => 
+													{
+														c70.CreationComplete();
+													}
+													))
+													,
 												}
 											}
-											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c69 => 
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c71 => 
 											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c69, 4/* int/, 4, Grid/Row */);
-												c69.CreationComplete();
+												c71.CreationComplete();
 											}
 											))
 											,
 											new global::Windows.UI.Xaml.Controls.StackPanel
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 276:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 277:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.TextBlock
@@ -909,34 +964,13 @@ namespace ElevateEvansvilleUI.Pages
 														IsParsing = true,
 														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 277:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 278:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "I'm not aware of any politician that has a live transaction feed of everything they do, what's the catch?"/* string/, I'm not aware of any politician that has a live transaction feed of everything they do, what's the catch?, Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 279:31)
-															}
-															,
-														}
-													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c71 => 
-													{
-														c71.CreationComplete();
-													}
-													))
-													,
-													new global::Windows.UI.Xaml.Controls.TextBlock
-													{
-														IsParsing = true,
-														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 281:30)
-														Inlines = 
-														{
-															new global::Windows.UI.Xaml.Documents.Run
-															{
-																Text = "One of my goals for this campaign is to set a precendent for every politician in America moving forward."/* string/, One of my goals for this campaign is to set a precendent for every politician in America moving forward., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 283:31)
+																Text = "Are you able to use this for purchasing personal items that don't relate to your campaign?"/* string/, Are you able to use this for purchasing personal items that don't relate to your campaign?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 280:31)
 															}
 															,
 														}
@@ -950,14 +984,14 @@ namespace ElevateEvansvilleUI.Pages
 													new global::Windows.UI.Xaml.Controls.TextBlock
 													{
 														IsParsing = true,
-														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 285:30)
+														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 282:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "Money in politics is the #1 reason why people have lost faith in things to ever get better for them."/* string/, Money in politics is the #1 reason why people have lost faith in things to ever get better for them., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 287:31)
+																Text = "Yes, however, I will at no point use this account to purchase goods or services that do not pertain to my campaign."/* string/, Yes, however, I will at no point use this account to purchase goods or services that do not pertain to my campaign., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 285:31)
 															}
 															,
 														}
@@ -972,13 +1006,13 @@ namespace ElevateEvansvilleUI.Pages
 													{
 														IsParsing = true,
 														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 289:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 287:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "By supporting this campaign you also support creating the infrastructure necessary to fixing our broken political system."/* string/, By supporting this campaign you also support creating the infrastructure necessary to fixing our broken political system., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 291:31)
+																Text = "If I use this account to purchase gum at a grocery store you will see it here under the \"Sent\" transactions to validate my claims."/* string/, If I use this account to purchase gum at a grocery store you will see it here under the "Sent" transactions to validate my claims., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 290:31)
 															}
 															,
 														}
@@ -993,7 +1027,6 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c78 => 
 											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c78, 5/* int/, 5, Grid/Row */);
 												c78.CreationComplete();
 											}
 											))
@@ -1001,7 +1034,7 @@ namespace ElevateEvansvilleUI.Pages
 											new global::Windows.UI.Xaml.Controls.StackPanel
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 294:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 293:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.TextBlock
@@ -1009,13 +1042,13 @@ namespace ElevateEvansvilleUI.Pages
 														IsParsing = true,
 														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 295:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 294:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "Do you even have a campaign finance manager?"/* string/, Do you even have a campaign finance manager?, Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 297:31)
+																Text = "I'm not aware of any politician that has a live transaction feed of everything they do, what's the catch?"/* string/, I'm not aware of any politician that has a live transaction feed of everything they do, what's the catch?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 296:31)
 															}
 															,
 														}
@@ -1030,13 +1063,13 @@ namespace ElevateEvansvilleUI.Pages
 													{
 														IsParsing = true,
 														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 299:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 298:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "No, I intend to prove that the only thing that should separate you from elected office is the merit of your ideas and your ability to convey them."/* string/, No, I intend to prove that the only thing that should separate you from elected office is the merit of your ideas and your ability to convey them., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 302:31)
+																Text = "One of my goals for this campaign is to set a precendent for every politician in America moving forward."/* string/, One of my goals for this campaign is to set a precendent for every politician in America moving forward., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 300:31)
 															}
 															,
 														}
@@ -1047,19 +1080,60 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													))
 													,
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 302:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "Money in politics is the #1 reason why people have lost faith in things to ever get better for them."/* string/, Money in politics is the #1 reason why people have lost faith in things to ever get better for them., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 304:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c84 => 
+													{
+														c84.CreationComplete();
+													}
+													))
+													,
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 306:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "By supporting this campaign you also support creating the infrastructure necessary to fixing our broken political system."/* string/, By supporting this campaign you also support creating the infrastructure necessary to fixing our broken political system., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 308:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c86 => 
+													{
+														c86.CreationComplete();
+													}
+													))
+													,
 												}
 											}
-											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c83 => 
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c87 => 
 											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c83, 6/* int/, 6, Grid/Row */);
-												c83.CreationComplete();
+												c87.CreationComplete();
 											}
 											))
 											,
 											new global::Windows.UI.Xaml.Controls.StackPanel
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 305:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 311:26)
 												Children = 
 												{
 													new global::Windows.UI.Xaml.Controls.TextBlock
@@ -1067,20 +1141,20 @@ namespace ElevateEvansvilleUI.Pages
 														IsParsing = true,
 														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 306:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 312:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "If you're able to do this why can't other politicians?"/* string/, If you're able to do this why can't other politicians?, Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 308:31)
+																Text = "Do you even have a campaign finance manager?"/* string/, Do you even have a campaign finance manager?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 314:31)
 															}
 															,
 														}
 													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c85 => 
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c89 => 
 													{
-														c85.CreationComplete();
+														c89.CreationComplete();
 													}
 													))
 													,
@@ -1088,98 +1162,154 @@ namespace ElevateEvansvilleUI.Pages
 													{
 														IsParsing = true,
 														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
-														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 310:30)
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 316:30)
 														Inlines = 
 														{
 															new global::Windows.UI.Xaml.Documents.Run
 															{
-																Text = "Excellent question."/* string/, Excellent question., Run/Text */,
-																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 312:31)
+																Text = "No, I intend to prove that the only thing that should separate you from elected office is the merit of your ideas and your ability to convey them."/* string/, No, I intend to prove that the only thing that should separate you from elected office is the merit of your ideas and your ability to convey them., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 319:31)
 															}
 															,
 														}
 													}
-													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c87 => 
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c91 => 
 													{
-														c87.CreationComplete();
+														c91.CreationComplete();
 													}
 													))
 													,
 												}
 											}
-											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c88 => 
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c92 => 
 											{
-												global::Windows.UI.Xaml.Controls.Grid.SetRow(c88, 7/* int/, 7, Grid/Row */);
-												c88.CreationComplete();
+												c92.CreationComplete();
+											}
+											))
+											,
+											new global::Windows.UI.Xaml.Controls.StackPanel
+											{
+												IsParsing = true,
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 322:26)
+												Children = 
+												{
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
+														FontSize = 16d/* double/, 16, TextBlock/FontSize */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 323:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "If you're able to do this why can't other politicians?"/* string/, If you're able to do this why can't other politicians?, Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 325:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c94 => 
+													{
+														c94.CreationComplete();
+													}
+													))
+													,
+													new global::Windows.UI.Xaml.Controls.TextBlock
+													{
+														IsParsing = true,
+														Margin = new global::Windows.UI.Xaml.Thickness(15,10,0,0)/* Windows.UI.Xaml.Thickness/, 15,10,0,0, TextBlock/Margin */,
+														// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 327:30)
+														Inlines = 
+														{
+															new global::Windows.UI.Xaml.Documents.Run
+															{
+																Text = "Excellent question."/* string/, Excellent question., Run/Text */,
+																// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 329:31)
+															}
+															,
+														}
+													}
+													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c96 => 
+													{
+														c96.CreationComplete();
+													}
+													))
+													,
+												}
+											}
+											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c97 => 
+											{
+												c97.CreationComplete();
 											}
 											))
 											,
 										}
 									}
-									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c89 => 
+									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c98 => 
 									{
-										nameScope.RegisterName("FAQContent", c89);
-										this.FAQContent = c89;
-										c89.CreationComplete();
+										nameScope.RegisterName("FAQContent", c98);
+										this.FAQContent = c98;
+										c98.CreationComplete();
 									}
 									))
 									,
 								}
-								.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler15)(c90 => 
+								.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler15)(c99 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c90, 1/* int/, 1, Grid/Row */);
-									global::Windows.UI.Xaml.Controls.Grid.SetColumn(c90, 1/* int/, 1, Grid/Column */);
-									c90.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c99, 1/* int/, 1, Grid/Row */);
+									global::Windows.UI.Xaml.Controls.Grid.SetColumn(c99, 1/* int/, 1, Grid/Column */);
+									c99.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c91 => 
+						.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c100 => 
 						{
-							c91.CreationComplete();
+							c100.CreationComplete();
 						}
 						))
 						,
 					}
-					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c92 => 
+					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c101 => 
 					{
-						nameScope.RegisterName("FAQGrid", c92);
-						this.FAQGrid = c92;
-						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c92, 1/* int/, 1, Grid/Column */);
-						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c92, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+						nameScope.RegisterName("FAQGrid", c101);
+						this.FAQGrid = c101;
+						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c101, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c101, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 						/* _isTopLevelDictionary:False */
-						this._component_1 = c92;
-						c92.CreationComplete();
+						this._component_1 = c101;
+						c101.CreationComplete();
 					}
 					))
 					,
 				}
 			}
-			.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c93 => 
+			.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c102 => 
 			{
-				nameScope.RegisterName("RootGrid", c93);
-				this.RootGrid = c93;
-				c93.CreationComplete();
+				nameScope.RegisterName("RootGrid", c102);
+				this.RootGrid = c102;
+				c102.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c94 => 
+			.GenericApply((c103 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 1:2)
 				
-				// WARNING Property c94.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c103.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c95 => 
+			.GenericApply((c104 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.FinancePage
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c95, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c104, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_2 = c95;
-				c95.CreationComplete();
+				this._component_2 = c104;
+				c104.CreationComplete();
 			}
 			))
 			;
@@ -1266,11 +1396,11 @@ namespace ElevateEvansvilleUI.Pages
 			}
 		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _FAQContentSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Windows.UI.Xaml.Controls.Grid FAQContent
+		private global::Windows.UI.Xaml.Controls.StackPanel FAQContent
 		{
 			get
 			{
-				return (global::Windows.UI.Xaml.Controls.Grid)_FAQContentSubject.ElementInstance;
+				return (global::Windows.UI.Xaml.Controls.StackPanel)_FAQContentSubject.ElementInstance;
 			}
 			set
 			{
@@ -1303,7 +1433,7 @@ namespace ElevateEvansvilleUI.Pages
 		}
 		private class _FinancePage_c389dd525b595ace9bd568be6bf9a144_ElevateEvansvilleUIPagesFinancePageSC0
 		{
-			public _View Build(object __ResourceOwner_11)
+			public _View Build(object __ResourceOwner_77)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
@@ -1375,11 +1505,11 @@ namespace ElevateEvansvilleUI.Pages
 								Text = "From:"/* string/, From:, TextBlock/Text */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 123:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c102 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c111 => 
 							{
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c102, 0/* int/, 0, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRow(c102, 0/* int/, 0, Grid/Row */);
-								c102.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c111, 0/* int/, 0, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c111, 0/* int/, 0, Grid/Row */);
+								c111.CreationComplete();
 							}
 							))
 							,
@@ -1388,18 +1518,18 @@ namespace ElevateEvansvilleUI.Pages
 								IsParsing = true,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 124:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c103 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c112 => 
 							{
-								c103.SetBinding(
+								c112.SetBinding(
 									global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 									new Windows.UI.Xaml.Data.Binding()
 									{
-										Path = @"PayerDisplayName"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, PayerDisplayName, /_PositionalParameters */,
+										Path = @"PayerCensoredName"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, PayerCensoredName, /_PositionalParameters */,
 									}
 								);
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c103, 1/* int/, 1, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRow(c103, 0/* int/, 0, Grid/Row */);
-								c103.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c112, 1/* int/, 1, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c112, 0/* int/, 0, Grid/Row */);
+								c112.CreationComplete();
 							}
 							))
 							,
@@ -1409,11 +1539,11 @@ namespace ElevateEvansvilleUI.Pages
 								Text = "For:"/* string/, For:, TextBlock/Text */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 126:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c104 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c113 => 
 							{
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c104, 0/* int/, 0, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRow(c104, 1/* int/, 1, Grid/Row */);
-								c104.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c113, 0/* int/, 0, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c113, 1/* int/, 1, Grid/Row */);
+								c113.CreationComplete();
 							}
 							))
 							,
@@ -1422,18 +1552,18 @@ namespace ElevateEvansvilleUI.Pages
 								IsParsing = true,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 127:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c105 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c114 => 
 							{
-								c105.SetBinding(
+								c114.SetBinding(
 									global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 									new Windows.UI.Xaml.Data.Binding()
 									{
 										Path = @"Name"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Name, /_PositionalParameters */,
 									}
 								);
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c105, 1/* int/, 1, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRow(c105, 1/* int/, 1, Grid/Row */);
-								c105.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c114, 1/* int/, 1, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c114, 1/* int/, 1, Grid/Row */);
+								c114.CreationComplete();
 							}
 							))
 							,
@@ -1451,9 +1581,9 @@ namespace ElevateEvansvilleUI.Pages
 										Text = "$"/* string/, $, TextBlock/Text */,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 130:50)
 									}
-									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c106 => 
+									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c115 => 
 									{
-										c106.CreationComplete();
+										c115.CreationComplete();
 									}
 									))
 									,
@@ -1462,26 +1592,26 @@ namespace ElevateEvansvilleUI.Pages
 										IsParsing = true,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 131:50)
 									}
-									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c107 => 
+									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c116 => 
 									{
-										c107.SetBinding(
+										c116.SetBinding(
 											global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 											new Windows.UI.Xaml.Data.Binding()
 											{
 												Path = @"GrossAmount"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, GrossAmount, /_PositionalParameters */,
 											}
 										);
-										c107.CreationComplete();
+										c116.CreationComplete();
 									}
 									))
 									,
 								}
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c108 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c117 => 
 							{
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c108, 2/* int/, 2, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c108, 2/* int/, 2, Grid/RowSpan */);
-								c108.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c117, 2/* int/, 2, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c117, 2/* int/, 2, Grid/RowSpan */);
+								c117.CreationComplete();
 							}
 							))
 							,
@@ -1495,38 +1625,38 @@ namespace ElevateEvansvilleUI.Pages
 								TextAlignment = global::Windows.UI.Xaml.TextAlignment.Right/* Windows.UI.Xaml.TextAlignment/, Right, TextBlock/TextAlignment */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 134:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c109 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c118 => 
 							{
-								c109.SetBinding(
+								c118.SetBinding(
 									global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 									new Windows.UI.Xaml.Data.Binding()
 									{
 										Path = @"Timestamp"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Timestamp, /_PositionalParameters */,
 									}
 								);
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c109, 3/* int/, 3, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c109, 2/* int/, 2, Grid/RowSpan */);
-								c109.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c118, 3/* int/, 3, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c118, 2/* int/, 2, Grid/RowSpan */);
+								c118.CreationComplete();
 							}
 							))
 							,
 						}
 					}
-					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c110 => 
+					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c119 => 
 					{
-						c110.CreationComplete();
+						c119.CreationComplete();
 					}
 					))
 					,
 				}
-				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c111 => 
+				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c120 => 
 				{
-					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c111, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_11 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-					/* second level */ c111.Tapped += (ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e) => (Tapped_ReceivedItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.ReceivedItem_Tapped(ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e);
+					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c120, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_77 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					/* second level */ c120.Tapped += (ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e) => (Tapped_ReceivedItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.ReceivedItem_Tapped(ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e);
 					/* _isTopLevelDictionary:False */
-					this._component_0 = c111;
-					c111.CreationComplete();
+					this._component_0 = c120;
+					c120.CreationComplete();
 				}
 				))
 				;
@@ -1564,7 +1694,7 @@ namespace ElevateEvansvilleUI.Pages
 		}
 		private class _FinancePage_c389dd525b595ace9bd568be6bf9a144_ElevateEvansvilleUIPagesFinancePageSC1
 		{
-			public _View Build(object __ResourceOwner_12)
+			public _View Build(object __ResourceOwner_78)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
@@ -1632,10 +1762,10 @@ namespace ElevateEvansvilleUI.Pages
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 169:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c117 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c126 => 
 							{
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c117, 0/* int/, 0, Grid/Column */);
-								c117.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c126, 0/* int/, 0, Grid/Column */);
+								c126.CreationComplete();
 							}
 							))
 							,
@@ -1645,17 +1775,17 @@ namespace ElevateEvansvilleUI.Pages
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 170:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c118 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c127 => 
 							{
-								c118.SetBinding(
+								c127.SetBinding(
 									global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 									new Windows.UI.Xaml.Data.Binding()
 									{
-										Path = @"PayerDisplayName"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, PayerDisplayName, /_PositionalParameters */,
+										Path = @"PayerCensoredName"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, PayerCensoredName, /_PositionalParameters */,
 									}
 								);
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c118, 1/* int/, 1, Grid/Column */);
-								c118.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c127, 1/* int/, 1, Grid/Column */);
+								c127.CreationComplete();
 							}
 							))
 							,
@@ -1673,9 +1803,9 @@ namespace ElevateEvansvilleUI.Pages
 										Text = "$"/* string/, $, TextBlock/Text */,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 173:50)
 									}
-									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c119 => 
+									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c128 => 
 									{
-										c119.CreationComplete();
+										c128.CreationComplete();
 									}
 									))
 									,
@@ -1684,26 +1814,26 @@ namespace ElevateEvansvilleUI.Pages
 										IsParsing = true,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 174:50)
 									}
-									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c120 => 
+									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c129 => 
 									{
-										c120.SetBinding(
+										c129.SetBinding(
 											global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 											new Windows.UI.Xaml.Data.Binding()
 											{
 												Path = @"GrossAmount"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, GrossAmount, /_PositionalParameters */,
 											}
 										);
-										c120.CreationComplete();
+										c129.CreationComplete();
 									}
 									))
 									,
 								}
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c121 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c130 => 
 							{
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c121, 2/* int/, 2, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c121, 2/* int/, 2, Grid/RowSpan */);
-								c121.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c130, 2/* int/, 2, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c130, 2/* int/, 2, Grid/RowSpan */);
+								c130.CreationComplete();
 							}
 							))
 							,
@@ -1717,38 +1847,38 @@ namespace ElevateEvansvilleUI.Pages
 								TextAlignment = global::Windows.UI.Xaml.TextAlignment.Right/* Windows.UI.Xaml.TextAlignment/, Right, TextBlock/TextAlignment */,
 								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 177:46)
 							}
-							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c122 => 
+							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c131 => 
 							{
-								c122.SetBinding(
+								c131.SetBinding(
 									global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 									new Windows.UI.Xaml.Data.Binding()
 									{
 										Path = @"Timestamp"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Timestamp, /_PositionalParameters */,
 									}
 								);
-								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c122, 3/* int/, 3, Grid/Column */);
-								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c122, 2/* int/, 2, Grid/RowSpan */);
-								c122.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c131, 3/* int/, 3, Grid/Column */);
+								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c131, 2/* int/, 2, Grid/RowSpan */);
+								c131.CreationComplete();
 							}
 							))
 							,
 						}
 					}
-					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c123 => 
+					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c132 => 
 					{
-						c123.CreationComplete();
+						c132.CreationComplete();
 					}
 					))
 					,
 				}
-				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c124 => 
+				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c133 => 
 				{
-					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c124, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_SentItem_Tapped_That = (__ResourceOwner_12 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-					/* second level */ c124.Tapped += (SentItem_Tapped_sender,SentItem_Tapped_e) => (Tapped_SentItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.SentItem_Tapped(SentItem_Tapped_sender,SentItem_Tapped_e);
+					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c133, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+					var Tapped_SentItem_Tapped_That = (__ResourceOwner_78 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					/* second level */ c133.Tapped += (SentItem_Tapped_sender,SentItem_Tapped_e) => (Tapped_SentItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.SentItem_Tapped(SentItem_Tapped_sender,SentItem_Tapped_e);
 					/* _isTopLevelDictionary:False */
-					this._component_0 = c124;
-					c124.CreationComplete();
+					this._component_0 = c133;
+					c133.CreationComplete();
 				}
 				))
 				;

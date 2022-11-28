@@ -89,6 +89,7 @@ namespace ElevateEvansvilleUI.Pages
             APIProgress.Visibility = Visibility.Collapsed;
         }
 
+
         private async void FAQButton_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new ContentDialog();
@@ -105,7 +106,6 @@ namespace ElevateEvansvilleUI.Pages
             //Show
             await dialog.ShowAsync();
         }
-
 
         private async void ReceivedItem_Tapped(object sender, TappedRoutedEventArgs e)
         {          
@@ -145,8 +145,6 @@ namespace ElevateEvansvilleUI.Pages
 
 
 
-
-
         List<TransactionsDTO> transactions = new List<TransactionsDTO>();
 
         private void GenerateTestData()
@@ -156,8 +154,7 @@ namespace ElevateEvansvilleUI.Pages
             dto.Type = "Above amount released";
             dto.Name = "Facebook";
             dto.Memo = "Initial Test";
-            dto.Payer = "wandtket@gmail.com";
-            dto.PayerDisplayName = "Tyler Wandtke";
+            dto.PayerCensoredName = "Tyler Wandtke";
             dto.FeeAmount = "0.00";
             dto.GrossAmount = "0.10";
             dto.NetAmount = "0.10";
@@ -167,8 +164,6 @@ namespace ElevateEvansvilleUI.Pages
 
             TransactionsReceivedListView.ItemsSource = transactions;
         }
-
-
     }
 
 

@@ -371,7 +371,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 							global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 							new Windows.UI.Xaml.Data.Binding()
 							{
-								Path = @"PayerDisplayName"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, PayerDisplayName, /_PositionalParameters */,
+								Path = @"PayerCensoredName"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, PayerCensoredName, /_PositionalParameters */,
 							}
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c26, 4/* int/, 4, Grid/Row */);

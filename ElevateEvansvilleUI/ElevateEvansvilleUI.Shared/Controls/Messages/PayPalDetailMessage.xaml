@@ -43,7 +43,7 @@
         <TextBlock Text="{Binding Status}" Grid.Row="1" Grid.Column="1"/>
         <TextBlock Text="{Binding Type}" Grid.Row="2" Grid.Column="1"/>
         <TextBlock Text="{Binding Name}" Grid.Row="3" Grid.Column="1"/>
-        <TextBlock Text="{Binding PayerDisplayName}" Grid.Row="4" Grid.Column="1"/>
+        <TextBlock Text="{Binding PayerCensoredName}" Grid.Row="4" Grid.Column="1"/>
         <TextBlock Text="{Binding FeeAmount}" Grid.Row="5" Grid.Column="1"/>
         <TextBlock Text="{Binding GrossAmount}" Grid.Row="6" Grid.Column="1"/>
         <TextBlock Text="{Binding NetAmount}" Grid.Row="7" Grid.Column="1"/>

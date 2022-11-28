@@ -51,7 +51,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in ReceivedTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Sent Payments
@@ -61,7 +61,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in SentTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Funds Withdrawn
@@ -71,7 +71,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in FundsWithDrawnTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Funds Added
@@ -81,7 +81,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in FundsAddedTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Refunds
@@ -91,7 +91,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in RefundTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Balance Transfers
@@ -101,7 +101,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in BalanceTransferTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Balance Affecting
@@ -111,7 +111,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in BalanceAffectingTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Mass Pays
@@ -121,7 +121,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in MassPayTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
 
@@ -132,7 +132,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in ReversalTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
 
             //Money Requests
@@ -142,7 +142,7 @@ namespace ElevateEvansville_API.Controllers
             foreach (Transactions transaction in RequestsTransactions)
             {
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
-                if (isDuplicate == false) { await TransactionRepository.AddAsync(transaction); }
+                if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
         }
 
