@@ -138,7 +138,9 @@
                                 </TextBlock>
 
                                 <StackPanel Orientation="Horizontal" Spacing="5" Grid.Row="4" Margin="0,25,0,0">
-                                    <Button Content="Add to Calendar" Click="Calendar_Click" Tag="Distribute" FontSize="18">
+                                    <Button Content="Add to Calendar" Click="Calendar_Click" Tag="Distribute" 
+                                            Background="Green" Foreground="White" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18">
                                         <Button.Flyout>
                                             <MenuFlyout Placement="Top">
                                                 <MenuFlyoutItem x:Name="CalendarGoogle" Text="Google" Click="Calendar_Click"/>
@@ -197,8 +199,13 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Grid.Row="3" Margin="0,0,15,0">
-                                    <Button Content="Promote" Click="Promote_Click" Tag="Elevate Evansville - Facebook" FontSize="18" Margin="5,5,0,0"/>
-                                    <Button Content="Share" Click="Share_Click" Tag="Facebook" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Promote" Click="Promote_Click" 
+                                            Tag="Elevate Evansville - Facebook" 
+                                            Background="#FFC439" Foreground="Black" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Share" Click="Share_Click" Tag="Facebook" 
+                                            Background="Green" Foreground="White" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
                                     <TextBox IsEnabled="False" Text="Total: $100,000.00" BorderBrush="White" BorderThickness="3" FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
 
@@ -262,8 +269,12 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Orientation="Horizontal" Grid.Row="4" Margin="0,0,0,0">
-                                    <Button Content="Download Template" FontSize="18" Margin="5,5,0,0"/>
-                                    <Button Content="Order from Vistaprint" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Download Template" 
+                                            Background="LightBlue" Foreground="Black" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Order from Vistaprint" 
+                                            Background="LightBlue" Foreground="Black" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
 
                             </Grid>
@@ -314,7 +325,10 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Grid.Row="3" Margin="0,0,15,0">
-                                    <Button Content="Promote" Click="Promote_Click" Tag="Elevate Evansville - Google" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Promote" Click="Promote_Click" 
+                                            Tag="Elevate Evansville - Google" 
+                                            Background="#FFC439" Foreground="Black" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
                                     <Button Content="Share" Visibility="Collapsed" FontSize="18" Margin="5,5,0,0"/>
                                     <TextBox IsEnabled="False" Text="Total: $100,000.00" BorderBrush="White" BorderThickness="3" FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
@@ -382,8 +396,13 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Grid.Row="3" Margin="0,15,15,0">
-                                    <Button Content="Promote" Click="Promote_Click" Tag="Elevate Evansville - TikTok" FontSize="18" Margin="5,5,0,0"/>
-                                    <Button Content="Share" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Promote" Click="Promote_Click" 
+                                            Tag="Elevate Evansville - TikTok" 
+                                            Background="#FFC439" Foreground="Black" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Share" 
+                                            Background="Green" Foreground="White" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
                                     <TextBox IsEnabled="False" Text="Total: $100,000.00" BorderBrush="White" BorderThickness="3" FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
 
@@ -450,8 +469,13 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Grid.Row="3" Margin="0,0,15,0">
-                                    <Button Content="Promote" Click="Promote_Click" Tag="Elevate Evansville - Twitter" FontSize="18" Margin="5,5,0,0"/>
-                                    <Button Content="Share" Click="Share_Click" Tag="Twitter" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Promote" Click="Promote_Click" 
+                                            Tag="Elevate Evansville - Twitter"
+                                            Background="#FFC439" Foreground="Black" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Share" Click="Share_Click" 
+                                            Background="Green" Foreground="White" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            Tag="Twitter" FontSize="18" Margin="5,5,0,0"/>
                                     <TextBox IsEnabled="False" Text="Total: $100,000.00" BorderBrush="White" BorderThickness="3" FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
 
@@ -513,7 +537,10 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Grid.Row="3" Margin="0,45,0,0">
-                                    <Button Content="Contribute" Click="Promote_Click" Tag="Elevate Evansville - Billboards" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Contribute" Click="Promote_Click" 
+                                            Tag="Elevate Evansville - Billboards" 
+                                            Background="#FFC439" Foreground="Black" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
                                     <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3" FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
                             </Grid>
@@ -560,7 +587,10 @@
                                 </TextBlock>
 
                                 <controls:WrapPanel Grid.Row="3" Margin="0,45,0,0">
-                                    <Button Content="Distribute" Click="Promote_Click" Tag="Elevate Evansville - Distribute All" FontSize="18" Margin="5,5,0,0"/>
+                                    <Button Content="Distribute All" Click="Promote_Click" 
+                                            Tag="Elevate Evansville - Distribute All" 
+                                            Background="#FFC439" Foreground="Black" FontWeight="Bold" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
                                     <TextBox IsEnabled="False" Text="Grand Total: $100,000.00" BorderBrush="White" BorderThickness="3" FontSize="18" Margin="5,5,0,0"/>
                                 </controls:WrapPanel>
                             </Grid>

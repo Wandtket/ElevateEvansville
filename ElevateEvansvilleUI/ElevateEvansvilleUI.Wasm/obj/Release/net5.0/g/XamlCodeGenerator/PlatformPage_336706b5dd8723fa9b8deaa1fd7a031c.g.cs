@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_69 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_47 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -69,7 +69,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.StackPanel)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_74 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_51 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.StackPanel))
 				{
 					Setters = 
@@ -82,7 +82,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Microsoft.UI.Xaml.Controls.Expander)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_75 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_53 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Microsoft.UI.Xaml.Controls.Expander))
 				{
 					Setters = 

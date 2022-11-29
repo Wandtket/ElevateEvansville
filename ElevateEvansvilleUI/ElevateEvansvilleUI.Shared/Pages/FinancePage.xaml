@@ -231,8 +231,7 @@
                                 Your name will be censored to just your initials unless you donate more than $25.00
                             </TextBlock>
                         </StackPanel>
-
-                        
+                       
                         <StackPanel>
                             <TextBlock FontWeight="Bold"  FontSize="16">
                                 I donated a dollar, why didn't the balance go up exactly one dollar?
