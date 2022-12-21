@@ -89,6 +89,11 @@ namespace ElevateEvansvilleUI
             await Launcher.LaunchUriAsync(new Uri("mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Interview%20Request"));
         }
 
+        private async void YouTube_Click(object sender, TappedRoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("https://www.youtube.com/channel/UC29PXuIsJiGZdQz0F_yTuXA/featured"));
+        }
+
         private async void Facebook_Click(object sender, TappedRoutedEventArgs e)
         {
             await Launcher.LaunchUriAsync(new Uri("https://www.facebook.com/profile.php?id=100085610254522"));

@@ -15,7 +15,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.UI.Xaml" Version="2.8.1" />
     <PackageReference Include="System.Text.Json">
-      <Version>7.0.0</Version>
+      <Version>7.0.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
     <PackageReference Include="Uno.Core.Extensions.Logging.Singleton" Version="4.0.1" />

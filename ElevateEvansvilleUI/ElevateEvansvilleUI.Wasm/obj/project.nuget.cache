@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HaRJEQwOURIexU/CA9aFcyX3D5wBqLjXlS/m+IKyUgjYoW0UHlPzvIKIjy4EzZFPoiXxY+HFaGn+IAW2FfYJOA==",
+  "dgSpecHash": "uXydY8AJm4Z+u/lEPmYlWpbsh8DxRwwJTOLqh/luuG/eHy98pbdVYhAv1aY7C2gPJRvhzqmRRXLcdlsndtDKmQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\wandt\\source\\Workspaces\\ElevateEvansville\\ElevateEvansvilleUI\\ElevateEvansvilleUI.Wasm\\ElevateEvansvilleUI.Wasm.csproj",
   "expectedPackageFiles": [
@@ -26,7 +26,7 @@
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\7.0.0\\microsoft.win32.registry.accesscontrol.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.windows.compatibility\\7.0.0\\microsoft.windows.compatibility.7.0.0.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
@@ -98,7 +98,7 @@
     "C:\\Users\\wandt\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\system.text.json\\7.0.1\\system.text.json.7.0.1.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\system.threading.accesscontrol\\7.0.0\\system.threading.accesscontrol.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
@@ -115,13 +115,14 @@
     "C:\\Users\\wandt\\.nuget\\packages\\uno.foundation.logging\\4.6.19\\uno.foundation.logging.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.foundation.runtime.webassembly\\4.6.19\\uno.foundation.runtime.webassembly.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.sourcegenerationtasks\\4.2.0\\uno.sourcegenerationtasks.4.2.0.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.toolkit.ui\\2.3.0\\uno.toolkit.ui.2.3.0.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.toolkit\\2.4.2\\uno.toolkit.2.4.2.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.toolkit.ui\\2.4.2\\uno.toolkit.ui.2.4.2.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui\\4.6.19\\uno.ui.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.6.19\\uno.ui.adapter.microsoft.extensions.logging.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.runtime.webassembly\\4.6.19\\uno.ui.runtime.webassembly.4.6.19.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.webassembly\\4.6.19\\uno.ui.webassembly.4.6.19.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap\\7.0.8\\uno.wasm.bootstrap.7.0.8.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\7.0.8\\uno.wasm.bootstrap.devserver.7.0.8.nupkg.sha512"
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap\\7.0.11\\uno.wasm.bootstrap.7.0.11.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\7.0.11\\uno.wasm.bootstrap.devserver.7.0.11.nupkg.sha512"
   ],
   "logs": []
 }

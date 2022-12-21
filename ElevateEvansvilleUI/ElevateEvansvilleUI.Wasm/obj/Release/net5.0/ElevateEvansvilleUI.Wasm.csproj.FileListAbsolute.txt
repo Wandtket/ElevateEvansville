@@ -337,3 +337,4 @@ C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEv
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\ref\ElevateEvansvilleUI.Wasm.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\staticwebassets\ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.Toolkit.dll

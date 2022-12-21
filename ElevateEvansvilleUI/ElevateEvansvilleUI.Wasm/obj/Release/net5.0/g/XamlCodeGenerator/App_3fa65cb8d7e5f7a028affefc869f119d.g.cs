@@ -78,50 +78,50 @@ namespace ElevateEvansvilleUI
 			);
 			// ThemeDictionaries
 			Resources.ThemeDictionaries["Dark"] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_57 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_35 => 
 				new global::Windows.UI.Xaml.ResourceDictionary
 				{
 					[
 					"TitleBarColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_57, __ResourceOwner_58 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_35, __ResourceOwner_36 => 
 						SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, Black, /_UnknownContent */					)
 					,
 					[
 					"SubColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_57, __ResourceOwner_59 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_35, __ResourceOwner_37 => 
 						SolidColorBrushHelper.FromARGB(255, 45, 45, 48)/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, #FF2D2D30, /_UnknownContent */					)
 					,
 					[
 					"FontColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_57, __ResourceOwner_60 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_35, __ResourceOwner_38 => 
 						SolidColorBrushHelper.White/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, White, /_UnknownContent */					)
 					,
 				}
 			)
 			;
 			Resources.ThemeDictionaries["Light"] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_61 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_39 => 
 				new global::Windows.UI.Xaml.ResourceDictionary
 				{
 					[
 					"TitleBarColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_61, __ResourceOwner_62 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_39, __ResourceOwner_40 => 
 						SolidColorBrushHelper.White/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, White, /_UnknownContent */					)
 					,
 					[
 					"SubColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_61, __ResourceOwner_63 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_39, __ResourceOwner_41 => 
 						SolidColorBrushHelper.FromARGB(255, 235, 235, 235)/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, #FFEBEBEB, /_UnknownContent */					)
 					,
 					[
 					"FontColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_61, __ResourceOwner_64 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_39, __ResourceOwner_42 => 
 						SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, Black, /_UnknownContent */					)
 					,
 				}
@@ -130,7 +130,7 @@ namespace ElevateEvansvilleUI
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_65 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_43 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -141,7 +141,2080 @@ namespace ElevateEvansvilleUI
 				}
 			)
 			;
+			Resources[
+			"BasicAppBarButtonStyle"
+			] = 
+			new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.AppBarButton))
+			{
+				Setters = 
+				{
+					global::Uno.UI.Helpers.Xaml.SetterHelper.GetPropertySetterWithResourceValue(global::Windows.UI.Xaml.Controls.AppBarButton.BackgroundProperty, "AppBarButtonRevealBackground", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, default(Windows.UI.Xaml.Media.Brush))
+					.ApplyThemeResourceUpdateValues("AppBarButtonRevealBackground", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+					,
+					global::Uno.UI.Helpers.Xaml.SetterHelper.GetPropertySetterWithResourceValue(global::Windows.UI.Xaml.Controls.AppBarButton.ForegroundProperty, "AppBarButtonForeground", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, default(Windows.UI.Xaml.Media.Brush))
+					.ApplyThemeResourceUpdateValues("AppBarButtonForeground", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+					,
+					global::Uno.UI.Helpers.Xaml.SetterHelper.GetPropertySetterWithResourceValue(global::Windows.UI.Xaml.Controls.AppBarButton.BorderBrushProperty, "AppBarButtonRevealBorderBrush", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, default(Windows.UI.Xaml.Media.Brush))
+					.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderBrush", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+					,
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.FontSizeProperty, (double)12d/* double/double, 12, Setter/Value */),
+					global::Uno.UI.Helpers.Xaml.SetterHelper.GetPropertySetterWithResourceValue(global::Windows.UI.Xaml.Controls.AppBarButton.BorderThicknessProperty, "AppBarButtonRevealBorderThemeThickness", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, default(Windows.UI.Xaml.Thickness))
+					.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderThemeThickness", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+					,
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.HorizontalAlignmentProperty, (Windows.UI.Xaml.HorizontalAlignment)global::Windows.UI.Xaml.HorizontalAlignment.Left/* Windows.UI.Xaml.HorizontalAlignment/Windows.UI.Xaml.HorizontalAlignment, Left, Setter/Value */),
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.VerticalAlignmentProperty, (Windows.UI.Xaml.VerticalAlignment)global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/Windows.UI.Xaml.VerticalAlignment, Top, Setter/Value */),
+					global::Uno.UI.Helpers.Xaml.SetterHelper.GetPropertySetterWithResourceValue(global::Windows.UI.Xaml.Controls.AppBarButton.FontFamilyProperty, "ContentControlThemeFontFamily", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, default(Windows.UI.Xaml.Media.FontFamily))
+					.ApplyThemeResourceUpdateValues("ContentControlThemeFontFamily", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+					,
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.FontWeightProperty, (Windows.UI.Text.FontWeight)global::Windows.UI.Text.FontWeights.Normal/* Windows.UI.Text.FontWeight/Windows.UI.Text.FontWeight, Normal, Setter/Value */),
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.WidthProperty, (double)68d/* double/double, 68, Setter/Value */),
+					global::Uno.UI.Helpers.Xaml.SetterHelper.GetPropertySetterWithResourceValue(global::Windows.UI.Xaml.Controls.AppBarButton.UseSystemFocusVisualsProperty, "UseSystemFocusVisuals", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, default(bool))
+					,
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.AllowFocusOnInteractionProperty, (bool)false/* bool/bool, False, Setter/Value */),
+					new global::Windows.UI.Xaml.Setter(global::Windows.UI.Xaml.Controls.AppBarButton.TemplateProperty, () => (Windows.UI.Xaml.Controls.ControlTemplate)
+					new global::Windows.UI.Xaml.Controls.ControlTemplate(this , __owner => 					new _App_3fa65cb8d7e5f7a028affefc869f119d_ElevateEvansvilleUIAppSC0().Build(__owner)
+					)					)
+					,
+				}
+			}
+			;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 1:2)
+		}
+		private class _App_3fa65cb8d7e5f7a028affefc869f119d_ElevateEvansvilleUIAppSC0
+		{
+			public _View Build(object __ResourceOwner_44)
+			{
+				var nameScope = new global::Windows.UI.Xaml.NameScope();
+				_View __rootInstance = null;
+				__rootInstance = 
+				new global::Windows.UI.Xaml.Controls.Grid
+				{
+					IsParsing = true,
+					Name = "Root",
+					Margin = new global::Windows.UI.Xaml.Thickness(1,0)/* Windows.UI.Xaml.Thickness/, 1,0, Grid/Margin */,
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 30:30)
+					Children = 
+					{
+						new global::Windows.UI.Xaml.Controls.Grid
+						{
+							IsParsing = true,
+							Name = "ContentRoot",
+							Margin = new global::Windows.UI.Xaml.Thickness(-1,0)/* Windows.UI.Xaml.Thickness/, -1,0, Grid/Margin */,
+							ColumnDefinitions = 
+							{
+								new global::Windows.UI.Xaml.Controls.ColumnDefinition
+								{
+									Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 240:42)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.ColumnDefinition
+								{
+									Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, Auto, ColumnDefinition/Width */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 241:42)
+								}
+								,
+							}
+							,
+							RowDefinitions = 
+							{
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, Auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 245:42)
+								}
+								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, Auto, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 246:42)
+								}
+								,
+							}
+							,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 237:34)
+							Children = 
+							{
+								new global::Windows.UI.Xaml.Controls.Viewbox
+								{
+									IsParsing = true,
+									Name = "ContentViewbox",
+									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Stretch/* Windows.UI.Xaml.HorizontalAlignment/, Stretch, Viewbox/HorizontalAlignment */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 248:38)
+									Child = 
+									new global::Windows.UI.Xaml.Controls.ContentPresenter
+									{
+										IsParsing = true,
+										Name = "Content",
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 253:42)
+									}
+									.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler2)(c5 => 
+									{
+										nameScope.RegisterName("Content", c5);
+										this.Content = c5;
+										c5.SetBinding(
+											global::Windows.UI.Xaml.Controls.ContentPresenter.ContentProperty,
+											new Windows.UI.Xaml.Data.Binding()
+											{
+												Path = @"Icon"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Icon, /_PositionalParameters */,
+												RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+											}
+										);
+										c5.SetBinding(
+											global::Windows.UI.Xaml.Controls.ContentPresenter.ForegroundProperty,
+											new Windows.UI.Xaml.Data.Binding()
+											{
+												Path = @"Foreground"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Foreground, /_PositionalParameters */,
+												RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+											}
+										);
+										c5.CreationComplete();
+									}
+									))
+									,
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler3)(c6 => 
+								{
+									nameScope.RegisterName("ContentViewbox", c6);
+									this.ContentViewbox = c6;
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c6, global::Windows.UI.Xaml.Controls.Viewbox.HeightProperty, "AppBarButtonContentHeight", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c6, global::Windows.UI.Xaml.Controls.Viewbox.MarginProperty, "AppBarButtonContentViewboxCollapsedMargin", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Automation.AutomationProperties.SetAccessibilityView(c6, global::Windows.UI.Xaml.Automation.Peers.AccessibilityView.Raw/* Windows.UI.Xaml.Automation.Peers.AccessibilityView/, Raw, AutomationProperties/AccessibilityView */);
+									/* _isTopLevelDictionary:False */
+									this._component_0 = c6;
+									c6.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Name = "TextLabel",
+									TextAlignment = global::Windows.UI.Xaml.TextAlignment.Center/* Windows.UI.Xaml.TextAlignment/, Center, TextBlock/TextAlignment */,
+									TextWrapping = global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/, Wrap, TextBlock/TextWrapping */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 257:38)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler4)(c7 => 
+								{
+									nameScope.RegisterName("TextLabel", c7);
+									this.TextLabel = c7;
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c7, 1/* int/, 1, Grid/Row */);
+									c7.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"Label"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Label, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c7.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.ForegroundProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"Foreground"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Foreground, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c7.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.FontSizeProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"FontSize"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, FontSize, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c7.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.FontFamilyProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"FontFamily"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, FontFamily, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c7, global::Windows.UI.Xaml.Controls.TextBlock.MarginProperty, "AppBarButtonTextLabelMargin", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Automation.AutomationProperties.SetAccessibilityView(c7, global::Windows.UI.Xaml.Automation.Peers.AccessibilityView.Raw/* Windows.UI.Xaml.Automation.Peers.AccessibilityView/, Raw, AutomationProperties/AccessibilityView */);
+									/* _isTopLevelDictionary:False */
+									this._component_1 = c7;
+									c7.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Name = "OverflowTextLabel",
+									TextAlignment = global::Windows.UI.Xaml.TextAlignment.Left/* Windows.UI.Xaml.TextAlignment/, Left, TextBlock/TextAlignment */,
+									TextTrimming = global::Windows.UI.Xaml.TextTrimming.Clip/* Windows.UI.Xaml.TextTrimming/, Clip, TextBlock/TextTrimming */,
+									TextWrapping = global::Windows.UI.Xaml.TextWrapping.NoWrap/* Windows.UI.Xaml.TextWrapping/, NoWrap, TextBlock/TextWrapping */,
+									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Stretch/* Windows.UI.Xaml.HorizontalAlignment/, Stretch, TextBlock/HorizontalAlignment */,
+									VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
+									Margin = new global::Windows.UI.Xaml.Thickness(12,0,12,0)/* Windows.UI.Xaml.Thickness/, 12,0,12,0, TextBlock/Margin */,
+									Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, TextBlock/Visibility */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 267:38)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler4)(c8 => 
+								{
+									nameScope.RegisterName("OverflowTextLabel", c8);
+									this.OverflowTextLabel = c8;
+									c8.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"Label"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Label, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c8.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.ForegroundProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"Foreground"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Foreground, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c8.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.FontSizeProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"FontSize"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, FontSize, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c8.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.FontFamilyProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"FontFamily"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, FontFamily, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c8, global::Windows.UI.Xaml.Controls.TextBlock.PaddingProperty, "AppBarButtonOverflowTextLabelPadding", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Automation.AutomationProperties.SetAccessibilityView(c8, global::Windows.UI.Xaml.Automation.Peers.AccessibilityView.Raw/* Windows.UI.Xaml.Automation.Peers.AccessibilityView/, Raw, AutomationProperties/AccessibilityView */);
+									/* _isTopLevelDictionary:False */
+									this._component_2 = c8;
+									c8.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
+									Name = "KeyboardAcceleratorTextLabel",
+									Margin = new global::Windows.UI.Xaml.Thickness(24,0,12,0)/* Windows.UI.Xaml.Thickness/, 24,0,12,0, TextBlock/Margin */,
+									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, TextBlock/HorizontalAlignment */,
+									VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
+									Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, TextBlock/Visibility */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 281:38)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler4)(c9 => 
+								{
+									nameScope.RegisterName("KeyboardAcceleratorTextLabel", c9);
+									this.KeyboardAcceleratorTextLabel = c9;
+									global::Windows.UI.Xaml.Controls.Grid.SetColumn(c9, 1/* int/, 1, Grid/Column */);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c9, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "CaptionTextBlockStyle", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									c9.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"KeyboardAcceleratorTextOverride"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, KeyboardAcceleratorTextOverride, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c9.SetBinding(
+										global::Windows.UI.Xaml.Controls.TextBlock.MinWidthProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+											Path = @"TemplateSettings.KeyboardAcceleratorTextMinWidth"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, TemplateSettings.KeyboardAcceleratorTextMinWidth, Binding/Path */,
+										}
+									);
+									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c9, global::Windows.UI.Xaml.Controls.TextBlock.ForegroundProperty, "AppBarButtonKeyboardAcceleratorTextForeground", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+									global::Windows.UI.Xaml.Automation.AutomationProperties.SetAccessibilityView(c9, global::Windows.UI.Xaml.Automation.Peers.AccessibilityView.Raw/* Windows.UI.Xaml.Automation.Peers.AccessibilityView/, Raw, AutomationProperties/AccessibilityView */);
+									/* _isTopLevelDictionary:False */
+									this._component_3 = c9;
+									c9.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.Border
+								{
+									IsParsing = true,
+									Name = "Border",
+									Margin = new global::Windows.UI.Xaml.Thickness(1,0)/* Windows.UI.Xaml.Thickness/, 1,0, Border/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 292:38)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler5)(c10 => 
+								{
+									nameScope.RegisterName("Border", c10);
+									this.Border = c10;
+									c10.SetBinding(
+										global::Windows.UI.Xaml.Controls.Border.BorderBrushProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"BorderBrush"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, BorderBrush, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c10.SetBinding(
+										global::Windows.UI.Xaml.Controls.Border.BorderThicknessProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"BorderThickness"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, BorderThickness, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									c10.SetBinding(
+										global::Windows.UI.Xaml.Controls.Border.CornerRadiusProperty,
+										new Windows.UI.Xaml.Data.Binding()
+										{
+											Path = @"CornerRadius"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, CornerRadius, /_PositionalParameters */,
+											RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+										}
+									);
+									global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c10, 2/* int/, 2, Grid/RowSpan */);
+									global::Windows.UI.Xaml.Controls.Grid.SetColumnSpan(c10, 2/* int/, 2, Grid/ColumnSpan */);
+									c10.CreationComplete();
+								}
+								))
+								,
+							}
+						}
+						.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler6)(c11 => 
+						{
+							nameScope.RegisterName("ContentRoot", c11);
+							this.ContentRoot = c11;
+							global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c11, global::Windows.UI.Xaml.Controls.Grid.MinHeightProperty, "AppBarThemeMinHeight", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+							/* _isTopLevelDictionary:False */
+							this._component_4 = c11;
+							c11.CreationComplete();
+						}
+						))
+						,
+					}
+				}
+				.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler6)(c12 => 
+				{
+					nameScope.RegisterName("Root", c12);
+					this.Root = c12;
+					c12.SetBinding(
+						global::Windows.UI.Xaml.Controls.Grid.MinWidthProperty,
+						new Windows.UI.Xaml.Data.Binding()
+						{
+							Path = @"MinWidth"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, MinWidth, /_PositionalParameters */,
+							RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+						}
+					);
+					c12.SetBinding(
+						global::Windows.UI.Xaml.Controls.Grid.MaxWidthProperty,
+						new Windows.UI.Xaml.Data.Binding()
+						{
+							Path = @"MaxWidth"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, MaxWidth, /_PositionalParameters */,
+							RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+						}
+					);
+					c12.SetBinding(
+						global::Windows.UI.Xaml.Controls.Grid.BackgroundProperty,
+						new Windows.UI.Xaml.Data.Binding()
+						{
+							Path = @"Background"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Background, /_PositionalParameters */,
+							RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+						}
+					);
+					c12.SetBinding(
+						global::Windows.UI.Xaml.Controls.Grid.CornerRadiusProperty,
+						new Windows.UI.Xaml.Data.Binding()
+						{
+							Path = @"CornerRadius"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, CornerRadius, /_PositionalParameters */,
+							RelativeSource = new RelativeSource(RelativeSourceMode.TemplatedParent),
+						}
+					);
+					global::Windows.UI.Xaml.VisualStateManager.SetVisualStateGroups(c12, 
+					new[]
+					{
+						new global::Windows.UI.Xaml.VisualStateGroup
+						{
+							Name = "ApplicationViewStates",
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 33:38)
+							States = 
+							{
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "FullSize",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 34:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c13 => 
+								{
+									nameScope.RegisterName("FullSize", c13);
+									this.FullSize = c13;
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "Compact",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 35:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c14 => 
+								{
+									nameScope.RegisterName("Compact", c14);
+									this.Compact = c14;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c14, () => 
+									{
+										c14.Name = "Compact";
+										c14.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 37:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 38:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															Value = @"Collapsed"/* object/, Collapsed, DiscreteObjectKeyFrame/Value */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 39:54)
+														}
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c16 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c16, "TextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c16, _TextLabelSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c16, "Visibility");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 41:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 42:54)
+														}
+														.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler8)(c17 => 
+														{
+															global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c17, global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame.ValueProperty, "AppBarButtonContentViewboxCompactMargin", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+															/* _isTopLevelDictionary:False */
+															this._component_5 = c17;
+															global::Windows.UI.Xaml.NameScope.SetNameScope(this._component_5, nameScope);
+														}
+														))
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c18 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c18, "ContentViewbox");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c18, _ContentViewboxSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c18, "Margin");
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "LabelOnRight",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 46:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c19 => 
+								{
+									nameScope.RegisterName("LabelOnRight", c19);
+									this.LabelOnRight = c19;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c19, () => 
+									{
+										c19.Name = "LabelOnRight";
+										c19.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 48:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 49:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 50:54)
+														}
+														.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler8)(c20 => 
+														{
+															global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c20, global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame.ValueProperty, "AppBarButtonContentViewboxMargin", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+															/* _isTopLevelDictionary:False */
+															this._component_6 = c20;
+															global::Windows.UI.Xaml.NameScope.SetNameScope(this._component_6, nameScope);
+														}
+														))
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c21 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c21, "ContentViewbox");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c21, _ContentViewboxSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c21, "Margin");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 52:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 53:54)
+														}
+														.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler8)(c22 => 
+														{
+															global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c22, global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame.ValueProperty, "AppBarThemeCompactHeight", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+															/* _isTopLevelDictionary:False */
+															this._component_7 = c22;
+															global::Windows.UI.Xaml.NameScope.SetNameScope(this._component_7, nameScope);
+														}
+														))
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c23 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c23, "ContentRoot");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c23, _ContentRootSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c23, "MinHeight");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 55:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															Value = @"0"/* object/, 0, DiscreteObjectKeyFrame/Value */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 56:54)
+														}
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c25 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c25, "TextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c25, _TextLabelSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c25, "(Windows.UI.Xaml.Controls:Grid.Row)");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 58:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															Value = @"1"/* object/, 1, DiscreteObjectKeyFrame/Value */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 59:54)
+														}
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c27 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c27, "TextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c27, _TextLabelSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c27, "(Windows.UI.Xaml.Controls:Grid.Column)");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 61:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															Value = @"Left"/* object/, Left, DiscreteObjectKeyFrame/Value */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 62:54)
+														}
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c29 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c29, "TextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c29, _TextLabelSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c29, "TextAlignment");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 64:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 65:54)
+														}
+														.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler8)(c30 => 
+														{
+															global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c30, global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame.ValueProperty, "AppBarButtonTextLabelOnRightMargin", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+															/* _isTopLevelDictionary:False */
+															this._component_8 = c30;
+															global::Windows.UI.Xaml.NameScope.SetNameScope(this._component_8, nameScope);
+														}
+														))
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c31 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c31, "TextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c31, _TextLabelSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c31, "Margin");
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "LabelCollapsed",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 69:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c32 => 
+								{
+									nameScope.RegisterName("LabelCollapsed", c32);
+									this.LabelCollapsed = c32;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c32, () => 
+									{
+										c32.Name = "LabelCollapsed";
+										c32.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 71:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 72:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 73:54)
+														}
+														.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler8)(c33 => 
+														{
+															global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c33, global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame.ValueProperty, "AppBarThemeCompactHeight", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+															/* _isTopLevelDictionary:False */
+															this._component_9 = c33;
+															global::Windows.UI.Xaml.NameScope.SetNameScope(this._component_9, nameScope);
+														}
+														))
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c34 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c34, "ContentRoot");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c34, _ContentRootSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c34, "MinHeight");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 75:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															Value = @"Collapsed"/* object/, Collapsed, DiscreteObjectKeyFrame/Value */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 76:54)
+														}
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c36 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c36, "TextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c36, _TextLabelSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c36, "Visibility");
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 78:50)
+													KeyFrames = 
+													{
+														new global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame
+														{
+															KeyTime = global::System.TimeSpan.FromTicks(0 /* 0 */)/* Windows.UI.Xaml.Media.Animation.KeyTime/, 0, DiscreteObjectKeyFrame/KeyTime */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 79:54)
+														}
+														.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler8)(c37 => 
+														{
+															global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c37, global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame.ValueProperty, "AppBarButtonContentViewboxCompactMargin", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+															/* _isTopLevelDictionary:False */
+															this._component_10 = c37;
+															global::Windows.UI.Xaml.NameScope.SetNameScope(this._component_10, nameScope);
+														}
+														))
+														,
+													}
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler9)(c38 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c38, "ContentViewbox");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c38, _ContentViewboxSubject);
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c38, "Margin");
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "Overflow",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 83:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c39 => 
+								{
+									nameScope.RegisterName("Overflow", c39);
+									this.Overflow = c39;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c39, () => 
+									{
+										c39.Name = "Overflow";
+										c39.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentRootSubject, "MinHeight"), 
+											@"0"/* object?/, 0, Setter/Value */)
+										);
+										c39.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Visibility"), 
+											@"Collapsed"/* object?/, Collapsed, Setter/Value */)
+										);
+										c39.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Visibility"), 
+											@"Collapsed"/* object?/, Collapsed, Setter/Value */)
+										);
+										c39.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Visibility"), 
+											@"Visible"/* object?/, Visible, Setter/Value */)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "OverflowWithToggleButtons",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 91:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c40 => 
+								{
+									nameScope.RegisterName("OverflowWithToggleButtons", c40);
+									this.OverflowWithToggleButtons = c40;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c40, () => 
+									{
+										c40.Name = "OverflowWithToggleButtons";
+										c40.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentRootSubject, "MinHeight"), 
+											@"0"/* object?/, 0, Setter/Value */)
+										);
+										c40.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Visibility"), 
+											@"Collapsed"/* object?/, Collapsed, Setter/Value */)
+										);
+										c40.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Visibility"), 
+											@"Collapsed"/* object?/, Collapsed, Setter/Value */)
+										);
+										c40.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Visibility"), 
+											@"Visible"/* object?/, Visible, Setter/Value */)
+										);
+										c40.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Margin"), 
+											@"38,0,12,0"/* object?/, 38,0,12,0, Setter/Value */)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "OverflowWithMenuIcons",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 100:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c41 => 
+								{
+									nameScope.RegisterName("OverflowWithMenuIcons", c41);
+									this.OverflowWithMenuIcons = c41;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c41, () => 
+									{
+										c41.Name = "OverflowWithMenuIcons";
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentRootSubject, "MinHeight"), 
+											@"0"/* object?/, 0, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "HorizontalAlignment"), 
+											@"Left"/* object?/, Left, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "VerticalAlignment"), 
+											@"Center"/* object?/, Center, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Width"), 
+											@"16"/* object?/, 16, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Height"), 
+											@"16"/* object?/, 16, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Margin"), 
+											@"12,0,12,0"/* object?/, 12,0,12,0, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Visibility"), 
+											@"Collapsed"/* object?/, Collapsed, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Visibility"), 
+											@"Visible"/* object?/, Visible, Setter/Value */)
+										);
+										c41.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Margin"), 
+											@"38,0,12,0"/* object?/, 38,0,12,0, Setter/Value */)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "OverflowWithToggleButtonsAndMenuIcons",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 113:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c42 => 
+								{
+									nameScope.RegisterName("OverflowWithToggleButtonsAndMenuIcons", c42);
+									this.OverflowWithToggleButtonsAndMenuIcons = c42;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c42, () => 
+									{
+										c42.Name = "OverflowWithToggleButtonsAndMenuIcons";
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentRootSubject, "MinHeight"), 
+											@"0"/* object?/, 0, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "HorizontalAlignment"), 
+											@"Left"/* object?/, Left, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "VerticalAlignment"), 
+											@"Center"/* object?/, Center, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Width"), 
+											@"16"/* object?/, 16, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Height"), 
+											@"16"/* object?/, 16, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentViewboxSubject, "Margin"), 
+											@"38,0,12,0"/* object?/, 38,0,12,0, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Visibility"), 
+											@"Collapsed"/* object?/, Collapsed, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Visibility"), 
+											@"Visible"/* object?/, Visible, Setter/Value */)
+										);
+										c42.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Margin"), 
+											@"76,0,12,0"/* object?/, 76,0,12,0, Setter/Value */)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+							}
+						}
+						.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler10)(c43 => 
+						{
+							nameScope.RegisterName("ApplicationViewStates", c43);
+							this.ApplicationViewStates = c43;
+						}
+						))
+						,						new global::Windows.UI.Xaml.VisualStateGroup
+						{
+							Name = "CommonStates",
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 128:38)
+							States = 
+							{
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "Normal",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 129:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c44 => 
+								{
+									nameScope.RegisterName("Normal", c44);
+									this.Normal = c44;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c44, () => 
+									{
+										c44.Name = "Normal";
+										c44.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 131:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 132:50)
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler11)(c45 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c45, "OverflowTextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c45, _OverflowTextLabelSubject);
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "PointerOver",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 136:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c46 => 
+								{
+									nameScope.RegisterName("PointerOver", c46);
+									this.PointerOver = c46;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c46, () => 
+									{
+										c46.Name = "PointerOver";
+										c46.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "(Windows.UI.Xaml.Media:RevealBrush.State)"), 
+											@"PointerOver"/* object?/, PointerOver, Setter/Value */)
+										);
+										c46.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "Background"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBackgroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBackgroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c46.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._BorderSubject, "BorderBrush"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBorderBrushPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderBrushPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c46.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c46.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c46.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+										c46.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 146:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 147:50)
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler11)(c47 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c47, "OverflowTextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c47, _OverflowTextLabelSubject);
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "Pressed",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 151:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c48 => 
+								{
+									nameScope.RegisterName("Pressed", c48);
+									this.Pressed = c48;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c48, () => 
+									{
+										c48.Name = "Pressed";
+										c48.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "(Windows.UI.Xaml.Media:RevealBrush.State)"), 
+											@"Pressed"/* object?/, Pressed, Setter/Value */)
+										);
+										c48.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "Background"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBackgroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBackgroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c48.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._BorderSubject, "BorderBrush"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBorderBrushPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderBrushPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c48.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c48.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c48.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+										c48.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 161:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 162:50)
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler12)(c49 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c49, "OverflowTextLabel");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c49, _OverflowTextLabelSubject);
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "Disabled",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 166:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c50 => 
+								{
+									nameScope.RegisterName("Disabled", c50);
+									this.Disabled = c50;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c50, () => 
+									{
+										c50.Name = "Disabled";
+										c50.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "Background"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBackgroundDisabled", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBackgroundDisabled", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c50.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._BorderSubject, "BorderBrush"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBorderBrushDisabled", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderBrushDisabled", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c50.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundDisabled", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundDisabled", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c50.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundDisabled", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundDisabled", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c50.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundDisabled", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundDisabled", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c50.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._KeyboardAcceleratorTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonKeyboardAcceleratorTextForegroundDisabled", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonKeyboardAcceleratorTextForegroundDisabled", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "OverflowNormal",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 176:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c51 => 
+								{
+									nameScope.RegisterName("OverflowNormal", c51);
+									this.OverflowNormal = c51;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c51, () => 
+									{
+										c51.Name = "OverflowNormal";
+										c51.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 178:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 179:50)
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler11)(c52 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c52, "ContentRoot");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c52, _ContentRootSubject);
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "OverflowPointerOver",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 182:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c53 => 
+								{
+									nameScope.RegisterName("OverflowPointerOver", c53);
+									this.OverflowPointerOver = c53;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c53, () => 
+									{
+										c53.Name = "OverflowPointerOver";
+										c53.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "Background"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBackgroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBackgroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c53.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._BorderSubject, "BorderBrush"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBorderBrushPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderBrushPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c53.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c53.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c53.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c53.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._KeyboardAcceleratorTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonKeyboardAcceleratorTextForegroundPointerOver", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonKeyboardAcceleratorTextForegroundPointerOver", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+										c53.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 192:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 193:50)
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler11)(c54 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c54, "ContentRoot");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c54, _ContentRootSubject);
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "OverflowPressed",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 196:42)
+									/* Lazy VisualStateManager property Windows.UI.Xaml.VisualState.Storyboard*/
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c55 => 
+								{
+									nameScope.RegisterName("OverflowPressed", c55);
+									this.OverflowPressed = c55;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c55, () => 
+									{
+										c55.Name = "OverflowPressed";
+										c55.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._RootSubject, "Background"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBackgroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBackgroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c55.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._BorderSubject, "BorderBrush"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonRevealBorderBrushPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonRevealBorderBrushPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c55.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._ContentSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c55.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._TextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c55.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										c55.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._KeyboardAcceleratorTextLabelSubject, "Foreground"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonKeyboardAcceleratorTextForegroundPressed", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonKeyboardAcceleratorTextForegroundPressed", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+										c55.Storyboard = 
+										new global::Windows.UI.Xaml.Media.Animation.Storyboard
+										{
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 206:46)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation
+												{
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 207:50)
+												}
+												.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler12)(c56 => 
+												{
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c56, "ContentRoot");
+													global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c56, _ContentRootSubject);
+												}
+												))
+												,
+											}
+										}
+										;
+									}
+									);
+								}
+								))
+								,
+							}
+						}
+						.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler10)(c57 => 
+						{
+							nameScope.RegisterName("CommonStates", c57);
+							this.CommonStates = c57;
+						}
+						))
+						,						new global::Windows.UI.Xaml.VisualStateGroup
+						{
+							Name = "InputModeStates",
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 212:38)
+							States = 
+							{
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "InputModeDefault",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 213:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c58 => 
+								{
+									nameScope.RegisterName("InputModeDefault", c58);
+									this.InputModeDefault = c58;
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "TouchInputMode",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 214:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c59 => 
+								{
+									nameScope.RegisterName("TouchInputMode", c59);
+									this.TouchInputMode = c59;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c59, () => 
+									{
+										c59.Name = "TouchInputMode";
+										c59.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Padding"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonOverflowTextTouchMargin", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonOverflowTextTouchMargin", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "GameControllerInputMode",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 219:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c60 => 
+								{
+									nameScope.RegisterName("GameControllerInputMode", c60);
+									this.GameControllerInputMode = c60;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c60, () => 
+									{
+										c60.Name = "GameControllerInputMode";
+										c60.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._OverflowTextLabelSubject, "Padding"), 
+											(object)global::Uno.UI.ResourceResolverSingleton.Instance.ResolveResourceStatic("AppBarButtonOverflowTextTouchMargin", typeof(object), context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_)
+											)
+											.ApplyThemeResourceUpdateValues("AppBarButtonOverflowTextTouchMargin", global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_, true, false)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+							}
+						}
+						.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler10)(c61 => 
+						{
+							nameScope.RegisterName("InputModeStates", c61);
+							this.InputModeStates = c61;
+						}
+						))
+						,						new global::Windows.UI.Xaml.VisualStateGroup
+						{
+							Name = "KeyboardAcceleratorTextVisibility",
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 226:38)
+							States = 
+							{
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "KeyboardAcceleratorTextCollapsed",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 227:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c62 => 
+								{
+									nameScope.RegisterName("KeyboardAcceleratorTextCollapsed", c62);
+									this.KeyboardAcceleratorTextCollapsed = c62;
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.VisualState
+								{
+									Name = "KeyboardAcceleratorTextVisible",
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\App.xaml (Line 228:42)
+								}
+								.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler7)(c63 => 
+								{
+									nameScope.RegisterName("KeyboardAcceleratorTextVisible", c63);
+									this.KeyboardAcceleratorTextVisible = c63;
+									global::Uno.UI.Helpers.MarkupHelper.SetVisualStateLazy(c63, () => 
+									{
+										c63.Name = "KeyboardAcceleratorTextVisible";
+										c63.Setters.Add(
+											new global::Windows.UI.Xaml.Setter(new global::Windows.UI.Xaml.TargetPropertyPath(this._KeyboardAcceleratorTextLabelSubject, "Visibility"), 
+											@"Visible"/* object?/, Visible, Setter/Value */)
+										);
+										;
+									}
+									);
+								}
+								))
+								,
+							}
+						}
+						.App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply((App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions.XamlApplyHandler10)(c64 => 
+						{
+							nameScope.RegisterName("KeyboardAcceleratorTextVisibility", c64);
+							this.KeyboardAcceleratorTextVisibility = c64;
+						}
+						))
+						,					}
+					);
+					c12.CreationComplete();
+				}
+				))
+				;
+				if (__rootInstance is FrameworkElement __fe) 
+				{
+					__fe.Loading += delegate
+					{
+						_component_0.UpdateResourceBindings();
+						_component_1.UpdateResourceBindings();
+						_component_2.UpdateResourceBindings();
+						_component_3.UpdateResourceBindings();
+						_component_4.UpdateResourceBindings();
+						_component_5.UpdateResourceBindings();
+						_component_6.UpdateResourceBindings();
+						_component_7.UpdateResourceBindings();
+						_component_8.UpdateResourceBindings();
+						_component_9.UpdateResourceBindings();
+						_component_10.UpdateResourceBindings();
+					}
+					;
+				}
+				if (__rootInstance is DependencyObject d)
+				{
+					if (global::Windows.UI.Xaml.NameScope.GetNameScope(d) == null)
+					{
+						global::Windows.UI.Xaml.NameScope.SetNameScope(d, nameScope);
+						nameScope.Owner = d;
+					}
+					global::Uno.UI.FrameworkElementHelper.AddObjectReference(d, this);
+				}
+				return __rootInstance;
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Controls.Viewbox _component_0
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.Viewbox)_component_0_Holder.Instance;
+				}
+				set
+				{
+					_component_0_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Controls.TextBlock _component_1
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.TextBlock)_component_1_Holder.Instance;
+				}
+				set
+				{
+					_component_1_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_2_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Controls.TextBlock _component_2
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.TextBlock)_component_2_Holder.Instance;
+				}
+				set
+				{
+					_component_2_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_3_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Controls.TextBlock _component_3
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.TextBlock)_component_3_Holder.Instance;
+				}
+				set
+				{
+					_component_3_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_4_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Controls.Grid _component_4
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.Grid)_component_4_Holder.Instance;
+				}
+				set
+				{
+					_component_4_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_5_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame _component_5
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame)_component_5_Holder.Instance;
+				}
+				set
+				{
+					_component_5_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_6_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame _component_6
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame)_component_6_Holder.Instance;
+				}
+				set
+				{
+					_component_6_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_7_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame _component_7
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame)_component_7_Holder.Instance;
+				}
+				set
+				{
+					_component_7_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_8_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame _component_8
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame)_component_8_Holder.Instance;
+				}
+				set
+				{
+					_component_8_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_9_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame _component_9
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame)_component_9_Holder.Instance;
+				}
+				set
+				{
+					_component_9_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_10_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame _component_10
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame)_component_10_Holder.Instance;
+				}
+				set
+				{
+					_component_10_Holder.Instance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _ContentSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.ContentPresenter Content
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.ContentPresenter)_ContentSubject.ElementInstance;
+				}
+				set
+				{
+					_ContentSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _ContentViewboxSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.Viewbox ContentViewbox
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.Viewbox)_ContentViewboxSubject.ElementInstance;
+				}
+				set
+				{
+					_ContentViewboxSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _TextLabelSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.TextBlock TextLabel
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.TextBlock)_TextLabelSubject.ElementInstance;
+				}
+				set
+				{
+					_TextLabelSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowTextLabelSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.TextBlock OverflowTextLabel
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.TextBlock)_OverflowTextLabelSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowTextLabelSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _KeyboardAcceleratorTextLabelSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.TextBlock KeyboardAcceleratorTextLabel
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.TextBlock)_KeyboardAcceleratorTextLabelSubject.ElementInstance;
+				}
+				set
+				{
+					_KeyboardAcceleratorTextLabelSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _BorderSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.Border Border
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.Border)_BorderSubject.ElementInstance;
+				}
+				set
+				{
+					_BorderSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _ContentRootSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.Grid ContentRoot
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.Grid)_ContentRootSubject.ElementInstance;
+				}
+				set
+				{
+					_ContentRootSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _RootSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.Controls.Grid Root
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.Controls.Grid)_RootSubject.ElementInstance;
+				}
+				set
+				{
+					_RootSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _FullSizeSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState FullSize
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_FullSizeSubject.ElementInstance;
+				}
+				set
+				{
+					_FullSizeSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _CompactSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState Compact
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_CompactSubject.ElementInstance;
+				}
+				set
+				{
+					_CompactSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _LabelOnRightSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState LabelOnRight
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_LabelOnRightSubject.ElementInstance;
+				}
+				set
+				{
+					_LabelOnRightSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _LabelCollapsedSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState LabelCollapsed
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_LabelCollapsedSubject.ElementInstance;
+				}
+				set
+				{
+					_LabelCollapsedSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState Overflow
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowWithToggleButtonsSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState OverflowWithToggleButtons
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowWithToggleButtonsSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowWithToggleButtonsSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowWithMenuIconsSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState OverflowWithMenuIcons
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowWithMenuIconsSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowWithMenuIconsSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowWithToggleButtonsAndMenuIconsSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState OverflowWithToggleButtonsAndMenuIcons
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowWithToggleButtonsAndMenuIconsSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowWithToggleButtonsAndMenuIconsSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _ApplicationViewStatesSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualStateGroup ApplicationViewStates
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualStateGroup)_ApplicationViewStatesSubject.ElementInstance;
+				}
+				set
+				{
+					_ApplicationViewStatesSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _NormalSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState Normal
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_NormalSubject.ElementInstance;
+				}
+				set
+				{
+					_NormalSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _PointerOverSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState PointerOver
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_PointerOverSubject.ElementInstance;
+				}
+				set
+				{
+					_PointerOverSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _PressedSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState Pressed
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_PressedSubject.ElementInstance;
+				}
+				set
+				{
+					_PressedSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _DisabledSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState Disabled
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_DisabledSubject.ElementInstance;
+				}
+				set
+				{
+					_DisabledSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowNormalSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState OverflowNormal
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowNormalSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowNormalSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowPointerOverSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState OverflowPointerOver
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowPointerOverSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowPointerOverSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _OverflowPressedSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState OverflowPressed
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_OverflowPressedSubject.ElementInstance;
+				}
+				set
+				{
+					_OverflowPressedSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _CommonStatesSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualStateGroup CommonStates
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualStateGroup)_CommonStatesSubject.ElementInstance;
+				}
+				set
+				{
+					_CommonStatesSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _InputModeDefaultSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState InputModeDefault
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_InputModeDefaultSubject.ElementInstance;
+				}
+				set
+				{
+					_InputModeDefaultSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _TouchInputModeSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState TouchInputMode
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_TouchInputModeSubject.ElementInstance;
+				}
+				set
+				{
+					_TouchInputModeSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _GameControllerInputModeSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState GameControllerInputMode
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_GameControllerInputModeSubject.ElementInstance;
+				}
+				set
+				{
+					_GameControllerInputModeSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _InputModeStatesSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualStateGroup InputModeStates
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualStateGroup)_InputModeStatesSubject.ElementInstance;
+				}
+				set
+				{
+					_InputModeStatesSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _KeyboardAcceleratorTextCollapsedSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState KeyboardAcceleratorTextCollapsed
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_KeyboardAcceleratorTextCollapsedSubject.ElementInstance;
+				}
+				set
+				{
+					_KeyboardAcceleratorTextCollapsedSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _KeyboardAcceleratorTextVisibleSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualState KeyboardAcceleratorTextVisible
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualState)_KeyboardAcceleratorTextVisibleSubject.ElementInstance;
+				}
+				set
+				{
+					_KeyboardAcceleratorTextVisibleSubject.ElementInstance = value;
+				}
+			}
+			private global::Windows.UI.Xaml.Data.ElementNameSubject _KeyboardAcceleratorTextVisibilitySubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+			private global::Windows.UI.Xaml.VisualStateGroup KeyboardAcceleratorTextVisibility
+			{
+				get
+				{
+					return (global::Windows.UI.Xaml.VisualStateGroup)_KeyboardAcceleratorTextVisibilitySubject.ElementInstance;
+				}
+				set
+				{
+					_KeyboardAcceleratorTextVisibilitySubject.ElementInstance = value;
+				}
+			}
 		}
 
 	}
@@ -150,5 +2223,96 @@ namespace ElevateEvansvilleUI.Wasm
 {
 	static class App_3fa65cb8d7e5f7a028affefc869f119dXamlApplyExtensions
 	{
+		public delegate void XamlApplyHandler0(global::Windows.UI.Xaml.Controls.ColumnDefinition instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.ColumnDefinition App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.ColumnDefinition instance, XamlApplyHandler0 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.RowDefinition instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.RowDefinition App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.RowDefinition instance, XamlApplyHandler1 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.ContentPresenter instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.ContentPresenter App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.ContentPresenter instance, XamlApplyHandler2 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.Viewbox instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.Viewbox App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.Viewbox instance, XamlApplyHandler3 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Controls.TextBlock instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.TextBlock App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler4 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.Border instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.Border App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.Border instance, XamlApplyHandler5 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.Grid instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.Grid App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler6 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler7(global::Windows.UI.Xaml.VisualState instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.VisualState App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.VisualState instance, XamlApplyHandler7 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler8(global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame instance, XamlApplyHandler8 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler9(global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames instance, XamlApplyHandler9 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler10(global::Windows.UI.Xaml.VisualStateGroup instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.VisualStateGroup App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.VisualStateGroup instance, XamlApplyHandler10 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler11(global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation instance, XamlApplyHandler11 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler12(global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation App_3fa65cb8d7e5f7a028affefc869f119d_XamlApply(this global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation instance, XamlApplyHandler12 handler)
+		{
+			handler(instance);
+			return instance;
+		}
 	}
 }

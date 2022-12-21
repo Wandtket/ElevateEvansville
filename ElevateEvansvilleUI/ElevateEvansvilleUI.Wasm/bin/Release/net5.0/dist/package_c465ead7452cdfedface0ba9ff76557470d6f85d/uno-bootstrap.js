@@ -667,7 +667,8 @@ var Uno;
                                 console.debug(`Registering service worker for ${_webAppBasePath}`);
                                 navigator.serviceWorker
                                     .register(`${_webAppBasePath}service-worker.js`, {
-                                    scope: _webAppBasePath
+                                    scope: _webAppBasePath,
+                                    type: 'module'
                                 })
                                     .then(function () {
                                     console.debug('Service Worker Registered');

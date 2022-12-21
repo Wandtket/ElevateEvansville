@@ -70,7 +70,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2, )"
             },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
@@ -78,7 +78,7 @@
             },
             "System.Text.Json": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[7.0.1, )"
             },
             "Uno.Extensions.Logging.WebAssembly.Console": {
               "target": "Package",
@@ -94,7 +94,7 @@
             },
             "Uno.Toolkit.UI": {
               "target": "Package",
-              "version": "[2.3.0, )"
+              "version": "[2.4.2, )"
             },
             "Uno.UI": {
               "target": "Package",
@@ -110,11 +110,11 @@
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[7.0.8, )"
+              "version": "[7.0.11, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[7.0.8, )"
+              "version": "[7.0.11, )"
             }
           },
           "imports": [

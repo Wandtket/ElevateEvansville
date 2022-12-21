@@ -124,9 +124,10 @@
  { "name": "Uno.UI.Adapter.Microsoft.Extensions.Logging.dll", "behavior":"assembly", "url":"Uno.UI.Adapter.Microsoft.Extensions.Logging.dll" },
  { "name": "Uno.UI.FluentTheme.v2.dll", "behavior":"assembly", "url":"Uno.UI.FluentTheme.v2.dll" },
  { "name": "Uno.Toolkit.UI.dll", "behavior":"assembly", "url":"Uno.Toolkit.UI.dll" },
- { "name": "Uno.Core.Extensions.Disposables.dll", "behavior":"assembly", "url":"Uno.Core.Extensions.Disposables.dll" },
  { "name": "Uno.Core.Extensions.Collections.dll", "behavior":"assembly", "url":"Uno.Core.Extensions.Collections.dll" },
+ { "name": "Uno.Core.Extensions.Disposables.dll", "behavior":"assembly", "url":"Uno.Core.Extensions.Disposables.dll" },
  { "name": "Uno.Core.Extensions.Equality.dll", "behavior":"assembly", "url":"Uno.Core.Extensions.Equality.dll" },
+ { "name": "Uno.Toolkit.dll", "behavior":"assembly", "url":"Uno.Toolkit.dll" },
  { "name": "Uno.Core.Extensions.Logging.dll", "behavior":"assembly", "url":"Uno.Core.Extensions.Logging.dll" },
  { "name": "dotnet.wasm", "behavior":"dotnetwasm", "url":"dotnet.wasm" },
  { "name": "icudt.dat", "behavior":"icu", "url":"icudt.dat" }]
