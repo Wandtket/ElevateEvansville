@@ -19,6 +19,7 @@
         <Storyboard x:Name="LoadingFadeIn">
             <DoubleAnimation Storyboard.TargetName="LoadingGrid" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.2"/>
         </Storyboard>
+        
     </Page.Resources>
 
     <Grid x:Name="UIGrid">
@@ -53,10 +54,10 @@
 
             <CommandBar.PrimaryCommands>
                 <!--<AppBarButton x:Name="Home" Label="Home" Icon="Home" Click="Home_Click" />-->
-                <AppBarButton x:Name="Platform" Label="Platform" Icon="Flag" Click="Platform_Click" Style="{StaticResource BasicAppBarButtonStyle}" FontSize="16"/>
-                <AppBarButton x:Name="About" Label="About" Icon="Contact" Click="About_Click" Style="{StaticResource BasicAppBarButtonStyle}" FontSize="16" />
+                <AppBarButton x:Name="Platform" Label="Platform" Icon="Flag" Click="Platform_Click" />
+                <AppBarButton x:Name="About" Label="About" Icon="Contact" Click="About_Click" />
 
-                <AppBarButton x:Name="Contact" Label="Contact" Icon="Message" Style="{StaticResource BasicAppBarButtonStyle}" FontSize="16">
+                <AppBarButton x:Name="Contact" Label="Contact" Icon="Message" >
                     <AppBarButton.Flyout>
                         <MenuFlyout Placement="Bottom">
                             <MenuFlyoutItem Text="Ask a question" Click="ContactQuestion_Click">
@@ -73,7 +74,7 @@
                     </AppBarButton.Flyout>
                 </AppBarButton>
 
-                <AppBarButton x:Name="Follow" Label="Follow" Icon="Globe" Style="{StaticResource BasicAppBarButtonStyle}" FontSize="16">
+                <AppBarButton x:Name="Follow" Label="Follow" Icon="Globe" >
                     <AppBarButton.Flyout>
                         <Flyout Placement="Bottom">
                             <ListView SelectionMode="None" Margin="-12">

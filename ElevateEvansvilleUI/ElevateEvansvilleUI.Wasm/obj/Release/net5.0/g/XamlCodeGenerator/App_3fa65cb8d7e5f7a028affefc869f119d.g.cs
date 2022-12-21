@@ -78,50 +78,50 @@ namespace ElevateEvansvilleUI
 			);
 			// ThemeDictionaries
 			Resources.ThemeDictionaries["Dark"] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_35 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_58 => 
 				new global::Windows.UI.Xaml.ResourceDictionary
 				{
 					[
 					"TitleBarColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_35, __ResourceOwner_36 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_58, __ResourceOwner_59 => 
 						SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, Black, /_UnknownContent */					)
 					,
 					[
 					"SubColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_35, __ResourceOwner_37 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_58, __ResourceOwner_60 => 
 						SolidColorBrushHelper.FromARGB(255, 45, 45, 48)/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, #FF2D2D30, /_UnknownContent */					)
 					,
 					[
 					"FontColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_35, __ResourceOwner_38 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_58, __ResourceOwner_61 => 
 						SolidColorBrushHelper.White/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, White, /_UnknownContent */					)
 					,
 				}
 			)
 			;
 			Resources.ThemeDictionaries["Light"] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_39 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_62 => 
 				new global::Windows.UI.Xaml.ResourceDictionary
 				{
 					[
 					"TitleBarColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_39, __ResourceOwner_40 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_62, __ResourceOwner_63 => 
 						SolidColorBrushHelper.White/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, White, /_UnknownContent */					)
 					,
 					[
 					"SubColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_39, __ResourceOwner_41 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_62, __ResourceOwner_64 => 
 						SolidColorBrushHelper.FromARGB(255, 235, 235, 235)/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, #FFEBEBEB, /_UnknownContent */					)
 					,
 					[
 					"FontColor"
 					] = 
-					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_39, __ResourceOwner_42 => 
+					new global::Uno.UI.Xaml.WeakResourceInitializer(__ResourceOwner_62, __ResourceOwner_65 => 
 						SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/Windows.UI.Xaml.Media.Brush, Black, /_UnknownContent */					)
 					,
 				}
@@ -130,7 +130,7 @@ namespace ElevateEvansvilleUI
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_43 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_66 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -182,7 +182,7 @@ namespace ElevateEvansvilleUI
 		}
 		private class _App_3fa65cb8d7e5f7a028affefc869f119d_ElevateEvansvilleUIAppSC0
 		{
-			public _View Build(object __ResourceOwner_44)
+			public _View Build(object __ResourceOwner_67)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
