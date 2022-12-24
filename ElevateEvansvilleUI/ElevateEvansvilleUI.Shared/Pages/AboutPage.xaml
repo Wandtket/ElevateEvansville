@@ -151,9 +151,9 @@
                                 </ListView>
 
                                 <ListView Width="215" SelectionMode="None">
-                                    <TextBlock>
-                                        <Hyperlink NavigateUri="https://i.imgur.com/dnFdKh9.png">Declaration of Candidacy</Hyperlink>
-                                    </TextBlock>
+                                    <!--<TextBlock IsTapEnabled="False">
+                                        <Hyperlink>Declaration of Candidacy</Hyperlink>
+                                    </TextBlock>-->
 
                                     <TextBlock>
                                         <Hyperlink NavigateUri="https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/ET7u7eTrMjNAoAJ3xoQvSpUB1HDYorzMsWEGn0Y0WnwpiQ?e=DUfTQt">Tax Returns</Hyperlink>

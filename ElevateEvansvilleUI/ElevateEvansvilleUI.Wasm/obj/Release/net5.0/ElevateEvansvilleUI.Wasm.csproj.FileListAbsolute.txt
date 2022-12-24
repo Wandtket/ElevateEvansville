@@ -338,3 +338,7 @@ C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEv
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\staticwebassets\ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.Toolkit.dll
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.UI.RemoteControl.pdb
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.Wasm.WebSockets.dll
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.UI.RemoteControl.dll

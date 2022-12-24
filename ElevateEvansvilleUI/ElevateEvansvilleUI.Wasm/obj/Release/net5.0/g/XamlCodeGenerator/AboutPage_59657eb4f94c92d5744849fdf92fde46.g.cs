@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_47 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_4 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -903,35 +903,6 @@ namespace ElevateEvansvilleUI.Pages
 																	new global::Windows.UI.Xaml.Controls.TextBlock
 																	{
 																		IsParsing = true,
-																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 154:38)
-																		Inlines = 
-																		{
-																			new global::Windows.UI.Xaml.Documents.Hyperlink
-																			{
-																				NavigateUri = new System.Uri("https://i.imgur.com/dnFdKh9.png", global::System.UriKind.RelativeOrAbsolute)/* System.Uri/, https://i.imgur.com/dnFdKh9.png, Hyperlink/NavigateUri */,
-																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 155:42)
-																				Inlines = 
-																				{
-																					new global::Windows.UI.Xaml.Documents.Run
-																					{
-																						Text = "Declaration of Candidacy"/* string/, Declaration of Candidacy, Run/Text */,
-																						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 155:124)
-																					}
-																					,
-																				}
-																			}
-																			,
-																		}
-																	}
-																	.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c67 => 
-																	{
-																		c67.CreationComplete();
-																	}
-																	))
-																	,
-																	new global::Windows.UI.Xaml.Controls.TextBlock
-																	{
-																		IsParsing = true,
 																		// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 158:38)
 																		Inlines = 
 																		{
@@ -952,61 +923,61 @@ namespace ElevateEvansvilleUI.Pages
 																			,
 																		}
 																	}
-																	.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c70 => 
+																	.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c67 => 
 																	{
-																		c70.CreationComplete();
+																		c67.CreationComplete();
 																	}
 																	))
 																	,
 																}
 															}
-															.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler10)(c71 => 
+															.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler10)(c68 => 
 															{
-																c71.CreationComplete();
+																c68.CreationComplete();
 															}
 															))
 															,
 														}
 													}
-													.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler11)(c72 => 
+													.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler11)(c69 => 
 													{
-														global::Windows.UI.Xaml.Controls.Grid.SetRow(c72, 1/* int/, 1, Grid/Row */);
-														c72.CreationComplete();
+														global::Windows.UI.Xaml.Controls.Grid.SetRow(c69, 1/* int/, 1, Grid/Row */);
+														c69.CreationComplete();
 													}
 													))
 													,
 												}
 											}
-											.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c73 => 
+											.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c70 => 
 											{
-												c73.CreationComplete();
+												c70.CreationComplete();
 											}
 											))
 											,
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler3)(c74 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler3)(c71 => 
 										{
-											global::Windows.UI.Xaml.Controls.Grid.SetRow(c74, 1/* int/, 1, Grid/Row */);
-											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c74, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+											global::Windows.UI.Xaml.Controls.Grid.SetRow(c71, 1/* int/, 1, Grid/Row */);
+											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c71, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 											/* _isTopLevelDictionary:False */
-											this._component_2 = c74;
-											c74.CreationComplete();
+											this._component_2 = c71;
+											c71.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c75 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c72 => 
 								{
-									c75.CreationComplete();
+									c72.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler11)(c76 => 
+						.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler11)(c73 => 
 						{
-							c76.CreationComplete();
+							c73.CreationComplete();
 						}
 						))
 						,
@@ -1174,10 +1145,10 @@ namespace ElevateEvansvilleUI.Pages
 									FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 203:18)
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c101 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c98 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c101, 1/* int/, 1, Grid/Row */);
-									c101.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c98, 1/* int/, 1, Grid/Row */);
+									c98.CreationComplete();
 								}
 								))
 								,
@@ -1200,10 +1171,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c103 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c100 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c103, 2/* int/, 2, Grid/Row */);
-									c103.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c100, 2/* int/, 2, Grid/Row */);
+									c100.CreationComplete();
 								}
 								))
 								,
@@ -1222,9 +1193,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 212:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c104 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c101 => 
 										{
-											c104.CreationComplete();
+											c101.CreationComplete();
 										}
 										))
 										,
@@ -1235,9 +1206,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 213:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c105 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c102 => 
 										{
-											c105.CreationComplete();
+											c102.CreationComplete();
 										}
 										))
 										,
@@ -1248,9 +1219,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 214:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c106 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c103 => 
 										{
-											c106.CreationComplete();
+											c103.CreationComplete();
 										}
 										))
 										,
@@ -1261,9 +1232,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 215:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c107 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c104 => 
 										{
-											c107.CreationComplete();
+											c104.CreationComplete();
 										}
 										))
 										,
@@ -1274,18 +1245,18 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 216:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c108 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c105 => 
 										{
-											c108.CreationComplete();
+											c105.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler2)(c109 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler2)(c106 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c109, 3/* int/, 3, Grid/Row */);
-									c109.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c106, 3/* int/, 3, Grid/Row */);
+									c106.CreationComplete();
 								}
 								))
 								,
@@ -1308,10 +1279,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c111 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c108 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c111, 4/* int/, 4, Grid/Row */);
-									c111.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c108, 4/* int/, 4, Grid/Row */);
+									c108.CreationComplete();
 								}
 								))
 								,
@@ -1330,9 +1301,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 228:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c112 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c109 => 
 										{
-											c112.CreationComplete();
+											c109.CreationComplete();
 										}
 										))
 										,
@@ -1343,9 +1314,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 229:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c113 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c110 => 
 										{
-											c113.CreationComplete();
+											c110.CreationComplete();
 										}
 										))
 										,
@@ -1356,9 +1327,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 230:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c114 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c111 => 
 										{
-											c114.CreationComplete();
+											c111.CreationComplete();
 										}
 										))
 										,
@@ -1369,9 +1340,9 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 231:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c115 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c112 => 
 										{
-											c115.CreationComplete();
+											c112.CreationComplete();
 										}
 										))
 										,
@@ -1382,18 +1353,18 @@ namespace ElevateEvansvilleUI.Pages
 											Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 232:22)
 										}
-										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c116 => 
+										.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler1)(c113 => 
 										{
-											c116.CreationComplete();
+											c113.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler2)(c117 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler2)(c114 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c117, 5/* int/, 5, Grid/Row */);
-									c117.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c114, 5/* int/, 5, Grid/Row */);
+									c114.CreationComplete();
 								}
 								))
 								,
@@ -1416,10 +1387,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c119 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c116 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c119, 6/* int/, 6, Grid/Row */);
-									c119.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c116, 6/* int/, 6, Grid/Row */);
+									c116.CreationComplete();
 								}
 								))
 								,
@@ -1431,10 +1402,10 @@ namespace ElevateEvansvilleUI.Pages
 									Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, FlipView/Visibility */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 241:18)
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler2)(c120 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler2)(c117 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c120, 7/* int/, 7, Grid/Row */);
-									c120.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c117, 7/* int/, 7, Grid/Row */);
+									c117.CreationComplete();
 								}
 								))
 								,
@@ -1457,10 +1428,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c122 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c119 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c122, 8/* int/, 8, Grid/Row */);
-									c122.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c119, 8/* int/, 8, Grid/Row */);
+									c119.CreationComplete();
 								}
 								))
 								,
@@ -1483,10 +1454,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c124 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c121 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c124, 10/* int/, 10, Grid/Row */);
-									c124.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c121, 10/* int/, 10, Grid/Row */);
+									c121.CreationComplete();
 								}
 								))
 								,
@@ -1509,10 +1480,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c126 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c123 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c126, 12/* int/, 12, Grid/Row */);
-									c126.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c123, 12/* int/, 12, Grid/Row */);
+									c123.CreationComplete();
 								}
 								))
 								,
@@ -1535,10 +1506,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c128 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c125 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c128, 14/* int/, 14, Grid/Row */);
-									c128.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c125, 14/* int/, 14, Grid/Row */);
+									c125.CreationComplete();
 								}
 								))
 								,
@@ -1561,10 +1532,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c130 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c127 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c130, 16/* int/, 16, Grid/Row */);
-									c130.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c127, 16/* int/, 16, Grid/Row */);
+									c127.CreationComplete();
 								}
 								))
 								,
@@ -1587,10 +1558,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c132 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c129 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c132, 18/* int/, 18, Grid/Row */);
-									c132.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c129, 18/* int/, 18, Grid/Row */);
+									c129.CreationComplete();
 								}
 								))
 								,
@@ -1613,10 +1584,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c134 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c131 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c134, 20/* int/, 20, Grid/Row */);
-									c134.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c131, 20/* int/, 20, Grid/Row */);
+									c131.CreationComplete();
 								}
 								))
 								,
@@ -1639,10 +1610,10 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c136 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c133 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c136, 22/* int/, 22, Grid/Row */);
-									c136.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c133, 22/* int/, 22, Grid/Row */);
+									c133.CreationComplete();
 								}
 								))
 								,
@@ -1665,53 +1636,53 @@ namespace ElevateEvansvilleUI.Pages
 										,
 									}
 								}
-								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c138 => 
+								.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler6)(c135 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c138, 24/* int/, 24, Grid/Row */);
-									c138.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c135, 24/* int/, 24, Grid/Row */);
+									c135.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c139 => 
+						.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c136 => 
 						{
-							global::Windows.UI.Xaml.Controls.Grid.SetRow(c139, 1/* int/, 1, Grid/Row */);
-							c139.CreationComplete();
+							global::Windows.UI.Xaml.Controls.Grid.SetRow(c136, 1/* int/, 1, Grid/Row */);
+							c136.CreationComplete();
 						}
 						))
 						,
 					}
 				}
-				.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c140 => 
+				.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler8)(c137 => 
 				{
-					c140.CreationComplete();
+					c137.CreationComplete();
 				}
 				))
 				,
 			}
-			.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler12)(c141 => 
+			.AboutPage_59657eb4f94c92d5744849fdf92fde46_XamlApply((AboutPage_59657eb4f94c92d5744849fdf92fde46XamlApplyExtensions.XamlApplyHandler12)(c138 => 
 			{
-				c141.CreationComplete();
+				c138.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c142 => 
+			.GenericApply((c139 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 1:2)
 				
-				// WARNING Property c142.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c139.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c143 => 
+			.GenericApply((c140 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.AboutPage
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c143, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c140, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_3 = c143;
-				c143.CreationComplete();
+				this._component_3 = c140;
+				c140.CreationComplete();
 			}
 			))
 			;

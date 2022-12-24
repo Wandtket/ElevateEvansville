@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_48 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_2 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -69,7 +69,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.StackPanel)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_53 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_8 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.StackPanel))
 				{
 					Setters = 
@@ -82,7 +82,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Microsoft.UI.Xaml.Controls.Expander)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_54 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_9 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Microsoft.UI.Xaml.Controls.Expander))
 				{
 					Setters = 
@@ -1015,7 +1015,7 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											new global::Windows.UI.Xaml.Documents.Run
 											{
-												Text = "The Evansville Vanderburgh Police Department will at no point be utilized as an occupying force to harass, intimidate, coerce or discourage the working class of Evansville, IN."/* string/, The Evansville Vanderburgh Police Department will at no point be utilized as an occupying force to harass, intimidate, coerce or discourage the working class of Evansville, IN., Run/Text */,
+												Text = "The Evansville Police Department will at no point be utilized as an occupying force to harass, intimidate, coerce or discourage the working class of Evansville, IN."/* string/, The Evansville Police Department will at no point be utilized as an occupying force to harass, intimidate, coerce or discourage the working class of Evansville, IN., Run/Text */,
 												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PlatformPage.xaml (Line 217:27)
 											}
 											,
@@ -1575,7 +1575,7 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											new global::Windows.UI.Xaml.Documents.Run
 											{
-												Text = "The Evansville Vanderburgh School Corporation will in no way discriminate, minimize, ignore, or deny the existence of minority groups of people or atrocities of history despite any efforts to limit exposure by State or Federal officials."/* string/, The Evansville Vanderburgh School Corporation will in no way discriminate, minimize, ignore, or deny the existence of minority groups of people or atrocities of history despite any efforts to limit exposure by State or Federal officials., Run/Text */,
+												Text = "The Evansville School Corporation will in no way discriminate, minimize, ignore, or deny the existence of minority groups of people or atrocities of history despite any efforts to limit exposure by State or Federal officials."/* string/, The Evansville School Corporation will in no way discriminate, minimize, ignore, or deny the existence of minority groups of people or atrocities of history despite any efforts to limit exposure by State or Federal officials., Run/Text */,
 												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PlatformPage.xaml (Line 329:27)
 											}
 											,
