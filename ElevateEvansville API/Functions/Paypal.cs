@@ -1,9 +1,6 @@
-﻿using PayPal.PayPalAPIInterfaceService.Model;
+﻿using ElevateEvansville_API.Models;
 using PayPal.PayPalAPIInterfaceService;
-using ElevateEvansville_API.Models;
-using ElevateEvansvilleUI.DTOs;
-using System.Collections.Generic;
-using ElevateEvansville_API.Controllers;
+using PayPal.PayPalAPIInterfaceService.Model;
 
 namespace ElevateEvansville_API.Functions
 {

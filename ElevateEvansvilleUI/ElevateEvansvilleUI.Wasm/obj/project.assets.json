@@ -11,6 +11,22 @@
           "lib/netcoreapp3.0/CommonServiceLocator.dll": {}
         }
       },
+      "libphonenumber-csharp/8.13.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Immutable": "1.7.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/PhoneNumbers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/PhoneNumbers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
@@ -288,19 +304,6 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets": {}
         }
       },
-      "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -559,38 +562,15 @@
           "buildTransitive/netcoreapp2.0/System.CodeDom.targets": {}
         }
       },
-      "System.Collections/4.3.0": {
+      "System.Collections.Immutable/1.7.1": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.3/System.Collections.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Collections.Immutable/1.3.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Threading": "4.3.0"
-        },
-        "compile": {
-          "lib/netstandard1.0/System.Collections.Immutable.dll": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard1.0/System.Collections.Immutable.dll": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
             "related": ".xml"
           }
         }
@@ -717,19 +697,6 @@
           "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
             "assetType": "runtime",
             "rid": "win"
-          }
-        }
-      },
-      "System.Diagnostics.Debug/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Diagnostics.Debug.dll": {
-            "related": ".xml"
           }
         }
       },
@@ -884,19 +851,6 @@
           "buildTransitive/netcoreapp2.0/System.Formats.Asn1.targets": {}
         }
       },
-      "System.Globalization/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Globalization.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.IO/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -994,24 +948,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp2.0/System.IO.Ports.targets": {}
-        }
-      },
-      "System.Linq/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Collections": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.6/System.Linq.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.6/System.Linq.dll": {}
         }
       },
       "System.Management/7.0.0": {
@@ -1201,21 +1137,6 @@
           }
         }
       },
-      "System.Resources.ResourceManager/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Globalization": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.Resources.ResourceManager.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Runtime/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1261,19 +1182,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.Runtime.Extensions/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.Runtime.Extensions.dll": {
-            "related": ".xml"
-          }
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -1644,21 +1552,6 @@
           "buildTransitive/netcoreapp2.0/System.Text.Json.targets": {}
         }
       },
-      "System.Threading/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Threading.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Threading.dll": {}
-        }
-      },
       "System.Threading.AccessControl/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -1870,7 +1763,7 @@
           "lib/net5.0/Uno.Extensions.Logging.WebAssembly.Console.dll": {}
         }
       },
-      "Uno.Foundation.Logging/4.6.19": {
+      "Uno.Foundation.Logging/4.6.39": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
@@ -1883,13 +1776,13 @@
           }
         }
       },
-      "Uno.Foundation.Runtime.WebAssembly/4.6.19": {
+      "Uno.Foundation.Runtime.WebAssembly/4.6.39": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
           "System.Memory": "4.5.5",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.6.19"
+          "Uno.Foundation.Logging": "4.6.39"
         },
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.dll": {
@@ -1947,7 +1840,7 @@
           }
         }
       },
-      "Uno.UI/4.6.19": {
+      "Uno.UI/4.6.39": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
@@ -1955,7 +1848,7 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.6.19",
+          "Uno.Foundation.Logging": "4.6.39",
           "Uno.SourceGenerationTasks": "4.2.0"
         },
         "compile": {
@@ -2012,12 +1905,12 @@
           "buildTransitive/netstandard2.0/Uno.UI.targets": {}
         }
       },
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.19": {
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.39": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Logging": "4.0.0-dev.7",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.0-dev.7",
-          "Uno.Foundation.Logging": "4.6.19"
+          "Uno.Foundation.Logging": "4.6.39"
         },
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
@@ -2036,35 +1929,13 @@
           }
         }
       },
-      "Uno.UI.RemoteControl/4.6.19": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IO.RecyclableMemoryStream": "2.2.0",
-          "Newtonsoft.Json": "12.0.2",
-          "Uno.UI": "4.6.19",
-          "Uno.Wasm.WebSockets": "1.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.dll": {
-            "related": ".pdb"
-          }
-        },
-        "build": {
-          "buildTransitive/Uno.UI.RemoteControl.targets": {}
-        }
-      },
-      "Uno.UI.Runtime.WebAssembly/4.6.19": {
+      "Uno.UI.Runtime.WebAssembly/4.6.39": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
-          "Uno.Foundation.Runtime.WebAssembly": "4.6.19",
+          "Uno.Foundation.Runtime.WebAssembly": "4.6.39",
           "Uno.SourceGenerationTasks": "4.2.0",
-          "Uno.UI": "4.6.19"
+          "Uno.UI": "4.6.39"
         },
         "compile": {
           "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.dll": {
@@ -2081,12 +1952,12 @@
           "buildTransitive/Uno.UI.Runtime.WebAssembly.targets": {}
         }
       },
-      "Uno.UI.WebAssembly/4.6.19": {
+      "Uno.UI.WebAssembly/4.6.39": {
         "type": "package",
         "dependencies": {
-          "Uno.Foundation.Runtime.WebAssembly": "4.6.19",
-          "Uno.UI": "4.6.19",
-          "Uno.UI.Runtime.WebAssembly": "4.6.19"
+          "Uno.Foundation.Runtime.WebAssembly": "4.6.39",
+          "Uno.UI": "4.6.39",
+          "Uno.UI.Runtime.WebAssembly": "4.6.39"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -2123,19 +1994,6 @@
         "build": {
           "build/Uno.Wasm.Bootstrap.DevServer.targets": {}
         }
-      },
-      "Uno.Wasm.WebSockets/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
-            "related": ".pdb"
-          }
-        }
       }
     }
   },
@@ -2160,6 +2018,22 @@
         "lib/netstandard1.0/CommonServiceLocator.dll",
         "lib/netstandard2.0/CommonServiceLocator.dll",
         "lib/netstandard2.1/CommonServiceLocator.dll"
+      ]
+    },
+    "libphonenumber-csharp/8.13.3": {
+      "sha512": "rT5jOPgxK6n52rRACALFgeSVMIAMr9y+8XjQBd41h9FIFswLXvx+lHa7y1tyrOdtxTR+xt1Z0J5JMvrQNyqk5w==",
+      "type": "package",
+      "path": "libphonenumber-csharp/8.13.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net7.0/PhoneNumbers.dll",
+        "lib/net7.0/PhoneNumbers.xml",
+        "lib/netstandard2.0/PhoneNumbers.dll",
+        "lib/netstandard2.0/PhoneNumbers.xml",
+        "libphonenumber-csharp.8.13.3.nupkg.sha512",
+        "libphonenumber-csharp.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
@@ -2579,27 +2453,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
-      "sha512": "uyjY/cqomw1irT4L7lDeg4sJ36MsjHg3wKqpGrBAdzvZaxo85yMF+sAA9RIzTV92fDxuUzjqksMqA0+SNMkMgA==",
-      "type": "package",
-      "path": "microsoft.io.recyclablememorystream/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net462/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/net462/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netcoreapp2.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netcoreapp2.1/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
-        "microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512",
-        "microsoft.io.recyclablememorystream.nuspec"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -3014,89 +2867,30 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Collections/4.3.0": {
-      "sha512": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
+    "System.Collections.Immutable/1.7.1": {
+      "sha512": "B43Zsz5EfMwyEbnObwRxW5u85fzJma3lrDeGcSAV1qkhSRTNY5uXAByTn9h9ddNdhM+4/YoLc/CI43umjwIl9Q==",
       "type": "package",
-      "path": "system.collections/4.3.0",
+      "path": "system.collections.immutable/1.7.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Collections.dll",
-        "ref/netcore50/System.Collections.xml",
-        "ref/netcore50/de/System.Collections.xml",
-        "ref/netcore50/es/System.Collections.xml",
-        "ref/netcore50/fr/System.Collections.xml",
-        "ref/netcore50/it/System.Collections.xml",
-        "ref/netcore50/ja/System.Collections.xml",
-        "ref/netcore50/ko/System.Collections.xml",
-        "ref/netcore50/ru/System.Collections.xml",
-        "ref/netcore50/zh-hans/System.Collections.xml",
-        "ref/netcore50/zh-hant/System.Collections.xml",
-        "ref/netstandard1.0/System.Collections.dll",
-        "ref/netstandard1.0/System.Collections.xml",
-        "ref/netstandard1.0/de/System.Collections.xml",
-        "ref/netstandard1.0/es/System.Collections.xml",
-        "ref/netstandard1.0/fr/System.Collections.xml",
-        "ref/netstandard1.0/it/System.Collections.xml",
-        "ref/netstandard1.0/ja/System.Collections.xml",
-        "ref/netstandard1.0/ko/System.Collections.xml",
-        "ref/netstandard1.0/ru/System.Collections.xml",
-        "ref/netstandard1.0/zh-hans/System.Collections.xml",
-        "ref/netstandard1.0/zh-hant/System.Collections.xml",
-        "ref/netstandard1.3/System.Collections.dll",
-        "ref/netstandard1.3/System.Collections.xml",
-        "ref/netstandard1.3/de/System.Collections.xml",
-        "ref/netstandard1.3/es/System.Collections.xml",
-        "ref/netstandard1.3/fr/System.Collections.xml",
-        "ref/netstandard1.3/it/System.Collections.xml",
-        "ref/netstandard1.3/ja/System.Collections.xml",
-        "ref/netstandard1.3/ko/System.Collections.xml",
-        "ref/netstandard1.3/ru/System.Collections.xml",
-        "ref/netstandard1.3/zh-hans/System.Collections.xml",
-        "ref/netstandard1.3/zh-hant/System.Collections.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.collections.4.3.0.nupkg.sha512",
-        "system.collections.nuspec"
-      ]
-    },
-    "System.Collections.Immutable/1.3.1": {
-      "sha512": "n+AGX7zmiZumW9aggOkXaHzUeAS3EfeTErnkKCusyONUozbTv+kMb8VE36m+ldV6kF9g57G2c641KCdgH9E0pg==",
-      "type": "package",
-      "path": "system.collections.immutable/1.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Collections.Immutable.dll",
+        "lib/net461/System.Collections.Immutable.xml",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
         "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
         "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
-        "system.collections.immutable.1.3.1.nupkg.sha512",
-        "system.collections.immutable.nuspec"
+        "system.collections.immutable.1.7.1.nupkg.sha512",
+        "system.collections.immutable.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.ComponentModel.Composition/7.0.0": {
@@ -3361,74 +3155,6 @@
         "version.txt"
       ]
     },
-    "System.Diagnostics.Debug/4.3.0": {
-      "sha512": "ZUhUOdqmaG5Jk3Xdb8xi5kIyQYAA4PnTNlHx1mu9ZY3qv4ELIdKbnL/akbGaKi2RnNUWaZsAs31rvzFdewTj2g==",
-      "type": "package",
-      "path": "system.diagnostics.debug/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Diagnostics.Debug.dll",
-        "ref/netcore50/System.Diagnostics.Debug.xml",
-        "ref/netcore50/de/System.Diagnostics.Debug.xml",
-        "ref/netcore50/es/System.Diagnostics.Debug.xml",
-        "ref/netcore50/fr/System.Diagnostics.Debug.xml",
-        "ref/netcore50/it/System.Diagnostics.Debug.xml",
-        "ref/netcore50/ja/System.Diagnostics.Debug.xml",
-        "ref/netcore50/ko/System.Diagnostics.Debug.xml",
-        "ref/netcore50/ru/System.Diagnostics.Debug.xml",
-        "ref/netcore50/zh-hans/System.Diagnostics.Debug.xml",
-        "ref/netcore50/zh-hant/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/System.Diagnostics.Debug.dll",
-        "ref/netstandard1.0/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/de/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/es/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/fr/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/it/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/ja/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/ko/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/ru/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/zh-hans/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.0/zh-hant/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/System.Diagnostics.Debug.dll",
-        "ref/netstandard1.3/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/de/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/es/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/fr/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/it/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/ja/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/ko/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/ru/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/zh-hans/System.Diagnostics.Debug.xml",
-        "ref/netstandard1.3/zh-hant/System.Diagnostics.Debug.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.diagnostics.debug.4.3.0.nupkg.sha512",
-        "system.diagnostics.debug.nuspec"
-      ]
-    },
     "System.Diagnostics.DiagnosticSource/7.0.0": {
       "sha512": "9W0ewWDuAyDqS2PigdTxk6jDKonfgscY/hP8hm7VpxYhNHZHKvZTdRckberlFk3VnCmr3xBUyMBut12Q+T2aOw==",
       "type": "package",
@@ -3676,74 +3402,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Globalization/4.3.0": {
-      "sha512": "kYdVd2f2PAdFGblzFswE4hkNANJBKRmsfa2X5LG2AcWE1c7/4t0pYae1L8vfZ5xvE2nK/R9JprtToA61OSHWIg==",
-      "type": "package",
-      "path": "system.globalization/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Globalization.dll",
-        "ref/netcore50/System.Globalization.xml",
-        "ref/netcore50/de/System.Globalization.xml",
-        "ref/netcore50/es/System.Globalization.xml",
-        "ref/netcore50/fr/System.Globalization.xml",
-        "ref/netcore50/it/System.Globalization.xml",
-        "ref/netcore50/ja/System.Globalization.xml",
-        "ref/netcore50/ko/System.Globalization.xml",
-        "ref/netcore50/ru/System.Globalization.xml",
-        "ref/netcore50/zh-hans/System.Globalization.xml",
-        "ref/netcore50/zh-hant/System.Globalization.xml",
-        "ref/netstandard1.0/System.Globalization.dll",
-        "ref/netstandard1.0/System.Globalization.xml",
-        "ref/netstandard1.0/de/System.Globalization.xml",
-        "ref/netstandard1.0/es/System.Globalization.xml",
-        "ref/netstandard1.0/fr/System.Globalization.xml",
-        "ref/netstandard1.0/it/System.Globalization.xml",
-        "ref/netstandard1.0/ja/System.Globalization.xml",
-        "ref/netstandard1.0/ko/System.Globalization.xml",
-        "ref/netstandard1.0/ru/System.Globalization.xml",
-        "ref/netstandard1.0/zh-hans/System.Globalization.xml",
-        "ref/netstandard1.0/zh-hant/System.Globalization.xml",
-        "ref/netstandard1.3/System.Globalization.dll",
-        "ref/netstandard1.3/System.Globalization.xml",
-        "ref/netstandard1.3/de/System.Globalization.xml",
-        "ref/netstandard1.3/es/System.Globalization.xml",
-        "ref/netstandard1.3/fr/System.Globalization.xml",
-        "ref/netstandard1.3/it/System.Globalization.xml",
-        "ref/netstandard1.3/ja/System.Globalization.xml",
-        "ref/netstandard1.3/ko/System.Globalization.xml",
-        "ref/netstandard1.3/ru/System.Globalization.xml",
-        "ref/netstandard1.3/zh-hans/System.Globalization.xml",
-        "ref/netstandard1.3/zh-hant/System.Globalization.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.globalization.4.3.0.nupkg.sha512",
-        "system.globalization.nuspec"
-      ]
-    },
     "System.IO/4.3.0": {
       "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "type": "package",
@@ -3964,78 +3622,6 @@
         "system.io.ports.7.0.0.nupkg.sha512",
         "system.io.ports.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Linq/4.3.0": {
-      "sha512": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
-      "type": "package",
-      "path": "system.linq/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net463/System.Linq.dll",
-        "lib/netcore50/System.Linq.dll",
-        "lib/netstandard1.6/System.Linq.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net463/System.Linq.dll",
-        "ref/netcore50/System.Linq.dll",
-        "ref/netcore50/System.Linq.xml",
-        "ref/netcore50/de/System.Linq.xml",
-        "ref/netcore50/es/System.Linq.xml",
-        "ref/netcore50/fr/System.Linq.xml",
-        "ref/netcore50/it/System.Linq.xml",
-        "ref/netcore50/ja/System.Linq.xml",
-        "ref/netcore50/ko/System.Linq.xml",
-        "ref/netcore50/ru/System.Linq.xml",
-        "ref/netcore50/zh-hans/System.Linq.xml",
-        "ref/netcore50/zh-hant/System.Linq.xml",
-        "ref/netstandard1.0/System.Linq.dll",
-        "ref/netstandard1.0/System.Linq.xml",
-        "ref/netstandard1.0/de/System.Linq.xml",
-        "ref/netstandard1.0/es/System.Linq.xml",
-        "ref/netstandard1.0/fr/System.Linq.xml",
-        "ref/netstandard1.0/it/System.Linq.xml",
-        "ref/netstandard1.0/ja/System.Linq.xml",
-        "ref/netstandard1.0/ko/System.Linq.xml",
-        "ref/netstandard1.0/ru/System.Linq.xml",
-        "ref/netstandard1.0/zh-hans/System.Linq.xml",
-        "ref/netstandard1.0/zh-hant/System.Linq.xml",
-        "ref/netstandard1.6/System.Linq.dll",
-        "ref/netstandard1.6/System.Linq.xml",
-        "ref/netstandard1.6/de/System.Linq.xml",
-        "ref/netstandard1.6/es/System.Linq.xml",
-        "ref/netstandard1.6/fr/System.Linq.xml",
-        "ref/netstandard1.6/it/System.Linq.xml",
-        "ref/netstandard1.6/ja/System.Linq.xml",
-        "ref/netstandard1.6/ko/System.Linq.xml",
-        "ref/netstandard1.6/ru/System.Linq.xml",
-        "ref/netstandard1.6/zh-hans/System.Linq.xml",
-        "ref/netstandard1.6/zh-hant/System.Linq.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.linq.4.3.0.nupkg.sha512",
-        "system.linq.nuspec"
       ]
     },
     "System.Management/7.0.0": {
@@ -4475,63 +4061,6 @@
         "system.reflection.primitives.nuspec"
       ]
     },
-    "System.Resources.ResourceManager/4.3.0": {
-      "sha512": "/zrcPkkWdZmI4F92gL/TPumP98AVDu/Wxr3CSJGQQ+XN6wbRZcyfSKVoPo17ilb3iOr0cCRqJInGwNMolqhS8A==",
-      "type": "package",
-      "path": "system.resources.resourcemanager/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Resources.ResourceManager.dll",
-        "ref/netcore50/System.Resources.ResourceManager.xml",
-        "ref/netcore50/de/System.Resources.ResourceManager.xml",
-        "ref/netcore50/es/System.Resources.ResourceManager.xml",
-        "ref/netcore50/fr/System.Resources.ResourceManager.xml",
-        "ref/netcore50/it/System.Resources.ResourceManager.xml",
-        "ref/netcore50/ja/System.Resources.ResourceManager.xml",
-        "ref/netcore50/ko/System.Resources.ResourceManager.xml",
-        "ref/netcore50/ru/System.Resources.ResourceManager.xml",
-        "ref/netcore50/zh-hans/System.Resources.ResourceManager.xml",
-        "ref/netcore50/zh-hant/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/System.Resources.ResourceManager.dll",
-        "ref/netstandard1.0/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/de/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/es/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/fr/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/it/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/ja/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/ko/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/ru/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/zh-hans/System.Resources.ResourceManager.xml",
-        "ref/netstandard1.0/zh-hant/System.Resources.ResourceManager.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.resources.resourcemanager.4.3.0.nupkg.sha512",
-        "system.resources.resourcemanager.nuspec"
-      ]
-    },
     "System.Runtime/4.3.0": {
       "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
@@ -4681,87 +4210,6 @@
         "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Runtime.Extensions/4.3.0": {
-      "sha512": "guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
-      "type": "package",
-      "path": "system.runtime.extensions/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/net462/System.Runtime.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/net462/System.Runtime.Extensions.dll",
-        "ref/netcore50/System.Runtime.Extensions.dll",
-        "ref/netcore50/System.Runtime.Extensions.xml",
-        "ref/netcore50/de/System.Runtime.Extensions.xml",
-        "ref/netcore50/es/System.Runtime.Extensions.xml",
-        "ref/netcore50/fr/System.Runtime.Extensions.xml",
-        "ref/netcore50/it/System.Runtime.Extensions.xml",
-        "ref/netcore50/ja/System.Runtime.Extensions.xml",
-        "ref/netcore50/ko/System.Runtime.Extensions.xml",
-        "ref/netcore50/ru/System.Runtime.Extensions.xml",
-        "ref/netcore50/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netcore50/zh-hant/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/System.Runtime.Extensions.dll",
-        "ref/netstandard1.0/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/de/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/es/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/fr/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/it/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/ja/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/ko/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/ru/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netstandard1.0/zh-hant/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/System.Runtime.Extensions.dll",
-        "ref/netstandard1.3/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/de/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/es/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/fr/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/it/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/ja/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/ko/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/ru/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/System.Runtime.Extensions.dll",
-        "ref/netstandard1.5/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/de/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/es/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/fr/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/it/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/ja/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/ko/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/ru/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/zh-hans/System.Runtime.Extensions.xml",
-        "ref/netstandard1.5/zh-hant/System.Runtime.Extensions.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.extensions.4.3.0.nupkg.sha512",
-        "system.runtime.extensions.nuspec"
       ]
     },
     "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
@@ -5659,77 +5107,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Threading/4.3.0": {
-      "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
-      "type": "package",
-      "path": "system.threading/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/System.Threading.dll",
-        "lib/netstandard1.3/System.Threading.dll",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/System.Threading.dll",
-        "ref/netcore50/System.Threading.xml",
-        "ref/netcore50/de/System.Threading.xml",
-        "ref/netcore50/es/System.Threading.xml",
-        "ref/netcore50/fr/System.Threading.xml",
-        "ref/netcore50/it/System.Threading.xml",
-        "ref/netcore50/ja/System.Threading.xml",
-        "ref/netcore50/ko/System.Threading.xml",
-        "ref/netcore50/ru/System.Threading.xml",
-        "ref/netcore50/zh-hans/System.Threading.xml",
-        "ref/netcore50/zh-hant/System.Threading.xml",
-        "ref/netstandard1.0/System.Threading.dll",
-        "ref/netstandard1.0/System.Threading.xml",
-        "ref/netstandard1.0/de/System.Threading.xml",
-        "ref/netstandard1.0/es/System.Threading.xml",
-        "ref/netstandard1.0/fr/System.Threading.xml",
-        "ref/netstandard1.0/it/System.Threading.xml",
-        "ref/netstandard1.0/ja/System.Threading.xml",
-        "ref/netstandard1.0/ko/System.Threading.xml",
-        "ref/netstandard1.0/ru/System.Threading.xml",
-        "ref/netstandard1.0/zh-hans/System.Threading.xml",
-        "ref/netstandard1.0/zh-hant/System.Threading.xml",
-        "ref/netstandard1.3/System.Threading.dll",
-        "ref/netstandard1.3/System.Threading.xml",
-        "ref/netstandard1.3/de/System.Threading.xml",
-        "ref/netstandard1.3/es/System.Threading.xml",
-        "ref/netstandard1.3/fr/System.Threading.xml",
-        "ref/netstandard1.3/it/System.Threading.xml",
-        "ref/netstandard1.3/ja/System.Threading.xml",
-        "ref/netstandard1.3/ko/System.Threading.xml",
-        "ref/netstandard1.3/ru/System.Threading.xml",
-        "ref/netstandard1.3/zh-hans/System.Threading.xml",
-        "ref/netstandard1.3/zh-hant/System.Threading.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/aot/lib/netcore50/System.Threading.dll",
-        "system.threading.4.3.0.nupkg.sha512",
-        "system.threading.nuspec"
-      ]
-    },
     "System.Threading.AccessControl/7.0.0": {
       "sha512": "J3pA1tD7H8ZKzKczlAYgMG0ZO227YsmoyyOh/YttwtomokMhNbPRwlf5h37a+xQE420nGVuvwsFoV5YBUY+TpA==",
       "type": "package",
@@ -6146,10 +5523,10 @@
         "uno.extensions.logging.webassembly.console.nuspec"
       ]
     },
-    "Uno.Foundation.Logging/4.6.19": {
-      "sha512": "3igEKkIl1zHtxkJrpz1Zdj8koVjBWakoWHgOGJ+R03npKg1bvaG5kOrA1Bhq6T1YeyY0tZRp1v8oK/CNEleJ1g==",
+    "Uno.Foundation.Logging/4.6.39": {
+      "sha512": "O0VqcyWNAjje23ATf89cbW7rUqRi9nQTbZhfxXgdy+KVDy0eZCADbRGPS9oB8YakYnG9GTJMWUbAftJKJXGspQ==",
       "type": "package",
-      "path": "uno.foundation.logging/4.6.19",
+      "path": "uno.foundation.logging/4.6.39",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6174,21 +5551,21 @@
         "lib/xamarinios10/Uno.Foundation.Logging.pdb",
         "lib/xamarinmac20/Uno.Foundation.Logging.dll",
         "lib/xamarinmac20/Uno.Foundation.Logging.pdb",
-        "uno.foundation.logging.4.6.19.nupkg.sha512",
+        "uno.foundation.logging.4.6.39.nupkg.sha512",
         "uno.foundation.logging.nuspec",
         "uno.png"
       ]
     },
-    "Uno.Foundation.Runtime.WebAssembly/4.6.19": {
-      "sha512": "sc8uq6i5Hwepe5kVJWdOLtOVM6YhTLcKBmys9DK8A1K4qh+JuQBpsJ3AHMe1RM/G6YfAHQDjzh4doWcrJkjy/g==",
+    "Uno.Foundation.Runtime.WebAssembly/4.6.39": {
+      "sha512": "RE0T28gwlwPwEwfPqm7vWHLd+R9EcdFR71yhIghwdmaxqib8Hnlp7d0BQVQx8znBO0s05gokmkz3sZgSylD8Fg==",
       "type": "package",
-      "path": "uno.foundation.runtime.webassembly/4.6.19",
+      "path": "uno.foundation.runtime.webassembly/4.6.39",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.dll",
         "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.pdb",
-        "uno.foundation.runtime.webassembly.4.6.19.nupkg.sha512",
+        "uno.foundation.runtime.webassembly.4.6.39.nupkg.sha512",
         "uno.foundation.runtime.webassembly.nuspec",
         "uno.png"
       ]
@@ -6888,10 +6265,10 @@
         "uno.toolkit.ui.nuspec"
       ]
     },
-    "Uno.UI/4.6.19": {
-      "sha512": "I4a6NRil5DWHB2FbxhPf5aUT0YHfm7ATjlnANuC1KtZh6W6LGPa2NHF8ZIv19gSbdIl5ctCBSmSomck82DykEw==",
+    "Uno.UI/4.6.39": {
+      "sha512": "3KvIDjNGbLcFC6V1nn2UBnULMiA6hZjk4q3gTA4U5G73dR8tOhrYHtKhEi2uGWQQYVDoliXcaSUuW+1mXXGspg==",
       "type": "package",
-      "path": "uno.ui/4.6.19",
+      "path": "uno.ui/4.6.39",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -6924,8 +6301,8 @@
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.dll",
         "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v0.dll",
         "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v0.pdb",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v6233eb01169e7267991cb814d9262815cb867772.dll",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v6233eb01169e7267991cb814d9262815cb867772.pdb",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v3c308bb18e18cc5a1155104f1518f213d266a840.dll",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v3c308bb18e18cc5a1155104f1518f213d266a840.pdb",
         "buildTransitive/net5.0-windows/Uno.UI.Tasks.targets",
         "buildTransitive/net5.0-windows/Uno.UI.targets",
         "buildTransitive/net5.0-windows/uno.ui.tasks.assets.targets",
@@ -7045,19 +6422,19 @@
         "lib/MonoAndroid12.0/Uno.UI.Dispatching.dll",
         "lib/MonoAndroid12.0/Uno.UI.Dispatching.pdb",
         "lib/MonoAndroid12.0/Uno.UI.FluentTheme.dll",
-        "lib/MonoAndroid12.0/Uno.UI.FluentTheme.pdb",
         "lib/MonoAndroid12.0/Uno.UI.FluentTheme.v1.dll",
-        "lib/MonoAndroid12.0/Uno.UI.FluentTheme.v1.pdb",
         "lib/MonoAndroid12.0/Uno.UI.FluentTheme.v2.dll",
-        "lib/MonoAndroid12.0/Uno.UI.FluentTheme.v2.pdb",
         "lib/MonoAndroid12.0/Uno.UI.Toolkit.dll",
         "lib/MonoAndroid12.0/Uno.UI.Toolkit.pdb",
         "lib/MonoAndroid12.0/Uno.UI.dll",
-        "lib/MonoAndroid12.0/Uno.UI.pdb",
         "lib/MonoAndroid12.0/Uno.Xaml.dll",
         "lib/MonoAndroid12.0/Uno.Xaml.pdb",
         "lib/MonoAndroid12.0/Uno.dll",
         "lib/MonoAndroid12.0/Uno.pdb",
+        "lib/MonoAndroid12.0/pdb_move_to_debug/Uno.UI.FluentTheme.pdb",
+        "lib/MonoAndroid12.0/pdb_move_to_debug/Uno.UI.FluentTheme.v1.pdb",
+        "lib/MonoAndroid12.0/pdb_move_to_debug/Uno.UI.FluentTheme.v2.pdb",
+        "lib/MonoAndroid12.0/pdb_move_to_debug/Uno.UI.pdb",
         "lib/MonoAndroid13.0/Uno.Foundation.Logging.dll",
         "lib/MonoAndroid13.0/Uno.Foundation.Logging.pdb",
         "lib/MonoAndroid13.0/Uno.Foundation.dll",
@@ -7070,19 +6447,19 @@
         "lib/MonoAndroid13.0/Uno.UI.Dispatching.dll",
         "lib/MonoAndroid13.0/Uno.UI.Dispatching.pdb",
         "lib/MonoAndroid13.0/Uno.UI.FluentTheme.dll",
-        "lib/MonoAndroid13.0/Uno.UI.FluentTheme.pdb",
         "lib/MonoAndroid13.0/Uno.UI.FluentTheme.v1.dll",
-        "lib/MonoAndroid13.0/Uno.UI.FluentTheme.v1.pdb",
         "lib/MonoAndroid13.0/Uno.UI.FluentTheme.v2.dll",
-        "lib/MonoAndroid13.0/Uno.UI.FluentTheme.v2.pdb",
         "lib/MonoAndroid13.0/Uno.UI.Toolkit.dll",
-        "lib/MonoAndroid13.0/Uno.UI.Toolkit.pdb",
         "lib/MonoAndroid13.0/Uno.UI.dll",
-        "lib/MonoAndroid13.0/Uno.UI.pdb",
         "lib/MonoAndroid13.0/Uno.Xaml.dll",
         "lib/MonoAndroid13.0/Uno.Xaml.pdb",
         "lib/MonoAndroid13.0/Uno.dll",
         "lib/MonoAndroid13.0/Uno.pdb",
+        "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.FluentTheme.pdb",
+        "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.FluentTheme.v1.pdb",
+        "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.FluentTheme.v2.pdb",
+        "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.Toolkit.pdb",
+        "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.pdb",
         "lib/MonoAndroid80/_._",
         "lib/MonoAndroid90/_._",
         "lib/UAP/Uno.UI.Toolkit.dll",
@@ -7325,19 +6702,19 @@
         "lib/xamarinios10/Uno.UI.Dispatching.dll",
         "lib/xamarinios10/Uno.UI.Dispatching.pdb",
         "lib/xamarinios10/Uno.UI.FluentTheme.dll",
-        "lib/xamarinios10/Uno.UI.FluentTheme.pdb",
         "lib/xamarinios10/Uno.UI.FluentTheme.v1.dll",
-        "lib/xamarinios10/Uno.UI.FluentTheme.v1.pdb",
         "lib/xamarinios10/Uno.UI.FluentTheme.v2.dll",
-        "lib/xamarinios10/Uno.UI.FluentTheme.v2.pdb",
         "lib/xamarinios10/Uno.UI.Toolkit.dll",
         "lib/xamarinios10/Uno.UI.Toolkit.pdb",
         "lib/xamarinios10/Uno.UI.dll",
-        "lib/xamarinios10/Uno.UI.pdb",
         "lib/xamarinios10/Uno.Xaml.dll",
         "lib/xamarinios10/Uno.Xaml.pdb",
         "lib/xamarinios10/Uno.dll",
         "lib/xamarinios10/Uno.pdb",
+        "lib/xamarinios10/pdb_move_to_debug/Uno.UI.FluentTheme.pdb",
+        "lib/xamarinios10/pdb_move_to_debug/Uno.UI.FluentTheme.v1.pdb",
+        "lib/xamarinios10/pdb_move_to_debug/Uno.UI.FluentTheme.v2.pdb",
+        "lib/xamarinios10/pdb_move_to_debug/Uno.UI.pdb",
         "lib/xamarinmac20/Uno.Foundation.Logging.dll",
         "lib/xamarinmac20/Uno.Foundation.Logging.pdb",
         "lib/xamarinmac20/Uno.Foundation.dll",
@@ -7477,14 +6854,14 @@
         "uno-runtime/netstandard2.0/webassembly/Uno.dll",
         "uno-runtime/netstandard2.0/webassembly/Uno.pdb",
         "uno.png",
-        "uno.ui.4.6.19.nupkg.sha512",
+        "uno.ui.4.6.39.nupkg.sha512",
         "uno.ui.nuspec"
       ]
     },
-    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.19": {
-      "sha512": "Ma4q03m4D0tvhgXcN7+Op5L0P7AxV75PlKtitQIdvTGNs4VFM0Gf9xHOfJu9AOkpCvIJyMyiuRMFcL69DDASuQ==",
+    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.39": {
+      "sha512": "VpfQuAUEg/SYI1iG2hIob2FbrskVit5VssnKgDeoj2ja3k6ItT5XKvziyIqszrAupuF4M/hp5tntCgvlu+XJ/w==",
       "type": "package",
-      "path": "uno.ui.adapter.microsoft.extensions.logging/4.6.19",
+      "path": "uno.ui.adapter.microsoft.extensions.logging/4.6.39",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7509,310 +6886,14 @@
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll.config",
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.pdb",
         "uno.png",
-        "uno.ui.adapter.microsoft.extensions.logging.4.6.19.nupkg.sha512",
+        "uno.ui.adapter.microsoft.extensions.logging.4.6.39.nupkg.sha512",
         "uno.ui.adapter.microsoft.extensions.logging.nuspec"
       ]
     },
-    "Uno.UI.RemoteControl/4.6.19": {
-      "sha512": "0wdOSefuwpd4YicGhR7DtBQLx/rZftnXGZLu4mVvGvAsfm6YeNaIhDlMxjNxd/CelATM/mrE/a3KrFNRhK/GgQ==",
+    "Uno.UI.Runtime.WebAssembly/4.6.39": {
+      "sha512": "+twXT06PCVYihpP0l3N2NU5cN5137jskbarAmseaDqx0SsYGwN1TWZ3aj8Y1seAydCz/g6MCy9ityU4SgebkOQ==",
       "type": "package",
-      "path": "uno.ui.remotecontrol/4.6.19",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net5.0-windows/_._",
-        "build/uap10.0.16299/_._",
-        "build/uap10.0.18362/_._",
-        "buildTransitive/Uno.UI.RemoteControl.targets",
-        "lib/MonoAndroid12.0/Uno.UI.RemoteControl.dll",
-        "lib/MonoAndroid12.0/Uno.UI.RemoteControl.pdb",
-        "lib/MonoAndroid13.0/Uno.UI.RemoteControl.dll",
-        "lib/MonoAndroid13.0/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-android/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-android/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-ios/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-ios/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-maccatalyst/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-maccatalyst/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-macos/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-macos/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-android/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-android/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-ios/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-ios/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-maccatalyst/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-maccatalyst/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-macos/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-macos/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0/Uno.UI.RemoteControl.dll",
-        "lib/net7.0/Uno.UI.RemoteControl.pdb",
-        "lib/netstandard2.0/Uno.UI.RemoteControl.dll",
-        "lib/netstandard2.0/Uno.UI.RemoteControl.pdb",
-        "lib/xamarinios10/Uno.UI.RemoteControl.dll",
-        "lib/xamarinios10/Uno.UI.RemoteControl.pdb",
-        "lib/xamarinmac20/Uno.UI.RemoteControl.dll",
-        "lib/xamarinmac20/Uno.UI.RemoteControl.pdb",
-        "tools/rc/16.0/EnvDTE.dll",
-        "tools/rc/16.0/EnvDTE100.dll",
-        "tools/rc/16.0/EnvDTE80.dll",
-        "tools/rc/16.0/EnvDTE90.dll",
-        "tools/rc/16.0/EnvDTE90a.dll",
-        "tools/rc/16.0/Microsoft.Build.Framework.dll",
-        "tools/rc/16.0/Microsoft.Build.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Composition.Configuration.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Composition.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.CoreUtility.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ImageCatalog.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Imaging.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.OLE.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ProjectSystem.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ProjectSystem.VS.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ProjectSystem.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.15.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Framework.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.10.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.11.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.12.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.15.3.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.15.6.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.8.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.9.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Text.Data.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.TextManager.Interop.8.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.TextManager.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Threading.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Utilities.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Validation.dll",
-        "tools/rc/16.0/Newtonsoft.Json.dll",
-        "tools/rc/16.0/StreamJsonRpc.dll",
-        "tools/rc/16.0/System.Collections.Immutable.dll",
-        "tools/rc/16.0/System.Composition.AttributedModel.dll",
-        "tools/rc/16.0/System.Composition.Convention.dll",
-        "tools/rc/16.0/System.Composition.Hosting.dll",
-        "tools/rc/16.0/System.Composition.Runtime.dll",
-        "tools/rc/16.0/System.Composition.TypedParts.dll",
-        "tools/rc/16.0/System.Threading.Tasks.Dataflow.dll",
-        "tools/rc/16.0/System.Threading.Thread.dll",
-        "tools/rc/16.0/System.ValueTuple.dll",
-        "tools/rc/16.0/Uno.UI.RemoteControl.VS.dll",
-        "tools/rc/16.0/Uno.UI.RemoteControl.VS.pdb",
-        "tools/rc/16.0/stdole.dll",
-        "tools/rc/17.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tools/rc/17.0/Microsoft.Build.Framework.dll",
-        "tools/rc/17.0/Microsoft.Build.Tasks.Core.dll",
-        "tools/rc/17.0/Microsoft.Build.Utilities.Core.dll",
-        "tools/rc/17.0/Microsoft.Build.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Composition.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Interop.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.ProjectSystem.Interop.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.ProjectSystem.VS.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.ProjectSystem.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Shell.Interop.12.0.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.TemplateWizardInterface.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Threading.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Validation.dll",
-        "tools/rc/17.0/Microsoft.Win32.Registry.dll",
-        "tools/rc/17.0/Newtonsoft.Json.dll",
-        "tools/rc/17.0/NuGet.VisualStudio.dll",
-        "tools/rc/17.0/System.Buffers.dll",
-        "tools/rc/17.0/System.Collections.Immutable.dll",
-        "tools/rc/17.0/System.Composition.AttributedModel.dll",
-        "tools/rc/17.0/System.Composition.Convention.dll",
-        "tools/rc/17.0/System.Composition.Hosting.dll",
-        "tools/rc/17.0/System.Composition.Runtime.dll",
-        "tools/rc/17.0/System.Composition.TypedParts.dll",
-        "tools/rc/17.0/System.Memory.dll",
-        "tools/rc/17.0/System.Numerics.Vectors.dll",
-        "tools/rc/17.0/System.Reflection.Metadata.dll",
-        "tools/rc/17.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/rc/17.0/System.Security.AccessControl.dll",
-        "tools/rc/17.0/System.Security.Principal.Windows.dll",
-        "tools/rc/17.0/System.Threading.Tasks.Dataflow.dll",
-        "tools/rc/17.0/System.Threading.Tasks.Extensions.dll",
-        "tools/rc/17.0/System.ValueTuple.dll",
-        "tools/rc/17.0/Uno.UI.RemoteControl.VS.dll",
-        "tools/rc/17.0/Uno.UI.RemoteControl.VS.pdb",
-        "tools/rc/17.0/envdte.dll",
-        "tools/rc/17.0/envdte80.dll",
-        "tools/rc/17.0/stdole.dll",
-        "tools/rc/host/net6.0/CommonServiceLocator.dll",
-        "tools/rc/host/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "tools/rc/host/net6.0/Mono.Options.dll",
-        "tools/rc/host/net6.0/Newtonsoft.Json.dll",
-        "tools/rc/host/net6.0/System.Reactive.dll",
-        "tools/rc/host/net6.0/Unity.Abstractions.dll",
-        "tools/rc/host/net6.0/Unity.Container.dll",
-        "tools/rc/host/net6.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.deps.json",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.dll",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.dll.config",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.pdb",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.runtimeconfig.json",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Server.dll.config",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/host/net7.0/CommonServiceLocator.dll",
-        "tools/rc/host/net7.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "tools/rc/host/net7.0/Mono.Options.dll",
-        "tools/rc/host/net7.0/Newtonsoft.Json.dll",
-        "tools/rc/host/net7.0/System.Reactive.dll",
-        "tools/rc/host/net7.0/Unity.Abstractions.dll",
-        "tools/rc/host/net7.0/Unity.Container.dll",
-        "tools/rc/host/net7.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.deps.json",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.dll",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.dll.config",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.pdb",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.runtimeconfig.json",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Server.dll.config",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/host/netcoreapp3.1/CommonServiceLocator.dll",
-        "tools/rc/host/netcoreapp3.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "tools/rc/host/netcoreapp3.1/Mono.Options.dll",
-        "tools/rc/host/netcoreapp3.1/Newtonsoft.Json.dll",
-        "tools/rc/host/netcoreapp3.1/System.Reactive.dll",
-        "tools/rc/host/netcoreapp3.1/System.Reactive.xml",
-        "tools/rc/host/netcoreapp3.1/Unity.Abstractions.dll",
-        "tools/rc/host/netcoreapp3.1/Unity.Container.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.deps.json",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.dll.config",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.pdb",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.runtimeconfig.dev.json",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.runtimeconfig.json",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Server.dll.config",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/processors/net6.0/CommonServiceLocator.dll",
-        "tools/rc/processors/net6.0/Humanizer.dll",
-        "tools/rc/processors/net6.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Features.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Workspaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.dll",
-        "tools/rc/processors/net6.0/Microsoft.DiaSymReader.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Logging.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Options.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Primitives.dll",
-        "tools/rc/processors/net6.0/Microsoft.Win32.SystemEvents.dll",
-        "tools/rc/processors/net6.0/Newtonsoft.Json.dll",
-        "tools/rc/processors/net6.0/System.Composition.AttributedModel.dll",
-        "tools/rc/processors/net6.0/System.Composition.Convention.dll",
-        "tools/rc/processors/net6.0/System.Composition.Hosting.dll",
-        "tools/rc/processors/net6.0/System.Composition.Runtime.dll",
-        "tools/rc/processors/net6.0/System.Composition.TypedParts.dll",
-        "tools/rc/processors/net6.0/System.Configuration.ConfigurationManager.dll",
-        "tools/rc/processors/net6.0/System.Drawing.Common.dll",
-        "tools/rc/processors/net6.0/System.IO.Pipelines.dll",
-        "tools/rc/processors/net6.0/System.Reactive.dll",
-        "tools/rc/processors/net6.0/System.Security.Cryptography.ProtectedData.dll",
-        "tools/rc/processors/net6.0/System.Security.Permissions.dll",
-        "tools/rc/processors/net6.0/System.Windows.Extensions.dll",
-        "tools/rc/processors/net6.0/Uno.Core.Extensions.Disposables.dll",
-        "tools/rc/processors/net6.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/processors/net6.0/Uno.Core.Extensions.dll",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.Processors.dll",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.Processors.pdb",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/processors/net7.0/CommonServiceLocator.dll",
-        "tools/rc/processors/net7.0/Humanizer.dll",
-        "tools/rc/processors/net7.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Features.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Workspaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.dll",
-        "tools/rc/processors/net7.0/Microsoft.DiaSymReader.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Logging.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Options.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Primitives.dll",
-        "tools/rc/processors/net7.0/Microsoft.Win32.SystemEvents.dll",
-        "tools/rc/processors/net7.0/Newtonsoft.Json.dll",
-        "tools/rc/processors/net7.0/System.Composition.AttributedModel.dll",
-        "tools/rc/processors/net7.0/System.Composition.Convention.dll",
-        "tools/rc/processors/net7.0/System.Composition.Hosting.dll",
-        "tools/rc/processors/net7.0/System.Composition.Runtime.dll",
-        "tools/rc/processors/net7.0/System.Composition.TypedParts.dll",
-        "tools/rc/processors/net7.0/System.Configuration.ConfigurationManager.dll",
-        "tools/rc/processors/net7.0/System.Drawing.Common.dll",
-        "tools/rc/processors/net7.0/System.IO.Pipelines.dll",
-        "tools/rc/processors/net7.0/System.Reactive.dll",
-        "tools/rc/processors/net7.0/System.Security.Cryptography.ProtectedData.dll",
-        "tools/rc/processors/net7.0/System.Security.Permissions.dll",
-        "tools/rc/processors/net7.0/System.Windows.Extensions.dll",
-        "tools/rc/processors/net7.0/Uno.Core.Extensions.Disposables.dll",
-        "tools/rc/processors/net7.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/processors/net7.0/Uno.Core.Extensions.dll",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.Processors.dll",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.Processors.pdb",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/processors/netcoreapp3.1/CommonServiceLocator.dll",
-        "tools/rc/processors/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tools/rc/processors/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tools/rc/processors/netcoreapp3.1/Microsoft.Extensions.Logging.dll",
-        "tools/rc/processors/netcoreapp3.1/Newtonsoft.Json.dll",
-        "tools/rc/processors/netcoreapp3.1/System.Reactive.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.Core.Extensions.Disposables.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.Core.Extensions.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.Processors.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.Processors.pdb",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.pdb",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.dll",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.pdb",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.dll",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.pdb",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.dll",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.pdb",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.dll",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.pdb",
-        "uno.png",
-        "uno.ui.remotecontrol.4.6.19.nupkg.sha512",
-        "uno.ui.remotecontrol.nuspec"
-      ]
-    },
-    "Uno.UI.Runtime.WebAssembly/4.6.19": {
-      "sha512": "BxzGb3pOS6LSQSTFmMij/uyxdcu0FVk5NPQVZjboyYZYWXSl50BeNNIuGJUTHXUfQCgMR7NchyOtCdzAXOKSUw==",
-      "type": "package",
-      "path": "uno.ui.runtime.webassembly/4.6.19",
+      "path": "uno.ui.runtime.webassembly/4.6.39",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7820,14 +6901,14 @@
         "buildTransitive/Uno.UI.Runtime.WebAssembly.targets",
         "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.dll",
         "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.pdb",
-        "uno.ui.runtime.webassembly.4.6.19.nupkg.sha512",
+        "uno.ui.runtime.webassembly.4.6.39.nupkg.sha512",
         "uno.ui.runtime.webassembly.nuspec"
       ]
     },
-    "Uno.UI.WebAssembly/4.6.19": {
-      "sha512": "8HUNnguk/sKxSzp/JliKcCB+5+GgNWxHwHYhqsH2V9ta7ni8Dj6ABSNuScEVai8cyvGjL6XByUxUysOIubGPwQ==",
+    "Uno.UI.WebAssembly/4.6.39": {
+      "sha512": "WEW7uP9dYboV2+mLqn8y65SfQ/gq/z9/dJhTJfmB9BhAnGc2NhNyhJUPOS3iiUbI30AJOK174d/boxmj8aJFFg==",
       "type": "package",
-      "path": "uno.ui.webassembly/4.6.19",
+      "path": "uno.ui.webassembly/4.6.39",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7835,7 +6916,7 @@
         "build/Uno.UI.WebAssembly.targets",
         "lib/netstandard1.0/_._",
         "uno.png",
-        "uno.ui.webassembly.4.6.19.nupkg.sha512",
+        "uno.ui.webassembly.4.6.39.nupkg.sha512",
         "uno.ui.webassembly.nuspec"
       ]
     },
@@ -8019,19 +7100,6 @@
         "uno.wasm.bootstrap.devserver.7.0.11.nupkg.sha512",
         "uno.wasm.bootstrap.devserver.nuspec"
       ]
-    },
-    "Uno.Wasm.WebSockets/1.1.0": {
-      "sha512": "U2d297Z/CxP0GZ3mYCu8kdKzO7PKw5lE7j+gwgXAZS1OlZiWS9EoiBbpUmr/0nSH6wPqClMbtGi6LLs0jslOog==",
-      "type": "package",
-      "path": "uno.wasm.websockets/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Uno.Wasm.WebSockets.dll",
-        "lib/netstandard2.0/Uno.Wasm.WebSockets.pdb",
-        "uno.wasm.websockets.1.1.0.nupkg.sha512",
-        "uno.wasm.websockets.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -8044,15 +7112,15 @@
       "System.Configuration.ConfigurationManager >= 7.0.0",
       "System.Text.Json >= 7.0.1",
       "Uno.Extensions.Logging.WebAssembly.Console >= 1.4.0",
-      "Uno.Foundation.Logging >= 4.6.19",
-      "Uno.Foundation.Runtime.WebAssembly >= 4.6.19",
+      "Uno.Foundation.Logging >= 4.6.39",
+      "Uno.Foundation.Runtime.WebAssembly >= 4.6.39",
       "Uno.Toolkit.UI >= 2.4.2",
-      "Uno.UI >= 4.6.19",
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.19",
-      "Uno.UI.RemoteControl >= 4.6.19",
-      "Uno.UI.WebAssembly >= 4.6.19",
+      "Uno.UI >= 4.6.39",
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.39",
+      "Uno.UI.WebAssembly >= 4.6.39",
       "Uno.Wasm.Bootstrap >= 7.0.11",
-      "Uno.Wasm.Bootstrap.DevServer >= 7.0.11"
+      "Uno.Wasm.Bootstrap.DevServer >= 7.0.11",
+      "libphonenumber-csharp >= 8.13.3"
     ]
   },
   "packageFolders": {
@@ -8141,11 +7209,11 @@
           },
           "Uno.Foundation.Logging": {
             "target": "Package",
-            "version": "[4.6.19, )"
+            "version": "[4.6.39, )"
           },
           "Uno.Foundation.Runtime.WebAssembly": {
             "target": "Package",
-            "version": "[4.6.19, )"
+            "version": "[4.6.39, )"
           },
           "Uno.Toolkit.UI": {
             "target": "Package",
@@ -8153,19 +7221,15 @@
           },
           "Uno.UI": {
             "target": "Package",
-            "version": "[4.6.19, )"
+            "version": "[4.6.39, )"
           },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
             "target": "Package",
-            "version": "[4.6.19, )"
-          },
-          "Uno.UI.RemoteControl": {
-            "target": "Package",
-            "version": "[4.6.19, )"
+            "version": "[4.6.39, )"
           },
           "Uno.UI.WebAssembly": {
             "target": "Package",
-            "version": "[4.6.19, )"
+            "version": "[4.6.39, )"
           },
           "Uno.Wasm.Bootstrap": {
             "target": "Package",
@@ -8174,6 +7238,10 @@
           "Uno.Wasm.Bootstrap.DevServer": {
             "target": "Package",
             "version": "[7.0.11, )"
+          },
+          "libphonenumber-csharp": {
+            "target": "Package",
+            "version": "[8.13.3, )"
           }
         },
         "imports": [

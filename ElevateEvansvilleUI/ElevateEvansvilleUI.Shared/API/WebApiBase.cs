@@ -4,7 +4,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace TheCatApiClient.Shared.WebServices
+namespace ApiClient.Shared.WebServices
 {
     public abstract class WebApiBase
     {

@@ -3255,7 +3255,6 @@ namespace ElevateEvansvilleUI.Pages
 														new global::Windows.UI.Xaml.Controls.HyperlinkButton
 														{
 															IsParsing = true,
-															NavigateUri = new System.Uri("https://chng.it/KpyRpHW2", global::System.UriKind.RelativeOrAbsolute)/* System.Uri/, https://chng.it/KpyRpHW2, HyperlinkButton/NavigateUri */,
 															FontSize = 18d/* double/, 18, HyperlinkButton/FontSize */,
 															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml (Line 634:30)
 															Content = "Sign the Petition"
@@ -3263,6 +3262,8 @@ namespace ElevateEvansvilleUI.Pages
 														}
 														.SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c_XamlApply((SupportPage_dd8ca0b4707e5601bcb61eecaf6c268cXamlApplyExtensions.XamlApplyHandler19)(c243 => 
 														{
+															var Click_HyperlinkButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															/* second level */ c243.Click += (HyperlinkButton_Click_sender,HyperlinkButton_Click_e) => (Click_HyperlinkButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.SupportPage)?.HyperlinkButton_Click(HyperlinkButton_Click_sender,HyperlinkButton_Click_e);
 															c243.CreationComplete();
 														}
 														))

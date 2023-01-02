@@ -3,13 +3,9 @@ using ElevateEvansville_API.Functions;
 using ElevateEvansville_API.Models;
 using ElevateEvansville_API.Repositories;
 using ElevateEvansville_API.Results;
-using ElevateEvansvilleUI.DTOs;
+using ElevateEvansvilleUI.API.DTOs;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.JSInterop;
-using Newtonsoft.Json;
-using System.Transactions;
 using PayPal.PayPalAPIInterfaceService.Model;
-
 
 namespace ElevateEvansville_API.Controllers
 {

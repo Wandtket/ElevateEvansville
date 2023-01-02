@@ -11,9 +11,16 @@
   <Import Project="ElevateEvansvilleUI.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
   <ItemGroup>
+    <_Globbed_Compile Remove="API\DTOs\SignaturesDTO.cs" />
+    <_Globbed_Compile Remove="API\Services\SignatureService.cs" />
+    <_Globbed_Compile Remove="Controls\Dialogs\ConfirmBox.cs" />
+    <_Globbed_Compile Remove="Controls\WebAssemblyBrowser.cs" />
+    <_Globbed_Compile Remove="Extensions\Validation.cs" />
+    <_Globbed_Compile Remove="Pages\Signature\AboutPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <_Globbed_Content Remove="Assets\Changelog.txt" />
     <_Globbed_Content Remove="Assets\Documents\Elevate Evansville Privacy Policy.pdf" />
     <_Globbed_Content Remove="Assets\Election Day Calendar.ics" />
   </ItemGroup>
-
 </Project>

@@ -1,17 +1,9 @@
 ﻿using AutoMapper;
 using ElevateEvansville_API.Functions;
-using ElevateEvansville_API.Models;
 using ElevateEvansville_API.Repositories;
 using ElevateEvansville_API.Results;
-using ElevateEvansville_API.Services;
-using ElevateEvansvilleUI.DTOs;
+using ElevateEvansvilleUI.API.DTOs;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.JSInterop;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Security.Cryptography.Xml;
-using System.Transactions;
 
 namespace ElevateEvansville_API.Controllers
 {

@@ -1,14 +1,8 @@
-﻿using ElevateEvansvilleUI.Controls.Dialogs;
-using ElevateEvansvilleUI.DTOs;
-using System;
+﻿using ElevateEvansvilleUI.API.DTOs;
 using System.Collections.Generic;
-using System.Net;
-using System.Text;
 using System.Text.Json;
-using System.Text.Json.Nodes;
 using System.Threading.Tasks;
-using TheCatApiClient.Shared.WebServices;
-using Windows.System;
+using ApiClient.Shared.WebServices;
 
 namespace ElevateEvansvilleUI.API.Services
 {
@@ -18,15 +12,8 @@ namespace ElevateEvansvilleUI.API.Services
 
         public async Task<BalanceDTO> GetBalance()
         {
-            var result = await this.GetAsync(
-                $"https://elevateevansvilleapi.azure-api.net/Total",
-                new Dictionary<string, string> {
-                {"accept", "application/json" },
-                {"Ocp-Apim-Subscription-Key", "578ae136a0de45f69a372e52014a53b5"}
-                });
-
+            var result = await this.GetAsync($"https://elevateevansvilleapi.azure-api.net/Total");
             return JsonSerializer.Deserialize<BalanceDTO>(result);
-            //return result;
         }
 
         public async Task<TransactionListDTO> GetTransactions()

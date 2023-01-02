@@ -631,7 +631,7 @@
 
                         <StackPanel>
                             <TextBlock Text="Step 2: " HorizontalAlignment="Center" FontWeight="Bold" FontSize="20" TextWrapping="NoWrap"/>
-                            <HyperlinkButton NavigateUri="https://chng.it/KpyRpHW2" FontSize="18">
+                            <HyperlinkButton Click="HyperlinkButton_Click" FontSize="18">
                                 Sign the Petition
                             </HyperlinkButton>
                         </StackPanel>

@@ -33,13 +33,12 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)uno.wasm.bootstrap\7.0.11\build\Uno.Wasm.Bootstrap.props" Condition="Exists('$(NuGetPackageRoot)uno.wasm.bootstrap\7.0.11\build\Uno.Wasm.Bootstrap.props')" />
-    <Import Project="$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.6.19\buildTransitive\Uno.UI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.6.19\buildTransitive\Uno.UI.Runtime.WebAssembly.props')" />
-    <Import Project="$(NuGetPackageRoot)uno.ui.webassembly\4.6.19\build\Uno.UI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.webassembly\4.6.19\build\Uno.UI.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.6.39\buildTransitive\Uno.UI.Runtime.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.runtime.webassembly\4.6.39\buildTransitive\Uno.UI.Runtime.WebAssembly.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.webassembly\4.6.39\build\Uno.UI.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.webassembly\4.6.39\build\Uno.UI.WebAssembly.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgUno_Wasm_Bootstrap_DevServer Condition=" '$(PkgUno_Wasm_Bootstrap_DevServer)' == '' ">C:\Users\wandt\.nuget\packages\uno.wasm.bootstrap.devserver\7.0.11</PkgUno_Wasm_Bootstrap_DevServer>
     <PkgUno_Wasm_Bootstrap Condition=" '$(PkgUno_Wasm_Bootstrap)' == '' ">C:\Users\wandt\.nuget\packages\uno.wasm.bootstrap\7.0.11</PkgUno_Wasm_Bootstrap>
-    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\wandt\.nuget\packages\uno.ui\4.6.19</PkgUno_UI>
-    <PkgUno_UI_RemoteControl Condition=" '$(PkgUno_UI_RemoteControl)' == '' ">C:\Users\wandt\.nuget\packages\uno.ui.remotecontrol\4.6.19</PkgUno_UI_RemoteControl>
+    <PkgUno_UI Condition=" '$(PkgUno_UI)' == '' ">C:\Users\wandt\.nuget\packages\uno.ui\4.6.39</PkgUno_UI>
   </PropertyGroup>
 </Project>

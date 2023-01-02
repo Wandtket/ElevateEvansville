@@ -9,6 +9,9 @@ namespace ElevateEvansville_API
 
         public DbSet<Transactions> Transactions { get; set;  }
 
+        public DbSet<Signatures> Signatures { get; set; }
+
+
         public DatabaseContext(DbContextOptions options) : base(options) { }
     }
 }

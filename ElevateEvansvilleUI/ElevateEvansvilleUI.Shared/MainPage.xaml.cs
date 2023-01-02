@@ -1,7 +1,6 @@
 ﻿using ElevateEvansvilleUI.API;
 using ElevateEvansvilleUI.API.Services;
 using ElevateEvansvilleUI.Controls.Dialogs;
-using ElevateEvansvilleUI.DTOs;
 using ElevateEvansvilleUI.Extensions;
 using ElevateEvansvilleUI.Pages;
 using Microsoft.VisualBasic;

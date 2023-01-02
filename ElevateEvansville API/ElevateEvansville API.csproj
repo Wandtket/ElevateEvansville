@@ -9,9 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\AccountsDTO.cs" Link="DTOs\AccountsDTO.cs" />
     <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\BalanceDTO.cs" Link="DTOs\BalanceDTO.cs" />
-    <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\RequestsDTO.cs" Link="DTOs\RequestsDTO.cs" />
+    <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\SignaturesDTO.cs" Link="DTOs\SignaturesDTO.cs" />
     <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\TransactionsDTO.cs" Link="DTOs\TransactionsDTO.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="{215d64d2-031c-33c7-96e3-61794cd1ee61}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>215d64d2-031c-33c7-96e3-61794cd1ee61</Guid>
+    </COMReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -30,10 +40,6 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     <PackageReference Include="System.Text.Json" Version="7.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="DTOs\" />
   </ItemGroup>
 
 </Project>

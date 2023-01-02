@@ -1,0 +1,155 @@
+﻿<Page
+    x:Class="ElevateEvansvilleUI.Pages.SignatureRequestPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ElevateEvansvilleUI.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:toolkit="using:Uno.UI.Toolkit"
+    mc:Ignorable="d"
+    d:DesignWidth="1500"
+    d:DesignHeight="4000"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </Page.Resources>
+
+    <ScrollViewer Margin="0,50,0,60">
+        <Grid RowSpacing="15" Padding="15" MaxWidth="900">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Request a volunteer to collect your signature: " 
+                   Grid.Row="0" FontSize="18" FontWeight="Bold"/>
+
+            <controls:WrapPanel Orientation="Horizontal" Grid.Row="1">
+                <CheckBox Name="RegisteredValidation" Margin="0,0,-85,0" IsChecked="True" />
+                <TextBlock Margin="0,5,0,0">
+                    I am registered to vote in Vanderburgh County Evansville IN, and I currently live within the city limits.
+                </TextBlock>
+                
+                <HyperlinkButton Content="Check Status" NavigateUri="https://indianavoters.in.gov/"/>
+            </controls:WrapPanel>
+            
+            
+            <StackPanel Name="RequestForm" 
+                        Visibility="{Binding ElementName=RegisteredValidation, Path=IsChecked}" 
+                        HorizontalAlignment="Center" Spacing="10" Grid.Row="2">
+                
+                <TextBox Name="LastName" Header="Last Name" Width="200" 
+                         TextChanged="TextBox_TextChanged"/>
+
+                <TextBox Name="FirstName" Header="First Name" Width="200" 
+                         TextChanged="TextBox_TextChanged"/>
+
+                <controls:WrapPanel Orientation="Horizontal" >
+                    <TextBox Name="Address" Header="Address" MaxLength="45" Width="240" Margin="0,0,10,10"
+                             TextChanged="TextBox_TextChanged"/>
+                    <TextBox Name="Zip" Header="Zip Code" MaxLength="9" Width="150" Margin="0,0,0,10"
+                             TextChanged="TextBox_TextChanged"/>
+                </controls:WrapPanel>
+
+                <controls:WrapPanel Orientation="Horizontal" >
+
+                    <TextBox Name="Email" Header="Email" MaxLength="45" Width="240" Margin="0,0,10,10"
+                             TextChanged="TextBox_TextChanged"/>
+                    <TextBox Name="Phone" Header="Phone (Mobile)" MaxLength="15" Width="150" Margin="0,0,0,10"
+                             TextChanged="TextBox_TextChanged"/>
+                </controls:WrapPanel>
+
+                <controls:WrapPanel Orientation="Horizontal">
+                    <ComboBox Name="TimeStartHour" Header="Time Start:" PlaceholderText="Hour" Width="90"/>
+                    <ComboBox Name="TimeStartMinute" Header=" " PlaceholderText="Min" Width="85"/>
+                    <ComboBox Name="TimeStartAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,15,0"/>
+
+                    <ComboBox Name="TimeEndHour" Header="Time End:" PlaceholderText="Hour" Width="90"/>
+                    <ComboBox Name="TimeEndMinute" Header=" " PlaceholderText="Min" Width="85"/>
+                    <ComboBox Name="TimeEndAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,10,25"/>
+
+                    <CheckBox Name="CheckboxAnytime" Content="Any Time" Click="CheckboxAnyTime_Click"/>
+
+                </controls:WrapPanel>
+
+
+                <TextBlock>
+                    Preferred Days:
+                </TextBlock>
+
+                <controls:WrapPanel Orientation="Horizontal">
+                    <CheckBox Name="CheckboxMonday" Content="Monday" Click="Checkbox_Click"/>
+                    <CheckBox Name="CheckboxTuesday" Content="Tuesday"/>
+                    <CheckBox Name="CheckboxWednesday" Content="Wednesday"/>
+                    <CheckBox Name="CheckboxThursday" Content="Thursday"/>
+                    <CheckBox Name="CheckboxFriday" Content="Friday"/>
+                    <CheckBox Name="CheckboxSaturday" Content="Saturday"/>
+                    <CheckBox Name="CheckboxSunday" Content="Sunday"/>
+                </controls:WrapPanel>
+
+
+                <CheckBox Name="CheckboxMask" Content="Mask Requested"/>
+
+                <StackPanel Orientation="Horizontal" Spacing="5">
+                    <Button Name="SubmitButton" Content="Submit" Click="SubmitButton_Click"/>
+                    <Button Name="CancelButton" Content="Cancel Existing Request" Click="SubmitButton_Click"/>
+                </StackPanel>
+                
+                <Frame x:Name="ValidationFrame" />
+
+
+            </StackPanel>
+
+
+
+            <TextBlock Grid.Row="3">
+                In order to attain enough signatures to gain access to the ballot and to achieve as much convenience as possible I'll be providing
+                a platform for myself and volunteers to collect signatures. I believe the days of going door to door and phone banking may be behind
+                us as scammers have made it almost a fruitless endeavor.
+            </TextBlock>
+
+            <TextBlock Grid.Row="4" FontWeight="Bold">
+                Your address and personal information will only be utilized by this campaign to collect signatures, it
+                will not be sold to third parties.
+            </TextBlock>
+
+            <TextBlock Grid.Row="5">
+                According to Indiana State Law:
+            </TextBlock>
+
+            <TextBlock Grid.Row="6" FontStyle="Italic">
+                The CAN-44 (Petition of Nomination for City or Town Office in 2023) must be filed with the county voter registration official 
+                no later than the deadline set forth in state law. (IC 3-8-6-10) The county voter registration official must review and certify
+                the signatures as set forth in IC 3-5-6. <Bold>Petition signatures must be “wet.”</Bold> In other words, photocopies of signatures, 
+                electronic signatures, digital signatures, or digitized signatures will not be accepted. (IC 3-5-4-1.7(b)) Candidates may pick 
+                up the certified petitions from the county voter registration office, but the candidate should make arrangements with the 
+                office to do so.
+            </TextBlock>
+
+            <TextBlock Grid.Row="7" FontStyle="Italic">
+                Gaining access to the ballot as an independent or minor party candidate for local office has two distinct steps. The first is 
+                to gather signatures of registered voters within the election district totaling at least 2% of the total votes cast for all 
+                candidates in the 2022 Secretary of State’s election within the precincts making up the election district. If this applies to the 
+                office you are seeking, please contact your county election board for assistance with computing this number.
+            </TextBlock>
+
+        </Grid>
+    </ScrollViewer>
+
+</Page>

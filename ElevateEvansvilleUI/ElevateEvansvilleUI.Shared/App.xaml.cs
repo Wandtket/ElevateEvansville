@@ -111,7 +111,7 @@ namespace ElevateEvansvilleUI
 #if __WASM__
                     rootFrame.Navigate(typeof(MainPage), args.Arguments);
 #elif WINDOWS_UWP
-                    rootFrame.Navigate(typeof(SupportPage), args.Arguments);
+                    rootFrame.Navigate(typeof(SignatureRequestPage), args.Arguments);
 #endif
 
 

@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ElevateEvansvilleUI.DTOs
+namespace ElevateEvansvilleUI.API.DTOs
 {
     public class TransactionsDTO
     {

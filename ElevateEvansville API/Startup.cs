@@ -66,6 +66,7 @@ namespace ElevateEvansville_API
 
             services.AddTransient<IBalanceRepository, BalanceRepository>();
             services.AddTransient<ITransactionRepository, TransactionsRepository>();
+            services.AddTransient<ISignaturesRepository, SignaturesRepository>();
 
 
             //Fetch Paypal API configuration
