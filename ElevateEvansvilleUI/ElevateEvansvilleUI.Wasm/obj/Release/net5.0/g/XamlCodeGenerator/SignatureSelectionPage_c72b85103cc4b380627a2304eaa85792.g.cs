@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_5 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_1 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -388,7 +388,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
 									Spacing = 5d/* double/, 5, StackPanel/Spacing */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 94:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 93:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Button
@@ -397,7 +397,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											Name = "VolunteerButton",
 											Content = @"Volunteer"/* object/, Volunteer, Button/Content */,
 											IsEnabled = false/* bool/, False, Button/IsEnabled */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 96:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 95:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler5)(c25 => 
 										{
@@ -415,7 +415,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											Name = "DownloadButton",
 											Content = @"Download Tools"/* object/, Download Tools, Button/Content */,
 											IsEnabled = false/* bool/, False, Button/IsEnabled */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 101:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 100:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler5)(c26 => 
 										{

@@ -29,6 +29,7 @@
 		<Content Include="Assets\AppIcon-256.png" />
 		<Content Include="Assets\AppIcon-32.png" />
 		<Content Include="Assets\AppIcon-512.png" />
+		<Content Include="Assets\SegMDL2.ttf" />
 		<Content Include="Assets\SplashScreen.png" />
 		<Content Include="index.html">
 		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -47,6 +48,7 @@
 	  <None Remove="Assets\AppIcon-256.png" />
 	  <None Remove="Assets\AppIcon-32.png" />
 	  <None Remove="Assets\AppIcon-512.png" />
+	  <None Remove="Assets\SegMDL2.ttf" />
 	  <None Remove="index.html" />
 	  <None Remove="WasmScripts\Extensions.js" />
 	  <None Remove="WasmScripts\Notifications.js" />
@@ -100,6 +102,7 @@
 	  <_Globbed_Content Remove="Assets\AppIcon-32.png" />
 	  <_Globbed_Content Remove="Assets\AppIcon-512.png" />
 	  <_Globbed_Content Remove="Assets\AppIcon.png" />
+	  <_Globbed_Content Remove="Assets\SegMDL2.ttf" />
 	  <_Globbed_Content Remove="Assets\web.config" />
 	</ItemGroup>
 </Project>
