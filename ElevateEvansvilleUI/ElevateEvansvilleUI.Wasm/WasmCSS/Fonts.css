@@ -25,8 +25,3 @@ body::before {
   font-family: 'Segoe UI';
   src: local('system-ui'), local('Segoe UI'), local('-apple-system'), local('BlinkMacSystemFont'), local('Inter'), local('Cantarell'), local('Ubuntu'), local('Roboto'), local('Open Sans'), local('Noto Sans'), local('Helvetica Neue'), local('sans-serif');
 }
-
-@font-face {
-    font-family: "SegMDL2"; /* XAML: <FontFamily>CssRoboto</FontFamily> */
-    src: url(/Assets/SegMDL2.ttf) format('ttf');
-}

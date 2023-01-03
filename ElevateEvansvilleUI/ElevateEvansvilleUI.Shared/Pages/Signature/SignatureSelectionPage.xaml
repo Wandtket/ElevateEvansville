@@ -40,7 +40,11 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE929;" FontSize="50" />
+                    <Viewbox Height="45">
+                        <SymbolIcon Symbol="Edit"/>
+                    </Viewbox>
+                    
+                    <!--<FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE929;" FontSize="50" />-->
                     <TextBlock Text="Sign Petition" FontSize="30" VerticalAlignment="Center" Margin="10,0,0,0"/>
                 </StackPanel>
                                 
@@ -77,7 +81,9 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE125;" FontSize="50" />
+                    <Viewbox Height="45">
+                        <SymbolIcon Symbol="People"/>
+                    </Viewbox>
                     <TextBlock Text="Volunteer" FontSize="30" VerticalAlignment="Center" Margin="10,0,0,0"/>
                 </StackPanel>
 

@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_1 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_7 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -128,17 +128,28 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 42:18)
 									Children = 
 									{
-										new global::Windows.UI.Xaml.Controls.FontIcon
+										new global::Windows.UI.Xaml.Controls.Viewbox
 										{
 											IsParsing = true,
-											FontFamily = new Windows.UI.Xaml.Media.FontFamily("Segoe MDL2 Assets")/* Windows.UI.Xaml.Media.FontFamily/, Segoe MDL2 Assets, FontIcon/FontFamily */,
-											Glyph = ""/* string/, , FontIcon/Glyph */,
-											FontSize = 50d/* double/, 50, FontIcon/FontSize */,
+											Height = 45d/* double/, 45, Viewbox/Height */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 43:22)
+											Child = 
+											new global::Windows.UI.Xaml.Controls.SymbolIcon
+											{
+												IsParsing = true,
+												Symbol = global::Windows.UI.Xaml.Controls.Symbol.Edit/* Windows.UI.Xaml.Controls.Symbol/, Edit, SymbolIcon/Symbol */,
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 44:26)
+											}
+											.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler1)(c4 => 
+											{
+												c4.CreationComplete();
+											}
+											))
+											,
 										}
-										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler1)(c4 => 
+										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c5 => 
 										{
-											c4.CreationComplete();
+											c5.CreationComplete();
 										}
 										))
 										,
@@ -149,19 +160,19 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											FontSize = 30d/* double/, 30, TextBlock/FontSize */,
 											VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 											Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, TextBlock/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 44:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 48:22)
 										}
-										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c5 => 
+										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c6 => 
 										{
-											c5.CreationComplete();
+											c6.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c6 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler4)(c7 => 
 								{
-									c6.CreationComplete();
+									c7.CreationComplete();
 								}
 								))
 								,
@@ -169,21 +180,21 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,0,10,0)/* Windows.UI.Xaml.Thickness/, 10,0,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 47:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 51:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "According to Indiana state law, petitions for candidacy must contain wet signatures."/* string/, According to Indiana state law, petitions for candidacy must contain wet signatures., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 49:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 53:19)
 										}
 										,
 									}
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c8 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c9 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c8, 1/* int/, 1, Grid/Row */);
-									c8.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c9, 1/* int/, 1, Grid/Row */);
+									c9.CreationComplete();
 								}
 								))
 								,
@@ -191,21 +202,21 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,10,10,0)/* Windows.UI.Xaml.Thickness/, 10,10,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 51:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 55:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Request a volunteer to visit you to collect your wet signature."/* string/, Request a volunteer to visit you to collect your wet signature., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 53:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 57:19)
 										}
 										,
 									}
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c10 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c11 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c10, 2/* int/, 2, Grid/Row */);
-									c10.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c11, 2/* int/, 2, Grid/Row */);
+									c11.CreationComplete();
 								}
 								))
 								,
@@ -216,35 +227,35 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									Content = @"Request to Sign"/* object/, Request to Sign, Button/Content */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
 									Margin = new global::Windows.UI.Xaml.Thickness(5)/* Windows.UI.Xaml.Thickness/, 5, Button/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 55:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 59:18)
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler5)(c11 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c12 => 
 								{
-									nameScope.RegisterName("SignRequestButton", c11);
-									this.SignRequestButton = c11;
+									nameScope.RegisterName("SignRequestButton", c12);
+									this.SignRequestButton = c12;
 									var Click_SignRequestButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-									/* second level */ c11.Click += (SignRequestButton_Click_sender,SignRequestButton_Click_e) => (Click_SignRequestButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage)?.SignRequestButton_Click(SignRequestButton_Click_sender,SignRequestButton_Click_e);
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c11, 3/* int/, 3, Grid/Row */);
-									c11.CreationComplete();
+									/* second level */ c12.Click += (SignRequestButton_Click_sender,SignRequestButton_Click_e) => (Click_SignRequestButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage)?.SignRequestButton_Click(SignRequestButton_Click_sender,SignRequestButton_Click_e);
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 3/* int/, 3, Grid/Row */);
+									c12.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c12 => 
+						.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler7)(c13 => 
 						{
-							c12.CreationComplete();
+							c13.CreationComplete();
 						}
 						))
 						,
 					}
-					.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler7)(c13 => 
+					.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler8)(c14 => 
 					{
-						global::Windows.UI.Xaml.Controls.Grid.SetRow(c13, 0/* int/, 0, Grid/Row */);
-						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c13, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+						global::Windows.UI.Xaml.Controls.Grid.SetRow(c14, 0/* int/, 0, Grid/Row */);
+						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c14, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 						/* _isTopLevelDictionary:False */
-						this._component_0 = c13;
-						c13.CreationComplete();
+						this._component_0 = c14;
+						c14.CreationComplete();
 					}
 					))
 					,
@@ -254,7 +265,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 						Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 						ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
 						Margin = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, ElevatedView/Margin */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 64:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 68:10)
 						ElevatedContent = 
 						new global::Windows.UI.Xaml.Controls.Grid
 						{
@@ -267,30 +278,30 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 73:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 77:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 74:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 78:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 75:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 79:22)
 								}
 								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 76:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 80:22)
 								}
 								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 71:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 75:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.StackPanel
@@ -298,20 +309,31 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 79:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 83:18)
 									Children = 
 									{
-										new global::Windows.UI.Xaml.Controls.FontIcon
+										new global::Windows.UI.Xaml.Controls.Viewbox
 										{
 											IsParsing = true,
-											FontFamily = new Windows.UI.Xaml.Media.FontFamily("Segoe MDL2 Assets")/* Windows.UI.Xaml.Media.FontFamily/, Segoe MDL2 Assets, FontIcon/FontFamily */,
-											Glyph = ""/* string/, , FontIcon/Glyph */,
-											FontSize = 50d/* double/, 50, FontIcon/FontSize */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 80:22)
+											Height = 45d/* double/, 45, Viewbox/Height */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 84:22)
+											Child = 
+											new global::Windows.UI.Xaml.Controls.SymbolIcon
+											{
+												IsParsing = true,
+												Symbol = global::Windows.UI.Xaml.Controls.Symbol.People/* Windows.UI.Xaml.Controls.Symbol/, People, SymbolIcon/Symbol */,
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 85:26)
+											}
+											.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler1)(c19 => 
+											{
+												c19.CreationComplete();
+											}
+											))
+											,
 										}
-										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler1)(c18 => 
+										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c20 => 
 										{
-											c18.CreationComplete();
+											c20.CreationComplete();
 										}
 										))
 										,
@@ -322,40 +344,18 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											FontSize = 30d/* double/, 30, TextBlock/FontSize */,
 											VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 											Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, TextBlock/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 81:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 87:22)
 										}
-										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c19 => 
+										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c21 => 
 										{
-											c19.CreationComplete();
+											c21.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c20 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler4)(c22 => 
 								{
-									c20.CreationComplete();
-								}
-								))
-								,
-								new global::Windows.UI.Xaml.Controls.TextBlock
-								{
-									IsParsing = true,
-									Margin = new global::Windows.UI.Xaml.Thickness(10,0,10,0)/* Windows.UI.Xaml.Thickness/, 10,0,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 85:18)
-									Inlines = 
-									{
-										new global::Windows.UI.Xaml.Documents.Run
-										{
-											Text = "Want to volunteer to collect signautures in your workplace or neighborhood?"/* string/, Want to volunteer to collect signautures in your workplace or neighborhood?, Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 87:19)
-										}
-										,
-									}
-								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c22 => 
-								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c22, 1/* int/, 1, Grid/Row */);
 									c22.CreationComplete();
 								}
 								))
@@ -363,22 +363,44 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
+									Margin = new global::Windows.UI.Xaml.Thickness(10,0,10,0)/* Windows.UI.Xaml.Thickness/, 10,0,10,0, TextBlock/Margin */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 91:18)
+									Inlines = 
+									{
+										new global::Windows.UI.Xaml.Documents.Run
+										{
+											Text = "Want to volunteer to collect signautures in your workplace or neighborhood?"/* string/, Want to volunteer to collect signautures in your workplace or neighborhood?, Run/Text */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 93:19)
+										}
+										,
+									}
+								}
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c24 => 
+								{
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 1/* int/, 1, Grid/Row */);
+									c24.CreationComplete();
+								}
+								))
+								,
+								new global::Windows.UI.Xaml.Controls.TextBlock
+								{
+									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,10,10,0)/* Windows.UI.Xaml.Thickness/, 10,10,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 89:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 95:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Sign up to be a signature collector, you'll be given all the tools you need."/* string/, Sign up to be a signature collector, you'll be given all the tools you need., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 91:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 97:19)
 										}
 										,
 									}
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler2)(c24 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c26 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 2/* int/, 2, Grid/Row */);
-									c24.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c26, 2/* int/, 2, Grid/Row */);
+									c26.CreationComplete();
 								}
 								))
 								,
@@ -388,7 +410,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
 									Spacing = 5d/* double/, 5, StackPanel/Spacing */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 93:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 99:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Button
@@ -397,15 +419,15 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											Name = "VolunteerButton",
 											Content = @"Volunteer"/* object/, Volunteer, Button/Content */,
 											IsEnabled = false/* bool/, False, Button/IsEnabled */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 95:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 101:22)
 										}
-										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler5)(c25 => 
+										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c27 => 
 										{
-											nameScope.RegisterName("VolunteerButton", c25);
-											this.VolunteerButton = c25;
+											nameScope.RegisterName("VolunteerButton", c27);
+											this.VolunteerButton = c27;
 											var Click_VolunteerButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-											/* second level */ c25.Click += (VolunteerButton_Click_sender,VolunteerButton_Click_e) => (Click_VolunteerButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage)?.VolunteerButton_Click(VolunteerButton_Click_sender,VolunteerButton_Click_e);
-											c25.CreationComplete();
+											/* second level */ c27.Click += (VolunteerButton_Click_sender,VolunteerButton_Click_e) => (Click_VolunteerButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage)?.VolunteerButton_Click(VolunteerButton_Click_sender,VolunteerButton_Click_e);
+											c27.CreationComplete();
 										}
 										))
 										,
@@ -415,70 +437,70 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											Name = "DownloadButton",
 											Content = @"Download Tools"/* object/, Download Tools, Button/Content */,
 											IsEnabled = false/* bool/, False, Button/IsEnabled */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 100:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 106:22)
 										}
-										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler5)(c26 => 
+										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c28 => 
 										{
-											nameScope.RegisterName("DownloadButton", c26);
-											this.DownloadButton = c26;
+											nameScope.RegisterName("DownloadButton", c28);
+											this.DownloadButton = c28;
 											var Click_DownloadButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-											/* second level */ c26.Click += (DownloadButton_Click_sender,DownloadButton_Click_e) => (Click_DownloadButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage)?.DownloadButton_Click(DownloadButton_Click_sender,DownloadButton_Click_e);
-											c26.CreationComplete();
+											/* second level */ c28.Click += (DownloadButton_Click_sender,DownloadButton_Click_e) => (Click_DownloadButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage)?.DownloadButton_Click(DownloadButton_Click_sender,DownloadButton_Click_e);
+											c28.CreationComplete();
 										}
 										))
 										,
 									}
 								}
-								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c27 => 
+								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler4)(c29 => 
 								{
-									global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 3/* int/, 3, Grid/Row */);
-									c27.CreationComplete();
+									global::Windows.UI.Xaml.Controls.Grid.SetRow(c29, 3/* int/, 3, Grid/Row */);
+									c29.CreationComplete();
 								}
 								))
 								,
 							}
 						}
-						.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c28 => 
+						.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler7)(c30 => 
 						{
-							c28.CreationComplete();
+							c30.CreationComplete();
 						}
 						))
 						,
 					}
-					.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler7)(c29 => 
+					.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler8)(c31 => 
 					{
-						global::Windows.UI.Xaml.Controls.Grid.SetRow(c29, 0/* int/, 0, Grid/Row */);
-						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c29, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+						global::Windows.UI.Xaml.Controls.Grid.SetRow(c31, 0/* int/, 0, Grid/Row */);
+						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c31, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 						/* _isTopLevelDictionary:False */
-						this._component_1 = c29;
-						c29.CreationComplete();
+						this._component_1 = c31;
+						c31.CreationComplete();
 					}
 					))
 					,
 				}
 			}
-			.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler8)(c30 => 
+			.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler9)(c32 => 
 			{
-				c30.CreationComplete();
+				c32.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c31 => 
+			.GenericApply((c33 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 1:2)
 				
-				// WARNING Property c31.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c33.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c32 => 
+			.GenericApply((c34 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c32, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c34, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_2 = c32;
-				c32.CreationComplete();
+				this._component_2 = c34;
+				c34.CreationComplete();
 			}
 			))
 			;
@@ -619,58 +641,65 @@ namespace ElevateEvansvilleUI.Wasm
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.FontIcon instance);
+		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.SymbolIcon instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.FontIcon SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.FontIcon instance, XamlApplyHandler1 handler)
+		public static global::Windows.UI.Xaml.Controls.SymbolIcon SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.SymbolIcon instance, XamlApplyHandler1 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.TextBlock instance);
+		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.Viewbox instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.TextBlock SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler2 handler)
+		public static global::Windows.UI.Xaml.Controls.Viewbox SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.Viewbox instance, XamlApplyHandler2 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.StackPanel instance);
+		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.TextBlock instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.StackPanel SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler3 handler)
+		public static global::Windows.UI.Xaml.Controls.TextBlock SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler3 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Documents.Run instance);
+		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Controls.StackPanel instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Documents.Run SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Documents.Run instance, XamlApplyHandler4 handler)
+		public static global::Windows.UI.Xaml.Controls.StackPanel SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler4 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.Button instance);
+		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Documents.Run instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Button SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.Button instance, XamlApplyHandler5 handler)
+		public static global::Windows.UI.Xaml.Documents.Run SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Documents.Run instance, XamlApplyHandler5 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.Grid instance);
+		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.Button instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Grid SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler6 handler)
+		public static global::Windows.UI.Xaml.Controls.Button SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.Button instance, XamlApplyHandler6 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler7(global::Uno.UI.Toolkit.ElevatedView instance);
+		public delegate void XamlApplyHandler7(global::Windows.UI.Xaml.Controls.Grid instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Uno.UI.Toolkit.ElevatedView SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Uno.UI.Toolkit.ElevatedView instance, XamlApplyHandler7 handler)
+		public static global::Windows.UI.Xaml.Controls.Grid SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler7 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler8(global::Windows.UI.Xaml.Controls.WrapPanel instance);
+		public delegate void XamlApplyHandler8(global::Uno.UI.Toolkit.ElevatedView instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.WrapPanel SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.WrapPanel instance, XamlApplyHandler8 handler)
+		public static global::Uno.UI.Toolkit.ElevatedView SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Uno.UI.Toolkit.ElevatedView instance, XamlApplyHandler8 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler9(global::Windows.UI.Xaml.Controls.WrapPanel instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.WrapPanel SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply(this global::Windows.UI.Xaml.Controls.WrapPanel instance, XamlApplyHandler9 handler)
 		{
 			handler(instance);
 			return instance;
