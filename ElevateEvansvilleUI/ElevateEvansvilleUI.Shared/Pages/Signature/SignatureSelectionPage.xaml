@@ -22,8 +22,7 @@
 
     <controls:WrapPanel 
         HorizontalAlignment="Center" 
-        VerticalAlignment="Center"
-        Margin="0,110,0,0">
+        VerticalAlignment="Center">
 
         <toolkit:ElevatedView
                 Grid.Row="0"
