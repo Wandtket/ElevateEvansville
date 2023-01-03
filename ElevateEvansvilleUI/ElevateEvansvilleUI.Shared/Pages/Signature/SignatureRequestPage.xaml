@@ -42,7 +42,7 @@
 
             <controls:WrapPanel Orientation="Horizontal" Grid.Row="1">
 
-                <CheckBox Name="RegisteredValidation" Margin="0,0,0,0" IsChecked="True">
+                <CheckBox Name="RegisteredValidation" Margin="0,0,0,0" IsChecked="False">
                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,0">
                         I am registered to vote in Vanderburgh County Evansville IN, and I currently live within the city limits.
                     </TextBlock>

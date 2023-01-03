@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_33 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_61 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +68,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBox)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_38 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_64 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBox))
 				{
 					Setters = 
@@ -180,7 +180,7 @@ namespace ElevateEvansvilleUI.Pages
 									IsParsing = true,
 									Name = "RegisteredValidation"/* string/, RegisteredValidation, CheckBox/Name */,
 									Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,0)/* Windows.UI.Xaml.Thickness/, 0,0,0,0, CheckBox/Margin */,
-									IsChecked = true/* bool/, True, CheckBox/IsChecked */,
+									IsChecked = false/* bool/, False, CheckBox/IsChecked */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 45:18)
 									Content = 
 									new global::Windows.UI.Xaml.Controls.TextBlock
