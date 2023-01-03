@@ -1,34 +1,71 @@
-﻿using System;
+﻿using ElevateEvansvilleUI.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Input;
 
 namespace ElevateEvansvilleUI.Controls.Dialogs
 {
     internal class InputBox
     {
-        public static async Task Show(string Title = "", string PrimaryButtonText = "Ok", string SecondaryButtonText = "Ok")
+        public static async Task<string> Show(string Title, string Description = "", string PlaceHolder = "", string DefaultValue = "", int MaxLength = -1)
         {
-            //If more than one contentdialog is called it will throw an error.
             try
             {
-                //Prepare Dialog
                 var dialog = new ContentDialog();
+                dialog.XamlRoot = UI.MainRoot;
                 dialog.Title = Title;
-                dialog.PrimaryButtonText = PrimaryButtonText;
-                dialog.DefaultButton = ContentDialogButton.Primary;
 
-                dialog.SecondaryButtonText = SecondaryButtonText;
+                Button btn = new Button();
+                TextBox Box = new TextBox();
 
-                //Prepare Content
-                TextBox box = new TextBox();
-                dialog.Content = box;
+                Box.Header = Description;
+                Box.Text = DefaultValue;
+                if (MaxLength > 0)
+                {
+                    Box.MaxLength = MaxLength;
+                }
+                Box.PlaceholderText = PlaceHolder;
 
-                //Show
+                if (!string.IsNullOrEmpty(DefaultValue))
+                {
+                    Box.SelectAll();
+                }
+
+                dialog.Content = Box;
+
+                Box.KeyUp += delegate (object sender, KeyRoutedEventArgs e)
+                {
+                    if (e.Key == Windows.System.VirtualKey.Enter)
+                    {
+                        btn.Content = "Result: OK";
+                        dialog.Hide();
+                    }
+                };
+
+                //Add Buttons
+                dialog.PrimaryButtonText = "Submit";
+                dialog.SecondaryButtonText = "Cancel";
+
+                dialog.IsPrimaryButtonEnabled = true;
+                dialog.IsSecondaryButtonEnabled = true;
+                dialog.PrimaryButtonClick += delegate
+                {
+                    btn.Content = "Result: OK";
+                };
+                dialog.SecondaryButtonClick += delegate
+                {
+                    Box.Text = "";
+                    btn.Content = "Result: Cancel";
+                };
+
                 await dialog.ShowAsync();
+
+                return Box.Text;
             }
-            catch { }
+            catch { return ""; }
         }
     }
 }

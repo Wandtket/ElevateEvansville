@@ -21,6 +21,8 @@ namespace ElevateEvansville_API.Models
 
         public DateTime? PreferredTimeEnd { get; set; }
 
+        public bool? Anytime { get; set; }
+
         public bool? PrefersMonday { get; set; }
 
         public bool? PrefersTuesday { get; set; }

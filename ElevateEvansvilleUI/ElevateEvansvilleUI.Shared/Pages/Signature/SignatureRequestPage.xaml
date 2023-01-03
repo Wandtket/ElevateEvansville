@@ -86,7 +86,7 @@
                     <ComboBox Name="TimeEndMinute" Header=" " PlaceholderText="Min" Width="85"/>
                     <ComboBox Name="TimeEndAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,10,25"/>
 
-                    <CheckBox Name="CheckboxAnytime" Content="Any Time" Click="CheckboxAnyTime_Click"/>
+                    <CheckBox Name="CheckboxAnytime" Content="Any Time (8AM - 8PM)" Click="CheckboxAnyTime_Click"/>
 
                 </controls:WrapPanel>
 
@@ -110,7 +110,7 @@
 
                 <StackPanel Orientation="Horizontal" Spacing="5">
                     <Button Name="SubmitButton" Content="Submit" Click="SubmitButton_Click"/>
-                    <Button Name="CancelButton" Content="Cancel Existing Request" Click="SubmitButton_Click"/>
+                    <Button Name="CancelButton" Content="Cancel Existing Request" Click="CancelButton_Click"/>
                 </StackPanel>
                 
                 <Frame x:Name="ValidationFrame" />

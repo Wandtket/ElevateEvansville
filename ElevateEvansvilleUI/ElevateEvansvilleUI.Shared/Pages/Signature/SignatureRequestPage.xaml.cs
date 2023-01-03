@@ -106,6 +106,7 @@ namespace ElevateEvansvilleUI.Pages
 
                     dto.PreferredTimeStart = DateTime.Now;
                     dto.PreferredTimeEnd = DateTime.Now;
+                    dto.Anytime = (bool)CheckboxAnytime.IsChecked;
 
                     dto.PrefersMonday = (bool)CheckboxMonday.IsChecked;
                     dto.PrefersTuesday = (bool)CheckboxTuesday.IsChecked;
@@ -122,16 +123,36 @@ namespace ElevateEvansvilleUI.Pages
                     dto.SignatureCollectedDateTime = DateTime.Now;
                     dto.SignatureCollectedUserId = 0;
 
-                    await MessageBox.Show(JsonSerializer.Serialize<SignaturesDTO>(dto));
-
                     var message = await service.SubmitRequest(dto);
-
-                    await MessageBox.Show(message);
+                    await MessageBox.Show(message, "Request Submission: ");
+                }
+            }
+            else
+            {
+                if (ValidationMessages.Count > 0)
+                {
+                    string ValidationString = "";
+                    foreach (string str in ValidationMessages)
+                    {
+                        ValidationString += str + Environment.NewLine;
+                    }
+                    await MessageBox.Show(ValidationString, "Information Invalid: ");
                 }
             }
         }
 
+        private async void CancelButton_Click(object sender, RoutedEventArgs e)
+        {
+            var Email = await InputBox.Show("Cancel Request?", "To cancel, input the email you used.");
+            if (Email != null)
+            {
+                var Response = await service.RemoveRequest(Email);
+                await MessageBox.Show(Response);
+            }
+        }
 
+
+        private List<string> ValidationMessages = new List<string>();
         private bool ValidateForm()
         {
             bool Validated = true;           
@@ -152,13 +173,22 @@ namespace ElevateEvansvilleUI.Pages
                 !Zip.Text.Contains("47725"))
             {
                 Zip.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false;
+                ValidationMessages.Add("Entered Zip Code is not within city limits.");
             }
 
             if (Email.Text == "") { Email.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
-            if (new EmailAddressAttribute().IsValid(Email.Text) == false) { Email.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (new EmailAddressAttribute().IsValid(Email.Text) == false) 
+            { 
+                Email.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false;
+                ValidationMessages.Add("Email Format is not correct.");
+            }
 
             if (Phone.Text == "") { Phone.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
-            if (PhoneNumberUtil.IsViablePhoneNumber(Phone.Text) == false) { Phone.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (PhoneNumberUtil.IsViablePhoneNumber(Phone.Text) == false) 
+            { 
+                Phone.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false;
+                ValidationMessages.Add("Phone number is not valid.");
+            }
 
             if (CheckboxAnytime.IsChecked == false)
             {

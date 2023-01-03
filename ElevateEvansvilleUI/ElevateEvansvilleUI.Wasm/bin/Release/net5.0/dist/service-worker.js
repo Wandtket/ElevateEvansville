@@ -1,11 +1,11 @@
-import { config } from "/package_8c6c082d717750b39632bab40ab3f2d0076d935f//uno-config.js";
+import { config } from "/package_f6196b708919725beb94c0bce42553f236805a6e//uno-config.js";
 
 console.debug("[ServiceWorker] Initializing");
 
 self.addEventListener('install', function (e) {
     console.debug('[ServiceWorker] Installing offline worker');
     e.waitUntil(
-        caches.open('package_8c6c082d717750b39632bab40ab3f2d0076d935f').then(function (cache) {
+        caches.open('package_f6196b708919725beb94c0bce42553f236805a6e').then(function (cache) {
             console.debug('[ServiceWorker] Caching app binaries and content');
             return cache.addAll(config.offline_files);
         })

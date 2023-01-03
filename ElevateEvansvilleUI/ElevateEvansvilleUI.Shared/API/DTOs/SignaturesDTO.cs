@@ -34,6 +34,9 @@ namespace ElevateEvansvilleUI.API.DTOs
         [JsonPropertyName("PreferredTimeEnd")]
         public DateTime PreferredTimeEnd { get; set; }
 
+        [JsonPropertyName("Anytime")]
+        public bool Anytime { get; set; }
+
         [JsonPropertyName("PrefersMonday")]
         public bool PrefersMonday { get; set; }
 

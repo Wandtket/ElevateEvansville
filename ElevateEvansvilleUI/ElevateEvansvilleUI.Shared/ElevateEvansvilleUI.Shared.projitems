@@ -26,6 +26,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Dialogs\ConfirmBox.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\Dialogs\InputBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Dialogs\MessageBox.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Messages\PayPalDetailMessage.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Messages\PreviewMessage.xaml.cs">

@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_31 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_1 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +68,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBox)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_36 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_12 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBox))
 				{
 					Setters = 
@@ -506,7 +506,7 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											IsParsing = true,
 											Name = "CheckboxAnytime"/* string/, CheckboxAnytime, CheckBox/Name */,
-											Content = @"Any Time"/* object/, Any Time, CheckBox/Content */,
+											Content = @"Any Time (8AM - 8PM)"/* object/, Any Time (8AM - 8PM), CheckBox/Content */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 89:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c29 => 
@@ -720,8 +720,8 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											nameScope.RegisterName("CancelButton", c43);
 											this.CancelButton = c43;
-											var Click_SubmitButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-											/* second level */ c43.Click += (SubmitButton_Click_sender,SubmitButton_Click_e) => (Click_SubmitButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.SignatureRequestPage)?.SubmitButton_Click(SubmitButton_Click_sender,SubmitButton_Click_e);
+											var Click_CancelButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											/* second level */ c43.Click += (CancelButton_Click_sender,CancelButton_Click_e) => (Click_CancelButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.SignatureRequestPage)?.CancelButton_Click(CancelButton_Click_sender,CancelButton_Click_e);
 											c43.CreationComplete();
 										}
 										))

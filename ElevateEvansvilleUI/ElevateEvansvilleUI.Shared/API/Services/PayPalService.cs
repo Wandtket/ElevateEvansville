@@ -18,19 +18,11 @@ namespace ElevateEvansvilleUI.API.Services
 
         public async Task<TransactionListDTO> GetTransactions()
         {
+
             var result = await this.GetAsync(
-                $"https://elevateevansvilleapi.azure-api.net/Transactions/Get",
-                new Dictionary<string, string> {
-                {"accept", "application/json" },
-                {"Ocp-Apim-Subscription-Key", "578ae136a0de45f69a372e52014a53b5"}
-                });
-               
-            return JsonSerializer.Deserialize<TransactionListDTO>(result);
+                $"https://elevateevansvilleapi.azure-api.net/Transactions/Get");             
+            return JsonSerializer.Deserialize<TransactionListDTO>(result);       
             
-
-            //return JsonSerializer.Deserialize<IEnumerable<TransactionsDTO>>(result);
-
-            //return result;
         }       
     }
 
