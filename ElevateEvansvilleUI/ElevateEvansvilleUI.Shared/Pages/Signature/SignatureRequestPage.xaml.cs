@@ -127,6 +127,7 @@ namespace ElevateEvansvilleUI.Pages
 
                     var message = await service.SubmitRequest(dto);
                     await MessageBox.Show(message, "Request Submission: ");
+                    SubmitButton.Content = "Update";
                 }
             }
             else
@@ -145,11 +146,19 @@ namespace ElevateEvansvilleUI.Pages
 
         private async void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            var Email = await InputBox.Show("Cancel Request?", "To cancel, input the email you used.");
-            if (Email != null)
+            if (new EmailAddressAttribute().IsValid(Email.Text) == false)
             {
-                var Response = await service.RemoveRequest(Email);
+                var Response = await service.RemoveRequest(Email.Text);
                 await MessageBox.Show(Response);
+            }
+            else
+            {
+                var request = await InputBox.Show("Cancel Request?", "To cancel, input the email you used.");
+                if (request != null)
+                {
+                    var Response = await service.RemoveRequest(request);
+                    await MessageBox.Show(Response);
+                }
             }
         }
 
