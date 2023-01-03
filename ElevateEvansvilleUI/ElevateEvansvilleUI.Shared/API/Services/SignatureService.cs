@@ -19,5 +19,13 @@ namespace ElevateEvansvilleUI.API.Services
             return result;
         }
 
+        public async Task<string> RemoveRequest(string Email)
+        {
+            var result = await this.DeleteAsync(
+                $"https://elevateevansvilleapi.azure-api.net/Signatures/Delete/{Email}");
+
+            return result;
+        }
+
     }
 }

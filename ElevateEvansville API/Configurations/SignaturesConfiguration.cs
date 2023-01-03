@@ -25,6 +25,9 @@ namespace ElevateEvansville_API.Configurations
             builder.Property(c => c.Zip)
                 .HasColumnName("Zip");
 
+            builder.Property(c => c.Notes)
+                .HasColumnName("Notes");
+
             builder.Property(c => c.Email)
                .HasColumnName("Email");
 
@@ -36,6 +39,9 @@ namespace ElevateEvansville_API.Configurations
 
             builder.Property(c => c.PreferredTimeEnd)
                .HasColumnName("PreferredTimeEnd");
+
+            builder.Property(c => c.Anytime)
+               .HasColumnName("Anytime");
 
             builder.Property(c => c.PrefersMonday)
                .HasColumnName("PrefersMonday");

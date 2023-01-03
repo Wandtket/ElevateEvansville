@@ -101,6 +101,8 @@ namespace ElevateEvansvilleUI.Pages
                     dto.FirstName = FirstName.Text;
                     dto.Address = Address.Text;
                     dto.Zip = Zip.Text;
+                    dto.Notes = Notes.Text;
+
                     dto.Phone = Phone.Text;
                     dto.Email = Email.Text;
 

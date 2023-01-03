@@ -57,23 +57,31 @@
                         HorizontalAlignment="Center" Spacing="10" Grid.Row="2">
                 
                 <TextBox Name="LastName" Header="Last Name" Width="200" 
+                         PlaceholderText="Doe"
                          TextChanged="TextBox_TextChanged"/>
 
                 <TextBox Name="FirstName" Header="First Name" Width="200" 
+                         PlaceholderText="John"
                          TextChanged="TextBox_TextChanged"/>
 
                 <controls:WrapPanel Orientation="Horizontal" >
                     <TextBox Name="Address" Header="Address" MaxLength="45" Width="240" Margin="0,0,10,10"
+                             PlaceholderText="4401 Example Rd."
                              TextChanged="TextBox_TextChanged"/>
                     <TextBox Name="Zip" Header="Zip Code" MaxLength="9" Width="150" Margin="0,0,0,10"
+                             PlaceholderText="* Evansville Zip"
                              TextChanged="TextBox_TextChanged"/>
                 </controls:WrapPanel>
+
+                <TextBox Name="Notes" Header="Notes" Width="240" PlaceholderText="Apartment to the left of walgreens"/>
 
                 <controls:WrapPanel Orientation="Horizontal" >
 
                     <TextBox Name="Email" Header="Email" MaxLength="45" Width="240" Margin="0,0,10,10"
+                             PlaceholderText="Example@gmail.com"
                              TextChanged="TextBox_TextChanged"/>
                     <TextBox Name="Phone" Header="Phone (Mobile)" MaxLength="15" Width="150" Margin="0,0,0,10"
+                             PlaceholderText="867-5309"
                              TextChanged="TextBox_TextChanged"/>
                 </controls:WrapPanel>
 

@@ -22,6 +22,9 @@ namespace ElevateEvansvilleUI.API.DTOs
         [JsonPropertyName("Zip")]
         public string Zip { get; set; }
 
+        [JsonPropertyName("Notes")]
+        public string Notes { get; set; }
+
         [JsonPropertyName("Phone")]
         public string Phone { get; set; }
 

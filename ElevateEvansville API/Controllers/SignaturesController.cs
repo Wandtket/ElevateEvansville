@@ -28,17 +28,67 @@ namespace ElevateEvansville_API.Controllers
 
         [HttpPost]
         [Route("/Signatures/Request")]
-        public async Task<string> Request(SignaturesDTO request)
+        public async Task<string> Request(SignaturesDTO requestDto)
         {
             try
             {
-                Signatures signature = mapper.Map<Signatures>(request);
-                await SignaturesRepository.AddAsync(signature);
-                await SignaturesRepository.SaveChangesAsync();
+                var Existing = await SignaturesRepository.GetByEmail(requestDto.Email);
+                if (Existing == null)
+                {
+                    Signatures signature = mapper.Map<Signatures>(requestDto);
+                    await SignaturesRepository.AddAsync(signature);
+                    await SignaturesRepository.SaveChangesAsync();
 
-                return "Success";
+                    return "Success";
+                }
+                else
+                {
+                    Existing.LastName = requestDto.LastName;
+                    Existing.FirstName = requestDto.FirstName;
+                    Existing.Address = requestDto.Address;
+                    Existing.Zip = requestDto.Zip;
+                    Existing.Notes = requestDto.Notes;
+                    Existing.Phone = requestDto.Phone;
+                    Existing.MaskRequested = requestDto.MaskRequested;
+                    Existing.Anytime = requestDto.Anytime;
+                    Existing.PreferredTimeStart = requestDto.PreferredTimeStart;
+                    Existing.PreferredTimeEnd = requestDto.PreferredTimeEnd;
+                    Existing.PrefersMonday = requestDto.PrefersMonday;
+                    Existing.PrefersTuesday = requestDto.PrefersTuesday;
+                    Existing.PrefersWednesday = requestDto.PrefersWednesday;
+                    Existing.PrefersThursday = requestDto.PrefersThursday;
+                    Existing.PrefersFriday = requestDto.PrefersFriday;
+                    Existing.PrefersSaturday = requestDto.PrefersSaturday;
+                    Existing.PrefersSunday = requestDto.PrefersSunday;
+
+                    await SignaturesRepository.UpdateAsync(Existing);
+                    await SignaturesRepository.SaveChangesAsync();
+
+                    return "Updated";
+                }
             }
             catch (Exception ex) 
+            {
+                return ex.Message;
+            }
+        }
+
+        [HttpDelete]
+        [Route("/Signatures/Delete/{Email}")]
+        public async Task<string> Delete([FromRoute]string Email)
+        {
+            try
+            {
+                var Sig = await SignaturesRepository.GetByEmail(Email);
+                
+                if (Sig != null)
+                {
+                    await SignaturesRepository.DeleteAsync(Sig);
+                    return "Request Removed";
+                }
+                else { return "No request could be found."; }
+            }
+            catch (Exception ex)
             {
                 return ex.Message;
             }
