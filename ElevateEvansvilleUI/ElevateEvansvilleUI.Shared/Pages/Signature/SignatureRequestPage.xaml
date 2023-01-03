@@ -73,8 +73,8 @@
                              TextChanged="TextBox_TextChanged"/>
                 </controls:WrapPanel>
 
-                <TextBox Name="Notes" Header="Notes" Width="240" 
-                         PlaceholderText="Example: Apartment to the left of walgreens"/>
+                <TextBox Name="Notes" Header="Notes" Width="240" MaxLength="50"
+                         PlaceholderText="Ex: Behind the green gate."/>
 
                 <controls:WrapPanel Orientation="Horizontal" >
 
