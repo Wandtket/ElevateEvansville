@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_61 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_8 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +68,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBox)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_64 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_13 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBox))
 				{
 					Setters = 
@@ -346,7 +346,7 @@ namespace ElevateEvansvilleUI.Pages
 									Name = "Notes"/* string/, Notes, TextBox/Name */,
 									Header = @"Notes"/* object/, Notes, TextBox/Header */,
 									Width = 240d/* double/, 240, TextBox/Width */,
-									PlaceholderText = "Apartment to the left of walgreens"/* string/, Apartment to the left of walgreens, TextBox/PlaceholderText */,
+									PlaceholderText = "Example: Apartment to the left of walgreens"/* string/, Example: Apartment to the left of walgreens, TextBox/PlaceholderText */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 76:18)
 								}
 								.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler6)(c20 => 
@@ -361,7 +361,7 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, WrapPanel/Orientation */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 78:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 79:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.TextBox
@@ -373,7 +373,7 @@ namespace ElevateEvansvilleUI.Pages
 											Width = 240d/* double/, 240, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,10,10)/* Windows.UI.Xaml.Thickness/, 0,0,10,10, TextBox/Margin */,
 											PlaceholderText = "Example@gmail.com"/* string/, Example@gmail.com, TextBox/PlaceholderText */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 80:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 81:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler6)(c21 => 
 										{
@@ -394,7 +394,7 @@ namespace ElevateEvansvilleUI.Pages
 											Width = 150d/* double/, 150, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,10)/* Windows.UI.Xaml.Thickness/, 0,0,0,10, TextBox/Margin */,
 											PlaceholderText = "867-5309"/* string/, 867-5309, TextBox/PlaceholderText */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 83:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 84:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler6)(c22 => 
 										{
@@ -418,7 +418,7 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, WrapPanel/Orientation */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 88:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 89:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.ComboBox
@@ -428,7 +428,7 @@ namespace ElevateEvansvilleUI.Pages
 											Header = @"Time Start:"/* object/, Time Start:, ComboBox/Header */,
 											PlaceholderText = "Hour"/* string/, Hour, ComboBox/PlaceholderText */,
 											Width = 90d/* double/, 90, ComboBox/Width */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 89:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 90:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler7)(c24 => 
 										{
@@ -445,7 +445,7 @@ namespace ElevateEvansvilleUI.Pages
 											Header = @" "/* object/,  , ComboBox/Header */,
 											PlaceholderText = "Min"/* string/, Min, ComboBox/PlaceholderText */,
 											Width = 85d/* double/, 85, ComboBox/Width */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 90:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 91:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler7)(c25 => 
 										{
@@ -463,7 +463,7 @@ namespace ElevateEvansvilleUI.Pages
 											PlaceholderText = "AM"/* string/, AM, ComboBox/PlaceholderText */,
 											Width = 75d/* double/, 75, ComboBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,15,0)/* Windows.UI.Xaml.Thickness/, 0,0,15,0, ComboBox/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 91:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 92:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler7)(c26 => 
 										{
@@ -480,7 +480,7 @@ namespace ElevateEvansvilleUI.Pages
 											Header = @"Time End:"/* object/, Time End:, ComboBox/Header */,
 											PlaceholderText = "Hour"/* string/, Hour, ComboBox/PlaceholderText */,
 											Width = 90d/* double/, 90, ComboBox/Width */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 93:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 94:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler7)(c27 => 
 										{
@@ -497,7 +497,7 @@ namespace ElevateEvansvilleUI.Pages
 											Header = @" "/* object/,  , ComboBox/Header */,
 											PlaceholderText = "Min"/* string/, Min, ComboBox/PlaceholderText */,
 											Width = 85d/* double/, 85, ComboBox/Width */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 94:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 95:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler7)(c28 => 
 										{
@@ -515,7 +515,7 @@ namespace ElevateEvansvilleUI.Pages
 											PlaceholderText = "AM"/* string/, AM, ComboBox/PlaceholderText */,
 											Width = 75d/* double/, 75, ComboBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,10,25)/* Windows.UI.Xaml.Thickness/, 0,0,10,25, ComboBox/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 95:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 96:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler7)(c29 => 
 										{
@@ -530,7 +530,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxAnytime"/* string/, CheckboxAnytime, CheckBox/Name */,
 											Content = @"Any Time (8AM - 8PM)"/* object/, Any Time (8AM - 8PM), CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 97:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 98:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c30 => 
 										{
@@ -553,13 +553,13 @@ namespace ElevateEvansvilleUI.Pages
 								new global::Windows.UI.Xaml.Controls.TextBlock
 								{
 									IsParsing = true,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 102:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 103:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Preferred Days:"/* string/, Preferred Days:, Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 104:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 105:19)
 										}
 										,
 									}
@@ -574,7 +574,7 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, WrapPanel/Orientation */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 106:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 107:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.CheckBox
@@ -582,7 +582,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxMonday"/* string/, CheckboxMonday, CheckBox/Name */,
 											Content = @"Monday"/* object/, Monday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 107:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 108:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c34 => 
 										{
@@ -599,7 +599,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxTuesday"/* string/, CheckboxTuesday, CheckBox/Name */,
 											Content = @"Tuesday"/* object/, Tuesday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 108:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 109:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c35 => 
 										{
@@ -614,7 +614,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxWednesday"/* string/, CheckboxWednesday, CheckBox/Name */,
 											Content = @"Wednesday"/* object/, Wednesday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 109:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 110:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c36 => 
 										{
@@ -629,7 +629,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxThursday"/* string/, CheckboxThursday, CheckBox/Name */,
 											Content = @"Thursday"/* object/, Thursday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 110:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 111:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c37 => 
 										{
@@ -644,7 +644,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxFriday"/* string/, CheckboxFriday, CheckBox/Name */,
 											Content = @"Friday"/* object/, Friday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 111:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 112:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c38 => 
 										{
@@ -659,7 +659,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxSaturday"/* string/, CheckboxSaturday, CheckBox/Name */,
 											Content = @"Saturday"/* object/, Saturday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 112:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 113:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c39 => 
 										{
@@ -674,7 +674,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CheckboxSunday"/* string/, CheckboxSunday, CheckBox/Name */,
 											Content = @"Sunday"/* object/, Sunday, CheckBox/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 113:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 114:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c40 => 
 										{
@@ -697,7 +697,7 @@ namespace ElevateEvansvilleUI.Pages
 									IsParsing = true,
 									Name = "CheckboxMask"/* string/, CheckboxMask, CheckBox/Name */,
 									Content = @"Mask Requested"/* object/, Mask Requested, CheckBox/Content */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 117:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 118:18)
 								}
 								.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler3)(c42 => 
 								{
@@ -712,7 +712,7 @@ namespace ElevateEvansvilleUI.Pages
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									Spacing = 5d/* double/, 5, StackPanel/Spacing */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 119:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 120:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Button
@@ -720,7 +720,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "SubmitButton"/* string/, SubmitButton, Button/Name */,
 											Content = @"Submit"/* object/, Submit, Button/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 120:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 121:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler8)(c43 => 
 										{
@@ -737,7 +737,7 @@ namespace ElevateEvansvilleUI.Pages
 											IsParsing = true,
 											Name = "CancelButton"/* string/, CancelButton, Button/Name */,
 											Content = @"Cancel Existing Request"/* object/, Cancel Existing Request, Button/Content */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 121:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 122:22)
 										}
 										.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler8)(c44 => 
 										{
@@ -761,7 +761,7 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Name = "ValidationFrame",
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 124:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 125:18)
 								}
 								.SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e_XamlApply((SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5eXamlApplyExtensions.XamlApplyHandler10)(c46 => 
 								{
@@ -795,13 +795,13 @@ namespace ElevateEvansvilleUI.Pages
 						new global::Windows.UI.Xaml.Controls.TextBlock
 						{
 							IsParsing = true,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 131:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 132:14)
 							Inlines = 
 							{
 								new global::Windows.UI.Xaml.Documents.Run
 								{
 									Text = "In order to attain enough signatures to gain access to the ballot and to achieve as much convenience as possible I'll be providing a platform for myself and volunteers to collect signatures. I believe the days of going door to door and phone banking may be behind us as scammers have made it almost a fruitless endeavor."/* string/, In order to attain enough signatures to gain access to the ballot and to achieve as much convenience as possible I'll be providing a platform for myself and volunteers to collect signatures. I believe the days of going door to door and phone banking may be behind us as scammers have made it almost a fruitless endeavor., Run/Text */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 135:15)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 136:15)
 								}
 								,
 							}
@@ -817,13 +817,13 @@ namespace ElevateEvansvilleUI.Pages
 						{
 							IsParsing = true,
 							FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 137:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 138:14)
 							Inlines = 
 							{
 								new global::Windows.UI.Xaml.Documents.Run
 								{
 									Text = "Your address and personal information will only be utilized by this campaign to collect signatures, it will not be sold to third parties."/* string/, Your address and personal information will only be utilized by this campaign to collect signatures, it will not be sold to third parties., Run/Text */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 140:15)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 141:15)
 								}
 								,
 							}
@@ -838,13 +838,13 @@ namespace ElevateEvansvilleUI.Pages
 						new global::Windows.UI.Xaml.Controls.TextBlock
 						{
 							IsParsing = true,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 142:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 143:14)
 							Inlines = 
 							{
 								new global::Windows.UI.Xaml.Documents.Run
 								{
 									Text = "According to Indiana State Law:"/* string/, According to Indiana State Law:, Run/Text */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 144:15)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 145:15)
 								}
 								,
 							}
@@ -860,24 +860,24 @@ namespace ElevateEvansvilleUI.Pages
 						{
 							IsParsing = true,
 							FontStyle = global::Windows.UI.Text.FontStyle.Italic/* Windows.UI.Text.FontStyle/, Italic, TextBlock/FontStyle */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 146:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 147:14)
 							Inlines = 
 							{
 								new global::Windows.UI.Xaml.Documents.Run
 								{
 									Text = "The CAN-44 (Petition of Nomination for City or Town Office in 2023) must be filed with the county voter registration official no later than the deadline set forth in state law. (IC 3-8-6-10) The county voter registration official must review and certify the signatures as set forth in IC 3-5-6. "/* string/, The CAN-44 (Petition of Nomination for City or Town Office in 2023) must be filed with the county voter registration official no later than the deadline set forth in state law. (IC 3-8-6-10) The county voter registration official must review and certify the signatures as set forth in IC 3-5-6. , Run/Text */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 149:59)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 150:59)
 								}
 								,
 								new global::Windows.UI.Xaml.Documents.Bold
 								{
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 149:59)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 150:59)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Petition signatures must be “wet.”"/* string/, Petition signatures must be “wet.”, Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 149:100)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 150:100)
 										}
 										,
 									}
@@ -886,7 +886,7 @@ namespace ElevateEvansvilleUI.Pages
 								new global::Windows.UI.Xaml.Documents.Run
 								{
 									Text = " In other words, photocopies of signatures, electronic signatures, digital signatures, or digitized signatures will not be accepted. (IC 3-5-4-1.7(b)) Candidates may pick up the certified petitions from the county voter registration office, but the candidate should make arrangements with the office to do so."/* string/,  In other words, photocopies of signatures, electronic signatures, digital signatures, or digitized signatures will not be accepted. (IC 3-5-4-1.7(b)) Candidates may pick up the certified petitions from the county voter registration office, but the candidate should make arrangements with the office to do so., Run/Text */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 153:15)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 154:15)
 								}
 								,
 							}
@@ -902,13 +902,13 @@ namespace ElevateEvansvilleUI.Pages
 						{
 							IsParsing = true,
 							FontStyle = global::Windows.UI.Text.FontStyle.Italic/* Windows.UI.Text.FontStyle/, Italic, TextBlock/FontStyle */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 155:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 156:14)
 							Inlines = 
 							{
 								new global::Windows.UI.Xaml.Documents.Run
 								{
 									Text = "Gaining access to the ballot as an independent or minor party candidate for local office has two distinct steps. The first is to gather signatures of registered voters within the election district totaling at least 2% of the total votes cast for all candidates in the 2022 Secretary of State’s election within the precincts making up the election district. If this applies to the office you are seeking, please contact your county election board for assistance with computing this number."/* string/, Gaining access to the ballot as an independent or minor party candidate for local office has two distinct steps. The first is to gather signatures of registered voters within the election district totaling at least 2% of the total votes cast for all candidates in the 2022 Secretary of State’s election within the precincts making up the election district. If this applies to the office you are seeking, please contact your county election board for assistance with computing this number., Run/Text */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 160:15)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml (Line 161:15)
 								}
 								,
 							}
