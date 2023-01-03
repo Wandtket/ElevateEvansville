@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_7 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_8 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -72,6 +72,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 				IsParsing = true,
 				HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, WrapPanel/HorizontalAlignment */,
 				VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, WrapPanel/VerticalAlignment */,
+				Margin = new global::Windows.UI.Xaml.Thickness(0,110,0,0)/* Windows.UI.Xaml.Thickness/, 0,110,0,0, WrapPanel/Margin */,
 				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 23:6)
 				Children = 
 				{
@@ -81,22 +82,16 @@ namespace ElevateEvansvilleUI.Pages.Signature
 						Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 						ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
 						Margin = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, ElevatedView/Margin */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 27:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 28:10)
 						ElevatedContent = 
 						new global::Windows.UI.Xaml.Controls.Grid
 						{
 							IsParsing = true,
-							Height = 275d/* double/, 275, Grid/Height */,
-							Width = 325d/* double/, 325, Grid/Width */,
-							Padding = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, Grid/Padding */,
+							Height = 260d/* double/, 260, Grid/Height */,
+							Width = 315d/* double/, 315, Grid/Width */,
+							Padding = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, Grid/Padding */,
 							RowDefinitions = 
 							{
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 36:22)
-								}
-								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
@@ -115,9 +110,15 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 39:22)
 								}
 								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 40:22)
+								}
+								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 34:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 35:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.StackPanel
@@ -125,20 +126,20 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 42:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 43:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Viewbox
 										{
 											IsParsing = true,
-											Height = 45d/* double/, 45, Viewbox/Height */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 43:22)
+											Height = 40d/* double/, 40, Viewbox/Height */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 44:22)
 											Child = 
 											new global::Windows.UI.Xaml.Controls.SymbolIcon
 											{
 												IsParsing = true,
 												Symbol = global::Windows.UI.Xaml.Controls.Symbol.Edit/* Windows.UI.Xaml.Controls.Symbol/, Edit, SymbolIcon/Symbol */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 44:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 45:26)
 											}
 											.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler1)(c4 => 
 											{
@@ -160,7 +161,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											FontSize = 30d/* double/, 30, TextBlock/FontSize */,
 											VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 											Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, TextBlock/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 48:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 49:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c6 => 
 										{
@@ -180,13 +181,13 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,0,10,0)/* Windows.UI.Xaml.Thickness/, 10,0,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 51:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 52:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "According to Indiana state law, petitions for candidacy must contain wet signatures."/* string/, According to Indiana state law, petitions for candidacy must contain wet signatures., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 53:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 54:19)
 										}
 										,
 									}
@@ -202,13 +203,13 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,10,10,0)/* Windows.UI.Xaml.Thickness/, 10,10,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 55:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 56:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Request a volunteer to visit you to collect your wet signature."/* string/, Request a volunteer to visit you to collect your wet signature., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 57:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 58:19)
 										}
 										,
 									}
@@ -227,7 +228,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									Content = @"Request to Sign"/* object/, Request to Sign, Button/Content */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Button/HorizontalAlignment */,
 									Margin = new global::Windows.UI.Xaml.Thickness(5)/* Windows.UI.Xaml.Thickness/, 5, Button/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 59:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 60:18)
 								}
 								.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c12 => 
 								{
@@ -265,22 +266,16 @@ namespace ElevateEvansvilleUI.Pages.Signature
 						Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 						ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
 						Margin = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, ElevatedView/Margin */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 68:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 69:10)
 						ElevatedContent = 
 						new global::Windows.UI.Xaml.Controls.Grid
 						{
 							IsParsing = true,
-							Height = 275d/* double/, 275, Grid/Height */,
-							Width = 325d/* double/, 325, Grid/Width */,
-							Padding = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, Grid/Padding */,
+							Height = 260d/* double/, 260, Grid/Height */,
+							Width = 315d/* double/, 315, Grid/Width */,
+							Padding = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, Grid/Padding */,
 							RowDefinitions = 
 							{
-								new global::Windows.UI.Xaml.Controls.RowDefinition
-								{
-									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 77:22)
-								}
-								,
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
@@ -299,9 +294,15 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 80:22)
 								}
 								,
+								new global::Windows.UI.Xaml.Controls.RowDefinition
+								{
+									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 81:22)
+								}
+								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 75:14)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 76:14)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.StackPanel
@@ -309,20 +310,20 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									IsParsing = true,
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 83:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 84:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Viewbox
 										{
 											IsParsing = true,
-											Height = 45d/* double/, 45, Viewbox/Height */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 84:22)
+											Height = 50d/* double/, 50, Viewbox/Height */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 85:22)
 											Child = 
 											new global::Windows.UI.Xaml.Controls.SymbolIcon
 											{
 												IsParsing = true,
 												Symbol = global::Windows.UI.Xaml.Controls.Symbol.People/* Windows.UI.Xaml.Controls.Symbol/, People, SymbolIcon/Symbol */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 85:26)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 86:26)
 											}
 											.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler1)(c19 => 
 											{
@@ -344,7 +345,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											FontSize = 30d/* double/, 30, TextBlock/FontSize */,
 											VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 											Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, TextBlock/Margin */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 87:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 88:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler3)(c21 => 
 										{
@@ -364,13 +365,13 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,0,10,0)/* Windows.UI.Xaml.Thickness/, 10,0,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 91:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 92:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Want to volunteer to collect signautures in your workplace or neighborhood?"/* string/, Want to volunteer to collect signautures in your workplace or neighborhood?, Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 93:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 94:19)
 										}
 										,
 									}
@@ -386,13 +387,13 @@ namespace ElevateEvansvilleUI.Pages.Signature
 								{
 									IsParsing = true,
 									Margin = new global::Windows.UI.Xaml.Thickness(10,10,10,0)/* Windows.UI.Xaml.Thickness/, 10,10,10,0, TextBlock/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 95:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 96:18)
 									Inlines = 
 									{
 										new global::Windows.UI.Xaml.Documents.Run
 										{
 											Text = "Sign up to be a signature collector, you'll be given all the tools you need."/* string/, Sign up to be a signature collector, you'll be given all the tools you need., Run/Text */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 97:19)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 98:19)
 										}
 										,
 									}
@@ -410,7 +411,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 									Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 									HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
 									Spacing = 5d/* double/, 5, StackPanel/Spacing */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 99:18)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 100:18)
 									Children = 
 									{
 										new global::Windows.UI.Xaml.Controls.Button
@@ -419,7 +420,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											Name = "VolunteerButton",
 											Content = @"Volunteer"/* object/, Volunteer, Button/Content */,
 											IsEnabled = false/* bool/, False, Button/IsEnabled */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 101:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 102:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c27 => 
 										{
@@ -437,7 +438,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											Name = "DownloadButton",
 											Content = @"Download Tools"/* object/, Download Tools, Button/Content */,
 											IsEnabled = false/* bool/, False, Button/IsEnabled */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 106:22)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 107:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c28 => 
 										{

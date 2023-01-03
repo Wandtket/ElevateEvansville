@@ -22,7 +22,8 @@
 
     <controls:WrapPanel 
         HorizontalAlignment="Center" 
-        VerticalAlignment="Center">
+        VerticalAlignment="Center"
+        Margin="0,110,0,0">
 
         <toolkit:ElevatedView
                 Grid.Row="0"
@@ -31,7 +32,7 @@
                 ShadowColor="#80000000"
                 Margin="15">
 
-            <Grid Height="275" Width="325" Padding="15">
+            <Grid Height="260" Width="315" Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -40,7 +41,7 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Viewbox Height="45">
+                    <Viewbox Height="40">
                         <SymbolIcon Symbol="Edit"/>
                     </Viewbox>
                     
@@ -72,7 +73,7 @@
                 ShadowColor="#80000000"
                 Margin="15">
 
-            <Grid Height="275" Width="325" Padding="15">
+            <Grid Height="260" Width="315" Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -81,7 +82,7 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Viewbox Height="45">
+                    <Viewbox Height="50">
                         <SymbolIcon Symbol="People"/>
                     </Viewbox>
                     <TextBlock Text="Volunteer" FontSize="30" VerticalAlignment="Center" Margin="10,0,0,0"/>
