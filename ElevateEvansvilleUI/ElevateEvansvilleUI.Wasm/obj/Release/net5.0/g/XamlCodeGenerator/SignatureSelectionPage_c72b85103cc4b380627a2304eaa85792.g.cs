@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_8 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_6 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -81,13 +81,13 @@ namespace ElevateEvansvilleUI.Pages.Signature
 						IsParsing = true,
 						Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 						ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-						Margin = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, ElevatedView/Margin */,
+						Margin = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, ElevatedView/Margin */,
 						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 28:10)
 						ElevatedContent = 
 						new global::Windows.UI.Xaml.Controls.Grid
 						{
 							IsParsing = true,
-							Height = 260d/* double/, 260, Grid/Height */,
+							Height = 270d/* double/, 270, Grid/Height */,
 							Width = 315d/* double/, 315, Grid/Width */,
 							Padding = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, Grid/Padding */,
 							RowDefinitions = 
@@ -265,13 +265,13 @@ namespace ElevateEvansvilleUI.Pages.Signature
 						IsParsing = true,
 						Elevation = 10d/* double/, 10, ElevatedView/Elevation */,
 						ShadowColor = global::Windows.UI.ColorHelper.FromARGB(128, 0, 0, 0)/* Windows.UI.Color/, #80000000, ElevatedView/ShadowColor */,
-						Margin = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, ElevatedView/Margin */,
+						Margin = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, ElevatedView/Margin */,
 						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 69:10)
 						ElevatedContent = 
 						new global::Windows.UI.Xaml.Controls.Grid
 						{
 							IsParsing = true,
-							Height = 260d/* double/, 260, Grid/Height */,
+							Height = 270d/* double/, 270, Grid/Height */,
 							Width = 315d/* double/, 315, Grid/Width */,
 							Padding = new global::Windows.UI.Xaml.Thickness(10)/* Windows.UI.Xaml.Thickness/, 10, Grid/Padding */,
 							RowDefinitions = 

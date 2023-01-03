@@ -30,9 +30,9 @@
                 Background="{ThemeResource SubColor}"                        
                 Elevation="10"               
                 ShadowColor="#80000000"
-                Margin="15">
+                Margin="10">
 
-            <Grid Height="260" Width="315" Padding="10">
+            <Grid Height="270" Width="315" Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -71,9 +71,9 @@
                 Background="{ThemeResource SubColor}"                        
                 Elevation="10"               
                 ShadowColor="#80000000"
-                Margin="15">
+                Margin="10">
 
-            <Grid Height="260" Width="315" Padding="10">
+            <Grid Height="270" Width="315" Padding="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
