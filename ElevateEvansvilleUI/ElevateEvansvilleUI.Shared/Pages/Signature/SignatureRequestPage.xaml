@@ -67,7 +67,7 @@
                     <TextBox Name="Address" Header="Address" MaxLength="45" Width="240" Margin="0,0,10,10"
                              PlaceholderText="4401 Example Rd."
                              TextChanged="TextBox_TextChanged"/>
-                    <TextBox Name="Zip" Header="Zip Code" MaxLength="9" Width="150" Margin="0,0,0,10"
+                    <TextBox Name="Zip" Header="Zip" MaxLength="9" Width="150" Margin="0,0,0,10"
                              PlaceholderText="* Evansville Zip"
                              TextChanged="TextBox_TextChanged"/>
                 </controls:WrapPanel>

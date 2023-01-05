@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_33 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_5 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +68,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBox)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_38 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_12 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBox))
 				{
 					Setters = 
@@ -315,7 +315,7 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											IsParsing = true,
 											Name = "Zip"/* string/, Zip, TextBox/Name */,
-											Header = @"Zip Code"/* object/, Zip Code, TextBox/Header */,
+											Header = @"Zip"/* object/, Zip, TextBox/Header */,
 											MaxLength = 9/* int/, 9, TextBox/MaxLength */,
 											Width = 150d/* double/, 150, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,10)/* Windows.UI.Xaml.Thickness/, 0,0,0,10, TextBox/Margin */,
