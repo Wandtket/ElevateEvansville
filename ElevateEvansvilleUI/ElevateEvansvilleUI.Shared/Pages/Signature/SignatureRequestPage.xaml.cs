@@ -106,8 +106,18 @@ namespace ElevateEvansvilleUI.Pages
                     dto.Phone = Phone.Text;
                     dto.Email = Email.Text;
 
-                    dto.PreferredTimeStart = DateTime.Now;
-                    dto.PreferredTimeEnd = DateTime.Now;
+                    string TimeStart = 
+                        TimeStartHour.SelectedItem.ToString() + ":" + 
+                        TimeStartMinute.SelectedItem.ToString() + " " +
+                        TimeStartAM.SelectedItem.ToString();
+
+                    string TimeEnd =
+                        TimeEndHour.SelectedItem.ToString() + ":" +
+                        TimeEndMinute.SelectedItem.ToString() + " " +
+                        TimeEndAM.SelectedItem.ToString();
+
+                    dto.PreferredTimeStart = DateTime.Parse(TimeStart);
+                    dto.PreferredTimeEnd = DateTime.Parse(TimeEnd);
                     dto.Anytime = (bool)CheckboxAnytime.IsChecked;
 
                     dto.PrefersMonday = (bool)CheckboxMonday.IsChecked;
@@ -119,6 +129,8 @@ namespace ElevateEvansvilleUI.Pages
                     dto.PrefersSunday = (bool)CheckboxSunday.IsChecked;
 
                     dto.MaskRequested = (bool)CheckboxMask.IsChecked;
+
+                    //Data for Volunteers to complete
                     dto.NotHome = false;
                     dto.SignatureCollected = false;
                     dto.SignatureCount = 0;

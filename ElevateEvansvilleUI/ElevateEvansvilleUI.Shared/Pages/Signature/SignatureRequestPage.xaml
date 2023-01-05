@@ -11,7 +11,7 @@
     d:DesignWidth="1500"
     d:DesignHeight="4000"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    
     
     <Page.Resources>
         <Style TargetType="TextBlock">
@@ -41,7 +41,6 @@
                    Grid.Row="0" FontSize="18" FontWeight="Bold"/>
 
             <controls:WrapPanel Orientation="Horizontal" Grid.Row="1">
-
                 <CheckBox Name="RegisteredValidation" Margin="0,0,0,0" IsChecked="False">
                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,0">
                         I am registered to vote in Vanderburgh County Evansville IN, and I currently live within the city limits.
