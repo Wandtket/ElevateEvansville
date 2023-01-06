@@ -86,13 +86,17 @@
                 </controls:WrapPanel>
 
                 <controls:WrapPanel Orientation="Horizontal">
-                    <ComboBox Name="TimeStartHour" Header="Time Start:" PlaceholderText="Hour" Width="90"/>
-                    <ComboBox Name="TimeStartMinute" Header=" " PlaceholderText="Min" Width="85"/>
-                    <ComboBox Name="TimeStartAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,15,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="TimeStartHour" Header="Time Start:" PlaceholderText="Hour" Width="90"/>
+                        <ComboBox Name="TimeStartMinute" Header=" " PlaceholderText="Min" Width="85"/>
+                        <ComboBox Name="TimeStartAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,15,0"/>
+                    </StackPanel>
 
-                    <ComboBox Name="TimeEndHour" Header="Time End:" PlaceholderText="Hour" Width="90"/>
-                    <ComboBox Name="TimeEndMinute" Header=" " PlaceholderText="Min" Width="85"/>
-                    <ComboBox Name="TimeEndAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,10,25"/>
+                    <StackPanel Orientation="Horizontal">
+                        <ComboBox Name="TimeEndHour" Header="Time End:" PlaceholderText="Hour" Width="90"/>
+                        <ComboBox Name="TimeEndMinute" Header=" " PlaceholderText="Min" Width="85"/>
+                        <ComboBox Name="TimeEndAM" Header=" " PlaceholderText="AM" Width="75" Margin="0,0,10,25"/>
+                    </StackPanel>
 
                     <CheckBox Name="CheckboxAnytime" Content="Any Time (8AM - 8PM)" Click="CheckboxAnyTime_Click"/>
 
@@ -135,15 +139,19 @@
             </TextBlock>
 
             <TextBlock Grid.Row="4" FontWeight="Bold">
+                If you wish to change your preferred time or adddress at a later date input your information again and it will update your previous submission.
+            </TextBlock>
+
+            <TextBlock Grid.Row="5" FontWeight="Bold">
                 Your address and personal information will only be utilized by this campaign to collect signatures, it
                 will not be sold to third parties.
             </TextBlock>
 
-            <TextBlock Grid.Row="5">
+            <TextBlock Grid.Row="6">
                 According to Indiana State Law:
             </TextBlock>
 
-            <TextBlock Grid.Row="6" FontStyle="Italic">
+            <TextBlock Grid.Row="7" FontStyle="Italic">
                 The CAN-44 (Petition of Nomination for City or Town Office in 2023) must be filed with the county voter registration official 
                 no later than the deadline set forth in state law. (IC 3-8-6-10) The county voter registration official must review and certify
                 the signatures as set forth in IC 3-5-6. <Bold>Petition signatures must be “wet.”</Bold> In other words, photocopies of signatures, 
@@ -152,7 +160,7 @@
                 office to do so.
             </TextBlock>
 
-            <TextBlock Grid.Row="7" FontStyle="Italic">
+            <TextBlock Grid.Row="8" FontStyle="Italic">
                 Gaining access to the ballot as an independent or minor party candidate for local office has two distinct steps. The first is 
                 to gather signatures of registered voters within the election district totaling at least 2% of the total votes cast for all 
                 candidates in the 2022 Secretary of State’s election within the precincts making up the election district. If this applies to the 

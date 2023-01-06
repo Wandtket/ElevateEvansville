@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_6 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_31 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
