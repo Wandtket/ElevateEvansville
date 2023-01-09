@@ -30,11 +30,6 @@ namespace ElevateEvansvilleUI.Pages
             this.InitializeComponent();
         }
 
-        private async void Suggestion_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            await MessageBox.Show("Hi");
-        }
-
         private async void Suggestion_Click(object sender, RoutedEventArgs e)
         {
 

@@ -50,18 +50,25 @@ namespace ElevateEvansville_API.Repositories
             }
 
             //Remove the prefix needed for paypal transaction history.
-            if (transaction.Name.Contains("Elevate Evansville - "))
+            if (transaction != null)
             {
-                transaction.Name = transaction.Name.Replace("Elevate Evansville - ", "");
+                if (transaction.Name != null)
+                {
+                    if (transaction.Name.Contains("Elevate Evansville - "))
+                    {
+                        transaction.Name = transaction.Name.Replace("Elevate Evansville - ", "");
+                    }
+                }
             }
 
             await Context.Transactions.AddAsync(transaction);
+            await Context.SaveChangesAsync();
         }
 
 
         public async Task<bool> IsTransactionDuplicate(string PaypalTransactionID)
         {
-            var Entry = Context.Transactions.FirstOrDefault(x => x.PaypalTransactionID == PaypalTransactionID);
+            var Entry = Context.Transactions.Where(x => x.PaypalTransactionID == PaypalTransactionID).FirstOrDefault();
 
             if (Entry == null)
             {

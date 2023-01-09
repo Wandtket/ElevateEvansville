@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_31 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_1 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -418,7 +418,7 @@ namespace ElevateEvansvilleUI.Pages.Signature
 											IsParsing = true,
 											Name = "VolunteerButton",
 											Content = @"Volunteer"/* object/, Volunteer, Button/Content */,
-											IsEnabled = false/* bool/, False, Button/IsEnabled */,
+											IsEnabled = true/* bool/, True, Button/IsEnabled */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml (Line 101:22)
 										}
 										.SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792_XamlApply((SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792XamlApplyExtensions.XamlApplyHandler6)(c27 => 

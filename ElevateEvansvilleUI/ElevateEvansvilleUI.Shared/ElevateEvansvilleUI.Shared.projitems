@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\BalanceDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\SignaturesDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\TransactionsDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Services\AccountService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Services\PayPalService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Services\SignatureService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\WebApiBase.cs" />
@@ -32,6 +33,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Controls\Messages\PreviewMessage.xaml.cs">
       <DependentUpon>PreviewMessage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Cookies.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\Navigation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\UI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
@@ -187,6 +189,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Header.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Instagram.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\LogoBig.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Multi.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Payment.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Payment2.png" />

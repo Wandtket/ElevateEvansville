@@ -19,6 +19,7 @@ Assets/Images/Logos/Github.png
 Assets/Images/Logos/Header.png
 Assets/Images/Logos/Instagram.png
 Assets/Images/Logos/Logo.png
+Assets/Images/Logos/LogoBig.png
 Assets/Images/Logos/Multi.png
 Assets/Images/Logos/Payment.png
 Assets/Images/Logos/Payment2.png

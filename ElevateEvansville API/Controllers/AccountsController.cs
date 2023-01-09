@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ElevateEvansville_API.Functions;
+using ElevateEvansville_API.Models;
 using ElevateEvansville_API.Repositories;
 using ElevateEvansville_API.Results;
 using ElevateEvansvilleUI.API.DTOs;
@@ -23,18 +24,27 @@ namespace ElevateEvansville_API.Controllers
             AccountsRepository = _AccountsRepository;
         }
 
-        [HttpGet]
-        [Route("/Accounts/New")]
-        [ProducesResponseType(typeof(EnvelopedResult<BalanceDTO>), StatusCodes.Status200OK)]
-        public async Task<BalanceDTO> GetCurrent()
+        [HttpPost]
+        [Route("/Accounts/Create")]
+        public async Task<string> Create(AccountsDTO dto)
         {
-            //DateTime CurrentDateTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time"));
+            try
+            {
+                Accounts account = mapper.Map<Accounts>(dto);
+                await AccountsRepository.AddAsync(account);
+                await AccountsRepository.SaveChangesAsync();
 
-            BalanceDTO dto = new BalanceDTO();
-            dto.BalanceID = 0;
-            dto.Balance = Paypal.GetBalance();
+                return "Success. Please log in to continue to portal";
+            }
+            catch (Exception ex) { return "There was an error with the server, please try again later."; }
+        }
 
-            return dto;
+        [HttpPost]
+        [Route("/Accounts/Validate")]
+        public async Task<string> Validate(AccountsDTO dto)
+        {
+            bool Valid = await AccountsRepository.ValidatePassword(dto.Email, dto.Password);
+            return Valid.ToString();
         }
 
 

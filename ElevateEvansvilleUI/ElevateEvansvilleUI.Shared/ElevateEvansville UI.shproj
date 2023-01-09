@@ -12,9 +12,12 @@
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
   <ItemGroup>
     <_Globbed_Compile Remove="API\DTOs\SignaturesDTO.cs" />
+    <_Globbed_Compile Remove="API\Services\AccountService.cs" />
     <_Globbed_Compile Remove="API\Services\SignatureService.cs" />
     <_Globbed_Compile Remove="Controls\Dialogs\ConfirmBox.cs" />
     <_Globbed_Compile Remove="Controls\WebAssemblyBrowser.cs" />
+    <_Globbed_Compile Remove="Extensions\Cookies.cs" />
+    <_Globbed_Compile Remove="Extensions\Cookies.xaml.cs" />
     <_Globbed_Compile Remove="Extensions\Validation.cs" />
     <_Globbed_Compile Remove="Pages\Signature\AboutPage.xaml.cs" />
   </ItemGroup>
@@ -22,5 +25,8 @@
     <_Globbed_Content Remove="Assets\Changelog.txt" />
     <_Globbed_Content Remove="Assets\Documents\Elevate Evansville Privacy Policy.pdf" />
     <_Globbed_Content Remove="Assets\Election Day Calendar.ics" />
+  </ItemGroup>
+  <ItemGroup>
+    <_Globbled_Page Remove="Extensions\Cookies.xaml" />
   </ItemGroup>
 </Project>

@@ -25,7 +25,10 @@ namespace ElevateEvansville_API.Configurations
                 .HasColumnName("FirstName");
 
             builder.Property(c => c.Phone)
-               .HasColumnName("Phone");         
+               .HasColumnName("Phone");
+
+            builder.Property(c => c.MachineId)
+               .HasColumnName("MachineId");
 
         }
 

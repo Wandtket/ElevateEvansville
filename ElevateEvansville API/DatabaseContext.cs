@@ -5,7 +5,7 @@ namespace ElevateEvansville_API
 {
     public class DatabaseContext : DbContext
     {
-        public DbSet<Balances> Balances { get; set; }
+        public DbSet<Accounts> Accounts { get; set; }
 
         public DbSet<Transactions> Transactions { get; set;  }
 

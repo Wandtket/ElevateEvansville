@@ -101,7 +101,7 @@
                     <Button x:Name="VolunteerButton" 
                             Content="Volunteer"
                             Click="VolunteerButton_Click"
-                            IsEnabled="False"/>
+                            IsEnabled="True"/>
                             
                     <Button x:Name="DownloadButton" 
                             Content="Download Tools"

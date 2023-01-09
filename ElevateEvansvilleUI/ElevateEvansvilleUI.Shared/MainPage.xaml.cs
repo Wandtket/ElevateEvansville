@@ -6,6 +6,7 @@ using ElevateEvansvilleUI.Pages;
 using Microsoft.VisualBasic;
 using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.Activation;
@@ -52,6 +53,7 @@ namespace ElevateEvansvilleUI
 
 #if __WASM__
             Navigation.HandleURI();
+
 #elif WINDOWS_UWP
             UI.Navigate(typeof(HomePage));
 #endif
@@ -116,28 +118,31 @@ namespace ElevateEvansvilleUI
         private async void Terms_Click(object sender, RoutedEventArgs e)
         {
 
-            await Launcher.LaunchUriAsync(new Uri("https://elevateevansville-my.sharepoint.com/:b:/p/tyler_wandtke/EUUTKo7pxXhKtHuCiSoIq0oBYcge_3imCopk-UzKoZaa_g?e=nGWfvL"));
+            await Launcher.LaunchUriAsync(new Uri("https://elevateevansville-my.sharepoint.com/:b:/p/tyler_wandtke/EbrFlGuEcMlGlXLhoZ7gvNEBna2RTfqssMmYY7WkwRbHWQ?e=QmAxTm"));
         }
 
         private async void Privacy_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://elevateevansville-my.sharepoint.com/:b:/p/tyler_wandtke/EeYaD_3LFPlEilDDnmIrh4MBtblOT6qUUraVnyKVYCXxkw?e=noLRgu"));
+            await Launcher.LaunchUriAsync(new Uri("https://elevateevansville-my.sharepoint.com/:b:/p/tyler_wandtke/EU1Dg5z_yOxGig9fsL5FaA8BLM2V4iD1yUn1it1CxD_Txg?e=iIhZQZ"));
+        }
+
+        private async void SignPetition_Click(object sender, RoutedEventArgs e)
+        {
+            UI.Navigate(typeof(SignatureRequestPage));
+        }
+
+        private async void Volunteer_Click(object sender, RoutedEventArgs e)
+        {
+            UI.Navigate(typeof(SignatureVolunteerPage));
         }
 
 
-        private async void Support_Click(object sender, RoutedEventArgs e)
+        private async void Donate_Click(object sender, RoutedEventArgs e)
         {
             UI.Navigate(typeof(SupportPage));
-
-#if __WASM__
-                    //this.ExecuteJavascript("requestPermission();");
-#endif
-
-#if __WASM__
-                    //this.ExecuteJavascript("persistentNotification();");
-#endif
-
         }
+
+
 
 
     }

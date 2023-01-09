@@ -61,7 +61,7 @@ namespace ElevateEvansvilleUI.Pages
 
         private async void TaxReturns_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri(""));
+            await Launcher.LaunchUriAsync(new Uri("https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/EVCRKPS0ZhpMubZHnEg9adQBxlkxxqGsNU4ytg-nI3pssA?e=MDrDKR"));
         }
 
 

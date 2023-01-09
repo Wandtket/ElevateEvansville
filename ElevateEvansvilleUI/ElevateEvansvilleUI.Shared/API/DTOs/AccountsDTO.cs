@@ -9,9 +9,6 @@ namespace ElevateEvansvilleUI.API.DTOs
 {
     public class AccountsDTO
     {
-        [JsonPropertyName("ID")]
-        public int AccountsID { get; set; }
-
         [JsonPropertyName("Email")]
         public string Email { get; set; }
 
@@ -26,5 +23,9 @@ namespace ElevateEvansvilleUI.API.DTOs
 
         [JsonPropertyName("Phone")]
         public string Phone { get; set; }
+
+        [JsonPropertyName("MachineId")]
+        public string MachineId { get; set; }
+
     }
 }

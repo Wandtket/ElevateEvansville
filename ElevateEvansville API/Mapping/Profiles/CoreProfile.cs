@@ -8,7 +8,8 @@ namespace ElevateEvansville_API.Mapping.Profiles
     {
         public static void Initialize(Profile profile)
         {
-            profile.CreateMap<Accounts, AccountsDTO>();
+            profile.CreateMap<Accounts, AccountsDTO>()
+                .ReverseMap();
 
             profile.CreateMap<Balances, BalanceDTO>()
                  .ForMember(dest => dest.BalanceID, opt => opt.MapFrom(s => s.Id))

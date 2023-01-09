@@ -71,9 +71,17 @@ namespace ElevateEvansvilleUI.Extensions
         public static bool IsDeviceMobile()
         {
 #if __WASM__
-            return Convert.ToBoolean(WebAssemblyRuntime.InvokeJS("IsDeviceMobile();"));                 
+            return Convert.ToBoolean(WebAssemblyRuntime.InvokeJS("IsDeviceMobile();"));
 #endif
             return false;
+        }
+
+        public static string GetMachineId()
+        {
+#if __WASM__
+            return WebAssemblyRuntime.InvokeJS("GetMachineId();");
+#endif
+            return "";
         }
 
 

@@ -1,12 +1,22 @@
-﻿using ElevateEvansvilleUI.Controls;
+﻿using ElevateEvansvilleUI.API.DTOs;
+using ElevateEvansvilleUI.API.Services;
+using ElevateEvansvilleUI.Controls;
+using ElevateEvansvilleUI.Controls.Dialogs;
+using ElevateEvansvilleUI.Extensions;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography;
+using System.ServiceModel.Channels;
+using System.Text;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -24,46 +34,131 @@ namespace ElevateEvansvilleUI.Pages
     /// </summary>
     public sealed partial class SignatureVolunteerPage : Page
     {
+        AccountService service = new AccountService();
+
         public SignatureVolunteerPage()
         {
             this.InitializeComponent();
-
-
-#if __WASM__
-            //WebAssemblyHtmlControl control = new WebAssemblyHtmlControl();
-            //control.SetHtmlContent("<button type=\"button\" onclick=\"alert('hello!')\" name=\"myButton\">Button</button>");
-            //control.VerticalAlignment = VerticalAlignment.Center;
-
-            //TestGrid.Children.Add(control); 
-#endif
-
         }
 
-        private async void BirthCert_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://i.imgur.com/eXS2MI6.png"));
+            string HashedPassword = HashPassword(PasswordLogin.Password);
+
+            AccountsDTO dto = new AccountsDTO();
+            dto.Email = EmailLogin.Text;
+            dto.LastName = "";
+            dto.FirstName = "";
+            dto.Phone = "";
+            dto.MachineId = "";
+            dto.Password = HashedPassword;
+
+            bool valid = await service.Validate(dto);
+
+            if (valid == true) { await MessageBox.Show("The volunteer portal isn't quite ready yet, please check back later.", "Password Correct"); }
+            if (valid == false)
+            {
+                await MessageBox.Show("Please try again.", "Password Incorrect");
+            }
         }
 
-        private async void CCAF_Tapped(object sender, TappedRoutedEventArgs e)
+        private void SignUpButton_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://i.imgur.com/cAwHNiP.png"));
+            SignInGrid.Visibility = Visibility.Collapsed;  
+            NoticeGrid.Visibility = Visibility.Visible;
+            SignUpGrid.Visibility = Visibility.Collapsed;
         }
 
-        private async void Discharge_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void SignUpSubmittButton_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://i.imgur.com/dnFdKh9.png"));
+            if (ValidateForm() == true)
+            {
+                AccountsDTO dto = new AccountsDTO();
+                dto.LastName = LastName.Text;
+                dto.FirstName = FirstName.Text;
+                dto.Phone = Phone.Text;
+                dto.Email = EmailSignUp.Text;
+                
+                if (UI.IsDeviceMobile() == true)
+                {
+                    dto.MachineId = UI.GetMachineId();                    
+                }
+                else { dto.MachineId = ""; }
+
+                dto.Password = HashPassword(ConfirmPasswordSignUp.Password);
+
+                string AccountStatus = await service.Create(dto);
+
+                await MessageBox.Show(AccountStatus, "Account Created: ");
+
+                ClearForm();
+                DismissSignUp();
+            }
         }
 
-        private async void Candidacy_Tapped(object sender, TappedRoutedEventArgs e)
+        internal string HashPassword(string password)
         {
-            await Launcher.LaunchUriAsync(new Uri(""));
+            byte[] hashedPassword;
+            using (SHA512 sha512 = SHA512.Create())
+            {
+                hashedPassword = sha512.ComputeHash(Encoding.UTF8.GetBytes(password));
+            }
+            return BitConverter.ToString(hashedPassword).Replace("-", "");
         }
 
-        private async void TaxReturns_Tapped(object sender, TappedRoutedEventArgs e)
+        private bool ValidateForm()
         {
-            await Launcher.LaunchUriAsync(new Uri(""));
+            bool Validated = true;
+
+            if (LastName.Text == "") { LastName.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (FirstName.Text == "") { FirstName.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (EmailSignUp.Text == "") { EmailSignUp.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (Phone.Text == "") { Phone.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (PasswordSignUp.Password == "") { PasswordSignUp.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+            if (ConfirmPasswordSignUp.Password == "") { ConfirmPasswordSignUp.BorderBrush = new SolidColorBrush(Colors.Red); Validated = false; }
+
+            if (PasswordSignUp.Password != ConfirmPasswordSignUp.Password) 
+            {
+                PasswordSignUp.BorderBrush = new SolidColorBrush(Colors.Red);
+                ConfirmPasswordSignUp.BorderBrush = new SolidColorBrush(Colors.Red);           
+                Validated = false;            
+            }
+
+            return Validated;
         }
 
+        private void ClearForm()
+        {
+            LastName.Text = "";
+            FirstName.Text = "";
+            EmailSignUp.Text = "";
+            Phone.Text = "";
+            PasswordSignUp.Password = "";
+            ConfirmPasswordSignUp.Password = "";
+        }
 
+        private void DismissSignUp()
+        {
+            SignInGrid.Visibility = Visibility.Visible;
+            NoticeGrid.Visibility = Visibility.Collapsed;
+            SignUpGrid.Visibility = Visibility.Collapsed;
+        }
+
+        private async void ForgotPasswordButton_Click(object sender, RoutedEventArgs e)
+        {
+            await Launcher.LaunchUriAsync(new Uri("mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Forgot%20Password"));
+        }
+
+        private void SignUpContinueButton_Click(object sender, RoutedEventArgs e)
+        {
+            SignInGrid.Visibility = Visibility.Collapsed;
+            NoticeGrid.Visibility = Visibility.Collapsed;
+            SignUpGrid.Visibility = Visibility.Visible;
+        }
+
+        private void SignUpDismissButton_Click(object sender, RoutedEventArgs e)
+        {
+            DismissSignUp();
+        }
     }
 }

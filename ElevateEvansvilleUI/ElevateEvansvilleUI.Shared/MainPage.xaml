@@ -121,9 +121,17 @@
         </CommandBar>
 
         <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,10" Orientation="Horizontal" Grid.Row="1">
-            <Button x:Name="Support" Content="Support This Candidate" Click="Support_Click" 
+            <Button x:Name="Support" Content="Support This Candidate"
                 Background="Green" Foreground="White" FontSize="18" Padding="10" CornerRadius="10" 
-                 x:FieldModifier="public"/>
+                 x:FieldModifier="public">
+                <Button.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Text="Sign Petition" HorizontalContentAlignment="Center" FontSize="18" Click="SignPetition_Click" />
+                        <MenuFlyoutItem Text="Volunteer" HorizontalContentAlignment="Center" FontSize="18" Click="Volunteer_Click"/>
+                        <MenuFlyoutItem Text="Donate" HorizontalContentAlignment="Center" FontSize="18" Click="Donate_Click" />
+                    </MenuFlyout>
+                </Button.Flyout>
+            </Button>
         </StackPanel>
 
         

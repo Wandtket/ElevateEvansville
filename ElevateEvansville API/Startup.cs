@@ -64,7 +64,7 @@ namespace ElevateEvansville_API
             services.AddSingleton<IEmailConfiguration>(Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
             services.AddTransient<IEmailService, EmailService>();
 
-            services.AddTransient<IBalanceRepository, BalanceRepository>();
+            services.AddTransient<IAccountsRepository, AccountsRepository>();
             services.AddTransient<ITransactionRepository, TransactionsRepository>();
             services.AddTransient<ISignaturesRepository, SignaturesRepository>();
 

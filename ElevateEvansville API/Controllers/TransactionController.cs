@@ -38,14 +38,14 @@ namespace ElevateEvansville_API.Controllers
         public async Task PullTransactions()
         {
             DateTime QueryStartDate = await TransactionRepository.GetQueryStartDate();
-
-
+                    
             //Received Payments
             List<Transactions> ReceivedTransactions = 
                 Paypal.GetTransactions(QueryStartDate, PaymentTransactionClassCodeType.RECEIVED);
 
+            string Response = "";
             foreach (Transactions transaction in ReceivedTransactions)
-            {
+            {          
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
                 if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
@@ -140,6 +140,7 @@ namespace ElevateEvansville_API.Controllers
                 bool isDuplicate = await TransactionRepository.IsTransactionDuplicate(transaction.PaypalTransactionID);
                 if (isDuplicate == false) { await TransactionRepository.AddItem(transaction); }
             }
+
         }
 
 

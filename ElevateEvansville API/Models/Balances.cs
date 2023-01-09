@@ -10,11 +10,9 @@ namespace ElevateEvansville_API.Models
     /// </summary>
     public class Balances : BaseEntity<int>
     {
-
         public string? TotalBalance { get; set; }
 
         public DateTime? Created { get; set; }
-
     }
 
     public class BalancesContext : DbContext

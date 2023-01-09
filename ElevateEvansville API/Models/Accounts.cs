@@ -15,6 +15,8 @@ namespace ElevateEvansville_API.Models
 
         public string? Phone { get; set; }
 
+        public string? MachineId { get; set; }
+
     }
 
     public class AccountsContext : DbContext

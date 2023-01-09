@@ -11,6 +11,21 @@ function IsDeviceMobile()
     }
 }
 
+
+//Gets a unique I.D. for a device that can be checked with the API to determine if the device belongs to a volunteer.
+function GetMachineId() {
+
+    let machineId = localStorage.getItem('MachineId');
+
+    if (!machineId) {
+        machineId = crypto.randomUUID();
+        localStorage.setItem('MachineId', machineId);
+    }
+
+    return machineId;
+}
+
+
 //Checks if the user clicks the forward or back button then calls C# function
 window.onpopstate = function () {
     const HandleURI = Module.mono_bind_static_method(

@@ -12,17 +12,6 @@ namespace ElevateEvansville_API.Controllers
     [ApiController]
     public class BalanceController : ControllerBase
     {
-        private readonly ILogger<BalanceController> logger;
-        private IBalanceRepository BalanceRepository;
-        private IMapper mapper;
-
-
-        public BalanceController(ILogger<BalanceController> _logger, IMapper _mapper, IBalanceRepository _BalanceRepository)
-        {
-            logger = _logger;
-            mapper = _mapper;
-            BalanceRepository = _BalanceRepository;
-        }
 
         [HttpGet]
         [Route("/Total")]

@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_40 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_2 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -908,7 +908,7 @@ namespace ElevateEvansvilleUI.Pages
 																		{
 																			new global::Windows.UI.Xaml.Documents.Hyperlink
 																			{
-																				NavigateUri = new System.Uri("https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/ET7u7eTrMjNAoAJ3xoQvSpUB1HDYorzMsWEGn0Y0WnwpiQ?e=DUfTQt", global::System.UriKind.RelativeOrAbsolute)/* System.Uri/, https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/ET7u7eTrMjNAoAJ3xoQvSpUB1HDYorzMsWEGn0Y0WnwpiQ?e=DUfTQt, Hyperlink/NavigateUri */,
+																				NavigateUri = new System.Uri("https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/EVCRKPS0ZhpMubZHnEg9adQBxlkxxqGsNU4ytg-nI3pssA?e=MDrDKR", global::System.UriKind.RelativeOrAbsolute)/* System.Uri/, https://elevateevansville-my.sharepoint.com/:u:/p/tyler_wandtke/EVCRKPS0ZhpMubZHnEg9adQBxlkxxqGsNU4ytg-nI3pssA?e=MDrDKR, Hyperlink/NavigateUri */,
 																				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml (Line 159:42)
 																				Inlines = 
 																				{

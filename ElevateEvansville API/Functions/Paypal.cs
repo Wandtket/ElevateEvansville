@@ -81,8 +81,8 @@ namespace ElevateEvansville_API.Functions
         {
             TransactionSearchRequestType request = new TransactionSearchRequestType();
            
-            request.StartDate = QueryStartDate.AddDays(-1).ToString("yyyy-MM-ddTHH:mm:ss");
-            request.EndDate = DateTime.Now.AddDays(1).ToString("yyyy-MM-ddTHH:mm:ss");
+            request.StartDate = QueryStartDate.AddDays(-2).ToString("yyyy-MM-ddTHH:mm:ss");
+            request.EndDate = DateTime.Now.AddDays(2).ToString("yyyy-MM-ddTHH:mm:ss");
 
             request.TransactionClass = PaymentType;
 
