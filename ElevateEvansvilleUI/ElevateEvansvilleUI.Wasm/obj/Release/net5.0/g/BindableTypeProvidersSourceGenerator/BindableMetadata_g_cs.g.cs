@@ -24526,7 +24526,7 @@ namespace ElevateEvansvilleUI.Wasm
 	}
 
 	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.SignatureVolunteerPage
+	/// Builder for ElevateEvansvilleUI.Pages.VolunteerLoginPage
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24545,7 +24545,7 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.SignatureVolunteerPage));
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.VolunteerLoginPage));
 			MetadataBuilder_358.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
 			if(parent == null)
 			{
@@ -24553,11 +24553,11 @@ namespace ElevateEvansvilleUI.Wasm
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.SignatureVolunteerPage();
+		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.VolunteerLoginPage();
 	}
 
 	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.SignatureToolsPage
+	/// Builder for ElevateEvansvilleUI.Pages.VolunteerPortalPage
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24576,7 +24576,7 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.SignatureToolsPage));
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.VolunteerPortalPage));
 			MetadataBuilder_358.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
 			if(parent == null)
 			{
@@ -24584,7 +24584,7 @@ namespace ElevateEvansvilleUI.Wasm
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.SignatureToolsPage();
+		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.VolunteerPortalPage();
 	}
 
 	/// <summary>
@@ -29539,13 +29539,13 @@ namespace ElevateEvansvilleUI.Wasm
 					_bindableType675 = MetadataBuilder_675.Build();
 				}
 				return _bindableType675;
-				case "ElevateEvansvilleUI.Pages.SignatureVolunteerPage":
+				case "ElevateEvansvilleUI.Pages.VolunteerLoginPage":
 				if(_bindableType676 == null)
 				{
 					_bindableType676 = MetadataBuilder_676.Build();
 				}
 				return _bindableType676;
-				case "ElevateEvansvilleUI.Pages.SignatureToolsPage":
+				case "ElevateEvansvilleUI.Pages.VolunteerPortalPage":
 				if(_bindableType677 == null)
 				{
 					_bindableType677 = MetadataBuilder_677.Build();

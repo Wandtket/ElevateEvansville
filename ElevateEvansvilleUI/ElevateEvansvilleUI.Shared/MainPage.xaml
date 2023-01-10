@@ -128,7 +128,7 @@
                     <MenuFlyout>
                         <MenuFlyoutItem Text="Sign Petition" HorizontalContentAlignment="Center" FontSize="18" Click="SignPetition_Click" />
                         <MenuFlyoutItem Text="Volunteer" HorizontalContentAlignment="Center" FontSize="18" Click="Volunteer_Click"/>
-                        <MenuFlyoutItem Text="Donate" HorizontalContentAlignment="Center" FontSize="18" Click="Donate_Click" />
+                        <MenuFlyoutItem Text="Support" HorizontalContentAlignment="Center" FontSize="18" Click="Donate_Click" />
                     </MenuFlyout>
                 </Button.Flyout>
             </Button>

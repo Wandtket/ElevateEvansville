@@ -50,8 +50,8 @@ namespace ElevateEvansvilleUI.Extensions
 
             else if (CurrentURI.Contains("SignatureRequest")) { UI.Navigate(typeof(SignatureRequestPage)); }
             else if (CurrentURI.Contains("SignatureSelection")) { UI.Navigate(typeof(SignatureSelectionPage)); }
-            else if (CurrentURI.Contains("SignatureTools")) { UI.Navigate(typeof(SignatureToolsPage)); }
-            else if (CurrentURI.Contains("SignatureVolunteer")) { UI.Navigate(typeof(SignatureVolunteerPage)); }
+            else if (CurrentURI.Contains("SignatureTools")) { UI.Navigate(typeof(VolunteerPortalPage)); }
+            else if (CurrentURI.Contains("SignatureVolunteer")) { UI.Navigate(typeof(VolunteerLoginPage)); }
 
             else
             {

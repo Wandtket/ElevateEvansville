@@ -41,12 +41,12 @@ namespace ElevateEvansvilleUI.Pages.Signature
         private void VolunteerButton_Click(object sender, RoutedEventArgs e)
         {
 
-            //UI.Navigate(typeof(SignatureVolunteerPage));
+            //UI.Navigate(typeof(VolunteerLoginPage));
         }
 
         private void DownloadButton_Click(object sender, RoutedEventArgs e)
         {
-            UI.Navigate(typeof(SignatureToolsPage));
+            UI.Navigate(typeof(VolunteerPortalPage));
         }
     }
 }

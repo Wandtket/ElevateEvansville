@@ -66,11 +66,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureRequestPage.xaml.cs">
       <DependentUpon>SignatureRequestPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureVolunteerPage.xaml.cs">
-      <DependentUpon>SignatureVolunteerPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerLoginPage.xaml.cs">
+      <DependentUpon>VolunteerLoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureToolsPage.xaml.cs">
-      <DependentUpon>SignatureToolsPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerPortalPage.xaml.cs">
+      <DependentUpon>VolunteerPortalPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureSelectionPage.xaml.cs">
       <DependentUpon>SignatureSelectionPage.xaml</DependentUpon>
@@ -131,11 +131,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureVolunteerPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerLoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureToolsPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerPortalPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -202,5 +202,8 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\YouTube.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Profile\Cover-Collapsed.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Profile\Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Volunteer\" />
   </ItemGroup>
 </Project>

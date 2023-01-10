@@ -133,7 +133,7 @@ namespace ElevateEvansvilleUI
 
         private async void Volunteer_Click(object sender, RoutedEventArgs e)
         {
-            UI.Navigate(typeof(SignatureVolunteerPage));
+            UI.Navigate(typeof(VolunteerLoginPage));
         }
 
 

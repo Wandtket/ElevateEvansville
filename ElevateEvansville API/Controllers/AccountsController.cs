@@ -31,12 +31,16 @@ namespace ElevateEvansville_API.Controllers
             try
             {
                 Accounts account = mapper.Map<Accounts>(dto);
+
+                bool EmailUsed = await AccountsRepository.IsEmailUsed(account.Email);
+                if (EmailUsed == true) { return "Email Already Used"; }
+
                 await AccountsRepository.AddAsync(account);
                 await AccountsRepository.SaveChangesAsync();
 
-                return "Success. Please log in to continue to portal";
+                return "Success";
             }
-            catch (Exception ex) { return "There was an error with the server, please try again later."; }
+            catch (Exception ex) { return "Error"; }
         }
 
         [HttpPost]

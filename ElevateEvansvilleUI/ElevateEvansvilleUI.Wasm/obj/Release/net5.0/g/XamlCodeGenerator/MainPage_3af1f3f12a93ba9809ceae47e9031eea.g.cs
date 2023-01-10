@@ -786,7 +786,7 @@ namespace ElevateEvansvilleUI
 										new global::Windows.UI.Xaml.Controls.MenuFlyoutItem
 										{
 											IsParsing = true,
-											Text = "Donate"/* string/, Donate, MenuFlyoutItem/Text */,
+											Text = "Support"/* string/, Support, MenuFlyoutItem/Text */,
 											HorizontalContentAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, MenuFlyoutItem/HorizontalContentAlignment */,
 											FontSize = 18d/* double/, 18, MenuFlyoutItem/FontSize */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 131:26)

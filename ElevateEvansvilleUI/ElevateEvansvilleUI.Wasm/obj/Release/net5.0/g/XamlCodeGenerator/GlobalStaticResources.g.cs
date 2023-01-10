@@ -84,10 +84,10 @@ namespace ElevateEvansvilleUI.Wasm
 				RegisterDefaultStyles_RailroadPage_67e18ba6c0d30315621678b5bcff722a();
 				RegisterDefaultStyles_SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e();
 				RegisterDefaultStyles_SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792();
-				RegisterDefaultStyles_SignatureToolsPage_f7537b7297b0dfcb8f3527e42847eaac();
-				RegisterDefaultStyles_SignatureVolunteerPage_6eb00577308880d43fb602ef8e19e371();
 				RegisterDefaultStyles_SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c();
 				RegisterDefaultStyles_TestPage_da17f6613ee4934aa363dc10577ac638();
+				RegisterDefaultStyles_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b();
+				RegisterDefaultStyles_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50();
 			}
 		}
 		// Register ResourceDictionaries using ms-appx:/// syntax, this is called for external resources
@@ -116,10 +116,10 @@ namespace ElevateEvansvilleUI.Wasm
 		static partial void RegisterDefaultStyles_RailroadPage_67e18ba6c0d30315621678b5bcff722a();
 		static partial void RegisterDefaultStyles_SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e();
 		static partial void RegisterDefaultStyles_SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792();
-		static partial void RegisterDefaultStyles_SignatureToolsPage_f7537b7297b0dfcb8f3527e42847eaac();
-		static partial void RegisterDefaultStyles_SignatureVolunteerPage_6eb00577308880d43fb602ef8e19e371();
 		static partial void RegisterDefaultStyles_SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c();
 		static partial void RegisterDefaultStyles_TestPage_da17f6613ee4934aa363dc10577ac638();
+		static partial void RegisterDefaultStyles_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b();
+		static partial void RegisterDefaultStyles_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50();
 		[global::System.Obsolete("This method is provided for binary backward compatibility. It will always return null.")]
 		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
 		public static object FindResource(string name) => null;
