@@ -1,7 +1,9 @@
-﻿using ElevateEvansvilleUI.Controls.Dialogs;
+﻿using ElevateEvansvilleUI.API.DTOs;
+using ElevateEvansvilleUI.Controls.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json;
 
 #if __WASM__
 using Uno.Web.Http;
@@ -13,14 +15,15 @@ namespace ElevateEvansvilleUI.Extensions
     public class Cookies
     {
 
-        public string VolunteerString = "IsEEVolunteer";
-        public string VolunteerValue = "True";
+        public static string VolunteerCookie = "ElevateEvansvilleVolunteer";
 
 
-        public void SetDeviceAsVolunteer()
+        public static void SaveVolunteerInfo(AccountsDTO Dto)
         {
 #if __WASM__
-            var cookie = new Cookie(VolunteerString, VolunteerValue);
+            string Value = JsonSerializer.Serialize(Dto);
+            
+            var cookie = new Cookie(VolunteerCookie, Value);
             var request = new SetCookieRequest(cookie)
             {
                 Path = "/",
@@ -32,28 +35,34 @@ namespace ElevateEvansvilleUI.Extensions
 #endif
         }
 
-
-        public bool isDeviceVolunteer()
+        public static AccountsDTO GetVolunteerInfo()
         {
 
 #if __WASM__
             var cookies = CookieManager.GetDefault().GetCookies();
             foreach (var cookie in cookies)
             {
-                if (cookie.Name == VolunteerString & cookie.Value == VolunteerValue)
+                if (cookie.Name == VolunteerCookie)
                 {
-                    if (UI.IsDeviceMobile() == true)
-                    {
-                        return true;
-                    }
+                    AccountsDTO dto = JsonSerializer.Deserialize<AccountsDTO>(cookie.Value);
+                    return dto;
                 }
             }
 
-            return false;
+            return null;
 #endif
-
-            return false;
+            return null;
         }
+
+        public static void ClearCookies()
+        {
+#if __WASM__
+            CookieManager.GetDefault().DeleteCookie(VolunteerCookie, path: "/");
+#endif
+        }
+
+
+
     }
 
 

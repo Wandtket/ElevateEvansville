@@ -11,7 +11,7 @@
           "lib/netcoreapp3.0/CommonServiceLocator.dll": {}
         }
       },
-      "libphonenumber-csharp/8.13.3": {
+      "libphonenumber-csharp/8.13.4": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.7.1"
@@ -2020,10 +2020,10 @@
         "lib/netstandard2.1/CommonServiceLocator.dll"
       ]
     },
-    "libphonenumber-csharp/8.13.3": {
-      "sha512": "rT5jOPgxK6n52rRACALFgeSVMIAMr9y+8XjQBd41h9FIFswLXvx+lHa7y1tyrOdtxTR+xt1Z0J5JMvrQNyqk5w==",
+    "libphonenumber-csharp/8.13.4": {
+      "sha512": "EGPN0poIP1+LTuuu2khqwHGNHW9e5STaNt6M+MxtYGLHoFOc+CYjoToRqidtclQrZp76N6WGxnBxnm+N33vWXg==",
       "type": "package",
-      "path": "libphonenumber-csharp/8.13.3",
+      "path": "libphonenumber-csharp/8.13.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2032,7 +2032,7 @@
         "lib/net7.0/PhoneNumbers.xml",
         "lib/netstandard2.0/PhoneNumbers.dll",
         "lib/netstandard2.0/PhoneNumbers.xml",
-        "libphonenumber-csharp.8.13.3.nupkg.sha512",
+        "libphonenumber-csharp.8.13.4.nupkg.sha512",
         "libphonenumber-csharp.nuspec"
       ]
     },
@@ -7120,7 +7120,7 @@
       "Uno.UI.WebAssembly >= 4.6.39",
       "Uno.Wasm.Bootstrap >= 7.0.11",
       "Uno.Wasm.Bootstrap.DevServer >= 7.0.11",
-      "libphonenumber-csharp >= 8.13.3"
+      "libphonenumber-csharp >= 8.13.4"
     ]
   },
   "packageFolders": {
@@ -7241,7 +7241,7 @@
           },
           "libphonenumber-csharp": {
             "target": "Package",
-            "version": "[8.13.3, )"
+            "version": "[8.13.4, )"
           }
         },
         "imports": [

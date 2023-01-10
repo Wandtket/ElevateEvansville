@@ -10,6 +10,7 @@
     mc:Ignorable="d"
     d:DesignWidth="1500"
     d:DesignHeight="1500"
+    Loaded="Page_Loaded"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     
@@ -21,6 +22,76 @@
     </Page.Resources>
 
     <Grid>
+        <Grid HorizontalAlignment="Center" Margin="0,75,0,0" 
+              MinWidth="400" RowSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock x:Name="WelcomeMessage" Text="Welcome, Tyler"/>
+
+            <StackPanel Grid.Row="1">
+                <controls:Expander x:Name="VistaPrint" 
+                                   MaxWidth="555" IsExpanded="True" VerticalAlignment="Top">
+                    <controls:Expander.Header>
+                        <Grid ColumnSpacing="15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="/Assets/Images/Logos/Petition.png" Height="35" Width="30" Grid.Column="0"/>
+                            <TextBlock FontSize="20" VerticalAlignment="Center" Grid.Column="1">
+                                            <Bold>Print Petition &amp; Acquire Signatures</Bold>
+                            </TextBlock>
+
+                        </Grid>
+                    </controls:Expander.Header>
+                    <controls:Expander.Content >
+                        <Grid MinHeight="280" Padding="15,0,15,15" RowSpacing="15">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Grid.Row="0" Margin="0,25,0,0" FontSize="16" >
+                                If you wish to collect signatures at your place of work or neighborhood, print out as many petitions as you like.
+                            </TextBlock>
+
+                            <TextBlock Grid.Row="1"  FontSize="16" >
+                                Please ensure that you witness the person signing the petition and that you validate that they
+                                are registered to vote and live within the city limits of Evansville IN.
+                            </TextBlock>
+
+                            <TextBlock Grid.Row="2" FontSize="16">
+                                Lastly, be sure to <Bold>print on both sides.</Bold> and fill in your information in the Petition Carrier Certification.
+                                once you're finished collecting, schedule a turn in via email by pressing the button below.
+                            </TextBlock>
+
+                            <controls:WrapPanel Orientation="Horizontal" Grid.Row="4" Margin="0,0,0,0">
+                                <Button Content="Print Petition" Click="PrintPetition_Click"
+                                            Background="LightBlue" Foreground="Black" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
+                                <Button Content="Schedule Petition(s) Turn-in" Click="TurnInPetition_Click"
+                                            Background="LightBlue" Foreground="Black" FontWeight="Medium" CornerRadius="15" Padding="20,5,20,5"
+                                            FontSize="18" Margin="5,5,0,0"/>
+                            </controls:WrapPanel>
+                        </Grid>
+                    </controls:Expander.Content>
+                </controls:Expander>
+
+            </StackPanel>
+            
+        </Grid>
         
         
         

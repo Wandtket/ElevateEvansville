@@ -1,9 +1,12 @@
-﻿using ElevateEvansvilleUI.Controls;
+﻿using ElevateEvansvilleUI.API.DTOs;
+using ElevateEvansvilleUI.Controls;
+using ElevateEvansvilleUI.Extensions;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.System;
@@ -27,43 +30,27 @@ namespace ElevateEvansvilleUI.Pages
         public VolunteerPortalPage()
         {
             this.InitializeComponent();
-
-
-#if __WASM__
-            //WebAssemblyHtmlControl control = new WebAssemblyHtmlControl();
-            //control.SetHtmlContent("<button type=\"button\" onclick=\"alert('hello!')\" name=\"myButton\">Button</button>");
-            //control.VerticalAlignment = VerticalAlignment.Center;
-
-            //TestGrid.Children.Add(control); 
-#endif
-
         }
 
-        private async void BirthCert_Tapped(object sender, TappedRoutedEventArgs e)
+        AccountsDTO CurrentUserAccount = new AccountsDTO();
+
+        private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://i.imgur.com/eXS2MI6.png"));
+            if (Cookies.GetVolunteerInfo() != null)
+            {
+                CurrentUserAccount = Cookies.GetVolunteerInfo();
+                WelcomeMessage.Text = "Welcome, " + CurrentUserAccount.FirstName;
+            }
         }
 
-        private async void CCAF_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void PrintPetition_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://i.imgur.com/cAwHNiP.png"));
+            await Launcher.LaunchUriAsync(new Uri("https://elevateevansville-my.sharepoint.com/:b:/p/tyler_wandtke/ERHQyfh6eaxBkRtocmJsAggBzYQm_KtmEyz7doeS8ICz_Q?e=evKzCS"));
         }
 
-        private async void Discharge_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void TurnInPetition_Click(object sender, RoutedEventArgs e)
         {
-            await Launcher.LaunchUriAsync(new Uri("https://i.imgur.com/dnFdKh9.png"));
+            await Launcher.LaunchUriAsync(new Uri("mailto:Tyler.wandtke@ElevateEvansville.com?Subject=Petition%20Turn-In%20Request"));
         }
-
-        private async void Candidacy_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            await Launcher.LaunchUriAsync(new Uri(""));
-        }
-
-        private async void TaxReturns_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            await Launcher.LaunchUriAsync(new Uri(""));
-        }
-
-
     }
 }

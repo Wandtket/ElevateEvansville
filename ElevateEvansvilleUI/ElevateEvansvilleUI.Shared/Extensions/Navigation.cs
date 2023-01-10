@@ -55,8 +55,15 @@ namespace ElevateEvansvilleUI.Extensions
 
             else
             {
-                UI.Navigate(typeof(HomePage));
-                Navigation.ReplaceURI("Home");
+                if (Cookies.GetVolunteerInfo() != null)
+                {
+                    UI.Navigate(typeof(VolunteerPortalPage)); 
+                }
+                else 
+                {
+                    UI.Navigate(typeof(HomePage));
+                    Navigation.ReplaceURI("Home");
+                }
             }           
 #endif
         }

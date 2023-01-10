@@ -52,8 +52,8 @@ namespace ElevateEvansvilleUI
         {
 
 #if __WASM__
-            Navigation.HandleURI();
-
+            Navigation.HandleURI();     
+            
 #elif WINDOWS_UWP
             UI.Navigate(typeof(HomePage));
 #endif
@@ -133,7 +133,14 @@ namespace ElevateEvansvilleUI
 
         private async void Volunteer_Click(object sender, RoutedEventArgs e)
         {
-            UI.Navigate(typeof(VolunteerLoginPage));
+            if (Cookies.GetVolunteerInfo() != null)
+            {
+                UI.Navigate(typeof(VolunteerPortalPage));
+            }
+            else
+            {
+                UI.Navigate(typeof(VolunteerLoginPage));
+            }
         }
 
 

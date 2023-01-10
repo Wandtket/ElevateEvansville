@@ -126,25 +126,25 @@ namespace ElevateEvansvilleUI
 					new global::Windows.UI.Xaml.Controls.RowDefinition
 					{
 						Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 27:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 26:14)
 					}
 					,
 					new global::Windows.UI.Xaml.Controls.RowDefinition
 					{
 						Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 28:14)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 27:14)
 					}
 					,
 				}
 				,
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 25:6)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 24:6)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Controls.Frame
 					{
 						IsParsing = true,
 						Name = "AppFrame",
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 31:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 30:10)
 					}
 					.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler3)(c6 => 
 					{
@@ -168,7 +168,7 @@ namespace ElevateEvansvilleUI
 							AlwaysUseFallback = false/* bool/, False, AcrylicBrush/AlwaysUseFallback */,
 							TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
 							TintOpacity = 0.5d/* double/, 0.5, AcrylicBrush/TintOpacity */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 36:18)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 35:18)
 						}
 						,
 						Content = 						new global::Windows.UI.Xaml.Controls.Grid
@@ -179,12 +179,12 @@ namespace ElevateEvansvilleUI
 								new global::Windows.UI.Xaml.Controls.RowDefinition
 								{
 									Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, RowDefinition/Height */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 45:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 44:26)
 								}
 								,
 							}
 							,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 43:18)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 42:18)
 							Children = 
 							{
 								new global::Windows.UI.Xaml.Controls.Button
@@ -194,7 +194,7 @@ namespace ElevateEvansvilleUI
 									Background = SolidColorBrushHelper.Transparent/* Windows.UI.Xaml.Media.Brush/, Transparent, Button/Background */,
 									BorderThickness = new global::Windows.UI.Xaml.Thickness(0)/* Windows.UI.Xaml.Thickness/, 0, Button/BorderThickness */,
 									Margin = new global::Windows.UI.Xaml.Thickness(-4,-3,0,0)/* Windows.UI.Xaml.Thickness/, -4,-3,0,0, Button/Margin */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 48:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 47:22)
 									Content = 
 									new global::Windows.UI.Xaml.Controls.Image
 									{
@@ -202,7 +202,7 @@ namespace ElevateEvansvilleUI
 										MaxHeight = 45d/* double/, 45, Image/MaxHeight */,
 										Source = "/Assets/Images/Logos/Header.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Header.png, Image/Source */,
 										Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 49:26)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 48:26)
 									}
 									.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler5)(c9 => 
 									{
@@ -238,7 +238,7 @@ namespace ElevateEvansvilleUI
 								Name = "Platform",
 								Label = "Platform"/* string/, Platform, AppBarButton/Label */,
 								Icon = new Windows.UI.Xaml.Controls.SymbolIcon { Symbol = Windows.UI.Xaml.Controls.Symbol.Flag}/* Windows.UI.Xaml.Controls.IconElement/, Flag, AppBarButton/Icon */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 57:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 56:18)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler8)(c12 => 
 							{
@@ -256,7 +256,7 @@ namespace ElevateEvansvilleUI
 								Name = "About",
 								Label = "About"/* string/, About, AppBarButton/Label */,
 								Icon = new Windows.UI.Xaml.Controls.SymbolIcon { Symbol = Windows.UI.Xaml.Controls.Symbol.Contact}/* Windows.UI.Xaml.Controls.IconElement/, Contact, AppBarButton/Icon */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 58:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 57:18)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler8)(c13 => 
 							{
@@ -277,7 +277,7 @@ namespace ElevateEvansvilleUI
 								Flyout = 								new global::Windows.UI.Xaml.Controls.MenuFlyout
 								{
 									Placement = global::Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode.Bottom/* Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode/, Bottom, MenuFlyout/Placement */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 62:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 61:26)
 									Items = 
 									{
 										new global::Windows.UI.Xaml.Controls.MenuFlyoutItem
@@ -288,7 +288,7 @@ namespace ElevateEvansvilleUI
 											{
 												IsParsing = true,
 												Symbol = global::Windows.UI.Xaml.Controls.Symbol.Help/* Windows.UI.Xaml.Controls.Symbol/, Help, SymbolIcon/Symbol */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 65:38)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 64:38)
 											}
 											.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler9)(c14 => 
 											{
@@ -296,7 +296,7 @@ namespace ElevateEvansvilleUI
 											}
 											))
 											,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 63:30)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 62:30)
 										}
 										.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler10)(c15 => 
 										{
@@ -314,7 +314,7 @@ namespace ElevateEvansvilleUI
 											{
 												IsParsing = true,
 												Symbol = global::Windows.UI.Xaml.Controls.Symbol.VideoChat/* Windows.UI.Xaml.Controls.Symbol/, VideoChat, SymbolIcon/Symbol */,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 70:38)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 69:38)
 											}
 											.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler9)(c16 => 
 											{
@@ -322,7 +322,7 @@ namespace ElevateEvansvilleUI
 											}
 											))
 											,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 68:30)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 67:30)
 										}
 										.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler10)(c17 => 
 										{
@@ -335,7 +335,7 @@ namespace ElevateEvansvilleUI
 									}
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 60:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 59:18)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler8)(c19 => 
 							{
@@ -354,27 +354,27 @@ namespace ElevateEvansvilleUI
 								Flyout = 								new global::Windows.UI.Xaml.Controls.Flyout
 								{
 									Placement = global::Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode.Bottom/* Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode/, Bottom, Flyout/Placement */,
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 79:26)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 78:26)
 									Content = 
 									new global::Windows.UI.Xaml.Controls.ListView
 									{
 										IsParsing = true,
 										SelectionMode = global::Windows.UI.Xaml.Controls.ListViewSelectionMode.None/* Windows.UI.Xaml.Controls.ListViewSelectionMode/, None, ListView/SelectionMode */,
 										Margin = new global::Windows.UI.Xaml.Thickness(-12)/* Windows.UI.Xaml.Thickness/, -12, ListView/Margin */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 80:30)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 79:30)
 										Items = 
 										{
 											new global::Windows.UI.Xaml.Controls.ListViewItem
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 81:34)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 80:34)
 												Content = 
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
 													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 													Spacing = 9d/* double/, 9, StackPanel/Spacing */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 82:38)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 81:38)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.Image
@@ -383,7 +383,7 @@ namespace ElevateEvansvilleUI
 															Source = "/Assets/Images/Logos/YouTube.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/YouTube.png, Image/Source */,
 															Height = 30d/* double/, 30, Image/Height */,
 															Width = 30d/* double/, 30, Image/Width */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 83:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 82:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler5)(c20 => 
 														{
@@ -397,7 +397,7 @@ namespace ElevateEvansvilleUI
 															Text = "YouTube"/* string/, YouTube, TextBlock/Text */,
 															VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 															FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 84:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 83:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler12)(c21 => 
 														{
@@ -425,14 +425,14 @@ namespace ElevateEvansvilleUI
 											new global::Windows.UI.Xaml.Controls.ListViewItem
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 87:34)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 86:34)
 												Content = 
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
 													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 													Spacing = 9d/* double/, 9, StackPanel/Spacing */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 88:38)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 87:38)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.Image
@@ -441,7 +441,7 @@ namespace ElevateEvansvilleUI
 															Source = "/Assets/Images/Logos/Facebook.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Facebook.png, Image/Source */,
 															Height = 30d/* double/, 30, Image/Height */,
 															Width = 30d/* double/, 30, Image/Width */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 89:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 88:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler5)(c24 => 
 														{
@@ -455,7 +455,7 @@ namespace ElevateEvansvilleUI
 															Text = "Facebook"/* string/, Facebook, TextBlock/Text */,
 															VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 															FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 90:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 89:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler12)(c25 => 
 														{
@@ -483,14 +483,14 @@ namespace ElevateEvansvilleUI
 											new global::Windows.UI.Xaml.Controls.ListViewItem
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 93:34)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 92:34)
 												Content = 
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
 													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 													Spacing = 9d/* double/, 9, StackPanel/Spacing */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 94:38)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 93:38)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.Image
@@ -499,7 +499,7 @@ namespace ElevateEvansvilleUI
 															Source = "/Assets/Images/Logos/Twitter.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Twitter.png, Image/Source */,
 															Height = 30d/* double/, 30, Image/Height */,
 															Width = 30d/* double/, 30, Image/Width */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 95:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 94:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler5)(c28 => 
 														{
@@ -513,7 +513,7 @@ namespace ElevateEvansvilleUI
 															Text = "Twitter"/* string/, Twitter, TextBlock/Text */,
 															VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 															FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 96:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 95:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler12)(c29 => 
 														{
@@ -541,14 +541,14 @@ namespace ElevateEvansvilleUI
 											new global::Windows.UI.Xaml.Controls.ListViewItem
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 99:34)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 98:34)
 												Content = 
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
 													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 													Spacing = 9d/* double/, 9, StackPanel/Spacing */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 100:38)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 99:38)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.Image
@@ -557,7 +557,7 @@ namespace ElevateEvansvilleUI
 															Source = "/Assets/Images/Logos/TikTok.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/TikTok.png, Image/Source */,
 															Height = 30d/* double/, 30, Image/Height */,
 															Width = 30d/* double/, 30, Image/Width */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 101:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 100:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler5)(c32 => 
 														{
@@ -571,7 +571,7 @@ namespace ElevateEvansvilleUI
 															Text = "TikTok"/* string/, TikTok, TextBlock/Text */,
 															VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 															FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 102:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 101:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler12)(c33 => 
 														{
@@ -599,14 +599,14 @@ namespace ElevateEvansvilleUI
 											new global::Windows.UI.Xaml.Controls.ListViewItem
 											{
 												IsParsing = true,
-												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 105:34)
+												// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 104:34)
 												Content = 
 												new global::Windows.UI.Xaml.Controls.StackPanel
 												{
 													IsParsing = true,
 													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
 													Spacing = 9d/* double/, 9, StackPanel/Spacing */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 106:38)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 105:38)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.Image
@@ -615,7 +615,7 @@ namespace ElevateEvansvilleUI
 															Source = "/Assets/Images/Logos/Github.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Github.png, Image/Source */,
 															Height = 30d/* double/, 30, Image/Height */,
 															Width = 30d/* double/, 30, Image/Width */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 107:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 106:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler5)(c36 => 
 														{
@@ -629,7 +629,7 @@ namespace ElevateEvansvilleUI
 															Text = "Github"/* string/, Github, TextBlock/Text */,
 															VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 															FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 108:42)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 107:42)
 														}
 														.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler12)(c37 => 
 														{
@@ -664,7 +664,7 @@ namespace ElevateEvansvilleUI
 									,
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 77:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 76:18)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler8)(c42 => 
 							{
@@ -684,7 +684,7 @@ namespace ElevateEvansvilleUI
 								Name = "Terms",
 								Label = "Terms of Service"/* string/, Terms of Service, AppBarButton/Label */,
 								FontSize = 16d/* double/, 16, AppBarButton/FontSize */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 117:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 116:18)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler8)(c43 => 
 							{
@@ -702,7 +702,7 @@ namespace ElevateEvansvilleUI
 								Name = "Privacy",
 								Label = "Privay Policy"/* string/, Privay Policy, AppBarButton/Label */,
 								FontSize = 16d/* double/, 16, AppBarButton/FontSize */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 118:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 117:18)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler8)(c44 => 
 							{
@@ -716,7 +716,7 @@ namespace ElevateEvansvilleUI
 							,
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 34:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 33:10)
 					}
 					.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler17)(c45 => 
 					{
@@ -733,7 +733,7 @@ namespace ElevateEvansvilleUI
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
 						Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,10)/* Windows.UI.Xaml.Thickness/, 0,0,0,10, StackPanel/Margin */,
 						Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, StackPanel/Orientation */,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 123:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 122:10)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.Button
@@ -748,7 +748,7 @@ namespace ElevateEvansvilleUI
 								CornerRadius = new Windows.UI.Xaml.CornerRadius(10)/* Windows.UI.Xaml.CornerRadius/, 10, Button/CornerRadius */,
 								Flyout = 								new global::Windows.UI.Xaml.Controls.MenuFlyout
 								{
-									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 128:22)
+									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 127:22)
 									Items = 
 									{
 										new global::Windows.UI.Xaml.Controls.MenuFlyoutItem
@@ -757,7 +757,7 @@ namespace ElevateEvansvilleUI
 											Text = "Sign Petition"/* string/, Sign Petition, MenuFlyoutItem/Text */,
 											HorizontalContentAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, MenuFlyoutItem/HorizontalContentAlignment */,
 											FontSize = 18d/* double/, 18, MenuFlyoutItem/FontSize */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 129:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 128:26)
 										}
 										.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler10)(c46 => 
 										{
@@ -773,7 +773,7 @@ namespace ElevateEvansvilleUI
 											Text = "Volunteer"/* string/, Volunteer, MenuFlyoutItem/Text */,
 											HorizontalContentAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, MenuFlyoutItem/HorizontalContentAlignment */,
 											FontSize = 18d/* double/, 18, MenuFlyoutItem/FontSize */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 130:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 129:26)
 										}
 										.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler10)(c47 => 
 										{
@@ -789,7 +789,7 @@ namespace ElevateEvansvilleUI
 											Text = "Support"/* string/, Support, MenuFlyoutItem/Text */,
 											HorizontalContentAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, MenuFlyoutItem/HorizontalContentAlignment */,
 											FontSize = 18d/* double/, 18, MenuFlyoutItem/FontSize */,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 131:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 130:26)
 										}
 										.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler10)(c48 => 
 										{
@@ -802,7 +802,7 @@ namespace ElevateEvansvilleUI
 									}
 								}
 								,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 124:14)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 123:14)
 							}
 							.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler6)(c49 => 
 							{
@@ -832,10 +832,10 @@ namespace ElevateEvansvilleUI
 						{
 							TintColor = global::Windows.UI.Colors.Black/* Windows.UI.Color/, Black, AcrylicBrush/TintColor */,
 							TintOpacity = 0.1d/* double/, 0.1, AcrylicBrush/TintOpacity */,
-							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 145:18)
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 144:18)
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 138:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 137:10)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.StackPanel
@@ -843,7 +843,7 @@ namespace ElevateEvansvilleUI
 								IsParsing = true,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, StackPanel/HorizontalAlignment */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, StackPanel/VerticalAlignment */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 139:14)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 138:14)
 								Children = 
 								{
 									new global::Windows.UI.Xaml.Controls.TextBlock
@@ -853,7 +853,7 @@ namespace ElevateEvansvilleUI
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, TextBlock/HorizontalAlignment */,
 										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 										FontSize = 18d/* double/, 18, TextBlock/FontSize */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 141:18)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\MainPage.xaml (Line 140:18)
 									}
 									.MainPage_3af1f3f12a93ba9809ceae47e9031eea_XamlApply((MainPage_3af1f3f12a93ba9809ceae47e9031eeaXamlApplyExtensions.XamlApplyHandler12)(c52 => 
 									{

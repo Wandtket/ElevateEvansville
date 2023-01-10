@@ -108,12 +108,12 @@ namespace ElevateEvansvilleUI
 
 
                     //Navigate to the MainPage
+                    //Cookies.ClearCookies();
 #if __WASM__
                     rootFrame.Navigate(typeof(MainPage), args.Arguments);
 #elif WINDOWS_UWP
                     rootFrame.Navigate(typeof(SignatureRequestPage), args.Arguments);
 #endif
-
 
 
                 }

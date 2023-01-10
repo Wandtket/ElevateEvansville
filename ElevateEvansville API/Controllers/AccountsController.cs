@@ -5,6 +5,7 @@ using ElevateEvansville_API.Repositories;
 using ElevateEvansville_API.Results;
 using ElevateEvansvilleUI.API.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace ElevateEvansville_API.Controllers
 {
@@ -48,7 +49,17 @@ namespace ElevateEvansville_API.Controllers
         public async Task<string> Validate(AccountsDTO dto)
         {
             bool Valid = await AccountsRepository.ValidatePassword(dto.Email, dto.Password);
-            return Valid.ToString();
+
+            if (Valid == true)
+            {
+                Accounts Account = await AccountsRepository.GetByEmail(dto.Email);
+                AccountsDTO ReturnDto = mapper.Map<AccountsDTO>(Account);
+                return JsonSerializer.Serialize(ReturnDto);;
+            }
+            else
+            {
+                return null;
+            }
         }
 
 

@@ -194,6 +194,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Payment.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Payment2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Paypal.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Petition.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Queue.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Server.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Images\Logos\Tiktok.png" />

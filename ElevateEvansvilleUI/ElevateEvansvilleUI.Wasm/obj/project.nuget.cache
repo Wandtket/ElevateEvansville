@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iA3fYVHTuEDgb5JgsbsBjlgUz0GI5P7e/XK9uqaKQbJD/kzksqXMbG/5dTs2knE6qRQFw5g7qqbEjlaKQQBhtg==",
+  "dgSpecHash": "IcRHraWRmzx1LDsXHsdu7BEL5PBhsYcWBo6P5wiq0447CMJ6uei1MoU0xFN3B6E8PN1ded0gvS1r+Lo9trBIsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\wandt\\source\\Workspaces\\ElevateEvansville\\ElevateEvansvilleUI\\ElevateEvansvilleUI.Wasm\\ElevateEvansvilleUI.Wasm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wandt\\.nuget\\packages\\commonservicelocator\\2.0.5\\commonservicelocator.2.0.5.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\libphonenumber-csharp\\8.13.3\\libphonenumber-csharp.8.13.3.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\libphonenumber-csharp\\8.13.4\\libphonenumber-csharp.8.13.4.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

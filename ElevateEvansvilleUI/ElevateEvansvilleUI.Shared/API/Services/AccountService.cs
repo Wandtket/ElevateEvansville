@@ -20,13 +20,13 @@ namespace ElevateEvansvilleUI.API.Services
             return result;
         }
 
-        public async Task<bool> Validate(AccountsDTO request)
+        public async Task<AccountsDTO> Validate(AccountsDTO request)
         {
             var result = await this.PostAsync(
                 $"https://elevateevansvilleapi.azure-api.net/Accounts/Validate",
                 JsonSerializer.Serialize(request));
 
-            return Convert.ToBoolean(result);
+            return JsonSerializer.Deserialize<AccountsDTO>(result);
         }
     }
 }

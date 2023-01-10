@@ -53,10 +53,14 @@ namespace ElevateEvansvilleUI.Pages
             dto.MachineId = "";
             dto.Password = HashedPassword;
 
-            bool valid = await service.Validate(dto);
+            var Account = await service.Validate(dto);
 
-            if (valid == true) { await MessageBox.Show("The volunteer portal isn't quite ready yet, please check back later.", "Password Correct"); }
-            if (valid == false)
+            if (Account != null) 
+            {
+                Cookies.SaveVolunteerInfo(Account);
+                UI.Navigate(typeof(VolunteerPortalPage));
+            }
+            if (Account == null)
             {
                 await MessageBox.Show("Please try again.", "Password Incorrect");
             }
@@ -94,7 +98,7 @@ namespace ElevateEvansvilleUI.Pages
 
                 if (AccountStatus.Contains("Success"))
                 {
-                    await MessageBox.Show("Please continue to login.", AccountStatus);
+                    await MessageBox.Show("Please continue to login.", AccountStatus);                  
                     ClearForm();
                     DismissSignUp();
                 }
