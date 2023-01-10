@@ -54,6 +54,8 @@ namespace ElevateEvansville_API.Controllers
             {
                 Accounts Account = await AccountsRepository.GetByEmail(dto.Email);
                 AccountsDTO ReturnDto = mapper.Map<AccountsDTO>(Account);
+                ReturnDto.Password = "";
+                ReturnDto.MachineId = "";
                 return JsonSerializer.Serialize(ReturnDto);;
             }
             else
