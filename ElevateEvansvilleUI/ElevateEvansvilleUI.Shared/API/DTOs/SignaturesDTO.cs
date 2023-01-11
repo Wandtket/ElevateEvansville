@@ -32,10 +32,10 @@ namespace ElevateEvansvilleUI.API.DTOs
         public string Email { get; set; }
 
         [JsonPropertyName("PreferredTimeStart")]
-        public DateTime PreferredTimeStart { get; set; }
+        public TimeSpan PreferredTimeStart { get; set; }
 
         [JsonPropertyName("PreferredTimeEnd")]
-        public DateTime PreferredTimeEnd { get; set; }
+        public TimeSpan PreferredTimeEnd { get; set; }
 
         [JsonPropertyName("Anytime")]
         public bool Anytime { get; set; }

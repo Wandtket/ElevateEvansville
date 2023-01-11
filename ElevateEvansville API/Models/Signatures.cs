@@ -19,9 +19,9 @@ namespace ElevateEvansville_API.Models
 
         public string? Email { get; set; }
 
-        public DateTime? PreferredTimeStart { get; set; }
+        public TimeSpan? PreferredTimeStart { get; set; }
 
-        public DateTime? PreferredTimeEnd { get; set; }
+        public TimeSpan? PreferredTimeEnd { get; set; }
 
         public bool? Anytime { get; set; }
 

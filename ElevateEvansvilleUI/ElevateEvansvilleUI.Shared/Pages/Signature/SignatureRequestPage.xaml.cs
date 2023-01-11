@@ -106,18 +106,24 @@ namespace ElevateEvansvilleUI.Pages
                     dto.Phone = Phone.Text;
                     dto.Email = Email.Text;
 
-                    string TimeStart = 
+                    string TimeStartString = 
                         TimeStartHour.SelectedItem.ToString() + ":" + 
                         TimeStartMinute.SelectedItem.ToString() + " " +
                         TimeStartAM.SelectedItem.ToString();
 
-                    string TimeEnd =
+                    string TimeEndString =
                         TimeEndHour.SelectedItem.ToString() + ":" +
                         TimeEndMinute.SelectedItem.ToString() + " " +
                         TimeEndAM.SelectedItem.ToString();
 
-                    dto.PreferredTimeStart = DateTime.Parse(TimeStart);
-                    dto.PreferredTimeEnd = DateTime.Parse(TimeEnd);
+                    DateTime TimeStartDateTime = DateTime.Parse(TimeStartString);
+                    DateTime TimeEndDateTime = DateTime.Parse(TimeEndString);
+
+                    TimeSpan TimeStart = TimeSpan.Parse(TimeStartDateTime.ToString("HH:mm"));
+                    TimeSpan TimeEnd = TimeSpan.Parse(TimeEndDateTime.ToString("HH:mm"));
+
+                    dto.PreferredTimeStart = TimeStart;
+                    dto.PreferredTimeEnd = TimeEnd;
                     dto.Anytime = (bool)CheckboxAnytime.IsChecked;
 
                     dto.PrefersMonday = (bool)CheckboxMonday.IsChecked;
