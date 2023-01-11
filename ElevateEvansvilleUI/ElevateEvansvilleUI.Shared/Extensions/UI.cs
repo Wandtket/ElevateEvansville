@@ -63,6 +63,13 @@ namespace ElevateEvansvilleUI.Extensions
             LoadingGrid.Visibility = Visibility.Collapsed;
         }
 
+        public static void ShareLink(string Title, string Text, string URL)
+        {
+#if __WASM__
+            WebAssemblyRuntime.InvokeJS($"Share('{Title}', '{Text}', '{URL}');");
+#endif
+        }
+
 
         /// <summary>
         /// Detect the user agent of the browser in Web Assembly for mobile devices.

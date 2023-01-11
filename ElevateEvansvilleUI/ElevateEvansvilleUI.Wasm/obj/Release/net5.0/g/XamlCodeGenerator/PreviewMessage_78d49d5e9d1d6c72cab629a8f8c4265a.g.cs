@@ -244,7 +244,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 		}
 		private class _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0
 		{
-			public _View Build(object __ResourceOwner_71)
+			public _View Build(object __ResourceOwner_15)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;

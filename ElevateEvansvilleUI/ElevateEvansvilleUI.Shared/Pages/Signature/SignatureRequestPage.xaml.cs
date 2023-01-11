@@ -278,5 +278,13 @@ namespace ElevateEvansvilleUI.Pages
             TimeEndMinute.IsEnabled = !TimeEndMinute.IsEnabled;
             TimeEndAM.IsEnabled = !TimeEndAM.IsEnabled;
         }
+
+        private void Share_Click(object sender, RoutedEventArgs e)
+        {
+            UI.ShareLink("Tyler Wandtke for Mayor of Evansville Petition Signature",
+                "Sign up to have your signature taken for Tyler Wandtke for Mayor of Evansville @ ElevateEvansville.com.",
+                "https://www.elevateevansville.com/SignatureRequest");
+        }
+
     }
 }

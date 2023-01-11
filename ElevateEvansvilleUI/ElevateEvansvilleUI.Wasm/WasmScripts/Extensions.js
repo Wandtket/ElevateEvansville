@@ -26,6 +26,19 @@ function GetMachineId() {
 }
 
 
+//Gets a unique I.D. for a device that can be checked with the API to determine if the device belongs to a volunteer.
+function Share(Title, Text, Url) {
+
+    const shareData = {
+        title: Title,
+        text: Text,
+        url: Url
+    }
+
+    navigator.share(shareData);
+}
+
+
 //Checks if the user clicks the forward or back button then calls C# function
 window.onpopstate = function () {
     const HandleURI = Module.mono_bind_static_method(
