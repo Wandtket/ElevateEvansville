@@ -19,6 +19,28 @@
                 <Setter Property="FontSize" Value="16"/>
                 <Setter Property="TextWrapping" Value="Wrap"/>
             </Style>
+
+        <ContentDialog x:Name="ChangeEmailDialog" Title="Change Email" PrimaryButtonText="Update" CloseButtonText="Cancel">
+            <StackPanel Spacing="15">
+                <PasswordBox x:Name="ChangeEmailPassword" Header="Current Password: "/>
+                <TextBox x:Name="ChangeEmailEmail" Header="New Email: "/>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:Name="ChangePasswordDialog" Title="Change Password" PrimaryButtonText="Update" CloseButtonText="Cancel">
+            <StackPanel Spacing="15">
+                <PasswordBox x:Name="ChangePasswordCurrent" Header="Current Password: "/>
+                <PasswordBox x:Name="ChangePasswordNew" Header="New Password: "/>
+            </StackPanel>
+        </ContentDialog>
+
+        <ContentDialog x:Name="ChangePhoneDialog" Title="Change Phone" PrimaryButtonText="Update" CloseButtonText="Cancel">
+            <StackPanel Spacing="15">
+                <PasswordBox x:Name="ChangePhonePassword" Header="Current Password: "/>
+                <PasswordBox x:Name="ChangePhone" Header="New Phone: "/>
+            </StackPanel>
+        </ContentDialog>
+
     </Page.Resources>
 
     <Grid>
@@ -29,11 +51,18 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
 
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
 
-            <TextBlock x:Name="WelcomeMessage" Text="Welcome, Tyler"/>
+                <TextBlock x:Name="WelcomeMessage" Text="Welcome, Tyler" FontWeight="Bold" FontSize="18"/>
+                <Button Content="Log Out" Click="LogOut_Click" Grid.Column="1"/>
+            </Grid>
 
-            <StackPanel Grid.Row="1">
-                <controls:Expander x:Name="VistaPrint" 
+            <StackPanel Grid.Row="1" Spacing="15">
+                <controls:Expander x:Name="SignatureBlock" 
                                    MaxWidth="555" IsExpanded="True" VerticalAlignment="Top">
                     <controls:Expander.Header>
                         <Grid ColumnSpacing="15">
@@ -83,12 +112,44 @@
                         </Grid>
                     </controls:Expander.Content>
                 </controls:Expander>
+                <controls:Expander x:Name="SecurityBlock" 
+                                   MaxWidth="555" 
+                                   IsExpanded="True" VerticalAlignment="Top"
+                                   Visibility="Collapsed">
+                    <controls:Expander.Header>
+                        <Grid ColumnSpacing="15">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Source="/Assets/Images/Logos/Petition.png" Height="35" Width="30" Grid.Column="0"/>
+                            <TextBlock FontSize="20" VerticalAlignment="Center" Grid.Column="1">
+                                            <Bold>Security</Bold>
+                            </TextBlock>
+
+                        </Grid>
+                    </controls:Expander.Header>
+                    <controls:Expander.Content >
+                        <Grid MinHeight="50" Padding="15,0,15,15">
+                            <controls:WrapPanel Orientation="Horizontal" Margin="0,0,0,0">
+                                <Button Content="Change Email" Click="ChangeEmail_Click"
+                                            Background="Orange" Foreground="Black" FontWeight="Medium"  Padding="20,5,20,5"
+                                            FontSize="16" Margin="5,5,0,0"/>
+                                <Button Content="Change Password" Click="ChangePassword_Click"
+                                            Background="Orange" Foreground="Black" FontWeight="Medium"  Padding="20,5,20,5"
+                                            FontSize="16" Margin="5,5,0,0"/>
+                                <Button Content="Change Phone #" Click="ChangePhone_Click"
+                                            Background="Orange" Foreground="Black" FontWeight="Medium"  Padding="20,5,20,5"
+                                            FontSize="16" Margin="5,5,0,0"/>
+                            </controls:WrapPanel>
+                        </Grid>
+                    </controls:Expander.Content>
+                </controls:Expander>
+
 
             </StackPanel>
-            
+
         </Grid>
-        
-        
-        
     </Grid>
 </Page>

@@ -28,14 +28,8 @@ namespace ElevateEvansvilleUI.Controls.Messages
 
         private void PopulateChangelog()
         {
-            ChangeItemsListView.Items.Add("Added 4th feature item.");
-            ChangeItemsListView.Items.Add("Home screen bug fixes.");
-            ChangeItemsListView.Items.Add("Event Calendars now operational for Outlook, Google and Yahoo");
-            ChangeItemsListView.Items.Add("Paypal API operational (UI coming later)");
-            ChangeItemsListView.Items.Add("Added 'Distribute All' support item.");
-            ChangeItemsListView.Items.Add("Fixed application theme on iOS.");
-            ChangeItemsListView.Items.Add("Made support page items more readable on smaller displays.");
-            ChangeItemsListView.Items.Add("Moved mission statement to Platform page.");
+            ChangeItemsListView.Items.Add("Added Volunteer Portal.");
+            ChangeItemsListView.Items.Add("Added Petition Request Web Form.");
         }
 
     }

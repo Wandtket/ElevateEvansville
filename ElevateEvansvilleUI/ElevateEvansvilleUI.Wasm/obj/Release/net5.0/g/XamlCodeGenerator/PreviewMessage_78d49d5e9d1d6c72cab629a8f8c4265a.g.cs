@@ -90,8 +90,8 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						{
 							new global::Windows.UI.Xaml.Documents.Run
 							{
-								Text = "This site is currently under construction and is subject to change, please check back in periodically for updates."/* string/, This site is currently under construction and is subject to change, please check back in periodically for updates., Run/Text */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 21:11)
+								Text = "This site is currently being field tested, most features are operational, if something isn't working for you please message the developer (Tyler Wandtke)."/* string/, This site is currently being field tested, most features are operational, if something isn't working for you please message the developer (Tyler Wandtke)., Run/Text */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 22:11)
 							}
 							,
 						}
@@ -113,31 +113,31 @@ namespace ElevateEvansvilleUI.Controls.Messages
 							new global::Windows.UI.Xaml.Controls.ColumnDefinition
 							{
 								Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 25:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 26:18)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.ColumnDefinition
 							{
 								Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 26:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 27:18)
 							}
 							,
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 23:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 24:10)
 						Children = 
 						{
 							new global::Windows.UI.Xaml.Controls.TextBlock
 							{
 								IsParsing = true,
 								FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 29:14)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 30:14)
 								Inlines = 
 								{
 									new global::Windows.UI.Xaml.Documents.Run
 									{
 										Text = "Changelog:"/* string/, Changelog:, Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 31:15)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 32:15)
 									}
 									,
 								}
@@ -155,13 +155,13 @@ namespace ElevateEvansvilleUI.Controls.Messages
 								FontSize = 11d/* double/, 11, TextBlock/FontSize */,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, TextBlock/HorizontalAlignment */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, TextBlock/VerticalAlignment */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 33:14)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 34:14)
 								Inlines = 
 								{
 									new global::Windows.UI.Xaml.Documents.Run
 									{
-										Text = "Last Updated: 11/20/2022"/* string/, Last Updated: 11/20/2022, Run/Text */,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 35:15)
+										Text = "Last Updated: 1/15/2023"/* string/, Last Updated: 1/15/2023, Run/Text */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 36:15)
 									}
 									,
 								}
@@ -187,11 +187,11 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						IsParsing = true,
 						Name = "ChangeItemsListView",
 						Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, ListView/Margin */,
-						Height = 225d/* double/, 225, ListView/Height */,
+						Height = 75d/* double/, 75, ListView/Height */,
 						SelectionMode = global::Windows.UI.Xaml.Controls.ListViewSelectionMode.None/* Windows.UI.Xaml.Controls.ListViewSelectionMode/, None, ListView/SelectionMode */,
 						ItemTemplate = 						new global::Windows.UI.Xaml.DataTemplate(this , __owner => 						new _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0().Build(__owner)
 						)						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 39:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 40:10)
 					}
 					.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler5)(c12 => 
 					{
@@ -244,7 +244,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 		}
 		private class _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0
 		{
-			public _View Build(object __ResourceOwner_15)
+			public _View Build(object __ResourceOwner_41)
 			{
 				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
@@ -254,7 +254,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					IsParsing = true,
 					TextWrapping = global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/, Wrap, TextBlock/TextWrapping */,
 					Padding = new global::Windows.UI.Xaml.Thickness(0,5,0,5)/* Windows.UI.Xaml.Thickness/, 0,5,0,5, TextBlock/Padding */,
-					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 42:22)
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 43:22)
 				}
 				.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c16 => 
 				{

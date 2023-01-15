@@ -24495,7 +24495,7 @@ namespace ElevateEvansvilleUI.Wasm
 	}
 
 	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.SignatureRequestPage
+	/// Builder for ElevateEvansvilleUI.Pages.PetitionPage
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24514,7 +24514,7 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.SignatureRequestPage));
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.PetitionPage));
 			MetadataBuilder_358.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
 			if(parent == null)
 			{
@@ -24522,7 +24522,7 @@ namespace ElevateEvansvilleUI.Wasm
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.SignatureRequestPage();
+		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.PetitionPage();
 	}
 
 	/// <summary>
@@ -24742,43 +24742,12 @@ namespace ElevateEvansvilleUI.Wasm
 		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.Featured.EnergyPage();
 	}
 
-	/// <summary>
-	/// Builder for ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_683
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage));
-			MetadataBuilder_358.Build(bindableType); // global::Windows.UI.Xaml.Controls.Page
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage();
-	}
-
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	public class BindableMetadataProvider : global::Uno.UI.DataBinding.IBindableMetadataProvider
 	{
-		static global::System.Collections.Hashtable _bindableTypeCacheByFullName = new global::System.Collections.Hashtable(672);
+		static global::System.Collections.Hashtable _bindableTypeCacheByFullName = new global::System.Collections.Hashtable(671);
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
@@ -25478,7 +25447,6 @@ namespace ElevateEvansvilleUI.Wasm
 		private global::Uno.UI.DataBinding.IBindableType _bindableType680;
 		private global::Uno.UI.DataBinding.IBindableType _bindableType681;
 		private global::Uno.UI.DataBinding.IBindableType _bindableType682;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType683;
 		public global::Uno.UI.DataBinding.IBindableType GetBindableTypeByFullName(string fullName)
 		{
 			switch(fullName)
@@ -29533,7 +29501,7 @@ namespace ElevateEvansvilleUI.Wasm
 					_bindableType674 = MetadataBuilder_674.Build();
 				}
 				return _bindableType674;
-				case "ElevateEvansvilleUI.Pages.SignatureRequestPage":
+				case "ElevateEvansvilleUI.Pages.PetitionPage":
 				if(_bindableType675 == null)
 				{
 					_bindableType675 = MetadataBuilder_675.Build();
@@ -29581,12 +29549,6 @@ namespace ElevateEvansvilleUI.Wasm
 					_bindableType682 = MetadataBuilder_682.Build();
 				}
 				return _bindableType682;
-				case "ElevateEvansvilleUI.Pages.Signature.SignatureSelectionPage":
-				if(_bindableType683 == null)
-				{
-					_bindableType683 = MetadataBuilder_683.Build();
-				}
-				return _bindableType683;
 				default:
 				return null;
 			}

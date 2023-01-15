@@ -128,7 +128,7 @@ namespace ElevateEvansvilleUI
 
         private async void SignPetition_Click(object sender, RoutedEventArgs e)
         {
-            UI.Navigate(typeof(SignatureRequestPage));
+            UI.Navigate(typeof(PetitionPage));
         }
 
         private async void Volunteer_Click(object sender, RoutedEventArgs e)

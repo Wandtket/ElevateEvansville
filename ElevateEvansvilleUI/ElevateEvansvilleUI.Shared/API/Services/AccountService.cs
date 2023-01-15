@@ -1,5 +1,6 @@
 ﻿using ApiClient.Shared.WebServices;
 using ElevateEvansvilleUI.API.DTOs;
+using ElevateEvansvilleUI.API.Requests;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -24,6 +25,15 @@ namespace ElevateEvansvilleUI.API.Services
         {
             var result = await this.PostAsync(
                 $"https://elevateevansvilleapi.azure-api.net/Accounts/Validate",
+                JsonSerializer.Serialize(request));
+
+            return JsonSerializer.Deserialize<AccountsDTO>(result);
+        }
+
+        public async Task<AccountsDTO> Update(AccountUpdateRequest request)
+        {
+            var result = await this.PostAsync(
+                $"https://elevateevansvilleapi.azure-api.net/Accounts/Update",
                 JsonSerializer.Serialize(request));
 
             return JsonSerializer.Deserialize<AccountsDTO>(result);

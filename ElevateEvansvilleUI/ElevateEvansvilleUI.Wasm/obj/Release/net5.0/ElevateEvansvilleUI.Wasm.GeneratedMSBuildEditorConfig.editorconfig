@@ -123,11 +123,11 @@ build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\Eleva
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PrivacyPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
 
-[C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Signature/SignatureRequestPage.xaml]
+[C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/PetitionPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
-build_metadata.AdditionalFiles.Link = Pages\Signature\SignatureRequestPage.xaml
-build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml
-build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureRequestPage.xaml
+build_metadata.AdditionalFiles.Link = Pages\PetitionPage.xaml
+build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml
+build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
 
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Volunteer/VolunteerLoginPage.xaml]
@@ -142,13 +142,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\Volunteer\VolunteerPortalPage.xaml
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml
-build_metadata.AdditionalFiles.XamlRuntime = 
-
-[C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Signature/SignatureSelectionPage.xaml]
-build_metadata.AdditionalFiles.SourceItemGroup = Page
-build_metadata.AdditionalFiles.Link = Pages\Signature\SignatureSelectionPage.xaml
-build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml
-build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Signature\SignatureSelectionPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
 
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/SupportPage.xaml]

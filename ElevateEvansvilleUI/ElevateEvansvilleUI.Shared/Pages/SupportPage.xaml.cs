@@ -1,5 +1,4 @@
 ﻿using ElevateEvansvilleUI.Extensions;
-using ElevateEvansvilleUI.Pages.Signature;
 using System;
 using System.Linq;
 using Windows.System;
@@ -180,7 +179,7 @@ namespace ElevateEvansvilleUI.Pages
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
-            UI.Navigate(typeof(SignatureSelectionPage));
+            //UI.Navigate(typeof(SignatureSelectionPage));
         }
     }
 }

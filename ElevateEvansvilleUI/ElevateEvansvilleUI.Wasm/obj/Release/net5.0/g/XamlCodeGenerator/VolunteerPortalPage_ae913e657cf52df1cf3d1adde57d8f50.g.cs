@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_6 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_32 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -65,12 +65,210 @@ namespace ElevateEvansvilleUI.Pages
 				}
 			)
 			;
+			Resources[
+			"ChangeEmailDialog"
+			] = 
+			new global::Windows.UI.Xaml.Controls.ContentDialog
+			{
+				IsParsing = true,
+				Name = "ChangeEmailDialog",
+				Title = @"Change Email"/* object/, Change Email, ContentDialog/Title */,
+				PrimaryButtonText = "Update"/* string/, Update, ContentDialog/PrimaryButtonText */,
+				CloseButtonText = "Cancel"/* string/, Cancel, ContentDialog/CloseButtonText */,
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 23:10)
+				Content = 
+				new global::Windows.UI.Xaml.Controls.StackPanel
+				{
+					IsParsing = true,
+					Spacing = 15d/* double/, 15, StackPanel/Spacing */,
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 24:14)
+					Children = 
+					{
+						new global::Windows.UI.Xaml.Controls.PasswordBox
+						{
+							IsParsing = true,
+							Name = "ChangeEmailPassword",
+							Header = @"Current Password: "/* object/, Current Password: , PasswordBox/Header */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 25:18)
+						}
+						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c0 => 
+						{
+							nameScope.RegisterName("ChangeEmailPassword", c0);
+							this.ChangeEmailPassword = c0;
+							c0.CreationComplete();
+						}
+						))
+						,
+						new global::Windows.UI.Xaml.Controls.TextBox
+						{
+							IsParsing = true,
+							Name = "ChangeEmailEmail",
+							Header = @"New Email: "/* object/, New Email: , TextBox/Header */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 26:18)
+						}
+						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c1 => 
+						{
+							nameScope.RegisterName("ChangeEmailEmail", c1);
+							this.ChangeEmailEmail = c1;
+							c1.CreationComplete();
+						}
+						))
+						,
+					}
+				}
+				.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c2 => 
+				{
+					c2.CreationComplete();
+				}
+				))
+				,
+			}
+			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c3 => 
+			{
+				nameScope.RegisterName("ChangeEmailDialog", c3);
+				this.ChangeEmailDialog = c3;
+				c3.CreationComplete();
+			}
+			))
+			;
+			Resources[
+			"ChangePasswordDialog"
+			] = 
+			new global::Windows.UI.Xaml.Controls.ContentDialog
+			{
+				IsParsing = true,
+				Name = "ChangePasswordDialog",
+				Title = @"Change Password"/* object/, Change Password, ContentDialog/Title */,
+				PrimaryButtonText = "Update"/* string/, Update, ContentDialog/PrimaryButtonText */,
+				CloseButtonText = "Cancel"/* string/, Cancel, ContentDialog/CloseButtonText */,
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 30:10)
+				Content = 
+				new global::Windows.UI.Xaml.Controls.StackPanel
+				{
+					IsParsing = true,
+					Spacing = 15d/* double/, 15, StackPanel/Spacing */,
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 31:14)
+					Children = 
+					{
+						new global::Windows.UI.Xaml.Controls.PasswordBox
+						{
+							IsParsing = true,
+							Name = "ChangePasswordCurrent",
+							Header = @"Current Password: "/* object/, Current Password: , PasswordBox/Header */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 32:18)
+						}
+						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c4 => 
+						{
+							nameScope.RegisterName("ChangePasswordCurrent", c4);
+							this.ChangePasswordCurrent = c4;
+							c4.CreationComplete();
+						}
+						))
+						,
+						new global::Windows.UI.Xaml.Controls.PasswordBox
+						{
+							IsParsing = true,
+							Name = "ChangePasswordNew",
+							Header = @"New Password: "/* object/, New Password: , PasswordBox/Header */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 33:18)
+						}
+						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c5 => 
+						{
+							nameScope.RegisterName("ChangePasswordNew", c5);
+							this.ChangePasswordNew = c5;
+							c5.CreationComplete();
+						}
+						))
+						,
+					}
+				}
+				.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c6 => 
+				{
+					c6.CreationComplete();
+				}
+				))
+				,
+			}
+			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c7 => 
+			{
+				nameScope.RegisterName("ChangePasswordDialog", c7);
+				this.ChangePasswordDialog = c7;
+				c7.CreationComplete();
+			}
+			))
+			;
+			Resources[
+			"ChangePhoneDialog"
+			] = 
+			new global::Windows.UI.Xaml.Controls.ContentDialog
+			{
+				IsParsing = true,
+				Name = "ChangePhoneDialog",
+				Title = @"Change Phone"/* object/, Change Phone, ContentDialog/Title */,
+				PrimaryButtonText = "Update"/* string/, Update, ContentDialog/PrimaryButtonText */,
+				CloseButtonText = "Cancel"/* string/, Cancel, ContentDialog/CloseButtonText */,
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 37:10)
+				Content = 
+				new global::Windows.UI.Xaml.Controls.StackPanel
+				{
+					IsParsing = true,
+					Spacing = 15d/* double/, 15, StackPanel/Spacing */,
+					// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 38:14)
+					Children = 
+					{
+						new global::Windows.UI.Xaml.Controls.PasswordBox
+						{
+							IsParsing = true,
+							Name = "ChangePhonePassword",
+							Header = @"Current Password: "/* object/, Current Password: , PasswordBox/Header */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 39:18)
+						}
+						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c8 => 
+						{
+							nameScope.RegisterName("ChangePhonePassword", c8);
+							this.ChangePhonePassword = c8;
+							c8.CreationComplete();
+						}
+						))
+						,
+						new global::Windows.UI.Xaml.Controls.PasswordBox
+						{
+							IsParsing = true,
+							Name = "ChangePhone",
+							Header = @"New Phone: "/* object/, New Phone: , PasswordBox/Header */,
+							// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 40:18)
+						}
+						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c9 => 
+						{
+							nameScope.RegisterName("ChangePhone", c9);
+							this.ChangePhone = c9;
+							c9.CreationComplete();
+						}
+						))
+						,
+					}
+				}
+				.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c10 => 
+				{
+					c10.CreationComplete();
+				}
+				))
+				,
+			}
+			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c11 => 
+			{
+				nameScope.RegisterName("ChangePhoneDialog", c11);
+				this.ChangePhoneDialog = c11;
+				c11.CreationComplete();
+			}
+			))
+			;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 1:2)
 			base.Content = 
 			new global::Windows.UI.Xaml.Controls.Grid
 			{
 				IsParsing = true,
-				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 24:6)
+				// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 46:6)
 				Children = 
 				{
 					new global::Windows.UI.Xaml.Controls.Grid
@@ -85,51 +283,99 @@ namespace ElevateEvansvilleUI.Pages
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 27:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 49:18)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 28:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 50:18)
 							}
 							,
 							new global::Windows.UI.Xaml.Controls.RowDefinition
 							{
 								Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 29:18)
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 51:18)
 							}
 							,
 						}
 						,
-						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 25:10)
+						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 47:10)
 						Children = 
 						{
-							new global::Windows.UI.Xaml.Controls.TextBlock
+							new global::Windows.UI.Xaml.Controls.Grid
 							{
 								IsParsing = true,
-								Name = "WelcomeMessage",
-								Text = "Welcome, Tyler"/* string/, Welcome, Tyler, TextBlock/Text */,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 33:14)
+								ColumnDefinitions = 
+								{
+									new global::Windows.UI.Xaml.Controls.ColumnDefinition
+									{
+										Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 56:22)
+									}
+									,
+									new global::Windows.UI.Xaml.Controls.ColumnDefinition
+									{
+										Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 57:22)
+									}
+									,
+								}
+								,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 54:14)
+								Children = 
+								{
+									new global::Windows.UI.Xaml.Controls.TextBlock
+									{
+										IsParsing = true,
+										Name = "WelcomeMessage",
+										Text = "Welcome, Tyler"/* string/, Welcome, Tyler, TextBlock/Text */,
+										FontWeight = global::Windows.UI.Text.FontWeights.Bold/* Windows.UI.Text.FontWeight/, Bold, TextBlock/FontWeight */,
+										FontSize = 18d/* double/, 18, TextBlock/FontSize */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 60:18)
+									}
+									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c17 => 
+									{
+										nameScope.RegisterName("WelcomeMessage", c17);
+										this.WelcomeMessage = c17;
+										c17.CreationComplete();
+									}
+									))
+									,
+									new global::Windows.UI.Xaml.Controls.Button
+									{
+										IsParsing = true,
+										Content = @"Log Out"/* object/, Log Out, Button/Content */,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 61:18)
+									}
+									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c18 => 
+									{
+										var Click_LogOut_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										/* second level */ c18.Click += (LogOut_Click_sender,LogOut_Click_e) => (Click_LogOut_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.LogOut_Click(LogOut_Click_sender,LogOut_Click_e);
+										global::Windows.UI.Xaml.Controls.Grid.SetColumn(c18, 1/* int/, 1, Grid/Column */);
+										c18.CreationComplete();
+									}
+									))
+									,
+								}
 							}
-							.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c3 => 
+							.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c19 => 
 							{
-								nameScope.RegisterName("WelcomeMessage", c3);
-								this.WelcomeMessage = c3;
-								c3.CreationComplete();
+								c19.CreationComplete();
 							}
 							))
 							,
 							new global::Windows.UI.Xaml.Controls.StackPanel
 							{
 								IsParsing = true,
-								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 35:14)
+								Spacing = 15d/* double/, 15, StackPanel/Spacing */,
+								// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 64:14)
 								Children = 
 								{
 									new global::Microsoft.UI.Xaml.Controls.Expander
 									{
 										IsParsing = true,
-										Name = "VistaPrint",
+										Name = "SignatureBlock",
 										MaxWidth = 555d/* double/, 555, Expander/MaxWidth */,
 										IsExpanded = true/* bool/, True, Expander/IsExpanded */,
 										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Expander/VerticalAlignment */,
@@ -142,18 +388,18 @@ namespace ElevateEvansvilleUI.Pages
 												new global::Windows.UI.Xaml.Controls.ColumnDefinition
 												{
 													Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 41:34)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 70:34)
 												}
 												,
 												new global::Windows.UI.Xaml.Controls.ColumnDefinition
 												{
 													Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 42:34)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 71:34)
 												}
 												,
 											}
 											,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 39:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 68:26)
 											Children = 
 											{
 												new global::Windows.UI.Xaml.Controls.Image
@@ -162,12 +408,12 @@ namespace ElevateEvansvilleUI.Pages
 													Source = "/Assets/Images/Logos/Petition.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Petition.png, Image/Source */,
 													Height = 35d/* double/, 35, Image/Height */,
 													Width = 30d/* double/, 30, Image/Width */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 45:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 74:30)
 												}
-												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c6 => 
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler9)(c22 => 
 												{
-													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c6, 0/* int/, 0, Grid/Column */);
-													c6.CreationComplete();
+													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c22, 0/* int/, 0, Grid/Column */);
+													c22.CreationComplete();
 												}
 												))
 												,
@@ -176,18 +422,18 @@ namespace ElevateEvansvilleUI.Pages
 													IsParsing = true,
 													FontSize = 20d/* double/, 20, TextBlock/FontSize */,
 													VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 46:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 75:30)
 													Inlines = 
 													{
 														new global::Windows.UI.Xaml.Documents.Bold
 														{
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 47:46)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 76:46)
 															Inlines = 
 															{
 																new global::Windows.UI.Xaml.Documents.Run
 																{
 																	Text = "Print Petition & Acquire Signatures"/* string/, Print Petition & Acquire Signatures, Run/Text */,
-																	// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 47:92)
+																	// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 76:92)
 																}
 																,
 															}
@@ -195,18 +441,18 @@ namespace ElevateEvansvilleUI.Pages
 														,
 													}
 												}
-												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c8 => 
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c24 => 
 												{
-													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c8, 1/* int/, 1, Grid/Column */);
-													c8.CreationComplete();
+													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c24, 1/* int/, 1, Grid/Column */);
+													c24.CreationComplete();
 												}
 												))
 												,
 											}
 										}
-										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler5)(c9 => 
+										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c25 => 
 										{
-											c9.CreationComplete();
+											c25.CreationComplete();
 										}
 										))
 										,
@@ -221,30 +467,30 @@ namespace ElevateEvansvilleUI.Pages
 												new global::Windows.UI.Xaml.Controls.RowDefinition
 												{
 													Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 55:34)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 84:34)
 												}
 												,
 												new global::Windows.UI.Xaml.Controls.RowDefinition
 												{
 													Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 56:34)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 85:34)
 												}
 												,
 												new global::Windows.UI.Xaml.Controls.RowDefinition
 												{
 													Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 57:34)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 86:34)
 												}
 												,
 												new global::Windows.UI.Xaml.Controls.RowDefinition
 												{
 													Height = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, RowDefinition/Height */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 58:34)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 87:34)
 												}
 												,
 											}
 											,
-											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 53:26)
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 82:26)
 											Children = 
 											{
 												new global::Windows.UI.Xaml.Controls.TextBlock
@@ -252,21 +498,21 @@ namespace ElevateEvansvilleUI.Pages
 													IsParsing = true,
 													Margin = new global::Windows.UI.Xaml.Thickness(0,25,0,0)/* Windows.UI.Xaml.Thickness/, 0,25,0,0, TextBlock/Margin */,
 													FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 61:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 90:30)
 													Inlines = 
 													{
 														new global::Windows.UI.Xaml.Documents.Run
 														{
 															Text = "If you wish to collect signatures at your place of work or neighborhood, print out as many petitions as you like."/* string/, If you wish to collect signatures at your place of work or neighborhood, print out as many petitions as you like., Run/Text */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 63:31)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 92:31)
 														}
 														,
 													}
 												}
-												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c15 => 
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c31 => 
 												{
-													global::Windows.UI.Xaml.Controls.Grid.SetRow(c15, 0/* int/, 0, Grid/Row */);
-													c15.CreationComplete();
+													global::Windows.UI.Xaml.Controls.Grid.SetRow(c31, 0/* int/, 0, Grid/Row */);
+													c31.CreationComplete();
 												}
 												))
 												,
@@ -274,21 +520,21 @@ namespace ElevateEvansvilleUI.Pages
 												{
 													IsParsing = true,
 													FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 65:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 94:30)
 													Inlines = 
 													{
 														new global::Windows.UI.Xaml.Documents.Run
 														{
 															Text = "Please ensure that you witness the person signing the petition and that you validate that they are registered to vote and live within the city limits of Evansville IN."/* string/, Please ensure that you witness the person signing the petition and that you validate that they are registered to vote and live within the city limits of Evansville IN., Run/Text */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 68:31)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 97:31)
 														}
 														,
 													}
 												}
-												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c17 => 
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c33 => 
 												{
-													global::Windows.UI.Xaml.Controls.Grid.SetRow(c17, 1/* int/, 1, Grid/Row */);
-													c17.CreationComplete();
+													global::Windows.UI.Xaml.Controls.Grid.SetRow(c33, 1/* int/, 1, Grid/Row */);
+													c33.CreationComplete();
 												}
 												))
 												,
@@ -296,24 +542,24 @@ namespace ElevateEvansvilleUI.Pages
 												{
 													IsParsing = true,
 													FontSize = 16d/* double/, 16, TextBlock/FontSize */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 70:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 99:30)
 													Inlines = 
 													{
 														new global::Windows.UI.Xaml.Documents.Run
 														{
 															Text = "Lastly, be sure to "/* string/, Lastly, be sure to , Run/Text */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 71:53)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 100:53)
 														}
 														,
 														new global::Windows.UI.Xaml.Documents.Bold
 														{
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 71:53)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 100:53)
 															Inlines = 
 															{
 																new global::Windows.UI.Xaml.Documents.Run
 																{
 																	Text = "print on both sides."/* string/, print on both sides., Run/Text */,
-																	// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 71:80)
+																	// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 100:80)
 																}
 																,
 															}
@@ -322,15 +568,15 @@ namespace ElevateEvansvilleUI.Pages
 														new global::Windows.UI.Xaml.Documents.Run
 														{
 															Text = " and fill in your information in the Petition Carrier Certification. once you're finished collecting, schedule a turn in via email by pressing the button below."/* string/,  and fill in your information in the Petition Carrier Certification. once you're finished collecting, schedule a turn in via email by pressing the button below., Run/Text */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 73:31)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 102:31)
 														}
 														,
 													}
 												}
-												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c21 => 
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c37 => 
 												{
-													global::Windows.UI.Xaml.Controls.Grid.SetRow(c21, 2/* int/, 2, Grid/Row */);
-													c21.CreationComplete();
+													global::Windows.UI.Xaml.Controls.Grid.SetRow(c37, 2/* int/, 2, Grid/Row */);
+													c37.CreationComplete();
 												}
 												))
 												,
@@ -339,7 +585,7 @@ namespace ElevateEvansvilleUI.Pages
 													IsParsing = true,
 													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, WrapPanel/Orientation */,
 													Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,0)/* Windows.UI.Xaml.Thickness/, 0,0,0,0, WrapPanel/Margin */,
-													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 75:30)
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 104:30)
 													Children = 
 													{
 														new global::Windows.UI.Xaml.Controls.Button
@@ -353,13 +599,13 @@ namespace ElevateEvansvilleUI.Pages
 															Padding = new global::Windows.UI.Xaml.Thickness(20,5,20,5)/* Windows.UI.Xaml.Thickness/, 20,5,20,5, Button/Padding */,
 															FontSize = 18d/* double/, 18, Button/FontSize */,
 															Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 76:34)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 105:34)
 														}
-														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c22 => 
+														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c38 => 
 														{
 															var Click_PrintPetition_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-															/* second level */ c22.Click += (PrintPetition_Click_sender,PrintPetition_Click_e) => (Click_PrintPetition_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.PrintPetition_Click(PrintPetition_Click_sender,PrintPetition_Click_e);
-															c22.CreationComplete();
+															/* second level */ c38.Click += (PrintPetition_Click_sender,PrintPetition_Click_e) => (Click_PrintPetition_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.PrintPetition_Click(PrintPetition_Click_sender,PrintPetition_Click_e);
+															c38.CreationComplete();
 														}
 														))
 														,
@@ -374,91 +620,293 @@ namespace ElevateEvansvilleUI.Pages
 															Padding = new global::Windows.UI.Xaml.Thickness(20,5,20,5)/* Windows.UI.Xaml.Thickness/, 20,5,20,5, Button/Padding */,
 															FontSize = 18d/* double/, 18, Button/FontSize */,
 															Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
-															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 79:34)
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 108:34)
 														}
-														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c23 => 
+														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c39 => 
 														{
 															var Click_TurnInPetition_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-															/* second level */ c23.Click += (TurnInPetition_Click_sender,TurnInPetition_Click_e) => (Click_TurnInPetition_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.TurnInPetition_Click(TurnInPetition_Click_sender,TurnInPetition_Click_e);
-															c23.CreationComplete();
+															/* second level */ c39.Click += (TurnInPetition_Click_sender,TurnInPetition_Click_e) => (Click_TurnInPetition_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.TurnInPetition_Click(TurnInPetition_Click_sender,TurnInPetition_Click_e);
+															c39.CreationComplete();
 														}
 														))
 														,
 													}
 												}
-												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c24 => 
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler11)(c40 => 
 												{
-													global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 4/* int/, 4, Grid/Row */);
-													c24.CreationComplete();
+													global::Windows.UI.Xaml.Controls.Grid.SetRow(c40, 4/* int/, 4, Grid/Row */);
+													c40.CreationComplete();
 												}
 												))
 												,
 											}
 										}
-										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler5)(c25 => 
+										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c41 => 
 										{
-											c25.CreationComplete();
+											c41.CreationComplete();
 										}
 										))
 										,
-										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 36:18)
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 65:18)
 									}
-									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c26 => 
+									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler12)(c42 => 
 									{
-										nameScope.RegisterName("VistaPrint", c26);
-										this.VistaPrint = c26;
-										c26.CreationComplete();
+										nameScope.RegisterName("SignatureBlock", c42);
+										this.SignatureBlock = c42;
+										c42.CreationComplete();
+									}
+									))
+									,
+									new global::Microsoft.UI.Xaml.Controls.Expander
+									{
+										IsParsing = true,
+										Name = "SecurityBlock",
+										MaxWidth = 555d/* double/, 555, Expander/MaxWidth */,
+										IsExpanded = true/* bool/, True, Expander/IsExpanded */,
+										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Expander/VerticalAlignment */,
+										Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Expander/Visibility */,
+										Header = 										new global::Windows.UI.Xaml.Controls.Grid
+										{
+											IsParsing = true,
+											ColumnSpacing = 15d/* double/, 15, Grid/ColumnSpacing */,
+											ColumnDefinitions = 
+											{
+												new global::Windows.UI.Xaml.Controls.ColumnDefinition
+												{
+													Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Auto)/* Windows.UI.Xaml.GridLength/, auto, ColumnDefinition/Width */,
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 122:34)
+												}
+												,
+												new global::Windows.UI.Xaml.Controls.ColumnDefinition
+												{
+													Width = new Windows.UI.Xaml.GridLength(1f, Windows.UI.Xaml.GridUnitType.Star)/* Windows.UI.Xaml.GridLength/, *, ColumnDefinition/Width */,
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 123:34)
+												}
+												,
+											}
+											,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 120:26)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Controls.Image
+												{
+													IsParsing = true,
+													Source = "/Assets/Images/Logos/Petition.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Petition.png, Image/Source */,
+													Height = 35d/* double/, 35, Image/Height */,
+													Width = 30d/* double/, 30, Image/Width */,
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 126:30)
+												}
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler9)(c45 => 
+												{
+													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c45, 0/* int/, 0, Grid/Column */);
+													c45.CreationComplete();
+												}
+												))
+												,
+												new global::Windows.UI.Xaml.Controls.TextBlock
+												{
+													IsParsing = true,
+													FontSize = 20d/* double/, 20, TextBlock/FontSize */,
+													VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 127:30)
+													Inlines = 
+													{
+														new global::Windows.UI.Xaml.Documents.Bold
+														{
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 128:46)
+															Inlines = 
+															{
+																new global::Windows.UI.Xaml.Documents.Run
+																{
+																	Text = "Security"/* string/, Security, Run/Text */,
+																	// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 128:61)
+																}
+																,
+															}
+														}
+														,
+													}
+												}
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c47 => 
+												{
+													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c47, 1/* int/, 1, Grid/Column */);
+													c47.CreationComplete();
+												}
+												))
+												,
+											}
+										}
+										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c48 => 
+										{
+											c48.CreationComplete();
+										}
+										))
+										,
+										Content = 										new global::Windows.UI.Xaml.Controls.Grid
+										{
+											IsParsing = true,
+											MinHeight = 50d/* double/, 50, Grid/MinHeight */,
+											Padding = new global::Windows.UI.Xaml.Thickness(15,0,15,15)/* Windows.UI.Xaml.Thickness/, 15,0,15,15, Grid/Padding */,
+											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 134:26)
+											Children = 
+											{
+												new global::Windows.UI.Xaml.Controls.WrapPanel
+												{
+													IsParsing = true,
+													Orientation = global::Windows.UI.Xaml.Controls.Orientation.Horizontal/* Windows.UI.Xaml.Controls.Orientation/, Horizontal, WrapPanel/Orientation */,
+													Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,0)/* Windows.UI.Xaml.Thickness/, 0,0,0,0, WrapPanel/Margin */,
+													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 135:30)
+													Children = 
+													{
+														new global::Windows.UI.Xaml.Controls.Button
+														{
+															IsParsing = true,
+															Content = @"Change Email"/* object/, Change Email, Button/Content */,
+															Background = SolidColorBrushHelper.Orange/* Windows.UI.Xaml.Media.Brush/, Orange, Button/Background */,
+															Foreground = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, Button/Foreground */,
+															FontWeight = global::Windows.UI.Text.FontWeights.Medium/* Windows.UI.Text.FontWeight/, Medium, Button/FontWeight */,
+															Padding = new global::Windows.UI.Xaml.Thickness(20,5,20,5)/* Windows.UI.Xaml.Thickness/, 20,5,20,5, Button/Padding */,
+															FontSize = 16d/* double/, 16, Button/FontSize */,
+															Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 136:34)
+														}
+														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c49 => 
+														{
+															var Click_ChangeEmail_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															/* second level */ c49.Click += (ChangeEmail_Click_sender,ChangeEmail_Click_e) => (Click_ChangeEmail_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.ChangeEmail_Click(ChangeEmail_Click_sender,ChangeEmail_Click_e);
+															c49.CreationComplete();
+														}
+														))
+														,
+														new global::Windows.UI.Xaml.Controls.Button
+														{
+															IsParsing = true,
+															Content = @"Change Password"/* object/, Change Password, Button/Content */,
+															Background = SolidColorBrushHelper.Orange/* Windows.UI.Xaml.Media.Brush/, Orange, Button/Background */,
+															Foreground = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, Button/Foreground */,
+															FontWeight = global::Windows.UI.Text.FontWeights.Medium/* Windows.UI.Text.FontWeight/, Medium, Button/FontWeight */,
+															Padding = new global::Windows.UI.Xaml.Thickness(20,5,20,5)/* Windows.UI.Xaml.Thickness/, 20,5,20,5, Button/Padding */,
+															FontSize = 16d/* double/, 16, Button/FontSize */,
+															Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 139:34)
+														}
+														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c50 => 
+														{
+															var Click_ChangePassword_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															/* second level */ c50.Click += (ChangePassword_Click_sender,ChangePassword_Click_e) => (Click_ChangePassword_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.ChangePassword_Click(ChangePassword_Click_sender,ChangePassword_Click_e);
+															c50.CreationComplete();
+														}
+														))
+														,
+														new global::Windows.UI.Xaml.Controls.Button
+														{
+															IsParsing = true,
+															Content = @"Change Phone #"/* object/, Change Phone #, Button/Content */,
+															Background = SolidColorBrushHelper.Orange/* Windows.UI.Xaml.Media.Brush/, Orange, Button/Background */,
+															Foreground = SolidColorBrushHelper.Black/* Windows.UI.Xaml.Media.Brush/, Black, Button/Foreground */,
+															FontWeight = global::Windows.UI.Text.FontWeights.Medium/* Windows.UI.Text.FontWeight/, Medium, Button/FontWeight */,
+															Padding = new global::Windows.UI.Xaml.Thickness(20,5,20,5)/* Windows.UI.Xaml.Thickness/, 20,5,20,5, Button/Padding */,
+															FontSize = 16d/* double/, 16, Button/FontSize */,
+															Margin = new global::Windows.UI.Xaml.Thickness(5,5,0,0)/* Windows.UI.Xaml.Thickness/, 5,5,0,0, Button/Margin */,
+															// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 142:34)
+														}
+														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c51 => 
+														{
+															var Click_ChangePhone_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															/* second level */ c51.Click += (ChangePhone_Click_sender,ChangePhone_Click_e) => (Click_ChangePhone_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.ChangePhone_Click(ChangePhone_Click_sender,ChangePhone_Click_e);
+															c51.CreationComplete();
+														}
+														))
+														,
+													}
+												}
+												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler11)(c52 => 
+												{
+													c52.CreationComplete();
+												}
+												))
+												,
+											}
+										}
+										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c53 => 
+										{
+											c53.CreationComplete();
+										}
+										))
+										,
+										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 115:18)
+									}
+									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler12)(c54 => 
+									{
+										nameScope.RegisterName("SecurityBlock", c54);
+										this.SecurityBlock = c54;
+										c54.CreationComplete();
 									}
 									))
 									,
 								}
 							}
-							.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler9)(c27 => 
+							.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c55 => 
 							{
-								global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 1/* int/, 1, Grid/Row */);
-								c27.CreationComplete();
+								global::Windows.UI.Xaml.Controls.Grid.SetRow(c55, 1/* int/, 1, Grid/Row */);
+								c55.CreationComplete();
 							}
 							))
 							,
 						}
 					}
-					.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler5)(c28 => 
+					.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c56 => 
 					{
-						c28.CreationComplete();
+						c56.CreationComplete();
 					}
 					))
 					,
 				}
 			}
-			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler5)(c29 => 
+			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c57 => 
 			{
-				c29.CreationComplete();
+				c57.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c30 => 
+			.GenericApply((c58 => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 1:2)
 				
-				// WARNING Property c30.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
+				// WARNING Property c58.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c31 => 
+			.GenericApply((c59 => 
 			{
 				// Class ElevateEvansvilleUI.Pages.VolunteerPortalPage
 				var Loaded_Page_Loaded_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-				/* second level */ c31.Loaded += (Page_Loaded_sender,Page_Loaded_e) => (Loaded_Page_Loaded_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.Page_Loaded(Page_Loaded_sender,Page_Loaded_e);
-				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c31, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+				/* second level */ c59.Loaded += (Page_Loaded_sender,Page_Loaded_e) => (Loaded_Page_Loaded_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.Page_Loaded(Page_Loaded_sender,Page_Loaded_e);
+				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c59, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
 				/* _isTopLevelDictionary:False */
-				this._component_0 = c31;
-				c31.CreationComplete();
+				this._component_0 = c59;
+				c59.CreationComplete();
 			}
 			))
 			;
 			OnInitializeCompleted();
 
+			// Force materialization of x:Name resources, which will assign them to named property field.
+			object _ = null;
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 23:10)
+			Resources.TryGetValue("ChangeEmailDialog", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 30:10)
+			Resources.TryGetValue("ChangePasswordDialog", out _);
+			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 37:10)
+			Resources.TryGetValue("ChangePhoneDialog", out _);
+			Loading += (s, e) =>
+			{
+				ChangeEmailDialog.UpdateResourceBindings();
+				ChangePasswordDialog.UpdateResourceBindings();
+				ChangePhoneDialog.UpdateResourceBindings();
+			}
+			;
 			Bindings = new VolunteerPortalPage_Bindings(this);
 			Loading += delegate
 			{
@@ -467,6 +915,114 @@ namespace ElevateEvansvilleUI.Pages
 			;
 		}
 		partial void OnInitializeCompleted();
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangeEmailPasswordSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.PasswordBox ChangeEmailPassword
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.PasswordBox)_ChangeEmailPasswordSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangeEmailPasswordSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangeEmailEmailSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.TextBox ChangeEmailEmail
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.TextBox)_ChangeEmailEmailSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangeEmailEmailSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangeEmailDialogSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ContentDialog ChangeEmailDialog
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.ContentDialog)_ChangeEmailDialogSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangeEmailDialogSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangePasswordCurrentSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.PasswordBox ChangePasswordCurrent
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.PasswordBox)_ChangePasswordCurrentSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangePasswordCurrentSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangePasswordNewSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.PasswordBox ChangePasswordNew
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.PasswordBox)_ChangePasswordNewSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangePasswordNewSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangePasswordDialogSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ContentDialog ChangePasswordDialog
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.ContentDialog)_ChangePasswordDialogSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangePasswordDialogSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangePhonePasswordSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.PasswordBox ChangePhonePassword
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.PasswordBox)_ChangePhonePasswordSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangePhonePasswordSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangePhoneSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.PasswordBox ChangePhone
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.PasswordBox)_ChangePhoneSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangePhoneSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _ChangePhoneDialogSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Windows.UI.Xaml.Controls.ContentDialog ChangePhoneDialog
+		{
+			get
+			{
+				return (global::Windows.UI.Xaml.Controls.ContentDialog)_ChangePhoneDialogSubject.ElementInstance;
+			}
+			set
+			{
+				_ChangePhoneDialogSubject.ElementInstance = value;
+			}
+		}
 		private global::Windows.UI.Xaml.Data.ElementNameSubject _WelcomeMessageSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
 		private global::Windows.UI.Xaml.Controls.TextBlock WelcomeMessage
 		{
@@ -479,16 +1035,28 @@ namespace ElevateEvansvilleUI.Pages
 				_WelcomeMessageSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Data.ElementNameSubject _VistaPrintSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
-		private global::Microsoft.UI.Xaml.Controls.Expander VistaPrint
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _SignatureBlockSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Microsoft.UI.Xaml.Controls.Expander SignatureBlock
 		{
 			get
 			{
-				return (global::Microsoft.UI.Xaml.Controls.Expander)_VistaPrintSubject.ElementInstance;
+				return (global::Microsoft.UI.Xaml.Controls.Expander)_SignatureBlockSubject.ElementInstance;
 			}
 			set
 			{
-				_VistaPrintSubject.ElementInstance = value;
+				_SignatureBlockSubject.ElementInstance = value;
+			}
+		}
+		private global::Windows.UI.Xaml.Data.ElementNameSubject _SecurityBlockSubject = new global::Windows.UI.Xaml.Data.ElementNameSubject();
+		private global::Microsoft.UI.Xaml.Controls.Expander SecurityBlock
+		{
+			get
+			{
+				return (global::Microsoft.UI.Xaml.Controls.Expander)_SecurityBlockSubject.ElementInstance;
+			}
+			set
+			{
+				_SecurityBlockSubject.ElementInstance = value;
 			}
 		}
 		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
@@ -549,72 +1117,93 @@ namespace ElevateEvansvilleUI.Wasm
 {
 	static class VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions
 	{
-		public delegate void XamlApplyHandler0(global::Windows.UI.Xaml.Controls.RowDefinition instance);
+		public delegate void XamlApplyHandler0(global::Windows.UI.Xaml.Controls.PasswordBox instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.RowDefinition VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.RowDefinition instance, XamlApplyHandler0 handler)
+		public static global::Windows.UI.Xaml.Controls.PasswordBox VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.PasswordBox instance, XamlApplyHandler0 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.TextBlock instance);
+		public delegate void XamlApplyHandler1(global::Windows.UI.Xaml.Controls.TextBox instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.TextBlock VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler1 handler)
+		public static global::Windows.UI.Xaml.Controls.TextBox VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.TextBox instance, XamlApplyHandler1 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.ColumnDefinition instance);
+		public delegate void XamlApplyHandler2(global::Windows.UI.Xaml.Controls.StackPanel instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.ColumnDefinition VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.ColumnDefinition instance, XamlApplyHandler2 handler)
+		public static global::Windows.UI.Xaml.Controls.StackPanel VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler2 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.Image instance);
+		public delegate void XamlApplyHandler3(global::Windows.UI.Xaml.Controls.ContentDialog instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Image VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.Image instance, XamlApplyHandler3 handler)
+		public static global::Windows.UI.Xaml.Controls.ContentDialog VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.ContentDialog instance, XamlApplyHandler3 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Documents.Run instance);
+		public delegate void XamlApplyHandler4(global::Windows.UI.Xaml.Controls.RowDefinition instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Documents.Run VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Documents.Run instance, XamlApplyHandler4 handler)
+		public static global::Windows.UI.Xaml.Controls.RowDefinition VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.RowDefinition instance, XamlApplyHandler4 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.Grid instance);
+		public delegate void XamlApplyHandler5(global::Windows.UI.Xaml.Controls.ColumnDefinition instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Grid VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler5 handler)
+		public static global::Windows.UI.Xaml.Controls.ColumnDefinition VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.ColumnDefinition instance, XamlApplyHandler5 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.Button instance);
+		public delegate void XamlApplyHandler6(global::Windows.UI.Xaml.Controls.TextBlock instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.Button VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.Button instance, XamlApplyHandler6 handler)
+		public static global::Windows.UI.Xaml.Controls.TextBlock VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.TextBlock instance, XamlApplyHandler6 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler7(global::Windows.UI.Xaml.Controls.WrapPanel instance);
+		public delegate void XamlApplyHandler7(global::Windows.UI.Xaml.Controls.Button instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.WrapPanel VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.WrapPanel instance, XamlApplyHandler7 handler)
+		public static global::Windows.UI.Xaml.Controls.Button VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.Button instance, XamlApplyHandler7 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler8(global::Microsoft.UI.Xaml.Controls.Expander instance);
+		public delegate void XamlApplyHandler8(global::Windows.UI.Xaml.Controls.Grid instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Microsoft.UI.Xaml.Controls.Expander VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Microsoft.UI.Xaml.Controls.Expander instance, XamlApplyHandler8 handler)
+		public static global::Windows.UI.Xaml.Controls.Grid VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.Grid instance, XamlApplyHandler8 handler)
 		{
 			handler(instance);
 			return instance;
 		}
-		public delegate void XamlApplyHandler9(global::Windows.UI.Xaml.Controls.StackPanel instance);
+		public delegate void XamlApplyHandler9(global::Windows.UI.Xaml.Controls.Image instance);
 		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
-		public static global::Windows.UI.Xaml.Controls.StackPanel VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.StackPanel instance, XamlApplyHandler9 handler)
+		public static global::Windows.UI.Xaml.Controls.Image VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.Image instance, XamlApplyHandler9 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler10(global::Windows.UI.Xaml.Documents.Run instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Documents.Run VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Documents.Run instance, XamlApplyHandler10 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler11(global::Windows.UI.Xaml.Controls.WrapPanel instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Windows.UI.Xaml.Controls.WrapPanel VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Windows.UI.Xaml.Controls.WrapPanel instance, XamlApplyHandler11 handler)
+		{
+			handler(instance);
+			return instance;
+		}
+		public delegate void XamlApplyHandler12(global::Microsoft.UI.Xaml.Controls.Expander instance);
+		[System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining)]
+		public static global::Microsoft.UI.Xaml.Controls.Expander VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply(this global::Microsoft.UI.Xaml.Controls.Expander instance, XamlApplyHandler12 handler)
 		{
 			handler(instance);
 			return instance;

@@ -13,6 +13,7 @@
     <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\BalanceDTO.cs" Link="DTOs\BalanceDTO.cs" />
     <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\SignaturesDTO.cs" Link="DTOs\SignaturesDTO.cs" />
     <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\DTOs\TransactionsDTO.cs" Link="DTOs\TransactionsDTO.cs" />
+    <Compile Include="..\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\API\Requests\AccountUpdateRequest.cs" Link="Requests\AccountUpdateRequest.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +41,10 @@
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     <PackageReference Include="System.Text.Json" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Requests\" />
   </ItemGroup>
 
 </Project>

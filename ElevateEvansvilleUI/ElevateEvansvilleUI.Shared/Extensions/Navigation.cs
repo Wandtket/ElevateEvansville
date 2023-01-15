@@ -1,7 +1,6 @@
 ﻿using ElevateEvansvilleUI.Controls.Dialogs;
 using ElevateEvansvilleUI.Pages;
 using ElevateEvansvilleUI.Pages.Featured;
-using ElevateEvansvilleUI.Pages.Signature;
 using System;
 using System.Security.AccessControl;
 using System.Threading.Tasks;
@@ -48,8 +47,9 @@ namespace ElevateEvansvilleUI.Extensions
             else if (CurrentURI.Contains("Housing")) { UI.Navigate(typeof(HousingPage)); }
             else if (CurrentURI.Contains("Energy")) { UI.Navigate(typeof(EnergyPage)); }
 
-            else if (CurrentURI.Contains("SignatureRequest")) { UI.Navigate(typeof(SignatureRequestPage)); }
-            else if (CurrentURI.Contains("SignatureSelection")) { UI.Navigate(typeof(SignatureSelectionPage)); }
+            else if (CurrentURI.Contains("SignatureRequest")) { UI.Navigate(typeof(PetitionPage)); }
+            else if (CurrentURI.Contains("Petition")) { UI.Navigate(typeof(PetitionPage)); }
+
             else if (CurrentURI.Contains("SignatureTools")) { UI.Navigate(typeof(VolunteerPortalPage)); }
             else if (CurrentURI.Contains("SignatureVolunteer")) { UI.Navigate(typeof(VolunteerLoginPage)); }
 

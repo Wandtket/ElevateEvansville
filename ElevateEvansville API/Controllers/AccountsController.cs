@@ -4,6 +4,7 @@ using ElevateEvansville_API.Models;
 using ElevateEvansville_API.Repositories;
 using ElevateEvansville_API.Results;
 using ElevateEvansvilleUI.API.DTOs;
+using ElevateEvansvilleUI.API.Requests;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
@@ -65,6 +66,33 @@ namespace ElevateEvansville_API.Controllers
         }
 
 
+        [HttpPost]
+        [Route("/Accounts/Update")]
+        public async Task<string> Update(AccountUpdateRequest request)
+        {
+            bool Valid = await AccountsRepository.ValidatePassword(request.CurrentEmail, request.CurrentPassword);
+
+            if (Valid == true)
+            {
+                Accounts Account = await AccountsRepository.GetByEmail(request.CurrentEmail);
+
+                if (request.NewEmail != "") { Account.Email = request.NewEmail; }
+                if (request.NewPassword != "") { Account.Password = request.NewPassword; }
+                if (request.NewPhone != "") { Account.Phone = request.NewPhone; }
+
+                await AccountsRepository.UpdateAsync(Account);
+                await AccountsRepository.SaveChangesAsync();
+
+                AccountsDTO ReturnDto = mapper.Map<AccountsDTO>(Account);
+                ReturnDto.Password = "";
+                ReturnDto.MachineId = "";
+                return JsonSerializer.Serialize(ReturnDto);
+            }
+            else
+            {
+                return null;
+            }
+        }
 
     }
 }

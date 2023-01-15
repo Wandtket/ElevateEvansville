@@ -43,7 +43,7 @@ namespace ElevateEvansvilleUI.Pages
 
         private async void LogInButton_Click(object sender, RoutedEventArgs e)
         {
-            string HashedPassword = HashPassword(PasswordLogin.Password);
+            string HashedPassword = Security.HashPassword(PasswordLogin.Password);
 
             AccountsDTO dto = new AccountsDTO();
             dto.Email = EmailLogin.Text;
@@ -92,7 +92,7 @@ namespace ElevateEvansvilleUI.Pages
                 }
                 else { dto.MachineId = ""; }
 
-                dto.Password = HashPassword(ConfirmPasswordSignUp.Password);
+                dto.Password = Security.HashPassword(ConfirmPasswordSignUp.Password);
 
                 string AccountStatus = await service.Create(dto);
 
@@ -115,15 +115,7 @@ namespace ElevateEvansvilleUI.Pages
             }
         }
 
-        internal string HashPassword(string password)
-        {
-            byte[] hashedPassword;
-            using (SHA512 sha512 = SHA512.Create())
-            {
-                hashedPassword = sha512.ComputeHash(Encoding.UTF8.GetBytes(password));
-            }
-            return BitConverter.ToString(hashedPassword).Replace("-", "");
-        }
+        
 
         private bool ValidateForm()
         {

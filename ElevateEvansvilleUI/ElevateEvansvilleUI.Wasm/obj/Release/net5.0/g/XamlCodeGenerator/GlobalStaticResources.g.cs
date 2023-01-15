@@ -78,12 +78,11 @@ namespace ElevateEvansvilleUI.Wasm
 				RegisterDefaultStyles_HousingPage_005444f8b2b3d80bf3d12a74f7572034();
 				RegisterDefaultStyles_MainPage_3af1f3f12a93ba9809ceae47e9031eea();
 				RegisterDefaultStyles_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f();
+				RegisterDefaultStyles_PetitionPage_cdca8684f131863fabd875439e2700f3();
 				RegisterDefaultStyles_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c();
 				RegisterDefaultStyles_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a();
 				RegisterDefaultStyles_PrivacyPage_3fcb2ab55d64b5eee94a76357880ef2d();
 				RegisterDefaultStyles_RailroadPage_67e18ba6c0d30315621678b5bcff722a();
-				RegisterDefaultStyles_SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e();
-				RegisterDefaultStyles_SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792();
 				RegisterDefaultStyles_SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c();
 				RegisterDefaultStyles_TestPage_da17f6613ee4934aa363dc10577ac638();
 				RegisterDefaultStyles_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b();
@@ -110,12 +109,11 @@ namespace ElevateEvansvilleUI.Wasm
 		static partial void RegisterDefaultStyles_HousingPage_005444f8b2b3d80bf3d12a74f7572034();
 		static partial void RegisterDefaultStyles_MainPage_3af1f3f12a93ba9809ceae47e9031eea();
 		static partial void RegisterDefaultStyles_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f();
+		static partial void RegisterDefaultStyles_PetitionPage_cdca8684f131863fabd875439e2700f3();
 		static partial void RegisterDefaultStyles_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c();
 		static partial void RegisterDefaultStyles_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a();
 		static partial void RegisterDefaultStyles_PrivacyPage_3fcb2ab55d64b5eee94a76357880ef2d();
 		static partial void RegisterDefaultStyles_RailroadPage_67e18ba6c0d30315621678b5bcff722a();
-		static partial void RegisterDefaultStyles_SignatureRequestPage_fa5e805b1d1db49801ede4ae0380be5e();
-		static partial void RegisterDefaultStyles_SignatureSelectionPage_c72b85103cc4b380627a2304eaa85792();
 		static partial void RegisterDefaultStyles_SupportPage_dd8ca0b4707e5601bcb61eecaf6c268c();
 		static partial void RegisterDefaultStyles_TestPage_da17f6613ee4934aa363dc10577ac638();
 		static partial void RegisterDefaultStyles_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b();

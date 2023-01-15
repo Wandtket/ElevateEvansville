@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\BalanceDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\SignaturesDTO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\DTOs\TransactionsDTO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\Requests\AccountUpdateRequest.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Services\AccountService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Services\PayPalService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\Services\SignatureService.cs" />
@@ -35,6 +36,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\Cookies.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\Navigation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Security.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\UI.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -63,17 +65,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\PrivacyPage.xaml.cs">
       <DependentUpon>PrivacyPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureRequestPage.xaml.cs">
-      <DependentUpon>SignatureRequestPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PetitionPage.xaml.cs">
+      <DependentUpon>PetitionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerLoginPage.xaml.cs">
       <DependentUpon>VolunteerLoginPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerPortalPage.xaml.cs">
       <DependentUpon>VolunteerPortalPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureSelectionPage.xaml.cs">
-      <DependentUpon>SignatureSelectionPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\SupportPage.xaml.cs">
       <DependentUpon>SupportPage.xaml</DependentUpon>
@@ -127,7 +126,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureRequestPage.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Pages\PetitionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -136,10 +135,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Pages\Volunteer\VolunteerPortalPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\Signature\SignatureSelectionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -92,7 +92,7 @@ namespace ElevateEvansvilleUI
 #if __WASM__
                     //Preview Mode Message
                     ContentDialog dialog = new ContentDialog();                   
-                    dialog.Title = "PREVIEW MODE";
+                    dialog.Title = "BETA MODE";
                     dialog.SecondaryButtonText = "Continue";
                     PreviewMessage message = new PreviewMessage();
                     dialog.Content = message;
@@ -112,7 +112,7 @@ namespace ElevateEvansvilleUI
 #if __WASM__
                     rootFrame.Navigate(typeof(MainPage), args.Arguments);
 #elif WINDOWS_UWP
-                    rootFrame.Navigate(typeof(SignatureRequestPage), args.Arguments);
+                    rootFrame.Navigate(typeof(PetitionPage), args.Arguments);
 #endif
 
 
