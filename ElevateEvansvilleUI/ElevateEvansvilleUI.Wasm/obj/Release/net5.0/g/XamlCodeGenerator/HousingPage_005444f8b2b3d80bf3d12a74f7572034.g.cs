@@ -54,7 +54,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			Resources[
 			"Paragraph"
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_0 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_1 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +68,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			Resources[
 			"Header"
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_10 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_9 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 

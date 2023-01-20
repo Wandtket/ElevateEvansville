@@ -1763,7 +1763,7 @@
           "lib/net5.0/Uno.Extensions.Logging.WebAssembly.Console.dll": {}
         }
       },
-      "Uno.Foundation.Logging/4.6.39": {
+      "Uno.Foundation.Logging/4.6.41": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
@@ -1776,13 +1776,13 @@
           }
         }
       },
-      "Uno.Foundation.Runtime.WebAssembly/4.6.39": {
+      "Uno.Foundation.Runtime.WebAssembly/4.6.41": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
           "System.Memory": "4.5.5",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.6.39"
+          "Uno.Foundation.Logging": "4.6.41"
         },
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.dll": {
@@ -1840,7 +1840,7 @@
           }
         }
       },
-      "Uno.UI/4.6.39": {
+      "Uno.UI/4.6.41": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
@@ -1848,7 +1848,7 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.6.39",
+          "Uno.Foundation.Logging": "4.6.41",
           "Uno.SourceGenerationTasks": "4.2.0"
         },
         "compile": {
@@ -1905,12 +1905,12 @@
           "buildTransitive/netstandard2.0/Uno.UI.targets": {}
         }
       },
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.39": {
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.41": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Logging": "4.0.0-dev.7",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.0-dev.7",
-          "Uno.Foundation.Logging": "4.6.39"
+          "Uno.Foundation.Logging": "4.6.41"
         },
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
@@ -1929,13 +1929,13 @@
           }
         }
       },
-      "Uno.UI.Runtime.WebAssembly/4.6.39": {
+      "Uno.UI.Runtime.WebAssembly/4.6.41": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
-          "Uno.Foundation.Runtime.WebAssembly": "4.6.39",
+          "Uno.Foundation.Runtime.WebAssembly": "4.6.41",
           "Uno.SourceGenerationTasks": "4.2.0",
-          "Uno.UI": "4.6.39"
+          "Uno.UI": "4.6.41"
         },
         "compile": {
           "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.dll": {
@@ -1952,12 +1952,12 @@
           "buildTransitive/Uno.UI.Runtime.WebAssembly.targets": {}
         }
       },
-      "Uno.UI.WebAssembly/4.6.39": {
+      "Uno.UI.WebAssembly/4.6.41": {
         "type": "package",
         "dependencies": {
-          "Uno.Foundation.Runtime.WebAssembly": "4.6.39",
-          "Uno.UI": "4.6.39",
-          "Uno.UI.Runtime.WebAssembly": "4.6.39"
+          "Uno.Foundation.Runtime.WebAssembly": "4.6.41",
+          "Uno.UI": "4.6.41",
+          "Uno.UI.Runtime.WebAssembly": "4.6.41"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -5523,10 +5523,10 @@
         "uno.extensions.logging.webassembly.console.nuspec"
       ]
     },
-    "Uno.Foundation.Logging/4.6.39": {
-      "sha512": "O0VqcyWNAjje23ATf89cbW7rUqRi9nQTbZhfxXgdy+KVDy0eZCADbRGPS9oB8YakYnG9GTJMWUbAftJKJXGspQ==",
+    "Uno.Foundation.Logging/4.6.41": {
+      "sha512": "9JNeOusjOqazcOaM9IqBHUS5FmK+XGdkEbsgb0U3k1MCOLYHRV6rfVaNo0VPMvcr6+Di5kYqvZzEEd+ZEc9J7g==",
       "type": "package",
-      "path": "uno.foundation.logging/4.6.39",
+      "path": "uno.foundation.logging/4.6.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5551,21 +5551,21 @@
         "lib/xamarinios10/Uno.Foundation.Logging.pdb",
         "lib/xamarinmac20/Uno.Foundation.Logging.dll",
         "lib/xamarinmac20/Uno.Foundation.Logging.pdb",
-        "uno.foundation.logging.4.6.39.nupkg.sha512",
+        "uno.foundation.logging.4.6.41.nupkg.sha512",
         "uno.foundation.logging.nuspec",
         "uno.png"
       ]
     },
-    "Uno.Foundation.Runtime.WebAssembly/4.6.39": {
-      "sha512": "RE0T28gwlwPwEwfPqm7vWHLd+R9EcdFR71yhIghwdmaxqib8Hnlp7d0BQVQx8znBO0s05gokmkz3sZgSylD8Fg==",
+    "Uno.Foundation.Runtime.WebAssembly/4.6.41": {
+      "sha512": "PuPcbe6Wz7GzTLoe82eZQ+Qom159IL3IlZT6Siucas+sosqFxkrdghlxAY+B7dUu6Mu3NCbAUnxG6ve+UxCXlw==",
       "type": "package",
-      "path": "uno.foundation.runtime.webassembly/4.6.39",
+      "path": "uno.foundation.runtime.webassembly/4.6.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.dll",
         "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.pdb",
-        "uno.foundation.runtime.webassembly.4.6.39.nupkg.sha512",
+        "uno.foundation.runtime.webassembly.4.6.41.nupkg.sha512",
         "uno.foundation.runtime.webassembly.nuspec",
         "uno.png"
       ]
@@ -6265,10 +6265,10 @@
         "uno.toolkit.ui.nuspec"
       ]
     },
-    "Uno.UI/4.6.39": {
-      "sha512": "3KvIDjNGbLcFC6V1nn2UBnULMiA6hZjk4q3gTA4U5G73dR8tOhrYHtKhEi2uGWQQYVDoliXcaSUuW+1mXXGspg==",
+    "Uno.UI/4.6.41": {
+      "sha512": "e9+VVoKSDDATSf5EqV3Wb0Ds3wcneUD5LctdOKp7bUkTjmZ7JBCpD6IcoB0iq6QcEwomjNEdl7osvDx8xHWKXQ==",
       "type": "package",
-      "path": "uno.ui/4.6.39",
+      "path": "uno.ui/4.6.41",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -6854,14 +6854,14 @@
         "uno-runtime/netstandard2.0/webassembly/Uno.dll",
         "uno-runtime/netstandard2.0/webassembly/Uno.pdb",
         "uno.png",
-        "uno.ui.4.6.39.nupkg.sha512",
+        "uno.ui.4.6.41.nupkg.sha512",
         "uno.ui.nuspec"
       ]
     },
-    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.39": {
-      "sha512": "VpfQuAUEg/SYI1iG2hIob2FbrskVit5VssnKgDeoj2ja3k6ItT5XKvziyIqszrAupuF4M/hp5tntCgvlu+XJ/w==",
+    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.41": {
+      "sha512": "G79C2EFSQhIP7fKX7QrdWCSN3eMcribU/cspbWoWyv9WUC6R04MphrokkHx5GAzv/FYo9zSULWd1ajw1H5NirA==",
       "type": "package",
-      "path": "uno.ui.adapter.microsoft.extensions.logging/4.6.39",
+      "path": "uno.ui.adapter.microsoft.extensions.logging/4.6.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6886,14 +6886,14 @@
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll.config",
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.pdb",
         "uno.png",
-        "uno.ui.adapter.microsoft.extensions.logging.4.6.39.nupkg.sha512",
+        "uno.ui.adapter.microsoft.extensions.logging.4.6.41.nupkg.sha512",
         "uno.ui.adapter.microsoft.extensions.logging.nuspec"
       ]
     },
-    "Uno.UI.Runtime.WebAssembly/4.6.39": {
-      "sha512": "+twXT06PCVYihpP0l3N2NU5cN5137jskbarAmseaDqx0SsYGwN1TWZ3aj8Y1seAydCz/g6MCy9ityU4SgebkOQ==",
+    "Uno.UI.Runtime.WebAssembly/4.6.41": {
+      "sha512": "d2XscAbXmcnlwZKOXliabRiOpfTbcOtwRh08v4QflUYC4+MLXYA2NVsQ9v+A0UlNh8LqUiuI/R+RNpelDzTz+w==",
       "type": "package",
-      "path": "uno.ui.runtime.webassembly/4.6.39",
+      "path": "uno.ui.runtime.webassembly/4.6.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6901,14 +6901,14 @@
         "buildTransitive/Uno.UI.Runtime.WebAssembly.targets",
         "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.dll",
         "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.pdb",
-        "uno.ui.runtime.webassembly.4.6.39.nupkg.sha512",
+        "uno.ui.runtime.webassembly.4.6.41.nupkg.sha512",
         "uno.ui.runtime.webassembly.nuspec"
       ]
     },
-    "Uno.UI.WebAssembly/4.6.39": {
-      "sha512": "WEW7uP9dYboV2+mLqn8y65SfQ/gq/z9/dJhTJfmB9BhAnGc2NhNyhJUPOS3iiUbI30AJOK174d/boxmj8aJFFg==",
+    "Uno.UI.WebAssembly/4.6.41": {
+      "sha512": "HZhUiGynKUUczePtKpsk1/JeEwTYyl6+GxxvytKo4n8UmBZCQT3QcI9RLwcJaRaeWdDvhDhr7/NfwPYHj+A+AA==",
       "type": "package",
-      "path": "uno.ui.webassembly/4.6.39",
+      "path": "uno.ui.webassembly/4.6.41",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6916,7 +6916,7 @@
         "build/Uno.UI.WebAssembly.targets",
         "lib/netstandard1.0/_._",
         "uno.png",
-        "uno.ui.webassembly.4.6.39.nupkg.sha512",
+        "uno.ui.webassembly.4.6.41.nupkg.sha512",
         "uno.ui.webassembly.nuspec"
       ]
     },
@@ -7112,12 +7112,12 @@
       "System.Configuration.ConfigurationManager >= 7.0.0",
       "System.Text.Json >= 7.0.1",
       "Uno.Extensions.Logging.WebAssembly.Console >= 1.4.0",
-      "Uno.Foundation.Logging >= 4.6.39",
-      "Uno.Foundation.Runtime.WebAssembly >= 4.6.39",
+      "Uno.Foundation.Logging >= 4.6.41",
+      "Uno.Foundation.Runtime.WebAssembly >= 4.6.41",
       "Uno.Toolkit.UI >= 2.4.2",
-      "Uno.UI >= 4.6.39",
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.39",
-      "Uno.UI.WebAssembly >= 4.6.39",
+      "Uno.UI >= 4.6.41",
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.41",
+      "Uno.UI.WebAssembly >= 4.6.41",
       "Uno.Wasm.Bootstrap >= 7.0.11",
       "Uno.Wasm.Bootstrap.DevServer >= 7.0.11",
       "libphonenumber-csharp >= 8.13.4"
@@ -7209,11 +7209,11 @@
           },
           "Uno.Foundation.Logging": {
             "target": "Package",
-            "version": "[4.6.39, )"
+            "version": "[4.6.41, )"
           },
           "Uno.Foundation.Runtime.WebAssembly": {
             "target": "Package",
-            "version": "[4.6.39, )"
+            "version": "[4.6.41, )"
           },
           "Uno.Toolkit.UI": {
             "target": "Package",
@@ -7221,15 +7221,15 @@
           },
           "Uno.UI": {
             "target": "Package",
-            "version": "[4.6.39, )"
+            "version": "[4.6.41, )"
           },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
             "target": "Package",
-            "version": "[4.6.39, )"
+            "version": "[4.6.41, )"
           },
           "Uno.UI.WebAssembly": {
             "target": "Package",
-            "version": "[4.6.39, )"
+            "version": "[4.6.41, )"
           },
           "Uno.Wasm.Bootstrap": {
             "target": "Package",
