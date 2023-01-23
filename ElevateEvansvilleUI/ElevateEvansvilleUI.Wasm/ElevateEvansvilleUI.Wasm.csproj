@@ -8,8 +8,8 @@
 		<WasmPWAManifestFile>manifest.json</WasmPWAManifestFile>
 		<WasmShellWebAppBasePath>/</WasmShellWebAppBasePath>
 		<WasmShellILLinkerEnabled>false</WasmShellILLinkerEnabled>
-		<WasmShellGenerateAOTProfile>true</WasmShellGenerateAOTProfile>
-		<WasmShellMonoRuntimeExecutionMode>InterpreterAndAOT</WasmShellMonoRuntimeExecutionMode>
+		<!--<WasmShellGenerateAOTProfile>true</WasmShellGenerateAOTProfile>-->
+		<WasmShellMonoRuntimeExecutionMode>Interpreter</WasmShellMonoRuntimeExecutionMode>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<MonoRuntimeDebuggerEnabled>true</MonoRuntimeDebuggerEnabled>
@@ -29,7 +29,6 @@
 		<WasmShellEnableAotProfile Include="aot.profile" />
 	</ItemGroup>			
 	<ItemGroup>
-		<Content Include="aot.profile" />
 		<Content Include="Assets\AppIcon-128.png" />
 		<Content Include="Assets\AppIcon-16.png" />
 		<Content Include="Assets\AppIcon-256.png" />
@@ -48,7 +47,6 @@
 		<UpToDateCheckInput Include="..\ElevateEvansvilleUI.Shared\**\*.xaml" />
 	</ItemGroup>
 	<ItemGroup>
-	  <None Remove="aot.profile" />
 	  <None Remove="Assets\AppIcon-128.png" />
 	  <None Remove="Assets\AppIcon-16.png" />
 	  <None Remove="Assets\AppIcon-256.png" />
