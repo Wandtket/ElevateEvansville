@@ -8,6 +8,8 @@
 		<WasmPWAManifestFile>manifest.json</WasmPWAManifestFile>
 		<WasmShellWebAppBasePath>/</WasmShellWebAppBasePath>
 		<WasmShellILLinkerEnabled>false</WasmShellILLinkerEnabled>
+		<WasmShellGenerateAOTProfile>true</WasmShellGenerateAOTProfile>
+		<WasmShellMonoRuntimeExecutionMode>InterpreterAndAOT</WasmShellMonoRuntimeExecutionMode>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<MonoRuntimeDebuggerEnabled>true</MonoRuntimeDebuggerEnabled>
