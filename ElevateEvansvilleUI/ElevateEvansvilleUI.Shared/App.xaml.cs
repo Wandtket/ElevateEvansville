@@ -91,12 +91,12 @@ namespace ElevateEvansvilleUI
                     // parameter
 #if __WASM__
                     //Preview Mode Message
-                    ContentDialog dialog = new ContentDialog();                   
-                    dialog.Title = "BETA MODE";
-                    dialog.SecondaryButtonText = "Continue";
-                    PreviewMessage message = new PreviewMessage();
-                    dialog.Content = message;
-                    await dialog.ShowAsync();
+                    //ContentDialog dialog = new ContentDialog();                   
+                    //dialog.Title = "BETA MODE";
+                    //dialog.SecondaryButtonText = "Continue";
+                    //PreviewMessage message = new PreviewMessage();
+                    //dialog.Content = message;
+                    //await dialog.ShowAsync();
 #endif
 
                     //string log = "";

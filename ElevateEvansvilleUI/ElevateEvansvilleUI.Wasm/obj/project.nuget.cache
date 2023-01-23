@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Mk0/k6YM/VvN8WVTPl8mwPpHQFeM6K0ubzvbpte2WiwuuSmH4H5/LKZVPind551U5fLTTtiBl6Wbkbs9cXFBUQ==",
+  "dgSpecHash": "ElDYua6RqfkjNK7kXHivvVBFLjGTpmxyRrciwb8UKIeR55RgQtWV/uiacwvdmnBOJZxeqzO+T6jraC42xx3f2A==",
   "success": true,
   "projectFilePath": "C:\\Users\\wandt\\source\\Workspaces\\ElevateEvansville\\ElevateEvansvilleUI\\ElevateEvansvilleUI.Wasm\\ElevateEvansvilleUI.Wasm.csproj",
   "expectedPackageFiles": [
@@ -27,7 +27,6 @@
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.win32.registry.accesscontrol\\7.0.0\\microsoft.win32.registry.accesscontrol.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\microsoft.windows.compatibility\\7.0.0\\microsoft.windows.compatibility.7.0.0.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",

@@ -8,8 +8,9 @@
 		<WasmPWAManifestFile>manifest.json</WasmPWAManifestFile>
 		<WasmShellWebAppBasePath>/</WasmShellWebAppBasePath>
 		<WasmShellILLinkerEnabled>false</WasmShellILLinkerEnabled>
-		<WasmShellMonoRuntimeExecutionMode>InterpreterAndAOT</WasmShellMonoRuntimeExecutionMode>
 		<WasmShellGenerateAOTProfile>true</WasmShellGenerateAOTProfile>
+		<WasmShellMonoRuntimeExecutionMode>InterpreterAndAOT</WasmShellMonoRuntimeExecutionMode>
+
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<MonoRuntimeDebuggerEnabled>true</MonoRuntimeDebuggerEnabled>
@@ -26,6 +27,10 @@
 	  <DefineConstants>$(DefineConstants)TRACE</DefineConstants>
 	</PropertyGroup>
 	<ItemGroup>
+		<WasmShellEnableAotProfile Include="aot.profile" />
+	</ItemGroup>			
+	<ItemGroup>
+		<Content Include="aot.profile" />
 		<Content Include="Assets\AppIcon-128.png" />
 		<Content Include="Assets\AppIcon-16.png" />
 		<Content Include="Assets\AppIcon-256.png" />
@@ -44,6 +49,7 @@
 		<UpToDateCheckInput Include="..\ElevateEvansvilleUI.Shared\**\*.xaml" />
 	</ItemGroup>
 	<ItemGroup>
+	  <None Remove="aot.profile" />
 	  <None Remove="Assets\AppIcon-128.png" />
 	  <None Remove="Assets\AppIcon-16.png" />
 	  <None Remove="Assets\AppIcon-256.png" />
@@ -80,7 +86,6 @@
 		<PackageReference Include="Microsoft.Toolkit.Uwp.UI.Controls" Version="7.1.3" />
 		<PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 		<PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
 		<PackageReference Include="System.Text.Json" Version="7.0.1" />
 		<PackageReference Include="Uno.Extensions.Logging.WebAssembly.Console" Version="1.4.0" />

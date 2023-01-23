@@ -217,7 +217,6 @@ C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEv
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Microsoft.Win32.Registry.AccessControl.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Newtonsoft.Json.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\System.CodeDom.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\System.ComponentModel.Composition.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\System.ComponentModel.Composition.Registration.dll

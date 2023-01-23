@@ -1,5 +1,6 @@
 obj/uno-bootstrap.d.ts
 obj/uno-bootstrap.js
+aot.profile
 Assets/AppIcon-128.png
 Assets/AppIcon-16.png
 Assets/AppIcon-256.png
