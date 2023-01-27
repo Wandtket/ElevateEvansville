@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,10 +48,19 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class TestPage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_TestPage_da17f6613ee4934aa363dc10577ac638 = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_TestPage_da17f6613ee4934aa363dc10577ac638 = "ms-appx:///Pages/TestPage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml (Line 1:2)
 			base.Content = 
@@ -66,6 +77,7 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.TestPage_da17f6613ee4934aa363dc10577ac638_XamlApply((TestPage_da17f6613ee4934aa363dc10577ac638XamlApplyExtensions.XamlApplyHandler0)(c0 => 
 					{
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c0, __baseUri_TestPage_da17f6613ee4934aa363dc10577ac638);
 						c0.CreationComplete();
 					}
 					))
@@ -74,25 +86,27 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.TestPage_da17f6613ee4934aa363dc10577ac638_XamlApply((TestPage_da17f6613ee4934aa363dc10577ac638XamlApplyExtensions.XamlApplyHandler1)(c1 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c1, __baseUri_TestPage_da17f6613ee4934aa363dc10577ac638);
 				c1.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c2 => 
+			.GenericApply(((c2) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml (Line 1:2)
 				
 				// WARNING Property c2.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c3 => 
+			.GenericApply(((c3) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_0 = c3;
 				// Class ElevateEvansvilleUI.Pages.TestPage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c3, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_0 = c3;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c3, __baseUri_TestPage_da17f6613ee4934aa363dc10577ac638);
 				c3.CreationComplete();
 			}
 			))
@@ -100,14 +114,14 @@ namespace ElevateEvansvilleUI.Pages
 			OnInitializeCompleted();
 
 			Bindings = new TestPage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
 		partial void OnInitializeCompleted();
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_0
 		{
 			get

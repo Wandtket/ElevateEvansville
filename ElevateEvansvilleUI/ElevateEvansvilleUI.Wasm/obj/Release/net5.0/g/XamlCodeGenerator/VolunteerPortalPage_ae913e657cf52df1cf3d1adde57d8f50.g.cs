@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,15 +48,24 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class VolunteerPortalPage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50 = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50 = "ms-appx:///Pages/Volunteer/VolunteerPortalPage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_7 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_32 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -93,8 +104,9 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c0 => 
 						{
-							nameScope.RegisterName("ChangeEmailPassword", c0);
-							this.ChangeEmailPassword = c0;
+							__nameScope.RegisterName("ChangeEmailPassword", c0);
+							__that.ChangeEmailPassword = c0;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c0, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 							c0.CreationComplete();
 						}
 						))
@@ -108,8 +120,9 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler1)(c1 => 
 						{
-							nameScope.RegisterName("ChangeEmailEmail", c1);
-							this.ChangeEmailEmail = c1;
+							__nameScope.RegisterName("ChangeEmailEmail", c1);
+							__that.ChangeEmailEmail = c1;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c1, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 							c1.CreationComplete();
 						}
 						))
@@ -118,6 +131,7 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c2 => 
 				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c2, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 					c2.CreationComplete();
 				}
 				))
@@ -125,8 +139,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c3 => 
 			{
-				nameScope.RegisterName("ChangeEmailDialog", c3);
-				this.ChangeEmailDialog = c3;
+				__nameScope.RegisterName("ChangeEmailDialog", c3);
+				__that.ChangeEmailDialog = c3;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c3, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 				c3.CreationComplete();
 			}
 			))
@@ -159,8 +174,9 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c4 => 
 						{
-							nameScope.RegisterName("ChangePasswordCurrent", c4);
-							this.ChangePasswordCurrent = c4;
+							__nameScope.RegisterName("ChangePasswordCurrent", c4);
+							__that.ChangePasswordCurrent = c4;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c4, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 							c4.CreationComplete();
 						}
 						))
@@ -174,8 +190,9 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c5 => 
 						{
-							nameScope.RegisterName("ChangePasswordNew", c5);
-							this.ChangePasswordNew = c5;
+							__nameScope.RegisterName("ChangePasswordNew", c5);
+							__that.ChangePasswordNew = c5;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c5, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 							c5.CreationComplete();
 						}
 						))
@@ -184,6 +201,7 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c6 => 
 				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c6, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 					c6.CreationComplete();
 				}
 				))
@@ -191,8 +209,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c7 => 
 			{
-				nameScope.RegisterName("ChangePasswordDialog", c7);
-				this.ChangePasswordDialog = c7;
+				__nameScope.RegisterName("ChangePasswordDialog", c7);
+				__that.ChangePasswordDialog = c7;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c7, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 				c7.CreationComplete();
 			}
 			))
@@ -225,8 +244,9 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c8 => 
 						{
-							nameScope.RegisterName("ChangePhonePassword", c8);
-							this.ChangePhonePassword = c8;
+							__nameScope.RegisterName("ChangePhonePassword", c8);
+							__that.ChangePhonePassword = c8;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c8, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 							c8.CreationComplete();
 						}
 						))
@@ -240,8 +260,9 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler0)(c9 => 
 						{
-							nameScope.RegisterName("ChangePhone", c9);
-							this.ChangePhone = c9;
+							__nameScope.RegisterName("ChangePhone", c9);
+							__that.ChangePhone = c9;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c9, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 							c9.CreationComplete();
 						}
 						))
@@ -250,6 +271,7 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c10 => 
 				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 					c10.CreationComplete();
 				}
 				))
@@ -257,8 +279,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler3)(c11 => 
 			{
-				nameScope.RegisterName("ChangePhoneDialog", c11);
-				this.ChangePhoneDialog = c11;
+				__nameScope.RegisterName("ChangePhoneDialog", c11);
+				__that.ChangePhoneDialog = c11;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 				c11.CreationComplete();
 			}
 			))
@@ -336,8 +359,9 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c17 => 
 									{
-										nameScope.RegisterName("WelcomeMessage", c17);
-										this.WelcomeMessage = c17;
+										__nameScope.RegisterName("WelcomeMessage", c17);
+										__that.WelcomeMessage = c17;
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c17, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 										c17.CreationComplete();
 									}
 									))
@@ -350,9 +374,10 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c18 => 
 									{
-										var Click_LogOut_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										var Click_LogOut_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 										/* second level */ c18.Click += (LogOut_Click_sender,LogOut_Click_e) => (Click_LogOut_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.LogOut_Click(LogOut_Click_sender,LogOut_Click_e);
 										global::Windows.UI.Xaml.Controls.Grid.SetColumn(c18, 1/* int/, 1, Grid/Column */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c18, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 										c18.CreationComplete();
 									}
 									))
@@ -361,6 +386,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c19 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c19, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 								c19.CreationComplete();
 							}
 							))
@@ -376,7 +402,7 @@ namespace ElevateEvansvilleUI.Pages
 									{
 										IsParsing = true,
 										Name = "SignatureBlock",
-										MaxWidth = 555d/* double/, 555, Expander/MaxWidth */,
+										MaxWidth = 555f/* double/, 555, Expander/MaxWidth */,
 										IsExpanded = true/* bool/, True, Expander/IsExpanded */,
 										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Expander/VerticalAlignment */,
 										Header = 										new global::Windows.UI.Xaml.Controls.Grid
@@ -405,14 +431,15 @@ namespace ElevateEvansvilleUI.Pages
 												new global::Windows.UI.Xaml.Controls.Image
 												{
 													IsParsing = true,
-													Source = "/Assets/Images/Logos/Petition.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Petition.png, Image/Source */,
-													Height = 35d/* double/, 35, Image/Height */,
-													Width = 30d/* double/, 30, Image/Width */,
+													Source = "ms-appx:///" + "Assets/Images/Logos/Petition.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Petition.png, Image/Source */,
+													Height = 35f/* double/, 35, Image/Height */,
+													Width = 30f/* double/, 30, Image/Width */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 74:30)
 												}
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler9)(c22 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c22, 0/* int/, 0, Grid/Column */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c22.CreationComplete();
 												}
 												))
@@ -444,6 +471,7 @@ namespace ElevateEvansvilleUI.Pages
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c24 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c24, 1/* int/, 1, Grid/Column */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c24.CreationComplete();
 												}
 												))
@@ -452,6 +480,7 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c25 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c25, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 											c25.CreationComplete();
 										}
 										))
@@ -459,7 +488,7 @@ namespace ElevateEvansvilleUI.Pages
 										Content = 										new global::Windows.UI.Xaml.Controls.Grid
 										{
 											IsParsing = true,
-											MinHeight = 280d/* double/, 280, Grid/MinHeight */,
+											MinHeight = 280f/* double/, 280, Grid/MinHeight */,
 											Padding = new global::Windows.UI.Xaml.Thickness(15,0,15,15)/* Windows.UI.Xaml.Thickness/, 15,0,15,15, Grid/Padding */,
 											RowSpacing = 15d/* double/, 15, Grid/RowSpacing */,
 											RowDefinitions = 
@@ -512,6 +541,7 @@ namespace ElevateEvansvilleUI.Pages
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c31 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetRow(c31, 0/* int/, 0, Grid/Row */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c31, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c31.CreationComplete();
 												}
 												))
@@ -534,6 +564,7 @@ namespace ElevateEvansvilleUI.Pages
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c33 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetRow(c33, 1/* int/, 1, Grid/Row */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c33, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c33.CreationComplete();
 												}
 												))
@@ -576,6 +607,7 @@ namespace ElevateEvansvilleUI.Pages
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c37 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetRow(c37, 2/* int/, 2, Grid/Row */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c37, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c37.CreationComplete();
 												}
 												))
@@ -603,8 +635,9 @@ namespace ElevateEvansvilleUI.Pages
 														}
 														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c38 => 
 														{
-															var Click_PrintPetition_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															var Click_PrintPetition_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 															/* second level */ c38.Click += (PrintPetition_Click_sender,PrintPetition_Click_e) => (Click_PrintPetition_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.PrintPetition_Click(PrintPetition_Click_sender,PrintPetition_Click_e);
+															global::Uno.UI.FrameworkElementHelper.SetBaseUri(c38, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 															c38.CreationComplete();
 														}
 														))
@@ -624,8 +657,9 @@ namespace ElevateEvansvilleUI.Pages
 														}
 														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c39 => 
 														{
-															var Click_TurnInPetition_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															var Click_TurnInPetition_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 															/* second level */ c39.Click += (TurnInPetition_Click_sender,TurnInPetition_Click_e) => (Click_TurnInPetition_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.TurnInPetition_Click(TurnInPetition_Click_sender,TurnInPetition_Click_e);
+															global::Uno.UI.FrameworkElementHelper.SetBaseUri(c39, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 															c39.CreationComplete();
 														}
 														))
@@ -635,6 +669,7 @@ namespace ElevateEvansvilleUI.Pages
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler11)(c40 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetRow(c40, 4/* int/, 4, Grid/Row */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c40, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c40.CreationComplete();
 												}
 												))
@@ -643,6 +678,7 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c41 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c41, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 											c41.CreationComplete();
 										}
 										))
@@ -651,8 +687,9 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler12)(c42 => 
 									{
-										nameScope.RegisterName("SignatureBlock", c42);
-										this.SignatureBlock = c42;
+										__nameScope.RegisterName("SignatureBlock", c42);
+										__that.SignatureBlock = c42;
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c42, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 										c42.CreationComplete();
 									}
 									))
@@ -661,7 +698,7 @@ namespace ElevateEvansvilleUI.Pages
 									{
 										IsParsing = true,
 										Name = "SecurityBlock",
-										MaxWidth = 555d/* double/, 555, Expander/MaxWidth */,
+										MaxWidth = 555f/* double/, 555, Expander/MaxWidth */,
 										IsExpanded = true/* bool/, True, Expander/IsExpanded */,
 										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Expander/VerticalAlignment */,
 										Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Expander/Visibility */,
@@ -691,14 +728,15 @@ namespace ElevateEvansvilleUI.Pages
 												new global::Windows.UI.Xaml.Controls.Image
 												{
 													IsParsing = true,
-													Source = "/Assets/Images/Logos/Petition.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Petition.png, Image/Source */,
-													Height = 35d/* double/, 35, Image/Height */,
-													Width = 30d/* double/, 30, Image/Width */,
+													Source = "ms-appx:///" + "Assets/Images/Logos/Petition.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Petition.png, Image/Source */,
+													Height = 35f/* double/, 35, Image/Height */,
+													Width = 30f/* double/, 30, Image/Width */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 126:30)
 												}
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler9)(c45 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c45, 0/* int/, 0, Grid/Column */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c45, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c45.CreationComplete();
 												}
 												))
@@ -730,6 +768,7 @@ namespace ElevateEvansvilleUI.Pages
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler6)(c47 => 
 												{
 													global::Windows.UI.Xaml.Controls.Grid.SetColumn(c47, 1/* int/, 1, Grid/Column */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c47, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c47.CreationComplete();
 												}
 												))
@@ -738,6 +777,7 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c48 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c48, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 											c48.CreationComplete();
 										}
 										))
@@ -745,7 +785,7 @@ namespace ElevateEvansvilleUI.Pages
 										Content = 										new global::Windows.UI.Xaml.Controls.Grid
 										{
 											IsParsing = true,
-											MinHeight = 50d/* double/, 50, Grid/MinHeight */,
+											MinHeight = 50f/* double/, 50, Grid/MinHeight */,
 											Padding = new global::Windows.UI.Xaml.Thickness(15,0,15,15)/* Windows.UI.Xaml.Thickness/, 15,0,15,15, Grid/Padding */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 134:26)
 											Children = 
@@ -772,8 +812,9 @@ namespace ElevateEvansvilleUI.Pages
 														}
 														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c49 => 
 														{
-															var Click_ChangeEmail_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															var Click_ChangeEmail_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 															/* second level */ c49.Click += (ChangeEmail_Click_sender,ChangeEmail_Click_e) => (Click_ChangeEmail_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.ChangeEmail_Click(ChangeEmail_Click_sender,ChangeEmail_Click_e);
+															global::Uno.UI.FrameworkElementHelper.SetBaseUri(c49, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 															c49.CreationComplete();
 														}
 														))
@@ -792,8 +833,9 @@ namespace ElevateEvansvilleUI.Pages
 														}
 														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c50 => 
 														{
-															var Click_ChangePassword_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															var Click_ChangePassword_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 															/* second level */ c50.Click += (ChangePassword_Click_sender,ChangePassword_Click_e) => (Click_ChangePassword_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.ChangePassword_Click(ChangePassword_Click_sender,ChangePassword_Click_e);
+															global::Uno.UI.FrameworkElementHelper.SetBaseUri(c50, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 															c50.CreationComplete();
 														}
 														))
@@ -812,8 +854,9 @@ namespace ElevateEvansvilleUI.Pages
 														}
 														.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler7)(c51 => 
 														{
-															var Click_ChangePhone_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+															var Click_ChangePhone_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 															/* second level */ c51.Click += (ChangePhone_Click_sender,ChangePhone_Click_e) => (Click_ChangePhone_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.ChangePhone_Click(ChangePhone_Click_sender,ChangePhone_Click_e);
+															global::Uno.UI.FrameworkElementHelper.SetBaseUri(c51, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 															c51.CreationComplete();
 														}
 														))
@@ -822,6 +865,7 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler11)(c52 => 
 												{
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c52, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 													c52.CreationComplete();
 												}
 												))
@@ -830,6 +874,7 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c53 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c53, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 											c53.CreationComplete();
 										}
 										))
@@ -838,8 +883,9 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler12)(c54 => 
 									{
-										nameScope.RegisterName("SecurityBlock", c54);
-										this.SecurityBlock = c54;
+										__nameScope.RegisterName("SecurityBlock", c54);
+										__that.SecurityBlock = c54;
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c54, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 										c54.CreationComplete();
 									}
 									))
@@ -849,6 +895,7 @@ namespace ElevateEvansvilleUI.Pages
 							.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler2)(c55 => 
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c55, 1/* int/, 1, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c55, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 								c55.CreationComplete();
 							}
 							))
@@ -857,6 +904,7 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c56 => 
 					{
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c56, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 						c56.CreationComplete();
 					}
 					))
@@ -865,27 +913,29 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50_XamlApply((VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50XamlApplyExtensions.XamlApplyHandler8)(c57 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c57, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 				c57.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c58 => 
+			.GenericApply(((c58) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml (Line 1:2)
 				
 				// WARNING Property c58.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c59 => 
+			.GenericApply(((c59) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_0 = c59;
 				// Class ElevateEvansvilleUI.Pages.VolunteerPortalPage
-				var Loaded_Page_Loaded_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				var Loaded_Page_Loaded_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c59.Loaded += (Page_Loaded_sender,Page_Loaded_e) => (Loaded_Page_Loaded_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerPortalPage)?.Page_Loaded(Page_Loaded_sender,Page_Loaded_e);
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c59, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_0 = c59;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c59, __baseUri_VolunteerPortalPage_ae913e657cf52df1cf3d1adde57d8f50);
 				c59.CreationComplete();
 			}
 			))
@@ -908,9 +958,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			;
 			Bindings = new VolunteerPortalPage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
@@ -1059,7 +1109,7 @@ namespace ElevateEvansvilleUI.Pages
 				_SecurityBlockSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_0
 		{
 			get

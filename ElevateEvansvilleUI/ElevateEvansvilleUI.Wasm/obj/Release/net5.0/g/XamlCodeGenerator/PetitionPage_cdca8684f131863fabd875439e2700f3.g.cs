@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,15 +48,24 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class PetitionPage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_PetitionPage_cdca8684f131863fabd875439e2700f3 = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3 = "ms-appx:///Pages/PetitionPage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_4 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_30 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +79,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBox)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_12 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_35 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBox))
 				{
 					Setters = 
@@ -91,7 +102,7 @@ namespace ElevateEvansvilleUI.Pages
 					IsParsing = true,
 					RowSpacing = 15d/* double/, 15, Grid/RowSpacing */,
 					Padding = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, Grid/Padding */,
-					MaxWidth = 900d/* double/, 900, Grid/MaxWidth */,
+					MaxWidth = 900f/* double/, 900, Grid/MaxWidth */,
 					RowDefinitions = 
 					{
 						new global::Windows.UI.Xaml.Controls.RowDefinition
@@ -170,6 +181,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c10 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c10, 0/* int/, 0, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c10.CreationComplete();
 						}
 						))
@@ -207,6 +219,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c12 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 										c12.CreationComplete();
 									}
 									))
@@ -214,8 +227,9 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c13 => 
 								{
-									nameScope.RegisterName("RegisteredValidation", c13);
-									this.RegisteredValidation = c13;
+									__nameScope.RegisterName("RegisteredValidation", c13);
+									__that.RegisteredValidation = c13;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c13.CreationComplete();
 								}
 								))
@@ -229,6 +243,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler4)(c14 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c14, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c14.CreationComplete();
 								}
 								))
@@ -238,6 +253,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler5)(c15 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c15, 1/* int/, 1, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c15.CreationComplete();
 						}
 						))
@@ -256,16 +272,17 @@ namespace ElevateEvansvilleUI.Pages
 									IsParsing = true,
 									Name = "LastName"/* string/, LastName, TextBox/Name */,
 									Header = @"Last Name"/* object/, Last Name, TextBox/Header */,
-									Width = 200d/* double/, 200, TextBox/Width */,
+									Width = 200f/* double/, 200, TextBox/Width */,
 									PlaceholderText = "Doe"/* string/, Doe, TextBox/PlaceholderText */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 58:18)
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c16 => 
 								{
-									nameScope.RegisterName("LastName", c16);
-									this.LastName = c16;
-									var TextChanged_TextBox_TextChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+									__nameScope.RegisterName("LastName", c16);
+									__that.LastName = c16;
+									var TextChanged_TextBox_TextChanged_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 									/* second level */ c16.TextChanged += (TextBox_TextChanged_sender,TextBox_TextChanged_e) => (TextChanged_TextBox_TextChanged_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.TextBox_TextChanged(TextBox_TextChanged_sender,TextBox_TextChanged_e);
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c16, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c16.CreationComplete();
 								}
 								))
@@ -275,16 +292,17 @@ namespace ElevateEvansvilleUI.Pages
 									IsParsing = true,
 									Name = "FirstName"/* string/, FirstName, TextBox/Name */,
 									Header = @"First Name"/* object/, First Name, TextBox/Header */,
-									Width = 200d/* double/, 200, TextBox/Width */,
+									Width = 200f/* double/, 200, TextBox/Width */,
 									PlaceholderText = "John"/* string/, John, TextBox/PlaceholderText */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 62:18)
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c17 => 
 								{
-									nameScope.RegisterName("FirstName", c17);
-									this.FirstName = c17;
-									var TextChanged_TextBox_TextChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+									__nameScope.RegisterName("FirstName", c17);
+									__that.FirstName = c17;
+									var TextChanged_TextBox_TextChanged_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 									/* second level */ c17.TextChanged += (TextBox_TextChanged_sender,TextBox_TextChanged_e) => (TextChanged_TextBox_TextChanged_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.TextBox_TextChanged(TextBox_TextChanged_sender,TextBox_TextChanged_e);
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c17, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c17.CreationComplete();
 								}
 								))
@@ -302,17 +320,18 @@ namespace ElevateEvansvilleUI.Pages
 											Name = "Address"/* string/, Address, TextBox/Name */,
 											Header = @"Address"/* object/, Address, TextBox/Header */,
 											MaxLength = 45/* int/, 45, TextBox/MaxLength */,
-											Width = 240d/* double/, 240, TextBox/Width */,
+											Width = 240f/* double/, 240, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,10,10)/* Windows.UI.Xaml.Thickness/, 0,0,10,10, TextBox/Margin */,
 											PlaceholderText = "4401 Example Rd."/* string/, 4401 Example Rd., TextBox/PlaceholderText */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 67:22)
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c18 => 
 										{
-											nameScope.RegisterName("Address", c18);
-											this.Address = c18;
-											var TextChanged_TextBox_TextChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("Address", c18);
+											__that.Address = c18;
+											var TextChanged_TextBox_TextChanged_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c18.TextChanged += (TextBox_TextChanged_sender,TextBox_TextChanged_e) => (TextChanged_TextBox_TextChanged_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.TextBox_TextChanged(TextBox_TextChanged_sender,TextBox_TextChanged_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c18, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c18.CreationComplete();
 										}
 										))
@@ -323,17 +342,18 @@ namespace ElevateEvansvilleUI.Pages
 											Name = "Zip"/* string/, Zip, TextBox/Name */,
 											Header = @"Zip"/* object/, Zip, TextBox/Header */,
 											MaxLength = 9/* int/, 9, TextBox/MaxLength */,
-											Width = 150d/* double/, 150, TextBox/Width */,
+											Width = 150f/* double/, 150, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,10)/* Windows.UI.Xaml.Thickness/, 0,0,0,10, TextBox/Margin */,
 											PlaceholderText = "* Evansville Zip"/* string/, * Evansville Zip, TextBox/PlaceholderText */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 70:22)
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c19 => 
 										{
-											nameScope.RegisterName("Zip", c19);
-											this.Zip = c19;
-											var TextChanged_TextBox_TextChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("Zip", c19);
+											__that.Zip = c19;
+											var TextChanged_TextBox_TextChanged_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c19.TextChanged += (TextBox_TextChanged_sender,TextBox_TextChanged_e) => (TextChanged_TextBox_TextChanged_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.TextBox_TextChanged(TextBox_TextChanged_sender,TextBox_TextChanged_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c19, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c19.CreationComplete();
 										}
 										))
@@ -342,6 +362,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler5)(c20 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c20, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c20.CreationComplete();
 								}
 								))
@@ -351,15 +372,16 @@ namespace ElevateEvansvilleUI.Pages
 									IsParsing = true,
 									Name = "Notes"/* string/, Notes, TextBox/Name */,
 									Header = @"Notes"/* object/, Notes, TextBox/Header */,
-									Width = 240d/* double/, 240, TextBox/Width */,
+									Width = 240f/* double/, 240, TextBox/Width */,
 									MaxLength = 50/* int/, 50, TextBox/MaxLength */,
 									PlaceholderText = "Ex: Behind the green gate."/* string/, Ex: Behind the green gate., TextBox/PlaceholderText */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 75:18)
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c21 => 
 								{
-									nameScope.RegisterName("Notes", c21);
-									this.Notes = c21;
+									__nameScope.RegisterName("Notes", c21);
+									__that.Notes = c21;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c21, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c21.CreationComplete();
 								}
 								))
@@ -377,17 +399,18 @@ namespace ElevateEvansvilleUI.Pages
 											Name = "Email"/* string/, Email, TextBox/Name */,
 											Header = @"Email"/* object/, Email, TextBox/Header */,
 											MaxLength = 45/* int/, 45, TextBox/MaxLength */,
-											Width = 240d/* double/, 240, TextBox/Width */,
+											Width = 240f/* double/, 240, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,10,10)/* Windows.UI.Xaml.Thickness/, 0,0,10,10, TextBox/Margin */,
 											PlaceholderText = "Example@gmail.com"/* string/, Example@gmail.com, TextBox/PlaceholderText */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 80:22)
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c22 => 
 										{
-											nameScope.RegisterName("Email", c22);
-											this.Email = c22;
-											var TextChanged_TextBox_TextChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("Email", c22);
+											__that.Email = c22;
+											var TextChanged_TextBox_TextChanged_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c22.TextChanged += (TextBox_TextChanged_sender,TextBox_TextChanged_e) => (TextChanged_TextBox_TextChanged_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.TextBox_TextChanged(TextBox_TextChanged_sender,TextBox_TextChanged_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c22.CreationComplete();
 										}
 										))
@@ -398,17 +421,18 @@ namespace ElevateEvansvilleUI.Pages
 											Name = "Phone"/* string/, Phone, TextBox/Name */,
 											Header = @"Phone (Mobile)"/* object/, Phone (Mobile), TextBox/Header */,
 											MaxLength = 15/* int/, 15, TextBox/MaxLength */,
-											Width = 150d/* double/, 150, TextBox/Width */,
+											Width = 150f/* double/, 150, TextBox/Width */,
 											Margin = new global::Windows.UI.Xaml.Thickness(0,0,0,10)/* Windows.UI.Xaml.Thickness/, 0,0,0,10, TextBox/Margin */,
 											PlaceholderText = "867-5309"/* string/, 867-5309, TextBox/PlaceholderText */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 83:22)
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler6)(c23 => 
 										{
-											nameScope.RegisterName("Phone", c23);
-											this.Phone = c23;
-											var TextChanged_TextBox_TextChanged_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("Phone", c23);
+											__that.Phone = c23;
+											var TextChanged_TextBox_TextChanged_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c23.TextChanged += (TextBox_TextChanged_sender,TextBox_TextChanged_e) => (TextChanged_TextBox_TextChanged_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.TextBox_TextChanged(TextBox_TextChanged_sender,TextBox_TextChanged_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c23.CreationComplete();
 										}
 										))
@@ -417,6 +441,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler5)(c24 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c24.CreationComplete();
 								}
 								))
@@ -441,13 +466,14 @@ namespace ElevateEvansvilleUI.Pages
 													Name = "TimeStartHour"/* string/, TimeStartHour, ComboBox/Name */,
 													Header = @"Time Start:"/* object/, Time Start:, ComboBox/Header */,
 													PlaceholderText = "Hour"/* string/, Hour, ComboBox/PlaceholderText */,
-													Width = 90d/* double/, 90, ComboBox/Width */,
+													Width = 90f/* double/, 90, ComboBox/Width */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 90:26)
 												}
 												.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler7)(c25 => 
 												{
-													nameScope.RegisterName("TimeStartHour", c25);
-													this.TimeStartHour = c25;
+													__nameScope.RegisterName("TimeStartHour", c25);
+													__that.TimeStartHour = c25;
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c25, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 													c25.CreationComplete();
 												}
 												))
@@ -458,13 +484,14 @@ namespace ElevateEvansvilleUI.Pages
 													Name = "TimeStartMinute"/* string/, TimeStartMinute, ComboBox/Name */,
 													Header = @" "/* object/,  , ComboBox/Header */,
 													PlaceholderText = "Min"/* string/, Min, ComboBox/PlaceholderText */,
-													Width = 85d/* double/, 85, ComboBox/Width */,
+													Width = 85f/* double/, 85, ComboBox/Width */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 91:26)
 												}
 												.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler7)(c26 => 
 												{
-													nameScope.RegisterName("TimeStartMinute", c26);
-													this.TimeStartMinute = c26;
+													__nameScope.RegisterName("TimeStartMinute", c26);
+													__that.TimeStartMinute = c26;
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c26, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 													c26.CreationComplete();
 												}
 												))
@@ -475,14 +502,15 @@ namespace ElevateEvansvilleUI.Pages
 													Name = "TimeStartAM"/* string/, TimeStartAM, ComboBox/Name */,
 													Header = @" "/* object/,  , ComboBox/Header */,
 													PlaceholderText = "AM"/* string/, AM, ComboBox/PlaceholderText */,
-													Width = 75d/* double/, 75, ComboBox/Width */,
+													Width = 75f/* double/, 75, ComboBox/Width */,
 													Margin = new global::Windows.UI.Xaml.Thickness(0,0,15,0)/* Windows.UI.Xaml.Thickness/, 0,0,15,0, ComboBox/Margin */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 92:26)
 												}
 												.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler7)(c27 => 
 												{
-													nameScope.RegisterName("TimeStartAM", c27);
-													this.TimeStartAM = c27;
+													__nameScope.RegisterName("TimeStartAM", c27);
+													__that.TimeStartAM = c27;
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c27, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 													c27.CreationComplete();
 												}
 												))
@@ -491,6 +519,7 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler8)(c28 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c28, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c28.CreationComplete();
 										}
 										))
@@ -508,13 +537,14 @@ namespace ElevateEvansvilleUI.Pages
 													Name = "TimeEndHour"/* string/, TimeEndHour, ComboBox/Name */,
 													Header = @"Time End:"/* object/, Time End:, ComboBox/Header */,
 													PlaceholderText = "Hour"/* string/, Hour, ComboBox/PlaceholderText */,
-													Width = 90d/* double/, 90, ComboBox/Width */,
+													Width = 90f/* double/, 90, ComboBox/Width */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 96:26)
 												}
 												.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler7)(c29 => 
 												{
-													nameScope.RegisterName("TimeEndHour", c29);
-													this.TimeEndHour = c29;
+													__nameScope.RegisterName("TimeEndHour", c29);
+													__that.TimeEndHour = c29;
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c29, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 													c29.CreationComplete();
 												}
 												))
@@ -525,13 +555,14 @@ namespace ElevateEvansvilleUI.Pages
 													Name = "TimeEndMinute"/* string/, TimeEndMinute, ComboBox/Name */,
 													Header = @" "/* object/,  , ComboBox/Header */,
 													PlaceholderText = "Min"/* string/, Min, ComboBox/PlaceholderText */,
-													Width = 85d/* double/, 85, ComboBox/Width */,
+													Width = 85f/* double/, 85, ComboBox/Width */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 97:26)
 												}
 												.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler7)(c30 => 
 												{
-													nameScope.RegisterName("TimeEndMinute", c30);
-													this.TimeEndMinute = c30;
+													__nameScope.RegisterName("TimeEndMinute", c30);
+													__that.TimeEndMinute = c30;
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c30, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 													c30.CreationComplete();
 												}
 												))
@@ -542,14 +573,15 @@ namespace ElevateEvansvilleUI.Pages
 													Name = "TimeEndAM"/* string/, TimeEndAM, ComboBox/Name */,
 													Header = @" "/* object/,  , ComboBox/Header */,
 													PlaceholderText = "AM"/* string/, AM, ComboBox/PlaceholderText */,
-													Width = 75d/* double/, 75, ComboBox/Width */,
+													Width = 75f/* double/, 75, ComboBox/Width */,
 													Margin = new global::Windows.UI.Xaml.Thickness(0,0,10,25)/* Windows.UI.Xaml.Thickness/, 0,0,10,25, ComboBox/Margin */,
 													// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 98:26)
 												}
 												.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler7)(c31 => 
 												{
-													nameScope.RegisterName("TimeEndAM", c31);
-													this.TimeEndAM = c31;
+													__nameScope.RegisterName("TimeEndAM", c31);
+													__that.TimeEndAM = c31;
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c31, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 													c31.CreationComplete();
 												}
 												))
@@ -558,6 +590,7 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler8)(c32 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c32, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c32.CreationComplete();
 										}
 										))
@@ -571,10 +604,11 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c33 => 
 										{
-											nameScope.RegisterName("CheckboxAnytime", c33);
-											this.CheckboxAnytime = c33;
-											var Click_CheckboxAnyTime_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("CheckboxAnytime", c33);
+											__that.CheckboxAnytime = c33;
+											var Click_CheckboxAnyTime_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c33.Click += (CheckboxAnyTime_Click_sender,CheckboxAnyTime_Click_e) => (Click_CheckboxAnyTime_Click_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.CheckboxAnyTime_Click(CheckboxAnyTime_Click_sender,CheckboxAnyTime_Click_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c33, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c33.CreationComplete();
 										}
 										))
@@ -583,6 +617,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler5)(c34 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c34, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c34.CreationComplete();
 								}
 								))
@@ -603,6 +638,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c36 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c36, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c36.CreationComplete();
 								}
 								))
@@ -623,10 +659,11 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c37 => 
 										{
-											nameScope.RegisterName("CheckboxMonday", c37);
-											this.CheckboxMonday = c37;
-											var Click_Checkbox_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("CheckboxMonday", c37);
+											__that.CheckboxMonday = c37;
+											var Click_Checkbox_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c37.Click += (Checkbox_Click_sender,Checkbox_Click_e) => (Click_Checkbox_Click_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.Checkbox_Click(Checkbox_Click_sender,Checkbox_Click_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c37, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c37.CreationComplete();
 										}
 										))
@@ -640,8 +677,9 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c38 => 
 										{
-											nameScope.RegisterName("CheckboxTuesday", c38);
-											this.CheckboxTuesday = c38;
+											__nameScope.RegisterName("CheckboxTuesday", c38);
+											__that.CheckboxTuesday = c38;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c38, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c38.CreationComplete();
 										}
 										))
@@ -655,8 +693,9 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c39 => 
 										{
-											nameScope.RegisterName("CheckboxWednesday", c39);
-											this.CheckboxWednesday = c39;
+											__nameScope.RegisterName("CheckboxWednesday", c39);
+											__that.CheckboxWednesday = c39;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c39, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c39.CreationComplete();
 										}
 										))
@@ -670,8 +709,9 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c40 => 
 										{
-											nameScope.RegisterName("CheckboxThursday", c40);
-											this.CheckboxThursday = c40;
+											__nameScope.RegisterName("CheckboxThursday", c40);
+											__that.CheckboxThursday = c40;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c40, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c40.CreationComplete();
 										}
 										))
@@ -685,8 +725,9 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c41 => 
 										{
-											nameScope.RegisterName("CheckboxFriday", c41);
-											this.CheckboxFriday = c41;
+											__nameScope.RegisterName("CheckboxFriday", c41);
+											__that.CheckboxFriday = c41;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c41, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c41.CreationComplete();
 										}
 										))
@@ -700,8 +741,9 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c42 => 
 										{
-											nameScope.RegisterName("CheckboxSaturday", c42);
-											this.CheckboxSaturday = c42;
+											__nameScope.RegisterName("CheckboxSaturday", c42);
+											__that.CheckboxSaturday = c42;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c42, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c42.CreationComplete();
 										}
 										))
@@ -715,8 +757,9 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c43 => 
 										{
-											nameScope.RegisterName("CheckboxSunday", c43);
-											this.CheckboxSunday = c43;
+											__nameScope.RegisterName("CheckboxSunday", c43);
+											__that.CheckboxSunday = c43;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c43, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c43.CreationComplete();
 										}
 										))
@@ -725,6 +768,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler5)(c44 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c44, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c44.CreationComplete();
 								}
 								))
@@ -738,8 +782,9 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler3)(c45 => 
 								{
-									nameScope.RegisterName("CheckboxMask", c45);
-									this.CheckboxMask = c45;
+									__nameScope.RegisterName("CheckboxMask", c45);
+									__that.CheckboxMask = c45;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c45, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c45.CreationComplete();
 								}
 								))
@@ -761,10 +806,11 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler9)(c46 => 
 										{
-											nameScope.RegisterName("SubmitButton", c46);
-											this.SubmitButton = c46;
-											var Click_SubmitButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("SubmitButton", c46);
+											__that.SubmitButton = c46;
+											var Click_SubmitButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c46.Click += (SubmitButton_Click_sender,SubmitButton_Click_e) => (Click_SubmitButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.SubmitButton_Click(SubmitButton_Click_sender,SubmitButton_Click_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c46, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c46.CreationComplete();
 										}
 										))
@@ -778,10 +824,11 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler9)(c47 => 
 										{
-											nameScope.RegisterName("CancelButton", c47);
-											this.CancelButton = c47;
-											var Click_CancelButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("CancelButton", c47);
+											__that.CancelButton = c47;
+											var Click_CancelButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c47.Click += (CancelButton_Click_sender,CancelButton_Click_e) => (Click_CancelButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.CancelButton_Click(CancelButton_Click_sender,CancelButton_Click_e);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c47, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 											c47.CreationComplete();
 										}
 										))
@@ -790,6 +837,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler8)(c48 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c48, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 									c48.CreationComplete();
 								}
 								))
@@ -798,8 +846,10 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler8)(c49 => 
 						{
-							nameScope.RegisterName("RequestForm", c49);
-							this.RequestForm = c49;
+							/* _isTopLevelDictionary:False */
+							__that._component_0 = c49;
+							__nameScope.RegisterName("RequestForm", c49);
+							__that.RequestForm = c49;
 							c49.SetBinding(
 								global::Windows.UI.Xaml.Controls.StackPanel.VisibilityProperty,
 								new Windows.UI.Xaml.Data.Binding()
@@ -809,8 +859,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 							);
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c49, 2/* int/, 2, Grid/Row */);
-							/* _isTopLevelDictionary:False */
-							this._component_0 = c49;
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c49, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c49.CreationComplete();
 						}
 						))
@@ -838,6 +887,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler10)(c50 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c50, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 										c50.CreationComplete();
 									}
 									))
@@ -850,6 +900,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c51 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c51, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 										c51.CreationComplete();
 									}
 									))
@@ -858,6 +909,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler8)(c52 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c52, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 								c52.CreationComplete();
 							}
 							))
@@ -865,9 +917,10 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler9)(c53 => 
 						{
-							var Click_Share_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+							var Click_Share_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 							/* second level */ c53.Click += (Share_Click_sender,Share_Click_e) => (Click_Share_Click_That.Target as global::ElevateEvansvilleUI.Pages.PetitionPage)?.Share_Click(Share_Click_sender,Share_Click_e);
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c53, 3/* int/, 3, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c53, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c53.CreationComplete();
 						}
 						))
@@ -889,6 +942,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c55 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c55, 4/* int/, 4, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c55, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c55.CreationComplete();
 						}
 						))
@@ -911,6 +965,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c57 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c57, 5/* int/, 5, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c57, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c57.CreationComplete();
 						}
 						))
@@ -933,6 +988,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c59 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c59, 6/* int/, 6, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c59, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c59.CreationComplete();
 						}
 						))
@@ -954,6 +1010,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c61 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c61, 7/* int/, 7, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c61, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c61.CreationComplete();
 						}
 						))
@@ -996,6 +1053,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c65 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c65, 8/* int/, 8, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c65, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c65.CreationComplete();
 						}
 						))
@@ -1018,6 +1076,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler1)(c67 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c67, 9/* int/, 9, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c67, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 							c67.CreationComplete();
 						}
 						))
@@ -1026,6 +1085,7 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler11)(c68 => 
 				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c68, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 					c68.CreationComplete();
 				}
 				))
@@ -1033,25 +1093,27 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.PetitionPage_cdca8684f131863fabd875439e2700f3_XamlApply((PetitionPage_cdca8684f131863fabd875439e2700f3XamlApplyExtensions.XamlApplyHandler12)(c69 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c69, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 				c69.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c70 => 
+			.GenericApply(((c70) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml (Line 1:2)
 				
 				// WARNING Property c70.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c71 => 
+			.GenericApply(((c71) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_1 = c71;
 				// Class ElevateEvansvilleUI.Pages.PetitionPage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c71, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_1 = c71;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c71, __baseUri_PetitionPage_cdca8684f131863fabd875439e2700f3);
 				c71.CreationComplete();
 			}
 			))
@@ -1059,9 +1121,9 @@ namespace ElevateEvansvilleUI.Pages
 			OnInitializeCompleted();
 
 			Bindings = new PetitionPage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
@@ -1378,7 +1440,7 @@ namespace ElevateEvansvilleUI.Pages
 				_RequestFormSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.StackPanel _component_0
 		{
 			get
@@ -1390,7 +1452,7 @@ namespace ElevateEvansvilleUI.Pages
 				_component_0_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_1
 		{
 			get

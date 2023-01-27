@@ -1750,7 +1750,23 @@
           "lib/net5.0/Uno.Extensions.Logging.WebAssembly.Console.dll": {}
         }
       },
-      "Uno.Foundation.Logging/4.6.41": {
+      "Uno.Fonts.Fluent/2.0.0-dev.20": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Uno.Fonts.Fluent.dll": {
+            "related": ".uprimarker"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.0/Uno.Fonts.Fluent.dll": {
+            "related": ".uprimarker"
+          }
+        },
+        "build": {
+          "buildTransitive/Uno.Fonts.Fluent.props": {}
+        }
+      },
+      "Uno.Foundation.Logging/4.7.30": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
@@ -1763,13 +1779,13 @@
           }
         }
       },
-      "Uno.Foundation.Runtime.WebAssembly/4.6.41": {
+      "Uno.Foundation.Runtime.WebAssembly/4.7.30": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
           "System.Memory": "4.5.5",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.6.41"
+          "Uno.Foundation.Logging": "4.7.30"
         },
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.dll": {
@@ -1827,7 +1843,7 @@
           }
         }
       },
-      "Uno.UI/4.6.41": {
+      "Uno.UI/4.7.30": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
@@ -1835,7 +1851,8 @@
           "System.Numerics.Vectors": "4.5.0",
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
           "Uno.Diagnostics.Eventing": "2.0.1",
-          "Uno.Foundation.Logging": "4.6.41",
+          "Uno.Fonts.Fluent": "2.0.0-dev.20",
+          "Uno.Foundation.Logging": "4.7.30",
           "Uno.SourceGenerationTasks": "4.2.0"
         },
         "compile": {
@@ -1892,12 +1909,12 @@
           "buildTransitive/netstandard2.0/Uno.UI.targets": {}
         }
       },
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.41": {
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.7.30": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Logging": "4.0.0-dev.7",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.0-dev.7",
-          "Uno.Foundation.Logging": "4.6.41"
+          "Uno.Foundation.Logging": "4.7.30"
         },
         "compile": {
           "lib/netstandard2.0/Uno.Foundation.Logging.dll": {
@@ -1916,13 +1933,13 @@
           }
         }
       },
-      "Uno.UI.Runtime.WebAssembly/4.6.41": {
+      "Uno.UI.Runtime.WebAssembly/4.7.30": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.5",
-          "Uno.Foundation.Runtime.WebAssembly": "4.6.41",
+          "Uno.Foundation.Runtime.WebAssembly": "4.7.30",
           "Uno.SourceGenerationTasks": "4.2.0",
-          "Uno.UI": "4.6.41"
+          "Uno.UI": "4.7.30"
         },
         "compile": {
           "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.dll": {
@@ -1939,12 +1956,12 @@
           "buildTransitive/Uno.UI.Runtime.WebAssembly.targets": {}
         }
       },
-      "Uno.UI.WebAssembly/4.6.41": {
+      "Uno.UI.WebAssembly/4.7.30": {
         "type": "package",
         "dependencies": {
-          "Uno.Foundation.Runtime.WebAssembly": "4.6.41",
-          "Uno.UI": "4.6.41",
-          "Uno.UI.Runtime.WebAssembly": "4.6.41"
+          "Uno.Foundation.Runtime.WebAssembly": "4.7.30",
+          "Uno.UI": "4.7.30",
+          "Uno.UI.Runtime.WebAssembly": "4.7.30"
         },
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -1957,7 +1974,7 @@
           "build/Uno.UI.WebAssembly.targets": {}
         }
       },
-      "Uno.Wasm.Bootstrap/7.0.11": {
+      "Uno.Wasm.Bootstrap/7.0.12": {
         "type": "package",
         "contentFiles": {
           "contentFiles/any/netstandard2.0/obj/uno-bootstrap.d.ts": {
@@ -1976,7 +1993,7 @@
           "build/Uno.Wasm.Bootstrap.targets": {}
         }
       },
-      "Uno.Wasm.Bootstrap.DevServer/7.0.11": {
+      "Uno.Wasm.Bootstrap.DevServer/7.0.12": {
         "type": "package",
         "build": {
           "build/Uno.Wasm.Bootstrap.DevServer.targets": {}
@@ -5480,10 +5497,26 @@
         "uno.extensions.logging.webassembly.console.nuspec"
       ]
     },
-    "Uno.Foundation.Logging/4.6.41": {
-      "sha512": "9JNeOusjOqazcOaM9IqBHUS5FmK+XGdkEbsgb0U3k1MCOLYHRV6rfVaNo0VPMvcr6+Di5kYqvZzEEd+ZEc9J7g==",
+    "Uno.Fonts.Fluent/2.0.0-dev.20": {
+      "sha512": "pznmGW4D5HRKL6UMoMwJnR/oG+xhOCkS2QeJJJw0bEwqR78DDaI0fYujPUMHxqOj0DED04fX7zqQCWRb5fH1+w==",
       "type": "package",
-      "path": "uno.foundation.logging/4.6.41",
+      "path": "uno.fonts.fluent/2.0.0-dev.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/Uno.Fonts.Fluent.props",
+        "icon.png",
+        "lib/netstandard1.0/Uno.Fonts.Fluent.dll",
+        "lib/netstandard1.0/Uno.Fonts.Fluent.uprimarker",
+        "lib/netstandard1.0/Uno.Fonts.Fluent/Fonts/uno-fluentui-assets.ttf",
+        "uno.fonts.fluent.2.0.0-dev.20.nupkg.sha512",
+        "uno.fonts.fluent.nuspec"
+      ]
+    },
+    "Uno.Foundation.Logging/4.7.30": {
+      "sha512": "sdXC1wE2M5yhhKXuI5mKUMR6O60try0KMYyjGtIMWoJCLRHNcin9d7D5NbhAKjf8YonWi2UWQMtusxLx1I3v0w==",
+      "type": "package",
+      "path": "uno.foundation.logging/4.7.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5508,21 +5541,21 @@
         "lib/xamarinios10/Uno.Foundation.Logging.pdb",
         "lib/xamarinmac20/Uno.Foundation.Logging.dll",
         "lib/xamarinmac20/Uno.Foundation.Logging.pdb",
-        "uno.foundation.logging.4.6.41.nupkg.sha512",
+        "uno.foundation.logging.4.7.30.nupkg.sha512",
         "uno.foundation.logging.nuspec",
         "uno.png"
       ]
     },
-    "Uno.Foundation.Runtime.WebAssembly/4.6.41": {
-      "sha512": "PuPcbe6Wz7GzTLoe82eZQ+Qom159IL3IlZT6Siucas+sosqFxkrdghlxAY+B7dUu6Mu3NCbAUnxG6ve+UxCXlw==",
+    "Uno.Foundation.Runtime.WebAssembly/4.7.30": {
+      "sha512": "2P9G8YwLW/oVylLITWdJNUJXG/N9H2kMOj+MRw4VRm8O7Q8ojbxJPO2i7dC1dBGQVo38CVubI5Q7yp0GSwOY4A==",
       "type": "package",
-      "path": "uno.foundation.runtime.webassembly/4.6.41",
+      "path": "uno.foundation.runtime.webassembly/4.7.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.dll",
         "lib/netstandard2.0/Uno.Foundation.Runtime.WebAssembly.pdb",
-        "uno.foundation.runtime.webassembly.4.6.41.nupkg.sha512",
+        "uno.foundation.runtime.webassembly.4.7.30.nupkg.sha512",
         "uno.foundation.runtime.webassembly.nuspec",
         "uno.png"
       ]
@@ -6222,151 +6255,60 @@
         "uno.toolkit.ui.nuspec"
       ]
     },
-    "Uno.UI/4.6.41": {
-      "sha512": "e9+VVoKSDDATSf5EqV3Wb0Ds3wcneUD5LctdOKp7bUkTjmZ7JBCpD6IcoB0iq6QcEwomjNEdl7osvDx8xHWKXQ==",
+    "Uno.UI/4.7.30": {
+      "sha512": "QBMtDeMiB/CTRHXOdJRcNEGM7tRXk+PpMC5EWwKWjULfsuaJLNjWN9CoS/UxlSYznshtCCMe2wEuxMalIJA3fQ==",
       "type": "package",
-      "path": "uno.ui/4.6.41",
+      "path": "uno.ui/4.7.30",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "analyzers/Uno.Analyzers.dll",
-        "analyzers/Uno.Analyzers.pdb",
         "analyzers/dotnet/cs/Microsoft.ApplicationInsights.dll",
         "analyzers/dotnet/cs/Microsoft.DotNet.PlatformAbstractions.dll",
-        "analyzers/dotnet/cs/Mono.Cecil.Mdb.dll",
-        "analyzers/dotnet/cs/Mono.Cecil.Pdb.dll",
-        "analyzers/dotnet/cs/Mono.Cecil.Rocks.dll",
-        "analyzers/dotnet/cs/Mono.Cecil.dll",
         "analyzers/dotnet/cs/System.Diagnostics.DiagnosticSource.dll",
+        "analyzers/dotnet/cs/Uno.Analyzers.dll",
+        "analyzers/dotnet/cs/Uno.Analyzers.pdb",
         "analyzers/dotnet/cs/Uno.UI.SourceGenerators.dll",
         "analyzers/dotnet/cs/Uno.UI.SourceGenerators.pdb",
         "analyzers/dotnet/cs/Uno.Xaml.dll",
         "analyzers/dotnet/cs/Uno.Xaml.pdb",
-        "buildTransitive/MonoAndroid/Uno.UI.Tasks.targets",
         "buildTransitive/MonoAndroid/Uno.UI.targets",
-        "buildTransitive/MonoAndroid/uno.ui.tasks.assets.targets",
-        "buildTransitive/MonoAndroid/uno.winui.common.targets",
-        "buildTransitive/MonoAndroid/uno.winui.cross-runtime.targets",
-        "buildTransitive/MonoAndroid/uno.winui.runtime-replace.targets",
-        "buildTransitive/MonoAndroid/uno.winui.single-project.targets",
-        "buildTransitive/MonoAndroid/uno.winui.winappsdk.targets",
         "buildTransitive/Uno.UI.SourceGenerators.props",
+        "buildTransitive/Uno.UI.Tasks.targets",
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.Mdb.dll",
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.Pdb.dll",
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.Rocks.dll",
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.dll",
         "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v0.dll",
         "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v0.pdb",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v3c308bb18e18cc5a1155104f1518f213d266a840.dll",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.v3c308bb18e18cc5a1155104f1518f213d266a840.pdb",
-        "buildTransitive/net5.0-windows/Uno.UI.Tasks.targets",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.vfccafde5e06040318a2ac14759d71f42b26a32c4.dll",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.vfccafde5e06040318a2ac14759d71f42b26a32c4.pdb",
         "buildTransitive/net5.0-windows/Uno.UI.targets",
-        "buildTransitive/net5.0-windows/uno.ui.tasks.assets.targets",
-        "buildTransitive/net5.0-windows/uno.winui.common.targets",
-        "buildTransitive/net5.0-windows/uno.winui.cross-runtime.targets",
-        "buildTransitive/net5.0-windows/uno.winui.runtime-replace.targets",
-        "buildTransitive/net5.0-windows/uno.winui.single-project.targets",
-        "buildTransitive/net5.0-windows/uno.winui.winappsdk.targets",
-        "buildTransitive/net6.0-android30.0/Uno.UI.Tasks.targets",
         "buildTransitive/net6.0-android30.0/Uno.UI.targets",
-        "buildTransitive/net6.0-android30.0/uno.ui.tasks.assets.targets",
-        "buildTransitive/net6.0-android30.0/uno.winui.common.targets",
-        "buildTransitive/net6.0-android30.0/uno.winui.cross-runtime.targets",
-        "buildTransitive/net6.0-android30.0/uno.winui.runtime-replace.targets",
-        "buildTransitive/net6.0-android30.0/uno.winui.single-project.targets",
-        "buildTransitive/net6.0-android30.0/uno.winui.winappsdk.targets",
-        "buildTransitive/net6.0-ios/Uno.UI.Tasks.targets",
         "buildTransitive/net6.0-ios/Uno.UI.targets",
-        "buildTransitive/net6.0-ios/uno.ui.tasks.assets.targets",
-        "buildTransitive/net6.0-ios/uno.winui.common.targets",
-        "buildTransitive/net6.0-ios/uno.winui.cross-runtime.targets",
-        "buildTransitive/net6.0-ios/uno.winui.runtime-replace.targets",
-        "buildTransitive/net6.0-ios/uno.winui.single-project.targets",
-        "buildTransitive/net6.0-ios/uno.winui.winappsdk.targets",
-        "buildTransitive/net6.0-maccatalyst/Uno.UI.Tasks.targets",
         "buildTransitive/net6.0-maccatalyst/Uno.UI.targets",
-        "buildTransitive/net6.0-maccatalyst/uno.ui.tasks.assets.targets",
-        "buildTransitive/net6.0-maccatalyst/uno.winui.common.targets",
-        "buildTransitive/net6.0-maccatalyst/uno.winui.cross-runtime.targets",
-        "buildTransitive/net6.0-maccatalyst/uno.winui.runtime-replace.targets",
-        "buildTransitive/net6.0-maccatalyst/uno.winui.single-project.targets",
-        "buildTransitive/net6.0-maccatalyst/uno.winui.winappsdk.targets",
-        "buildTransitive/net6.0-macos/Uno.UI.Tasks.targets",
         "buildTransitive/net6.0-macos/Uno.UI.targets",
-        "buildTransitive/net6.0-macos/uno.ui.tasks.assets.targets",
-        "buildTransitive/net6.0-macos/uno.winui.common.targets",
-        "buildTransitive/net6.0-macos/uno.winui.cross-runtime.targets",
-        "buildTransitive/net6.0-macos/uno.winui.runtime-replace.targets",
-        "buildTransitive/net6.0-macos/uno.winui.single-project.targets",
-        "buildTransitive/net6.0-macos/uno.winui.winappsdk.targets",
-        "buildTransitive/net7.0-android30.0/Uno.UI.Tasks.targets",
         "buildTransitive/net7.0-android30.0/Uno.UI.targets",
-        "buildTransitive/net7.0-android30.0/uno.ui.tasks.assets.targets",
-        "buildTransitive/net7.0-android30.0/uno.winui.common.targets",
-        "buildTransitive/net7.0-android30.0/uno.winui.cross-runtime.targets",
-        "buildTransitive/net7.0-android30.0/uno.winui.runtime-replace.targets",
-        "buildTransitive/net7.0-android30.0/uno.winui.single-project.targets",
-        "buildTransitive/net7.0-ios/Uno.UI.Tasks.targets",
         "buildTransitive/net7.0-ios/Uno.UI.targets",
-        "buildTransitive/net7.0-ios/uno.ui.tasks.assets.targets",
-        "buildTransitive/net7.0-ios/uno.winui.common.targets",
-        "buildTransitive/net7.0-ios/uno.winui.cross-runtime.targets",
-        "buildTransitive/net7.0-ios/uno.winui.runtime-replace.targets",
-        "buildTransitive/net7.0-ios/uno.winui.single-project.targets",
-        "buildTransitive/net7.0-maccatalyst/Uno.UI.Tasks.targets",
         "buildTransitive/net7.0-maccatalyst/Uno.UI.targets",
-        "buildTransitive/net7.0-maccatalyst/uno.ui.tasks.assets.targets",
-        "buildTransitive/net7.0-maccatalyst/uno.winui.common.targets",
-        "buildTransitive/net7.0-maccatalyst/uno.winui.cross-runtime.targets",
-        "buildTransitive/net7.0-maccatalyst/uno.winui.runtime-replace.targets",
-        "buildTransitive/net7.0-maccatalyst/uno.winui.single-project.targets",
-        "buildTransitive/net7.0-macos/Uno.UI.Tasks.targets",
         "buildTransitive/net7.0-macos/Uno.UI.targets",
-        "buildTransitive/net7.0-macos/uno.ui.tasks.assets.targets",
-        "buildTransitive/net7.0-macos/uno.winui.common.targets",
-        "buildTransitive/net7.0-macos/uno.winui.cross-runtime.targets",
-        "buildTransitive/net7.0-macos/uno.winui.runtime-replace.targets",
-        "buildTransitive/net7.0-macos/uno.winui.single-project.targets",
-        "buildTransitive/net7.0/Uno.UI.Tasks.targets",
         "buildTransitive/net7.0/Uno.UI.targets",
-        "buildTransitive/net7.0/uno.ui.tasks.assets.targets",
-        "buildTransitive/net7.0/uno.winui.common.targets",
-        "buildTransitive/net7.0/uno.winui.cross-runtime.targets",
-        "buildTransitive/net7.0/uno.winui.runtime-replace.targets",
-        "buildTransitive/net7.0/uno.winui.single-project.targets",
-        "buildTransitive/net7.0/uno.winui.winappsdk.targets",
-        "buildTransitive/netstandard2.0/Uno.UI.Tasks.targets",
         "buildTransitive/netstandard2.0/Uno.UI.targets",
-        "buildTransitive/netstandard2.0/uno.ui.tasks.assets.targets",
-        "buildTransitive/netstandard2.0/uno.winui.common.targets",
-        "buildTransitive/netstandard2.0/uno.winui.cross-runtime.targets",
-        "buildTransitive/netstandard2.0/uno.winui.runtime-replace.targets",
-        "buildTransitive/netstandard2.0/uno.winui.single-project.targets",
-        "buildTransitive/netstandard2.0/uno.winui.winappsdk.targets",
         "buildTransitive/uap10.0.16299/Uno.UI.targets",
         "buildTransitive/uap10.0.16299/uno.winui.runtime-replace.targets",
         "buildTransitive/uap10.0.17763/uno.winui.runtime-replace.targets",
         "buildTransitive/uap10.0.17763/uno.winui.targets",
         "buildTransitive/uap10.0.18362/Uno.UI.targets",
         "buildTransitive/uap10.0.18362/uno.winui.runtime-replace.targets",
-        "buildTransitive/xamarinios10/Uno.UI.Tasks.targets",
+        "buildTransitive/uno.ui.tasks.assets.targets",
+        "buildTransitive/uno.winui.common.targets",
+        "buildTransitive/uno.winui.cross-runtime.targets",
+        "buildTransitive/uno.winui.runtime-replace.targets",
+        "buildTransitive/uno.winui.single-location-project.targets",
+        "buildTransitive/uno.winui.single-project.targets",
+        "buildTransitive/uno.winui.winappsdk.targets",
         "buildTransitive/xamarinios10/Uno.UI.targets",
-        "buildTransitive/xamarinios10/uno.ui.tasks.assets.targets",
-        "buildTransitive/xamarinios10/uno.winui.common.targets",
-        "buildTransitive/xamarinios10/uno.winui.cross-runtime.targets",
-        "buildTransitive/xamarinios10/uno.winui.runtime-replace.targets",
-        "buildTransitive/xamarinios10/uno.winui.single-project.targets",
-        "buildTransitive/xamarinios10/uno.winui.winappsdk.targets",
-        "buildTransitive/xamarinmac20/Uno.UI.Tasks.targets",
         "buildTransitive/xamarinmac20/Uno.UI.targets",
-        "buildTransitive/xamarinmac20/uno.ui.tasks.assets.targets",
-        "buildTransitive/xamarinmac20/uno.winui.common.targets",
-        "buildTransitive/xamarinmac20/uno.winui.cross-runtime.targets",
-        "buildTransitive/xamarinmac20/uno.winui.runtime-replace.targets",
-        "buildTransitive/xamarinmac20/uno.winui.single-project.targets",
-        "buildTransitive/xamarinmac20/uno.winui.winappsdk.targets",
-        "lib/MonoAndroid10.0/_._",
         "lib/MonoAndroid12.0/Uno.Foundation.Logging.dll",
         "lib/MonoAndroid12.0/Uno.Foundation.Logging.pdb",
         "lib/MonoAndroid12.0/Uno.Foundation.dll",
@@ -6417,8 +6359,6 @@
         "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.FluentTheme.v2.pdb",
         "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.Toolkit.pdb",
         "lib/MonoAndroid13.0/pdb_move_to_debug/Uno.UI.pdb",
-        "lib/MonoAndroid80/_._",
-        "lib/MonoAndroid90/_._",
         "lib/UAP/Uno.UI.Toolkit.dll",
         "lib/UAP/Uno.UI.Toolkit.pdb",
         "lib/UAP/Uno.UI.Toolkit.pri",
@@ -6705,10 +6645,6 @@
         "tools/linker/illink.runtimeconfig.json",
         "tools/uno-sourcegen/Microsoft.ApplicationInsights.dll",
         "tools/uno-sourcegen/Microsoft.DotNet.PlatformAbstractions.dll",
-        "tools/uno-sourcegen/Mono.Cecil.Mdb.dll",
-        "tools/uno-sourcegen/Mono.Cecil.Pdb.dll",
-        "tools/uno-sourcegen/Mono.Cecil.Rocks.dll",
-        "tools/uno-sourcegen/Mono.Cecil.dll",
         "tools/uno-sourcegen/System.Diagnostics.DiagnosticSource.dll",
         "tools/uno-sourcegen/Uno.UI.SourceGenerators.dll",
         "tools/uno-sourcegen/Uno.UI.SourceGenerators.pdb",
@@ -6811,14 +6747,14 @@
         "uno-runtime/netstandard2.0/webassembly/Uno.dll",
         "uno-runtime/netstandard2.0/webassembly/Uno.pdb",
         "uno.png",
-        "uno.ui.4.6.41.nupkg.sha512",
+        "uno.ui.4.7.30.nupkg.sha512",
         "uno.ui.nuspec"
       ]
     },
-    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.6.41": {
-      "sha512": "G79C2EFSQhIP7fKX7QrdWCSN3eMcribU/cspbWoWyv9WUC6R04MphrokkHx5GAzv/FYo9zSULWd1ajw1H5NirA==",
+    "Uno.UI.Adapter.Microsoft.Extensions.Logging/4.7.30": {
+      "sha512": "QE2im3G6vLxJvtJ/InjBHXpM+8LCEwoFNmSMxnc9ItKQXKaIAcPQWeHb1FJixwbiEqx+JsNAb1zxj6aZQQcBYg==",
       "type": "package",
-      "path": "uno.ui.adapter.microsoft.extensions.logging/4.6.41",
+      "path": "uno.ui.adapter.microsoft.extensions.logging/4.7.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6843,14 +6779,14 @@
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll.config",
         "lib/netstandard2.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.pdb",
         "uno.png",
-        "uno.ui.adapter.microsoft.extensions.logging.4.6.41.nupkg.sha512",
+        "uno.ui.adapter.microsoft.extensions.logging.4.7.30.nupkg.sha512",
         "uno.ui.adapter.microsoft.extensions.logging.nuspec"
       ]
     },
-    "Uno.UI.Runtime.WebAssembly/4.6.41": {
-      "sha512": "d2XscAbXmcnlwZKOXliabRiOpfTbcOtwRh08v4QflUYC4+MLXYA2NVsQ9v+A0UlNh8LqUiuI/R+RNpelDzTz+w==",
+    "Uno.UI.Runtime.WebAssembly/4.7.30": {
+      "sha512": "6aSNDqf7ReMPPBQ3C6n/DJYNgWVnkJ1nKiRtZ3l5mN3tcYE5it/P+dMSdPreZI2zXUbffqfUeFY1zZbpVLixLQ==",
       "type": "package",
-      "path": "uno.ui.runtime.webassembly/4.6.41",
+      "path": "uno.ui.runtime.webassembly/4.7.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6858,14 +6794,14 @@
         "buildTransitive/Uno.UI.Runtime.WebAssembly.targets",
         "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.dll",
         "lib/netstandard2.0/Uno.UI.Runtime.WebAssembly.pdb",
-        "uno.ui.runtime.webassembly.4.6.41.nupkg.sha512",
+        "uno.ui.runtime.webassembly.4.7.30.nupkg.sha512",
         "uno.ui.runtime.webassembly.nuspec"
       ]
     },
-    "Uno.UI.WebAssembly/4.6.41": {
-      "sha512": "HZhUiGynKUUczePtKpsk1/JeEwTYyl6+GxxvytKo4n8UmBZCQT3QcI9RLwcJaRaeWdDvhDhr7/NfwPYHj+A+AA==",
+    "Uno.UI.WebAssembly/4.7.30": {
+      "sha512": "IsLotXGL8kAoF3wfPr0IRO6VUQRj1BEOJESdFRKwcLr8VgSkfAEpv61mmcVQQjKE4YoSl5CecQ6XLoOcQau5tg==",
       "type": "package",
-      "path": "uno.ui.webassembly/4.6.41",
+      "path": "uno.ui.webassembly/4.7.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6873,14 +6809,14 @@
         "build/Uno.UI.WebAssembly.targets",
         "lib/netstandard1.0/_._",
         "uno.png",
-        "uno.ui.webassembly.4.6.41.nupkg.sha512",
+        "uno.ui.webassembly.4.7.30.nupkg.sha512",
         "uno.ui.webassembly.nuspec"
       ]
     },
-    "Uno.Wasm.Bootstrap/7.0.11": {
-      "sha512": "txMy2rKAm1RB7A7pkONKdTwAW0eIwAkRz7VL0IxXfFCRuW6P+58k/KibNNQKYBNN/zUVZThVFMnnUZK4AziIIA==",
+    "Uno.Wasm.Bootstrap/7.0.12": {
+      "sha512": "kudQWwjKQN9ujXS4bu8+gnDh260x9ema0QNSiOMW9M2UBc7itelK6WBF7HePpTzdJm1BeF7dPEDnqzcsvF2HoQ==",
       "type": "package",
-      "path": "uno.wasm.bootstrap/7.0.11",
+      "path": "uno.wasm.bootstrap/7.0.12",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -6929,8 +6865,8 @@
         "tools/Newtonsoft.Json.dll",
         "tools/System.Memory.dll",
         "tools/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/Uno.Wasm.Bootstrap.v667976303edda96613ed27b40cdf1ccde7b38a60.dll",
-        "tools/Uno.Wasm.Bootstrap.v667976303edda96613ed27b40cdf1ccde7b38a60.pdb",
+        "tools/Uno.Wasm.Bootstrap.v4920af81c6eed19e44f9d7558bf08c098a73669a.dll",
+        "tools/Uno.Wasm.Bootstrap.v4920af81c6eed19e44f9d7558bf08c098a73669a.pdb",
         "tools/support/Uno.Wasm.AotProfiler.deps.json",
         "tools/support/Uno.Wasm.AotProfiler.dll",
         "tools/support/Uno.Wasm.AotProfiler.pdb",
@@ -6944,14 +6880,14 @@
         "tools/support/Uno.Wasm.TimezoneData.dll",
         "tools/support/Uno.Wasm.TimezoneData.pdb",
         "tools/templates/index.html",
-        "uno.wasm.bootstrap.7.0.11.nupkg.sha512",
+        "uno.wasm.bootstrap.7.0.12.nupkg.sha512",
         "uno.wasm.bootstrap.nuspec"
       ]
     },
-    "Uno.Wasm.Bootstrap.DevServer/7.0.11": {
-      "sha512": "qYFdXRK2iSBL6hJGoAxh2zO+BtfEFx53DmjApGR4jP2NMtJliqXH8WoWv5RDo0XoNQt5U09U4jj5jbvbPmxKSw==",
+    "Uno.Wasm.Bootstrap.DevServer/7.0.12": {
+      "sha512": "9CwYMSGRFX1xyhA26+qanclOCe/m26Tga8P1kkYAg1e1JKmH0bsCofFKpea7/QrHpAHOMDggYnd16lcZHiW+Pw==",
       "type": "package",
-      "path": "uno.wasm.bootstrap.devserver/7.0.11",
+      "path": "uno.wasm.bootstrap.devserver/7.0.12",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -7054,7 +6990,7 @@
         "tools/server/net7.0/dotnet-unowasm.exe",
         "tools/server/net7.0/dotnet-unowasm.pdb",
         "tools/server/net7.0/dotnet-unowasm.runtimeconfig.json",
-        "uno.wasm.bootstrap.devserver.7.0.11.nupkg.sha512",
+        "uno.wasm.bootstrap.devserver.7.0.12.nupkg.sha512",
         "uno.wasm.bootstrap.devserver.nuspec"
       ]
     }
@@ -7068,14 +7004,14 @@
       "System.Configuration.ConfigurationManager >= 7.0.0",
       "System.Text.Json >= 7.0.1",
       "Uno.Extensions.Logging.WebAssembly.Console >= 1.4.0",
-      "Uno.Foundation.Logging >= 4.6.41",
-      "Uno.Foundation.Runtime.WebAssembly >= 4.6.41",
+      "Uno.Foundation.Logging >= 4.7.30",
+      "Uno.Foundation.Runtime.WebAssembly >= 4.7.30",
       "Uno.Toolkit.UI >= 2.4.2",
-      "Uno.UI >= 4.6.41",
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.6.41",
-      "Uno.UI.WebAssembly >= 4.6.41",
-      "Uno.Wasm.Bootstrap >= 7.0.11",
-      "Uno.Wasm.Bootstrap.DevServer >= 7.0.11",
+      "Uno.UI >= 4.7.30",
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.7.30",
+      "Uno.UI.WebAssembly >= 4.7.30",
+      "Uno.Wasm.Bootstrap >= 7.0.12",
+      "Uno.Wasm.Bootstrap.DevServer >= 7.0.12",
       "libphonenumber-csharp >= 8.13.4"
     ]
   },
@@ -7161,11 +7097,11 @@
           },
           "Uno.Foundation.Logging": {
             "target": "Package",
-            "version": "[4.6.41, )"
+            "version": "[4.7.30, )"
           },
           "Uno.Foundation.Runtime.WebAssembly": {
             "target": "Package",
-            "version": "[4.6.41, )"
+            "version": "[4.7.30, )"
           },
           "Uno.Toolkit.UI": {
             "target": "Package",
@@ -7173,23 +7109,23 @@
           },
           "Uno.UI": {
             "target": "Package",
-            "version": "[4.6.41, )"
+            "version": "[4.7.30, )"
           },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
             "target": "Package",
-            "version": "[4.6.41, )"
+            "version": "[4.7.30, )"
           },
           "Uno.UI.WebAssembly": {
             "target": "Package",
-            "version": "[4.6.41, )"
+            "version": "[4.7.30, )"
           },
           "Uno.Wasm.Bootstrap": {
             "target": "Package",
-            "version": "[7.0.11, )"
+            "version": "[7.0.12, )"
           },
           "Uno.Wasm.Bootstrap.DevServer": {
             "target": "Package",
-            "version": "[7.0.11, )"
+            "version": "[7.0.12, )"
           },
           "libphonenumber-csharp": {
             "target": "Package",

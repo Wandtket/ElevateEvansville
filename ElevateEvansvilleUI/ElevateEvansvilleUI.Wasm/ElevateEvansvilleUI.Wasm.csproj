@@ -86,15 +86,15 @@
 		<PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
 		<PackageReference Include="System.Text.Json" Version="7.0.1" />
 		<PackageReference Include="Uno.Extensions.Logging.WebAssembly.Console" Version="1.4.0" />
-		<PackageReference Include="Uno.Foundation.Logging" Version="4.6.41" />
-		<PackageReference Include="Uno.Foundation.Runtime.WebAssembly" Version="4.6.41" />
+		<PackageReference Include="Uno.Foundation.Logging" Version="4.7.30" />
+		<PackageReference Include="Uno.Foundation.Runtime.WebAssembly" Version="4.7.30" />
 		<PackageReference Include="Uno.Toolkit.UI" Version="2.4.2" />
-		<PackageReference Include="Uno.UI" Version="4.6.41" />
-		<PackageReference Include="Uno.UI.WebAssembly" Version="4.6.41" />
-		<PackageReference Include="Uno.UI.RemoteControl" Version="4.6.39" Condition="'$(Configuration)'=='Debug'" />
-		<PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.6.41" />
-		<PackageReference Include="Uno.Wasm.Bootstrap" Version="7.0.11" />
-		<PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="7.0.11" />
+		<PackageReference Include="Uno.UI" Version="4.7.30" />
+		<PackageReference Include="Uno.UI.WebAssembly" Version="4.7.30" />
+		<PackageReference Include="Uno.UI.RemoteControl" Version="4.7.30" Condition="'$(Configuration)'=='Debug'" />
+		<PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.7.30" />
+		<PackageReference Include="Uno.Wasm.Bootstrap" Version="7.0.12" />
+		<PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="7.0.12" />
 	</ItemGroup>
 	<Import Project="..\ElevateEvansvilleUI.Shared\ElevateEvansvilleUI.Shared.projitems" Label="Shared" Condition="Exists('..\ElevateEvansvilleUI.Shared\ElevateEvansvilleUI.Shared.projitems')" />
 	<ItemGroup>

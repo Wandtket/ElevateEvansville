@@ -82,11 +82,11 @@
             },
             "Uno.Foundation.Logging": {
               "target": "Package",
-              "version": "[4.6.41, )"
+              "version": "[4.7.30, )"
             },
             "Uno.Foundation.Runtime.WebAssembly": {
               "target": "Package",
-              "version": "[4.6.41, )"
+              "version": "[4.7.30, )"
             },
             "Uno.Toolkit.UI": {
               "target": "Package",
@@ -94,23 +94,23 @@
             },
             "Uno.UI": {
               "target": "Package",
-              "version": "[4.6.41, )"
+              "version": "[4.7.30, )"
             },
             "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
               "target": "Package",
-              "version": "[4.6.41, )"
+              "version": "[4.7.30, )"
             },
             "Uno.UI.WebAssembly": {
               "target": "Package",
-              "version": "[4.6.41, )"
+              "version": "[4.7.30, )"
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             },
             "libphonenumber-csharp": {
               "target": "Package",

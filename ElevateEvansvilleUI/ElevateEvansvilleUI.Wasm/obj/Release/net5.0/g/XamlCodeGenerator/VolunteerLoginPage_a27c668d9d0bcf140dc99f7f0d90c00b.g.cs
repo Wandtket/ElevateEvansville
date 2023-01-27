@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,15 +48,24 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class VolunteerLoginPage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b = "ms-appx:///Pages/Volunteer/VolunteerLoginPage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_1 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_39 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -93,8 +104,8 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Name = "SignInGrid",
-									Height = 410d/* double/, 410, Grid/Height */,
-									Width = 310d/* double/, 310, Grid/Width */,
+									Height = 410f/* double/, 410, Grid/Height */,
+									Width = 310f/* double/, 310, Grid/Width */,
 									Padding = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, Grid/Padding */,
 									RowSpacing = 10d/* double/, 10, Grid/RowSpacing */,
 									Visibility = global::Windows.UI.Xaml.Visibility.Visible/* Windows.UI.Xaml.Visibility/, Visible, Grid/Visibility */,
@@ -150,13 +161,14 @@ namespace ElevateEvansvilleUI.Pages
 										new global::Windows.UI.Xaml.Controls.Image
 										{
 											IsParsing = true,
-											Source = "/Assets/Images/Logos/LogoBig.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/LogoBig.png, Image/Source */,
-											Height = 150d/* double/, 150, Image/Height */,
+											Source = "ms-appx:///" + "Assets/Images/Logos/LogoBig.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/LogoBig.png, Image/Source */,
+											Height = 150f/* double/, 150, Image/Height */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerLoginPage.xaml (Line 45:22)
 										}
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler1)(c7 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c7, 0/* int/, 0, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c7, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c7.CreationComplete();
 										}
 										))
@@ -173,6 +185,7 @@ namespace ElevateEvansvilleUI.Pages
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler2)(c8 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c8, 1/* int/, 1, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c8, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c8.CreationComplete();
 										}
 										))
@@ -187,9 +200,10 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler3)(c9 => 
 										{
-											nameScope.RegisterName("EmailLogin", c9);
-											this.EmailLogin = c9;
+											__nameScope.RegisterName("EmailLogin", c9);
+											__that.EmailLogin = c9;
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c9, 2/* int/, 2, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c9, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c9.CreationComplete();
 										}
 										))
@@ -204,9 +218,10 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler4)(c10 => 
 										{
-											nameScope.RegisterName("PasswordLogin", c10);
-											this.PasswordLogin = c10;
+											__nameScope.RegisterName("PasswordLogin", c10);
+											__that.PasswordLogin = c10;
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c10, 3/* int/, 3, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c10.CreationComplete();
 										}
 										))
@@ -228,8 +243,9 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler5)(c11 => 
 												{
-													var Click_LogInButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+													var Click_LogInButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 													/* second level */ c11.Click += (LogInButton_Click_sender,LogInButton_Click_e) => (Click_LogInButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerLoginPage)?.LogInButton_Click(LogInButton_Click_sender,LogInButton_Click_e);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 													c11.CreationComplete();
 												}
 												))
@@ -242,8 +258,9 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler6)(c12 => 
 												{
-													var Click_SignUpButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+													var Click_SignUpButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 													/* second level */ c12.Click += (SignUpButton_Click_sender,SignUpButton_Click_e) => (Click_SignUpButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerLoginPage)?.SignUpButton_Click(SignUpButton_Click_sender,SignUpButton_Click_e);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 													c12.CreationComplete();
 												}
 												))
@@ -256,8 +273,9 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler6)(c13 => 
 												{
-													var Click_ForgotPasswordButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+													var Click_ForgotPasswordButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 													/* second level */ c13.Click += (ForgotPasswordButton_Click_sender,ForgotPasswordButton_Click_e) => (Click_ForgotPasswordButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerLoginPage)?.ForgotPasswordButton_Click(ForgotPasswordButton_Click_sender,ForgotPasswordButton_Click_e);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 													c13.CreationComplete();
 												}
 												))
@@ -267,6 +285,7 @@ namespace ElevateEvansvilleUI.Pages
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler7)(c14 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c14, 4/* int/, 4, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c14, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c14.CreationComplete();
 										}
 										))
@@ -275,8 +294,9 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler8)(c15 => 
 								{
-									nameScope.RegisterName("SignInGrid", c15);
-									this.SignInGrid = c15;
+									__nameScope.RegisterName("SignInGrid", c15);
+									__that.SignInGrid = c15;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 									c15.CreationComplete();
 								}
 								))
@@ -285,8 +305,8 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									IsParsing = true,
 									Name = "NoticeGrid",
-									Height = 410d/* double/, 410, Grid/Height */,
-									Width = 310d/* double/, 310, Grid/Width */,
+									Height = 410f/* double/, 410, Grid/Height */,
+									Width = 310f/* double/, 310, Grid/Width */,
 									Padding = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, Grid/Padding */,
 									RowSpacing = 10d/* double/, 10, Grid/RowSpacing */,
 									Visibility = global::Windows.UI.Xaml.Visibility.Collapsed/* Windows.UI.Xaml.Visibility/, Collapsed, Grid/Visibility */,
@@ -333,6 +353,7 @@ namespace ElevateEvansvilleUI.Pages
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler2)(c20 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c20, 0/* int/, 0, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c20, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c20.CreationComplete();
 										}
 										))
@@ -340,7 +361,7 @@ namespace ElevateEvansvilleUI.Pages
 										new global::Windows.UI.Xaml.Controls.Viewbox
 										{
 											IsParsing = true,
-											Height = 175d/* double/, 175, Viewbox/Height */,
+											Height = 175f/* double/, 175, Viewbox/Height */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerLoginPage.xaml (Line 69:22)
 											Child = 
 											new global::Windows.UI.Xaml.Controls.SymbolIcon
@@ -351,6 +372,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler9)(c21 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c21, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c21.CreationComplete();
 											}
 											))
@@ -359,6 +381,7 @@ namespace ElevateEvansvilleUI.Pages
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler10)(c22 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c22, 1/* int/, 1, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c22.CreationComplete();
 										}
 										))
@@ -366,7 +389,7 @@ namespace ElevateEvansvilleUI.Pages
 										new global::Windows.UI.Xaml.Controls.Viewbox
 										{
 											IsParsing = true,
-											Height = 50d/* double/, 50, Viewbox/Height */,
+											Height = 50f/* double/, 50, Viewbox/Height */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerLoginPage.xaml (Line 73:22)
 											Child = 
 											new global::Windows.UI.Xaml.Controls.SymbolIcon
@@ -377,6 +400,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler9)(c23 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c23.CreationComplete();
 											}
 											))
@@ -385,6 +409,7 @@ namespace ElevateEvansvilleUI.Pages
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler10)(c24 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 1/* int/, 1, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c24.CreationComplete();
 										}
 										))
@@ -406,6 +431,7 @@ namespace ElevateEvansvilleUI.Pages
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler2)(c26 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c26, 2/* int/, 2, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c26, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c26.CreationComplete();
 										}
 										))
@@ -419,9 +445,10 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler5)(c27 => 
 										{
-											var Click_SignUpContinueButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											var Click_SignUpContinueButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c27.Click += (SignUpContinueButton_Click_sender,SignUpContinueButton_Click_e) => (Click_SignUpContinueButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerLoginPage)?.SignUpContinueButton_Click(SignUpContinueButton_Click_sender,SignUpContinueButton_Click_e);
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 3/* int/, 3, Grid/Row */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c27, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 											c27.CreationComplete();
 										}
 										))
@@ -430,8 +457,9 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler8)(c28 => 
 								{
-									nameScope.RegisterName("NoticeGrid", c28);
-									this.NoticeGrid = c28;
+									__nameScope.RegisterName("NoticeGrid", c28);
+									__that.NoticeGrid = c28;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c28, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 									c28.CreationComplete();
 								}
 								))
@@ -446,8 +474,8 @@ namespace ElevateEvansvilleUI.Pages
 									new global::Windows.UI.Xaml.Controls.Grid
 									{
 										IsParsing = true,
-										Height = 545d/* double/, 545, Grid/Height */,
-										Width = 310d/* double/, 310, Grid/Width */,
+										Height = 545f/* double/, 545, Grid/Height */,
+										Width = 310f/* double/, 310, Grid/Width */,
 										Padding = new global::Windows.UI.Xaml.Thickness(15)/* Windows.UI.Xaml.Thickness/, 15, Grid/Padding */,
 										RowSpacing = 10d/* double/, 10, Grid/RowSpacing */,
 										RowDefinitions = 
@@ -523,6 +551,7 @@ namespace ElevateEvansvilleUI.Pages
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler2)(c38 => 
 											{
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c38, 1/* int/, 1, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c38, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c38.CreationComplete();
 											}
 											))
@@ -537,9 +566,10 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler3)(c39 => 
 											{
-												nameScope.RegisterName("LastName", c39);
-												this.LastName = c39;
+												__nameScope.RegisterName("LastName", c39);
+												__that.LastName = c39;
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c39, 2/* int/, 2, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c39, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c39.CreationComplete();
 											}
 											))
@@ -554,9 +584,10 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler3)(c40 => 
 											{
-												nameScope.RegisterName("FirstName", c40);
-												this.FirstName = c40;
+												__nameScope.RegisterName("FirstName", c40);
+												__that.FirstName = c40;
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c40, 3/* int/, 3, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c40, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c40.CreationComplete();
 											}
 											))
@@ -571,9 +602,10 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler3)(c41 => 
 											{
-												nameScope.RegisterName("Phone", c41);
-												this.Phone = c41;
+												__nameScope.RegisterName("Phone", c41);
+												__that.Phone = c41;
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c41, 4/* int/, 4, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c41, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c41.CreationComplete();
 											}
 											))
@@ -588,9 +620,10 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler3)(c42 => 
 											{
-												nameScope.RegisterName("EmailSignUp", c42);
-												this.EmailSignUp = c42;
+												__nameScope.RegisterName("EmailSignUp", c42);
+												__that.EmailSignUp = c42;
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c42, 5/* int/, 5, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c42, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c42.CreationComplete();
 											}
 											))
@@ -605,9 +638,10 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler4)(c43 => 
 											{
-												nameScope.RegisterName("PasswordSignUp", c43);
-												this.PasswordSignUp = c43;
+												__nameScope.RegisterName("PasswordSignUp", c43);
+												__that.PasswordSignUp = c43;
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c43, 6/* int/, 6, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c43, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c43.CreationComplete();
 											}
 											))
@@ -622,9 +656,10 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler4)(c44 => 
 											{
-												nameScope.RegisterName("ConfirmPasswordSignUp", c44);
-												this.ConfirmPasswordSignUp = c44;
+												__nameScope.RegisterName("ConfirmPasswordSignUp", c44);
+												__that.ConfirmPasswordSignUp = c44;
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c44, 7/* int/, 7, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c44, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c44.CreationComplete();
 											}
 											))
@@ -646,8 +681,9 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler5)(c45 => 
 													{
-														var Click_SignUpSubmittButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+														var Click_SignUpSubmittButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 														/* second level */ c45.Click += (SignUpSubmittButton_Click_sender,SignUpSubmittButton_Click_e) => (Click_SignUpSubmittButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerLoginPage)?.SignUpSubmittButton_Click(SignUpSubmittButton_Click_sender,SignUpSubmittButton_Click_e);
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c45, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 														c45.CreationComplete();
 													}
 													))
@@ -660,8 +696,9 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler5)(c46 => 
 													{
-														var Click_SignUpDismissButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+														var Click_SignUpDismissButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 														/* second level */ c46.Click += (SignUpDismissButton_Click_sender,SignUpDismissButton_Click_e) => (Click_SignUpDismissButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.VolunteerLoginPage)?.SignUpDismissButton_Click(SignUpDismissButton_Click_sender,SignUpDismissButton_Click_e);
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c46, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 														c46.CreationComplete();
 													}
 													))
@@ -671,6 +708,7 @@ namespace ElevateEvansvilleUI.Pages
 											.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler7)(c47 => 
 											{
 												global::Windows.UI.Xaml.Controls.Grid.SetRow(c47, 8/* int/, 8, Grid/Row */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c47, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 												c47.CreationComplete();
 											}
 											))
@@ -679,6 +717,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler8)(c48 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c48, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 										c48.CreationComplete();
 									}
 									))
@@ -686,8 +725,9 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler12)(c49 => 
 								{
-									nameScope.RegisterName("SignUpGrid", c49);
-									this.SignUpGrid = c49;
+									__nameScope.RegisterName("SignUpGrid", c49);
+									__that.SignUpGrid = c49;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c49, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 									c49.CreationComplete();
 								}
 								))
@@ -696,6 +736,7 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler8)(c50 => 
 						{
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c50, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 							c50.CreationComplete();
 						}
 						))
@@ -703,10 +744,11 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler13)(c51 => 
 					{
+						/* _isTopLevelDictionary:False */
+						__that._component_0 = c51;
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c51, 0/* int/, 0, Grid/Row */);
 						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c51, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-						/* _isTopLevelDictionary:False */
-						this._component_0 = c51;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c51, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 						c51.CreationComplete();
 					}
 					))
@@ -715,25 +757,27 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b_XamlApply((VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00bXamlApplyExtensions.XamlApplyHandler8)(c52 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c52, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 				c52.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c53 => 
+			.GenericApply(((c53) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerLoginPage.xaml (Line 1:2)
 				
 				// WARNING Property c53.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c54 => 
+			.GenericApply(((c54) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_1 = c54;
 				// Class ElevateEvansvilleUI.Pages.VolunteerLoginPage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c54, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_1 = c54;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c54, __baseUri_VolunteerLoginPage_a27c668d9d0bcf140dc99f7f0d90c00b);
 				c54.CreationComplete();
 			}
 			))
@@ -741,9 +785,9 @@ namespace ElevateEvansvilleUI.Pages
 			OnInitializeCompleted();
 
 			Bindings = new VolunteerLoginPage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
@@ -880,7 +924,7 @@ namespace ElevateEvansvilleUI.Pages
 				_SignUpGridSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Uno.UI.Toolkit.ElevatedView _component_0
 		{
 			get
@@ -892,7 +936,7 @@ namespace ElevateEvansvilleUI.Pages
 				_component_0_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_1
 		{
 			get

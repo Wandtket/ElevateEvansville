@@ -338,3 +338,5 @@ C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEv
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\PhoneNumbers.dll
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
 C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\obj\Release\net5.0\staticwebassets\ElevateEvansvilleUI.Wasm.StaticWebAssets.xml
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.Fonts.Fluent\Fonts\uno-fluentui-assets.ttf
+C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Wasm\bin\Release\net5.0\Uno.Fonts.Fluent.dll

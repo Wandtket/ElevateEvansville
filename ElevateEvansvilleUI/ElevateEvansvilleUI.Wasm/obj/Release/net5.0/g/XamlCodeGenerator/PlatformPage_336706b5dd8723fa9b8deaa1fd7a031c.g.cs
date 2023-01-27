@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,15 +48,24 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class PlatformPage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c = "ms-appx:///Pages/PlatformPage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.TextBlock)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_3 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_31 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -69,7 +80,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Windows.UI.Xaml.Controls.StackPanel)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_11 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_36 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.StackPanel))
 				{
 					Setters = 
@@ -82,7 +93,7 @@ namespace ElevateEvansvilleUI.Pages
 			Resources[
 			typeof(global::Microsoft.UI.Xaml.Controls.Expander)
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_13 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_37 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Microsoft.UI.Xaml.Controls.Expander))
 				{
 					Setters = 
@@ -106,7 +117,7 @@ namespace ElevateEvansvilleUI.Pages
 					Padding = new global::Windows.UI.Xaml.Thickness(20,75,20,75)/* Windows.UI.Xaml.Thickness/, 20,75,20,75, Grid/Padding */,
 					RowSpacing = 20d/* double/, 20, Grid/RowSpacing */,
 					HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
-					MaxWidth = 900d/* double/, 900, Grid/MaxWidth */,
+					MaxWidth = 900f/* double/, 900, Grid/MaxWidth */,
 					RowDefinitions = 
 					{
 						new global::Windows.UI.Xaml.Controls.RowDefinition
@@ -192,6 +203,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c10 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c10.CreationComplete();
 									}
 									))
@@ -200,6 +212,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c11 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c11.CreationComplete();
 							}
 							))
@@ -226,6 +239,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c13 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c13.CreationComplete();
 									}
 									))
@@ -246,6 +260,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c15 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c15.CreationComplete();
 									}
 									))
@@ -266,6 +281,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c17 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c17, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c17.CreationComplete();
 									}
 									))
@@ -274,6 +290,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c18 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c18, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c18.CreationComplete();
 							}
 							))
@@ -283,6 +300,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c19 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c19, 0/* int/, 0, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c19, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c19.CreationComplete();
 						}
 						))
@@ -305,6 +323,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c20 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c20, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c20.CreationComplete();
 									}
 									))
@@ -334,8 +353,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c22 => 
 											{
-												nameScope.RegisterName("CityCouncilSuggestion", c22);
-												this.CityCouncilSuggestion = c22;
+												__nameScope.RegisterName("CityCouncilSuggestion", c22);
+												__that.CityCouncilSuggestion = c22;
 											}
 											))
 											,
@@ -343,6 +362,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c23 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c23.CreationComplete();
 									}
 									))
@@ -351,6 +371,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c24 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c24.CreationComplete();
 							}
 							))
@@ -377,6 +398,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c26 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c26, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c26.CreationComplete();
 									}
 									))
@@ -385,6 +407,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c27 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c27, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c27.CreationComplete();
 							}
 							))
@@ -394,6 +417,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c28 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c28, 1/* int/, 1, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c28, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c28.CreationComplete();
 						}
 						))
@@ -416,6 +440,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c29 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c29, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c29.CreationComplete();
 									}
 									))
@@ -445,8 +470,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c31 => 
 											{
-												nameScope.RegisterName("CorruptionSuggestion", c31);
-												this.CorruptionSuggestion = c31;
+												__nameScope.RegisterName("CorruptionSuggestion", c31);
+												__that.CorruptionSuggestion = c31;
 											}
 											))
 											,
@@ -454,6 +479,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c32 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c32, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c32.CreationComplete();
 									}
 									))
@@ -462,6 +488,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c33 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c33, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c33.CreationComplete();
 							}
 							))
@@ -488,6 +515,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c35 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c35, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c35.CreationComplete();
 									}
 									))
@@ -528,6 +556,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c39 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c39, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c39.CreationComplete();
 									}
 									))
@@ -548,6 +577,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c41 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c41, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c41.CreationComplete();
 									}
 									))
@@ -568,6 +598,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c43 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c43, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c43.CreationComplete();
 									}
 									))
@@ -602,6 +633,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c46 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c46, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c46.CreationComplete();
 									}
 									))
@@ -610,6 +642,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c47 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c47, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c47.CreationComplete();
 							}
 							))
@@ -619,6 +652,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c48 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c48, 2/* int/, 2, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c48, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c48.CreationComplete();
 						}
 						))
@@ -642,6 +676,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c49 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c49, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c49.CreationComplete();
 									}
 									))
@@ -671,8 +706,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c51 => 
 											{
-												nameScope.RegisterName("PermitsSuggestion", c51);
-												this.PermitsSuggestion = c51;
+												__nameScope.RegisterName("PermitsSuggestion", c51);
+												__that.PermitsSuggestion = c51;
 											}
 											))
 											,
@@ -680,6 +715,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c52 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c52, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c52.CreationComplete();
 									}
 									))
@@ -688,6 +724,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c53 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c53, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c53.CreationComplete();
 							}
 							))
@@ -714,6 +751,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c55 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c55, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c55.CreationComplete();
 									}
 									))
@@ -734,6 +772,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c57 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c57, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c57.CreationComplete();
 									}
 									))
@@ -763,6 +802,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c60 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c60, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c60.CreationComplete();
 									}
 									))
@@ -792,6 +832,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c63 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c63, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c63.CreationComplete();
 									}
 									))
@@ -812,6 +853,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c65 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c65, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c65.CreationComplete();
 									}
 									))
@@ -832,6 +874,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c67 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c67, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c67.CreationComplete();
 									}
 									))
@@ -852,6 +895,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c69 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c69, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c69.CreationComplete();
 									}
 									))
@@ -872,6 +916,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c71 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c71, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c71.CreationComplete();
 									}
 									))
@@ -892,6 +937,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c73 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c73, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c73.CreationComplete();
 									}
 									))
@@ -912,6 +958,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c75 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c75, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c75.CreationComplete();
 									}
 									))
@@ -920,6 +967,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c76 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c76, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c76.CreationComplete();
 							}
 							))
@@ -929,6 +977,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c77 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c77, 1/* int/, 1, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c77, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c77.CreationComplete();
 						}
 						))
@@ -951,6 +1000,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c78 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c78, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c78.CreationComplete();
 									}
 									))
@@ -980,8 +1030,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c80 => 
 											{
-												nameScope.RegisterName("PoliceSuggestion", c80);
-												this.PoliceSuggestion = c80;
+												__nameScope.RegisterName("PoliceSuggestion", c80);
+												__that.PoliceSuggestion = c80;
 											}
 											))
 											,
@@ -989,6 +1039,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c81 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c81, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c81.CreationComplete();
 									}
 									))
@@ -997,6 +1048,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c82 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c82, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c82.CreationComplete();
 							}
 							))
@@ -1023,6 +1075,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c84 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c84, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c84.CreationComplete();
 									}
 									))
@@ -1043,6 +1096,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c86 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c86, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c86.CreationComplete();
 									}
 									))
@@ -1063,6 +1117,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c88 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c88, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c88.CreationComplete();
 									}
 									))
@@ -1083,6 +1138,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c90 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c90, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c90.CreationComplete();
 									}
 									))
@@ -1103,6 +1159,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c92 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c92, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c92.CreationComplete();
 									}
 									))
@@ -1151,6 +1208,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c96 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c96, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c96.CreationComplete();
 									}
 									))
@@ -1171,6 +1229,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c98 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c98, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c98.CreationComplete();
 									}
 									))
@@ -1211,6 +1270,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c102 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c102, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c102.CreationComplete();
 									}
 									))
@@ -1231,6 +1291,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c104 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c104, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c104.CreationComplete();
 									}
 									))
@@ -1239,6 +1300,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c105 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c105, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c105.CreationComplete();
 							}
 							))
@@ -1248,6 +1310,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c106 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c106, 3/* int/, 3, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c106, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c106.CreationComplete();
 						}
 						))
@@ -1270,6 +1333,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c107 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c107, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c107.CreationComplete();
 									}
 									))
@@ -1299,8 +1363,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c109 => 
 											{
-												nameScope.RegisterName("CrimeReductionSuggestion", c109);
-												this.CrimeReductionSuggestion = c109;
+												__nameScope.RegisterName("CrimeReductionSuggestion", c109);
+												__that.CrimeReductionSuggestion = c109;
 											}
 											))
 											,
@@ -1308,6 +1372,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c110 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c110, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c110.CreationComplete();
 									}
 									))
@@ -1316,6 +1381,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c111 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c111, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c111.CreationComplete();
 							}
 							))
@@ -1356,6 +1422,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c114 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c114, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c114.CreationComplete();
 									}
 									))
@@ -1376,6 +1443,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c116 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c116, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c116.CreationComplete();
 									}
 									))
@@ -1411,6 +1479,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c120 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c120, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c120.CreationComplete();
 									}
 									))
@@ -1431,6 +1500,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c122 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c122, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c122.CreationComplete();
 									}
 									))
@@ -1472,6 +1542,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c127 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c127, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c127.CreationComplete();
 									}
 									))
@@ -1480,6 +1551,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c128 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c128, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c128.CreationComplete();
 							}
 							))
@@ -1489,6 +1561,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c129 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c129, 4/* int/, 4, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c129, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c129.CreationComplete();
 						}
 						))
@@ -1511,6 +1584,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c130 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c130, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c130.CreationComplete();
 									}
 									))
@@ -1540,8 +1614,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c132 => 
 											{
-												nameScope.RegisterName("SchoolBoardSuggestion", c132);
-												this.SchoolBoardSuggestion = c132;
+												__nameScope.RegisterName("SchoolBoardSuggestion", c132);
+												__that.SchoolBoardSuggestion = c132;
 											}
 											))
 											,
@@ -1549,6 +1623,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c133 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c133, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c133.CreationComplete();
 									}
 									))
@@ -1557,6 +1632,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c134 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c134, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c134.CreationComplete();
 							}
 							))
@@ -1583,6 +1659,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c136 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c136, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c136.CreationComplete();
 									}
 									))
@@ -1603,6 +1680,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c138 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c138, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c138.CreationComplete();
 									}
 									))
@@ -1623,6 +1701,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c140 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c140, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c140.CreationComplete();
 									}
 									))
@@ -1643,6 +1722,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c142 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c142, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c142.CreationComplete();
 									}
 									))
@@ -1651,6 +1731,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c143 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c143, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c143.CreationComplete();
 							}
 							))
@@ -1660,6 +1741,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c144 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c144, 5/* int/, 5, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c144, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c144.CreationComplete();
 						}
 						))
@@ -1682,6 +1764,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c145 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c145, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c145.CreationComplete();
 									}
 									))
@@ -1711,8 +1794,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c147 => 
 											{
-												nameScope.RegisterName("HousingSuggestion", c147);
-												this.HousingSuggestion = c147;
+												__nameScope.RegisterName("HousingSuggestion", c147);
+												__that.HousingSuggestion = c147;
 											}
 											))
 											,
@@ -1720,6 +1803,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c148 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c148, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c148.CreationComplete();
 									}
 									))
@@ -1728,6 +1812,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c149 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c149, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c149.CreationComplete();
 							}
 							))
@@ -1754,6 +1839,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c151 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c151, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c151.CreationComplete();
 									}
 									))
@@ -1774,6 +1860,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c153 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c153, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c153.CreationComplete();
 									}
 									))
@@ -1794,6 +1881,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c155 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c155, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c155.CreationComplete();
 									}
 									))
@@ -1802,6 +1890,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c156 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c156, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c156.CreationComplete();
 							}
 							))
@@ -1811,6 +1900,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c157 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c157, 6/* int/, 6, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c157, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c157.CreationComplete();
 						}
 						))
@@ -1833,6 +1923,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c158 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c158, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c158.CreationComplete();
 									}
 									))
@@ -1862,8 +1953,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c160 => 
 											{
-												nameScope.RegisterName("TransportationSuggestion", c160);
-												this.TransportationSuggestion = c160;
+												__nameScope.RegisterName("TransportationSuggestion", c160);
+												__that.TransportationSuggestion = c160;
 											}
 											))
 											,
@@ -1871,6 +1962,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c161 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c161, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c161.CreationComplete();
 									}
 									))
@@ -1879,6 +1971,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c162 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c162, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c162.CreationComplete();
 							}
 							))
@@ -1926,6 +2019,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c167 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c167, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c167.CreationComplete();
 									}
 									))
@@ -1961,6 +2055,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c171 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c171, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c171.CreationComplete();
 									}
 									))
@@ -1981,6 +2076,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c173 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c173, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c173.CreationComplete();
 									}
 									))
@@ -2001,6 +2097,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c175 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c175, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c175.CreationComplete();
 									}
 									))
@@ -2009,6 +2106,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c176 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c176, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c176.CreationComplete();
 							}
 							))
@@ -2018,6 +2116,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c177 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c177, 7/* int/, 7, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c177, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c177.CreationComplete();
 						}
 						))
@@ -2040,6 +2139,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c178 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c178, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c178.CreationComplete();
 									}
 									))
@@ -2069,8 +2169,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c180 => 
 											{
-												nameScope.RegisterName("RecreationsSuggestion", c180);
-												this.RecreationsSuggestion = c180;
+												__nameScope.RegisterName("RecreationsSuggestion", c180);
+												__that.RecreationsSuggestion = c180;
 											}
 											))
 											,
@@ -2078,6 +2178,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c181 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c181, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c181.CreationComplete();
 									}
 									))
@@ -2086,6 +2187,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c182 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c182, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c182.CreationComplete();
 							}
 							))
@@ -2112,6 +2214,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c184 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c184, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c184.CreationComplete();
 									}
 									))
@@ -2120,6 +2223,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c185 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c185, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c185.CreationComplete();
 							}
 							))
@@ -2129,6 +2233,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c186 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c186, 8/* int/, 8, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c186, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c186.CreationComplete();
 						}
 						))
@@ -2151,6 +2256,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c187 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c187, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c187.CreationComplete();
 									}
 									))
@@ -2180,8 +2286,8 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler6)(c189 => 
 											{
-												nameScope.RegisterName("FinalSuggestion", c189);
-												this.FinalSuggestion = c189;
+												__nameScope.RegisterName("FinalSuggestion", c189);
+												__that.FinalSuggestion = c189;
 											}
 											))
 											,
@@ -2189,6 +2295,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c190 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c190, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c190.CreationComplete();
 									}
 									))
@@ -2197,6 +2304,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c191 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c191, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c191.CreationComplete();
 							}
 							))
@@ -2223,6 +2331,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c193 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c193, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c193.CreationComplete();
 									}
 									))
@@ -2243,6 +2352,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c195 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c195, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c195.CreationComplete();
 									}
 									))
@@ -2263,6 +2373,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler1)(c197 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c197, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 										c197.CreationComplete();
 									}
 									))
@@ -2271,6 +2382,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler4)(c198 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c198, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 								c198.CreationComplete();
 							}
 							))
@@ -2280,6 +2392,7 @@ namespace ElevateEvansvilleUI.Pages
 						.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler5)(c199 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c199, 9/* int/, 9, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c199, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 							c199.CreationComplete();
 						}
 						))
@@ -2288,6 +2401,7 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler2)(c200 => 
 				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c200, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 					c200.CreationComplete();
 				}
 				))
@@ -2295,25 +2409,27 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c_XamlApply((PlatformPage_336706b5dd8723fa9b8deaa1fd7a031cXamlApplyExtensions.XamlApplyHandler7)(c201 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c201, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 				c201.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c202 => 
+			.GenericApply(((c202) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PlatformPage.xaml (Line 1:2)
 				
 				// WARNING Property c202.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c203 => 
+			.GenericApply(((c203) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_0 = c203;
 				// Class ElevateEvansvilleUI.Pages.PlatformPage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c203, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_0 = c203;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c203, __baseUri_PlatformPage_336706b5dd8723fa9b8deaa1fd7a031c);
 				c203.CreationComplete();
 			}
 			))
@@ -2321,9 +2437,9 @@ namespace ElevateEvansvilleUI.Pages
 			OnInitializeCompleted();
 
 			Bindings = new PlatformPage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
@@ -2448,7 +2564,7 @@ namespace ElevateEvansvilleUI.Pages
 				_FinalSuggestionSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_0
 		{
 			get

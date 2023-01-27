@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,10 +48,19 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class HomePage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_HomePage_a442339bfe6eec45a99b44926e6b8f70 = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70 = "ms-appx:///Pages/HomePage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			Resources[
 			"FWBeginStoryBoard"
@@ -72,8 +83,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c1 => 
 					{
-						nameScope.RegisterName("FWBeginAnimation1", c1);
-						this.FWBeginAnimation1 = c1;
+						__nameScope.RegisterName("FWBeginAnimation1", c1);
+						__that.FWBeginAnimation1 = c1;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c1, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c1, "F1");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c1, _F1Subject);
@@ -93,8 +104,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c3 => 
 					{
-						nameScope.RegisterName("FWBeginAnimation2", c3);
-						this.FWBeginAnimation2 = c3;
+						__nameScope.RegisterName("FWBeginAnimation2", c3);
+						__that.FWBeginAnimation2 = c3;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c3, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c3, "F2");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c3, _F2Subject);
@@ -105,8 +116,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c4 => 
 			{
-				nameScope.RegisterName("FWBeginStoryBoard", c4);
-				this.FWBeginStoryBoard = c4;
+				__nameScope.RegisterName("FWBeginStoryBoard", c4);
+				__that.FWBeginStoryBoard = c4;
 			}
 			))
 			;
@@ -131,8 +142,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c6 => 
 					{
-						nameScope.RegisterName("FWF2Animation1", c6);
-						this.FWF2Animation1 = c6;
+						__nameScope.RegisterName("FWF2Animation1", c6);
+						__that.FWF2Animation1 = c6;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c6, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c6, "F2");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c6, _F2Subject);
@@ -152,8 +163,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c8 => 
 					{
-						nameScope.RegisterName("FWF2Animation2", c8);
-						this.FWF2Animation2 = c8;
+						__nameScope.RegisterName("FWF2Animation2", c8);
+						__that.FWF2Animation2 = c8;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c8, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c8, "F3");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c8, _F3Subject);
@@ -164,8 +175,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c9 => 
 			{
-				nameScope.RegisterName("FWF2StoryBoard", c9);
-				this.FWF2StoryBoard = c9;
+				__nameScope.RegisterName("FWF2StoryBoard", c9);
+				__that.FWF2StoryBoard = c9;
 			}
 			))
 			;
@@ -190,8 +201,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c11 => 
 					{
-						nameScope.RegisterName("FWF3Animation1", c11);
-						this.FWF3Animation1 = c11;
+						__nameScope.RegisterName("FWF3Animation1", c11);
+						__that.FWF3Animation1 = c11;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c11, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c11, "F3");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c11, _F3Subject);
@@ -211,8 +222,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c13 => 
 					{
-						nameScope.RegisterName("FWF3Animation2", c13);
-						this.FWF3Animation2 = c13;
+						__nameScope.RegisterName("FWF3Animation2", c13);
+						__that.FWF3Animation2 = c13;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c13, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c13, "F4");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c13, _F4Subject);
@@ -223,8 +234,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c14 => 
 			{
-				nameScope.RegisterName("FWF3StoryBoard", c14);
-				this.FWF3StoryBoard = c14;
+				__nameScope.RegisterName("FWF3StoryBoard", c14);
+				__that.FWF3StoryBoard = c14;
 			}
 			))
 			;
@@ -249,8 +260,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c16 => 
 					{
-						nameScope.RegisterName("FWFinalAnimation1", c16);
-						this.FWFinalAnimation1 = c16;
+						__nameScope.RegisterName("FWFinalAnimation1", c16);
+						__that.FWFinalAnimation1 = c16;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c16, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c16, "F4");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c16, _F4Subject);
@@ -270,8 +281,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c18 => 
 					{
-						nameScope.RegisterName("FWFinalAnimation2", c18);
-						this.FWFinalAnimation2 = c18;
+						__nameScope.RegisterName("FWFinalAnimation2", c18);
+						__that.FWFinalAnimation2 = c18;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c18, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c18, "F1");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c18, _F1Subject);
@@ -282,8 +293,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c19 => 
 			{
-				nameScope.RegisterName("FWFinalStoryBoard", c19);
-				this.FWFinalStoryBoard = c19;
+				__nameScope.RegisterName("FWFinalStoryBoard", c19);
+				__that.FWFinalStoryBoard = c19;
 			}
 			))
 			;
@@ -308,8 +319,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c21 => 
 					{
-						nameScope.RegisterName("BWBeginAnimation1", c21);
-						this.BWBeginAnimation1 = c21;
+						__nameScope.RegisterName("BWBeginAnimation1", c21);
+						__that.BWBeginAnimation1 = c21;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c21, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c21, "F1");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c21, _F1Subject);
@@ -329,8 +340,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c23 => 
 					{
-						nameScope.RegisterName("BWBeginAnimation2", c23);
-						this.BWBeginAnimation2 = c23;
+						__nameScope.RegisterName("BWBeginAnimation2", c23);
+						__that.BWBeginAnimation2 = c23;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c23, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c23, "F4");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c23, _F4Subject);
@@ -341,8 +352,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c24 => 
 			{
-				nameScope.RegisterName("BWBeginStoryBoard", c24);
-				this.BWBeginStoryBoard = c24;
+				__nameScope.RegisterName("BWBeginStoryBoard", c24);
+				__that.BWBeginStoryBoard = c24;
 			}
 			))
 			;
@@ -367,8 +378,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c26 => 
 					{
-						nameScope.RegisterName("BWF2Animation1", c26);
-						this.BWF2Animation1 = c26;
+						__nameScope.RegisterName("BWF2Animation1", c26);
+						__that.BWF2Animation1 = c26;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c26, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c26, "F2");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c26, _F2Subject);
@@ -388,8 +399,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c28 => 
 					{
-						nameScope.RegisterName("BWF2Animation2", c28);
-						this.BWF2Animation2 = c28;
+						__nameScope.RegisterName("BWF2Animation2", c28);
+						__that.BWF2Animation2 = c28;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c28, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c28, "F1");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c28, _F1Subject);
@@ -400,8 +411,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c29 => 
 			{
-				nameScope.RegisterName("BWF2StoryBoard", c29);
-				this.BWF2StoryBoard = c29;
+				__nameScope.RegisterName("BWF2StoryBoard", c29);
+				__that.BWF2StoryBoard = c29;
 			}
 			))
 			;
@@ -426,8 +437,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c31 => 
 					{
-						nameScope.RegisterName("BWF3Animation1", c31);
-						this.BWF3Animation1 = c31;
+						__nameScope.RegisterName("BWF3Animation1", c31);
+						__that.BWF3Animation1 = c31;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c31, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c31, "F3");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c31, _F3Subject);
@@ -447,8 +458,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c33 => 
 					{
-						nameScope.RegisterName("BWF3Animation2", c33);
-						this.BWF3Animation2 = c33;
+						__nameScope.RegisterName("BWF3Animation2", c33);
+						__that.BWF3Animation2 = c33;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c33, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c33, "F2");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c33, _F2Subject);
@@ -459,8 +470,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c34 => 
 			{
-				nameScope.RegisterName("BWF3StoryBoard", c34);
-				this.BWF3StoryBoard = c34;
+				__nameScope.RegisterName("BWF3StoryBoard", c34);
+				__that.BWF3StoryBoard = c34;
 			}
 			))
 			;
@@ -485,8 +496,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c36 => 
 					{
-						nameScope.RegisterName("BWFinalAnimation1", c36);
-						this.BWFinalAnimation1 = c36;
+						__nameScope.RegisterName("BWFinalAnimation1", c36);
+						__that.BWFinalAnimation1 = c36;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c36, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c36, "F4");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c36, _F4Subject);
@@ -506,8 +517,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c38 => 
 					{
-						nameScope.RegisterName("BWFinalAnimation2", c38);
-						this.BWFinalAnimation2 = c38;
+						__nameScope.RegisterName("BWFinalAnimation2", c38);
+						__that.BWFinalAnimation2 = c38;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c38, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.X)");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c38, "F3");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c38, _F3Subject);
@@ -518,8 +529,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c39 => 
 			{
-				nameScope.RegisterName("BWFinalStoryBoard", c39);
-				this.BWFinalStoryBoard = c39;
+				__nameScope.RegisterName("BWFinalStoryBoard", c39);
+				__that.BWFinalStoryBoard = c39;
 			}
 			))
 			;
@@ -550,9 +561,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c41 => 
 			{
-				nameScope.RegisterName("F1Transition1", c41);
-				this.F1Transition1 = c41;
-				var Completed_F1Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F1Transition1", c41);
+				__that.F1Transition1 = c41;
+				var Completed_F1Transition1_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c41.Completed += (F1Transition1_Completed_sender,F1Transition1_Completed_e) => (Completed_F1Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition1_Completed(F1Transition1_Completed_sender,F1Transition1_Completed_e);
 			}
 			))
@@ -584,9 +595,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c43 => 
 			{
-				nameScope.RegisterName("F1Transition2", c43);
-				this.F1Transition2 = c43;
-				var Completed_F1Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F1Transition2", c43);
+				__that.F1Transition2 = c43;
+				var Completed_F1Transition2_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c43.Completed += (F1Transition2_Completed_sender,F1Transition2_Completed_e) => (Completed_F1Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition2_Completed(F1Transition2_Completed_sender,F1Transition2_Completed_e);
 			}
 			))
@@ -618,9 +629,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c45 => 
 			{
-				nameScope.RegisterName("F1Transition3", c45);
-				this.F1Transition3 = c45;
-				var Completed_F1Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F1Transition3", c45);
+				__that.F1Transition3 = c45;
+				var Completed_F1Transition3_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c45.Completed += (F1Transition3_Completed_sender,F1Transition3_Completed_e) => (Completed_F1Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition3_Completed(F1Transition3_Completed_sender,F1Transition3_Completed_e);
 			}
 			))
@@ -652,9 +663,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c47 => 
 			{
-				nameScope.RegisterName("F1Transition4", c47);
-				this.F1Transition4 = c47;
-				var Completed_F1Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F1Transition4", c47);
+				__that.F1Transition4 = c47;
+				var Completed_F1Transition4_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c47.Completed += (F1Transition4_Completed_sender,F1Transition4_Completed_e) => (Completed_F1Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Transition4_Completed(F1Transition4_Completed_sender,F1Transition4_Completed_e);
 			}
 			))
@@ -686,9 +697,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c49 => 
 			{
-				nameScope.RegisterName("F2Transition1", c49);
-				this.F2Transition1 = c49;
-				var Completed_F2Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F2Transition1", c49);
+				__that.F2Transition1 = c49;
+				var Completed_F2Transition1_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c49.Completed += (F2Transition1_Completed_sender,F2Transition1_Completed_e) => (Completed_F2Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition1_Completed(F2Transition1_Completed_sender,F2Transition1_Completed_e);
 			}
 			))
@@ -720,9 +731,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c51 => 
 			{
-				nameScope.RegisterName("F2Transition2", c51);
-				this.F2Transition2 = c51;
-				var Completed_F2Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F2Transition2", c51);
+				__that.F2Transition2 = c51;
+				var Completed_F2Transition2_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c51.Completed += (F2Transition2_Completed_sender,F2Transition2_Completed_e) => (Completed_F2Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition2_Completed(F2Transition2_Completed_sender,F2Transition2_Completed_e);
 			}
 			))
@@ -754,9 +765,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c53 => 
 			{
-				nameScope.RegisterName("F2Transition3", c53);
-				this.F2Transition3 = c53;
-				var Completed_F2Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F2Transition3", c53);
+				__that.F2Transition3 = c53;
+				var Completed_F2Transition3_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c53.Completed += (F2Transition3_Completed_sender,F2Transition3_Completed_e) => (Completed_F2Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition3_Completed(F2Transition3_Completed_sender,F2Transition3_Completed_e);
 			}
 			))
@@ -788,9 +799,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c55 => 
 			{
-				nameScope.RegisterName("F2Transition4", c55);
-				this.F2Transition4 = c55;
-				var Completed_F2Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F2Transition4", c55);
+				__that.F2Transition4 = c55;
+				var Completed_F2Transition4_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c55.Completed += (F2Transition4_Completed_sender,F2Transition4_Completed_e) => (Completed_F2Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F2Transition4_Completed(F2Transition4_Completed_sender,F2Transition4_Completed_e);
 			}
 			))
@@ -822,9 +833,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c57 => 
 			{
-				nameScope.RegisterName("F3Transition1", c57);
-				this.F3Transition1 = c57;
-				var Completed_F3Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F3Transition1", c57);
+				__that.F3Transition1 = c57;
+				var Completed_F3Transition1_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c57.Completed += (F3Transition1_Completed_sender,F3Transition1_Completed_e) => (Completed_F3Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition1_Completed(F3Transition1_Completed_sender,F3Transition1_Completed_e);
 			}
 			))
@@ -856,9 +867,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c59 => 
 			{
-				nameScope.RegisterName("F3Transition2", c59);
-				this.F3Transition2 = c59;
-				var Completed_F3Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F3Transition2", c59);
+				__that.F3Transition2 = c59;
+				var Completed_F3Transition2_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c59.Completed += (F3Transition2_Completed_sender,F3Transition2_Completed_e) => (Completed_F3Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition2_Completed(F3Transition2_Completed_sender,F3Transition2_Completed_e);
 			}
 			))
@@ -890,9 +901,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c61 => 
 			{
-				nameScope.RegisterName("F3Transition3", c61);
-				this.F3Transition3 = c61;
-				var Completed_F3Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F3Transition3", c61);
+				__that.F3Transition3 = c61;
+				var Completed_F3Transition3_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c61.Completed += (F3Transition3_Completed_sender,F3Transition3_Completed_e) => (Completed_F3Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition3_Completed(F3Transition3_Completed_sender,F3Transition3_Completed_e);
 			}
 			))
@@ -924,9 +935,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c63 => 
 			{
-				nameScope.RegisterName("F3Transition4", c63);
-				this.F3Transition4 = c63;
-				var Completed_F3Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F3Transition4", c63);
+				__that.F3Transition4 = c63;
+				var Completed_F3Transition4_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c63.Completed += (F3Transition4_Completed_sender,F3Transition4_Completed_e) => (Completed_F3Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F3Transition4_Completed(F3Transition4_Completed_sender,F3Transition4_Completed_e);
 			}
 			))
@@ -958,9 +969,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c65 => 
 			{
-				nameScope.RegisterName("F4Transition1", c65);
-				this.F4Transition1 = c65;
-				var Completed_F4Transition1_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F4Transition1", c65);
+				__that.F4Transition1 = c65;
+				var Completed_F4Transition1_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c65.Completed += (F4Transition1_Completed_sender,F4Transition1_Completed_e) => (Completed_F4Transition1_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition1_Completed(F4Transition1_Completed_sender,F4Transition1_Completed_e);
 			}
 			))
@@ -992,9 +1003,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c67 => 
 			{
-				nameScope.RegisterName("F4Transition2", c67);
-				this.F4Transition2 = c67;
-				var Completed_F4Transition2_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F4Transition2", c67);
+				__that.F4Transition2 = c67;
+				var Completed_F4Transition2_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c67.Completed += (F4Transition2_Completed_sender,F4Transition2_Completed_e) => (Completed_F4Transition2_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition2_Completed(F4Transition2_Completed_sender,F4Transition2_Completed_e);
 			}
 			))
@@ -1026,9 +1037,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c69 => 
 			{
-				nameScope.RegisterName("F4Transition3", c69);
-				this.F4Transition3 = c69;
-				var Completed_F4Transition3_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F4Transition3", c69);
+				__that.F4Transition3 = c69;
+				var Completed_F4Transition3_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c69.Completed += (F4Transition3_Completed_sender,F4Transition3_Completed_e) => (Completed_F4Transition3_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition3_Completed(F4Transition3_Completed_sender,F4Transition3_Completed_e);
 			}
 			))
@@ -1060,9 +1071,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c71 => 
 			{
-				nameScope.RegisterName("F4Transition4", c71);
-				this.F4Transition4 = c71;
-				var Completed_F4Transition4_Completed_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+				__nameScope.RegisterName("F4Transition4", c71);
+				__that.F4Transition4 = c71;
+				var Completed_F4Transition4_Completed_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 				/* second level */ c71.Completed += (F4Transition4_Completed_sender,F4Transition4_Completed_e) => (Completed_F4Transition4_Completed_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F4Transition4_Completed(F4Transition4_Completed_sender,F4Transition4_Completed_e);
 			}
 			))
@@ -1082,8 +1093,8 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler1)(c72 => 
 					{
-						nameScope.RegisterName("ProfileSlideInAnimation", c72);
-						this.ProfileSlideInAnimation = c72;
+						__nameScope.RegisterName("ProfileSlideInAnimation", c72);
+						__that.ProfileSlideInAnimation = c72;
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetName(c72, "Profile");
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTarget(c72, _ProfileSubject);
 						global::Windows.UI.Xaml.Media.Animation.Storyboard.SetTargetProperty(c72, "(Windows.UI.Xaml:UIElement.RenderTransform).(Windows.UI.Xaml.Media:TranslateTransform.Y)");
@@ -1094,8 +1105,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c73 => 
 			{
-				nameScope.RegisterName("ProfileStoryBoardSlideIn", c73);
-				this.ProfileStoryBoardSlideIn = c73;
+				__nameScope.RegisterName("ProfileStoryBoardSlideIn", c73);
+				__that.ProfileStoryBoardSlideIn = c73;
 			}
 			))
 			;
@@ -1126,8 +1137,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c75 => 
 			{
-				nameScope.RegisterName("ProfileStoryBoardFadeIn", c75);
-				this.ProfileStoryBoardFadeIn = c75;
+				__nameScope.RegisterName("ProfileStoryBoardFadeIn", c75);
+				__that.ProfileStoryBoardFadeIn = c75;
 			}
 			))
 			;
@@ -1158,8 +1169,8 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler2)(c77 => 
 			{
-				nameScope.RegisterName("UIFadeIn", c77);
-				this.UIFadeIn = c77;
+				__nameScope.RegisterName("UIFadeIn", c77);
+				__that.UIFadeIn = c77;
 			}
 			))
 			;
@@ -1197,8 +1208,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c78 => 
 							{
-								nameScope.RegisterName("F4After", c78);
-								this.F4After = c78;
+								__nameScope.RegisterName("F4After", c78);
+								__that.F4After = c78;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c78, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c78.CreationComplete();
 							}
 							))
@@ -1214,8 +1226,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c79 => 
 							{
-								nameScope.RegisterName("F4Before", c79);
-								this.F4Before = c79;
+								__nameScope.RegisterName("F4Before", c79);
+								__that.F4Before = c79;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c79, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c79.CreationComplete();
 							}
 							))
@@ -1268,6 +1281,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c83 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c83, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c83.CreationComplete();
 									}
 									))
@@ -1284,11 +1298,12 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c84 => 
 									{
-										nameScope.RegisterName("TransparencyButton", c84);
-										this.TransparencyButton = c84;
-										var Click_TransparencyButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										__nameScope.RegisterName("TransparencyButton", c84);
+										__that.TransparencyButton = c84;
+										var Click_TransparencyButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 										/* second level */ c84.Click += (TransparencyButton_Click_sender,TransparencyButton_Click_e) => (Click_TransparencyButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.TransparencyButton_Click(TransparencyButton_Click_sender,TransparencyButton_Click_e);
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c84, 1/* int/, 1, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c84, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c84.CreationComplete();
 									}
 									))
@@ -1297,6 +1312,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c85 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c85, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c85.CreationComplete();
 							}
 							))
@@ -1305,8 +1321,9 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c86 => 
 					{
-						nameScope.RegisterName("F4", c86);
-						this.F4 = c86;
+						__nameScope.RegisterName("F4", c86);
+						__that.F4 = c86;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c86, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c86.CreationComplete();
 					}
 					))
@@ -1336,8 +1353,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c87 => 
 							{
-								nameScope.RegisterName("F3After", c87);
-								this.F3After = c87;
+								__nameScope.RegisterName("F3After", c87);
+								__that.F3After = c87;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c87, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c87.CreationComplete();
 							}
 							))
@@ -1354,8 +1372,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c88 => 
 							{
-								nameScope.RegisterName("F3Before", c88);
-								this.F3Before = c88;
+								__nameScope.RegisterName("F3Before", c88);
+								__that.F3Before = c88;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c88, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c88.CreationComplete();
 							}
 							))
@@ -1408,6 +1427,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c92 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c92, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c92.CreationComplete();
 									}
 									))
@@ -1424,11 +1444,12 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c93 => 
 									{
-										nameScope.RegisterName("CostOfLivingButton", c93);
-										this.CostOfLivingButton = c93;
-										var Click_CostOfLivingButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										__nameScope.RegisterName("CostOfLivingButton", c93);
+										__that.CostOfLivingButton = c93;
+										var Click_CostOfLivingButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 										/* second level */ c93.Click += (CostOfLivingButton_Click_sender,CostOfLivingButton_Click_e) => (Click_CostOfLivingButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.CostOfLivingButton_Click(CostOfLivingButton_Click_sender,CostOfLivingButton_Click_e);
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c93, 1/* int/, 1, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c93, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c93.CreationComplete();
 									}
 									))
@@ -1437,6 +1458,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c94 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c94, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c94.CreationComplete();
 							}
 							))
@@ -1445,8 +1467,9 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c95 => 
 					{
-						nameScope.RegisterName("F3", c95);
-						this.F3 = c95;
+						__nameScope.RegisterName("F3", c95);
+						__that.F3 = c95;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c95, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c95.CreationComplete();
 					}
 					))
@@ -1474,8 +1497,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c96 => 
 							{
-								nameScope.RegisterName("F2After", c96);
-								this.F2After = c96;
+								__nameScope.RegisterName("F2After", c96);
+								__that.F2After = c96;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c96, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c96.CreationComplete();
 							}
 							))
@@ -1490,8 +1514,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c97 => 
 							{
-								nameScope.RegisterName("F2Before", c97);
-								this.F2Before = c97;
+								__nameScope.RegisterName("F2Before", c97);
+								__that.F2Before = c97;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c97, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c97.CreationComplete();
 							}
 							))
@@ -1544,6 +1569,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c101 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c101, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c101.CreationComplete();
 									}
 									))
@@ -1560,11 +1586,12 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c102 => 
 									{
-										nameScope.RegisterName("SolorCanopiesButton", c102);
-										this.SolorCanopiesButton = c102;
-										var Click_SolorCanopiesButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										__nameScope.RegisterName("SolorCanopiesButton", c102);
+										__that.SolorCanopiesButton = c102;
+										var Click_SolorCanopiesButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 										/* second level */ c102.Click += (SolorCanopiesButton_Click_sender,SolorCanopiesButton_Click_e) => (Click_SolorCanopiesButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.SolorCanopiesButton_Click(SolorCanopiesButton_Click_sender,SolorCanopiesButton_Click_e);
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c102, 1/* int/, 1, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c102, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c102.CreationComplete();
 									}
 									))
@@ -1573,6 +1600,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c103 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c103, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c103.CreationComplete();
 							}
 							))
@@ -1581,8 +1609,9 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c104 => 
 					{
-						nameScope.RegisterName("F2", c104);
-						this.F2 = c104;
+						__nameScope.RegisterName("F2", c104);
+						__that.F2 = c104;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c104, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c104.CreationComplete();
 					}
 					))
@@ -1611,8 +1640,9 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c105 => 
 							{
-								nameScope.RegisterName("F1After", c105);
-								this.F1After = c105;
+								__nameScope.RegisterName("F1After", c105);
+								__that.F1After = c105;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c105, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c105.CreationComplete();
 							}
 							))
@@ -1628,10 +1658,11 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c106 => 
 							{
-								nameScope.RegisterName("F1Before", c106);
-								this.F1Before = c106;
-								var Loaded_F1Before_Loaded_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+								__nameScope.RegisterName("F1Before", c106);
+								__that.F1Before = c106;
+								var Loaded_F1Before_Loaded_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 								/* second level */ c106.Loaded += (F1Before_Loaded_sender,F1Before_Loaded_e) => (Loaded_F1Before_Loaded_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.F1Before_Loaded(F1Before_Loaded_sender,F1Before_Loaded_e);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c106, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c106.CreationComplete();
 							}
 							))
@@ -1684,6 +1715,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler6)(c110 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c110, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c110.CreationComplete();
 									}
 									))
@@ -1700,11 +1732,12 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c111 => 
 									{
-										nameScope.RegisterName("RailroadButton", c111);
-										this.RailroadButton = c111;
-										var Click_RailroadButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+										__nameScope.RegisterName("RailroadButton", c111);
+										__that.RailroadButton = c111;
+										var Click_RailroadButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 										/* second level */ c111.Click += (RailroadButton_Click_sender,RailroadButton_Click_e) => (Click_RailroadButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.RailroadButton_Click(RailroadButton_Click_sender,RailroadButton_Click_e);
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c111, 1/* int/, 1, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c111, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 										c111.CreationComplete();
 									}
 									))
@@ -1713,6 +1746,7 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c112 => 
 							{
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c112, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c112.CreationComplete();
 							}
 							))
@@ -1721,8 +1755,9 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c113 => 
 					{
-						nameScope.RegisterName("F1", c113);
-						this.F1 = c113;
+						__nameScope.RegisterName("F1", c113);
+						__that.F1 = c113;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c113, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c113.CreationComplete();
 					}
 					))
@@ -1745,8 +1780,8 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler9)(c115 => 
 							{
-								nameScope.RegisterName("ProfileWidth", c115);
-								this.ProfileWidth = c115;
+								__nameScope.RegisterName("ProfileWidth", c115);
+								__that.ProfileWidth = c115;
 							}
 							))
 							,
@@ -1767,8 +1802,8 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler5)(c117 => 
 							{
-								nameScope.RegisterName("ProfileHeight", c117);
-								this.ProfileHeight = c117;
+								__nameScope.RegisterName("ProfileHeight", c117);
+								__that.ProfileHeight = c117;
 							}
 							))
 							,
@@ -1781,7 +1816,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								IsParsing = true,
 								Name = "Profile",
-								Source = "/Assets/Images/Profile/Cover.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Profile/Cover.png, Image/Source */,
+								Source = "ms-appx:///" + "Assets/Images/Profile/Cover.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Profile/Cover.png, Image/Source */,
 								Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Bottom/* Windows.UI.Xaml.VerticalAlignment/, Bottom, Image/VerticalAlignment */,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, Image/HorizontalAlignment */,
@@ -1796,10 +1831,11 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler3)(c118 => 
 							{
-								nameScope.RegisterName("Profile", c118);
-								this.Profile = c118;
+								__nameScope.RegisterName("Profile", c118);
+								__that.Profile = c118;
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c118, 1/* int/, 1, Grid/Row */);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c118, 1/* int/, 1, Grid/Column */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c118, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 								c118.CreationComplete();
 							}
 							))
@@ -1808,6 +1844,7 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c119 => 
 					{
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c119, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c119.CreationComplete();
 					}
 					))
@@ -1818,16 +1855,17 @@ namespace ElevateEvansvilleUI.Pages
 						Name = "Forward",
 						Content = @">"/* object/, >, Button/Content */,
 						VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Stretch/* Windows.UI.Xaml.VerticalAlignment/, Stretch, Button/VerticalAlignment */,
-						Width = 40d/* double/, 40, Button/Width */,
+						Width = 40f/* double/, 40, Button/Width */,
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, Button/HorizontalAlignment */,
 						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 349:14)
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c120 => 
 					{
-						nameScope.RegisterName("Forward", c120);
-						this.Forward = c120;
-						var Click_Forward_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+						__nameScope.RegisterName("Forward", c120);
+						__that.Forward = c120;
+						var Click_Forward_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 						/* second level */ c120.Click += (Forward_Click_sender,Forward_Click_e) => (Click_Forward_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.Forward_Click(Forward_Click_sender,Forward_Click_e);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c120, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c120.CreationComplete();
 					}
 					))
@@ -1838,16 +1876,17 @@ namespace ElevateEvansvilleUI.Pages
 						Name = "Backward",
 						Content = @"<"/* object/, <, Button/Content */,
 						VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Stretch/* Windows.UI.Xaml.VerticalAlignment/, Stretch, Button/VerticalAlignment */,
-						Width = 40d/* double/, 40, Button/Width */,
+						Width = 40f/* double/, 40, Button/Width */,
 						HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Left/* Windows.UI.Xaml.HorizontalAlignment/, Left, Button/HorizontalAlignment */,
 						// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 352:14)
 					}
 					.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler7)(c121 => 
 					{
-						nameScope.RegisterName("Backward", c121);
-						this.Backward = c121;
-						var Click_Backward_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+						__nameScope.RegisterName("Backward", c121);
+						__that.Backward = c121;
+						var Click_Backward_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 						/* second level */ c121.Click += (Backward_Click_sender,Backward_Click_e) => (Click_Backward_Click_That.Target as global::ElevateEvansvilleUI.Pages.HomePage)?.Backward_Click(Backward_Click_sender,Backward_Click_e);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c121, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 						c121.CreationComplete();
 					}
 					))
@@ -1856,16 +1895,17 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.HomePage_a442339bfe6eec45a99b44926e6b8f70_XamlApply((HomePage_a442339bfe6eec45a99b44926e6b8f70XamlApplyExtensions.XamlApplyHandler8)(c122 => 
 			{
-				nameScope.RegisterName("FeaturedGrid", c122);
-				this.FeaturedGrid = c122;
+				__nameScope.RegisterName("FeaturedGrid", c122);
+				__that.FeaturedGrid = c122;
 				// FieldModifier public
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c122, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 				c122.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c123 => 
+			.GenericApply(((c123) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml (Line 1:2)
 				
@@ -1877,12 +1917,13 @@ namespace ElevateEvansvilleUI.Pages
 				;
 			}
 			))
-			.GenericApply((c124 => 
+			.GenericApply(((c124) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_0 = c124;
 				// Class ElevateEvansvilleUI.Pages.HomePage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c124, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_0 = c124;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c124, __baseUri_HomePage_a442339bfe6eec45a99b44926e6b8f70);
 				c124.CreationComplete();
 			}
 			))
@@ -1977,9 +2018,9 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			;
 			Bindings = new HomePage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
@@ -2776,7 +2817,7 @@ namespace ElevateEvansvilleUI.Pages
 				_FeaturedGridSubject.ElementInstance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_0
 		{
 			get

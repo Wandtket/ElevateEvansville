@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,15 +48,24 @@ namespace ElevateEvansvilleUI.Pages.Featured
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class RailroadPage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_RailroadPage_67e18ba6c0d30315621678b5bcff722a = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a = "ms-appx:///Pages/Featured/RailroadPage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			Resources[
 			"Paragraph"
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_6 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_27 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -68,7 +79,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			Resources[
 			"Header"
 			] = 
-			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_10 => 
+			new global::Uno.UI.Xaml.WeakResourceInitializer(this, __ResourceOwner_33 => 
 				new global::Windows.UI.Xaml.Style(typeof(global::Windows.UI.Xaml.Controls.TextBlock))
 				{
 					Setters = 
@@ -93,7 +104,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 					Padding = new global::Windows.UI.Xaml.Thickness(20,75,20,75)/* Windows.UI.Xaml.Thickness/, 20,75,20,75, Grid/Padding */,
 					RowSpacing = 20d/* double/, 20, Grid/RowSpacing */,
 					HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, Grid/HorizontalAlignment */,
-					MaxWidth = 900d/* double/, 900, Grid/MaxWidth */,
+					MaxWidth = 900f/* double/, 900, Grid/MaxWidth */,
 					RowDefinitions = 
 					{
 						new global::Windows.UI.Xaml.Controls.RowDefinition
@@ -195,10 +206,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c11 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_0 = c11;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c11, 0/* int/, 0, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c11, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_0 = c11;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c11.CreationComplete();
 								}
 								))
@@ -219,10 +231,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c13 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_1 = c13;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c13, 1/* int/, 1, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c13, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_1 = c13;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c13.CreationComplete();
 								}
 								))
@@ -244,10 +257,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c15 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_2 = c15;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c15, 2/* int/, 2, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c15, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_2 = c15;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c15.CreationComplete();
 								}
 								))
@@ -273,6 +287,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 											}
 											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c16 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c16, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 												c16.CreationComplete();
 											}
 											))
@@ -280,6 +295,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										}
 										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c17 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c17, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 											c17.CreationComplete();
 										}
 										))
@@ -298,6 +314,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 											}
 											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c18 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c18, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 												c18.CreationComplete();
 											}
 											))
@@ -305,6 +322,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										}
 										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c19 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c19, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 											c19.CreationComplete();
 										}
 										))
@@ -323,6 +341,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 											}
 											.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c20 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c20, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 												c20.CreationComplete();
 											}
 											))
@@ -330,6 +349,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										}
 										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler4)(c21 => 
 										{
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c21, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 											c21.CreationComplete();
 										}
 										))
@@ -339,6 +359,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler5)(c22 => 
 								{
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c22, 3/* int/, 3, Grid/Row */);
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c22.CreationComplete();
 								}
 								))
@@ -348,6 +369,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c23 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c23, 0/* int/, 0, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 							c23.CreationComplete();
 						}
 						))
@@ -398,10 +420,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c27 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_3 = c27;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 0/* int/, 0, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c27, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_3 = c27;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c27, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c27.CreationComplete();
 								}
 								))
@@ -422,10 +445,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c29 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_4 = c29;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c29, 1/* int/, 1, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c29, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_4 = c29;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c29, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c29.CreationComplete();
 								}
 								))
@@ -435,6 +459,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c30 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c30, 1/* int/, 1, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c30, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 							c30.CreationComplete();
 						}
 						))
@@ -491,10 +516,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c35 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_5 = c35;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c35, 0/* int/, 0, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c35, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_5 = c35;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c35, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c35.CreationComplete();
 								}
 								))
@@ -515,10 +541,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c37 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_6 = c37;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c37, 1/* int/, 1, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c37, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_6 = c37;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c37, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c37.CreationComplete();
 								}
 								))
@@ -528,6 +555,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c38 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c38, 2/* int/, 2, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c38, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 							c38.CreationComplete();
 						}
 						))
@@ -541,7 +569,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								new global::Windows.UI.Xaml.Controls.Grid
 								{
 									IsParsing = true,
-									MaxWidth = 600d/* double/, 600, Grid/MaxWidth */,
+									MaxWidth = 600f/* double/, 600, Grid/MaxWidth */,
 									RowDefinitions = 
 									{
 										new global::Windows.UI.Xaml.Controls.RowDefinition
@@ -601,10 +629,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										}
 										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c44 => 
 										{
+											/* _isTopLevelDictionary:False */
+											__that._component_7 = c44;
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c44, 0/* int/, 0, Grid/Row */);
 											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c44, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-											/* _isTopLevelDictionary:False */
-											this._component_7 = c44;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c44, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 											c44.CreationComplete();
 										}
 										))
@@ -625,10 +654,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										}
 										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c46 => 
 										{
+											/* _isTopLevelDictionary:False */
+											__that._component_8 = c46;
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c46, 1/* int/, 1, Grid/Row */);
 											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c46, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-											/* _isTopLevelDictionary:False */
-											this._component_8 = c46;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c46, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 											c46.CreationComplete();
 										}
 										))
@@ -670,10 +700,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 										}
 										.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c50 => 
 										{
+											/* _isTopLevelDictionary:False */
+											__that._component_9 = c50;
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c50, 2/* int/, 2, Grid/Row */);
 											global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c50, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-											/* _isTopLevelDictionary:False */
-											this._component_9 = c50;
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c50, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 											c50.CreationComplete();
 										}
 										))
@@ -682,6 +713,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c51 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c51, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c51.CreationComplete();
 								}
 								))
@@ -691,13 +723,14 @@ namespace ElevateEvansvilleUI.Pages.Featured
 									IsParsing = true,
 									Source = "https://i.imgur.com/uOhlKVh.jpg"/* Windows.UI.Xaml.Media.ImageSource/, https://i.imgur.com/uOhlKVh.jpg, Image/Source */,
 									Stretch = global::Windows.UI.Xaml.Media.Stretch.Uniform/* Windows.UI.Xaml.Media.Stretch/, Uniform, Image/Stretch */,
-									Height = 300d/* double/, 300, Image/Height */,
+									Height = 300f/* double/, 300, Image/Height */,
 									VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Top/* Windows.UI.Xaml.VerticalAlignment/, Top, Image/VerticalAlignment */,
 									Margin = new global::Windows.UI.Xaml.Thickness(5)/* Windows.UI.Xaml.Thickness/, 5, Image/Margin */,
 									// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 153:18)
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler3)(c52 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c52, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c52.CreationComplete();
 								}
 								))
@@ -707,6 +740,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler8)(c53 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c53, 3/* int/, 3, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c53, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 							c53.CreationComplete();
 						}
 						))
@@ -763,10 +797,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c58 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_10 = c58;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c58, 0/* int/, 0, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c58, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_10 = c58;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c58, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c58.CreationComplete();
 								}
 								))
@@ -787,10 +822,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c60 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_11 = c60;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c60, 1/* int/, 1, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c60, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_11 = c60;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c60, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c60.CreationComplete();
 								}
 								))
@@ -812,10 +848,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c62 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_12 = c62;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c62, 2/* int/, 2, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c62, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_12 = c62;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c62, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c62.CreationComplete();
 								}
 								))
@@ -825,6 +862,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c63 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c63, 4/* int/, 4, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c63, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 							c63.CreationComplete();
 						}
 						))
@@ -929,10 +967,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c76 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_13 = c76;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c76, 0/* int/, 0, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c76, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Header", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_13 = c76;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c76, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c76.CreationComplete();
 								}
 								))
@@ -953,10 +992,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c78 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_14 = c78;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c78, 1/* int/, 1, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c78, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_14 = c78;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c78, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c78.CreationComplete();
 								}
 								))
@@ -978,10 +1018,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c80 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_15 = c80;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c80, 2/* int/, 2, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c80, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_15 = c80;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c80, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c80.CreationComplete();
 								}
 								))
@@ -1003,10 +1044,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c82 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_16 = c82;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c82, 3/* int/, 3, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c82, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_16 = c82;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c82, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c82.CreationComplete();
 								}
 								))
@@ -1028,10 +1070,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c84 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_17 = c84;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c84, 4/* int/, 4, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c84, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_17 = c84;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c84, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c84.CreationComplete();
 								}
 								))
@@ -1053,10 +1096,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c86 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_18 = c86;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c86, 5/* int/, 5, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c86, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_18 = c86;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c86, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c86.CreationComplete();
 								}
 								))
@@ -1078,10 +1122,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c88 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_19 = c88;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c88, 6/* int/, 6, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c88, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_19 = c88;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c88, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c88.CreationComplete();
 								}
 								))
@@ -1103,10 +1148,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c90 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_20 = c90;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c90, 7/* int/, 7, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c90, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_20 = c90;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c90, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c90.CreationComplete();
 								}
 								))
@@ -1128,10 +1174,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c92 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_21 = c92;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c92, 8/* int/, 8, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c92, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_21 = c92;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c92, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c92.CreationComplete();
 								}
 								))
@@ -1153,10 +1200,11 @@ namespace ElevateEvansvilleUI.Pages.Featured
 								}
 								.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler2)(c94 => 
 								{
+									/* _isTopLevelDictionary:False */
+									__that._component_22 = c94;
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c94, 9/* int/, 9, Grid/Row */);
 									global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c94, global::Windows.UI.Xaml.Controls.TextBlock.StyleProperty, "Paragraph", isThemeResourceExtension: false, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-									/* _isTopLevelDictionary:False */
-									this._component_22 = c94;
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c94, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 									c94.CreationComplete();
 								}
 								))
@@ -1166,6 +1214,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 						.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c95 => 
 						{
 							global::Windows.UI.Xaml.Controls.Grid.SetRow(c95, 5/* int/, 5, Grid/Row */);
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c95, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 							c95.CreationComplete();
 						}
 						))
@@ -1174,6 +1223,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				}
 				.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler6)(c96 => 
 				{
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c96, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 					c96.CreationComplete();
 				}
 				))
@@ -1181,25 +1231,27 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			}
 			.RailroadPage_67e18ba6c0d30315621678b5bcff722a_XamlApply((RailroadPage_67e18ba6c0d30315621678b5bcff722aXamlApplyExtensions.XamlApplyHandler9)(c97 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c97, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 				c97.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c98 => 
+			.GenericApply(((c98) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml (Line 1:2)
 				
 				// WARNING Property c98.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c99 => 
+			.GenericApply(((c99) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_23 = c99;
 				// Class ElevateEvansvilleUI.Pages.Featured.RailroadPage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c99, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_23 = c99;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c99, __baseUri_RailroadPage_67e18ba6c0d30315621678b5bcff722a);
 				c99.CreationComplete();
 			}
 			))
@@ -1207,14 +1259,14 @@ namespace ElevateEvansvilleUI.Pages.Featured
 			OnInitializeCompleted();
 
 			Bindings = new RailroadPage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
 		partial void OnInitializeCompleted();
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_0
 		{
 			get
@@ -1226,7 +1278,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_0_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_1
 		{
 			get
@@ -1238,7 +1290,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_1_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_2_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_2_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_2
 		{
 			get
@@ -1250,7 +1302,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_2_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_3_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_3_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_3
 		{
 			get
@@ -1262,7 +1314,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_3_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_4_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_4_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_4
 		{
 			get
@@ -1274,7 +1326,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_4_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_5_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_5_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_5
 		{
 			get
@@ -1286,7 +1338,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_5_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_6_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_6_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_6
 		{
 			get
@@ -1298,7 +1350,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_6_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_7_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_7_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_7
 		{
 			get
@@ -1310,7 +1362,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_7_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_8_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_8_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_8
 		{
 			get
@@ -1322,7 +1374,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_8_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_9_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_9_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_9
 		{
 			get
@@ -1334,7 +1386,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_9_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_10_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_10_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_10
 		{
 			get
@@ -1346,7 +1398,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_10_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_11_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_11_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_11
 		{
 			get
@@ -1358,7 +1410,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_11_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_12_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_12_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_12
 		{
 			get
@@ -1370,7 +1422,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_12_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_13_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_13_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_13
 		{
 			get
@@ -1382,7 +1434,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_13_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_14_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_14_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_14
 		{
 			get
@@ -1394,7 +1446,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_14_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_15_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_15_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_15
 		{
 			get
@@ -1406,7 +1458,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_15_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_16_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_16_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_16
 		{
 			get
@@ -1418,7 +1470,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_16_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_17_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_17_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_17
 		{
 			get
@@ -1430,7 +1482,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_17_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_18_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_18_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_18
 		{
 			get
@@ -1442,7 +1494,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_18_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_19_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_19_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_19
 		{
 			get
@@ -1454,7 +1506,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_19_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_20_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_20_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_20
 		{
 			get
@@ -1466,7 +1518,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_20_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_21_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_21_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_21
 		{
 			get
@@ -1478,7 +1530,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_21_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_22_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_22_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.TextBlock _component_22
 		{
 			get
@@ -1490,7 +1542,7 @@ namespace ElevateEvansvilleUI.Pages.Featured
 				_component_22_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_23_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_23_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_23
 		{
 			get

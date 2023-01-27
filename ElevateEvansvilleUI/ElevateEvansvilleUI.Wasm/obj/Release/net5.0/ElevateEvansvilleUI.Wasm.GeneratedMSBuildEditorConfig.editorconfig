@@ -1,6 +1,5 @@
 is_global = true
 build_property.XamlSourceGeneratorTracingFolder = 
-build_property.TargetPlatformIdentifier = 
 build_property.TargetFramework = net5.0
 build_property.TargetFramework = net5.0
 build_property.ProjectTypeGuidsProperty = 
@@ -18,9 +17,10 @@ build_property.DesignTimeBuild = true
 build_property.UnoUISourceGeneratorDebuggerBreak = 
 build_property.BuildingInsideVisualStudio = true
 build_property.IsHotReloadHost = 
-build_property.UseWPF = 
+build_property.UnoUseXamlReaderHotReload = true
 build_property.IsUnoHead = true
-build_property.WindowsAppSDKWinUI = 
+build_property.IsUnoHead = true
+build_property.UseWPF = 
 build_property.UnoRemoteControlPort = 
 build_property.UnoRemoteControlHost = 
 build_property.UnoRemoteControlProcessorsPath = 
@@ -31,6 +31,7 @@ build_property.IsUiAutomationMappingEnabled =
 build_property.ShouldAnnotateGeneratedXaml = 
 build_property.DefaultLanguage = 
 build_property.UnoPlatformTelemetryOptOut = 
+build_property.UnoPlatformDefaultSymbolsFontFamily = ms-appx:///Uno.Fonts.Fluent/Fonts/uno-fluentui-assets.ttf
 build_property.ExcludeXamlNamespacesProperty = win,not_mux,android,ios,macos,skia,not_wasm
 build_property.IncludeXamlNamespacesProperty = xamarin,not_win,legacy,wasm,netstdref,not_ios,not_android,not_macos,not_skia
 build_property.XamlGeneratorAnalyzerSuppressionsProperty = nventive.Usage-NV0056,nventive.Usage-NV0058,nventive.Usage-NV1003,nventive.Usage-NV0085,nventive.Usage-NV2001,nventive.Usage-NV2003,nventive.Usage-NV2004,nventive.Usage-NV2005,csharp-618 // Ignore obsolete members warnings,csharp-105 // Ignore duplicate namespaces,csharp-1591 // Ignore missing XML comment warnings,csharp-CS8669 // Ignore annotation for nullable reference types,dotnet-CA1001
@@ -49,6 +50,7 @@ build_property.ProjectDir = C:\Users\wandt\source\Workspaces\ElevateEvansville\E
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Controls/Messages/PayPalDetailMessage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Controls\Messages\PayPalDetailMessage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PayPalDetailMessage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PayPalDetailMessage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -56,6 +58,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Controls/Messages/PreviewMessage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Controls\Messages\PreviewMessage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -63,6 +66,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/MainPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\MainPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\MainPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -70,6 +74,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/AboutPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\AboutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\AboutPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -77,6 +82,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Featured/HousingPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\Featured\HousingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\HousingPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -84,6 +90,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Featured/RailroadPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\Featured\RailroadPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\RailroadPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -91,6 +98,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Featured/EnergyPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\Featured\EnergyPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\EnergyPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Featured\EnergyPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -98,6 +106,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/HomePage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\HomePage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -105,6 +114,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/FinancePage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\FinancePage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -112,6 +122,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/PlatformPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\PlatformPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PlatformPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PlatformPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -119,6 +130,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/PrivacyPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\PrivacyPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PrivacyPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PrivacyPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -126,6 +138,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/PetitionPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\PetitionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\PetitionPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -133,6 +146,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Volunteer/VolunteerLoginPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\Volunteer\VolunteerLoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerLoginPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerLoginPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -140,6 +154,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/Volunteer/VolunteerPortalPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\Volunteer\VolunteerPortalPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\Volunteer\VolunteerPortalPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -147,6 +162,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/SupportPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\SupportPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\SupportPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -154,6 +170,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Pages/TestPage.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = Page
 build_metadata.AdditionalFiles.Link = Pages\TestPage.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\TestPage.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -161,6 +178,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/App.xaml]
 build_metadata.AdditionalFiles.SourceItemGroup = ApplicationDefinition
 build_metadata.AdditionalFiles.Link = App.xaml
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\App.xaml
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\App.xaml
 build_metadata.AdditionalFiles.XamlRuntime = 
@@ -168,6 +186,7 @@ build_metadata.AdditionalFiles.XamlRuntime =
 [C:/Users/wandt/source/Workspaces/ElevateEvansville/ElevateEvansvilleUI/ElevateEvansvilleUI.Shared/Strings/en/Resources.resw]
 build_metadata.AdditionalFiles.SourceItemGroup = PRIResource
 build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.FullPath = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Strings\en\Resources.resw
 build_metadata.AdditionalFiles.Identity = C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Strings\en\Resources.resw
 build_metadata.AdditionalFiles.XamlRuntime = 

@@ -241,10 +241,10 @@ namespace ElevateEvansvilleUI.Wasm
 			bindableType.AddProperty("AreDimensionsConstrained", typeof(bool?), GetAreDimensionsConstrained, SetAreDimensionsConstrained);
 			bindableType.AddProperty("Resources", typeof(global::Windows.UI.Xaml.ResourceDictionary), GetResources, SetResources);
 			bindableType.AddProperty("Parent", typeof(global::Windows.UI.Xaml.DependencyObject), GetParent);
+			bindableType.AddProperty("BaseUri", typeof(global::System.Uri), GetBaseUri);
 			bindableType.AddProperty("IsParsing", typeof(bool), GetIsParsing, SetIsParsing);
 			bindableType.AddProperty("IsLoaded", typeof(bool), GetIsLoaded);
 			bindableType.AddProperty("RenderPhase", typeof(int?), GetRenderPhase, SetRenderPhase);
-			bindableType.AddProperty("BaseUri", typeof(global::System.Uri), GetBaseUri);
 			bindableType.AddProperty(global::Windows.UI.Xaml.FrameworkElement.ActualHeightProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.FrameworkElement.ActualWidthProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.FrameworkElement.FlowDirectionProperty);
@@ -287,6 +287,7 @@ namespace ElevateEvansvilleUI.Wasm
 		private static object GetResources(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.FrameworkElement)instance).Resources;
 		private static void SetResources(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.FrameworkElement)instance).Resources = (global::Windows.UI.Xaml.ResourceDictionary)value;
 		private static object GetParent(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.FrameworkElement)instance).Parent;
+		private static object GetBaseUri(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.FrameworkElement)instance).BaseUri;
 		private static object GetIsParsing(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.FrameworkElement)instance).IsParsing;
 		private static void SetIsParsing(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence)
 		{
@@ -304,7 +305,6 @@ namespace ElevateEvansvilleUI.Wasm
 				((global::Windows.UI.Xaml.FrameworkElement)instance).RenderPhase = (int?)value;
 			}
 		}
-		private static object GetBaseUri(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.FrameworkElement)instance).BaseUri;
 	}
 
 	/// <summary>
@@ -9804,12 +9804,11 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(19, typeof(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase));
-			bindableType.AddProperty("XamlRoot", typeof(global::Windows.UI.Xaml.XamlRoot), GetXamlRoot, SetXamlRoot);
 			bindableType.AddProperty("IsConstrainedToRootBounds", typeof(bool), GetIsConstrainedToRootBounds);
 			bindableType.AddProperty("UseNativePopup", typeof(bool), GetUseNativePopup, SetUseNativePopup);
+			bindableType.AddProperty("XamlRoot", typeof(global::Windows.UI.Xaml.XamlRoot), GetXamlRoot, SetXamlRoot);
 			bindableType.AddProperty("Dispatcher", typeof(global::Windows.UI.Core.CoreDispatcher), GetDispatcher);
 			bindableType.AddProperty("IsStoreInitialized", typeof(bool), GetIsStoreInitialized);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.ElementSoundModeProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.OverlayInputPassThroughElementProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.AreOpenCloseAnimationsEnabledProperty);
@@ -9822,12 +9821,11 @@ namespace ElevateEvansvilleUI.Wasm
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.LightDismissOverlayModeProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusWhenDisabledProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.AllowFocusOnInteractionProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.AttachedFlyoutProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.DataContextProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase.TemplatedParentProperty);
 			return bindableType;
 		}
-		private static object GetXamlRoot(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).XamlRoot;
-		private static void SetXamlRoot(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).XamlRoot = (global::Windows.UI.Xaml.XamlRoot)value;
 		private static object GetIsConstrainedToRootBounds(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).IsConstrainedToRootBounds;
 		private static object GetUseNativePopup(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).UseNativePopup;
 		private static void SetUseNativePopup(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence)
@@ -9837,6 +9835,8 @@ namespace ElevateEvansvilleUI.Wasm
 				((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).UseNativePopup = (bool)value;
 			}
 		}
+		private static object GetXamlRoot(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).XamlRoot;
+		private static void SetXamlRoot(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).XamlRoot = (global::Windows.UI.Xaml.XamlRoot)value;
 		private static object GetDispatcher(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).Dispatcher;
 		private static object GetIsStoreInitialized(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase)instance).IsStoreInitialized;
 	}
@@ -13465,12 +13465,76 @@ namespace ElevateEvansvilleUI.Wasm
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Controls.RichTextBlock
+	/// Builder for Windows.UI.Xaml.Controls.RichEditBox
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_379
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(168, typeof(global::Windows.UI.Xaml.Controls.RichEditBox));
+			MetadataBuilder_002.Build(bindableType); // global::Windows.UI.Xaml.Controls.Control
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty("Document", typeof(global::Windows.UI.Text.ITextDocument), GetDocument);
+			bindableType.AddProperty("TextDocument", typeof(global::Windows.UI.Text.RichEditTextDocument), GetTextDocument);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.AcceptsReturnProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.InputScopeProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.IsReadOnlyProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.IsSpellCheckEnabledProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.IsTextPredictionEnabledProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.TextAlignmentProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.TextWrappingProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.HeaderProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.HeaderTemplateProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.IsColorFontEnabledProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.PlaceholderTextProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.PreventKeyboardDisplayOnProgrammaticFocusProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.SelectionHighlightColorProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.DesiredCandidateWindowAlignmentProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.TextReadingOrderProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.ClipboardCopyFormatProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.MaxLengthProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.SelectionHighlightColorWhenNotFocusedProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.CharacterCasingProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.DisabledFormattingAcceleratorsProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.HorizontalTextAlignmentProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.ContentLinkBackgroundColorProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.ContentLinkForegroundColorProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.ContentLinkProvidersProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.HandwritingViewProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.IsHandwritingViewEnabledProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.DescriptionProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.ProofingMenuFlyoutProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.RichEditBox.SelectionFlyoutProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Controls.RichEditBox();
+		private static object GetDocument(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.RichEditBox)instance).Document;
+		private static object GetTextDocument(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.RichEditBox)instance).TextDocument;
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Controls.RichTextBlock
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_380
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13544,7 +13608,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_380
+	static class MetadataBuilder_381
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13588,7 +13652,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_381
+	static class MetadataBuilder_382
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13629,7 +13693,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_382
+	static class MetadataBuilder_383
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13695,7 +13759,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_383
+	static class MetadataBuilder_384
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13777,7 +13841,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_384
+	static class MetadataBuilder_385
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13814,7 +13878,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_385
+	static class MetadataBuilder_386
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13850,7 +13914,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_386
+	static class MetadataBuilder_387
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13887,7 +13951,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_387
+	static class MetadataBuilder_388
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13921,7 +13985,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_388
+	static class MetadataBuilder_389
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13949,7 +14013,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_389
+	static class MetadataBuilder_390
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -13990,7 +14054,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_390
+	static class MetadataBuilder_391
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14033,7 +14097,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_391
+	static class MetadataBuilder_392
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14064,7 +14128,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_392
+	static class MetadataBuilder_393
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14097,7 +14161,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_393
+	static class MetadataBuilder_394
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14132,7 +14196,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_394
+	static class MetadataBuilder_395
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14175,7 +14239,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_395
+	static class MetadataBuilder_396
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14218,7 +14282,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_396
+	static class MetadataBuilder_397
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14250,7 +14314,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_397
+	static class MetadataBuilder_398
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14282,7 +14346,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_398
+	static class MetadataBuilder_399
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14354,7 +14418,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_399
+	static class MetadataBuilder_400
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14385,7 +14449,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_400
+	static class MetadataBuilder_401
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14425,7 +14489,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_401
+	static class MetadataBuilder_402
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14463,7 +14527,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_402
+	static class MetadataBuilder_403
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14497,7 +14561,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_403
+	static class MetadataBuilder_404
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14529,7 +14593,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_404
+	static class MetadataBuilder_405
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14544,7 +14608,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(146, typeof(global::Windows.UI.Xaml.Controls.ToggleSplitButton));
-			MetadataBuilder_387.Build(bindableType); // global::Windows.UI.Xaml.Controls.SplitButton
+			MetadataBuilder_388.Build(bindableType); // global::Windows.UI.Xaml.Controls.SplitButton
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -14569,7 +14633,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_405
+	static class MetadataBuilder_406
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14599,7 +14663,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_406
+	static class MetadataBuilder_407
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14639,7 +14703,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_407
+	static class MetadataBuilder_408
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14678,7 +14742,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_408
+	static class MetadataBuilder_409
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14722,7 +14786,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_409
+	static class MetadataBuilder_410
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14762,7 +14826,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_410
+	static class MetadataBuilder_411
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14802,7 +14866,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_411
+	static class MetadataBuilder_412
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14833,7 +14897,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_412
+	static class MetadataBuilder_413
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14886,7 +14950,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_413
+	static class MetadataBuilder_414
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14927,7 +14991,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_414
+	static class MetadataBuilder_415
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -14966,7 +15030,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_415
+	static class MetadataBuilder_416
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15002,7 +15066,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_416
+	static class MetadataBuilder_417
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15035,7 +15099,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_418
+	static class MetadataBuilder_419
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15050,7 +15114,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(123, typeof(global::Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel));
-			MetadataBuilder_416.Build(bindableType); // global::Windows.UI.Xaml.Controls.VirtualizingPanel
+			MetadataBuilder_417.Build(bindableType); // global::Windows.UI.Xaml.Controls.VirtualizingPanel
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15103,7 +15167,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_417
+	static class MetadataBuilder_418
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15118,7 +15182,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(125, typeof(global::Windows.UI.Xaml.Controls.VirtualizingStackPanel));
-			MetadataBuilder_418.Build(bindableType); // global::Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel
+			MetadataBuilder_419.Build(bindableType); // global::Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15138,7 +15202,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_419
+	static class MetadataBuilder_420
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15183,7 +15247,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_421
+	static class MetadataBuilder_422
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15212,7 +15276,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_420
+	static class MetadataBuilder_421
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15227,7 +15291,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Controls.WebViewBrush));
-			MetadataBuilder_421.Build(bindableType); // global::Windows.UI.Xaml.Media.TileBrush
+			MetadataBuilder_422.Build(bindableType); // global::Windows.UI.Xaml.Media.TileBrush
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15244,7 +15308,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_422
+	static class MetadataBuilder_423
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15259,7 +15323,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(129, typeof(global::Windows.UI.Xaml.Controls.WrapGrid));
-			MetadataBuilder_418.Build(bindableType); // global::Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel
+			MetadataBuilder_419.Build(bindableType); // global::Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15281,7 +15345,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_423
+	static class MetadataBuilder_424
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15320,7 +15384,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_424
+	static class MetadataBuilder_425
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15335,7 +15399,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(141, typeof(global::Windows.UI.Xaml.Controls.ImplicitTextBlock));
-			MetadataBuilder_398.Build(bindableType); // global::Windows.UI.Xaml.Controls.TextBlock
+			MetadataBuilder_399.Build(bindableType); // global::Windows.UI.Xaml.Controls.TextBlock
 			return bindableType;
 		}
 	}
@@ -15346,7 +15410,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_425
+	static class MetadataBuilder_426
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15383,7 +15447,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_426
+	static class MetadataBuilder_427
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15421,7 +15485,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_427
+	static class MetadataBuilder_428
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15454,7 +15518,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_429
+	static class MetadataBuilder_430
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15475,22 +15539,29 @@ namespace ElevateEvansvilleUI.Wasm
 				bindableType.AddActivator(CreateInstance);
 			}
 			bindableType.AddProperty("IsConstrainedToRootBounds", typeof(bool), GetIsConstrainedToRootBounds);
-			bindableType.AddProperty("ActualPlacement", typeof(global::Windows.UI.Xaml.Controls.Primitives.PopupPlacementMode), GetActualPlacement);
+			bindableType.AddProperty("ActualPlacement", typeof(global::Windows.UI.Xaml.Controls.Primitives.PopupPlacementMode), GetActualPlacement, SetActualPlacement);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.ChildTransitionsProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.ShouldConstrainToRootBoundsProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.DesiredPlacementProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.PlacementTargetProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.LightDismissOverlayModeProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.PlacementTargetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.DesiredPlacementProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.HorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.VerticalOffsetProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.IsOpenProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.ChildProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.IsLightDismissEnabledProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.HorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Primitives.Popup.VerticalOffsetProperty);
 			return bindableType;
 		}
 		private static object CreateInstance() => new global::Windows.UI.Xaml.Controls.Primitives.Popup();
 		private static object GetIsConstrainedToRootBounds(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.Popup)instance).IsConstrainedToRootBounds;
 		private static object GetActualPlacement(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Controls.Primitives.Popup)instance).ActualPlacement;
+		private static void SetActualPlacement(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence)
+		{
+			if(value != null)
+			{
+				((global::Windows.UI.Xaml.Controls.Primitives.Popup)instance).ActualPlacement = (global::Windows.UI.Xaml.Controls.Primitives.PopupPlacementMode)value;
+			}
+		}
 	}
 
 	/// <summary>
@@ -15499,7 +15570,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_428
+	static class MetadataBuilder_429
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15514,7 +15585,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(124, typeof(global::Windows.UI.Xaml.Controls.NativePopupBase));
-			MetadataBuilder_429.Build(bindableType); // global::Windows.UI.Xaml.Controls.Primitives.Popup
+			MetadataBuilder_430.Build(bindableType); // global::Windows.UI.Xaml.Controls.Primitives.Popup
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15535,7 +15606,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_430
+	static class MetadataBuilder_431
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15569,7 +15640,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_431
+	static class MetadataBuilder_432
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15627,7 +15698,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_432
+	static class MetadataBuilder_433
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15658,7 +15729,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_434
+	static class MetadataBuilder_435
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15694,7 +15765,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_433
+	static class MetadataBuilder_434
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15709,7 +15780,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Controls.Maps.CustomMapTileDataSource));
-			MetadataBuilder_434.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapTileDataSource
+			MetadataBuilder_435.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapTileDataSource
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15725,7 +15796,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_435
+	static class MetadataBuilder_436
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15740,7 +15811,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Controls.Maps.HttpMapTileDataSource));
-			MetadataBuilder_434.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapTileDataSource
+			MetadataBuilder_435.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapTileDataSource
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15770,7 +15841,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_436
+	static class MetadataBuilder_437
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15785,7 +15856,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Controls.Maps.LocalMapTileDataSource));
-			MetadataBuilder_434.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapTileDataSource
+			MetadataBuilder_435.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapTileDataSource
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -15804,7 +15875,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_438
+	static class MetadataBuilder_439
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15847,7 +15918,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_437
+	static class MetadataBuilder_438
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15862,7 +15933,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Controls.Maps.MapBillboard));
-			MetadataBuilder_438.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
+			MetadataBuilder_439.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
 			bindableType.AddProperty("Image", typeof(global::Windows.Storage.Streams.IRandomAccessStreamReference), GetImage, SetImage);
 			bindableType.AddProperty("ReferenceCamera", typeof(global::Windows.UI.Xaml.Controls.Maps.MapCamera), GetReferenceCamera);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Controls.Maps.MapBillboard.CollisionBehaviorDesiredProperty);
@@ -15881,7 +15952,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_439
+	static class MetadataBuilder_440
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -15951,7 +16022,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_440
+	static class MetadataBuilder_441
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16033,7 +16104,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_441
+	static class MetadataBuilder_442
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16069,7 +16140,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_442
+	static class MetadataBuilder_443
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16084,7 +16155,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(17, typeof(global::Windows.UI.Xaml.Controls.Maps.MapElement3D));
-			MetadataBuilder_438.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
+			MetadataBuilder_439.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -16108,7 +16179,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_444
+	static class MetadataBuilder_445
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16147,7 +16218,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_443
+	static class MetadataBuilder_444
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16162,7 +16233,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(8, typeof(global::Windows.UI.Xaml.Controls.Maps.MapElementsLayer));
-			MetadataBuilder_444.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapLayer
+			MetadataBuilder_445.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapLayer
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -16179,7 +16250,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_445
+	static class MetadataBuilder_446
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16194,7 +16265,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Controls.Maps.MapIcon));
-			MetadataBuilder_438.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
+			MetadataBuilder_439.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -16217,7 +16288,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_446
+	static class MetadataBuilder_447
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16257,7 +16328,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_447
+	static class MetadataBuilder_448
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16296,7 +16367,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_448
+	static class MetadataBuilder_449
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16332,7 +16403,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_449
+	static class MetadataBuilder_450
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16347,7 +16418,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(17, typeof(global::Windows.UI.Xaml.Controls.Maps.MapPolygon));
-			MetadataBuilder_438.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
+			MetadataBuilder_439.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -16386,7 +16457,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_450
+	static class MetadataBuilder_451
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16401,7 +16472,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(15, typeof(global::Windows.UI.Xaml.Controls.Maps.MapPolyline));
-			MetadataBuilder_438.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
+			MetadataBuilder_439.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapElement
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -16437,7 +16508,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_451
+	static class MetadataBuilder_452
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16488,7 +16559,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_452
+	static class MetadataBuilder_453
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16526,7 +16597,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_453
+	static class MetadataBuilder_454
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16562,7 +16633,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_454
+	static class MetadataBuilder_455
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16613,7 +16684,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_455
+	static class MetadataBuilder_456
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16628,7 +16699,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(10, typeof(global::Windows.UI.Xaml.Controls.Maps.StreetsideExperience));
-			MetadataBuilder_441.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapCustomExperience
+			MetadataBuilder_442.Build(bindableType); // global::Windows.UI.Xaml.Controls.Maps.MapCustomExperience
 			bindableType.AddProperty("ZoomButtonsVisible", typeof(bool), GetZoomButtonsVisible, SetZoomButtonsVisible);
 			bindableType.AddProperty("StreetLabelsVisible", typeof(bool), GetStreetLabelsVisible, SetStreetLabelsVisible);
 			bindableType.AddProperty("OverviewMapVisible", typeof(bool), GetOverviewMapVisible, SetOverviewMapVisible);
@@ -16693,7 +16764,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_456
+	static class MetadataBuilder_457
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16731,7 +16802,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_457
+	static class MetadataBuilder_458
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16769,7 +16840,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_458
+	static class MetadataBuilder_459
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16819,7 +16890,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_459
+	static class MetadataBuilder_460
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16857,7 +16928,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_460
+	static class MetadataBuilder_461
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16892,7 +16963,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_461
+	static class MetadataBuilder_462
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16958,7 +17029,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_462
+	static class MetadataBuilder_463
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -16973,7 +17044,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(123, typeof(global::Windows.UI.Xaml.Controls.Primitives.CarouselPanel));
-			MetadataBuilder_416.Build(bindableType); // global::Windows.UI.Xaml.Controls.VirtualizingPanel
+			MetadataBuilder_417.Build(bindableType); // global::Windows.UI.Xaml.Controls.VirtualizingPanel
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -17026,7 +17097,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_463
+	static class MetadataBuilder_464
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17058,7 +17129,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_464
+	static class MetadataBuilder_465
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17099,7 +17170,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_465
+	static class MetadataBuilder_466
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17145,7 +17216,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_466
+	static class MetadataBuilder_467
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17178,7 +17249,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_467
+	static class MetadataBuilder_468
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17254,7 +17325,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_468
+	static class MetadataBuilder_469
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17309,7 +17380,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_469
+	static class MetadataBuilder_470
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17362,7 +17433,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_470
+	static class MetadataBuilder_471
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17400,7 +17471,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_471
+	static class MetadataBuilder_472
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17438,7 +17509,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_472
+	static class MetadataBuilder_473
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17476,7 +17547,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_473
+	static class MetadataBuilder_474
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17566,7 +17637,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_474
+	static class MetadataBuilder_475
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17604,7 +17675,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_475
+	static class MetadataBuilder_476
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17637,7 +17708,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_476
+	static class MetadataBuilder_477
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17663,7 +17734,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_477
+	static class MetadataBuilder_478
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17693,7 +17764,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_478
+	static class MetadataBuilder_479
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17731,7 +17802,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_479
+	static class MetadataBuilder_480
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17769,7 +17840,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_480
+	static class MetadataBuilder_481
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17801,7 +17872,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_481
+	static class MetadataBuilder_482
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17832,7 +17903,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_482
+	static class MetadataBuilder_483
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17863,7 +17934,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_483
+	static class MetadataBuilder_484
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17898,7 +17969,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_484
+	static class MetadataBuilder_485
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -17948,7 +18019,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_485
+	static class MetadataBuilder_486
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18011,7 +18082,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_486
+	static class MetadataBuilder_487
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18044,7 +18115,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_487
+	static class MetadataBuilder_488
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18078,7 +18149,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_488
+	static class MetadataBuilder_489
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18126,7 +18197,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_489
+	static class MetadataBuilder_490
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18177,7 +18248,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_490
+	static class MetadataBuilder_491
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18209,7 +18280,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_491
+	static class MetadataBuilder_492
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18241,7 +18312,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_492
+	static class MetadataBuilder_493
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18293,7 +18364,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_493
+	static class MetadataBuilder_494
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18333,7 +18404,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_495
+	static class MetadataBuilder_496
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18369,7 +18440,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_494
+	static class MetadataBuilder_495
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18384,7 +18455,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Data.Binding));
-			MetadataBuilder_495.Build(bindableType); // global::Windows.UI.Xaml.Data.BindingBase
+			MetadataBuilder_496.Build(bindableType); // global::Windows.UI.Xaml.Data.BindingBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18448,7 +18519,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_496
+	static class MetadataBuilder_497
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18488,7 +18559,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_497
+	static class MetadataBuilder_498
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18503,7 +18574,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Data.TemplateBinding));
-			MetadataBuilder_494.Build(bindableType); // global::Windows.UI.Xaml.Data.Binding
+			MetadataBuilder_495.Build(bindableType); // global::Windows.UI.Xaml.Data.Binding
 			return bindableType;
 		}
 	}
@@ -18514,7 +18585,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_499
+	static class MetadataBuilder_500
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18533,8 +18604,8 @@ namespace ElevateEvansvilleUI.Wasm
 			bindableType.AddProperty("ContentStart", typeof(global::Windows.UI.Xaml.Documents.TextPointer), GetContentStart);
 			bindableType.AddProperty("ElementEnd", typeof(global::Windows.UI.Xaml.Documents.TextPointer), GetElementEnd);
 			bindableType.AddProperty("ElementStart", typeof(global::Windows.UI.Xaml.Documents.TextPointer), GetElementStart);
-			bindableType.AddProperty("XamlRoot", typeof(global::Windows.UI.Xaml.XamlRoot), GetXamlRoot, SetXamlRoot);
 			bindableType.AddProperty("Name", typeof(string), GetName, SetName);
+			bindableType.AddProperty("XamlRoot", typeof(global::Windows.UI.Xaml.XamlRoot), GetXamlRoot, SetXamlRoot);
 			bindableType.AddProperty("Dispatcher", typeof(global::Windows.UI.Core.CoreDispatcher), GetDispatcher);
 			bindableType.AddProperty("IsStoreInitialized", typeof(bool), GetIsStoreInitialized);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Documents.TextElement.BaseLineAlignmentProperty);
@@ -18564,10 +18635,10 @@ namespace ElevateEvansvilleUI.Wasm
 		private static object GetContentStart(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).ContentStart;
 		private static object GetElementEnd(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).ElementEnd;
 		private static object GetElementStart(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).ElementStart;
-		private static object GetXamlRoot(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).XamlRoot;
-		private static void SetXamlRoot(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).XamlRoot = (global::Windows.UI.Xaml.XamlRoot)value;
 		private static object GetName(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).Name;
 		private static void SetName(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).Name = (string)value;
+		private static object GetXamlRoot(object instance,  Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).XamlRoot;
+		private static void SetXamlRoot(object instance, object value, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).XamlRoot = (global::Windows.UI.Xaml.XamlRoot)value;
 		private static object GetDispatcher(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).Dispatcher;
 		private static object GetIsStoreInitialized(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.TextElement)instance).IsStoreInitialized;
 	}
@@ -18578,7 +18649,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_498
+	static class MetadataBuilder_499
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18593,7 +18664,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(34, typeof(global::Windows.UI.Xaml.Documents.Block));
-			MetadataBuilder_499.Build(bindableType); // global::Windows.UI.Xaml.Documents.TextElement
+			MetadataBuilder_500.Build(bindableType); // global::Windows.UI.Xaml.Documents.TextElement
 			bindableType.AddProperty(global::Windows.UI.Xaml.Documents.Block.LineHeightProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Documents.Block.LineStackingStrategyProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Documents.Block.MarginProperty);
@@ -18609,7 +18680,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_500
+	static class MetadataBuilder_501
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18640,7 +18711,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_503
+	static class MetadataBuilder_504
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18655,7 +18726,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(29, typeof(global::Windows.UI.Xaml.Documents.Inline));
-			MetadataBuilder_499.Build(bindableType); // global::Windows.UI.Xaml.Documents.TextElement
+			MetadataBuilder_500.Build(bindableType); // global::Windows.UI.Xaml.Documents.TextElement
 			return bindableType;
 		}
 	}
@@ -18666,7 +18737,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_502
+	static class MetadataBuilder_503
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18681,7 +18752,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(30, typeof(global::Windows.UI.Xaml.Documents.Span));
-			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
+			MetadataBuilder_504.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18700,7 +18771,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_501
+	static class MetadataBuilder_502
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18715,7 +18786,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(30, typeof(global::Windows.UI.Xaml.Documents.Bold));
-			MetadataBuilder_502.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
+			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18731,7 +18802,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_505
+	static class MetadataBuilder_506
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18762,7 +18833,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_504
+	static class MetadataBuilder_505
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18777,7 +18848,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Documents.ContactContentLinkProvider));
-			MetadataBuilder_505.Build(bindableType); // global::Windows.UI.Xaml.Documents.ContentLinkProvider
+			MetadataBuilder_506.Build(bindableType); // global::Windows.UI.Xaml.Documents.ContentLinkProvider
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18793,7 +18864,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_506
+	static class MetadataBuilder_507
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18808,7 +18879,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(44, typeof(global::Windows.UI.Xaml.Documents.ContentLink));
-			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
+			MetadataBuilder_504.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18841,7 +18912,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_507
+	static class MetadataBuilder_508
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18882,7 +18953,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_508
+	static class MetadataBuilder_509
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18897,7 +18968,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(44, typeof(global::Windows.UI.Xaml.Documents.Hyperlink));
-			MetadataBuilder_502.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
+			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18935,7 +19006,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_509
+	static class MetadataBuilder_510
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -18950,7 +19021,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(30, typeof(global::Windows.UI.Xaml.Documents.InlineUIContainer));
-			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
+			MetadataBuilder_504.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -18969,37 +19040,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_510
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(30, typeof(global::Windows.UI.Xaml.Documents.Italic));
-			MetadataBuilder_502.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.Italic();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Documents.LineBreak
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_511
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -19014,19 +19054,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(29, typeof(global::Windows.UI.Xaml.Documents.LineBreak));
-			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(30, typeof(global::Windows.UI.Xaml.Documents.Italic));
+			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.LineBreak();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.Italic();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Documents.Paragraph
+	/// Builder for Windows.UI.Xaml.Documents.LineBreak
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -19045,22 +19085,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(36, typeof(global::Windows.UI.Xaml.Documents.Paragraph));
-			MetadataBuilder_498.Build(bindableType); // global::Windows.UI.Xaml.Documents.Block
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(29, typeof(global::Windows.UI.Xaml.Documents.LineBreak));
+			MetadataBuilder_504.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty("Inlines", typeof(global::Windows.UI.Xaml.Documents.InlineCollection), GetInlines);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Documents.Paragraph.TextIndentProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.Paragraph();
-		private static object GetInlines(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.Paragraph)instance).Inlines;
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.LineBreak();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Documents.PlaceContentLinkProvider
+	/// Builder for Windows.UI.Xaml.Documents.Paragraph
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -19079,19 +19116,22 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Documents.PlaceContentLinkProvider));
-			MetadataBuilder_505.Build(bindableType); // global::Windows.UI.Xaml.Documents.ContentLinkProvider
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(36, typeof(global::Windows.UI.Xaml.Documents.Paragraph));
+			MetadataBuilder_499.Build(bindableType); // global::Windows.UI.Xaml.Documents.Block
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
+			bindableType.AddProperty("Inlines", typeof(global::Windows.UI.Xaml.Documents.InlineCollection), GetInlines);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Documents.Paragraph.TextIndentProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.PlaceContentLinkProvider();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.Paragraph();
+		private static object GetInlines(object instance, Windows.UI.Xaml.DependencyPropertyValuePrecedences? precedence) => ((global::Windows.UI.Xaml.Documents.Paragraph)instance).Inlines;
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Documents.Run
+	/// Builder for Windows.UI.Xaml.Documents.PlaceContentLinkProvider
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -19110,8 +19150,39 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Documents.PlaceContentLinkProvider));
+			MetadataBuilder_506.Build(bindableType); // global::Windows.UI.Xaml.Documents.ContentLinkProvider
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Documents.PlaceContentLinkProvider();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Documents.Run
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_515
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(31, typeof(global::Windows.UI.Xaml.Documents.Run));
-			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
+			MetadataBuilder_504.Build(bindableType); // global::Windows.UI.Xaml.Documents.Inline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19129,7 +19200,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_515
+	static class MetadataBuilder_516
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19165,7 +19236,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_516
+	static class MetadataBuilder_517
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19180,7 +19251,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(30, typeof(global::Windows.UI.Xaml.Documents.Underline));
-			MetadataBuilder_502.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
+			MetadataBuilder_503.Build(bindableType); // global::Windows.UI.Xaml.Documents.Span
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19196,7 +19267,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_517
+	static class MetadataBuilder_518
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19234,7 +19305,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_518
+	static class MetadataBuilder_519
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19279,7 +19350,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_519
+	static class MetadataBuilder_520
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19319,7 +19390,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_521
+	static class MetadataBuilder_522
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19361,7 +19432,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_520
+	static class MetadataBuilder_521
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19376,7 +19447,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Input.StandardUICommand));
-			MetadataBuilder_521.Build(bindableType); // global::Windows.UI.Xaml.Input.XamlUICommand
+			MetadataBuilder_522.Build(bindableType); // global::Windows.UI.Xaml.Input.XamlUICommand
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19393,7 +19464,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_523
+	static class MetadataBuilder_524
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19423,7 +19494,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_522
+	static class MetadataBuilder_523
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19438,7 +19509,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(15, typeof(global::Windows.UI.Xaml.Media.AcrylicBrush));
-			MetadataBuilder_523.Build(bindableType); // global::Windows.UI.Xaml.Media.XamlCompositionBrushBase
+			MetadataBuilder_524.Build(bindableType); // global::Windows.UI.Xaml.Media.XamlCompositionBrushBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19460,7 +19531,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_525
+	static class MetadataBuilder_526
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19496,7 +19567,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_524
+	static class MetadataBuilder_525
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19511,7 +19582,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(9, typeof(global::Windows.UI.Xaml.Media.ArcSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19532,7 +19603,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_526
+	static class MetadataBuilder_527
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19547,7 +19618,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.BezierSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19566,7 +19637,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_528
+	static class MetadataBuilder_529
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19597,7 +19668,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_527
+	static class MetadataBuilder_528
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19612,7 +19683,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.BitmapCache));
-			MetadataBuilder_528.Build(bindableType); // global::Windows.UI.Xaml.Media.CacheMode
+			MetadataBuilder_529.Build(bindableType); // global::Windows.UI.Xaml.Media.CacheMode
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19628,7 +19699,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_531
+	static class MetadataBuilder_532
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19661,7 +19732,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_530
+	static class MetadataBuilder_531
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19676,7 +19747,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Transform));
-			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.GeneralTransform
+			MetadataBuilder_532.Build(bindableType); // global::Windows.UI.Xaml.Media.GeneralTransform
 			return bindableType;
 		}
 	}
@@ -19687,7 +19758,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_529
+	static class MetadataBuilder_530
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19702,7 +19773,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(14, typeof(global::Windows.UI.Xaml.Media.CompositeTransform));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -19727,7 +19798,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_532
+	static class MetadataBuilder_533
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19761,7 +19832,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_533
+	static class MetadataBuilder_534
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19792,7 +19863,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_534
+	static class MetadataBuilder_535
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19825,7 +19896,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_535
+	static class MetadataBuilder_536
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19863,7 +19934,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_536
+	static class MetadataBuilder_537
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19894,7 +19965,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_537
+	static class MetadataBuilder_538
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19929,7 +20000,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_538
+	static class MetadataBuilder_539
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -19974,7 +20045,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_539
+	static class MetadataBuilder_540
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20007,7 +20078,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_540
+	static class MetadataBuilder_541
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20040,7 +20111,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_541
+	static class MetadataBuilder_542
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20055,7 +20126,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.LineSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20072,7 +20143,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_543
+	static class MetadataBuilder_544
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20103,7 +20174,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_542
+	static class MetadataBuilder_543
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20118,7 +20189,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Matrix3DProjection));
-			MetadataBuilder_543.Build(bindableType); // global::Windows.UI.Xaml.Media.Projection
+			MetadataBuilder_544.Build(bindableType); // global::Windows.UI.Xaml.Media.Projection
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20135,7 +20206,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_544
+	static class MetadataBuilder_545
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20150,7 +20221,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.MatrixTransform));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20167,7 +20238,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_545
+	static class MetadataBuilder_546
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20207,7 +20278,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_546
+	static class MetadataBuilder_547
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20238,7 +20309,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_547
+	static class MetadataBuilder_548
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20271,7 +20342,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_548
+	static class MetadataBuilder_549
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20302,7 +20373,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_549
+	static class MetadataBuilder_550
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20317,7 +20388,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(17, typeof(global::Windows.UI.Xaml.Media.PlaneProjection));
-			MetadataBuilder_543.Build(bindableType); // global::Windows.UI.Xaml.Media.Projection
+			MetadataBuilder_544.Build(bindableType); // global::Windows.UI.Xaml.Media.Projection
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20346,38 +20417,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_550
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.PolyBezierSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.PolyBezierSegment.PointsProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.PolyBezierSegment();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.PolyLineSegment
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_551
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -20392,20 +20431,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.PolyLineSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.PolyBezierSegment));
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.PolyLineSegment.PointsProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.PolyBezierSegment.PointsProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.PolyLineSegment();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.PolyBezierSegment();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.PolyQuadraticBezierSegment
+	/// Builder for Windows.UI.Xaml.Media.PolyLineSegment
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -20424,20 +20463,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.PolyQuadraticBezierSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.PolyLineSegment));
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.PolyQuadraticBezierSegment.PointsProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.PolyLineSegment.PointsProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.PolyQuadraticBezierSegment();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.PolyLineSegment();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.QuadraticBezierSegment
+	/// Builder for Windows.UI.Xaml.Media.PolyQuadraticBezierSegment
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -20456,8 +20495,40 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.PolyQuadraticBezierSegment));
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.PolyQuadraticBezierSegment.PointsProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.PolyQuadraticBezierSegment();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.QuadraticBezierSegment
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_554
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.QuadraticBezierSegment));
-			MetadataBuilder_525.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
+			MetadataBuilder_526.Build(bindableType); // global::Windows.UI.Xaml.Media.PathSegment
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20475,7 +20546,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_554
+	static class MetadataBuilder_555
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20507,7 +20578,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_556
+	static class MetadataBuilder_557
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20522,7 +20593,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.RevealBrush));
-			MetadataBuilder_523.Build(bindableType); // global::Windows.UI.Xaml.Media.XamlCompositionBrushBase
+			MetadataBuilder_524.Build(bindableType); // global::Windows.UI.Xaml.Media.XamlCompositionBrushBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20542,7 +20613,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_555
+	static class MetadataBuilder_556
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20557,7 +20628,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.RevealBackgroundBrush));
-			MetadataBuilder_556.Build(bindableType); // global::Windows.UI.Xaml.Media.RevealBrush
+			MetadataBuilder_557.Build(bindableType); // global::Windows.UI.Xaml.Media.RevealBrush
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20569,37 +20640,6 @@ namespace ElevateEvansvilleUI.Wasm
 
 	/// <summary>
 	/// Builder for Windows.UI.Xaml.Media.RevealBorderBrush
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_557
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.RevealBorderBrush));
-			MetadataBuilder_556.Build(bindableType); // global::Windows.UI.Xaml.Media.RevealBrush
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.RevealBorderBrush();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.RotateTransform
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -20618,22 +20658,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(8, typeof(global::Windows.UI.Xaml.Media.RotateTransform));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.RevealBorderBrush));
+			MetadataBuilder_557.Build(bindableType); // global::Windows.UI.Xaml.Media.RevealBrush
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.RotateTransform.CenterYProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.RotateTransform.CenterXProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.RotateTransform.AngleProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.RotateTransform();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.RevealBorderBrush();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.ScaleTransform
+	/// Builder for Windows.UI.Xaml.Media.RotateTransform
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -20652,8 +20689,42 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(8, typeof(global::Windows.UI.Xaml.Media.RotateTransform));
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.RotateTransform.CenterYProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.RotateTransform.CenterXProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.RotateTransform.AngleProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.RotateTransform();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.ScaleTransform
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_560
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(9, typeof(global::Windows.UI.Xaml.Media.ScaleTransform));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20673,7 +20744,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_560
+	static class MetadataBuilder_561
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20709,7 +20780,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_561
+	static class MetadataBuilder_562
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20724,7 +20795,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(9, typeof(global::Windows.UI.Xaml.Media.SkewTransform));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20744,7 +20815,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_562
+	static class MetadataBuilder_563
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20776,7 +20847,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_563
+	static class MetadataBuilder_564
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20791,7 +20862,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.ThemeShadow));
-			MetadataBuilder_560.Build(bindableType); // global::Windows.UI.Xaml.Media.Shadow
+			MetadataBuilder_561.Build(bindableType); // global::Windows.UI.Xaml.Media.Shadow
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20809,7 +20880,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_564
+	static class MetadataBuilder_565
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20848,7 +20919,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_565
+	static class MetadataBuilder_566
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20863,7 +20934,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.TransformGroup));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20882,7 +20953,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_566
+	static class MetadataBuilder_567
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20897,7 +20968,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.TranslateTransform));
-			MetadataBuilder_530.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
+			MetadataBuilder_531.Build(bindableType); // global::Windows.UI.Xaml.Media.Transform
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -20915,7 +20986,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_567
+	static class MetadataBuilder_568
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20954,7 +21025,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_569
+	static class MetadataBuilder_570
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -20990,7 +21061,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_568
+	static class MetadataBuilder_569
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21005,7 +21076,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21021,7 +21092,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_571
+	static class MetadataBuilder_572
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21058,7 +21129,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_570
+	static class MetadataBuilder_571
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21073,7 +21144,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.BackEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21090,7 +21161,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_572
+	static class MetadataBuilder_573
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21122,7 +21193,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_573
+	static class MetadataBuilder_574
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21137,7 +21208,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.BounceEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21155,7 +21226,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_574
+	static class MetadataBuilder_575
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21170,7 +21241,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.CircleEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21186,7 +21257,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_576
+	static class MetadataBuilder_577
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21228,7 +21299,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_575
+	static class MetadataBuilder_576
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21243,7 +21314,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(15, typeof(global::Windows.UI.Xaml.Media.Animation.ColorAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21264,7 +21335,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_577
+	static class MetadataBuilder_578
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21279,7 +21350,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21297,7 +21368,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_578
+	static class MetadataBuilder_579
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21348,7 +21419,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_580
+	static class MetadataBuilder_581
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21379,7 +21450,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_579
+	static class MetadataBuilder_580
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21394,7 +21465,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.CommonNavigationTransitionInfo));
-			MetadataBuilder_580.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+			MetadataBuilder_581.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21408,39 +21479,6 @@ namespace ElevateEvansvilleUI.Wasm
 
 	/// <summary>
 	/// Builder for Windows.UI.Xaml.Media.Animation.ContentThemeTransition
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_581
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition.HorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition.VerticalOffsetProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -21459,8 +21497,41 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition.HorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition.VerticalOffsetProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ContentThemeTransition();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_583
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo));
-			MetadataBuilder_580.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+			MetadataBuilder_581.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21480,7 +21551,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_583
+	static class MetadataBuilder_584
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21495,7 +21566,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.CubicEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21511,7 +21582,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_585
+	static class MetadataBuilder_586
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21544,7 +21615,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_584
+	static class MetadataBuilder_585
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21559,7 +21630,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.DiscreteColorKeyFrame));
-			MetadataBuilder_585.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
+			MetadataBuilder_586.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21575,7 +21646,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_587
+	static class MetadataBuilder_588
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21608,7 +21679,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_586
+	static class MetadataBuilder_587
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21623,7 +21694,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.DiscreteDoubleKeyFrame));
-			MetadataBuilder_587.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
+			MetadataBuilder_588.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21639,7 +21710,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_589
+	static class MetadataBuilder_590
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21677,7 +21748,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_588
+	static class MetadataBuilder_589
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21692,7 +21763,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame));
-			MetadataBuilder_589.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame
+			MetadataBuilder_590.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ObjectKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21708,7 +21779,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_591
+	static class MetadataBuilder_592
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21741,7 +21812,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_590
+	static class MetadataBuilder_591
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21756,7 +21827,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.DiscretePointKeyFrame));
-			MetadataBuilder_591.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
+			MetadataBuilder_592.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21772,7 +21843,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_592
+	static class MetadataBuilder_593
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21787,7 +21858,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(15, typeof(global::Windows.UI.Xaml.Media.Animation.DoubleAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21808,7 +21879,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_593
+	static class MetadataBuilder_594
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21823,7 +21894,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -21842,7 +21913,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_594
+	static class MetadataBuilder_595
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -21873,38 +21944,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_595
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation.TargetNameProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_596
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -21919,22 +21958,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation.DirectionProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation.TargetNameProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation.ToOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo
+	/// Builder for Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -21953,19 +21990,22 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo));
-			MetadataBuilder_580.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation.DirectionProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation.TargetNameProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation.ToOffsetProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.DrillInThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -21984,8 +22024,39 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo));
+			MetadataBuilder_581.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Animation.DrillInThemeAnimation
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_599
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(14, typeof(global::Windows.UI.Xaml.Media.Animation.DrillInThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22005,7 +22076,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_599
+	static class MetadataBuilder_600
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -22020,7 +22091,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(14, typeof(global::Windows.UI.Xaml.Media.Animation.DrillOutThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22040,38 +22111,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_600
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation.TargetNameProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_601
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22086,20 +22125,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame));
-			MetadataBuilder_585.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame.EasingFunctionProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame
+	/// Builder for Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22118,20 +22157,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame));
-			MetadataBuilder_587.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame));
+			MetadataBuilder_586.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame.EasingFunctionProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame.EasingFunctionProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame
+	/// Builder for Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22150,20 +22189,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame));
-			MetadataBuilder_591.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame));
+			MetadataBuilder_588.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame.EasingFunctionProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame.EasingFunctionProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition
+	/// Builder for Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22182,20 +22221,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame));
+			MetadataBuilder_592.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition.EdgeProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame.EasingFunctionProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.ElasticEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22214,21 +22253,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.ElasticEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ElasticEase.OscillationsProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ElasticEase.SpringinessProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition.EdgeProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ElasticEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo
+	/// Builder for Windows.UI.Xaml.Media.Animation.ElasticEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22247,20 +22285,21 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo));
-			MetadataBuilder_580.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.ElasticEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo.IsTargetElementProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ElasticEase.OscillationsProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ElasticEase.SpringinessProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ElasticEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.EntranceThemeTransition
+	/// Builder for Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22279,22 +22318,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo));
+			MetadataBuilder_581.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition.FromHorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition.FromVerticalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition.IsStaggeringEnabledProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo.IsTargetElementProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.ExponentialEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.EntranceThemeTransition
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22313,20 +22350,22 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.ExponentialEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ExponentialEase.ExponentProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition.FromHorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition.FromVerticalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition.IsStaggeringEnabledProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ExponentialEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.EntranceThemeTransition();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.ExponentialEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22345,20 +22384,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation));
-			MetadataBuilder_592.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.ExponentialEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation.TargetNameProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.ExponentialEase.ExponentProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ExponentialEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22377,8 +22416,40 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation));
+			MetadataBuilder_593.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation.TargetNameProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_611
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation));
-			MetadataBuilder_592.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
+			MetadataBuilder_593.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleAnimation
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22395,7 +22466,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_611
+	static class MetadataBuilder_612
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -22449,37 +22520,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_612
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame));
-			MetadataBuilder_585.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_613
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22494,19 +22534,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame));
-			MetadataBuilder_587.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame));
+			MetadataBuilder_586.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame
+	/// Builder for Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22525,19 +22565,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame));
-			MetadataBuilder_591.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame));
+			MetadataBuilder_588.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.NavigationThemeTransition
+	/// Builder for Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22556,20 +22596,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.NavigationThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame));
+			MetadataBuilder_592.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.NavigationThemeTransition.DefaultNavigationTransitionInfoProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.NavigationThemeTransition();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+	/// Builder for Windows.UI.Xaml.Media.Animation.NavigationThemeTransition
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22588,8 +22627,40 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.NavigationThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.NavigationThemeTransition.DefaultNavigationTransitionInfoProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.NavigationThemeTransition();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_617
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22608,7 +22679,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_617
+	static class MetadataBuilder_618
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -22634,7 +22705,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_618
+	static class MetadataBuilder_619
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -22649,7 +22720,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.PaneThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22666,7 +22737,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_619
+	static class MetadataBuilder_620
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -22681,7 +22752,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(15, typeof(global::Windows.UI.Xaml.Media.Animation.PointAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22702,7 +22773,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_620
+	static class MetadataBuilder_621
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -22717,7 +22788,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(12, typeof(global::Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -22736,38 +22807,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_621
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation.TargetNameProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_622
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22782,20 +22821,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation.TargetNameProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.PopInThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22814,22 +22853,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation.FromHorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation.FromVerticalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation.TargetNameProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.PopInThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22848,20 +22885,22 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation.TargetNameProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation.FromHorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation.FromVerticalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PopInThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.PopupThemeTransition
+	/// Builder for Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22880,21 +22919,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition.FromHorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition.FromVerticalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.PowerEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.PopupThemeTransition
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22913,20 +22951,21 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.PowerEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PowerEase.PowerProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition.FromHorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition.FromVerticalOffsetProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PowerEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PopupThemeTransition();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.QuadraticEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.PowerEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22945,19 +22984,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.QuadraticEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(6, typeof(global::Windows.UI.Xaml.Media.Animation.PowerEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.PowerEase.PowerProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.QuadraticEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.PowerEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.QuarticEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.QuadraticEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -22976,19 +23016,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.QuarticEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.QuadraticEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.QuarticEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.QuadraticEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.QuinticEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.QuarticEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23007,19 +23047,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.QuinticEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.QuarticEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.QuinticEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.QuarticEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.ReorderThemeTransition
+	/// Builder for Windows.UI.Xaml.Media.Animation.QuinticEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23038,19 +23078,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.ReorderThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.QuinticEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ReorderThemeTransition();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.QuinticEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.ReorderThemeTransition
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23069,22 +23109,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.ReorderThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation.FromHorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation.FromVerticalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.ReorderThemeTransition();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.RepositionThemeTransition
+	/// Builder for Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23103,20 +23140,22 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.RepositionThemeTransition));
-			MetadataBuilder_569.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeTransition.IsStaggeringEnabledProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation.FromHorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation.FromVerticalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.RepositionThemeTransition();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SineEase
+	/// Builder for Windows.UI.Xaml.Media.Animation.RepositionThemeTransition
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23135,19 +23174,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.SineEase));
-			MetadataBuilder_571.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.RepositionThemeTransition));
+			MetadataBuilder_570.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Transition
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.RepositionThemeTransition.IsStaggeringEnabledProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SineEase();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.RepositionThemeTransition();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo
+	/// Builder for Windows.UI.Xaml.Media.Animation.SineEase
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23166,20 +23206,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo));
-			MetadataBuilder_580.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.SineEase));
+			MetadataBuilder_572.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo.EffectProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SineEase();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame
+	/// Builder for Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23198,20 +23237,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame));
-			MetadataBuilder_585.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo));
+			MetadataBuilder_581.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame.KeySplineProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo.EffectProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame
+	/// Builder for Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23230,20 +23269,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame));
-			MetadataBuilder_587.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame));
+			MetadataBuilder_586.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.ColorKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame.KeySplineProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame.KeySplineProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame
+	/// Builder for Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23262,20 +23301,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame));
-			MetadataBuilder_591.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame));
+			MetadataBuilder_588.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.DoubleKeyFrame
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame.KeySplineProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame.KeySplineProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23294,8 +23333,40 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame));
+			MetadataBuilder_592.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.PointKeyFrame
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame.KeySplineProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_639
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(21, typeof(global::Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23322,7 +23393,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_639
+	static class MetadataBuilder_640
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23337,7 +23408,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(21, typeof(global::Windows.UI.Xaml.Media.Animation.SplitOpenThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23364,7 +23435,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_640
+	static class MetadataBuilder_641
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23379,7 +23450,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(11, typeof(global::Windows.UI.Xaml.Media.Animation.Storyboard));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23398,37 +23469,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_641
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo));
-			MetadataBuilder_580.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_642
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23443,22 +23483,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(4, typeof(global::Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo));
+			MetadataBuilder_581.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation.FromHorizontalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation.FromVerticalOffsetProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation.TargetNameProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Animation.SwipeHintThemeAnimation
+	/// Builder for Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23477,8 +23514,42 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation));
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation.FromHorizontalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation.FromVerticalOffsetProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation.TargetNameProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Animation.SwipeHintThemeAnimation
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_644
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(13, typeof(global::Windows.UI.Xaml.Media.Animation.SwipeHintThemeAnimation));
-			MetadataBuilder_576.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
+			MetadataBuilder_577.Build(bindableType); // global::Windows.UI.Xaml.Media.Animation.Timeline
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23497,7 +23568,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_644
+	static class MetadataBuilder_645
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23528,7 +23599,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_646
+	static class MetadataBuilder_647
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23543,7 +23614,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Imaging.BitmapSource));
-			MetadataBuilder_538.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
+			MetadataBuilder_539.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
 			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.BitmapSource.PixelHeightProperty);
 			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.BitmapSource.PixelWidthProperty);
 			return bindableType;
@@ -23556,7 +23627,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_645
+	static class MetadataBuilder_646
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23571,7 +23642,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(15, typeof(global::Windows.UI.Xaml.Media.Imaging.BitmapImage));
-			MetadataBuilder_646.Build(bindableType); // global::Windows.UI.Xaml.Media.Imaging.BitmapSource
+			MetadataBuilder_647.Build(bindableType); // global::Windows.UI.Xaml.Media.Imaging.BitmapSource
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23595,39 +23666,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_647
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap));
-			MetadataBuilder_538.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap.PixelWidthProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap.PixelHeightProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_648
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23642,19 +23680,21 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource));
-			MetadataBuilder_538.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap));
+			MetadataBuilder_539.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap.PixelWidthProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap.PixelHeightProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Imaging.SurfaceImageSource
+	/// Builder for Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23673,14 +23713,19 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Imaging.SurfaceImageSource));
-			MetadataBuilder_538.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource));
+			MetadataBuilder_539.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
 			return bindableType;
 		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Imaging.SvgImageSource
+	/// Builder for Windows.UI.Xaml.Media.Imaging.SurfaceImageSource
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23699,22 +23744,14 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(8, typeof(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource));
-			MetadataBuilder_538.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource.UriSourceProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource.RasterizePixelHeightProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource.RasterizePixelWidthProperty);
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Imaging.SurfaceImageSource));
+			MetadataBuilder_539.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Imaging.SvgImageSource();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource
+	/// Builder for Windows.UI.Xaml.Media.Imaging.SvgImageSource
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23733,14 +23770,22 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource));
-			MetadataBuilder_649.Build(bindableType); // global::Windows.UI.Xaml.Media.Imaging.SurfaceImageSource
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(8, typeof(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource));
+			MetadataBuilder_539.Build(bindableType); // global::Windows.UI.Xaml.Media.ImageSource
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource.UriSourceProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource.RasterizePixelHeightProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Media.Imaging.SvgImageSource.RasterizePixelWidthProperty);
 			return bindableType;
 		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Media.Imaging.SvgImageSource();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Media.Imaging.WriteableBitmap
+	/// Builder for Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -23759,8 +23804,34 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(5, typeof(global::Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource));
+			MetadataBuilder_650.Build(bindableType); // global::Windows.UI.Xaml.Media.Imaging.SurfaceImageSource
+			return bindableType;
+		}
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Media.Imaging.WriteableBitmap
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_653
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(8, typeof(global::Windows.UI.Xaml.Media.Imaging.WriteableBitmap));
-			MetadataBuilder_646.Build(bindableType); // global::Windows.UI.Xaml.Media.Imaging.BitmapSource
+			MetadataBuilder_647.Build(bindableType); // global::Windows.UI.Xaml.Media.Imaging.BitmapSource
 			bindableType.AddProperty("PixelBuffer", typeof(global::Windows.Storage.Streams.IBuffer), GetPixelBuffer);
 			return bindableType;
 		}
@@ -23773,7 +23844,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_654
+	static class MetadataBuilder_655
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23804,7 +23875,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_653
+	static class MetadataBuilder_654
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23819,7 +23890,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(16, typeof(global::Windows.UI.Xaml.Media.Media3D.CompositeTransform3D));
-			MetadataBuilder_654.Build(bindableType); // global::Windows.UI.Xaml.Media.Media3D.Transform3D
+			MetadataBuilder_655.Build(bindableType); // global::Windows.UI.Xaml.Media.Media3D.Transform3D
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23847,7 +23918,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_655
+	static class MetadataBuilder_656
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23862,7 +23933,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(7, typeof(global::Windows.UI.Xaml.Media.Media3D.PerspectiveTransform3D));
-			MetadataBuilder_654.Build(bindableType); // global::Windows.UI.Xaml.Media.Media3D.Transform3D
+			MetadataBuilder_655.Build(bindableType); // global::Windows.UI.Xaml.Media.Media3D.Transform3D
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -23881,7 +23952,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_656
+	static class MetadataBuilder_657
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23917,7 +23988,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_657
+	static class MetadataBuilder_658
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23954,7 +24025,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_660
+	static class MetadataBuilder_661
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -23993,7 +24064,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_659
+	static class MetadataBuilder_660
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24008,7 +24079,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(119, typeof(global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase));
-			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.Shape
+			MetadataBuilder_661.Build(bindableType); // global::Windows.UI.Xaml.Shapes.Shape
 			return bindableType;
 		}
 	}
@@ -24019,7 +24090,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_658
+	static class MetadataBuilder_659
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24034,7 +24105,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(119, typeof(global::Windows.UI.Xaml.Shapes.Ellipse));
-			MetadataBuilder_659.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
+			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -24050,7 +24121,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_661
+	static class MetadataBuilder_662
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24065,7 +24136,7 @@ namespace ElevateEvansvilleUI.Wasm
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(123, typeof(global::Windows.UI.Xaml.Shapes.Line));
-			MetadataBuilder_659.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
+			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -24085,38 +24156,6 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_662
-	{
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build()
-		{
-			return Build(null);
-		}
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
-		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(120, typeof(global::Windows.UI.Xaml.Shapes.Path));
-			MetadataBuilder_659.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
-			if(parent == null)
-			{
-				bindableType.AddActivator(CreateInstance);
-			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Path.DataProperty);
-			return bindableType;
-		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Shapes.Path();
-	}
-
-	/// <summary>
-	/// Builder for Windows.UI.Xaml.Shapes.Polygon
-	/// </summary>
-	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	static class MetadataBuilder_663
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24131,21 +24170,20 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(121, typeof(global::Windows.UI.Xaml.Shapes.Polygon));
-			MetadataBuilder_659.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(120, typeof(global::Windows.UI.Xaml.Shapes.Path));
+			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polygon.FillRuleProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polygon.PointsProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Path.DataProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Shapes.Polygon();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Shapes.Path();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Shapes.Polyline
+	/// Builder for Windows.UI.Xaml.Shapes.Polygon
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24164,21 +24202,21 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
-			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(121, typeof(global::Windows.UI.Xaml.Shapes.Polyline));
-			MetadataBuilder_659.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(121, typeof(global::Windows.UI.Xaml.Shapes.Polygon));
+			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
 			}
-			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polyline.FillRuleProperty);
-			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polyline.PointsProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polygon.FillRuleProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polygon.PointsProperty);
 			return bindableType;
 		}
-		private static object CreateInstance() => new global::Windows.UI.Xaml.Shapes.Polyline();
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Shapes.Polygon();
 	}
 
 	/// <summary>
-	/// Builder for Windows.UI.Xaml.Shapes.Rectangle
+	/// Builder for Windows.UI.Xaml.Shapes.Polyline
 	/// </summary>
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
@@ -24197,8 +24235,41 @@ namespace ElevateEvansvilleUI.Wasm
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
 		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
 		{
+			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(121, typeof(global::Windows.UI.Xaml.Shapes.Polyline));
+			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.ArbitraryShapeBase
+			if(parent == null)
+			{
+				bindableType.AddActivator(CreateInstance);
+			}
+			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polyline.FillRuleProperty);
+			bindableType.AddProperty(global::Windows.UI.Xaml.Shapes.Polyline.PointsProperty);
+			return bindableType;
+		}
+		private static object CreateInstance() => new global::Windows.UI.Xaml.Shapes.Polyline();
+	}
+
+	/// <summary>
+	/// Builder for Windows.UI.Xaml.Shapes.Rectangle
+	/// </summary>
+	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+	static class MetadataBuilder_666
+	{
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build()
+		{
+			return Build(null);
+		}
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
+		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
+		internal static global::Uno.UI.DataBinding.IBindableType Build(global::Uno.UI.DataBinding.BindableType parent)
+		{
 			var bindableType = parent ?? new global::Uno.UI.DataBinding.BindableType(121, typeof(global::Windows.UI.Xaml.Shapes.Rectangle));
-			MetadataBuilder_660.Build(bindableType); // global::Windows.UI.Xaml.Shapes.Shape
+			MetadataBuilder_661.Build(bindableType); // global::Windows.UI.Xaml.Shapes.Shape
 			if(parent == null)
 			{
 				bindableType.AddActivator(CreateInstance);
@@ -24216,7 +24287,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_666
+	static class MetadataBuilder_667
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24252,7 +24323,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_667
+	static class MetadataBuilder_668
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24283,7 +24354,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_668
+	static class MetadataBuilder_669
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24314,7 +24385,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_669
+	static class MetadataBuilder_670
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24345,7 +24416,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_670
+	static class MetadataBuilder_671
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24376,7 +24447,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_671
+	static class MetadataBuilder_672
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24407,7 +24478,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_672
+	static class MetadataBuilder_673
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24438,7 +24509,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_673
+	static class MetadataBuilder_674
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24469,7 +24540,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_674
+	static class MetadataBuilder_675
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24500,7 +24571,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_675
+	static class MetadataBuilder_676
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24531,7 +24602,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_676
+	static class MetadataBuilder_677
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24562,7 +24633,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_677
+	static class MetadataBuilder_678
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24593,7 +24664,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_678
+	static class MetadataBuilder_679
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24624,7 +24695,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_679
+	static class MetadataBuilder_680
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24655,7 +24726,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_680
+	static class MetadataBuilder_681
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24686,7 +24757,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_681
+	static class MetadataBuilder_682
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24717,7 +24788,7 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Runtime.CompilerServices.CompilerGeneratedAttribute]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-	static class MetadataBuilder_682
+	static class MetadataBuilder_683
 	{
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
 		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
@@ -24747,4811 +24818,6171 @@ namespace ElevateEvansvilleUI.Wasm
 	[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
 	public class BindableMetadataProvider : global::Uno.UI.DataBinding.IBindableMetadataProvider
 	{
-		static global::System.Collections.Hashtable _bindableTypeCacheByFullName = new global::System.Collections.Hashtable(671);
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification="Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Must be ignored even if generated code is checked.")]
-		[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1505:AvoidUnmaintainableCode", Justification = "Must be ignored even if generated code is checked.")]
-		private delegate global::Uno.UI.DataBinding.IBindableType TypeBuilderDelegate();
-		private static TypeBuilderDelegate CreateMemoized(TypeBuilderDelegate builder)
-		{
-			global::Uno.UI.DataBinding.IBindableType value = null;
-						return () => {
-							if (value == null)
-							{
-								value = builder();
-							}
-
-							return value;
-						};
-		}
-		private global::Uno.UI.DataBinding.IBindableType _bindableType000;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType001;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType002;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType003;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType004;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType005;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType006;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType007;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType008;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType009;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType010;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType011;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType012;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType013;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType014;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType015;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType016;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType017;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType018;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType019;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType020;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType021;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType022;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType023;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType024;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType025;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType026;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType027;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType028;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType029;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType030;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType031;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType032;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType033;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType034;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType035;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType036;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType037;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType038;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType039;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType040;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType041;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType042;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType043;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType044;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType045;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType046;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType047;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType048;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType049;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType050;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType051;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType052;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType053;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType054;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType055;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType056;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType057;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType058;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType059;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType060;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType061;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType062;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType063;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType064;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType065;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType066;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType067;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType068;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType069;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType070;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType071;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType072;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType073;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType074;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType075;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType076;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType077;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType078;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType079;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType080;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType081;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType082;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType083;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType084;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType085;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType086;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType087;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType088;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType089;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType090;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType091;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType092;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType093;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType094;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType095;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType096;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType097;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType098;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType099;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType100;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType101;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType102;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType103;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType104;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType105;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType106;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType107;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType108;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType109;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType110;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType111;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType112;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType113;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType114;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType115;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType116;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType117;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType118;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType119;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType120;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType121;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType122;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType123;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType124;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType125;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType126;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType127;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType128;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType129;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType130;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType131;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType132;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType133;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType134;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType135;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType136;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType137;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType138;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType139;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType140;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType141;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType142;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType143;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType144;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType145;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType146;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType147;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType148;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType149;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType150;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType151;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType152;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType153;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType154;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType155;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType156;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType157;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType158;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType159;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType160;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType161;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType162;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType163;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType164;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType165;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType166;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType167;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType168;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType169;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType170;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType171;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType172;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType173;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType174;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType175;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType176;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType177;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType178;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType179;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType180;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType181;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType182;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType183;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType184;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType185;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType186;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType187;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType188;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType189;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType190;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType191;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType192;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType193;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType194;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType195;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType196;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType197;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType198;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType199;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType200;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType201;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType202;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType203;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType204;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType205;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType206;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType207;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType208;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType209;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType210;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType211;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType212;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType213;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType214;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType215;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType216;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType217;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType218;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType219;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType220;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType221;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType222;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType223;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType224;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType225;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType226;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType227;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType228;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType229;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType230;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType231;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType232;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType233;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType234;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType235;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType236;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType237;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType238;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType239;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType240;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType241;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType242;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType243;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType244;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType245;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType246;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType247;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType248;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType249;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType250;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType251;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType252;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType253;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType254;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType255;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType256;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType257;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType258;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType259;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType260;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType261;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType262;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType263;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType264;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType265;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType266;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType267;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType268;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType269;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType270;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType271;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType272;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType273;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType274;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType275;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType276;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType277;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType278;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType279;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType280;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType281;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType282;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType283;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType284;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType285;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType286;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType287;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType288;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType289;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType290;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType291;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType292;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType293;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType294;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType295;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType296;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType297;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType298;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType299;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType300;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType301;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType302;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType303;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType304;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType305;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType306;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType307;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType308;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType309;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType310;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType311;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType312;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType313;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType314;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType315;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType316;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType317;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType318;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType319;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType320;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType321;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType322;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType323;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType324;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType325;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType326;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType327;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType328;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType329;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType330;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType331;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType332;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType333;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType334;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType335;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType336;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType337;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType338;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType339;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType340;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType341;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType342;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType343;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType344;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType345;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType346;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType347;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType348;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType349;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType350;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType351;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType352;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType353;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType354;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType355;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType356;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType357;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType358;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType359;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType360;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType361;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType362;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType363;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType364;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType365;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType366;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType367;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType368;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType369;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType370;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType371;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType372;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType373;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType374;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType375;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType376;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType377;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType378;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType379;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType380;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType381;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType382;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType383;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType384;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType385;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType386;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType387;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType388;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType389;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType390;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType391;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType392;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType393;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType394;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType395;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType396;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType397;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType398;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType399;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType400;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType401;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType402;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType403;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType404;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType405;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType406;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType407;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType408;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType409;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType410;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType411;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType412;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType413;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType414;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType415;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType416;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType417;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType418;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType419;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType420;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType421;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType422;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType423;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType424;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType425;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType426;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType427;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType428;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType429;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType430;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType431;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType432;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType433;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType434;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType435;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType436;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType437;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType438;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType439;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType440;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType441;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType442;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType443;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType444;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType445;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType446;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType447;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType448;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType449;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType450;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType451;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType452;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType453;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType454;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType455;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType456;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType457;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType458;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType459;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType460;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType461;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType462;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType463;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType464;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType465;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType466;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType467;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType468;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType469;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType470;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType471;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType472;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType473;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType474;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType475;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType476;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType477;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType478;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType479;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType480;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType481;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType482;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType483;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType484;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType485;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType486;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType487;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType488;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType489;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType490;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType491;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType492;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType493;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType494;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType495;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType496;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType497;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType498;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType499;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType500;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType501;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType502;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType503;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType504;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType505;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType506;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType507;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType508;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType509;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType510;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType511;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType512;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType513;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType514;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType515;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType516;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType517;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType518;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType519;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType520;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType521;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType522;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType523;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType524;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType525;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType526;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType527;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType528;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType529;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType530;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType531;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType532;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType533;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType534;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType535;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType536;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType537;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType538;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType539;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType540;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType541;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType542;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType543;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType544;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType545;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType546;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType547;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType548;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType549;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType550;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType551;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType552;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType553;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType554;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType555;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType556;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType557;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType558;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType559;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType560;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType561;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType562;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType563;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType564;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType565;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType566;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType567;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType568;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType569;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType570;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType571;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType572;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType573;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType574;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType575;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType576;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType577;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType578;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType579;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType580;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType581;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType582;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType583;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType584;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType585;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType586;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType587;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType588;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType589;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType590;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType591;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType592;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType593;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType594;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType595;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType596;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType597;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType598;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType599;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType600;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType601;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType602;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType603;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType604;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType605;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType606;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType607;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType608;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType609;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType610;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType611;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType612;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType613;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType614;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType615;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType616;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType617;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType618;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType619;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType620;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType621;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType622;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType623;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType624;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType625;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType626;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType627;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType628;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType629;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType630;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType631;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType632;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType633;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType634;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType635;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType636;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType637;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType638;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType639;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType640;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType641;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType642;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType643;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType644;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType645;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType646;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType647;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType648;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType649;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType650;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType651;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType652;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType653;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType654;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType655;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType656;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType657;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType658;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType659;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType660;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType661;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType662;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType663;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType664;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType665;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType666;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType667;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType668;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType669;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType670;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType671;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType672;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType673;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType674;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType675;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType676;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType677;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType678;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType679;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType680;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType681;
-		private global::Uno.UI.DataBinding.IBindableType _bindableType682;
+		private readonly global::Uno.UI.DataBinding.IBindableType[] _bindableTypes = new global::Uno.UI.DataBinding.IBindableType[684];
+		private static global::Uno.UI.DataBinding.IBindableType _null;
 		public global::Uno.UI.DataBinding.IBindableType GetBindableTypeByFullName(string fullName)
 		{
+			ref global::Uno.UI.DataBinding.IBindableType element = ref _null;
 			switch(fullName)
 			{
 				case "Uno.Toolkit.UI.SelectorExtensions":
-				if(_bindableType000 == null)
 				{
-					_bindableType000 = MetadataBuilder_000.Build();
+					element = ref _bindableTypes[0];
+					if(element == null)
+					{
+						element = MetadataBuilder_000.Build();
+					}
+					break;
 				}
-				return _bindableType000;
 				case "Uno.Toolkit.UI.AutoLayout":
-				if(_bindableType001 == null)
 				{
-					_bindableType001 = MetadataBuilder_001.Build();
+					element = ref _bindableTypes[1];
+					if(element == null)
+					{
+						element = MetadataBuilder_001.Build();
+					}
+					break;
 				}
-				return _bindableType001;
 				case "Windows.UI.Xaml.Controls.Control":
-				if(_bindableType002 == null)
 				{
-					_bindableType002 = MetadataBuilder_002.Build();
+					element = ref _bindableTypes[2];
+					if(element == null)
+					{
+						element = MetadataBuilder_002.Build();
+					}
+					break;
 				}
-				return _bindableType002;
 				case "Windows.UI.Xaml.FrameworkElement":
-				if(_bindableType003 == null)
 				{
-					_bindableType003 = MetadataBuilder_003.Build();
+					element = ref _bindableTypes[3];
+					if(element == null)
+					{
+						element = MetadataBuilder_003.Build();
+					}
+					break;
 				}
-				return _bindableType003;
 				case "Windows.UI.Xaml.UIElement":
-				if(_bindableType004 == null)
 				{
-					_bindableType004 = MetadataBuilder_004.Build();
+					element = ref _bindableTypes[4];
+					if(element == null)
+					{
+						element = MetadataBuilder_004.Build();
+					}
+					break;
 				}
-				return _bindableType004;
 				case "Uno.Toolkit.UI.CardContentControl":
-				if(_bindableType005 == null)
 				{
-					_bindableType005 = MetadataBuilder_005.Build();
+					element = ref _bindableTypes[5];
+					if(element == null)
+					{
+						element = MetadataBuilder_005.Build();
+					}
+					break;
 				}
-				return _bindableType005;
 				case "Windows.UI.Xaml.Controls.ContentControl":
-				if(_bindableType006 == null)
 				{
-					_bindableType006 = MetadataBuilder_006.Build();
+					element = ref _bindableTypes[6];
+					if(element == null)
+					{
+						element = MetadataBuilder_006.Build();
+					}
+					break;
 				}
-				return _bindableType006;
 				case "Uno.Toolkit.UI.Card":
-				if(_bindableType007 == null)
 				{
-					_bindableType007 = MetadataBuilder_007.Build();
+					element = ref _bindableTypes[7];
+					if(element == null)
+					{
+						element = MetadataBuilder_007.Build();
+					}
+					break;
 				}
-				return _bindableType007;
 				case "Uno.Toolkit.UI.Chip":
-				if(_bindableType008 == null)
 				{
-					_bindableType008 = MetadataBuilder_008.Build();
+					element = ref _bindableTypes[8];
+					if(element == null)
+					{
+						element = MetadataBuilder_008.Build();
+					}
+					break;
 				}
-				return _bindableType008;
 				case "Windows.UI.Xaml.Controls.Primitives.ToggleButton":
-				if(_bindableType009 == null)
 				{
-					_bindableType009 = MetadataBuilder_009.Build();
+					element = ref _bindableTypes[9];
+					if(element == null)
+					{
+						element = MetadataBuilder_009.Build();
+					}
+					break;
 				}
-				return _bindableType009;
 				case "Windows.UI.Xaml.Controls.Primitives.ButtonBase":
-				if(_bindableType010 == null)
 				{
-					_bindableType010 = MetadataBuilder_010.Build();
+					element = ref _bindableTypes[10];
+					if(element == null)
+					{
+						element = MetadataBuilder_010.Build();
+					}
+					break;
 				}
-				return _bindableType010;
 				case "Uno.Toolkit.UI.ChipGroup":
-				if(_bindableType011 == null)
 				{
-					_bindableType011 = MetadataBuilder_011.Build();
+					element = ref _bindableTypes[11];
+					if(element == null)
+					{
+						element = MetadataBuilder_011.Build();
+					}
+					break;
 				}
-				return _bindableType011;
 				case "Windows.UI.Xaml.Controls.ItemsControl":
-				if(_bindableType012 == null)
 				{
-					_bindableType012 = MetadataBuilder_012.Build();
+					element = ref _bindableTypes[12];
+					if(element == null)
+					{
+						element = MetadataBuilder_012.Build();
+					}
+					break;
 				}
-				return _bindableType012;
 				case "Uno.Toolkit.UI.Divider":
-				if(_bindableType013 == null)
 				{
-					_bindableType013 = MetadataBuilder_013.Build();
+					element = ref _bindableTypes[13];
+					if(element == null)
+					{
+						element = MetadataBuilder_013.Build();
+					}
+					break;
 				}
-				return _bindableType013;
 				case "Uno.Toolkit.UI.DrawerControl":
-				if(_bindableType014 == null)
 				{
-					_bindableType014 = MetadataBuilder_014.Build();
+					element = ref _bindableTypes[14];
+					if(element == null)
+					{
+						element = MetadataBuilder_014.Build();
+					}
+					break;
 				}
-				return _bindableType014;
 				case "Uno.Toolkit.UI.DrawerFlyoutPresenter":
-				if(_bindableType015 == null)
 				{
-					_bindableType015 = MetadataBuilder_015.Build();
+					element = ref _bindableTypes[15];
+					if(element == null)
+					{
+						element = MetadataBuilder_015.Build();
+					}
+					break;
 				}
-				return _bindableType015;
 				case "Uno.Toolkit.UI.ExtendedSplashScreen":
-				if(_bindableType016 == null)
 				{
-					_bindableType016 = MetadataBuilder_016.Build();
+					element = ref _bindableTypes[16];
+					if(element == null)
+					{
+						element = MetadataBuilder_016.Build();
+					}
+					break;
 				}
-				return _bindableType016;
 				case "Uno.Toolkit.UI.LoadingView":
-				if(_bindableType017 == null)
 				{
-					_bindableType017 = MetadataBuilder_017.Build();
+					element = ref _bindableTypes[17];
+					if(element == null)
+					{
+						element = MetadataBuilder_017.Build();
+					}
+					break;
 				}
-				return _bindableType017;
 				case "Uno.Toolkit.UI.CompositeLoadableSource":
-				if(_bindableType018 == null)
 				{
-					_bindableType018 = MetadataBuilder_018.Build();
+					element = ref _bindableTypes[18];
+					if(element == null)
+					{
+						element = MetadataBuilder_018.Build();
+					}
+					break;
 				}
-				return _bindableType018;
 				case "Uno.Toolkit.UI.LoadableSource":
-				if(_bindableType019 == null)
 				{
-					_bindableType019 = MetadataBuilder_019.Build();
+					element = ref _bindableTypes[19];
+					if(element == null)
+					{
+						element = MetadataBuilder_019.Build();
+					}
+					break;
 				}
-				return _bindableType019;
 				case "Uno.Toolkit.UI.CommandBarExtensions":
-				if(_bindableType020 == null)
 				{
-					_bindableType020 = MetadataBuilder_020.Build();
+					element = ref _bindableTypes[20];
+					if(element == null)
+					{
+						element = MetadataBuilder_020.Build();
+					}
+					break;
 				}
-				return _bindableType020;
 				case "Uno.Toolkit.UI.NavigationBar":
-				if(_bindableType021 == null)
 				{
-					_bindableType021 = MetadataBuilder_021.Build();
+					element = ref _bindableTypes[21];
+					if(element == null)
+					{
+						element = MetadataBuilder_021.Build();
+					}
+					break;
 				}
-				return _bindableType021;
 				case "Uno.Toolkit.UI.NavigationBarPresenter":
-				if(_bindableType022 == null)
 				{
-					_bindableType022 = MetadataBuilder_022.Build();
+					element = ref _bindableTypes[22];
+					if(element == null)
+					{
+						element = MetadataBuilder_022.Build();
+					}
+					break;
 				}
-				return _bindableType022;
 				case "Uno.Toolkit.UI.NavigationBarTemplateSettings":
-				if(_bindableType023 == null)
 				{
-					_bindableType023 = MetadataBuilder_023.Build();
+					element = ref _bindableTypes[23];
+					if(element == null)
+					{
+						element = MetadataBuilder_023.Build();
+					}
+					break;
 				}
-				return _bindableType023;
 				case "Uno.Toolkit.UI.SafeArea":
-				if(_bindableType024 == null)
 				{
-					_bindableType024 = MetadataBuilder_024.Build();
+					element = ref _bindableTypes[24];
+					if(element == null)
+					{
+						element = MetadataBuilder_024.Build();
+					}
+					break;
 				}
-				return _bindableType024;
 				case "Uno.Toolkit.UI.TabBar":
-				if(_bindableType025 == null)
 				{
-					_bindableType025 = MetadataBuilder_025.Build();
+					element = ref _bindableTypes[25];
+					if(element == null)
+					{
+						element = MetadataBuilder_025.Build();
+					}
+					break;
 				}
-				return _bindableType025;
 				case "Uno.Toolkit.UI.TabBarItem":
-				if(_bindableType026 == null)
 				{
-					_bindableType026 = MetadataBuilder_026.Build();
+					element = ref _bindableTypes[26];
+					if(element == null)
+					{
+						element = MetadataBuilder_026.Build();
+					}
+					break;
 				}
-				return _bindableType026;
 				case "Windows.UI.Xaml.Controls.Primitives.SelectorItem":
-				if(_bindableType027 == null)
 				{
-					_bindableType027 = MetadataBuilder_027.Build();
+					element = ref _bindableTypes[27];
+					if(element == null)
+					{
+						element = MetadataBuilder_027.Build();
+					}
+					break;
 				}
-				return _bindableType027;
 				case "Uno.Toolkit.UI.TabBarListPanel":
-				if(_bindableType028 == null)
 				{
-					_bindableType028 = MetadataBuilder_028.Build();
+					element = ref _bindableTypes[28];
+					if(element == null)
+					{
+						element = MetadataBuilder_028.Build();
+					}
+					break;
 				}
-				return _bindableType028;
 				case "Windows.UI.Xaml.Controls.Panel":
-				if(_bindableType029 == null)
 				{
-					_bindableType029 = MetadataBuilder_029.Build();
+					element = ref _bindableTypes[29];
+					if(element == null)
+					{
+						element = MetadataBuilder_029.Build();
+					}
+					break;
 				}
-				return _bindableType029;
 				case "Uno.Toolkit.UI.TabBarSelectionIndicatorPresenter":
-				if(_bindableType030 == null)
 				{
-					_bindableType030 = MetadataBuilder_030.Build();
+					element = ref _bindableTypes[30];
+					if(element == null)
+					{
+						element = MetadataBuilder_030.Build();
+					}
+					break;
 				}
-				return _bindableType030;
 				case "Windows.UI.Xaml.Controls.Canvas":
-				if(_bindableType031 == null)
 				{
-					_bindableType031 = MetadataBuilder_031.Build();
+					element = ref _bindableTypes[31];
+					if(element == null)
+					{
+						element = MetadataBuilder_031.Build();
+					}
+					break;
 				}
-				return _bindableType031;
 				case "Uno.Toolkit.UI.TabBarTemplateSettings":
-				if(_bindableType032 == null)
 				{
-					_bindableType032 = MetadataBuilder_032.Build();
+					element = ref _bindableTypes[32];
+					if(element == null)
+					{
+						element = MetadataBuilder_032.Build();
+					}
+					break;
 				}
-				return _bindableType032;
 				case "Microsoft.UI.Xaml.Automation.Peers.BreadcrumbBarItemAutomationPeer":
-				if(_bindableType033 == null)
 				{
-					_bindableType033 = MetadataBuilder_033.Build();
+					element = ref _bindableTypes[33];
+					if(element == null)
+					{
+						element = MetadataBuilder_033.Build();
+					}
+					break;
 				}
-				return _bindableType033;
 				case "Windows.UI.Xaml.Automation.Peers.FrameworkElementAutomationPeer":
-				if(_bindableType034 == null)
 				{
-					_bindableType034 = MetadataBuilder_034.Build();
+					element = ref _bindableTypes[34];
+					if(element == null)
+					{
+						element = MetadataBuilder_034.Build();
+					}
+					break;
 				}
-				return _bindableType034;
 				case "Windows.UI.Xaml.Automation.Peers.AutomationPeer":
-				if(_bindableType035 == null)
 				{
-					_bindableType035 = MetadataBuilder_035.Build();
+					element = ref _bindableTypes[35];
+					if(element == null)
+					{
+						element = MetadataBuilder_035.Build();
+					}
+					break;
 				}
-				return _bindableType035;
 				case "Microsoft.UI.Xaml.Automation.Peers.InfoBarAutomationPeer":
-				if(_bindableType036 == null)
 				{
-					_bindableType036 = MetadataBuilder_036.Build();
+					element = ref _bindableTypes[36];
+					if(element == null)
+					{
+						element = MetadataBuilder_036.Build();
+					}
+					break;
 				}
-				return _bindableType036;
 				case "Microsoft.UI.Xaml.Automation.Peers.NavigationViewAutomationPeer":
-				if(_bindableType037 == null)
 				{
-					_bindableType037 = MetadataBuilder_037.Build();
+					element = ref _bindableTypes[37];
+					if(element == null)
+					{
+						element = MetadataBuilder_037.Build();
+					}
+					break;
 				}
-				return _bindableType037;
 				case "Microsoft.UI.Xaml.Automation.Peers.NavigationViewItemAutomationPeer":
-				if(_bindableType038 == null)
 				{
-					_bindableType038 = MetadataBuilder_038.Build();
+					element = ref _bindableTypes[38];
+					if(element == null)
+					{
+						element = MetadataBuilder_038.Build();
+					}
+					break;
 				}
-				return _bindableType038;
 				case "Microsoft.UI.Xaml.Automation.Peers.PagerControlAutomationPeer":
-				if(_bindableType039 == null)
 				{
-					_bindableType039 = MetadataBuilder_039.Build();
+					element = ref _bindableTypes[39];
+					if(element == null)
+					{
+						element = MetadataBuilder_039.Build();
+					}
+					break;
 				}
-				return _bindableType039;
 				case "Microsoft.UI.Xaml.Automation.Peers.PipsPagerAutomationPeer":
-				if(_bindableType040 == null)
 				{
-					_bindableType040 = MetadataBuilder_040.Build();
+					element = ref _bindableTypes[40];
+					if(element == null)
+					{
+						element = MetadataBuilder_040.Build();
+					}
+					break;
 				}
-				return _bindableType040;
 				case "Microsoft.UI.Xaml.Automation.Peers.RatingControlAutomationPeer":
-				if(_bindableType041 == null)
 				{
-					_bindableType041 = MetadataBuilder_041.Build();
+					element = ref _bindableTypes[41];
+					if(element == null)
+					{
+						element = MetadataBuilder_041.Build();
+					}
+					break;
 				}
-				return _bindableType041;
 				case "Microsoft.UI.Xaml.Automation.Peers.RepeaterAutomationPeer":
-				if(_bindableType042 == null)
 				{
-					_bindableType042 = MetadataBuilder_042.Build();
+					element = ref _bindableTypes[42];
+					if(element == null)
+					{
+						element = MetadataBuilder_042.Build();
+					}
+					break;
 				}
-				return _bindableType042;
 				case "Microsoft.UI.Xaml.Automation.Peers.SplitButtonAutomationPeer":
-				if(_bindableType043 == null)
 				{
-					_bindableType043 = MetadataBuilder_043.Build();
+					element = ref _bindableTypes[43];
+					if(element == null)
+					{
+						element = MetadataBuilder_043.Build();
+					}
+					break;
 				}
-				return _bindableType043;
 				case "Microsoft.UI.Xaml.Automation.Peers.ToggleSplitButtonAutomationPeer":
-				if(_bindableType044 == null)
 				{
-					_bindableType044 = MetadataBuilder_044.Build();
+					element = ref _bindableTypes[44];
+					if(element == null)
+					{
+						element = MetadataBuilder_044.Build();
+					}
+					break;
 				}
-				return _bindableType044;
 				case "Microsoft.UI.Xaml.Automation.Peers.TabViewAutomationPeer":
-				if(_bindableType045 == null)
 				{
-					_bindableType045 = MetadataBuilder_045.Build();
+					element = ref _bindableTypes[45];
+					if(element == null)
+					{
+						element = MetadataBuilder_045.Build();
+					}
+					break;
 				}
-				return _bindableType045;
 				case "Microsoft.UI.Xaml.Automation.Peers.TabViewItemAutomationPeer":
-				if(_bindableType046 == null)
 				{
-					_bindableType046 = MetadataBuilder_046.Build();
+					element = ref _bindableTypes[46];
+					if(element == null)
+					{
+						element = MetadataBuilder_046.Build();
+					}
+					break;
 				}
-				return _bindableType046;
 				case "Windows.UI.Xaml.Automation.Peers.ListViewItemAutomationPeer":
-				if(_bindableType047 == null)
 				{
-					_bindableType047 = MetadataBuilder_047.Build();
+					element = ref _bindableTypes[47];
+					if(element == null)
+					{
+						element = MetadataBuilder_047.Build();
+					}
+					break;
 				}
-				return _bindableType047;
 				case "Microsoft.UI.Xaml.Automation.Peers.TreeViewItemAutomationPeer":
-				if(_bindableType048 == null)
 				{
-					_bindableType048 = MetadataBuilder_048.Build();
+					element = ref _bindableTypes[48];
+					if(element == null)
+					{
+						element = MetadataBuilder_048.Build();
+					}
+					break;
 				}
-				return _bindableType048;
 				case "Microsoft.UI.Xaml.Automation.Peers.TreeViewItemDataAutomationPeer":
-				if(_bindableType049 == null)
 				{
-					_bindableType049 = MetadataBuilder_049.Build();
+					element = ref _bindableTypes[49];
+					if(element == null)
+					{
+						element = MetadataBuilder_049.Build();
+					}
+					break;
 				}
-				return _bindableType049;
 				case "Windows.UI.Xaml.Automation.Peers.ItemAutomationPeer":
-				if(_bindableType050 == null)
 				{
-					_bindableType050 = MetadataBuilder_050.Build();
+					element = ref _bindableTypes[50];
+					if(element == null)
+					{
+						element = MetadataBuilder_050.Build();
+					}
+					break;
 				}
-				return _bindableType050;
 				case "Microsoft.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer":
-				if(_bindableType051 == null)
 				{
-					_bindableType051 = MetadataBuilder_051.Build();
+					element = ref _bindableTypes[51];
+					if(element == null)
+					{
+						element = MetadataBuilder_051.Build();
+					}
+					break;
 				}
-				return _bindableType051;
 				case "Windows.UI.Xaml.Automation.Peers.ListViewAutomationPeer":
-				if(_bindableType052 == null)
 				{
-					_bindableType052 = MetadataBuilder_052.Build();
+					element = ref _bindableTypes[52];
+					if(element == null)
+					{
+						element = MetadataBuilder_052.Build();
+					}
+					break;
 				}
-				return _bindableType052;
 				case "Windows.UI.Xaml.Automation.Peers.ListViewBaseAutomationPeer":
-				if(_bindableType053 == null)
 				{
-					_bindableType053 = MetadataBuilder_053.Build();
+					element = ref _bindableTypes[53];
+					if(element == null)
+					{
+						element = MetadataBuilder_053.Build();
+					}
+					break;
 				}
-				return _bindableType053;
 				case "Windows.UI.Xaml.Automation.Peers.SelectorAutomationPeer":
-				if(_bindableType054 == null)
 				{
-					_bindableType054 = MetadataBuilder_054.Build();
+					element = ref _bindableTypes[54];
+					if(element == null)
+					{
+						element = MetadataBuilder_054.Build();
+					}
+					break;
 				}
-				return _bindableType054;
 				case "Windows.UI.Xaml.Automation.Peers.ItemsControlAutomationPeer":
-				if(_bindableType055 == null)
 				{
-					_bindableType055 = MetadataBuilder_055.Build();
+					element = ref _bindableTypes[55];
+					if(element == null)
+					{
+						element = MetadataBuilder_055.Build();
+					}
+					break;
 				}
-				return _bindableType055;
 				case "Microsoft.UI.Xaml.Controls.AnimatedIcon":
-				if(_bindableType056 == null)
 				{
-					_bindableType056 = MetadataBuilder_056.Build();
+					element = ref _bindableTypes[56];
+					if(element == null)
+					{
+						element = MetadataBuilder_056.Build();
+					}
+					break;
 				}
-				return _bindableType056;
 				case "Windows.UI.Xaml.Controls.IconElement":
-				if(_bindableType057 == null)
 				{
-					_bindableType057 = MetadataBuilder_057.Build();
+					element = ref _bindableTypes[57];
+					if(element == null)
+					{
+						element = MetadataBuilder_057.Build();
+					}
+					break;
 				}
-				return _bindableType057;
 				case "Microsoft.UI.Xaml.Controls.BreadcrumbBar":
-				if(_bindableType058 == null)
 				{
-					_bindableType058 = MetadataBuilder_058.Build();
+					element = ref _bindableTypes[58];
+					if(element == null)
+					{
+						element = MetadataBuilder_058.Build();
+					}
+					break;
 				}
-				return _bindableType058;
 				case "Microsoft.UI.Xaml.Controls.BreadcrumbBarItem":
-				if(_bindableType059 == null)
 				{
-					_bindableType059 = MetadataBuilder_059.Build();
+					element = ref _bindableTypes[59];
+					if(element == null)
+					{
+						element = MetadataBuilder_059.Build();
+					}
+					break;
 				}
-				return _bindableType059;
 				case "Microsoft.UI.Xaml.Controls.ColorPicker":
-				if(_bindableType060 == null)
 				{
-					_bindableType060 = MetadataBuilder_060.Build();
+					element = ref _bindableTypes[60];
+					if(element == null)
+					{
+						element = MetadataBuilder_060.Build();
+					}
+					break;
 				}
-				return _bindableType060;
 				case "Microsoft.UI.Xaml.Controls.Expander":
-				if(_bindableType061 == null)
 				{
-					_bindableType061 = MetadataBuilder_061.Build();
+					element = ref _bindableTypes[61];
+					if(element == null)
+					{
+						element = MetadataBuilder_061.Build();
+					}
+					break;
 				}
-				return _bindableType061;
 				case "Microsoft.UI.Xaml.Controls.ExpanderAutomationPeer":
-				if(_bindableType062 == null)
 				{
-					_bindableType062 = MetadataBuilder_062.Build();
+					element = ref _bindableTypes[62];
+					if(element == null)
+					{
+						element = MetadataBuilder_062.Build();
+					}
+					break;
 				}
-				return _bindableType062;
 				case "Microsoft.UI.Xaml.Controls.ExpanderTemplateSettings":
-				if(_bindableType063 == null)
 				{
-					_bindableType063 = MetadataBuilder_063.Build();
+					element = ref _bindableTypes[63];
+					if(element == null)
+					{
+						element = MetadataBuilder_063.Build();
+					}
+					break;
 				}
-				return _bindableType063;
 				case "Microsoft.UI.Xaml.Controls.AnimatedIconSource":
-				if(_bindableType064 == null)
 				{
-					_bindableType064 = MetadataBuilder_064.Build();
+					element = ref _bindableTypes[64];
+					if(element == null)
+					{
+						element = MetadataBuilder_064.Build();
+					}
+					break;
 				}
-				return _bindableType064;
 				case "Microsoft.UI.Xaml.Controls.IconSource":
-				if(_bindableType065 == null)
 				{
-					_bindableType065 = MetadataBuilder_065.Build();
+					element = ref _bindableTypes[65];
+					if(element == null)
+					{
+						element = MetadataBuilder_065.Build();
+					}
+					break;
 				}
-				return _bindableType065;
 				case "Microsoft.UI.Xaml.Controls.BitmapIconSource":
-				if(_bindableType066 == null)
 				{
-					_bindableType066 = MetadataBuilder_066.Build();
+					element = ref _bindableTypes[66];
+					if(element == null)
+					{
+						element = MetadataBuilder_066.Build();
+					}
+					break;
 				}
-				return _bindableType066;
 				case "Microsoft.UI.Xaml.Controls.FontIconSource":
-				if(_bindableType067 == null)
 				{
-					_bindableType067 = MetadataBuilder_067.Build();
+					element = ref _bindableTypes[67];
+					if(element == null)
+					{
+						element = MetadataBuilder_067.Build();
+					}
+					break;
 				}
-				return _bindableType067;
 				case "Microsoft.UI.Xaml.Controls.ImageIconSource":
-				if(_bindableType068 == null)
 				{
-					_bindableType068 = MetadataBuilder_068.Build();
+					element = ref _bindableTypes[68];
+					if(element == null)
+					{
+						element = MetadataBuilder_068.Build();
+					}
+					break;
 				}
-				return _bindableType068;
 				case "Microsoft.UI.Xaml.Controls.PathIconSource":
-				if(_bindableType069 == null)
 				{
-					_bindableType069 = MetadataBuilder_069.Build();
+					element = ref _bindableTypes[69];
+					if(element == null)
+					{
+						element = MetadataBuilder_069.Build();
+					}
+					break;
 				}
-				return _bindableType069;
 				case "Microsoft.UI.Xaml.Controls.SymbolIconSource":
-				if(_bindableType070 == null)
 				{
-					_bindableType070 = MetadataBuilder_070.Build();
+					element = ref _bindableTypes[70];
+					if(element == null)
+					{
+						element = MetadataBuilder_070.Build();
+					}
+					break;
 				}
-				return _bindableType070;
 				case "Microsoft.UI.Xaml.Controls.ImageIcon":
-				if(_bindableType071 == null)
 				{
-					_bindableType071 = MetadataBuilder_071.Build();
+					element = ref _bindableTypes[71];
+					if(element == null)
+					{
+						element = MetadataBuilder_071.Build();
+					}
+					break;
 				}
-				return _bindableType071;
 				case "Microsoft.UI.Xaml.Controls.InfoBadge":
-				if(_bindableType072 == null)
 				{
-					_bindableType072 = MetadataBuilder_072.Build();
+					element = ref _bindableTypes[72];
+					if(element == null)
+					{
+						element = MetadataBuilder_072.Build();
+					}
+					break;
 				}
-				return _bindableType072;
 				case "Microsoft.UI.Xaml.Controls.InfoBadgeTemplateSettings":
-				if(_bindableType073 == null)
 				{
-					_bindableType073 = MetadataBuilder_073.Build();
+					element = ref _bindableTypes[73];
+					if(element == null)
+					{
+						element = MetadataBuilder_073.Build();
+					}
+					break;
 				}
-				return _bindableType073;
 				case "Microsoft.UI.Xaml.Controls.InfoBar":
-				if(_bindableType074 == null)
 				{
-					_bindableType074 = MetadataBuilder_074.Build();
+					element = ref _bindableTypes[74];
+					if(element == null)
+					{
+						element = MetadataBuilder_074.Build();
+					}
+					break;
 				}
-				return _bindableType074;
 				case "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings":
-				if(_bindableType075 == null)
 				{
-					_bindableType075 = MetadataBuilder_075.Build();
+					element = ref _bindableTypes[75];
+					if(element == null)
+					{
+						element = MetadataBuilder_075.Build();
+					}
+					break;
 				}
-				return _bindableType075;
 				case "Microsoft.UI.Xaml.Controls.LayoutPanel":
-				if(_bindableType076 == null)
 				{
-					_bindableType076 = MetadataBuilder_076.Build();
+					element = ref _bindableTypes[76];
+					if(element == null)
+					{
+						element = MetadataBuilder_076.Build();
+					}
+					break;
 				}
-				return _bindableType076;
 				case "Microsoft.UI.Xaml.Controls.NavigationView":
-				if(_bindableType077 == null)
 				{
-					_bindableType077 = MetadataBuilder_077.Build();
+					element = ref _bindableTypes[77];
+					if(element == null)
+					{
+						element = MetadataBuilder_077.Build();
+					}
+					break;
 				}
-				return _bindableType077;
 				case "Microsoft.UI.Xaml.Controls.NavigationViewItem":
-				if(_bindableType078 == null)
 				{
-					_bindableType078 = MetadataBuilder_078.Build();
+					element = ref _bindableTypes[78];
+					if(element == null)
+					{
+						element = MetadataBuilder_078.Build();
+					}
+					break;
 				}
-				return _bindableType078;
 				case "Microsoft.UI.Xaml.Controls.NavigationViewItemBase":
-				if(_bindableType079 == null)
 				{
-					_bindableType079 = MetadataBuilder_079.Build();
+					element = ref _bindableTypes[79];
+					if(element == null)
+					{
+						element = MetadataBuilder_079.Build();
+					}
+					break;
 				}
-				return _bindableType079;
 				case "Microsoft.UI.Xaml.Controls.NavigationViewItemHeader":
-				if(_bindableType080 == null)
 				{
-					_bindableType080 = MetadataBuilder_080.Build();
+					element = ref _bindableTypes[80];
+					if(element == null)
+					{
+						element = MetadataBuilder_080.Build();
+					}
+					break;
 				}
-				return _bindableType080;
 				case "Microsoft.UI.Xaml.Controls.NavigationViewItemSeparator":
-				if(_bindableType081 == null)
 				{
-					_bindableType081 = MetadataBuilder_081.Build();
+					element = ref _bindableTypes[81];
+					if(element == null)
+					{
+						element = MetadataBuilder_081.Build();
+					}
+					break;
 				}
-				return _bindableType081;
 				case "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings":
-				if(_bindableType082 == null)
 				{
-					_bindableType082 = MetadataBuilder_082.Build();
+					element = ref _bindableTypes[82];
+					if(element == null)
+					{
+						element = MetadataBuilder_082.Build();
+					}
+					break;
 				}
-				return _bindableType082;
 				case "Microsoft.UI.Xaml.Controls.NumberBox":
-				if(_bindableType083 == null)
 				{
-					_bindableType083 = MetadataBuilder_083.Build();
+					element = ref _bindableTypes[83];
+					if(element == null)
+					{
+						element = MetadataBuilder_083.Build();
+					}
+					break;
 				}
-				return _bindableType083;
 				case "Microsoft.UI.Xaml.Controls.NumberBoxAutomationPeer":
-				if(_bindableType084 == null)
 				{
-					_bindableType084 = MetadataBuilder_084.Build();
+					element = ref _bindableTypes[84];
+					if(element == null)
+					{
+						element = MetadataBuilder_084.Build();
+					}
+					break;
 				}
-				return _bindableType084;
 				case "Microsoft.UI.Xaml.Controls.PagerControl":
-				if(_bindableType085 == null)
 				{
-					_bindableType085 = MetadataBuilder_085.Build();
+					element = ref _bindableTypes[85];
+					if(element == null)
+					{
+						element = MetadataBuilder_085.Build();
+					}
+					break;
 				}
-				return _bindableType085;
 				case "Microsoft.UI.Xaml.Controls.PagerControlTemplateSettings":
-				if(_bindableType086 == null)
 				{
-					_bindableType086 = MetadataBuilder_086.Build();
+					element = ref _bindableTypes[86];
+					if(element == null)
+					{
+						element = MetadataBuilder_086.Build();
+					}
+					break;
 				}
-				return _bindableType086;
 				case "Microsoft.UI.Xaml.Controls.PipsPager":
-				if(_bindableType087 == null)
 				{
-					_bindableType087 = MetadataBuilder_087.Build();
+					element = ref _bindableTypes[87];
+					if(element == null)
+					{
+						element = MetadataBuilder_087.Build();
+					}
+					break;
 				}
-				return _bindableType087;
 				case "Microsoft.UI.Xaml.Controls.PipsPagerTemplateSettings":
-				if(_bindableType088 == null)
 				{
-					_bindableType088 = MetadataBuilder_088.Build();
+					element = ref _bindableTypes[88];
+					if(element == null)
+					{
+						element = MetadataBuilder_088.Build();
+					}
+					break;
 				}
-				return _bindableType088;
 				case "Microsoft.UI.Xaml.Controls.ProgressBar":
-				if(_bindableType089 == null)
 				{
-					_bindableType089 = MetadataBuilder_089.Build();
+					element = ref _bindableTypes[89];
+					if(element == null)
+					{
+						element = MetadataBuilder_089.Build();
+					}
+					break;
 				}
-				return _bindableType089;
 				case "Windows.UI.Xaml.Controls.Primitives.RangeBase":
-				if(_bindableType090 == null)
 				{
-					_bindableType090 = MetadataBuilder_090.Build();
+					element = ref _bindableTypes[90];
+					if(element == null)
+					{
+						element = MetadataBuilder_090.Build();
+					}
+					break;
 				}
-				return _bindableType090;
 				case "Microsoft.UI.Xaml.Controls.ProgressBarAutomationPeer":
-				if(_bindableType091 == null)
 				{
-					_bindableType091 = MetadataBuilder_091.Build();
+					element = ref _bindableTypes[91];
+					if(element == null)
+					{
+						element = MetadataBuilder_091.Build();
+					}
+					break;
 				}
-				return _bindableType091;
 				case "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings":
-				if(_bindableType092 == null)
 				{
-					_bindableType092 = MetadataBuilder_092.Build();
+					element = ref _bindableTypes[92];
+					if(element == null)
+					{
+						element = MetadataBuilder_092.Build();
+					}
+					break;
 				}
-				return _bindableType092;
 				case "Microsoft.UI.Xaml.Controls.ProgressRing":
-				if(_bindableType093 == null)
 				{
-					_bindableType093 = MetadataBuilder_093.Build();
+					element = ref _bindableTypes[93];
+					if(element == null)
+					{
+						element = MetadataBuilder_093.Build();
+					}
+					break;
 				}
-				return _bindableType093;
 				case "Microsoft.UI.Xaml.Controls.ProgressRingAutomationPeer":
-				if(_bindableType094 == null)
 				{
-					_bindableType094 = MetadataBuilder_094.Build();
+					element = ref _bindableTypes[94];
+					if(element == null)
+					{
+						element = MetadataBuilder_094.Build();
+					}
+					break;
 				}
-				return _bindableType094;
 				case "Microsoft.UI.Xaml.Controls.RefreshContainer":
-				if(_bindableType095 == null)
 				{
-					_bindableType095 = MetadataBuilder_095.Build();
+					element = ref _bindableTypes[95];
+					if(element == null)
+					{
+						element = MetadataBuilder_095.Build();
+					}
+					break;
 				}
-				return _bindableType095;
 				case "Microsoft.UI.Xaml.Controls.RefreshVisualizer":
-				if(_bindableType096 == null)
 				{
-					_bindableType096 = MetadataBuilder_096.Build();
+					element = ref _bindableTypes[96];
+					if(element == null)
+					{
+						element = MetadataBuilder_096.Build();
+					}
+					break;
 				}
-				return _bindableType096;
 				case "Microsoft.UI.Xaml.Controls.RadioButtons":
-				if(_bindableType097 == null)
 				{
-					_bindableType097 = MetadataBuilder_097.Build();
+					element = ref _bindableTypes[97];
+					if(element == null)
+					{
+						element = MetadataBuilder_097.Build();
+					}
+					break;
 				}
-				return _bindableType097;
 				case "Microsoft.UI.Xaml.Controls.RadioMenuFlyoutItem":
-				if(_bindableType098 == null)
 				{
-					_bindableType098 = MetadataBuilder_098.Build();
+					element = ref _bindableTypes[98];
+					if(element == null)
+					{
+						element = MetadataBuilder_098.Build();
+					}
+					break;
 				}
-				return _bindableType098;
 				case "Windows.UI.Xaml.Controls.ToggleMenuFlyoutItem":
-				if(_bindableType099 == null)
 				{
-					_bindableType099 = MetadataBuilder_099.Build();
+					element = ref _bindableTypes[99];
+					if(element == null)
+					{
+						element = MetadataBuilder_099.Build();
+					}
+					break;
 				}
-				return _bindableType099;
 				case "Windows.UI.Xaml.Controls.MenuFlyoutItem":
-				if(_bindableType100 == null)
 				{
-					_bindableType100 = MetadataBuilder_100.Build();
+					element = ref _bindableTypes[100];
+					if(element == null)
+					{
+						element = MetadataBuilder_100.Build();
+					}
+					break;
 				}
-				return _bindableType100;
 				case "Windows.UI.Xaml.Controls.MenuFlyoutItemBase":
-				if(_bindableType101 == null)
 				{
-					_bindableType101 = MetadataBuilder_101.Build();
+					element = ref _bindableTypes[101];
+					if(element == null)
+					{
+						element = MetadataBuilder_101.Build();
+					}
+					break;
 				}
-				return _bindableType101;
 				case "Microsoft.UI.Xaml.Controls.RatingControl":
-				if(_bindableType102 == null)
 				{
-					_bindableType102 = MetadataBuilder_102.Build();
+					element = ref _bindableTypes[102];
+					if(element == null)
+					{
+						element = MetadataBuilder_102.Build();
+					}
+					break;
 				}
-				return _bindableType102;
 				case "Microsoft.UI.Xaml.Controls.RatingItemFontInfo":
-				if(_bindableType103 == null)
 				{
-					_bindableType103 = MetadataBuilder_103.Build();
+					element = ref _bindableTypes[103];
+					if(element == null)
+					{
+						element = MetadataBuilder_103.Build();
+					}
+					break;
 				}
-				return _bindableType103;
 				case "Microsoft.UI.Xaml.Controls.RatingItemInfo":
-				if(_bindableType104 == null)
 				{
-					_bindableType104 = MetadataBuilder_104.Build();
+					element = ref _bindableTypes[104];
+					if(element == null)
+					{
+						element = MetadataBuilder_104.Build();
+					}
+					break;
 				}
-				return _bindableType104;
 				case "Microsoft.UI.Xaml.Controls.RatingItemImageInfo":
-				if(_bindableType105 == null)
 				{
-					_bindableType105 = MetadataBuilder_105.Build();
+					element = ref _bindableTypes[105];
+					if(element == null)
+					{
+						element = MetadataBuilder_105.Build();
+					}
+					break;
 				}
-				return _bindableType105;
 				case "Microsoft.UI.Xaml.Controls.FlowLayout":
-				if(_bindableType106 == null)
 				{
-					_bindableType106 = MetadataBuilder_106.Build();
+					element = ref _bindableTypes[106];
+					if(element == null)
+					{
+						element = MetadataBuilder_106.Build();
+					}
+					break;
 				}
-				return _bindableType106;
 				case "Microsoft.UI.Xaml.Controls.VirtualizingLayout":
-				if(_bindableType107 == null)
 				{
-					_bindableType107 = MetadataBuilder_107.Build();
+					element = ref _bindableTypes[107];
+					if(element == null)
+					{
+						element = MetadataBuilder_107.Build();
+					}
+					break;
 				}
-				return _bindableType107;
 				case "Microsoft.UI.Xaml.Controls.Layout":
-				if(_bindableType108 == null)
 				{
-					_bindableType108 = MetadataBuilder_108.Build();
+					element = ref _bindableTypes[108];
+					if(element == null)
+					{
+						element = MetadataBuilder_108.Build();
+					}
+					break;
 				}
-				return _bindableType108;
 				case "Microsoft.UI.Xaml.Controls.ItemsRepeater":
-				if(_bindableType109 == null)
 				{
-					_bindableType109 = MetadataBuilder_109.Build();
+					element = ref _bindableTypes[109];
+					if(element == null)
+					{
+						element = MetadataBuilder_109.Build();
+					}
+					break;
 				}
-				return _bindableType109;
 				case "Microsoft.UI.Xaml.Controls.ItemsRepeaterScrollHost":
-				if(_bindableType110 == null)
 				{
-					_bindableType110 = MetadataBuilder_110.Build();
+					element = ref _bindableTypes[110];
+					if(element == null)
+					{
+						element = MetadataBuilder_110.Build();
+					}
+					break;
 				}
-				return _bindableType110;
 				case "Microsoft.UI.Xaml.Controls.NonVirtualizingLayout":
-				if(_bindableType111 == null)
 				{
-					_bindableType111 = MetadataBuilder_111.Build();
+					element = ref _bindableTypes[111];
+					if(element == null)
+					{
+						element = MetadataBuilder_111.Build();
+					}
+					break;
 				}
-				return _bindableType111;
 				case "Microsoft.UI.Xaml.Controls.StackLayout":
-				if(_bindableType112 == null)
 				{
-					_bindableType112 = MetadataBuilder_112.Build();
+					element = ref _bindableTypes[112];
+					if(element == null)
+					{
+						element = MetadataBuilder_112.Build();
+					}
+					break;
 				}
-				return _bindableType112;
 				case "Microsoft.UI.Xaml.Controls.UniformGridLayout":
-				if(_bindableType113 == null)
 				{
-					_bindableType113 = MetadataBuilder_113.Build();
+					element = ref _bindableTypes[113];
+					if(element == null)
+					{
+						element = MetadataBuilder_113.Build();
+					}
+					break;
 				}
-				return _bindableType113;
 				case "Microsoft.UI.Xaml.Controls.SplitButton":
-				if(_bindableType114 == null)
 				{
-					_bindableType114 = MetadataBuilder_114.Build();
+					element = ref _bindableTypes[114];
+					if(element == null)
+					{
+						element = MetadataBuilder_114.Build();
+					}
+					break;
 				}
-				return _bindableType114;
 				case "Microsoft.UI.Xaml.Controls.ToggleSplitButton":
-				if(_bindableType115 == null)
 				{
-					_bindableType115 = MetadataBuilder_115.Build();
+					element = ref _bindableTypes[115];
+					if(element == null)
+					{
+						element = MetadataBuilder_115.Build();
+					}
+					break;
 				}
-				return _bindableType115;
 				case "Microsoft.UI.Xaml.Controls.TabView":
-				if(_bindableType116 == null)
 				{
-					_bindableType116 = MetadataBuilder_116.Build();
+					element = ref _bindableTypes[116];
+					if(element == null)
+					{
+						element = MetadataBuilder_116.Build();
+					}
+					break;
 				}
-				return _bindableType116;
 				case "Microsoft.UI.Xaml.Controls.TabViewItem":
-				if(_bindableType117 == null)
 				{
-					_bindableType117 = MetadataBuilder_117.Build();
+					element = ref _bindableTypes[117];
+					if(element == null)
+					{
+						element = MetadataBuilder_117.Build();
+					}
+					break;
 				}
-				return _bindableType117;
 				case "Windows.UI.Xaml.Controls.ListViewItem":
-				if(_bindableType118 == null)
 				{
-					_bindableType118 = MetadataBuilder_118.Build();
+					element = ref _bindableTypes[118];
+					if(element == null)
+					{
+						element = MetadataBuilder_118.Build();
+					}
+					break;
 				}
-				return _bindableType118;
 				case "Microsoft.UI.Xaml.Controls.TabViewItemTemplateSettings":
-				if(_bindableType119 == null)
 				{
-					_bindableType119 = MetadataBuilder_119.Build();
+					element = ref _bindableTypes[119];
+					if(element == null)
+					{
+						element = MetadataBuilder_119.Build();
+					}
+					break;
 				}
-				return _bindableType119;
 				case "Microsoft.UI.Xaml.Controls.TreeView":
-				if(_bindableType120 == null)
 				{
-					_bindableType120 = MetadataBuilder_120.Build();
+					element = ref _bindableTypes[120];
+					if(element == null)
+					{
+						element = MetadataBuilder_120.Build();
+					}
+					break;
 				}
-				return _bindableType120;
 				case "Microsoft.UI.Xaml.Controls.TreeViewItem":
-				if(_bindableType121 == null)
 				{
-					_bindableType121 = MetadataBuilder_121.Build();
+					element = ref _bindableTypes[121];
+					if(element == null)
+					{
+						element = MetadataBuilder_121.Build();
+					}
+					break;
 				}
-				return _bindableType121;
 				case "Microsoft.UI.Xaml.Controls.TreeViewItemTemplateSettings":
-				if(_bindableType122 == null)
 				{
-					_bindableType122 = MetadataBuilder_122.Build();
+					element = ref _bindableTypes[122];
+					if(element == null)
+					{
+						element = MetadataBuilder_122.Build();
+					}
+					break;
 				}
-				return _bindableType122;
 				case "Microsoft.UI.Xaml.Controls.TreeViewList":
-				if(_bindableType123 == null)
 				{
-					_bindableType123 = MetadataBuilder_123.Build();
+					element = ref _bindableTypes[123];
+					if(element == null)
+					{
+						element = MetadataBuilder_123.Build();
+					}
+					break;
 				}
-				return _bindableType123;
 				case "Windows.UI.Xaml.Controls.ListView":
-				if(_bindableType124 == null)
 				{
-					_bindableType124 = MetadataBuilder_124.Build();
+					element = ref _bindableTypes[124];
+					if(element == null)
+					{
+						element = MetadataBuilder_124.Build();
+					}
+					break;
 				}
-				return _bindableType124;
 				case "Windows.UI.Xaml.Controls.ListViewBase":
-				if(_bindableType125 == null)
 				{
-					_bindableType125 = MetadataBuilder_125.Build();
+					element = ref _bindableTypes[125];
+					if(element == null)
+					{
+						element = MetadataBuilder_125.Build();
+					}
+					break;
 				}
-				return _bindableType125;
 				case "Windows.UI.Xaml.Controls.Primitives.Selector":
-				if(_bindableType126 == null)
 				{
-					_bindableType126 = MetadataBuilder_126.Build();
+					element = ref _bindableTypes[126];
+					if(element == null)
+					{
+						element = MetadataBuilder_126.Build();
+					}
+					break;
 				}
-				return _bindableType126;
 				case "Microsoft.UI.Xaml.Controls.TreeViewNode":
-				if(_bindableType127 == null)
 				{
-					_bindableType127 = MetadataBuilder_127.Build();
+					element = ref _bindableTypes[127];
+					if(element == null)
+					{
+						element = MetadataBuilder_127.Build();
+					}
+					break;
 				}
-				return _bindableType127;
 				case "Microsoft.UI.Xaml.Controls.TwoPaneView":
-				if(_bindableType128 == null)
 				{
-					_bindableType128 = MetadataBuilder_128.Build();
+					element = ref _bindableTypes[128];
+					if(element == null)
+					{
+						element = MetadataBuilder_128.Build();
+					}
+					break;
 				}
-				return _bindableType128;
 				case "Microsoft.UI.Xaml.Controls.Primitives.ColorPickerSlider":
-				if(_bindableType129 == null)
 				{
-					_bindableType129 = MetadataBuilder_129.Build();
+					element = ref _bindableTypes[129];
+					if(element == null)
+					{
+						element = MetadataBuilder_129.Build();
+					}
+					break;
 				}
-				return _bindableType129;
 				case "Windows.UI.Xaml.Controls.Slider":
-				if(_bindableType130 == null)
 				{
-					_bindableType130 = MetadataBuilder_130.Build();
+					element = ref _bindableTypes[130];
+					if(element == null)
+					{
+						element = MetadataBuilder_130.Build();
+					}
+					break;
 				}
-				return _bindableType130;
 				case "Microsoft.UI.Xaml.Controls.Primitives.ColorPickerSliderAutomationPeer":
-				if(_bindableType131 == null)
 				{
-					_bindableType131 = MetadataBuilder_131.Build();
+					element = ref _bindableTypes[131];
+					if(element == null)
+					{
+						element = MetadataBuilder_131.Build();
+					}
+					break;
 				}
-				return _bindableType131;
 				case "Microsoft.UI.Xaml.Controls.Primitives.ColorSpectrum":
-				if(_bindableType132 == null)
 				{
-					_bindableType132 = MetadataBuilder_132.Build();
+					element = ref _bindableTypes[132];
+					if(element == null)
+					{
+						element = MetadataBuilder_132.Build();
+					}
+					break;
 				}
-				return _bindableType132;
 				case "Microsoft.UI.Xaml.Controls.Primitives.ColorSpectrumAutomationPeer":
-				if(_bindableType133 == null)
 				{
-					_bindableType133 = MetadataBuilder_133.Build();
+					element = ref _bindableTypes[133];
+					if(element == null)
+					{
+						element = MetadataBuilder_133.Build();
+					}
+					break;
 				}
-				return _bindableType133;
 				case "Microsoft.UI.Xaml.Controls.Primitives.InfoBarPanel":
-				if(_bindableType134 == null)
 				{
-					_bindableType134 = MetadataBuilder_134.Build();
+					element = ref _bindableTypes[134];
+					if(element == null)
+					{
+						element = MetadataBuilder_134.Build();
+					}
+					break;
 				}
-				return _bindableType134;
 				case "Microsoft.UI.Xaml.Controls.Primitives.MonochromaticOverlayPresenter":
-				if(_bindableType135 == null)
 				{
-					_bindableType135 = MetadataBuilder_135.Build();
+					element = ref _bindableTypes[135];
+					if(element == null)
+					{
+						element = MetadataBuilder_135.Build();
+					}
+					break;
 				}
-				return _bindableType135;
 				case "Windows.UI.Xaml.Controls.Grid":
-				if(_bindableType136 == null)
 				{
-					_bindableType136 = MetadataBuilder_136.Build();
+					element = ref _bindableTypes[136];
+					if(element == null)
+					{
+						element = MetadataBuilder_136.Build();
+					}
+					break;
 				}
-				return _bindableType136;
 				case "Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter":
-				if(_bindableType137 == null)
 				{
-					_bindableType137 = MetadataBuilder_137.Build();
+					element = ref _bindableTypes[137];
+					if(element == null)
+					{
+						element = MetadataBuilder_137.Build();
+					}
+					break;
 				}
-				return _bindableType137;
 				case "Microsoft.UI.Xaml.Controls.Primitives.NavigationViewItemPresenterTemplateSettings":
-				if(_bindableType138 == null)
 				{
-					_bindableType138 = MetadataBuilder_138.Build();
+					element = ref _bindableTypes[138];
+					if(element == null)
+					{
+						element = MetadataBuilder_138.Build();
+					}
+					break;
 				}
-				return _bindableType138;
 				case "Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusFilterConverter":
-				if(_bindableType139 == null)
 				{
-					_bindableType139 = MetadataBuilder_139.Build();
+					element = ref _bindableTypes[139];
+					if(element == null)
+					{
+						element = MetadataBuilder_139.Build();
+					}
+					break;
 				}
-				return _bindableType139;
 				case "Microsoft.UI.Xaml.Controls.Primitives.CornerRadiusToThicknessConverter":
-				if(_bindableType140 == null)
 				{
-					_bindableType140 = MetadataBuilder_140.Build();
+					element = ref _bindableTypes[140];
+					if(element == null)
+					{
+						element = MetadataBuilder_140.Build();
+					}
+					break;
 				}
-				return _bindableType140;
 				case "Microsoft.UI.Xaml.Controls.Primitives.ColumnMajorUniformToLargestGridLayout":
-				if(_bindableType141 == null)
 				{
-					_bindableType141 = MetadataBuilder_141.Build();
+					element = ref _bindableTypes[141];
+					if(element == null)
+					{
+						element = MetadataBuilder_141.Build();
+					}
+					break;
 				}
-				return _bindableType141;
 				case "Microsoft.UI.Xaml.Controls.Primitives.TabViewListView":
-				if(_bindableType142 == null)
 				{
-					_bindableType142 = MetadataBuilder_142.Build();
+					element = ref _bindableTypes[142];
+					if(element == null)
+					{
+						element = MetadataBuilder_142.Build();
+					}
+					break;
 				}
-				return _bindableType142;
 				case "Microsoft.UI.Xaml.Media.RadialGradientBrush":
-				if(_bindableType143 == null)
 				{
-					_bindableType143 = MetadataBuilder_143.Build();
+					element = ref _bindableTypes[143];
+					if(element == null)
+					{
+						element = MetadataBuilder_143.Build();
+					}
+					break;
 				}
-				return _bindableType143;
 				case "Windows.UI.Xaml.Media.GradientBrush":
-				if(_bindableType144 == null)
 				{
-					_bindableType144 = MetadataBuilder_144.Build();
+					element = ref _bindableTypes[144];
+					if(element == null)
+					{
+						element = MetadataBuilder_144.Build();
+					}
+					break;
 				}
-				return _bindableType144;
 				case "Windows.UI.Xaml.Media.Brush":
-				if(_bindableType145 == null)
 				{
-					_bindableType145 = MetadataBuilder_145.Build();
+					element = ref _bindableTypes[145];
+					if(element == null)
+					{
+						element = MetadataBuilder_145.Build();
+					}
+					break;
 				}
-				return _bindableType145;
 				case "Uno.Media.StreamGeometry":
-				if(_bindableType146 == null)
 				{
-					_bindableType146 = MetadataBuilder_146.Build();
+					element = ref _bindableTypes[146];
+					if(element == null)
+					{
+						element = MetadataBuilder_146.Build();
+					}
+					break;
 				}
-				return _bindableType146;
 				case "Windows.UI.Xaml.Media.Geometry":
-				if(_bindableType147 == null)
 				{
-					_bindableType147 = MetadataBuilder_147.Build();
+					element = ref _bindableTypes[147];
+					if(element == null)
+					{
+						element = MetadataBuilder_147.Build();
+					}
+					break;
 				}
-				return _bindableType147;
 				case "Uno.UI.Controls.ManagedItemsStackPanel":
-				if(_bindableType148 == null)
 				{
-					_bindableType148 = MetadataBuilder_148.Build();
+					element = ref _bindableTypes[148];
+					if(element == null)
+					{
+						element = MetadataBuilder_148.Build();
+					}
+					break;
 				}
-				return _bindableType148;
 				case "Windows.UI.Xaml.Controls.ItemsStackPanel":
-				if(_bindableType149 == null)
 				{
-					_bindableType149 = MetadataBuilder_149.Build();
+					element = ref _bindableTypes[149];
+					if(element == null)
+					{
+						element = MetadataBuilder_149.Build();
+					}
+					break;
 				}
-				return _bindableType149;
 				case "Windows.UI.Xaml.AdaptiveTrigger":
-				if(_bindableType150 == null)
 				{
-					_bindableType150 = MetadataBuilder_150.Build();
+					element = ref _bindableTypes[150];
+					if(element == null)
+					{
+						element = MetadataBuilder_150.Build();
+					}
+					break;
 				}
-				return _bindableType150;
 				case "Windows.UI.Xaml.StateTriggerBase":
-				if(_bindableType151 == null)
 				{
-					_bindableType151 = MetadataBuilder_151.Build();
+					element = ref _bindableTypes[151];
+					if(element == null)
+					{
+						element = MetadataBuilder_151.Build();
+					}
+					break;
 				}
-				return _bindableType151;
 				case "Windows.UI.Xaml.DataTemplate":
-				if(_bindableType152 == null)
 				{
-					_bindableType152 = MetadataBuilder_152.Build();
+					element = ref _bindableTypes[152];
+					if(element == null)
+					{
+						element = MetadataBuilder_152.Build();
+					}
+					break;
 				}
-				return _bindableType152;
 				case "Windows.UI.Xaml.FrameworkTemplate":
-				if(_bindableType153 == null)
 				{
-					_bindableType153 = MetadataBuilder_153.Build();
+					element = ref _bindableTypes[153];
+					if(element == null)
+					{
+						element = MetadataBuilder_153.Build();
+					}
+					break;
 				}
-				return _bindableType153;
 				case "Windows.UI.Xaml.DependencyObjectCollection":
-				if(_bindableType154 == null)
 				{
-					_bindableType154 = MetadataBuilder_154.Build();
+					element = ref _bindableTypes[154];
+					if(element == null)
+					{
+						element = MetadataBuilder_154.Build();
+					}
+					break;
 				}
-				return _bindableType154;
 				case "Windows.UI.Xaml.DependencyObjectCollectionBase":
-				if(_bindableType155 == null)
 				{
-					_bindableType155 = MetadataBuilder_155.Build();
+					element = ref _bindableTypes[155];
+					if(element == null)
+					{
+						element = MetadataBuilder_155.Build();
+					}
+					break;
 				}
-				return _bindableType155;
 				case "Windows.UI.Xaml.EventTrigger":
-				if(_bindableType156 == null)
 				{
-					_bindableType156 = MetadataBuilder_156.Build();
+					element = ref _bindableTypes[156];
+					if(element == null)
+					{
+						element = MetadataBuilder_156.Build();
+					}
+					break;
 				}
-				return _bindableType156;
 				case "Windows.UI.Xaml.TriggerBase":
-				if(_bindableType157 == null)
 				{
-					_bindableType157 = MetadataBuilder_157.Build();
+					element = ref _bindableTypes[157];
+					if(element == null)
+					{
+						element = MetadataBuilder_157.Build();
+					}
+					break;
 				}
-				return _bindableType157;
 				case "Windows.UI.Xaml.PropertyPath":
-				if(_bindableType158 == null)
 				{
-					_bindableType158 = MetadataBuilder_158.Build();
+					element = ref _bindableTypes[158];
+					if(element == null)
+					{
+						element = MetadataBuilder_158.Build();
+					}
+					break;
 				}
-				return _bindableType158;
 				case "Windows.UI.Xaml.Setter":
-				if(_bindableType159 == null)
 				{
-					_bindableType159 = MetadataBuilder_159.Build();
+					element = ref _bindableTypes[159];
+					if(element == null)
+					{
+						element = MetadataBuilder_159.Build();
+					}
+					break;
 				}
-				return _bindableType159;
 				case "Windows.UI.Xaml.SetterBase":
-				if(_bindableType160 == null)
 				{
-					_bindableType160 = MetadataBuilder_160.Build();
+					element = ref _bindableTypes[160];
+					if(element == null)
+					{
+						element = MetadataBuilder_160.Build();
+					}
+					break;
 				}
-				return _bindableType160;
 				case "Windows.UI.Xaml.SetterBaseCollection":
-				if(_bindableType161 == null)
 				{
-					_bindableType161 = MetadataBuilder_161.Build();
+					element = ref _bindableTypes[161];
+					if(element == null)
+					{
+						element = MetadataBuilder_161.Build();
+					}
+					break;
 				}
-				return _bindableType161;
 				case "Windows.UI.Xaml.StateTrigger":
-				if(_bindableType162 == null)
 				{
-					_bindableType162 = MetadataBuilder_162.Build();
+					element = ref _bindableTypes[162];
+					if(element == null)
+					{
+						element = MetadataBuilder_162.Build();
+					}
+					break;
 				}
-				return _bindableType162;
 				case "Windows.UI.Xaml.Style":
-				if(_bindableType163 == null)
 				{
-					_bindableType163 = MetadataBuilder_163.Build();
+					element = ref _bindableTypes[163];
+					if(element == null)
+					{
+						element = MetadataBuilder_163.Build();
+					}
+					break;
 				}
-				return _bindableType163;
 				case "Windows.UI.Xaml.TriggerAction":
-				if(_bindableType164 == null)
 				{
-					_bindableType164 = MetadataBuilder_164.Build();
+					element = ref _bindableTypes[164];
+					if(element == null)
+					{
+						element = MetadataBuilder_164.Build();
+					}
+					break;
 				}
-				return _bindableType164;
 				case "Windows.UI.Xaml.VisualState":
-				if(_bindableType165 == null)
 				{
-					_bindableType165 = MetadataBuilder_165.Build();
+					element = ref _bindableTypes[165];
+					if(element == null)
+					{
+						element = MetadataBuilder_165.Build();
+					}
+					break;
 				}
-				return _bindableType165;
 				case "Windows.UI.Xaml.VisualStateGroup":
-				if(_bindableType166 == null)
 				{
-					_bindableType166 = MetadataBuilder_166.Build();
+					element = ref _bindableTypes[166];
+					if(element == null)
+					{
+						element = MetadataBuilder_166.Build();
+					}
+					break;
 				}
-				return _bindableType166;
 				case "Windows.UI.Xaml.VisualStateManager":
-				if(_bindableType167 == null)
 				{
-					_bindableType167 = MetadataBuilder_167.Build();
+					element = ref _bindableTypes[167];
+					if(element == null)
+					{
+						element = MetadataBuilder_167.Build();
+					}
+					break;
 				}
-				return _bindableType167;
 				case "Windows.UI.Xaml.VisualTransition":
-				if(_bindableType168 == null)
 				{
-					_bindableType168 = MetadataBuilder_168.Build();
+					element = ref _bindableTypes[168];
+					if(element == null)
+					{
+						element = MetadataBuilder_168.Build();
+					}
+					break;
 				}
-				return _bindableType168;
 				case "Windows.UI.Xaml.AttachedDependencyObject":
-				if(_bindableType169 == null)
 				{
-					_bindableType169 = MetadataBuilder_169.Build();
+					element = ref _bindableTypes[169];
+					if(element == null)
+					{
+						element = MetadataBuilder_169.Build();
+					}
+					break;
 				}
-				return _bindableType169;
 				case "Windows.UI.Xaml.ElementStub":
-				if(_bindableType170 == null)
 				{
-					_bindableType170 = MetadataBuilder_170.Build();
+					element = ref _bindableTypes[170];
+					if(element == null)
+					{
+						element = MetadataBuilder_170.Build();
+					}
+					break;
 				}
-				return _bindableType170;
 				case "Windows.UI.Xaml.Automation.AutomationAnnotation":
-				if(_bindableType171 == null)
 				{
-					_bindableType171 = MetadataBuilder_171.Build();
+					element = ref _bindableTypes[171];
+					if(element == null)
+					{
+						element = MetadataBuilder_171.Build();
+					}
+					break;
 				}
-				return _bindableType171;
 				case "Windows.UI.Xaml.Automation.Peers.AppBarAutomationPeer":
-				if(_bindableType172 == null)
 				{
-					_bindableType172 = MetadataBuilder_172.Build();
+					element = ref _bindableTypes[172];
+					if(element == null)
+					{
+						element = MetadataBuilder_172.Build();
+					}
+					break;
 				}
-				return _bindableType172;
 				case "Windows.UI.Xaml.Automation.Peers.AppBarButtonAutomationPeer":
-				if(_bindableType173 == null)
 				{
-					_bindableType173 = MetadataBuilder_173.Build();
+					element = ref _bindableTypes[173];
+					if(element == null)
+					{
+						element = MetadataBuilder_173.Build();
+					}
+					break;
 				}
-				return _bindableType173;
 				case "Windows.UI.Xaml.Automation.Peers.ButtonAutomationPeer":
-				if(_bindableType174 == null)
 				{
-					_bindableType174 = MetadataBuilder_174.Build();
+					element = ref _bindableTypes[174];
+					if(element == null)
+					{
+						element = MetadataBuilder_174.Build();
+					}
+					break;
 				}
-				return _bindableType174;
 				case "Windows.UI.Xaml.Automation.Peers.ButtonBaseAutomationPeer":
-				if(_bindableType175 == null)
 				{
-					_bindableType175 = MetadataBuilder_175.Build();
+					element = ref _bindableTypes[175];
+					if(element == null)
+					{
+						element = MetadataBuilder_175.Build();
+					}
+					break;
 				}
-				return _bindableType175;
 				case "Windows.UI.Xaml.Automation.Peers.AppBarToggleButtonAutomationPeer":
-				if(_bindableType176 == null)
 				{
-					_bindableType176 = MetadataBuilder_176.Build();
+					element = ref _bindableTypes[176];
+					if(element == null)
+					{
+						element = MetadataBuilder_176.Build();
+					}
+					break;
 				}
-				return _bindableType176;
 				case "Windows.UI.Xaml.Automation.Peers.ToggleButtonAutomationPeer":
-				if(_bindableType177 == null)
 				{
-					_bindableType177 = MetadataBuilder_177.Build();
+					element = ref _bindableTypes[177];
+					if(element == null)
+					{
+						element = MetadataBuilder_177.Build();
+					}
+					break;
 				}
-				return _bindableType177;
 				case "Windows.UI.Xaml.Automation.Peers.AutomationPeerAnnotation":
-				if(_bindableType178 == null)
 				{
-					_bindableType178 = MetadataBuilder_178.Build();
+					element = ref _bindableTypes[178];
+					if(element == null)
+					{
+						element = MetadataBuilder_178.Build();
+					}
+					break;
 				}
-				return _bindableType178;
 				case "Windows.UI.Xaml.Automation.Peers.AutoSuggestBoxAutomationPeer":
-				if(_bindableType179 == null)
 				{
-					_bindableType179 = MetadataBuilder_179.Build();
+					element = ref _bindableTypes[179];
+					if(element == null)
+					{
+						element = MetadataBuilder_179.Build();
+					}
+					break;
 				}
-				return _bindableType179;
 				case "Windows.UI.Xaml.Automation.Peers.CalendarDatePickerAutomationPeer":
-				if(_bindableType180 == null)
 				{
-					_bindableType180 = MetadataBuilder_180.Build();
+					element = ref _bindableTypes[180];
+					if(element == null)
+					{
+						element = MetadataBuilder_180.Build();
+					}
+					break;
 				}
-				return _bindableType180;
 				case "Windows.UI.Xaml.Automation.Peers.CaptureElementAutomationPeer":
-				if(_bindableType181 == null)
 				{
-					_bindableType181 = MetadataBuilder_181.Build();
+					element = ref _bindableTypes[181];
+					if(element == null)
+					{
+						element = MetadataBuilder_181.Build();
+					}
+					break;
 				}
-				return _bindableType181;
 				case "Windows.UI.Xaml.Automation.Peers.CheckBoxAutomationPeer":
-				if(_bindableType182 == null)
 				{
-					_bindableType182 = MetadataBuilder_182.Build();
+					element = ref _bindableTypes[182];
+					if(element == null)
+					{
+						element = MetadataBuilder_182.Build();
+					}
+					break;
 				}
-				return _bindableType182;
 				case "Windows.UI.Xaml.Automation.Peers.ColorPickerSliderAutomationPeer":
-				if(_bindableType183 == null)
 				{
-					_bindableType183 = MetadataBuilder_183.Build();
+					element = ref _bindableTypes[183];
+					if(element == null)
+					{
+						element = MetadataBuilder_183.Build();
+					}
+					break;
 				}
-				return _bindableType183;
 				case "Windows.UI.Xaml.Automation.Peers.SliderAutomationPeer":
-				if(_bindableType184 == null)
 				{
-					_bindableType184 = MetadataBuilder_184.Build();
+					element = ref _bindableTypes[184];
+					if(element == null)
+					{
+						element = MetadataBuilder_184.Build();
+					}
+					break;
 				}
-				return _bindableType184;
 				case "Windows.UI.Xaml.Automation.Peers.RangeBaseAutomationPeer":
-				if(_bindableType185 == null)
 				{
-					_bindableType185 = MetadataBuilder_185.Build();
+					element = ref _bindableTypes[185];
+					if(element == null)
+					{
+						element = MetadataBuilder_185.Build();
+					}
+					break;
 				}
-				return _bindableType185;
 				case "Windows.UI.Xaml.Automation.Peers.ColorSpectrumAutomationPeer":
-				if(_bindableType186 == null)
 				{
-					_bindableType186 = MetadataBuilder_186.Build();
+					element = ref _bindableTypes[186];
+					if(element == null)
+					{
+						element = MetadataBuilder_186.Build();
+					}
+					break;
 				}
-				return _bindableType186;
 				case "Windows.UI.Xaml.Automation.Peers.ComboBoxAutomationPeer":
-				if(_bindableType187 == null)
 				{
-					_bindableType187 = MetadataBuilder_187.Build();
+					element = ref _bindableTypes[187];
+					if(element == null)
+					{
+						element = MetadataBuilder_187.Build();
+					}
+					break;
 				}
-				return _bindableType187;
 				case "Windows.UI.Xaml.Automation.Peers.ComboBoxItemAutomationPeer":
-				if(_bindableType188 == null)
 				{
-					_bindableType188 = MetadataBuilder_188.Build();
+					element = ref _bindableTypes[188];
+					if(element == null)
+					{
+						element = MetadataBuilder_188.Build();
+					}
+					break;
 				}
-				return _bindableType188;
 				case "Windows.UI.Xaml.Automation.Peers.ComboBoxItemDataAutomationPeer":
-				if(_bindableType189 == null)
 				{
-					_bindableType189 = MetadataBuilder_189.Build();
+					element = ref _bindableTypes[189];
+					if(element == null)
+					{
+						element = MetadataBuilder_189.Build();
+					}
+					break;
 				}
-				return _bindableType189;
 				case "Windows.UI.Xaml.Automation.Peers.SelectorItemAutomationPeer":
-				if(_bindableType190 == null)
 				{
-					_bindableType190 = MetadataBuilder_190.Build();
+					element = ref _bindableTypes[190];
+					if(element == null)
+					{
+						element = MetadataBuilder_190.Build();
+					}
+					break;
 				}
-				return _bindableType190;
 				case "Windows.UI.Xaml.Automation.Peers.DatePickerAutomationPeer":
-				if(_bindableType191 == null)
 				{
-					_bindableType191 = MetadataBuilder_191.Build();
+					element = ref _bindableTypes[191];
+					if(element == null)
+					{
+						element = MetadataBuilder_191.Build();
+					}
+					break;
 				}
-				return _bindableType191;
 				case "Windows.UI.Xaml.Automation.Peers.DatePickerFlyoutPresenterAutomationPeer":
-				if(_bindableType192 == null)
 				{
-					_bindableType192 = MetadataBuilder_192.Build();
+					element = ref _bindableTypes[192];
+					if(element == null)
+					{
+						element = MetadataBuilder_192.Build();
+					}
+					break;
 				}
-				return _bindableType192;
 				case "Windows.UI.Xaml.Automation.Peers.FlipViewAutomationPeer":
-				if(_bindableType193 == null)
 				{
-					_bindableType193 = MetadataBuilder_193.Build();
+					element = ref _bindableTypes[193];
+					if(element == null)
+					{
+						element = MetadataBuilder_193.Build();
+					}
+					break;
 				}
-				return _bindableType193;
 				case "Windows.UI.Xaml.Automation.Peers.FlipViewItemAutomationPeer":
-				if(_bindableType194 == null)
 				{
-					_bindableType194 = MetadataBuilder_194.Build();
+					element = ref _bindableTypes[194];
+					if(element == null)
+					{
+						element = MetadataBuilder_194.Build();
+					}
+					break;
 				}
-				return _bindableType194;
 				case "Windows.UI.Xaml.Automation.Peers.FlipViewItemDataAutomationPeer":
-				if(_bindableType195 == null)
 				{
-					_bindableType195 = MetadataBuilder_195.Build();
+					element = ref _bindableTypes[195];
+					if(element == null)
+					{
+						element = MetadataBuilder_195.Build();
+					}
+					break;
 				}
-				return _bindableType195;
 				case "Windows.UI.Xaml.Automation.Peers.FlyoutPresenterAutomationPeer":
-				if(_bindableType196 == null)
 				{
-					_bindableType196 = MetadataBuilder_196.Build();
+					element = ref _bindableTypes[196];
+					if(element == null)
+					{
+						element = MetadataBuilder_196.Build();
+					}
+					break;
 				}
-				return _bindableType196;
 				case "Windows.UI.Xaml.Automation.Peers.GridViewAutomationPeer":
-				if(_bindableType197 == null)
 				{
-					_bindableType197 = MetadataBuilder_197.Build();
+					element = ref _bindableTypes[197];
+					if(element == null)
+					{
+						element = MetadataBuilder_197.Build();
+					}
+					break;
 				}
-				return _bindableType197;
 				case "Windows.UI.Xaml.Automation.Peers.GridViewHeaderItemAutomationPeer":
-				if(_bindableType198 == null)
 				{
-					_bindableType198 = MetadataBuilder_198.Build();
+					element = ref _bindableTypes[198];
+					if(element == null)
+					{
+						element = MetadataBuilder_198.Build();
+					}
+					break;
 				}
-				return _bindableType198;
 				case "Windows.UI.Xaml.Automation.Peers.ListViewBaseHeaderItemAutomationPeer":
-				if(_bindableType199 == null)
 				{
-					_bindableType199 = MetadataBuilder_199.Build();
+					element = ref _bindableTypes[199];
+					if(element == null)
+					{
+						element = MetadataBuilder_199.Build();
+					}
+					break;
 				}
-				return _bindableType199;
 				case "Windows.UI.Xaml.Automation.Peers.GridViewItemAutomationPeer":
-				if(_bindableType200 == null)
 				{
-					_bindableType200 = MetadataBuilder_200.Build();
+					element = ref _bindableTypes[200];
+					if(element == null)
+					{
+						element = MetadataBuilder_200.Build();
+					}
+					break;
 				}
-				return _bindableType200;
 				case "Windows.UI.Xaml.Automation.Peers.GridViewItemDataAutomationPeer":
-				if(_bindableType201 == null)
 				{
-					_bindableType201 = MetadataBuilder_201.Build();
+					element = ref _bindableTypes[201];
+					if(element == null)
+					{
+						element = MetadataBuilder_201.Build();
+					}
+					break;
 				}
-				return _bindableType201;
 				case "Windows.UI.Xaml.Automation.Peers.GroupItemAutomationPeer":
-				if(_bindableType202 == null)
 				{
-					_bindableType202 = MetadataBuilder_202.Build();
+					element = ref _bindableTypes[202];
+					if(element == null)
+					{
+						element = MetadataBuilder_202.Build();
+					}
+					break;
 				}
-				return _bindableType202;
 				case "Windows.UI.Xaml.Automation.Peers.HubAutomationPeer":
-				if(_bindableType203 == null)
 				{
-					_bindableType203 = MetadataBuilder_203.Build();
+					element = ref _bindableTypes[203];
+					if(element == null)
+					{
+						element = MetadataBuilder_203.Build();
+					}
+					break;
 				}
-				return _bindableType203;
 				case "Windows.UI.Xaml.Automation.Peers.HubSectionAutomationPeer":
-				if(_bindableType204 == null)
 				{
-					_bindableType204 = MetadataBuilder_204.Build();
+					element = ref _bindableTypes[204];
+					if(element == null)
+					{
+						element = MetadataBuilder_204.Build();
+					}
+					break;
 				}
-				return _bindableType204;
 				case "Windows.UI.Xaml.Automation.Peers.HyperlinkButtonAutomationPeer":
-				if(_bindableType205 == null)
 				{
-					_bindableType205 = MetadataBuilder_205.Build();
+					element = ref _bindableTypes[205];
+					if(element == null)
+					{
+						element = MetadataBuilder_205.Build();
+					}
+					break;
 				}
-				return _bindableType205;
 				case "Windows.UI.Xaml.Automation.Peers.ImageAutomationPeer":
-				if(_bindableType206 == null)
 				{
-					_bindableType206 = MetadataBuilder_206.Build();
+					element = ref _bindableTypes[206];
+					if(element == null)
+					{
+						element = MetadataBuilder_206.Build();
+					}
+					break;
 				}
-				return _bindableType206;
 				case "Windows.UI.Xaml.Automation.Peers.InkToolbarAutomationPeer":
-				if(_bindableType207 == null)
 				{
-					_bindableType207 = MetadataBuilder_207.Build();
+					element = ref _bindableTypes[207];
+					if(element == null)
+					{
+						element = MetadataBuilder_207.Build();
+					}
+					break;
 				}
-				return _bindableType207;
 				case "Windows.UI.Xaml.Automation.Peers.ListBoxAutomationPeer":
-				if(_bindableType208 == null)
 				{
-					_bindableType208 = MetadataBuilder_208.Build();
+					element = ref _bindableTypes[208];
+					if(element == null)
+					{
+						element = MetadataBuilder_208.Build();
+					}
+					break;
 				}
-				return _bindableType208;
 				case "Windows.UI.Xaml.Automation.Peers.ListBoxItemAutomationPeer":
-				if(_bindableType209 == null)
 				{
-					_bindableType209 = MetadataBuilder_209.Build();
+					element = ref _bindableTypes[209];
+					if(element == null)
+					{
+						element = MetadataBuilder_209.Build();
+					}
+					break;
 				}
-				return _bindableType209;
 				case "Windows.UI.Xaml.Automation.Peers.ListBoxItemDataAutomationPeer":
-				if(_bindableType210 == null)
 				{
-					_bindableType210 = MetadataBuilder_210.Build();
+					element = ref _bindableTypes[210];
+					if(element == null)
+					{
+						element = MetadataBuilder_210.Build();
+					}
+					break;
 				}
-				return _bindableType210;
 				case "Windows.UI.Xaml.Automation.Peers.ListPickerFlyoutPresenterAutomationPeer":
-				if(_bindableType211 == null)
 				{
-					_bindableType211 = MetadataBuilder_211.Build();
+					element = ref _bindableTypes[211];
+					if(element == null)
+					{
+						element = MetadataBuilder_211.Build();
+					}
+					break;
 				}
-				return _bindableType211;
 				case "Windows.UI.Xaml.Automation.Peers.ListViewHeaderItemAutomationPeer":
-				if(_bindableType212 == null)
 				{
-					_bindableType212 = MetadataBuilder_212.Build();
+					element = ref _bindableTypes[212];
+					if(element == null)
+					{
+						element = MetadataBuilder_212.Build();
+					}
+					break;
 				}
-				return _bindableType212;
 				case "Windows.UI.Xaml.Automation.Peers.ListViewItemDataAutomationPeer":
-				if(_bindableType213 == null)
 				{
-					_bindableType213 = MetadataBuilder_213.Build();
+					element = ref _bindableTypes[213];
+					if(element == null)
+					{
+						element = MetadataBuilder_213.Build();
+					}
+					break;
 				}
-				return _bindableType213;
 				case "Windows.UI.Xaml.Automation.Peers.LoopingSelectorAutomationPeer":
-				if(_bindableType214 == null)
 				{
-					_bindableType214 = MetadataBuilder_214.Build();
+					element = ref _bindableTypes[214];
+					if(element == null)
+					{
+						element = MetadataBuilder_214.Build();
+					}
+					break;
 				}
-				return _bindableType214;
 				case "Windows.UI.Xaml.Automation.Peers.LoopingSelectorItemAutomationPeer":
-				if(_bindableType215 == null)
 				{
-					_bindableType215 = MetadataBuilder_215.Build();
+					element = ref _bindableTypes[215];
+					if(element == null)
+					{
+						element = MetadataBuilder_215.Build();
+					}
+					break;
 				}
-				return _bindableType215;
 				case "Windows.UI.Xaml.Automation.Peers.LoopingSelectorItemDataAutomationPeer":
-				if(_bindableType216 == null)
 				{
-					_bindableType216 = MetadataBuilder_216.Build();
+					element = ref _bindableTypes[216];
+					if(element == null)
+					{
+						element = MetadataBuilder_216.Build();
+					}
+					break;
 				}
-				return _bindableType216;
 				case "Windows.UI.Xaml.Automation.Peers.MapControlAutomationPeer":
-				if(_bindableType217 == null)
 				{
-					_bindableType217 = MetadataBuilder_217.Build();
+					element = ref _bindableTypes[217];
+					if(element == null)
+					{
+						element = MetadataBuilder_217.Build();
+					}
+					break;
 				}
-				return _bindableType217;
 				case "Windows.UI.Xaml.Automation.Peers.MediaElementAutomationPeer":
-				if(_bindableType218 == null)
 				{
-					_bindableType218 = MetadataBuilder_218.Build();
+					element = ref _bindableTypes[218];
+					if(element == null)
+					{
+						element = MetadataBuilder_218.Build();
+					}
+					break;
 				}
-				return _bindableType218;
 				case "Windows.UI.Xaml.Automation.Peers.MediaPlayerElementAutomationPeer":
-				if(_bindableType219 == null)
 				{
-					_bindableType219 = MetadataBuilder_219.Build();
+					element = ref _bindableTypes[219];
+					if(element == null)
+					{
+						element = MetadataBuilder_219.Build();
+					}
+					break;
 				}
-				return _bindableType219;
 				case "Windows.UI.Xaml.Automation.Peers.MediaTransportControlsAutomationPeer":
-				if(_bindableType220 == null)
 				{
-					_bindableType220 = MetadataBuilder_220.Build();
+					element = ref _bindableTypes[220];
+					if(element == null)
+					{
+						element = MetadataBuilder_220.Build();
+					}
+					break;
 				}
-				return _bindableType220;
 				case "Windows.UI.Xaml.Automation.Peers.MenuBarAutomationPeer":
-				if(_bindableType221 == null)
 				{
-					_bindableType221 = MetadataBuilder_221.Build();
+					element = ref _bindableTypes[221];
+					if(element == null)
+					{
+						element = MetadataBuilder_221.Build();
+					}
+					break;
 				}
-				return _bindableType221;
 				case "Windows.UI.Xaml.Automation.Peers.MenuBarItemAutomationPeer":
-				if(_bindableType222 == null)
 				{
-					_bindableType222 = MetadataBuilder_222.Build();
+					element = ref _bindableTypes[222];
+					if(element == null)
+					{
+						element = MetadataBuilder_222.Build();
+					}
+					break;
 				}
-				return _bindableType222;
 				case "Windows.UI.Xaml.Automation.Peers.MenuFlyoutItemAutomationPeer":
-				if(_bindableType223 == null)
 				{
-					_bindableType223 = MetadataBuilder_223.Build();
+					element = ref _bindableTypes[223];
+					if(element == null)
+					{
+						element = MetadataBuilder_223.Build();
+					}
+					break;
 				}
-				return _bindableType223;
 				case "Windows.UI.Xaml.Automation.Peers.MenuFlyoutPresenterAutomationPeer":
-				if(_bindableType224 == null)
 				{
-					_bindableType224 = MetadataBuilder_224.Build();
+					element = ref _bindableTypes[224];
+					if(element == null)
+					{
+						element = MetadataBuilder_224.Build();
+					}
+					break;
 				}
-				return _bindableType224;
 				case "Windows.UI.Xaml.Automation.Peers.NavigationViewItemAutomationPeer":
-				if(_bindableType225 == null)
 				{
-					_bindableType225 = MetadataBuilder_225.Build();
+					element = ref _bindableTypes[225];
+					if(element == null)
+					{
+						element = MetadataBuilder_225.Build();
+					}
+					break;
 				}
-				return _bindableType225;
 				case "Windows.UI.Xaml.Automation.Peers.PasswordBoxAutomationPeer":
-				if(_bindableType226 == null)
 				{
-					_bindableType226 = MetadataBuilder_226.Build();
+					element = ref _bindableTypes[226];
+					if(element == null)
+					{
+						element = MetadataBuilder_226.Build();
+					}
+					break;
 				}
-				return _bindableType226;
 				case "Windows.UI.Xaml.Automation.Peers.PersonPictureAutomationPeer":
-				if(_bindableType227 == null)
 				{
-					_bindableType227 = MetadataBuilder_227.Build();
+					element = ref _bindableTypes[227];
+					if(element == null)
+					{
+						element = MetadataBuilder_227.Build();
+					}
+					break;
 				}
-				return _bindableType227;
 				case "Windows.UI.Xaml.Automation.Peers.PickerFlyoutPresenterAutomationPeer":
-				if(_bindableType228 == null)
 				{
-					_bindableType228 = MetadataBuilder_228.Build();
+					element = ref _bindableTypes[228];
+					if(element == null)
+					{
+						element = MetadataBuilder_228.Build();
+					}
+					break;
 				}
-				return _bindableType228;
 				case "Windows.UI.Xaml.Automation.Peers.PivotAutomationPeer":
-				if(_bindableType229 == null)
 				{
-					_bindableType229 = MetadataBuilder_229.Build();
+					element = ref _bindableTypes[229];
+					if(element == null)
+					{
+						element = MetadataBuilder_229.Build();
+					}
+					break;
 				}
-				return _bindableType229;
 				case "Windows.UI.Xaml.Automation.Peers.PivotItemAutomationPeer":
-				if(_bindableType230 == null)
 				{
-					_bindableType230 = MetadataBuilder_230.Build();
+					element = ref _bindableTypes[230];
+					if(element == null)
+					{
+						element = MetadataBuilder_230.Build();
+					}
+					break;
 				}
-				return _bindableType230;
 				case "Windows.UI.Xaml.Automation.Peers.PivotItemDataAutomationPeer":
-				if(_bindableType231 == null)
 				{
-					_bindableType231 = MetadataBuilder_231.Build();
+					element = ref _bindableTypes[231];
+					if(element == null)
+					{
+						element = MetadataBuilder_231.Build();
+					}
+					break;
 				}
-				return _bindableType231;
 				case "Windows.UI.Xaml.Automation.Peers.ProgressBarAutomationPeer":
-				if(_bindableType232 == null)
 				{
-					_bindableType232 = MetadataBuilder_232.Build();
+					element = ref _bindableTypes[232];
+					if(element == null)
+					{
+						element = MetadataBuilder_232.Build();
+					}
+					break;
 				}
-				return _bindableType232;
 				case "Windows.UI.Xaml.Automation.Peers.ProgressRingAutomationPeer":
-				if(_bindableType233 == null)
 				{
-					_bindableType233 = MetadataBuilder_233.Build();
+					element = ref _bindableTypes[233];
+					if(element == null)
+					{
+						element = MetadataBuilder_233.Build();
+					}
+					break;
 				}
-				return _bindableType233;
 				case "Windows.UI.Xaml.Automation.Peers.RadioButtonAutomationPeer":
-				if(_bindableType234 == null)
 				{
-					_bindableType234 = MetadataBuilder_234.Build();
+					element = ref _bindableTypes[234];
+					if(element == null)
+					{
+						element = MetadataBuilder_234.Build();
+					}
+					break;
 				}
-				return _bindableType234;
 				case "Windows.UI.Xaml.Automation.Peers.RatingControlAutomationPeer":
-				if(_bindableType235 == null)
 				{
-					_bindableType235 = MetadataBuilder_235.Build();
+					element = ref _bindableTypes[235];
+					if(element == null)
+					{
+						element = MetadataBuilder_235.Build();
+					}
+					break;
 				}
-				return _bindableType235;
 				case "Windows.UI.Xaml.Automation.Peers.RepeatButtonAutomationPeer":
-				if(_bindableType236 == null)
 				{
-					_bindableType236 = MetadataBuilder_236.Build();
+					element = ref _bindableTypes[236];
+					if(element == null)
+					{
+						element = MetadataBuilder_236.Build();
+					}
+					break;
 				}
-				return _bindableType236;
 				case "Windows.UI.Xaml.Automation.Peers.RichEditBoxAutomationPeer":
-				if(_bindableType237 == null)
 				{
-					_bindableType237 = MetadataBuilder_237.Build();
+					element = ref _bindableTypes[237];
+					if(element == null)
+					{
+						element = MetadataBuilder_237.Build();
+					}
+					break;
 				}
-				return _bindableType237;
 				case "Windows.UI.Xaml.Automation.Peers.RichTextBlockAutomationPeer":
-				if(_bindableType238 == null)
 				{
-					_bindableType238 = MetadataBuilder_238.Build();
+					element = ref _bindableTypes[238];
+					if(element == null)
+					{
+						element = MetadataBuilder_238.Build();
+					}
+					break;
 				}
-				return _bindableType238;
 				case "Windows.UI.Xaml.Automation.Peers.RichTextBlockOverflowAutomationPeer":
-				if(_bindableType239 == null)
 				{
-					_bindableType239 = MetadataBuilder_239.Build();
+					element = ref _bindableTypes[239];
+					if(element == null)
+					{
+						element = MetadataBuilder_239.Build();
+					}
+					break;
 				}
-				return _bindableType239;
 				case "Windows.UI.Xaml.Automation.Peers.ScrollBarAutomationPeer":
-				if(_bindableType240 == null)
 				{
-					_bindableType240 = MetadataBuilder_240.Build();
+					element = ref _bindableTypes[240];
+					if(element == null)
+					{
+						element = MetadataBuilder_240.Build();
+					}
+					break;
 				}
-				return _bindableType240;
 				case "Windows.UI.Xaml.Automation.Peers.ScrollViewerAutomationPeer":
-				if(_bindableType241 == null)
 				{
-					_bindableType241 = MetadataBuilder_241.Build();
+					element = ref _bindableTypes[241];
+					if(element == null)
+					{
+						element = MetadataBuilder_241.Build();
+					}
+					break;
 				}
-				return _bindableType241;
 				case "Windows.UI.Xaml.Automation.Peers.SearchBoxAutomationPeer":
-				if(_bindableType242 == null)
 				{
-					_bindableType242 = MetadataBuilder_242.Build();
+					element = ref _bindableTypes[242];
+					if(element == null)
+					{
+						element = MetadataBuilder_242.Build();
+					}
+					break;
 				}
-				return _bindableType242;
 				case "Windows.UI.Xaml.Automation.Peers.SemanticZoomAutomationPeer":
-				if(_bindableType243 == null)
 				{
-					_bindableType243 = MetadataBuilder_243.Build();
+					element = ref _bindableTypes[243];
+					if(element == null)
+					{
+						element = MetadataBuilder_243.Build();
+					}
+					break;
 				}
-				return _bindableType243;
 				case "Windows.UI.Xaml.Automation.Peers.SettingsFlyoutAutomationPeer":
-				if(_bindableType244 == null)
 				{
-					_bindableType244 = MetadataBuilder_244.Build();
+					element = ref _bindableTypes[244];
+					if(element == null)
+					{
+						element = MetadataBuilder_244.Build();
+					}
+					break;
 				}
-				return _bindableType244;
 				case "Windows.UI.Xaml.Automation.Peers.TextBlockAutomationPeer":
-				if(_bindableType245 == null)
 				{
-					_bindableType245 = MetadataBuilder_245.Build();
+					element = ref _bindableTypes[245];
+					if(element == null)
+					{
+						element = MetadataBuilder_245.Build();
+					}
+					break;
 				}
-				return _bindableType245;
 				case "Windows.UI.Xaml.Automation.Peers.TextBoxAutomationPeer":
-				if(_bindableType246 == null)
 				{
-					_bindableType246 = MetadataBuilder_246.Build();
+					element = ref _bindableTypes[246];
+					if(element == null)
+					{
+						element = MetadataBuilder_246.Build();
+					}
+					break;
 				}
-				return _bindableType246;
 				case "Windows.UI.Xaml.Automation.Peers.ThumbAutomationPeer":
-				if(_bindableType247 == null)
 				{
-					_bindableType247 = MetadataBuilder_247.Build();
+					element = ref _bindableTypes[247];
+					if(element == null)
+					{
+						element = MetadataBuilder_247.Build();
+					}
+					break;
 				}
-				return _bindableType247;
 				case "Windows.UI.Xaml.Automation.Peers.TimePickerAutomationPeer":
-				if(_bindableType248 == null)
 				{
-					_bindableType248 = MetadataBuilder_248.Build();
+					element = ref _bindableTypes[248];
+					if(element == null)
+					{
+						element = MetadataBuilder_248.Build();
+					}
+					break;
 				}
-				return _bindableType248;
 				case "Windows.UI.Xaml.Automation.Peers.TimePickerFlyoutPresenterAutomationPeer":
-				if(_bindableType249 == null)
 				{
-					_bindableType249 = MetadataBuilder_249.Build();
+					element = ref _bindableTypes[249];
+					if(element == null)
+					{
+						element = MetadataBuilder_249.Build();
+					}
+					break;
 				}
-				return _bindableType249;
 				case "Windows.UI.Xaml.Automation.Peers.ToggleMenuFlyoutItemAutomationPeer":
-				if(_bindableType250 == null)
 				{
-					_bindableType250 = MetadataBuilder_250.Build();
+					element = ref _bindableTypes[250];
+					if(element == null)
+					{
+						element = MetadataBuilder_250.Build();
+					}
+					break;
 				}
-				return _bindableType250;
 				case "Windows.UI.Xaml.Automation.Peers.ToggleSwitchAutomationPeer":
-				if(_bindableType251 == null)
 				{
-					_bindableType251 = MetadataBuilder_251.Build();
+					element = ref _bindableTypes[251];
+					if(element == null)
+					{
+						element = MetadataBuilder_251.Build();
+					}
+					break;
 				}
-				return _bindableType251;
 				case "Windows.UI.Xaml.Automation.Peers.TreeViewItemAutomationPeer":
-				if(_bindableType252 == null)
 				{
-					_bindableType252 = MetadataBuilder_252.Build();
+					element = ref _bindableTypes[252];
+					if(element == null)
+					{
+						element = MetadataBuilder_252.Build();
+					}
+					break;
 				}
-				return _bindableType252;
 				case "Windows.UI.Xaml.Automation.Peers.TreeViewListAutomationPeer":
-				if(_bindableType253 == null)
 				{
-					_bindableType253 = MetadataBuilder_253.Build();
+					element = ref _bindableTypes[253];
+					if(element == null)
+					{
+						element = MetadataBuilder_253.Build();
+					}
+					break;
 				}
-				return _bindableType253;
 				case "Windows.UI.Xaml.Automation.Provider.IRawElementProviderSimple":
-				if(_bindableType254 == null)
 				{
-					_bindableType254 = MetadataBuilder_254.Build();
+					element = ref _bindableTypes[254];
+					if(element == null)
+					{
+						element = MetadataBuilder_254.Build();
+					}
+					break;
 				}
-				return _bindableType254;
 				case "Windows.UI.Xaml.Controls.AppBar":
-				if(_bindableType255 == null)
 				{
-					_bindableType255 = MetadataBuilder_255.Build();
+					element = ref _bindableTypes[255];
+					if(element == null)
+					{
+						element = MetadataBuilder_255.Build();
+					}
+					break;
 				}
-				return _bindableType255;
 				case "Windows.UI.Xaml.Controls.AppBarButton":
-				if(_bindableType256 == null)
 				{
-					_bindableType256 = MetadataBuilder_256.Build();
+					element = ref _bindableTypes[256];
+					if(element == null)
+					{
+						element = MetadataBuilder_256.Build();
+					}
+					break;
 				}
-				return _bindableType256;
 				case "Windows.UI.Xaml.Controls.Button":
-				if(_bindableType257 == null)
 				{
-					_bindableType257 = MetadataBuilder_257.Build();
+					element = ref _bindableTypes[257];
+					if(element == null)
+					{
+						element = MetadataBuilder_257.Build();
+					}
+					break;
 				}
-				return _bindableType257;
 				case "Windows.UI.Xaml.Controls.AppBarElementContainer":
-				if(_bindableType258 == null)
 				{
-					_bindableType258 = MetadataBuilder_258.Build();
+					element = ref _bindableTypes[258];
+					if(element == null)
+					{
+						element = MetadataBuilder_258.Build();
+					}
+					break;
 				}
-				return _bindableType258;
 				case "Windows.UI.Xaml.Controls.AppBarSeparator":
-				if(_bindableType259 == null)
 				{
-					_bindableType259 = MetadataBuilder_259.Build();
+					element = ref _bindableTypes[259];
+					if(element == null)
+					{
+						element = MetadataBuilder_259.Build();
+					}
+					break;
 				}
-				return _bindableType259;
 				case "Windows.UI.Xaml.Controls.AppBarToggleButton":
-				if(_bindableType260 == null)
 				{
-					_bindableType260 = MetadataBuilder_260.Build();
+					element = ref _bindableTypes[260];
+					if(element == null)
+					{
+						element = MetadataBuilder_260.Build();
+					}
+					break;
 				}
-				return _bindableType260;
 				case "Windows.UI.Xaml.Controls.AutoSuggestBox":
-				if(_bindableType261 == null)
 				{
-					_bindableType261 = MetadataBuilder_261.Build();
+					element = ref _bindableTypes[261];
+					if(element == null)
+					{
+						element = MetadataBuilder_261.Build();
+					}
+					break;
 				}
-				return _bindableType261;
 				case "Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs":
-				if(_bindableType262 == null)
 				{
-					_bindableType262 = MetadataBuilder_262.Build();
+					element = ref _bindableTypes[262];
+					if(element == null)
+					{
+						element = MetadataBuilder_262.Build();
+					}
+					break;
 				}
-				return _bindableType262;
 				case "Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs":
-				if(_bindableType263 == null)
 				{
-					_bindableType263 = MetadataBuilder_263.Build();
+					element = ref _bindableTypes[263];
+					if(element == null)
+					{
+						element = MetadataBuilder_263.Build();
+					}
+					break;
 				}
-				return _bindableType263;
 				case "Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs":
-				if(_bindableType264 == null)
 				{
-					_bindableType264 = MetadataBuilder_264.Build();
+					element = ref _bindableTypes[264];
+					if(element == null)
+					{
+						element = MetadataBuilder_264.Build();
+					}
+					break;
 				}
-				return _bindableType264;
 				case "Windows.UI.Xaml.Controls.BitmapIcon":
-				if(_bindableType265 == null)
 				{
-					_bindableType265 = MetadataBuilder_265.Build();
+					element = ref _bindableTypes[265];
+					if(element == null)
+					{
+						element = MetadataBuilder_265.Build();
+					}
+					break;
 				}
-				return _bindableType265;
 				case "Windows.UI.Xaml.Controls.BitmapIconSource":
-				if(_bindableType266 == null)
 				{
-					_bindableType266 = MetadataBuilder_266.Build();
+					element = ref _bindableTypes[266];
+					if(element == null)
+					{
+						element = MetadataBuilder_266.Build();
+					}
+					break;
 				}
-				return _bindableType266;
 				case "Windows.UI.Xaml.Controls.IconSource":
-				if(_bindableType267 == null)
 				{
-					_bindableType267 = MetadataBuilder_267.Build();
+					element = ref _bindableTypes[267];
+					if(element == null)
+					{
+						element = MetadataBuilder_267.Build();
+					}
+					break;
 				}
-				return _bindableType267;
 				case "Windows.UI.Xaml.Controls.Border":
-				if(_bindableType268 == null)
 				{
-					_bindableType268 = MetadataBuilder_268.Build();
+					element = ref _bindableTypes[268];
+					if(element == null)
+					{
+						element = MetadataBuilder_268.Build();
+					}
+					break;
 				}
-				return _bindableType268;
 				case "Windows.UI.Xaml.Controls.CalendarDatePicker":
-				if(_bindableType269 == null)
 				{
-					_bindableType269 = MetadataBuilder_269.Build();
+					element = ref _bindableTypes[269];
+					if(element == null)
+					{
+						element = MetadataBuilder_269.Build();
+					}
+					break;
 				}
-				return _bindableType269;
 				case "Windows.UI.Xaml.Controls.CalendarView":
-				if(_bindableType270 == null)
 				{
-					_bindableType270 = MetadataBuilder_270.Build();
+					element = ref _bindableTypes[270];
+					if(element == null)
+					{
+						element = MetadataBuilder_270.Build();
+					}
+					break;
 				}
-				return _bindableType270;
 				case "Windows.UI.Xaml.Controls.CalendarViewDayItem":
-				if(_bindableType271 == null)
 				{
-					_bindableType271 = MetadataBuilder_271.Build();
+					element = ref _bindableTypes[271];
+					if(element == null)
+					{
+						element = MetadataBuilder_271.Build();
+					}
+					break;
 				}
-				return _bindableType271;
 				case "Windows.UI.Xaml.Controls.CalendarViewBaseItem":
-				if(_bindableType272 == null)
 				{
-					_bindableType272 = MetadataBuilder_272.Build();
+					element = ref _bindableTypes[272];
+					if(element == null)
+					{
+						element = MetadataBuilder_272.Build();
+					}
+					break;
 				}
-				return _bindableType272;
 				case "Windows.UI.Xaml.Controls.CaptureElement":
-				if(_bindableType273 == null)
 				{
-					_bindableType273 = MetadataBuilder_273.Build();
+					element = ref _bindableTypes[273];
+					if(element == null)
+					{
+						element = MetadataBuilder_273.Build();
+					}
+					break;
 				}
-				return _bindableType273;
 				case "Windows.UI.Xaml.Controls.CheckBox":
-				if(_bindableType274 == null)
 				{
-					_bindableType274 = MetadataBuilder_274.Build();
+					element = ref _bindableTypes[274];
+					if(element == null)
+					{
+						element = MetadataBuilder_274.Build();
+					}
+					break;
 				}
-				return _bindableType274;
 				case "Windows.UI.Xaml.Controls.ColorPicker":
-				if(_bindableType275 == null)
 				{
-					_bindableType275 = MetadataBuilder_275.Build();
+					element = ref _bindableTypes[275];
+					if(element == null)
+					{
+						element = MetadataBuilder_275.Build();
+					}
+					break;
 				}
-				return _bindableType275;
 				case "Windows.UI.Xaml.Controls.ColumnDefinition":
-				if(_bindableType276 == null)
 				{
-					_bindableType276 = MetadataBuilder_276.Build();
+					element = ref _bindableTypes[276];
+					if(element == null)
+					{
+						element = MetadataBuilder_276.Build();
+					}
+					break;
 				}
-				return _bindableType276;
 				case "Windows.UI.Xaml.Controls.ComboBox":
-				if(_bindableType277 == null)
 				{
-					_bindableType277 = MetadataBuilder_277.Build();
+					element = ref _bindableTypes[277];
+					if(element == null)
+					{
+						element = MetadataBuilder_277.Build();
+					}
+					break;
 				}
-				return _bindableType277;
 				case "Windows.UI.Xaml.Controls.ComboBoxItem":
-				if(_bindableType278 == null)
 				{
-					_bindableType278 = MetadataBuilder_278.Build();
+					element = ref _bindableTypes[278];
+					if(element == null)
+					{
+						element = MetadataBuilder_278.Build();
+					}
+					break;
 				}
-				return _bindableType278;
 				case "Windows.UI.Xaml.Controls.CommandBar":
-				if(_bindableType279 == null)
 				{
-					_bindableType279 = MetadataBuilder_279.Build();
+					element = ref _bindableTypes[279];
+					if(element == null)
+					{
+						element = MetadataBuilder_279.Build();
+					}
+					break;
 				}
-				return _bindableType279;
 				case "Windows.UI.Xaml.Controls.CommandBarFlyout":
-				if(_bindableType280 == null)
 				{
-					_bindableType280 = MetadataBuilder_280.Build();
+					element = ref _bindableTypes[280];
+					if(element == null)
+					{
+						element = MetadataBuilder_280.Build();
+					}
+					break;
 				}
-				return _bindableType280;
 				case "Windows.UI.Xaml.Controls.Primitives.FlyoutBase":
-				if(_bindableType281 == null)
 				{
-					_bindableType281 = MetadataBuilder_281.Build();
+					element = ref _bindableTypes[281];
+					if(element == null)
+					{
+						element = MetadataBuilder_281.Build();
+					}
+					break;
 				}
-				return _bindableType281;
 				case "Windows.UI.Xaml.Controls.CommandBarOverflowPresenter":
-				if(_bindableType282 == null)
 				{
-					_bindableType282 = MetadataBuilder_282.Build();
+					element = ref _bindableTypes[282];
+					if(element == null)
+					{
+						element = MetadataBuilder_282.Build();
+					}
+					break;
 				}
-				return _bindableType282;
 				case "Windows.UI.Xaml.Controls.ContentDialog":
-				if(_bindableType283 == null)
 				{
-					_bindableType283 = MetadataBuilder_283.Build();
+					element = ref _bindableTypes[283];
+					if(element == null)
+					{
+						element = MetadataBuilder_283.Build();
+					}
+					break;
 				}
-				return _bindableType283;
 				case "Windows.UI.Xaml.Controls.ContentPresenter":
-				if(_bindableType284 == null)
 				{
-					_bindableType284 = MetadataBuilder_284.Build();
+					element = ref _bindableTypes[284];
+					if(element == null)
+					{
+						element = MetadataBuilder_284.Build();
+					}
+					break;
 				}
-				return _bindableType284;
 				case "Windows.UI.Xaml.Controls.ControlTemplate":
-				if(_bindableType285 == null)
 				{
-					_bindableType285 = MetadataBuilder_285.Build();
+					element = ref _bindableTypes[285];
+					if(element == null)
+					{
+						element = MetadataBuilder_285.Build();
+					}
+					break;
 				}
-				return _bindableType285;
 				case "Windows.UI.Xaml.Controls.DatePickedEventArgs":
-				if(_bindableType286 == null)
 				{
-					_bindableType286 = MetadataBuilder_286.Build();
+					element = ref _bindableTypes[286];
+					if(element == null)
+					{
+						element = MetadataBuilder_286.Build();
+					}
+					break;
 				}
-				return _bindableType286;
 				case "Windows.UI.Xaml.Controls.DatePicker":
-				if(_bindableType287 == null)
 				{
-					_bindableType287 = MetadataBuilder_287.Build();
+					element = ref _bindableTypes[287];
+					if(element == null)
+					{
+						element = MetadataBuilder_287.Build();
+					}
+					break;
 				}
-				return _bindableType287;
 				case "Windows.UI.Xaml.Controls.DatePickerFlyout":
-				if(_bindableType288 == null)
 				{
-					_bindableType288 = MetadataBuilder_288.Build();
+					element = ref _bindableTypes[288];
+					if(element == null)
+					{
+						element = MetadataBuilder_288.Build();
+					}
+					break;
 				}
-				return _bindableType288;
 				case "Windows.UI.Xaml.Controls.Primitives.PickerFlyoutBase":
-				if(_bindableType289 == null)
 				{
-					_bindableType289 = MetadataBuilder_289.Build();
+					element = ref _bindableTypes[289];
+					if(element == null)
+					{
+						element = MetadataBuilder_289.Build();
+					}
+					break;
 				}
-				return _bindableType289;
 				case "Windows.UI.Xaml.Controls.DatePickerFlyoutItem":
-				if(_bindableType290 == null)
 				{
-					_bindableType290 = MetadataBuilder_290.Build();
+					element = ref _bindableTypes[290];
+					if(element == null)
+					{
+						element = MetadataBuilder_290.Build();
+					}
+					break;
 				}
-				return _bindableType290;
 				case "Windows.UI.Xaml.Controls.DatePickerFlyoutPresenter":
-				if(_bindableType291 == null)
 				{
-					_bindableType291 = MetadataBuilder_291.Build();
+					element = ref _bindableTypes[291];
+					if(element == null)
+					{
+						element = MetadataBuilder_291.Build();
+					}
+					break;
 				}
-				return _bindableType291;
 				case "Windows.UI.Xaml.Controls.DropDownButton":
-				if(_bindableType292 == null)
 				{
-					_bindableType292 = MetadataBuilder_292.Build();
+					element = ref _bindableTypes[292];
+					if(element == null)
+					{
+						element = MetadataBuilder_292.Build();
+					}
+					break;
 				}
-				return _bindableType292;
 				case "Windows.UI.Xaml.Controls.DropDownButtonAutomationPeer":
-				if(_bindableType293 == null)
 				{
-					_bindableType293 = MetadataBuilder_293.Build();
+					element = ref _bindableTypes[293];
+					if(element == null)
+					{
+						element = MetadataBuilder_293.Build();
+					}
+					break;
 				}
-				return _bindableType293;
 				case "Windows.UI.Xaml.Controls.FlipView":
-				if(_bindableType294 == null)
 				{
-					_bindableType294 = MetadataBuilder_294.Build();
+					element = ref _bindableTypes[294];
+					if(element == null)
+					{
+						element = MetadataBuilder_294.Build();
+					}
+					break;
 				}
-				return _bindableType294;
 				case "Windows.UI.Xaml.Controls.FlipViewItem":
-				if(_bindableType295 == null)
 				{
-					_bindableType295 = MetadataBuilder_295.Build();
+					element = ref _bindableTypes[295];
+					if(element == null)
+					{
+						element = MetadataBuilder_295.Build();
+					}
+					break;
 				}
-				return _bindableType295;
 				case "Windows.UI.Xaml.Controls.Flyout":
-				if(_bindableType296 == null)
 				{
-					_bindableType296 = MetadataBuilder_296.Build();
+					element = ref _bindableTypes[296];
+					if(element == null)
+					{
+						element = MetadataBuilder_296.Build();
+					}
+					break;
 				}
-				return _bindableType296;
 				case "Windows.UI.Xaml.Controls.FlyoutPresenter":
-				if(_bindableType297 == null)
 				{
-					_bindableType297 = MetadataBuilder_297.Build();
+					element = ref _bindableTypes[297];
+					if(element == null)
+					{
+						element = MetadataBuilder_297.Build();
+					}
+					break;
 				}
-				return _bindableType297;
 				case "Windows.UI.Xaml.Controls.FontIcon":
-				if(_bindableType298 == null)
 				{
-					_bindableType298 = MetadataBuilder_298.Build();
+					element = ref _bindableTypes[298];
+					if(element == null)
+					{
+						element = MetadataBuilder_298.Build();
+					}
+					break;
 				}
-				return _bindableType298;
 				case "Windows.UI.Xaml.Controls.FontIconSource":
-				if(_bindableType299 == null)
 				{
-					_bindableType299 = MetadataBuilder_299.Build();
+					element = ref _bindableTypes[299];
+					if(element == null)
+					{
+						element = MetadataBuilder_299.Build();
+					}
+					break;
 				}
-				return _bindableType299;
 				case "Windows.UI.Xaml.Controls.Frame":
-				if(_bindableType300 == null)
 				{
-					_bindableType300 = MetadataBuilder_300.Build();
+					element = ref _bindableTypes[300];
+					if(element == null)
+					{
+						element = MetadataBuilder_300.Build();
+					}
+					break;
 				}
-				return _bindableType300;
 				case "Windows.UI.Xaml.Controls.GridView":
-				if(_bindableType301 == null)
 				{
-					_bindableType301 = MetadataBuilder_301.Build();
+					element = ref _bindableTypes[301];
+					if(element == null)
+					{
+						element = MetadataBuilder_301.Build();
+					}
+					break;
 				}
-				return _bindableType301;
 				case "Windows.UI.Xaml.Controls.GridViewHeaderItem":
-				if(_bindableType302 == null)
 				{
-					_bindableType302 = MetadataBuilder_302.Build();
+					element = ref _bindableTypes[302];
+					if(element == null)
+					{
+						element = MetadataBuilder_302.Build();
+					}
+					break;
 				}
-				return _bindableType302;
 				case "Windows.UI.Xaml.Controls.ListViewBaseHeaderItem":
-				if(_bindableType303 == null)
 				{
-					_bindableType303 = MetadataBuilder_303.Build();
+					element = ref _bindableTypes[303];
+					if(element == null)
+					{
+						element = MetadataBuilder_303.Build();
+					}
+					break;
 				}
-				return _bindableType303;
 				case "Windows.UI.Xaml.Controls.GridViewItem":
-				if(_bindableType304 == null)
 				{
-					_bindableType304 = MetadataBuilder_304.Build();
+					element = ref _bindableTypes[304];
+					if(element == null)
+					{
+						element = MetadataBuilder_304.Build();
+					}
+					break;
 				}
-				return _bindableType304;
 				case "Windows.UI.Xaml.Controls.GroupItem":
-				if(_bindableType305 == null)
 				{
-					_bindableType305 = MetadataBuilder_305.Build();
+					element = ref _bindableTypes[305];
+					if(element == null)
+					{
+						element = MetadataBuilder_305.Build();
+					}
+					break;
 				}
-				return _bindableType305;
 				case "Windows.UI.Xaml.Controls.HandwritingView":
-				if(_bindableType306 == null)
 				{
-					_bindableType306 = MetadataBuilder_306.Build();
+					element = ref _bindableTypes[306];
+					if(element == null)
+					{
+						element = MetadataBuilder_306.Build();
+					}
+					break;
 				}
-				return _bindableType306;
 				case "Windows.UI.Xaml.Controls.Hub":
-				if(_bindableType307 == null)
 				{
-					_bindableType307 = MetadataBuilder_307.Build();
+					element = ref _bindableTypes[307];
+					if(element == null)
+					{
+						element = MetadataBuilder_307.Build();
+					}
+					break;
 				}
-				return _bindableType307;
 				case "Windows.UI.Xaml.Controls.HubSection":
-				if(_bindableType308 == null)
 				{
-					_bindableType308 = MetadataBuilder_308.Build();
+					element = ref _bindableTypes[308];
+					if(element == null)
+					{
+						element = MetadataBuilder_308.Build();
+					}
+					break;
 				}
-				return _bindableType308;
 				case "Windows.UI.Xaml.Controls.HyperlinkButton":
-				if(_bindableType309 == null)
 				{
-					_bindableType309 = MetadataBuilder_309.Build();
+					element = ref _bindableTypes[309];
+					if(element == null)
+					{
+						element = MetadataBuilder_309.Build();
+					}
+					break;
 				}
-				return _bindableType309;
 				case "Windows.UI.Xaml.Controls.IconSourceElement":
-				if(_bindableType310 == null)
 				{
-					_bindableType310 = MetadataBuilder_310.Build();
+					element = ref _bindableTypes[310];
+					if(element == null)
+					{
+						element = MetadataBuilder_310.Build();
+					}
+					break;
 				}
-				return _bindableType310;
 				case "Windows.UI.Xaml.Controls.Image":
-				if(_bindableType311 == null)
 				{
-					_bindableType311 = MetadataBuilder_311.Build();
+					element = ref _bindableTypes[311];
+					if(element == null)
+					{
+						element = MetadataBuilder_311.Build();
+					}
+					break;
 				}
-				return _bindableType311;
 				case "Windows.UI.Xaml.Controls.InkCanvas":
-				if(_bindableType312 == null)
 				{
-					_bindableType312 = MetadataBuilder_312.Build();
+					element = ref _bindableTypes[312];
+					if(element == null)
+					{
+						element = MetadataBuilder_312.Build();
+					}
+					break;
 				}
-				return _bindableType312;
 				case "Windows.UI.Xaml.Controls.InkToolbar":
-				if(_bindableType313 == null)
 				{
-					_bindableType313 = MetadataBuilder_313.Build();
+					element = ref _bindableTypes[313];
+					if(element == null)
+					{
+						element = MetadataBuilder_313.Build();
+					}
+					break;
 				}
-				return _bindableType313;
 				case "Windows.UI.Xaml.Controls.InkToolbarBallpointPenButton":
-				if(_bindableType314 == null)
 				{
-					_bindableType314 = MetadataBuilder_314.Build();
+					element = ref _bindableTypes[314];
+					if(element == null)
+					{
+						element = MetadataBuilder_314.Build();
+					}
+					break;
 				}
-				return _bindableType314;
 				case "Windows.UI.Xaml.Controls.InkToolbarPenButton":
-				if(_bindableType315 == null)
 				{
-					_bindableType315 = MetadataBuilder_315.Build();
+					element = ref _bindableTypes[315];
+					if(element == null)
+					{
+						element = MetadataBuilder_315.Build();
+					}
+					break;
 				}
-				return _bindableType315;
 				case "Windows.UI.Xaml.Controls.InkToolbarToolButton":
-				if(_bindableType316 == null)
 				{
-					_bindableType316 = MetadataBuilder_316.Build();
+					element = ref _bindableTypes[316];
+					if(element == null)
+					{
+						element = MetadataBuilder_316.Build();
+					}
+					break;
 				}
-				return _bindableType316;
 				case "Windows.UI.Xaml.Controls.RadioButton":
-				if(_bindableType317 == null)
 				{
-					_bindableType317 = MetadataBuilder_317.Build();
+					element = ref _bindableTypes[317];
+					if(element == null)
+					{
+						element = MetadataBuilder_317.Build();
+					}
+					break;
 				}
-				return _bindableType317;
 				case "Windows.UI.Xaml.Controls.InkToolbarCustomPen":
-				if(_bindableType318 == null)
 				{
-					_bindableType318 = MetadataBuilder_318.Build();
+					element = ref _bindableTypes[318];
+					if(element == null)
+					{
+						element = MetadataBuilder_318.Build();
+					}
+					break;
 				}
-				return _bindableType318;
 				case "Windows.UI.Xaml.Controls.InkToolbarCustomPenButton":
-				if(_bindableType319 == null)
 				{
-					_bindableType319 = MetadataBuilder_319.Build();
+					element = ref _bindableTypes[319];
+					if(element == null)
+					{
+						element = MetadataBuilder_319.Build();
+					}
+					break;
 				}
-				return _bindableType319;
 				case "Windows.UI.Xaml.Controls.InkToolbarCustomToggleButton":
-				if(_bindableType320 == null)
 				{
-					_bindableType320 = MetadataBuilder_320.Build();
+					element = ref _bindableTypes[320];
+					if(element == null)
+					{
+						element = MetadataBuilder_320.Build();
+					}
+					break;
 				}
-				return _bindableType320;
 				case "Windows.UI.Xaml.Controls.InkToolbarToggleButton":
-				if(_bindableType321 == null)
 				{
-					_bindableType321 = MetadataBuilder_321.Build();
+					element = ref _bindableTypes[321];
+					if(element == null)
+					{
+						element = MetadataBuilder_321.Build();
+					}
+					break;
 				}
-				return _bindableType321;
 				case "Windows.UI.Xaml.Controls.InkToolbarCustomToolButton":
-				if(_bindableType322 == null)
 				{
-					_bindableType322 = MetadataBuilder_322.Build();
+					element = ref _bindableTypes[322];
+					if(element == null)
+					{
+						element = MetadataBuilder_322.Build();
+					}
+					break;
 				}
-				return _bindableType322;
 				case "Windows.UI.Xaml.Controls.InkToolbarEraserButton":
-				if(_bindableType323 == null)
 				{
-					_bindableType323 = MetadataBuilder_323.Build();
+					element = ref _bindableTypes[323];
+					if(element == null)
+					{
+						element = MetadataBuilder_323.Build();
+					}
+					break;
 				}
-				return _bindableType323;
 				case "Windows.UI.Xaml.Controls.InkToolbarFlyoutItem":
-				if(_bindableType324 == null)
 				{
-					_bindableType324 = MetadataBuilder_324.Build();
+					element = ref _bindableTypes[324];
+					if(element == null)
+					{
+						element = MetadataBuilder_324.Build();
+					}
+					break;
 				}
-				return _bindableType324;
 				case "Windows.UI.Xaml.Controls.InkToolbarHighlighterButton":
-				if(_bindableType325 == null)
 				{
-					_bindableType325 = MetadataBuilder_325.Build();
+					element = ref _bindableTypes[325];
+					if(element == null)
+					{
+						element = MetadataBuilder_325.Build();
+					}
+					break;
 				}
-				return _bindableType325;
 				case "Windows.UI.Xaml.Controls.InkToolbarMenuButton":
-				if(_bindableType326 == null)
 				{
-					_bindableType326 = MetadataBuilder_326.Build();
+					element = ref _bindableTypes[326];
+					if(element == null)
+					{
+						element = MetadataBuilder_326.Build();
+					}
+					break;
 				}
-				return _bindableType326;
 				case "Windows.UI.Xaml.Controls.InkToolbarPencilButton":
-				if(_bindableType327 == null)
 				{
-					_bindableType327 = MetadataBuilder_327.Build();
+					element = ref _bindableTypes[327];
+					if(element == null)
+					{
+						element = MetadataBuilder_327.Build();
+					}
+					break;
 				}
-				return _bindableType327;
 				case "Windows.UI.Xaml.Controls.InkToolbarPenConfigurationControl":
-				if(_bindableType328 == null)
 				{
-					_bindableType328 = MetadataBuilder_328.Build();
+					element = ref _bindableTypes[328];
+					if(element == null)
+					{
+						element = MetadataBuilder_328.Build();
+					}
+					break;
 				}
-				return _bindableType328;
 				case "Windows.UI.Xaml.Controls.InkToolbarRulerButton":
-				if(_bindableType329 == null)
 				{
-					_bindableType329 = MetadataBuilder_329.Build();
+					element = ref _bindableTypes[329];
+					if(element == null)
+					{
+						element = MetadataBuilder_329.Build();
+					}
+					break;
 				}
-				return _bindableType329;
 				case "Windows.UI.Xaml.Controls.InkToolbarStencilButton":
-				if(_bindableType330 == null)
 				{
-					_bindableType330 = MetadataBuilder_330.Build();
+					element = ref _bindableTypes[330];
+					if(element == null)
+					{
+						element = MetadataBuilder_330.Build();
+					}
+					break;
 				}
-				return _bindableType330;
 				case "Windows.UI.Xaml.Controls.ItemsPanelTemplate":
-				if(_bindableType331 == null)
 				{
-					_bindableType331 = MetadataBuilder_331.Build();
+					element = ref _bindableTypes[331];
+					if(element == null)
+					{
+						element = MetadataBuilder_331.Build();
+					}
+					break;
 				}
-				return _bindableType331;
 				case "Windows.UI.Xaml.Controls.ItemsPickedEventArgs":
-				if(_bindableType332 == null)
 				{
-					_bindableType332 = MetadataBuilder_332.Build();
+					element = ref _bindableTypes[332];
+					if(element == null)
+					{
+						element = MetadataBuilder_332.Build();
+					}
+					break;
 				}
-				return _bindableType332;
 				case "Windows.UI.Xaml.Controls.ItemsPresenter":
-				if(_bindableType333 == null)
 				{
-					_bindableType333 = MetadataBuilder_333.Build();
+					element = ref _bindableTypes[333];
+					if(element == null)
+					{
+						element = MetadataBuilder_333.Build();
+					}
+					break;
 				}
-				return _bindableType333;
 				case "Windows.UI.Xaml.Controls.ItemsWrapGrid":
-				if(_bindableType334 == null)
 				{
-					_bindableType334 = MetadataBuilder_334.Build();
+					element = ref _bindableTypes[334];
+					if(element == null)
+					{
+						element = MetadataBuilder_334.Build();
+					}
+					break;
 				}
-				return _bindableType334;
 				case "Windows.UI.Xaml.Controls.ListBox":
-				if(_bindableType335 == null)
 				{
-					_bindableType335 = MetadataBuilder_335.Build();
+					element = ref _bindableTypes[335];
+					if(element == null)
+					{
+						element = MetadataBuilder_335.Build();
+					}
+					break;
 				}
-				return _bindableType335;
 				case "Windows.UI.Xaml.Controls.ListBoxItem":
-				if(_bindableType336 == null)
 				{
-					_bindableType336 = MetadataBuilder_336.Build();
+					element = ref _bindableTypes[336];
+					if(element == null)
+					{
+						element = MetadataBuilder_336.Build();
+					}
+					break;
 				}
-				return _bindableType336;
 				case "Windows.UI.Xaml.Controls.ListPickerFlyout":
-				if(_bindableType337 == null)
 				{
-					_bindableType337 = MetadataBuilder_337.Build();
+					element = ref _bindableTypes[337];
+					if(element == null)
+					{
+						element = MetadataBuilder_337.Build();
+					}
+					break;
 				}
-				return _bindableType337;
 				case "Windows.UI.Xaml.Controls.ListPickerFlyoutPresenter":
-				if(_bindableType338 == null)
 				{
-					_bindableType338 = MetadataBuilder_338.Build();
+					element = ref _bindableTypes[338];
+					if(element == null)
+					{
+						element = MetadataBuilder_338.Build();
+					}
+					break;
 				}
-				return _bindableType338;
 				case "Windows.UI.Xaml.Controls.ListViewHeaderItem":
-				if(_bindableType339 == null)
 				{
-					_bindableType339 = MetadataBuilder_339.Build();
+					element = ref _bindableTypes[339];
+					if(element == null)
+					{
+						element = MetadataBuilder_339.Build();
+					}
+					break;
 				}
-				return _bindableType339;
 				case "Windows.UI.Xaml.Controls.MediaElement":
-				if(_bindableType340 == null)
 				{
-					_bindableType340 = MetadataBuilder_340.Build();
+					element = ref _bindableTypes[340];
+					if(element == null)
+					{
+						element = MetadataBuilder_340.Build();
+					}
+					break;
 				}
-				return _bindableType340;
 				case "Windows.UI.Xaml.Controls.MediaPlayerElement":
-				if(_bindableType341 == null)
 				{
-					_bindableType341 = MetadataBuilder_341.Build();
+					element = ref _bindableTypes[341];
+					if(element == null)
+					{
+						element = MetadataBuilder_341.Build();
+					}
+					break;
 				}
-				return _bindableType341;
 				case "Windows.UI.Xaml.Controls.MediaPlayerPresenter":
-				if(_bindableType342 == null)
 				{
-					_bindableType342 = MetadataBuilder_342.Build();
+					element = ref _bindableTypes[342];
+					if(element == null)
+					{
+						element = MetadataBuilder_342.Build();
+					}
+					break;
 				}
-				return _bindableType342;
 				case "Windows.UI.Xaml.Controls.MediaTransportControls":
-				if(_bindableType343 == null)
 				{
-					_bindableType343 = MetadataBuilder_343.Build();
+					element = ref _bindableTypes[343];
+					if(element == null)
+					{
+						element = MetadataBuilder_343.Build();
+					}
+					break;
 				}
-				return _bindableType343;
 				case "Windows.UI.Xaml.Controls.MenuBar":
-				if(_bindableType344 == null)
 				{
-					_bindableType344 = MetadataBuilder_344.Build();
+					element = ref _bindableTypes[344];
+					if(element == null)
+					{
+						element = MetadataBuilder_344.Build();
+					}
+					break;
 				}
-				return _bindableType344;
 				case "Windows.UI.Xaml.Controls.MenuBarItem":
-				if(_bindableType345 == null)
 				{
-					_bindableType345 = MetadataBuilder_345.Build();
+					element = ref _bindableTypes[345];
+					if(element == null)
+					{
+						element = MetadataBuilder_345.Build();
+					}
+					break;
 				}
-				return _bindableType345;
 				case "Windows.UI.Xaml.Controls.MenuBarItemFlyout":
-				if(_bindableType346 == null)
 				{
-					_bindableType346 = MetadataBuilder_346.Build();
+					element = ref _bindableTypes[346];
+					if(element == null)
+					{
+						element = MetadataBuilder_346.Build();
+					}
+					break;
 				}
-				return _bindableType346;
 				case "Windows.UI.Xaml.Controls.MenuFlyout":
-				if(_bindableType347 == null)
 				{
-					_bindableType347 = MetadataBuilder_347.Build();
+					element = ref _bindableTypes[347];
+					if(element == null)
+					{
+						element = MetadataBuilder_347.Build();
+					}
+					break;
 				}
-				return _bindableType347;
 				case "Windows.UI.Xaml.Controls.MenuFlyoutPresenter":
-				if(_bindableType348 == null)
 				{
-					_bindableType348 = MetadataBuilder_348.Build();
+					element = ref _bindableTypes[348];
+					if(element == null)
+					{
+						element = MetadataBuilder_348.Build();
+					}
+					break;
 				}
-				return _bindableType348;
 				case "Windows.UI.Xaml.Controls.MenuFlyoutSeparator":
-				if(_bindableType349 == null)
 				{
-					_bindableType349 = MetadataBuilder_349.Build();
+					element = ref _bindableTypes[349];
+					if(element == null)
+					{
+						element = MetadataBuilder_349.Build();
+					}
+					break;
 				}
-				return _bindableType349;
 				case "Windows.UI.Xaml.Controls.MenuFlyoutSubItem":
-				if(_bindableType350 == null)
 				{
-					_bindableType350 = MetadataBuilder_350.Build();
+					element = ref _bindableTypes[350];
+					if(element == null)
+					{
+						element = MetadataBuilder_350.Build();
+					}
+					break;
 				}
-				return _bindableType350;
 				case "Windows.UI.Xaml.Controls.NavigationView":
-				if(_bindableType351 == null)
 				{
-					_bindableType351 = MetadataBuilder_351.Build();
+					element = ref _bindableTypes[351];
+					if(element == null)
+					{
+						element = MetadataBuilder_351.Build();
+					}
+					break;
 				}
-				return _bindableType351;
 				case "Windows.UI.Xaml.Controls.NavigationViewItem":
-				if(_bindableType352 == null)
 				{
-					_bindableType352 = MetadataBuilder_352.Build();
+					element = ref _bindableTypes[352];
+					if(element == null)
+					{
+						element = MetadataBuilder_352.Build();
+					}
+					break;
 				}
-				return _bindableType352;
 				case "Windows.UI.Xaml.Controls.NavigationViewItemBase":
-				if(_bindableType353 == null)
 				{
-					_bindableType353 = MetadataBuilder_353.Build();
+					element = ref _bindableTypes[353];
+					if(element == null)
+					{
+						element = MetadataBuilder_353.Build();
+					}
+					break;
 				}
-				return _bindableType353;
 				case "Windows.UI.Xaml.Controls.NavigationViewItemHeader":
-				if(_bindableType354 == null)
 				{
-					_bindableType354 = MetadataBuilder_354.Build();
+					element = ref _bindableTypes[354];
+					if(element == null)
+					{
+						element = MetadataBuilder_354.Build();
+					}
+					break;
 				}
-				return _bindableType354;
 				case "Windows.UI.Xaml.Controls.NavigationViewItemSeparator":
-				if(_bindableType355 == null)
 				{
-					_bindableType355 = MetadataBuilder_355.Build();
+					element = ref _bindableTypes[355];
+					if(element == null)
+					{
+						element = MetadataBuilder_355.Build();
+					}
+					break;
 				}
-				return _bindableType355;
 				case "Windows.UI.Xaml.Controls.NavigationViewList":
-				if(_bindableType356 == null)
 				{
-					_bindableType356 = MetadataBuilder_356.Build();
+					element = ref _bindableTypes[356];
+					if(element == null)
+					{
+						element = MetadataBuilder_356.Build();
+					}
+					break;
 				}
-				return _bindableType356;
 				case "Windows.UI.Xaml.Controls.NavigationViewTemplateSettings":
-				if(_bindableType357 == null)
 				{
-					_bindableType357 = MetadataBuilder_357.Build();
+					element = ref _bindableTypes[357];
+					if(element == null)
+					{
+						element = MetadataBuilder_357.Build();
+					}
+					break;
 				}
-				return _bindableType357;
 				case "Windows.UI.Xaml.Controls.Page":
-				if(_bindableType358 == null)
 				{
-					_bindableType358 = MetadataBuilder_358.Build();
+					element = ref _bindableTypes[358];
+					if(element == null)
+					{
+						element = MetadataBuilder_358.Build();
+					}
+					break;
 				}
-				return _bindableType358;
 				case "Windows.UI.Xaml.Controls.UserControl":
-				if(_bindableType359 == null)
 				{
-					_bindableType359 = MetadataBuilder_359.Build();
+					element = ref _bindableTypes[359];
+					if(element == null)
+					{
+						element = MetadataBuilder_359.Build();
+					}
+					break;
 				}
-				return _bindableType359;
 				case "Windows.UI.Xaml.Controls.ParallaxView":
-				if(_bindableType360 == null)
 				{
-					_bindableType360 = MetadataBuilder_360.Build();
+					element = ref _bindableTypes[360];
+					if(element == null)
+					{
+						element = MetadataBuilder_360.Build();
+					}
+					break;
 				}
-				return _bindableType360;
 				case "Windows.UI.Xaml.Controls.PasswordBox":
-				if(_bindableType361 == null)
 				{
-					_bindableType361 = MetadataBuilder_361.Build();
+					element = ref _bindableTypes[361];
+					if(element == null)
+					{
+						element = MetadataBuilder_361.Build();
+					}
+					break;
 				}
-				return _bindableType361;
 				case "Windows.UI.Xaml.Controls.TextBox":
-				if(_bindableType362 == null)
 				{
-					_bindableType362 = MetadataBuilder_362.Build();
+					element = ref _bindableTypes[362];
+					if(element == null)
+					{
+						element = MetadataBuilder_362.Build();
+					}
+					break;
 				}
-				return _bindableType362;
 				case "Windows.UI.Xaml.Controls.PathIcon":
-				if(_bindableType363 == null)
 				{
-					_bindableType363 = MetadataBuilder_363.Build();
+					element = ref _bindableTypes[363];
+					if(element == null)
+					{
+						element = MetadataBuilder_363.Build();
+					}
+					break;
 				}
-				return _bindableType363;
 				case "Windows.UI.Xaml.Controls.PathIconSource":
-				if(_bindableType364 == null)
 				{
-					_bindableType364 = MetadataBuilder_364.Build();
+					element = ref _bindableTypes[364];
+					if(element == null)
+					{
+						element = MetadataBuilder_364.Build();
+					}
+					break;
 				}
-				return _bindableType364;
 				case "Windows.UI.Xaml.Controls.PersonPicture":
-				if(_bindableType365 == null)
 				{
-					_bindableType365 = MetadataBuilder_365.Build();
+					element = ref _bindableTypes[365];
+					if(element == null)
+					{
+						element = MetadataBuilder_365.Build();
+					}
+					break;
 				}
-				return _bindableType365;
 				case "Windows.UI.Xaml.Controls.PickerConfirmedEventArgs":
-				if(_bindableType366 == null)
 				{
-					_bindableType366 = MetadataBuilder_366.Build();
+					element = ref _bindableTypes[366];
+					if(element == null)
+					{
+						element = MetadataBuilder_366.Build();
+					}
+					break;
 				}
-				return _bindableType366;
 				case "Windows.UI.Xaml.Controls.PickerFlyoutPresenter":
-				if(_bindableType367 == null)
 				{
-					_bindableType367 = MetadataBuilder_367.Build();
+					element = ref _bindableTypes[367];
+					if(element == null)
+					{
+						element = MetadataBuilder_367.Build();
+					}
+					break;
 				}
-				return _bindableType367;
 				case "Windows.UI.Xaml.Controls.Pivot":
-				if(_bindableType368 == null)
 				{
-					_bindableType368 = MetadataBuilder_368.Build();
+					element = ref _bindableTypes[368];
+					if(element == null)
+					{
+						element = MetadataBuilder_368.Build();
+					}
+					break;
 				}
-				return _bindableType368;
 				case "Windows.UI.Xaml.Controls.PivotItem":
-				if(_bindableType369 == null)
 				{
-					_bindableType369 = MetadataBuilder_369.Build();
+					element = ref _bindableTypes[369];
+					if(element == null)
+					{
+						element = MetadataBuilder_369.Build();
+					}
+					break;
 				}
-				return _bindableType369;
 				case "Windows.UI.Xaml.Controls.ProgressBar":
-				if(_bindableType370 == null)
 				{
-					_bindableType370 = MetadataBuilder_370.Build();
+					element = ref _bindableTypes[370];
+					if(element == null)
+					{
+						element = MetadataBuilder_370.Build();
+					}
+					break;
 				}
-				return _bindableType370;
 				case "Windows.UI.Xaml.Controls.ProgressRing":
-				if(_bindableType371 == null)
 				{
-					_bindableType371 = MetadataBuilder_371.Build();
+					element = ref _bindableTypes[371];
+					if(element == null)
+					{
+						element = MetadataBuilder_371.Build();
+					}
+					break;
 				}
-				return _bindableType371;
 				case "Windows.UI.Xaml.Controls.RatingControl":
-				if(_bindableType372 == null)
 				{
-					_bindableType372 = MetadataBuilder_372.Build();
+					element = ref _bindableTypes[372];
+					if(element == null)
+					{
+						element = MetadataBuilder_372.Build();
+					}
+					break;
 				}
-				return _bindableType372;
 				case "Windows.UI.Xaml.Controls.RatingItemFontInfo":
-				if(_bindableType373 == null)
 				{
-					_bindableType373 = MetadataBuilder_373.Build();
+					element = ref _bindableTypes[373];
+					if(element == null)
+					{
+						element = MetadataBuilder_373.Build();
+					}
+					break;
 				}
-				return _bindableType373;
 				case "Windows.UI.Xaml.Controls.RatingItemInfo":
-				if(_bindableType374 == null)
 				{
-					_bindableType374 = MetadataBuilder_374.Build();
+					element = ref _bindableTypes[374];
+					if(element == null)
+					{
+						element = MetadataBuilder_374.Build();
+					}
+					break;
 				}
-				return _bindableType374;
 				case "Windows.UI.Xaml.Controls.RatingItemImageInfo":
-				if(_bindableType375 == null)
 				{
-					_bindableType375 = MetadataBuilder_375.Build();
+					element = ref _bindableTypes[375];
+					if(element == null)
+					{
+						element = MetadataBuilder_375.Build();
+					}
+					break;
 				}
-				return _bindableType375;
 				case "Windows.UI.Xaml.Controls.RefreshContainer":
-				if(_bindableType376 == null)
 				{
-					_bindableType376 = MetadataBuilder_376.Build();
+					element = ref _bindableTypes[376];
+					if(element == null)
+					{
+						element = MetadataBuilder_376.Build();
+					}
+					break;
 				}
-				return _bindableType376;
 				case "Windows.UI.Xaml.Controls.RefreshVisualizer":
-				if(_bindableType377 == null)
 				{
-					_bindableType377 = MetadataBuilder_377.Build();
+					element = ref _bindableTypes[377];
+					if(element == null)
+					{
+						element = MetadataBuilder_377.Build();
+					}
+					break;
 				}
-				return _bindableType377;
 				case "Windows.UI.Xaml.Controls.RelativePanel":
-				if(_bindableType378 == null)
 				{
-					_bindableType378 = MetadataBuilder_378.Build();
+					element = ref _bindableTypes[378];
+					if(element == null)
+					{
+						element = MetadataBuilder_378.Build();
+					}
+					break;
 				}
-				return _bindableType378;
+				case "Windows.UI.Xaml.Controls.RichEditBox":
+				{
+					element = ref _bindableTypes[379];
+					if(element == null)
+					{
+						element = MetadataBuilder_379.Build();
+					}
+					break;
+				}
 				case "Windows.UI.Xaml.Controls.RichTextBlock":
-				if(_bindableType379 == null)
 				{
-					_bindableType379 = MetadataBuilder_379.Build();
+					element = ref _bindableTypes[380];
+					if(element == null)
+					{
+						element = MetadataBuilder_380.Build();
+					}
+					break;
 				}
-				return _bindableType379;
 				case "Windows.UI.Xaml.Controls.RichTextBlockOverflow":
-				if(_bindableType380 == null)
 				{
-					_bindableType380 = MetadataBuilder_380.Build();
+					element = ref _bindableTypes[381];
+					if(element == null)
+					{
+						element = MetadataBuilder_381.Build();
+					}
+					break;
 				}
-				return _bindableType380;
 				case "Windows.UI.Xaml.Controls.RowDefinition":
-				if(_bindableType381 == null)
 				{
-					_bindableType381 = MetadataBuilder_381.Build();
+					element = ref _bindableTypes[382];
+					if(element == null)
+					{
+						element = MetadataBuilder_382.Build();
+					}
+					break;
 				}
-				return _bindableType381;
 				case "Windows.UI.Xaml.Controls.ScrollContentPresenter":
-				if(_bindableType382 == null)
 				{
-					_bindableType382 = MetadataBuilder_382.Build();
+					element = ref _bindableTypes[383];
+					if(element == null)
+					{
+						element = MetadataBuilder_383.Build();
+					}
+					break;
 				}
-				return _bindableType382;
 				case "Windows.UI.Xaml.Controls.ScrollViewer":
-				if(_bindableType383 == null)
 				{
-					_bindableType383 = MetadataBuilder_383.Build();
+					element = ref _bindableTypes[384];
+					if(element == null)
+					{
+						element = MetadataBuilder_384.Build();
+					}
+					break;
 				}
-				return _bindableType383;
 				case "Windows.UI.Xaml.Controls.SearchBox":
-				if(_bindableType384 == null)
 				{
-					_bindableType384 = MetadataBuilder_384.Build();
+					element = ref _bindableTypes[385];
+					if(element == null)
+					{
+						element = MetadataBuilder_385.Build();
+					}
+					break;
 				}
-				return _bindableType384;
 				case "Windows.UI.Xaml.Controls.SemanticZoom":
-				if(_bindableType385 == null)
 				{
-					_bindableType385 = MetadataBuilder_385.Build();
+					element = ref _bindableTypes[386];
+					if(element == null)
+					{
+						element = MetadataBuilder_386.Build();
+					}
+					break;
 				}
-				return _bindableType385;
 				case "Windows.UI.Xaml.Controls.SettingsFlyout":
-				if(_bindableType386 == null)
 				{
-					_bindableType386 = MetadataBuilder_386.Build();
+					element = ref _bindableTypes[387];
+					if(element == null)
+					{
+						element = MetadataBuilder_387.Build();
+					}
+					break;
 				}
-				return _bindableType386;
 				case "Windows.UI.Xaml.Controls.SplitButton":
-				if(_bindableType387 == null)
 				{
-					_bindableType387 = MetadataBuilder_387.Build();
+					element = ref _bindableTypes[388];
+					if(element == null)
+					{
+						element = MetadataBuilder_388.Build();
+					}
+					break;
 				}
-				return _bindableType387;
 				case "Windows.UI.Xaml.Controls.SplitButtonAutomationPeer":
-				if(_bindableType388 == null)
 				{
-					_bindableType388 = MetadataBuilder_388.Build();
+					element = ref _bindableTypes[389];
+					if(element == null)
+					{
+						element = MetadataBuilder_389.Build();
+					}
+					break;
 				}
-				return _bindableType388;
 				case "Windows.UI.Xaml.Controls.SplitView":
-				if(_bindableType389 == null)
 				{
-					_bindableType389 = MetadataBuilder_389.Build();
+					element = ref _bindableTypes[390];
+					if(element == null)
+					{
+						element = MetadataBuilder_390.Build();
+					}
+					break;
 				}
-				return _bindableType389;
 				case "Windows.UI.Xaml.Controls.StackPanel":
-				if(_bindableType390 == null)
 				{
-					_bindableType390 = MetadataBuilder_390.Build();
+					element = ref _bindableTypes[391];
+					if(element == null)
+					{
+						element = MetadataBuilder_391.Build();
+					}
+					break;
 				}
-				return _bindableType390;
 				case "Windows.UI.Xaml.Controls.SwapChainBackgroundPanel":
-				if(_bindableType391 == null)
 				{
-					_bindableType391 = MetadataBuilder_391.Build();
+					element = ref _bindableTypes[392];
+					if(element == null)
+					{
+						element = MetadataBuilder_392.Build();
+					}
+					break;
 				}
-				return _bindableType391;
 				case "Windows.UI.Xaml.Controls.SwapChainPanel":
-				if(_bindableType392 == null)
 				{
-					_bindableType392 = MetadataBuilder_392.Build();
+					element = ref _bindableTypes[393];
+					if(element == null)
+					{
+						element = MetadataBuilder_393.Build();
+					}
+					break;
 				}
-				return _bindableType392;
 				case "Windows.UI.Xaml.Controls.SwipeControl":
-				if(_bindableType393 == null)
 				{
-					_bindableType393 = MetadataBuilder_393.Build();
+					element = ref _bindableTypes[394];
+					if(element == null)
+					{
+						element = MetadataBuilder_394.Build();
+					}
+					break;
 				}
-				return _bindableType393;
 				case "Windows.UI.Xaml.Controls.SwipeItem":
-				if(_bindableType394 == null)
 				{
-					_bindableType394 = MetadataBuilder_394.Build();
+					element = ref _bindableTypes[395];
+					if(element == null)
+					{
+						element = MetadataBuilder_395.Build();
+					}
+					break;
 				}
-				return _bindableType394;
 				case "Windows.UI.Xaml.Controls.SwipeItems":
-				if(_bindableType395 == null)
 				{
-					_bindableType395 = MetadataBuilder_395.Build();
+					element = ref _bindableTypes[396];
+					if(element == null)
+					{
+						element = MetadataBuilder_396.Build();
+					}
+					break;
 				}
-				return _bindableType395;
 				case "Windows.UI.Xaml.Controls.SymbolIcon":
-				if(_bindableType396 == null)
 				{
-					_bindableType396 = MetadataBuilder_396.Build();
+					element = ref _bindableTypes[397];
+					if(element == null)
+					{
+						element = MetadataBuilder_397.Build();
+					}
+					break;
 				}
-				return _bindableType396;
 				case "Windows.UI.Xaml.Controls.SymbolIconSource":
-				if(_bindableType397 == null)
 				{
-					_bindableType397 = MetadataBuilder_397.Build();
+					element = ref _bindableTypes[398];
+					if(element == null)
+					{
+						element = MetadataBuilder_398.Build();
+					}
+					break;
 				}
-				return _bindableType397;
 				case "Windows.UI.Xaml.Controls.TextBlock":
-				if(_bindableType398 == null)
 				{
-					_bindableType398 = MetadataBuilder_398.Build();
+					element = ref _bindableTypes[399];
+					if(element == null)
+					{
+						element = MetadataBuilder_399.Build();
+					}
+					break;
 				}
-				return _bindableType398;
 				case "Windows.UI.Xaml.Controls.TextCommandBarFlyout":
-				if(_bindableType399 == null)
 				{
-					_bindableType399 = MetadataBuilder_399.Build();
+					element = ref _bindableTypes[400];
+					if(element == null)
+					{
+						element = MetadataBuilder_400.Build();
+					}
+					break;
 				}
-				return _bindableType399;
 				case "Windows.UI.Xaml.Controls.TimePickedEventArgs":
-				if(_bindableType400 == null)
 				{
-					_bindableType400 = MetadataBuilder_400.Build();
+					element = ref _bindableTypes[401];
+					if(element == null)
+					{
+						element = MetadataBuilder_401.Build();
+					}
+					break;
 				}
-				return _bindableType400;
 				case "Windows.UI.Xaml.Controls.TimePicker":
-				if(_bindableType401 == null)
 				{
-					_bindableType401 = MetadataBuilder_401.Build();
+					element = ref _bindableTypes[402];
+					if(element == null)
+					{
+						element = MetadataBuilder_402.Build();
+					}
+					break;
 				}
-				return _bindableType401;
 				case "Windows.UI.Xaml.Controls.TimePickerFlyout":
-				if(_bindableType402 == null)
 				{
-					_bindableType402 = MetadataBuilder_402.Build();
+					element = ref _bindableTypes[403];
+					if(element == null)
+					{
+						element = MetadataBuilder_403.Build();
+					}
+					break;
 				}
-				return _bindableType402;
 				case "Windows.UI.Xaml.Controls.TimePickerFlyoutPresenter":
-				if(_bindableType403 == null)
 				{
-					_bindableType403 = MetadataBuilder_403.Build();
+					element = ref _bindableTypes[404];
+					if(element == null)
+					{
+						element = MetadataBuilder_404.Build();
+					}
+					break;
 				}
-				return _bindableType403;
 				case "Windows.UI.Xaml.Controls.ToggleSplitButton":
-				if(_bindableType404 == null)
 				{
-					_bindableType404 = MetadataBuilder_404.Build();
+					element = ref _bindableTypes[405];
+					if(element == null)
+					{
+						element = MetadataBuilder_405.Build();
+					}
+					break;
 				}
-				return _bindableType404;
 				case "Windows.UI.Xaml.Controls.ToggleSplitButtonAutomationPeer":
-				if(_bindableType405 == null)
 				{
-					_bindableType405 = MetadataBuilder_405.Build();
+					element = ref _bindableTypes[406];
+					if(element == null)
+					{
+						element = MetadataBuilder_406.Build();
+					}
+					break;
 				}
-				return _bindableType405;
 				case "Windows.UI.Xaml.Controls.ToggleSwitch":
-				if(_bindableType406 == null)
 				{
-					_bindableType406 = MetadataBuilder_406.Build();
+					element = ref _bindableTypes[407];
+					if(element == null)
+					{
+						element = MetadataBuilder_407.Build();
+					}
+					break;
 				}
-				return _bindableType406;
 				case "Windows.UI.Xaml.Controls.ToolTip":
-				if(_bindableType407 == null)
 				{
-					_bindableType407 = MetadataBuilder_407.Build();
+					element = ref _bindableTypes[408];
+					if(element == null)
+					{
+						element = MetadataBuilder_408.Build();
+					}
+					break;
 				}
-				return _bindableType407;
 				case "Windows.UI.Xaml.Controls.TreeView":
-				if(_bindableType408 == null)
 				{
-					_bindableType408 = MetadataBuilder_408.Build();
+					element = ref _bindableTypes[409];
+					if(element == null)
+					{
+						element = MetadataBuilder_409.Build();
+					}
+					break;
 				}
-				return _bindableType408;
 				case "Windows.UI.Xaml.Controls.TreeViewItem":
-				if(_bindableType409 == null)
 				{
-					_bindableType409 = MetadataBuilder_409.Build();
+					element = ref _bindableTypes[410];
+					if(element == null)
+					{
+						element = MetadataBuilder_410.Build();
+					}
+					break;
 				}
-				return _bindableType409;
 				case "Windows.UI.Xaml.Controls.TreeViewItemTemplateSettings":
-				if(_bindableType410 == null)
 				{
-					_bindableType410 = MetadataBuilder_410.Build();
+					element = ref _bindableTypes[411];
+					if(element == null)
+					{
+						element = MetadataBuilder_411.Build();
+					}
+					break;
 				}
-				return _bindableType410;
 				case "Windows.UI.Xaml.Controls.TreeViewList":
-				if(_bindableType411 == null)
 				{
-					_bindableType411 = MetadataBuilder_411.Build();
+					element = ref _bindableTypes[412];
+					if(element == null)
+					{
+						element = MetadataBuilder_412.Build();
+					}
+					break;
 				}
-				return _bindableType411;
 				case "Windows.UI.Xaml.Controls.TreeViewNode":
-				if(_bindableType412 == null)
 				{
-					_bindableType412 = MetadataBuilder_412.Build();
+					element = ref _bindableTypes[413];
+					if(element == null)
+					{
+						element = MetadataBuilder_413.Build();
+					}
+					break;
 				}
-				return _bindableType412;
 				case "Windows.UI.Xaml.Controls.TwoPaneView":
-				if(_bindableType413 == null)
 				{
-					_bindableType413 = MetadataBuilder_413.Build();
+					element = ref _bindableTypes[414];
+					if(element == null)
+					{
+						element = MetadataBuilder_414.Build();
+					}
+					break;
 				}
-				return _bindableType413;
 				case "Windows.UI.Xaml.Controls.VariableSizedWrapGrid":
-				if(_bindableType414 == null)
 				{
-					_bindableType414 = MetadataBuilder_414.Build();
+					element = ref _bindableTypes[415];
+					if(element == null)
+					{
+						element = MetadataBuilder_415.Build();
+					}
+					break;
 				}
-				return _bindableType414;
 				case "Windows.UI.Xaml.Controls.Viewbox":
-				if(_bindableType415 == null)
 				{
-					_bindableType415 = MetadataBuilder_415.Build();
+					element = ref _bindableTypes[416];
+					if(element == null)
+					{
+						element = MetadataBuilder_416.Build();
+					}
+					break;
 				}
-				return _bindableType415;
 				case "Windows.UI.Xaml.Controls.VirtualizingPanel":
-				if(_bindableType416 == null)
 				{
-					_bindableType416 = MetadataBuilder_416.Build();
+					element = ref _bindableTypes[417];
+					if(element == null)
+					{
+						element = MetadataBuilder_417.Build();
+					}
+					break;
 				}
-				return _bindableType416;
 				case "Windows.UI.Xaml.Controls.VirtualizingStackPanel":
-				if(_bindableType417 == null)
 				{
-					_bindableType417 = MetadataBuilder_417.Build();
+					element = ref _bindableTypes[418];
+					if(element == null)
+					{
+						element = MetadataBuilder_418.Build();
+					}
+					break;
 				}
-				return _bindableType417;
 				case "Windows.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel":
-				if(_bindableType418 == null)
 				{
-					_bindableType418 = MetadataBuilder_418.Build();
+					element = ref _bindableTypes[419];
+					if(element == null)
+					{
+						element = MetadataBuilder_419.Build();
+					}
+					break;
 				}
-				return _bindableType418;
 				case "Windows.UI.Xaml.Controls.WebView":
-				if(_bindableType419 == null)
 				{
-					_bindableType419 = MetadataBuilder_419.Build();
+					element = ref _bindableTypes[420];
+					if(element == null)
+					{
+						element = MetadataBuilder_420.Build();
+					}
+					break;
 				}
-				return _bindableType419;
 				case "Windows.UI.Xaml.Controls.WebViewBrush":
-				if(_bindableType420 == null)
 				{
-					_bindableType420 = MetadataBuilder_420.Build();
+					element = ref _bindableTypes[421];
+					if(element == null)
+					{
+						element = MetadataBuilder_421.Build();
+					}
+					break;
 				}
-				return _bindableType420;
 				case "Windows.UI.Xaml.Media.TileBrush":
-				if(_bindableType421 == null)
 				{
-					_bindableType421 = MetadataBuilder_421.Build();
+					element = ref _bindableTypes[422];
+					if(element == null)
+					{
+						element = MetadataBuilder_422.Build();
+					}
+					break;
 				}
-				return _bindableType421;
 				case "Windows.UI.Xaml.Controls.WrapGrid":
-				if(_bindableType422 == null)
 				{
-					_bindableType422 = MetadataBuilder_422.Build();
+					element = ref _bindableTypes[423];
+					if(element == null)
+					{
+						element = MetadataBuilder_423.Build();
+					}
+					break;
 				}
-				return _bindableType422;
 				case "Windows.UI.Xaml.Controls.AnimatedVisualPlayer":
-				if(_bindableType423 == null)
 				{
-					_bindableType423 = MetadataBuilder_423.Build();
+					element = ref _bindableTypes[424];
+					if(element == null)
+					{
+						element = MetadataBuilder_424.Build();
+					}
+					break;
 				}
-				return _bindableType423;
 				case "Windows.UI.Xaml.Controls.ImplicitTextBlock":
-				if(_bindableType424 == null)
 				{
-					_bindableType424 = MetadataBuilder_424.Build();
+					element = ref _bindableTypes[425];
+					if(element == null)
+					{
+						element = MetadataBuilder_425.Build();
+					}
+					break;
 				}
-				return _bindableType424;
 				case "Windows.UI.Xaml.Controls.DatePickerSelector":
-				if(_bindableType425 == null)
 				{
-					_bindableType425 = MetadataBuilder_425.Build();
+					element = ref _bindableTypes[426];
+					if(element == null)
+					{
+						element = MetadataBuilder_426.Build();
+					}
+					break;
 				}
-				return _bindableType425;
 				case "Windows.UI.Xaml.Controls.PersonPictureTemplateSettings":
-				if(_bindableType426 == null)
 				{
-					_bindableType426 = MetadataBuilder_426.Build();
+					element = ref _bindableTypes[427];
+					if(element == null)
+					{
+						element = MetadataBuilder_427.Build();
+					}
+					break;
 				}
-				return _bindableType426;
 				case "Windows.UI.Xaml.Controls.NativePivotPresenter":
-				if(_bindableType427 == null)
 				{
-					_bindableType427 = MetadataBuilder_427.Build();
+					element = ref _bindableTypes[428];
+					if(element == null)
+					{
+						element = MetadataBuilder_428.Build();
+					}
+					break;
 				}
-				return _bindableType427;
 				case "Windows.UI.Xaml.Controls.NativePopupBase":
-				if(_bindableType428 == null)
 				{
-					_bindableType428 = MetadataBuilder_428.Build();
+					element = ref _bindableTypes[429];
+					if(element == null)
+					{
+						element = MetadataBuilder_429.Build();
+					}
+					break;
 				}
-				return _bindableType428;
 				case "Windows.UI.Xaml.Controls.Primitives.Popup":
-				if(_bindableType429 == null)
 				{
-					_bindableType429 = MetadataBuilder_429.Build();
+					element = ref _bindableTypes[430];
+					if(element == null)
+					{
+						element = MetadataBuilder_430.Build();
+					}
+					break;
 				}
-				return _bindableType429;
 				case "Windows.UI.Xaml.Controls.TimePickerSelector":
-				if(_bindableType430 == null)
 				{
-					_bindableType430 = MetadataBuilder_430.Build();
+					element = ref _bindableTypes[431];
+					if(element == null)
+					{
+						element = MetadataBuilder_431.Build();
+					}
+					break;
 				}
-				return _bindableType430;
 				case "Windows.UI.Xaml.Controls.WrapPanel":
-				if(_bindableType431 == null)
 				{
-					_bindableType431 = MetadataBuilder_431.Build();
+					element = ref _bindableTypes[432];
+					if(element == null)
+					{
+						element = MetadataBuilder_432.Build();
+					}
+					break;
 				}
-				return _bindableType431;
 				case "Windows.UI.Xaml.Controls.NativeDatePickerFlyout":
-				if(_bindableType432 == null)
 				{
-					_bindableType432 = MetadataBuilder_432.Build();
+					element = ref _bindableTypes[433];
+					if(element == null)
+					{
+						element = MetadataBuilder_433.Build();
+					}
+					break;
 				}
-				return _bindableType432;
 				case "Windows.UI.Xaml.Controls.Maps.CustomMapTileDataSource":
-				if(_bindableType433 == null)
 				{
-					_bindableType433 = MetadataBuilder_433.Build();
+					element = ref _bindableTypes[434];
+					if(element == null)
+					{
+						element = MetadataBuilder_434.Build();
+					}
+					break;
 				}
-				return _bindableType433;
 				case "Windows.UI.Xaml.Controls.Maps.MapTileDataSource":
-				if(_bindableType434 == null)
 				{
-					_bindableType434 = MetadataBuilder_434.Build();
+					element = ref _bindableTypes[435];
+					if(element == null)
+					{
+						element = MetadataBuilder_435.Build();
+					}
+					break;
 				}
-				return _bindableType434;
 				case "Windows.UI.Xaml.Controls.Maps.HttpMapTileDataSource":
-				if(_bindableType435 == null)
 				{
-					_bindableType435 = MetadataBuilder_435.Build();
+					element = ref _bindableTypes[436];
+					if(element == null)
+					{
+						element = MetadataBuilder_436.Build();
+					}
+					break;
 				}
-				return _bindableType435;
 				case "Windows.UI.Xaml.Controls.Maps.LocalMapTileDataSource":
-				if(_bindableType436 == null)
 				{
-					_bindableType436 = MetadataBuilder_436.Build();
+					element = ref _bindableTypes[437];
+					if(element == null)
+					{
+						element = MetadataBuilder_437.Build();
+					}
+					break;
 				}
-				return _bindableType436;
 				case "Windows.UI.Xaml.Controls.Maps.MapBillboard":
-				if(_bindableType437 == null)
 				{
-					_bindableType437 = MetadataBuilder_437.Build();
+					element = ref _bindableTypes[438];
+					if(element == null)
+					{
+						element = MetadataBuilder_438.Build();
+					}
+					break;
 				}
-				return _bindableType437;
 				case "Windows.UI.Xaml.Controls.Maps.MapElement":
-				if(_bindableType438 == null)
 				{
-					_bindableType438 = MetadataBuilder_438.Build();
+					element = ref _bindableTypes[439];
+					if(element == null)
+					{
+						element = MetadataBuilder_439.Build();
+					}
+					break;
 				}
-				return _bindableType438;
 				case "Windows.UI.Xaml.Controls.Maps.MapCamera":
-				if(_bindableType439 == null)
 				{
-					_bindableType439 = MetadataBuilder_439.Build();
+					element = ref _bindableTypes[440];
+					if(element == null)
+					{
+						element = MetadataBuilder_440.Build();
+					}
+					break;
 				}
-				return _bindableType439;
 				case "Windows.UI.Xaml.Controls.Maps.MapControl":
-				if(_bindableType440 == null)
 				{
-					_bindableType440 = MetadataBuilder_440.Build();
+					element = ref _bindableTypes[441];
+					if(element == null)
+					{
+						element = MetadataBuilder_441.Build();
+					}
+					break;
 				}
-				return _bindableType440;
 				case "Windows.UI.Xaml.Controls.Maps.MapCustomExperience":
-				if(_bindableType441 == null)
 				{
-					_bindableType441 = MetadataBuilder_441.Build();
+					element = ref _bindableTypes[442];
+					if(element == null)
+					{
+						element = MetadataBuilder_442.Build();
+					}
+					break;
 				}
-				return _bindableType441;
 				case "Windows.UI.Xaml.Controls.Maps.MapElement3D":
-				if(_bindableType442 == null)
 				{
-					_bindableType442 = MetadataBuilder_442.Build();
+					element = ref _bindableTypes[443];
+					if(element == null)
+					{
+						element = MetadataBuilder_443.Build();
+					}
+					break;
 				}
-				return _bindableType442;
 				case "Windows.UI.Xaml.Controls.Maps.MapElementsLayer":
-				if(_bindableType443 == null)
 				{
-					_bindableType443 = MetadataBuilder_443.Build();
+					element = ref _bindableTypes[444];
+					if(element == null)
+					{
+						element = MetadataBuilder_444.Build();
+					}
+					break;
 				}
-				return _bindableType443;
 				case "Windows.UI.Xaml.Controls.Maps.MapLayer":
-				if(_bindableType444 == null)
 				{
-					_bindableType444 = MetadataBuilder_444.Build();
+					element = ref _bindableTypes[445];
+					if(element == null)
+					{
+						element = MetadataBuilder_445.Build();
+					}
+					break;
 				}
-				return _bindableType444;
 				case "Windows.UI.Xaml.Controls.Maps.MapIcon":
-				if(_bindableType445 == null)
 				{
-					_bindableType445 = MetadataBuilder_445.Build();
+					element = ref _bindableTypes[446];
+					if(element == null)
+					{
+						element = MetadataBuilder_446.Build();
+					}
+					break;
 				}
-				return _bindableType445;
 				case "Windows.UI.Xaml.Controls.Maps.MapInputEventArgs":
-				if(_bindableType446 == null)
 				{
-					_bindableType446 = MetadataBuilder_446.Build();
+					element = ref _bindableTypes[447];
+					if(element == null)
+					{
+						element = MetadataBuilder_447.Build();
+					}
+					break;
 				}
-				return _bindableType446;
 				case "Windows.UI.Xaml.Controls.Maps.MapItemsControl":
-				if(_bindableType447 == null)
 				{
-					_bindableType447 = MetadataBuilder_447.Build();
+					element = ref _bindableTypes[448];
+					if(element == null)
+					{
+						element = MetadataBuilder_448.Build();
+					}
+					break;
 				}
-				return _bindableType447;
 				case "Windows.UI.Xaml.Controls.Maps.MapModel3D":
-				if(_bindableType448 == null)
 				{
-					_bindableType448 = MetadataBuilder_448.Build();
+					element = ref _bindableTypes[449];
+					if(element == null)
+					{
+						element = MetadataBuilder_449.Build();
+					}
+					break;
 				}
-				return _bindableType448;
 				case "Windows.UI.Xaml.Controls.Maps.MapPolygon":
-				if(_bindableType449 == null)
 				{
-					_bindableType449 = MetadataBuilder_449.Build();
+					element = ref _bindableTypes[450];
+					if(element == null)
+					{
+						element = MetadataBuilder_450.Build();
+					}
+					break;
 				}
-				return _bindableType449;
 				case "Windows.UI.Xaml.Controls.Maps.MapPolyline":
-				if(_bindableType450 == null)
 				{
-					_bindableType450 = MetadataBuilder_450.Build();
+					element = ref _bindableTypes[451];
+					if(element == null)
+					{
+						element = MetadataBuilder_451.Build();
+					}
+					break;
 				}
-				return _bindableType450;
 				case "Windows.UI.Xaml.Controls.Maps.MapRouteView":
-				if(_bindableType451 == null)
 				{
-					_bindableType451 = MetadataBuilder_451.Build();
+					element = ref _bindableTypes[452];
+					if(element == null)
+					{
+						element = MetadataBuilder_452.Build();
+					}
+					break;
 				}
-				return _bindableType451;
 				case "Windows.UI.Xaml.Controls.Maps.MapScene":
-				if(_bindableType452 == null)
 				{
-					_bindableType452 = MetadataBuilder_452.Build();
+					element = ref _bindableTypes[453];
+					if(element == null)
+					{
+						element = MetadataBuilder_453.Build();
+					}
+					break;
 				}
-				return _bindableType452;
 				case "Windows.UI.Xaml.Controls.Maps.MapStyleSheet":
-				if(_bindableType453 == null)
 				{
-					_bindableType453 = MetadataBuilder_453.Build();
+					element = ref _bindableTypes[454];
+					if(element == null)
+					{
+						element = MetadataBuilder_454.Build();
+					}
+					break;
 				}
-				return _bindableType453;
 				case "Windows.UI.Xaml.Controls.Maps.MapTileSource":
-				if(_bindableType454 == null)
 				{
-					_bindableType454 = MetadataBuilder_454.Build();
+					element = ref _bindableTypes[455];
+					if(element == null)
+					{
+						element = MetadataBuilder_455.Build();
+					}
+					break;
 				}
-				return _bindableType454;
 				case "Windows.UI.Xaml.Controls.Maps.StreetsideExperience":
-				if(_bindableType455 == null)
 				{
-					_bindableType455 = MetadataBuilder_455.Build();
+					element = ref _bindableTypes[456];
+					if(element == null)
+					{
+						element = MetadataBuilder_456.Build();
+					}
+					break;
 				}
-				return _bindableType455;
 				case "Windows.UI.Xaml.Controls.Maps.StreetsidePanorama":
-				if(_bindableType456 == null)
 				{
-					_bindableType456 = MetadataBuilder_456.Build();
+					element = ref _bindableTypes[457];
+					if(element == null)
+					{
+						element = MetadataBuilder_457.Build();
+					}
+					break;
 				}
-				return _bindableType456;
 				case "Windows.UI.Xaml.Controls.Primitives.AppBarButtonTemplateSettings":
-				if(_bindableType457 == null)
 				{
-					_bindableType457 = MetadataBuilder_457.Build();
+					element = ref _bindableTypes[458];
+					if(element == null)
+					{
+						element = MetadataBuilder_458.Build();
+					}
+					break;
 				}
-				return _bindableType457;
 				case "Windows.UI.Xaml.Controls.Primitives.AppBarTemplateSettings":
-				if(_bindableType458 == null)
 				{
-					_bindableType458 = MetadataBuilder_458.Build();
+					element = ref _bindableTypes[459];
+					if(element == null)
+					{
+						element = MetadataBuilder_459.Build();
+					}
+					break;
 				}
-				return _bindableType458;
 				case "Windows.UI.Xaml.Controls.Primitives.AppBarToggleButtonTemplateSettings":
-				if(_bindableType459 == null)
 				{
-					_bindableType459 = MetadataBuilder_459.Build();
+					element = ref _bindableTypes[460];
+					if(element == null)
+					{
+						element = MetadataBuilder_460.Build();
+					}
+					break;
 				}
-				return _bindableType459;
 				case "Windows.UI.Xaml.Controls.Primitives.CalendarPanel":
-				if(_bindableType460 == null)
 				{
-					_bindableType460 = MetadataBuilder_460.Build();
+					element = ref _bindableTypes[461];
+					if(element == null)
+					{
+						element = MetadataBuilder_461.Build();
+					}
+					break;
 				}
-				return _bindableType460;
 				case "Windows.UI.Xaml.Controls.Primitives.CalendarViewTemplateSettings":
-				if(_bindableType461 == null)
 				{
-					_bindableType461 = MetadataBuilder_461.Build();
+					element = ref _bindableTypes[462];
+					if(element == null)
+					{
+						element = MetadataBuilder_462.Build();
+					}
+					break;
 				}
-				return _bindableType461;
 				case "Windows.UI.Xaml.Controls.Primitives.CarouselPanel":
-				if(_bindableType462 == null)
 				{
-					_bindableType462 = MetadataBuilder_462.Build();
+					element = ref _bindableTypes[463];
+					if(element == null)
+					{
+						element = MetadataBuilder_463.Build();
+					}
+					break;
 				}
-				return _bindableType462;
 				case "Windows.UI.Xaml.Controls.Primitives.ColorPickerSlider":
-				if(_bindableType463 == null)
 				{
-					_bindableType463 = MetadataBuilder_463.Build();
+					element = ref _bindableTypes[464];
+					if(element == null)
+					{
+						element = MetadataBuilder_464.Build();
+					}
+					break;
 				}
-				return _bindableType463;
 				case "Windows.UI.Xaml.Controls.Primitives.ColorSpectrum":
-				if(_bindableType464 == null)
 				{
-					_bindableType464 = MetadataBuilder_464.Build();
+					element = ref _bindableTypes[465];
+					if(element == null)
+					{
+						element = MetadataBuilder_465.Build();
+					}
+					break;
 				}
-				return _bindableType464;
 				case "Windows.UI.Xaml.Controls.Primitives.ComboBoxTemplateSettings":
-				if(_bindableType465 == null)
 				{
-					_bindableType465 = MetadataBuilder_465.Build();
+					element = ref _bindableTypes[466];
+					if(element == null)
+					{
+						element = MetadataBuilder_466.Build();
+					}
+					break;
 				}
-				return _bindableType465;
 				case "Windows.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar":
-				if(_bindableType466 == null)
 				{
-					_bindableType466 = MetadataBuilder_466.Build();
+					element = ref _bindableTypes[467];
+					if(element == null)
+					{
+						element = MetadataBuilder_467.Build();
+					}
+					break;
 				}
-				return _bindableType466;
 				case "Windows.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBarTemplateSettings":
-				if(_bindableType467 == null)
 				{
-					_bindableType467 = MetadataBuilder_467.Build();
+					element = ref _bindableTypes[468];
+					if(element == null)
+					{
+						element = MetadataBuilder_468.Build();
+					}
+					break;
 				}
-				return _bindableType467;
 				case "Windows.UI.Xaml.Controls.Primitives.CommandBarTemplateSettings":
-				if(_bindableType468 == null)
 				{
-					_bindableType468 = MetadataBuilder_468.Build();
+					element = ref _bindableTypes[469];
+					if(element == null)
+					{
+						element = MetadataBuilder_469.Build();
+					}
+					break;
 				}
-				return _bindableType468;
 				case "Windows.UI.Xaml.Controls.Primitives.GridViewItemPresenter":
-				if(_bindableType469 == null)
 				{
-					_bindableType469 = MetadataBuilder_469.Build();
+					element = ref _bindableTypes[470];
+					if(element == null)
+					{
+						element = MetadataBuilder_470.Build();
+					}
+					break;
 				}
-				return _bindableType469;
 				case "Windows.UI.Xaml.Controls.Primitives.GridViewItemTemplateSettings":
-				if(_bindableType470 == null)
 				{
-					_bindableType470 = MetadataBuilder_470.Build();
+					element = ref _bindableTypes[471];
+					if(element == null)
+					{
+						element = MetadataBuilder_471.Build();
+					}
+					break;
 				}
-				return _bindableType470;
 				case "Windows.UI.Xaml.Controls.Primitives.JumpListItemBackgroundConverter":
-				if(_bindableType471 == null)
 				{
-					_bindableType471 = MetadataBuilder_471.Build();
+					element = ref _bindableTypes[472];
+					if(element == null)
+					{
+						element = MetadataBuilder_472.Build();
+					}
+					break;
 				}
-				return _bindableType471;
 				case "Windows.UI.Xaml.Controls.Primitives.JumpListItemForegroundConverter":
-				if(_bindableType472 == null)
 				{
-					_bindableType472 = MetadataBuilder_472.Build();
+					element = ref _bindableTypes[473];
+					if(element == null)
+					{
+						element = MetadataBuilder_473.Build();
+					}
+					break;
 				}
-				return _bindableType472;
 				case "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter":
-				if(_bindableType473 == null)
 				{
-					_bindableType473 = MetadataBuilder_473.Build();
+					element = ref _bindableTypes[474];
+					if(element == null)
+					{
+						element = MetadataBuilder_474.Build();
+					}
+					break;
 				}
-				return _bindableType473;
 				case "Windows.UI.Xaml.Controls.Primitives.ListViewItemTemplateSettings":
-				if(_bindableType474 == null)
 				{
-					_bindableType474 = MetadataBuilder_474.Build();
+					element = ref _bindableTypes[475];
+					if(element == null)
+					{
+						element = MetadataBuilder_475.Build();
+					}
+					break;
 				}
-				return _bindableType474;
 				case "Windows.UI.Xaml.Controls.Primitives.LoopingSelector":
-				if(_bindableType475 == null)
 				{
-					_bindableType475 = MetadataBuilder_475.Build();
+					element = ref _bindableTypes[476];
+					if(element == null)
+					{
+						element = MetadataBuilder_476.Build();
+					}
+					break;
 				}
-				return _bindableType475;
 				case "Windows.UI.Xaml.Controls.Primitives.LoopingSelectorItem":
-				if(_bindableType476 == null)
 				{
-					_bindableType476 = MetadataBuilder_476.Build();
+					element = ref _bindableTypes[477];
+					if(element == null)
+					{
+						element = MetadataBuilder_477.Build();
+					}
+					break;
 				}
-				return _bindableType476;
 				case "Windows.UI.Xaml.Controls.Primitives.LoopingSelectorPanel":
-				if(_bindableType477 == null)
 				{
-					_bindableType477 = MetadataBuilder_477.Build();
+					element = ref _bindableTypes[478];
+					if(element == null)
+					{
+						element = MetadataBuilder_478.Build();
+					}
+					break;
 				}
-				return _bindableType477;
 				case "Windows.UI.Xaml.Controls.Primitives.MenuFlyoutItemTemplateSettings":
-				if(_bindableType478 == null)
 				{
-					_bindableType478 = MetadataBuilder_478.Build();
+					element = ref _bindableTypes[479];
+					if(element == null)
+					{
+						element = MetadataBuilder_479.Build();
+					}
+					break;
 				}
-				return _bindableType478;
 				case "Windows.UI.Xaml.Controls.Primitives.MenuFlyoutPresenterTemplateSettings":
-				if(_bindableType479 == null)
 				{
-					_bindableType479 = MetadataBuilder_479.Build();
+					element = ref _bindableTypes[480];
+					if(element == null)
+					{
+						element = MetadataBuilder_480.Build();
+					}
+					break;
 				}
-				return _bindableType479;
 				case "Windows.UI.Xaml.Controls.Primitives.NavigationViewItemPresenter":
-				if(_bindableType480 == null)
 				{
-					_bindableType480 = MetadataBuilder_480.Build();
+					element = ref _bindableTypes[481];
+					if(element == null)
+					{
+						element = MetadataBuilder_481.Build();
+					}
+					break;
 				}
-				return _bindableType480;
 				case "Windows.UI.Xaml.Controls.Primitives.PivotHeaderItem":
-				if(_bindableType481 == null)
 				{
-					_bindableType481 = MetadataBuilder_481.Build();
+					element = ref _bindableTypes[482];
+					if(element == null)
+					{
+						element = MetadataBuilder_482.Build();
+					}
+					break;
 				}
-				return _bindableType481;
 				case "Windows.UI.Xaml.Controls.Primitives.PivotHeaderPanel":
-				if(_bindableType482 == null)
 				{
-					_bindableType482 = MetadataBuilder_482.Build();
+					element = ref _bindableTypes[483];
+					if(element == null)
+					{
+						element = MetadataBuilder_483.Build();
+					}
+					break;
 				}
-				return _bindableType482;
 				case "Windows.UI.Xaml.Controls.Primitives.PivotPanel":
-				if(_bindableType483 == null)
 				{
-					_bindableType483 = MetadataBuilder_483.Build();
+					element = ref _bindableTypes[484];
+					if(element == null)
+					{
+						element = MetadataBuilder_484.Build();
+					}
+					break;
 				}
-				return _bindableType483;
 				case "Windows.UI.Xaml.Controls.Primitives.ProgressBarTemplateSettings":
-				if(_bindableType484 == null)
 				{
-					_bindableType484 = MetadataBuilder_484.Build();
+					element = ref _bindableTypes[485];
+					if(element == null)
+					{
+						element = MetadataBuilder_485.Build();
+					}
+					break;
 				}
-				return _bindableType484;
 				case "Windows.UI.Xaml.Controls.Primitives.ProgressRingTemplateSettings":
-				if(_bindableType485 == null)
 				{
-					_bindableType485 = MetadataBuilder_485.Build();
+					element = ref _bindableTypes[486];
+					if(element == null)
+					{
+						element = MetadataBuilder_486.Build();
+					}
+					break;
 				}
-				return _bindableType485;
 				case "Windows.UI.Xaml.Controls.Primitives.RepeatButton":
-				if(_bindableType486 == null)
 				{
-					_bindableType486 = MetadataBuilder_486.Build();
+					element = ref _bindableTypes[487];
+					if(element == null)
+					{
+						element = MetadataBuilder_487.Build();
+					}
+					break;
 				}
-				return _bindableType486;
 				case "Windows.UI.Xaml.Controls.Primitives.ScrollBar":
-				if(_bindableType487 == null)
 				{
-					_bindableType487 = MetadataBuilder_487.Build();
+					element = ref _bindableTypes[488];
+					if(element == null)
+					{
+						element = MetadataBuilder_488.Build();
+					}
+					break;
 				}
-				return _bindableType487;
 				case "Windows.UI.Xaml.Controls.Primitives.SettingsFlyoutTemplateSettings":
-				if(_bindableType488 == null)
 				{
-					_bindableType488 = MetadataBuilder_488.Build();
+					element = ref _bindableTypes[489];
+					if(element == null)
+					{
+						element = MetadataBuilder_489.Build();
+					}
+					break;
 				}
-				return _bindableType488;
 				case "Windows.UI.Xaml.Controls.Primitives.SplitViewTemplateSettings":
-				if(_bindableType489 == null)
 				{
-					_bindableType489 = MetadataBuilder_489.Build();
+					element = ref _bindableTypes[490];
+					if(element == null)
+					{
+						element = MetadataBuilder_490.Build();
+					}
+					break;
 				}
-				return _bindableType489;
 				case "Windows.UI.Xaml.Controls.Primitives.Thumb":
-				if(_bindableType490 == null)
 				{
-					_bindableType490 = MetadataBuilder_490.Build();
+					element = ref _bindableTypes[491];
+					if(element == null)
+					{
+						element = MetadataBuilder_491.Build();
+					}
+					break;
 				}
-				return _bindableType490;
 				case "Windows.UI.Xaml.Controls.Primitives.TickBar":
-				if(_bindableType491 == null)
 				{
-					_bindableType491 = MetadataBuilder_491.Build();
+					element = ref _bindableTypes[492];
+					if(element == null)
+					{
+						element = MetadataBuilder_492.Build();
+					}
+					break;
 				}
-				return _bindableType491;
 				case "Windows.UI.Xaml.Controls.Primitives.ToggleSwitchTemplateSettings":
-				if(_bindableType492 == null)
 				{
-					_bindableType492 = MetadataBuilder_492.Build();
+					element = ref _bindableTypes[493];
+					if(element == null)
+					{
+						element = MetadataBuilder_493.Build();
+					}
+					break;
 				}
-				return _bindableType492;
 				case "Windows.UI.Xaml.Controls.Primitives.ToolTipTemplateSettings":
-				if(_bindableType493 == null)
 				{
-					_bindableType493 = MetadataBuilder_493.Build();
+					element = ref _bindableTypes[494];
+					if(element == null)
+					{
+						element = MetadataBuilder_494.Build();
+					}
+					break;
 				}
-				return _bindableType493;
 				case "Windows.UI.Xaml.Data.Binding":
-				if(_bindableType494 == null)
 				{
-					_bindableType494 = MetadataBuilder_494.Build();
+					element = ref _bindableTypes[495];
+					if(element == null)
+					{
+						element = MetadataBuilder_495.Build();
+					}
+					break;
 				}
-				return _bindableType494;
 				case "Windows.UI.Xaml.Data.BindingBase":
-				if(_bindableType495 == null)
 				{
-					_bindableType495 = MetadataBuilder_495.Build();
+					element = ref _bindableTypes[496];
+					if(element == null)
+					{
+						element = MetadataBuilder_496.Build();
+					}
+					break;
 				}
-				return _bindableType495;
 				case "Windows.UI.Xaml.Data.CollectionViewSource":
-				if(_bindableType496 == null)
 				{
-					_bindableType496 = MetadataBuilder_496.Build();
+					element = ref _bindableTypes[497];
+					if(element == null)
+					{
+						element = MetadataBuilder_497.Build();
+					}
+					break;
 				}
-				return _bindableType496;
 				case "Windows.UI.Xaml.Data.TemplateBinding":
-				if(_bindableType497 == null)
 				{
-					_bindableType497 = MetadataBuilder_497.Build();
+					element = ref _bindableTypes[498];
+					if(element == null)
+					{
+						element = MetadataBuilder_498.Build();
+					}
+					break;
 				}
-				return _bindableType497;
 				case "Windows.UI.Xaml.Documents.Block":
-				if(_bindableType498 == null)
 				{
-					_bindableType498 = MetadataBuilder_498.Build();
+					element = ref _bindableTypes[499];
+					if(element == null)
+					{
+						element = MetadataBuilder_499.Build();
+					}
+					break;
 				}
-				return _bindableType498;
 				case "Windows.UI.Xaml.Documents.TextElement":
-				if(_bindableType499 == null)
 				{
-					_bindableType499 = MetadataBuilder_499.Build();
+					element = ref _bindableTypes[500];
+					if(element == null)
+					{
+						element = MetadataBuilder_500.Build();
+					}
+					break;
 				}
-				return _bindableType499;
 				case "Windows.UI.Xaml.Documents.BlockCollection":
-				if(_bindableType500 == null)
 				{
-					_bindableType500 = MetadataBuilder_500.Build();
+					element = ref _bindableTypes[501];
+					if(element == null)
+					{
+						element = MetadataBuilder_501.Build();
+					}
+					break;
 				}
-				return _bindableType500;
 				case "Windows.UI.Xaml.Documents.Bold":
-				if(_bindableType501 == null)
 				{
-					_bindableType501 = MetadataBuilder_501.Build();
+					element = ref _bindableTypes[502];
+					if(element == null)
+					{
+						element = MetadataBuilder_502.Build();
+					}
+					break;
 				}
-				return _bindableType501;
 				case "Windows.UI.Xaml.Documents.Span":
-				if(_bindableType502 == null)
 				{
-					_bindableType502 = MetadataBuilder_502.Build();
+					element = ref _bindableTypes[503];
+					if(element == null)
+					{
+						element = MetadataBuilder_503.Build();
+					}
+					break;
 				}
-				return _bindableType502;
 				case "Windows.UI.Xaml.Documents.Inline":
-				if(_bindableType503 == null)
 				{
-					_bindableType503 = MetadataBuilder_503.Build();
+					element = ref _bindableTypes[504];
+					if(element == null)
+					{
+						element = MetadataBuilder_504.Build();
+					}
+					break;
 				}
-				return _bindableType503;
 				case "Windows.UI.Xaml.Documents.ContactContentLinkProvider":
-				if(_bindableType504 == null)
 				{
-					_bindableType504 = MetadataBuilder_504.Build();
+					element = ref _bindableTypes[505];
+					if(element == null)
+					{
+						element = MetadataBuilder_505.Build();
+					}
+					break;
 				}
-				return _bindableType504;
 				case "Windows.UI.Xaml.Documents.ContentLinkProvider":
-				if(_bindableType505 == null)
 				{
-					_bindableType505 = MetadataBuilder_505.Build();
+					element = ref _bindableTypes[506];
+					if(element == null)
+					{
+						element = MetadataBuilder_506.Build();
+					}
+					break;
 				}
-				return _bindableType505;
 				case "Windows.UI.Xaml.Documents.ContentLink":
-				if(_bindableType506 == null)
 				{
-					_bindableType506 = MetadataBuilder_506.Build();
+					element = ref _bindableTypes[507];
+					if(element == null)
+					{
+						element = MetadataBuilder_507.Build();
+					}
+					break;
 				}
-				return _bindableType506;
 				case "Windows.UI.Xaml.Documents.Glyphs":
-				if(_bindableType507 == null)
 				{
-					_bindableType507 = MetadataBuilder_507.Build();
+					element = ref _bindableTypes[508];
+					if(element == null)
+					{
+						element = MetadataBuilder_508.Build();
+					}
+					break;
 				}
-				return _bindableType507;
 				case "Windows.UI.Xaml.Documents.Hyperlink":
-				if(_bindableType508 == null)
 				{
-					_bindableType508 = MetadataBuilder_508.Build();
+					element = ref _bindableTypes[509];
+					if(element == null)
+					{
+						element = MetadataBuilder_509.Build();
+					}
+					break;
 				}
-				return _bindableType508;
 				case "Windows.UI.Xaml.Documents.InlineUIContainer":
-				if(_bindableType509 == null)
 				{
-					_bindableType509 = MetadataBuilder_509.Build();
+					element = ref _bindableTypes[510];
+					if(element == null)
+					{
+						element = MetadataBuilder_510.Build();
+					}
+					break;
 				}
-				return _bindableType509;
 				case "Windows.UI.Xaml.Documents.Italic":
-				if(_bindableType510 == null)
 				{
-					_bindableType510 = MetadataBuilder_510.Build();
+					element = ref _bindableTypes[511];
+					if(element == null)
+					{
+						element = MetadataBuilder_511.Build();
+					}
+					break;
 				}
-				return _bindableType510;
 				case "Windows.UI.Xaml.Documents.LineBreak":
-				if(_bindableType511 == null)
 				{
-					_bindableType511 = MetadataBuilder_511.Build();
+					element = ref _bindableTypes[512];
+					if(element == null)
+					{
+						element = MetadataBuilder_512.Build();
+					}
+					break;
 				}
-				return _bindableType511;
 				case "Windows.UI.Xaml.Documents.Paragraph":
-				if(_bindableType512 == null)
 				{
-					_bindableType512 = MetadataBuilder_512.Build();
+					element = ref _bindableTypes[513];
+					if(element == null)
+					{
+						element = MetadataBuilder_513.Build();
+					}
+					break;
 				}
-				return _bindableType512;
 				case "Windows.UI.Xaml.Documents.PlaceContentLinkProvider":
-				if(_bindableType513 == null)
 				{
-					_bindableType513 = MetadataBuilder_513.Build();
+					element = ref _bindableTypes[514];
+					if(element == null)
+					{
+						element = MetadataBuilder_514.Build();
+					}
+					break;
 				}
-				return _bindableType513;
 				case "Windows.UI.Xaml.Documents.Run":
-				if(_bindableType514 == null)
 				{
-					_bindableType514 = MetadataBuilder_514.Build();
+					element = ref _bindableTypes[515];
+					if(element == null)
+					{
+						element = MetadataBuilder_515.Build();
+					}
+					break;
 				}
-				return _bindableType514;
 				case "Windows.UI.Xaml.Documents.TextHighlighterBase":
-				if(_bindableType515 == null)
 				{
-					_bindableType515 = MetadataBuilder_515.Build();
+					element = ref _bindableTypes[516];
+					if(element == null)
+					{
+						element = MetadataBuilder_516.Build();
+					}
+					break;
 				}
-				return _bindableType515;
 				case "Windows.UI.Xaml.Documents.Underline":
-				if(_bindableType516 == null)
 				{
-					_bindableType516 = MetadataBuilder_516.Build();
+					element = ref _bindableTypes[517];
+					if(element == null)
+					{
+						element = MetadataBuilder_517.Build();
+					}
+					break;
 				}
-				return _bindableType516;
 				case "Windows.UI.Xaml.Input.InputScope":
-				if(_bindableType517 == null)
 				{
-					_bindableType517 = MetadataBuilder_517.Build();
+					element = ref _bindableTypes[518];
+					if(element == null)
+					{
+						element = MetadataBuilder_518.Build();
+					}
+					break;
 				}
-				return _bindableType517;
 				case "Windows.UI.Xaml.Input.InputScopeName":
-				if(_bindableType518 == null)
 				{
-					_bindableType518 = MetadataBuilder_518.Build();
+					element = ref _bindableTypes[519];
+					if(element == null)
+					{
+						element = MetadataBuilder_519.Build();
+					}
+					break;
 				}
-				return _bindableType518;
 				case "Windows.UI.Xaml.Input.KeyboardAccelerator":
-				if(_bindableType519 == null)
 				{
-					_bindableType519 = MetadataBuilder_519.Build();
+					element = ref _bindableTypes[520];
+					if(element == null)
+					{
+						element = MetadataBuilder_520.Build();
+					}
+					break;
 				}
-				return _bindableType519;
 				case "Windows.UI.Xaml.Input.StandardUICommand":
-				if(_bindableType520 == null)
 				{
-					_bindableType520 = MetadataBuilder_520.Build();
+					element = ref _bindableTypes[521];
+					if(element == null)
+					{
+						element = MetadataBuilder_521.Build();
+					}
+					break;
 				}
-				return _bindableType520;
 				case "Windows.UI.Xaml.Input.XamlUICommand":
-				if(_bindableType521 == null)
 				{
-					_bindableType521 = MetadataBuilder_521.Build();
+					element = ref _bindableTypes[522];
+					if(element == null)
+					{
+						element = MetadataBuilder_522.Build();
+					}
+					break;
 				}
-				return _bindableType521;
 				case "Windows.UI.Xaml.Media.AcrylicBrush":
-				if(_bindableType522 == null)
 				{
-					_bindableType522 = MetadataBuilder_522.Build();
+					element = ref _bindableTypes[523];
+					if(element == null)
+					{
+						element = MetadataBuilder_523.Build();
+					}
+					break;
 				}
-				return _bindableType522;
 				case "Windows.UI.Xaml.Media.XamlCompositionBrushBase":
-				if(_bindableType523 == null)
 				{
-					_bindableType523 = MetadataBuilder_523.Build();
+					element = ref _bindableTypes[524];
+					if(element == null)
+					{
+						element = MetadataBuilder_524.Build();
+					}
+					break;
 				}
-				return _bindableType523;
 				case "Windows.UI.Xaml.Media.ArcSegment":
-				if(_bindableType524 == null)
 				{
-					_bindableType524 = MetadataBuilder_524.Build();
+					element = ref _bindableTypes[525];
+					if(element == null)
+					{
+						element = MetadataBuilder_525.Build();
+					}
+					break;
 				}
-				return _bindableType524;
 				case "Windows.UI.Xaml.Media.PathSegment":
-				if(_bindableType525 == null)
 				{
-					_bindableType525 = MetadataBuilder_525.Build();
+					element = ref _bindableTypes[526];
+					if(element == null)
+					{
+						element = MetadataBuilder_526.Build();
+					}
+					break;
 				}
-				return _bindableType525;
 				case "Windows.UI.Xaml.Media.BezierSegment":
-				if(_bindableType526 == null)
 				{
-					_bindableType526 = MetadataBuilder_526.Build();
+					element = ref _bindableTypes[527];
+					if(element == null)
+					{
+						element = MetadataBuilder_527.Build();
+					}
+					break;
 				}
-				return _bindableType526;
 				case "Windows.UI.Xaml.Media.BitmapCache":
-				if(_bindableType527 == null)
 				{
-					_bindableType527 = MetadataBuilder_527.Build();
+					element = ref _bindableTypes[528];
+					if(element == null)
+					{
+						element = MetadataBuilder_528.Build();
+					}
+					break;
 				}
-				return _bindableType527;
 				case "Windows.UI.Xaml.Media.CacheMode":
-				if(_bindableType528 == null)
 				{
-					_bindableType528 = MetadataBuilder_528.Build();
+					element = ref _bindableTypes[529];
+					if(element == null)
+					{
+						element = MetadataBuilder_529.Build();
+					}
+					break;
 				}
-				return _bindableType528;
 				case "Windows.UI.Xaml.Media.CompositeTransform":
-				if(_bindableType529 == null)
 				{
-					_bindableType529 = MetadataBuilder_529.Build();
+					element = ref _bindableTypes[530];
+					if(element == null)
+					{
+						element = MetadataBuilder_530.Build();
+					}
+					break;
 				}
-				return _bindableType529;
 				case "Windows.UI.Xaml.Media.Transform":
-				if(_bindableType530 == null)
 				{
-					_bindableType530 = MetadataBuilder_530.Build();
+					element = ref _bindableTypes[531];
+					if(element == null)
+					{
+						element = MetadataBuilder_531.Build();
+					}
+					break;
 				}
-				return _bindableType530;
 				case "Windows.UI.Xaml.Media.GeneralTransform":
-				if(_bindableType531 == null)
 				{
-					_bindableType531 = MetadataBuilder_531.Build();
+					element = ref _bindableTypes[532];
+					if(element == null)
+					{
+						element = MetadataBuilder_532.Build();
+					}
+					break;
 				}
-				return _bindableType531;
 				case "Windows.UI.Xaml.Media.EllipseGeometry":
-				if(_bindableType532 == null)
 				{
-					_bindableType532 = MetadataBuilder_532.Build();
+					element = ref _bindableTypes[533];
+					if(element == null)
+					{
+						element = MetadataBuilder_533.Build();
+					}
+					break;
 				}
-				return _bindableType532;
 				case "Windows.UI.Xaml.Media.GeometryCollection":
-				if(_bindableType533 == null)
 				{
-					_bindableType533 = MetadataBuilder_533.Build();
+					element = ref _bindableTypes[534];
+					if(element == null)
+					{
+						element = MetadataBuilder_534.Build();
+					}
+					break;
 				}
-				return _bindableType533;
 				case "Windows.UI.Xaml.Media.GeometryGroup":
-				if(_bindableType534 == null)
 				{
-					_bindableType534 = MetadataBuilder_534.Build();
+					element = ref _bindableTypes[535];
+					if(element == null)
+					{
+						element = MetadataBuilder_535.Build();
+					}
+					break;
 				}
-				return _bindableType534;
 				case "Windows.UI.Xaml.Media.GradientStop":
-				if(_bindableType535 == null)
 				{
-					_bindableType535 = MetadataBuilder_535.Build();
+					element = ref _bindableTypes[536];
+					if(element == null)
+					{
+						element = MetadataBuilder_536.Build();
+					}
+					break;
 				}
-				return _bindableType535;
 				case "Windows.UI.Xaml.Media.GradientStopCollection":
-				if(_bindableType536 == null)
 				{
-					_bindableType536 = MetadataBuilder_536.Build();
+					element = ref _bindableTypes[537];
+					if(element == null)
+					{
+						element = MetadataBuilder_537.Build();
+					}
+					break;
 				}
-				return _bindableType536;
 				case "Windows.UI.Xaml.Media.ImageBrush":
-				if(_bindableType537 == null)
 				{
-					_bindableType537 = MetadataBuilder_537.Build();
+					element = ref _bindableTypes[538];
+					if(element == null)
+					{
+						element = MetadataBuilder_538.Build();
+					}
+					break;
 				}
-				return _bindableType537;
 				case "Windows.UI.Xaml.Media.ImageSource":
-				if(_bindableType538 == null)
 				{
-					_bindableType538 = MetadataBuilder_538.Build();
+					element = ref _bindableTypes[539];
+					if(element == null)
+					{
+						element = MetadataBuilder_539.Build();
+					}
+					break;
 				}
-				return _bindableType538;
 				case "Windows.UI.Xaml.Media.LinearGradientBrush":
-				if(_bindableType539 == null)
 				{
-					_bindableType539 = MetadataBuilder_539.Build();
+					element = ref _bindableTypes[540];
+					if(element == null)
+					{
+						element = MetadataBuilder_540.Build();
+					}
+					break;
 				}
-				return _bindableType539;
 				case "Windows.UI.Xaml.Media.LineGeometry":
-				if(_bindableType540 == null)
 				{
-					_bindableType540 = MetadataBuilder_540.Build();
+					element = ref _bindableTypes[541];
+					if(element == null)
+					{
+						element = MetadataBuilder_541.Build();
+					}
+					break;
 				}
-				return _bindableType540;
 				case "Windows.UI.Xaml.Media.LineSegment":
-				if(_bindableType541 == null)
 				{
-					_bindableType541 = MetadataBuilder_541.Build();
+					element = ref _bindableTypes[542];
+					if(element == null)
+					{
+						element = MetadataBuilder_542.Build();
+					}
+					break;
 				}
-				return _bindableType541;
 				case "Windows.UI.Xaml.Media.Matrix3DProjection":
-				if(_bindableType542 == null)
 				{
-					_bindableType542 = MetadataBuilder_542.Build();
+					element = ref _bindableTypes[543];
+					if(element == null)
+					{
+						element = MetadataBuilder_543.Build();
+					}
+					break;
 				}
-				return _bindableType542;
 				case "Windows.UI.Xaml.Media.Projection":
-				if(_bindableType543 == null)
 				{
-					_bindableType543 = MetadataBuilder_543.Build();
+					element = ref _bindableTypes[544];
+					if(element == null)
+					{
+						element = MetadataBuilder_544.Build();
+					}
+					break;
 				}
-				return _bindableType543;
 				case "Windows.UI.Xaml.Media.MatrixTransform":
-				if(_bindableType544 == null)
 				{
-					_bindableType544 = MetadataBuilder_544.Build();
+					element = ref _bindableTypes[545];
+					if(element == null)
+					{
+						element = MetadataBuilder_545.Build();
+					}
+					break;
 				}
-				return _bindableType544;
 				case "Windows.UI.Xaml.Media.PathFigure":
-				if(_bindableType545 == null)
 				{
-					_bindableType545 = MetadataBuilder_545.Build();
+					element = ref _bindableTypes[546];
+					if(element == null)
+					{
+						element = MetadataBuilder_546.Build();
+					}
+					break;
 				}
-				return _bindableType545;
 				case "Windows.UI.Xaml.Media.PathFigureCollection":
-				if(_bindableType546 == null)
 				{
-					_bindableType546 = MetadataBuilder_546.Build();
+					element = ref _bindableTypes[547];
+					if(element == null)
+					{
+						element = MetadataBuilder_547.Build();
+					}
+					break;
 				}
-				return _bindableType546;
 				case "Windows.UI.Xaml.Media.PathGeometry":
-				if(_bindableType547 == null)
 				{
-					_bindableType547 = MetadataBuilder_547.Build();
+					element = ref _bindableTypes[548];
+					if(element == null)
+					{
+						element = MetadataBuilder_548.Build();
+					}
+					break;
 				}
-				return _bindableType547;
 				case "Windows.UI.Xaml.Media.PathSegmentCollection":
-				if(_bindableType548 == null)
 				{
-					_bindableType548 = MetadataBuilder_548.Build();
+					element = ref _bindableTypes[549];
+					if(element == null)
+					{
+						element = MetadataBuilder_549.Build();
+					}
+					break;
 				}
-				return _bindableType548;
 				case "Windows.UI.Xaml.Media.PlaneProjection":
-				if(_bindableType549 == null)
 				{
-					_bindableType549 = MetadataBuilder_549.Build();
+					element = ref _bindableTypes[550];
+					if(element == null)
+					{
+						element = MetadataBuilder_550.Build();
+					}
+					break;
 				}
-				return _bindableType549;
 				case "Windows.UI.Xaml.Media.PolyBezierSegment":
-				if(_bindableType550 == null)
 				{
-					_bindableType550 = MetadataBuilder_550.Build();
+					element = ref _bindableTypes[551];
+					if(element == null)
+					{
+						element = MetadataBuilder_551.Build();
+					}
+					break;
 				}
-				return _bindableType550;
 				case "Windows.UI.Xaml.Media.PolyLineSegment":
-				if(_bindableType551 == null)
 				{
-					_bindableType551 = MetadataBuilder_551.Build();
+					element = ref _bindableTypes[552];
+					if(element == null)
+					{
+						element = MetadataBuilder_552.Build();
+					}
+					break;
 				}
-				return _bindableType551;
 				case "Windows.UI.Xaml.Media.PolyQuadraticBezierSegment":
-				if(_bindableType552 == null)
 				{
-					_bindableType552 = MetadataBuilder_552.Build();
+					element = ref _bindableTypes[553];
+					if(element == null)
+					{
+						element = MetadataBuilder_553.Build();
+					}
+					break;
 				}
-				return _bindableType552;
 				case "Windows.UI.Xaml.Media.QuadraticBezierSegment":
-				if(_bindableType553 == null)
 				{
-					_bindableType553 = MetadataBuilder_553.Build();
+					element = ref _bindableTypes[554];
+					if(element == null)
+					{
+						element = MetadataBuilder_554.Build();
+					}
+					break;
 				}
-				return _bindableType553;
 				case "Windows.UI.Xaml.Media.RectangleGeometry":
-				if(_bindableType554 == null)
 				{
-					_bindableType554 = MetadataBuilder_554.Build();
+					element = ref _bindableTypes[555];
+					if(element == null)
+					{
+						element = MetadataBuilder_555.Build();
+					}
+					break;
 				}
-				return _bindableType554;
 				case "Windows.UI.Xaml.Media.RevealBackgroundBrush":
-				if(_bindableType555 == null)
 				{
-					_bindableType555 = MetadataBuilder_555.Build();
+					element = ref _bindableTypes[556];
+					if(element == null)
+					{
+						element = MetadataBuilder_556.Build();
+					}
+					break;
 				}
-				return _bindableType555;
 				case "Windows.UI.Xaml.Media.RevealBrush":
-				if(_bindableType556 == null)
 				{
-					_bindableType556 = MetadataBuilder_556.Build();
+					element = ref _bindableTypes[557];
+					if(element == null)
+					{
+						element = MetadataBuilder_557.Build();
+					}
+					break;
 				}
-				return _bindableType556;
 				case "Windows.UI.Xaml.Media.RevealBorderBrush":
-				if(_bindableType557 == null)
 				{
-					_bindableType557 = MetadataBuilder_557.Build();
+					element = ref _bindableTypes[558];
+					if(element == null)
+					{
+						element = MetadataBuilder_558.Build();
+					}
+					break;
 				}
-				return _bindableType557;
 				case "Windows.UI.Xaml.Media.RotateTransform":
-				if(_bindableType558 == null)
 				{
-					_bindableType558 = MetadataBuilder_558.Build();
+					element = ref _bindableTypes[559];
+					if(element == null)
+					{
+						element = MetadataBuilder_559.Build();
+					}
+					break;
 				}
-				return _bindableType558;
 				case "Windows.UI.Xaml.Media.ScaleTransform":
-				if(_bindableType559 == null)
 				{
-					_bindableType559 = MetadataBuilder_559.Build();
+					element = ref _bindableTypes[560];
+					if(element == null)
+					{
+						element = MetadataBuilder_560.Build();
+					}
+					break;
 				}
-				return _bindableType559;
 				case "Windows.UI.Xaml.Media.Shadow":
-				if(_bindableType560 == null)
 				{
-					_bindableType560 = MetadataBuilder_560.Build();
+					element = ref _bindableTypes[561];
+					if(element == null)
+					{
+						element = MetadataBuilder_561.Build();
+					}
+					break;
 				}
-				return _bindableType560;
 				case "Windows.UI.Xaml.Media.SkewTransform":
-				if(_bindableType561 == null)
 				{
-					_bindableType561 = MetadataBuilder_561.Build();
+					element = ref _bindableTypes[562];
+					if(element == null)
+					{
+						element = MetadataBuilder_562.Build();
+					}
+					break;
 				}
-				return _bindableType561;
 				case "Windows.UI.Xaml.Media.SolidColorBrush":
-				if(_bindableType562 == null)
 				{
-					_bindableType562 = MetadataBuilder_562.Build();
+					element = ref _bindableTypes[563];
+					if(element == null)
+					{
+						element = MetadataBuilder_563.Build();
+					}
+					break;
 				}
-				return _bindableType562;
 				case "Windows.UI.Xaml.Media.ThemeShadow":
-				if(_bindableType563 == null)
 				{
-					_bindableType563 = MetadataBuilder_563.Build();
+					element = ref _bindableTypes[564];
+					if(element == null)
+					{
+						element = MetadataBuilder_564.Build();
+					}
+					break;
 				}
-				return _bindableType563;
 				case "Windows.UI.Xaml.Media.TimelineMarker":
-				if(_bindableType564 == null)
 				{
-					_bindableType564 = MetadataBuilder_564.Build();
+					element = ref _bindableTypes[565];
+					if(element == null)
+					{
+						element = MetadataBuilder_565.Build();
+					}
+					break;
 				}
-				return _bindableType564;
 				case "Windows.UI.Xaml.Media.TransformGroup":
-				if(_bindableType565 == null)
 				{
-					_bindableType565 = MetadataBuilder_565.Build();
+					element = ref _bindableTypes[566];
+					if(element == null)
+					{
+						element = MetadataBuilder_566.Build();
+					}
+					break;
 				}
-				return _bindableType565;
 				case "Windows.UI.Xaml.Media.TranslateTransform":
-				if(_bindableType566 == null)
 				{
-					_bindableType566 = MetadataBuilder_566.Build();
+					element = ref _bindableTypes[567];
+					if(element == null)
+					{
+						element = MetadataBuilder_567.Build();
+					}
+					break;
 				}
-				return _bindableType566;
 				case "Windows.UI.Xaml.Media.XamlLight":
-				if(_bindableType567 == null)
 				{
-					_bindableType567 = MetadataBuilder_567.Build();
+					element = ref _bindableTypes[568];
+					if(element == null)
+					{
+						element = MetadataBuilder_568.Build();
+					}
+					break;
 				}
-				return _bindableType567;
 				case "Windows.UI.Xaml.Media.Animation.AddDeleteThemeTransition":
-				if(_bindableType568 == null)
 				{
-					_bindableType568 = MetadataBuilder_568.Build();
+					element = ref _bindableTypes[569];
+					if(element == null)
+					{
+						element = MetadataBuilder_569.Build();
+					}
+					break;
 				}
-				return _bindableType568;
 				case "Windows.UI.Xaml.Media.Animation.Transition":
-				if(_bindableType569 == null)
 				{
-					_bindableType569 = MetadataBuilder_569.Build();
+					element = ref _bindableTypes[570];
+					if(element == null)
+					{
+						element = MetadataBuilder_570.Build();
+					}
+					break;
 				}
-				return _bindableType569;
 				case "Windows.UI.Xaml.Media.Animation.BackEase":
-				if(_bindableType570 == null)
 				{
-					_bindableType570 = MetadataBuilder_570.Build();
+					element = ref _bindableTypes[571];
+					if(element == null)
+					{
+						element = MetadataBuilder_571.Build();
+					}
+					break;
 				}
-				return _bindableType570;
 				case "Windows.UI.Xaml.Media.Animation.EasingFunctionBase":
-				if(_bindableType571 == null)
 				{
-					_bindableType571 = MetadataBuilder_571.Build();
+					element = ref _bindableTypes[572];
+					if(element == null)
+					{
+						element = MetadataBuilder_572.Build();
+					}
+					break;
 				}
-				return _bindableType571;
 				case "Windows.UI.Xaml.Media.Animation.BeginStoryboard":
-				if(_bindableType572 == null)
 				{
-					_bindableType572 = MetadataBuilder_572.Build();
+					element = ref _bindableTypes[573];
+					if(element == null)
+					{
+						element = MetadataBuilder_573.Build();
+					}
+					break;
 				}
-				return _bindableType572;
 				case "Windows.UI.Xaml.Media.Animation.BounceEase":
-				if(_bindableType573 == null)
 				{
-					_bindableType573 = MetadataBuilder_573.Build();
+					element = ref _bindableTypes[574];
+					if(element == null)
+					{
+						element = MetadataBuilder_574.Build();
+					}
+					break;
 				}
-				return _bindableType573;
 				case "Windows.UI.Xaml.Media.Animation.CircleEase":
-				if(_bindableType574 == null)
 				{
-					_bindableType574 = MetadataBuilder_574.Build();
+					element = ref _bindableTypes[575];
+					if(element == null)
+					{
+						element = MetadataBuilder_575.Build();
+					}
+					break;
 				}
-				return _bindableType574;
 				case "Windows.UI.Xaml.Media.Animation.ColorAnimation":
-				if(_bindableType575 == null)
 				{
-					_bindableType575 = MetadataBuilder_575.Build();
+					element = ref _bindableTypes[576];
+					if(element == null)
+					{
+						element = MetadataBuilder_576.Build();
+					}
+					break;
 				}
-				return _bindableType575;
 				case "Windows.UI.Xaml.Media.Animation.Timeline":
-				if(_bindableType576 == null)
 				{
-					_bindableType576 = MetadataBuilder_576.Build();
+					element = ref _bindableTypes[577];
+					if(element == null)
+					{
+						element = MetadataBuilder_577.Build();
+					}
+					break;
 				}
-				return _bindableType576;
 				case "Windows.UI.Xaml.Media.Animation.ColorAnimationUsingKeyFrames":
-				if(_bindableType577 == null)
 				{
-					_bindableType577 = MetadataBuilder_577.Build();
+					element = ref _bindableTypes[578];
+					if(element == null)
+					{
+						element = MetadataBuilder_578.Build();
+					}
+					break;
 				}
-				return _bindableType577;
 				case "Windows.UI.Xaml.Media.Animation.ColorKeyFrameCollection":
-				if(_bindableType578 == null)
 				{
-					_bindableType578 = MetadataBuilder_578.Build();
+					element = ref _bindableTypes[579];
+					if(element == null)
+					{
+						element = MetadataBuilder_579.Build();
+					}
+					break;
 				}
-				return _bindableType578;
 				case "Windows.UI.Xaml.Media.Animation.CommonNavigationTransitionInfo":
-				if(_bindableType579 == null)
 				{
-					_bindableType579 = MetadataBuilder_579.Build();
+					element = ref _bindableTypes[580];
+					if(element == null)
+					{
+						element = MetadataBuilder_580.Build();
+					}
+					break;
 				}
-				return _bindableType579;
 				case "Windows.UI.Xaml.Media.Animation.NavigationTransitionInfo":
-				if(_bindableType580 == null)
 				{
-					_bindableType580 = MetadataBuilder_580.Build();
+					element = ref _bindableTypes[581];
+					if(element == null)
+					{
+						element = MetadataBuilder_581.Build();
+					}
+					break;
 				}
-				return _bindableType580;
 				case "Windows.UI.Xaml.Media.Animation.ContentThemeTransition":
-				if(_bindableType581 == null)
 				{
-					_bindableType581 = MetadataBuilder_581.Build();
+					element = ref _bindableTypes[582];
+					if(element == null)
+					{
+						element = MetadataBuilder_582.Build();
+					}
+					break;
 				}
-				return _bindableType581;
 				case "Windows.UI.Xaml.Media.Animation.ContinuumNavigationTransitionInfo":
-				if(_bindableType582 == null)
 				{
-					_bindableType582 = MetadataBuilder_582.Build();
+					element = ref _bindableTypes[583];
+					if(element == null)
+					{
+						element = MetadataBuilder_583.Build();
+					}
+					break;
 				}
-				return _bindableType582;
 				case "Windows.UI.Xaml.Media.Animation.CubicEase":
-				if(_bindableType583 == null)
 				{
-					_bindableType583 = MetadataBuilder_583.Build();
+					element = ref _bindableTypes[584];
+					if(element == null)
+					{
+						element = MetadataBuilder_584.Build();
+					}
+					break;
 				}
-				return _bindableType583;
 				case "Windows.UI.Xaml.Media.Animation.DiscreteColorKeyFrame":
-				if(_bindableType584 == null)
 				{
-					_bindableType584 = MetadataBuilder_584.Build();
+					element = ref _bindableTypes[585];
+					if(element == null)
+					{
+						element = MetadataBuilder_585.Build();
+					}
+					break;
 				}
-				return _bindableType584;
 				case "Windows.UI.Xaml.Media.Animation.ColorKeyFrame":
-				if(_bindableType585 == null)
 				{
-					_bindableType585 = MetadataBuilder_585.Build();
+					element = ref _bindableTypes[586];
+					if(element == null)
+					{
+						element = MetadataBuilder_586.Build();
+					}
+					break;
 				}
-				return _bindableType585;
 				case "Windows.UI.Xaml.Media.Animation.DiscreteDoubleKeyFrame":
-				if(_bindableType586 == null)
 				{
-					_bindableType586 = MetadataBuilder_586.Build();
+					element = ref _bindableTypes[587];
+					if(element == null)
+					{
+						element = MetadataBuilder_587.Build();
+					}
+					break;
 				}
-				return _bindableType586;
 				case "Windows.UI.Xaml.Media.Animation.DoubleKeyFrame":
-				if(_bindableType587 == null)
 				{
-					_bindableType587 = MetadataBuilder_587.Build();
+					element = ref _bindableTypes[588];
+					if(element == null)
+					{
+						element = MetadataBuilder_588.Build();
+					}
+					break;
 				}
-				return _bindableType587;
 				case "Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame":
-				if(_bindableType588 == null)
 				{
-					_bindableType588 = MetadataBuilder_588.Build();
+					element = ref _bindableTypes[589];
+					if(element == null)
+					{
+						element = MetadataBuilder_589.Build();
+					}
+					break;
 				}
-				return _bindableType588;
 				case "Windows.UI.Xaml.Media.Animation.ObjectKeyFrame":
-				if(_bindableType589 == null)
 				{
-					_bindableType589 = MetadataBuilder_589.Build();
+					element = ref _bindableTypes[590];
+					if(element == null)
+					{
+						element = MetadataBuilder_590.Build();
+					}
+					break;
 				}
-				return _bindableType589;
 				case "Windows.UI.Xaml.Media.Animation.DiscretePointKeyFrame":
-				if(_bindableType590 == null)
 				{
-					_bindableType590 = MetadataBuilder_590.Build();
+					element = ref _bindableTypes[591];
+					if(element == null)
+					{
+						element = MetadataBuilder_591.Build();
+					}
+					break;
 				}
-				return _bindableType590;
 				case "Windows.UI.Xaml.Media.Animation.PointKeyFrame":
-				if(_bindableType591 == null)
 				{
-					_bindableType591 = MetadataBuilder_591.Build();
+					element = ref _bindableTypes[592];
+					if(element == null)
+					{
+						element = MetadataBuilder_592.Build();
+					}
+					break;
 				}
-				return _bindableType591;
 				case "Windows.UI.Xaml.Media.Animation.DoubleAnimation":
-				if(_bindableType592 == null)
 				{
-					_bindableType592 = MetadataBuilder_592.Build();
+					element = ref _bindableTypes[593];
+					if(element == null)
+					{
+						element = MetadataBuilder_593.Build();
+					}
+					break;
 				}
-				return _bindableType592;
 				case "Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames":
-				if(_bindableType593 == null)
 				{
-					_bindableType593 = MetadataBuilder_593.Build();
+					element = ref _bindableTypes[594];
+					if(element == null)
+					{
+						element = MetadataBuilder_594.Build();
+					}
+					break;
 				}
-				return _bindableType593;
 				case "Windows.UI.Xaml.Media.Animation.DoubleKeyFrameCollection":
-				if(_bindableType594 == null)
 				{
-					_bindableType594 = MetadataBuilder_594.Build();
+					element = ref _bindableTypes[595];
+					if(element == null)
+					{
+						element = MetadataBuilder_595.Build();
+					}
+					break;
 				}
-				return _bindableType594;
 				case "Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation":
-				if(_bindableType595 == null)
 				{
-					_bindableType595 = MetadataBuilder_595.Build();
+					element = ref _bindableTypes[596];
+					if(element == null)
+					{
+						element = MetadataBuilder_596.Build();
+					}
+					break;
 				}
-				return _bindableType595;
 				case "Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation":
-				if(_bindableType596 == null)
 				{
-					_bindableType596 = MetadataBuilder_596.Build();
+					element = ref _bindableTypes[597];
+					if(element == null)
+					{
+						element = MetadataBuilder_597.Build();
+					}
+					break;
 				}
-				return _bindableType596;
 				case "Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo":
-				if(_bindableType597 == null)
 				{
-					_bindableType597 = MetadataBuilder_597.Build();
+					element = ref _bindableTypes[598];
+					if(element == null)
+					{
+						element = MetadataBuilder_598.Build();
+					}
+					break;
 				}
-				return _bindableType597;
 				case "Windows.UI.Xaml.Media.Animation.DrillInThemeAnimation":
-				if(_bindableType598 == null)
 				{
-					_bindableType598 = MetadataBuilder_598.Build();
+					element = ref _bindableTypes[599];
+					if(element == null)
+					{
+						element = MetadataBuilder_599.Build();
+					}
+					break;
 				}
-				return _bindableType598;
 				case "Windows.UI.Xaml.Media.Animation.DrillOutThemeAnimation":
-				if(_bindableType599 == null)
 				{
-					_bindableType599 = MetadataBuilder_599.Build();
+					element = ref _bindableTypes[600];
+					if(element == null)
+					{
+						element = MetadataBuilder_600.Build();
+					}
+					break;
 				}
-				return _bindableType599;
 				case "Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation":
-				if(_bindableType600 == null)
 				{
-					_bindableType600 = MetadataBuilder_600.Build();
+					element = ref _bindableTypes[601];
+					if(element == null)
+					{
+						element = MetadataBuilder_601.Build();
+					}
+					break;
 				}
-				return _bindableType600;
 				case "Windows.UI.Xaml.Media.Animation.EasingColorKeyFrame":
-				if(_bindableType601 == null)
 				{
-					_bindableType601 = MetadataBuilder_601.Build();
+					element = ref _bindableTypes[602];
+					if(element == null)
+					{
+						element = MetadataBuilder_602.Build();
+					}
+					break;
 				}
-				return _bindableType601;
 				case "Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame":
-				if(_bindableType602 == null)
 				{
-					_bindableType602 = MetadataBuilder_602.Build();
+					element = ref _bindableTypes[603];
+					if(element == null)
+					{
+						element = MetadataBuilder_603.Build();
+					}
+					break;
 				}
-				return _bindableType602;
 				case "Windows.UI.Xaml.Media.Animation.EasingPointKeyFrame":
-				if(_bindableType603 == null)
 				{
-					_bindableType603 = MetadataBuilder_603.Build();
+					element = ref _bindableTypes[604];
+					if(element == null)
+					{
+						element = MetadataBuilder_604.Build();
+					}
+					break;
 				}
-				return _bindableType603;
 				case "Windows.UI.Xaml.Media.Animation.EdgeUIThemeTransition":
-				if(_bindableType604 == null)
 				{
-					_bindableType604 = MetadataBuilder_604.Build();
+					element = ref _bindableTypes[605];
+					if(element == null)
+					{
+						element = MetadataBuilder_605.Build();
+					}
+					break;
 				}
-				return _bindableType604;
 				case "Windows.UI.Xaml.Media.Animation.ElasticEase":
-				if(_bindableType605 == null)
 				{
-					_bindableType605 = MetadataBuilder_605.Build();
+					element = ref _bindableTypes[606];
+					if(element == null)
+					{
+						element = MetadataBuilder_606.Build();
+					}
+					break;
 				}
-				return _bindableType605;
 				case "Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo":
-				if(_bindableType606 == null)
 				{
-					_bindableType606 = MetadataBuilder_606.Build();
+					element = ref _bindableTypes[607];
+					if(element == null)
+					{
+						element = MetadataBuilder_607.Build();
+					}
+					break;
 				}
-				return _bindableType606;
 				case "Windows.UI.Xaml.Media.Animation.EntranceThemeTransition":
-				if(_bindableType607 == null)
 				{
-					_bindableType607 = MetadataBuilder_607.Build();
+					element = ref _bindableTypes[608];
+					if(element == null)
+					{
+						element = MetadataBuilder_608.Build();
+					}
+					break;
 				}
-				return _bindableType607;
 				case "Windows.UI.Xaml.Media.Animation.ExponentialEase":
-				if(_bindableType608 == null)
 				{
-					_bindableType608 = MetadataBuilder_608.Build();
+					element = ref _bindableTypes[609];
+					if(element == null)
+					{
+						element = MetadataBuilder_609.Build();
+					}
+					break;
 				}
-				return _bindableType608;
 				case "Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation":
-				if(_bindableType609 == null)
 				{
-					_bindableType609 = MetadataBuilder_609.Build();
+					element = ref _bindableTypes[610];
+					if(element == null)
+					{
+						element = MetadataBuilder_610.Build();
+					}
+					break;
 				}
-				return _bindableType609;
 				case "Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation":
-				if(_bindableType610 == null)
 				{
-					_bindableType610 = MetadataBuilder_610.Build();
+					element = ref _bindableTypes[611];
+					if(element == null)
+					{
+						element = MetadataBuilder_611.Build();
+					}
+					break;
 				}
-				return _bindableType610;
 				case "Windows.UI.Xaml.Media.Animation.KeySpline":
-				if(_bindableType611 == null)
 				{
-					_bindableType611 = MetadataBuilder_611.Build();
+					element = ref _bindableTypes[612];
+					if(element == null)
+					{
+						element = MetadataBuilder_612.Build();
+					}
+					break;
 				}
-				return _bindableType611;
 				case "Windows.UI.Xaml.Media.Animation.LinearColorKeyFrame":
-				if(_bindableType612 == null)
 				{
-					_bindableType612 = MetadataBuilder_612.Build();
+					element = ref _bindableTypes[613];
+					if(element == null)
+					{
+						element = MetadataBuilder_613.Build();
+					}
+					break;
 				}
-				return _bindableType612;
 				case "Windows.UI.Xaml.Media.Animation.LinearDoubleKeyFrame":
-				if(_bindableType613 == null)
 				{
-					_bindableType613 = MetadataBuilder_613.Build();
+					element = ref _bindableTypes[614];
+					if(element == null)
+					{
+						element = MetadataBuilder_614.Build();
+					}
+					break;
 				}
-				return _bindableType613;
 				case "Windows.UI.Xaml.Media.Animation.LinearPointKeyFrame":
-				if(_bindableType614 == null)
 				{
-					_bindableType614 = MetadataBuilder_614.Build();
+					element = ref _bindableTypes[615];
+					if(element == null)
+					{
+						element = MetadataBuilder_615.Build();
+					}
+					break;
 				}
-				return _bindableType614;
 				case "Windows.UI.Xaml.Media.Animation.NavigationThemeTransition":
-				if(_bindableType615 == null)
 				{
-					_bindableType615 = MetadataBuilder_615.Build();
+					element = ref _bindableTypes[616];
+					if(element == null)
+					{
+						element = MetadataBuilder_616.Build();
+					}
+					break;
 				}
-				return _bindableType615;
 				case "Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames":
-				if(_bindableType616 == null)
 				{
-					_bindableType616 = MetadataBuilder_616.Build();
+					element = ref _bindableTypes[617];
+					if(element == null)
+					{
+						element = MetadataBuilder_617.Build();
+					}
+					break;
 				}
-				return _bindableType616;
 				case "Windows.UI.Xaml.Media.Animation.ObjectKeyFrameCollection":
-				if(_bindableType617 == null)
 				{
-					_bindableType617 = MetadataBuilder_617.Build();
+					element = ref _bindableTypes[618];
+					if(element == null)
+					{
+						element = MetadataBuilder_618.Build();
+					}
+					break;
 				}
-				return _bindableType617;
 				case "Windows.UI.Xaml.Media.Animation.PaneThemeTransition":
-				if(_bindableType618 == null)
 				{
-					_bindableType618 = MetadataBuilder_618.Build();
+					element = ref _bindableTypes[619];
+					if(element == null)
+					{
+						element = MetadataBuilder_619.Build();
+					}
+					break;
 				}
-				return _bindableType618;
 				case "Windows.UI.Xaml.Media.Animation.PointAnimation":
-				if(_bindableType619 == null)
 				{
-					_bindableType619 = MetadataBuilder_619.Build();
+					element = ref _bindableTypes[620];
+					if(element == null)
+					{
+						element = MetadataBuilder_620.Build();
+					}
+					break;
 				}
-				return _bindableType619;
 				case "Windows.UI.Xaml.Media.Animation.PointAnimationUsingKeyFrames":
-				if(_bindableType620 == null)
 				{
-					_bindableType620 = MetadataBuilder_620.Build();
+					element = ref _bindableTypes[621];
+					if(element == null)
+					{
+						element = MetadataBuilder_621.Build();
+					}
+					break;
 				}
-				return _bindableType620;
 				case "Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation":
-				if(_bindableType621 == null)
 				{
-					_bindableType621 = MetadataBuilder_621.Build();
+					element = ref _bindableTypes[622];
+					if(element == null)
+					{
+						element = MetadataBuilder_622.Build();
+					}
+					break;
 				}
-				return _bindableType621;
 				case "Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation":
-				if(_bindableType622 == null)
 				{
-					_bindableType622 = MetadataBuilder_622.Build();
+					element = ref _bindableTypes[623];
+					if(element == null)
+					{
+						element = MetadataBuilder_623.Build();
+					}
+					break;
 				}
-				return _bindableType622;
 				case "Windows.UI.Xaml.Media.Animation.PopInThemeAnimation":
-				if(_bindableType623 == null)
 				{
-					_bindableType623 = MetadataBuilder_623.Build();
+					element = ref _bindableTypes[624];
+					if(element == null)
+					{
+						element = MetadataBuilder_624.Build();
+					}
+					break;
 				}
-				return _bindableType623;
 				case "Windows.UI.Xaml.Media.Animation.PopOutThemeAnimation":
-				if(_bindableType624 == null)
 				{
-					_bindableType624 = MetadataBuilder_624.Build();
+					element = ref _bindableTypes[625];
+					if(element == null)
+					{
+						element = MetadataBuilder_625.Build();
+					}
+					break;
 				}
-				return _bindableType624;
 				case "Windows.UI.Xaml.Media.Animation.PopupThemeTransition":
-				if(_bindableType625 == null)
 				{
-					_bindableType625 = MetadataBuilder_625.Build();
+					element = ref _bindableTypes[626];
+					if(element == null)
+					{
+						element = MetadataBuilder_626.Build();
+					}
+					break;
 				}
-				return _bindableType625;
 				case "Windows.UI.Xaml.Media.Animation.PowerEase":
-				if(_bindableType626 == null)
 				{
-					_bindableType626 = MetadataBuilder_626.Build();
+					element = ref _bindableTypes[627];
+					if(element == null)
+					{
+						element = MetadataBuilder_627.Build();
+					}
+					break;
 				}
-				return _bindableType626;
 				case "Windows.UI.Xaml.Media.Animation.QuadraticEase":
-				if(_bindableType627 == null)
 				{
-					_bindableType627 = MetadataBuilder_627.Build();
+					element = ref _bindableTypes[628];
+					if(element == null)
+					{
+						element = MetadataBuilder_628.Build();
+					}
+					break;
 				}
-				return _bindableType627;
 				case "Windows.UI.Xaml.Media.Animation.QuarticEase":
-				if(_bindableType628 == null)
 				{
-					_bindableType628 = MetadataBuilder_628.Build();
+					element = ref _bindableTypes[629];
+					if(element == null)
+					{
+						element = MetadataBuilder_629.Build();
+					}
+					break;
 				}
-				return _bindableType628;
 				case "Windows.UI.Xaml.Media.Animation.QuinticEase":
-				if(_bindableType629 == null)
 				{
-					_bindableType629 = MetadataBuilder_629.Build();
+					element = ref _bindableTypes[630];
+					if(element == null)
+					{
+						element = MetadataBuilder_630.Build();
+					}
+					break;
 				}
-				return _bindableType629;
 				case "Windows.UI.Xaml.Media.Animation.ReorderThemeTransition":
-				if(_bindableType630 == null)
 				{
-					_bindableType630 = MetadataBuilder_630.Build();
+					element = ref _bindableTypes[631];
+					if(element == null)
+					{
+						element = MetadataBuilder_631.Build();
+					}
+					break;
 				}
-				return _bindableType630;
 				case "Windows.UI.Xaml.Media.Animation.RepositionThemeAnimation":
-				if(_bindableType631 == null)
 				{
-					_bindableType631 = MetadataBuilder_631.Build();
+					element = ref _bindableTypes[632];
+					if(element == null)
+					{
+						element = MetadataBuilder_632.Build();
+					}
+					break;
 				}
-				return _bindableType631;
 				case "Windows.UI.Xaml.Media.Animation.RepositionThemeTransition":
-				if(_bindableType632 == null)
 				{
-					_bindableType632 = MetadataBuilder_632.Build();
+					element = ref _bindableTypes[633];
+					if(element == null)
+					{
+						element = MetadataBuilder_633.Build();
+					}
+					break;
 				}
-				return _bindableType632;
 				case "Windows.UI.Xaml.Media.Animation.SineEase":
-				if(_bindableType633 == null)
 				{
-					_bindableType633 = MetadataBuilder_633.Build();
+					element = ref _bindableTypes[634];
+					if(element == null)
+					{
+						element = MetadataBuilder_634.Build();
+					}
+					break;
 				}
-				return _bindableType633;
 				case "Windows.UI.Xaml.Media.Animation.SlideNavigationTransitionInfo":
-				if(_bindableType634 == null)
 				{
-					_bindableType634 = MetadataBuilder_634.Build();
+					element = ref _bindableTypes[635];
+					if(element == null)
+					{
+						element = MetadataBuilder_635.Build();
+					}
+					break;
 				}
-				return _bindableType634;
 				case "Windows.UI.Xaml.Media.Animation.SplineColorKeyFrame":
-				if(_bindableType635 == null)
 				{
-					_bindableType635 = MetadataBuilder_635.Build();
+					element = ref _bindableTypes[636];
+					if(element == null)
+					{
+						element = MetadataBuilder_636.Build();
+					}
+					break;
 				}
-				return _bindableType635;
 				case "Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame":
-				if(_bindableType636 == null)
 				{
-					_bindableType636 = MetadataBuilder_636.Build();
+					element = ref _bindableTypes[637];
+					if(element == null)
+					{
+						element = MetadataBuilder_637.Build();
+					}
+					break;
 				}
-				return _bindableType636;
 				case "Windows.UI.Xaml.Media.Animation.SplinePointKeyFrame":
-				if(_bindableType637 == null)
 				{
-					_bindableType637 = MetadataBuilder_637.Build();
+					element = ref _bindableTypes[638];
+					if(element == null)
+					{
+						element = MetadataBuilder_638.Build();
+					}
+					break;
 				}
-				return _bindableType637;
 				case "Windows.UI.Xaml.Media.Animation.SplitCloseThemeAnimation":
-				if(_bindableType638 == null)
 				{
-					_bindableType638 = MetadataBuilder_638.Build();
+					element = ref _bindableTypes[639];
+					if(element == null)
+					{
+						element = MetadataBuilder_639.Build();
+					}
+					break;
 				}
-				return _bindableType638;
 				case "Windows.UI.Xaml.Media.Animation.SplitOpenThemeAnimation":
-				if(_bindableType639 == null)
 				{
-					_bindableType639 = MetadataBuilder_639.Build();
+					element = ref _bindableTypes[640];
+					if(element == null)
+					{
+						element = MetadataBuilder_640.Build();
+					}
+					break;
 				}
-				return _bindableType639;
 				case "Windows.UI.Xaml.Media.Animation.Storyboard":
-				if(_bindableType640 == null)
 				{
-					_bindableType640 = MetadataBuilder_640.Build();
+					element = ref _bindableTypes[641];
+					if(element == null)
+					{
+						element = MetadataBuilder_641.Build();
+					}
+					break;
 				}
-				return _bindableType640;
 				case "Windows.UI.Xaml.Media.Animation.SuppressNavigationTransitionInfo":
-				if(_bindableType641 == null)
 				{
-					_bindableType641 = MetadataBuilder_641.Build();
+					element = ref _bindableTypes[642];
+					if(element == null)
+					{
+						element = MetadataBuilder_642.Build();
+					}
+					break;
 				}
-				return _bindableType641;
 				case "Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation":
-				if(_bindableType642 == null)
 				{
-					_bindableType642 = MetadataBuilder_642.Build();
+					element = ref _bindableTypes[643];
+					if(element == null)
+					{
+						element = MetadataBuilder_643.Build();
+					}
+					break;
 				}
-				return _bindableType642;
 				case "Windows.UI.Xaml.Media.Animation.SwipeHintThemeAnimation":
-				if(_bindableType643 == null)
 				{
-					_bindableType643 = MetadataBuilder_643.Build();
+					element = ref _bindableTypes[644];
+					if(element == null)
+					{
+						element = MetadataBuilder_644.Build();
+					}
+					break;
 				}
-				return _bindableType643;
 				case "Windows.UI.Xaml.Media.Animation.TimelineCollection":
-				if(_bindableType644 == null)
 				{
-					_bindableType644 = MetadataBuilder_644.Build();
+					element = ref _bindableTypes[645];
+					if(element == null)
+					{
+						element = MetadataBuilder_645.Build();
+					}
+					break;
 				}
-				return _bindableType644;
 				case "Windows.UI.Xaml.Media.Imaging.BitmapImage":
-				if(_bindableType645 == null)
 				{
-					_bindableType645 = MetadataBuilder_645.Build();
+					element = ref _bindableTypes[646];
+					if(element == null)
+					{
+						element = MetadataBuilder_646.Build();
+					}
+					break;
 				}
-				return _bindableType645;
 				case "Windows.UI.Xaml.Media.Imaging.BitmapSource":
-				if(_bindableType646 == null)
 				{
-					_bindableType646 = MetadataBuilder_646.Build();
+					element = ref _bindableTypes[647];
+					if(element == null)
+					{
+						element = MetadataBuilder_647.Build();
+					}
+					break;
 				}
-				return _bindableType646;
 				case "Windows.UI.Xaml.Media.Imaging.RenderTargetBitmap":
-				if(_bindableType647 == null)
 				{
-					_bindableType647 = MetadataBuilder_647.Build();
+					element = ref _bindableTypes[648];
+					if(element == null)
+					{
+						element = MetadataBuilder_648.Build();
+					}
+					break;
 				}
-				return _bindableType647;
 				case "Windows.UI.Xaml.Media.Imaging.SoftwareBitmapSource":
-				if(_bindableType648 == null)
 				{
-					_bindableType648 = MetadataBuilder_648.Build();
+					element = ref _bindableTypes[649];
+					if(element == null)
+					{
+						element = MetadataBuilder_649.Build();
+					}
+					break;
 				}
-				return _bindableType648;
 				case "Windows.UI.Xaml.Media.Imaging.SurfaceImageSource":
-				if(_bindableType649 == null)
 				{
-					_bindableType649 = MetadataBuilder_649.Build();
+					element = ref _bindableTypes[650];
+					if(element == null)
+					{
+						element = MetadataBuilder_650.Build();
+					}
+					break;
 				}
-				return _bindableType649;
 				case "Windows.UI.Xaml.Media.Imaging.SvgImageSource":
-				if(_bindableType650 == null)
 				{
-					_bindableType650 = MetadataBuilder_650.Build();
+					element = ref _bindableTypes[651];
+					if(element == null)
+					{
+						element = MetadataBuilder_651.Build();
+					}
+					break;
 				}
-				return _bindableType650;
 				case "Windows.UI.Xaml.Media.Imaging.VirtualSurfaceImageSource":
-				if(_bindableType651 == null)
 				{
-					_bindableType651 = MetadataBuilder_651.Build();
+					element = ref _bindableTypes[652];
+					if(element == null)
+					{
+						element = MetadataBuilder_652.Build();
+					}
+					break;
 				}
-				return _bindableType651;
 				case "Windows.UI.Xaml.Media.Imaging.WriteableBitmap":
-				if(_bindableType652 == null)
 				{
-					_bindableType652 = MetadataBuilder_652.Build();
+					element = ref _bindableTypes[653];
+					if(element == null)
+					{
+						element = MetadataBuilder_653.Build();
+					}
+					break;
 				}
-				return _bindableType652;
 				case "Windows.UI.Xaml.Media.Media3D.CompositeTransform3D":
-				if(_bindableType653 == null)
 				{
-					_bindableType653 = MetadataBuilder_653.Build();
+					element = ref _bindableTypes[654];
+					if(element == null)
+					{
+						element = MetadataBuilder_654.Build();
+					}
+					break;
 				}
-				return _bindableType653;
 				case "Windows.UI.Xaml.Media.Media3D.Transform3D":
-				if(_bindableType654 == null)
 				{
-					_bindableType654 = MetadataBuilder_654.Build();
+					element = ref _bindableTypes[655];
+					if(element == null)
+					{
+						element = MetadataBuilder_655.Build();
+					}
+					break;
 				}
-				return _bindableType654;
 				case "Windows.UI.Xaml.Media.Media3D.PerspectiveTransform3D":
-				if(_bindableType655 == null)
 				{
-					_bindableType655 = MetadataBuilder_655.Build();
+					element = ref _bindableTypes[656];
+					if(element == null)
+					{
+						element = MetadataBuilder_656.Build();
+					}
+					break;
 				}
-				return _bindableType655;
 				case "Windows.UI.Xaml.Navigation.PageStackEntry":
-				if(_bindableType656 == null)
 				{
-					_bindableType656 = MetadataBuilder_656.Build();
+					element = ref _bindableTypes[657];
+					if(element == null)
+					{
+						element = MetadataBuilder_657.Build();
+					}
+					break;
 				}
-				return _bindableType656;
 				case "Windows.UI.Xaml.Printing.PrintDocument":
-				if(_bindableType657 == null)
 				{
-					_bindableType657 = MetadataBuilder_657.Build();
+					element = ref _bindableTypes[658];
+					if(element == null)
+					{
+						element = MetadataBuilder_658.Build();
+					}
+					break;
 				}
-				return _bindableType657;
 				case "Windows.UI.Xaml.Shapes.Ellipse":
-				if(_bindableType658 == null)
 				{
-					_bindableType658 = MetadataBuilder_658.Build();
+					element = ref _bindableTypes[659];
+					if(element == null)
+					{
+						element = MetadataBuilder_659.Build();
+					}
+					break;
 				}
-				return _bindableType658;
 				case "Windows.UI.Xaml.Shapes.ArbitraryShapeBase":
-				if(_bindableType659 == null)
 				{
-					_bindableType659 = MetadataBuilder_659.Build();
+					element = ref _bindableTypes[660];
+					if(element == null)
+					{
+						element = MetadataBuilder_660.Build();
+					}
+					break;
 				}
-				return _bindableType659;
 				case "Windows.UI.Xaml.Shapes.Shape":
-				if(_bindableType660 == null)
 				{
-					_bindableType660 = MetadataBuilder_660.Build();
+					element = ref _bindableTypes[661];
+					if(element == null)
+					{
+						element = MetadataBuilder_661.Build();
+					}
+					break;
 				}
-				return _bindableType660;
 				case "Windows.UI.Xaml.Shapes.Line":
-				if(_bindableType661 == null)
 				{
-					_bindableType661 = MetadataBuilder_661.Build();
+					element = ref _bindableTypes[662];
+					if(element == null)
+					{
+						element = MetadataBuilder_662.Build();
+					}
+					break;
 				}
-				return _bindableType661;
 				case "Windows.UI.Xaml.Shapes.Path":
-				if(_bindableType662 == null)
 				{
-					_bindableType662 = MetadataBuilder_662.Build();
+					element = ref _bindableTypes[663];
+					if(element == null)
+					{
+						element = MetadataBuilder_663.Build();
+					}
+					break;
 				}
-				return _bindableType662;
 				case "Windows.UI.Xaml.Shapes.Polygon":
-				if(_bindableType663 == null)
 				{
-					_bindableType663 = MetadataBuilder_663.Build();
+					element = ref _bindableTypes[664];
+					if(element == null)
+					{
+						element = MetadataBuilder_664.Build();
+					}
+					break;
 				}
-				return _bindableType663;
 				case "Windows.UI.Xaml.Shapes.Polyline":
-				if(_bindableType664 == null)
 				{
-					_bindableType664 = MetadataBuilder_664.Build();
+					element = ref _bindableTypes[665];
+					if(element == null)
+					{
+						element = MetadataBuilder_665.Build();
+					}
+					break;
 				}
-				return _bindableType664;
 				case "Windows.UI.Xaml.Shapes.Rectangle":
-				if(_bindableType665 == null)
 				{
-					_bindableType665 = MetadataBuilder_665.Build();
+					element = ref _bindableTypes[666];
+					if(element == null)
+					{
+						element = MetadataBuilder_666.Build();
+					}
+					break;
 				}
-				return _bindableType665;
 				case "Uno.UI.Toolkit.ElevatedView":
-				if(_bindableType666 == null)
 				{
-					_bindableType666 = MetadataBuilder_666.Build();
+					element = ref _bindableTypes[667];
+					if(element == null)
+					{
+						element = MetadataBuilder_667.Build();
+					}
+					break;
 				}
-				return _bindableType666;
 				case "ElevateEvansvilleUI.MainPage":
-				if(_bindableType667 == null)
 				{
-					_bindableType667 = MetadataBuilder_667.Build();
+					element = ref _bindableTypes[668];
+					if(element == null)
+					{
+						element = MetadataBuilder_668.Build();
+					}
+					break;
 				}
-				return _bindableType667;
 				case "ElevateEvansvilleUI.Controls.Messages.PayPalDetailMessage":
-				if(_bindableType668 == null)
 				{
-					_bindableType668 = MetadataBuilder_668.Build();
+					element = ref _bindableTypes[669];
+					if(element == null)
+					{
+						element = MetadataBuilder_669.Build();
+					}
+					break;
 				}
-				return _bindableType668;
 				case "ElevateEvansvilleUI.Controls.Messages.PreviewMessage":
-				if(_bindableType669 == null)
 				{
-					_bindableType669 = MetadataBuilder_669.Build();
+					element = ref _bindableTypes[670];
+					if(element == null)
+					{
+						element = MetadataBuilder_670.Build();
+					}
+					break;
 				}
-				return _bindableType669;
 				case "ElevateEvansvilleUI.Pages.AboutPage":
-				if(_bindableType670 == null)
 				{
-					_bindableType670 = MetadataBuilder_670.Build();
+					element = ref _bindableTypes[671];
+					if(element == null)
+					{
+						element = MetadataBuilder_671.Build();
+					}
+					break;
 				}
-				return _bindableType670;
 				case "ElevateEvansvilleUI.Pages.HomePage":
-				if(_bindableType671 == null)
 				{
-					_bindableType671 = MetadataBuilder_671.Build();
+					element = ref _bindableTypes[672];
+					if(element == null)
+					{
+						element = MetadataBuilder_672.Build();
+					}
+					break;
 				}
-				return _bindableType671;
 				case "ElevateEvansvilleUI.Pages.FinancePage":
-				if(_bindableType672 == null)
 				{
-					_bindableType672 = MetadataBuilder_672.Build();
+					element = ref _bindableTypes[673];
+					if(element == null)
+					{
+						element = MetadataBuilder_673.Build();
+					}
+					break;
 				}
-				return _bindableType672;
 				case "ElevateEvansvilleUI.Pages.PlatformPage":
-				if(_bindableType673 == null)
 				{
-					_bindableType673 = MetadataBuilder_673.Build();
+					element = ref _bindableTypes[674];
+					if(element == null)
+					{
+						element = MetadataBuilder_674.Build();
+					}
+					break;
 				}
-				return _bindableType673;
 				case "ElevateEvansvilleUI.Pages.PrivacyPage":
-				if(_bindableType674 == null)
 				{
-					_bindableType674 = MetadataBuilder_674.Build();
+					element = ref _bindableTypes[675];
+					if(element == null)
+					{
+						element = MetadataBuilder_675.Build();
+					}
+					break;
 				}
-				return _bindableType674;
 				case "ElevateEvansvilleUI.Pages.PetitionPage":
-				if(_bindableType675 == null)
 				{
-					_bindableType675 = MetadataBuilder_675.Build();
+					element = ref _bindableTypes[676];
+					if(element == null)
+					{
+						element = MetadataBuilder_676.Build();
+					}
+					break;
 				}
-				return _bindableType675;
 				case "ElevateEvansvilleUI.Pages.VolunteerLoginPage":
-				if(_bindableType676 == null)
 				{
-					_bindableType676 = MetadataBuilder_676.Build();
+					element = ref _bindableTypes[677];
+					if(element == null)
+					{
+						element = MetadataBuilder_677.Build();
+					}
+					break;
 				}
-				return _bindableType676;
 				case "ElevateEvansvilleUI.Pages.VolunteerPortalPage":
-				if(_bindableType677 == null)
 				{
-					_bindableType677 = MetadataBuilder_677.Build();
+					element = ref _bindableTypes[678];
+					if(element == null)
+					{
+						element = MetadataBuilder_678.Build();
+					}
+					break;
 				}
-				return _bindableType677;
 				case "ElevateEvansvilleUI.Pages.SupportPage":
-				if(_bindableType678 == null)
 				{
-					_bindableType678 = MetadataBuilder_678.Build();
+					element = ref _bindableTypes[679];
+					if(element == null)
+					{
+						element = MetadataBuilder_679.Build();
+					}
+					break;
 				}
-				return _bindableType678;
 				case "ElevateEvansvilleUI.Pages.TestPage":
-				if(_bindableType679 == null)
 				{
-					_bindableType679 = MetadataBuilder_679.Build();
+					element = ref _bindableTypes[680];
+					if(element == null)
+					{
+						element = MetadataBuilder_680.Build();
+					}
+					break;
 				}
-				return _bindableType679;
 				case "ElevateEvansvilleUI.Pages.Featured.HousingPage":
-				if(_bindableType680 == null)
 				{
-					_bindableType680 = MetadataBuilder_680.Build();
+					element = ref _bindableTypes[681];
+					if(element == null)
+					{
+						element = MetadataBuilder_681.Build();
+					}
+					break;
 				}
-				return _bindableType680;
 				case "ElevateEvansvilleUI.Pages.Featured.RailroadPage":
-				if(_bindableType681 == null)
 				{
-					_bindableType681 = MetadataBuilder_681.Build();
+					element = ref _bindableTypes[682];
+					if(element == null)
+					{
+						element = MetadataBuilder_682.Build();
+					}
+					break;
 				}
-				return _bindableType681;
 				case "ElevateEvansvilleUI.Pages.Featured.EnergyPage":
-				if(_bindableType682 == null)
 				{
-					_bindableType682 = MetadataBuilder_682.Build();
+					element = ref _bindableTypes[683];
+					if(element == null)
+					{
+						element = MetadataBuilder_683.Build();
+					}
+					break;
 				}
-				return _bindableType682;
-				default:
-				return null;
 			}
+			return element;
 		}
 		public global::Uno.UI.DataBinding.IBindableType GetBindableTypeByType(Type type)
 		{
@@ -29574,12 +31005,5 @@ namespace ElevateEvansvilleUI.Wasm
 		#if DEBUG && !UNO_DISABLE_KNOWN_MISSING_TYPES
 		private global::System.Collections.Generic.List<global::System.Type> _knownMissingTypes = new global::System.Collections.Generic.List<global::System.Type>();
 		#endif
-		public void ForceInitialize()
-		{
-			foreach (TypeBuilderDelegate item in _bindableTypeCacheByFullName.Values)
-			{
-				item();
-			}
-		}
 	}
 }

@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,17 +48,26 @@ namespace ElevateEvansvilleUI.Controls.Messages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class PayPalDetailMessage : Windows.UI.Xaml.Controls.UserControl
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f = "ms-appx:///Controls/Messages/PayPalDetailMessage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PayPalDetailMessage.xaml (Line 1:2)
 			base.Content = 
 			new global::Windows.UI.Xaml.Controls.Grid
 			{
 				IsParsing = true,
-				MaxWidth = 275d/* double/, 275, Grid/MaxWidth */,
+				MaxWidth = 275f/* double/, 275, Grid/MaxWidth */,
 				ColumnDefinitions = 
 				{
 					new global::Windows.UI.Xaml.Controls.ColumnDefinition
@@ -150,6 +161,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 0/* int/, 0, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c12, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c12.CreationComplete();
 					}
 					))
@@ -164,6 +176,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c13, 1/* int/, 1, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c13, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c13.CreationComplete();
 					}
 					))
@@ -178,6 +191,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c14, 2/* int/, 2, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c14, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c14, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c14.CreationComplete();
 					}
 					))
@@ -192,6 +206,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c15, 3/* int/, 3, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c15, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c15.CreationComplete();
 					}
 					))
@@ -206,6 +221,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c16, 4/* int/, 4, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c16, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c16, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c16.CreationComplete();
 					}
 					))
@@ -220,6 +236,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c17, 5/* int/, 5, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c17, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c17, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c17.CreationComplete();
 					}
 					))
@@ -234,6 +251,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c18, 6/* int/, 6, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c18, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c18, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c18.CreationComplete();
 					}
 					))
@@ -248,6 +266,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c19, 7/* int/, 7, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c19, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c19, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c19.CreationComplete();
 					}
 					))
@@ -262,6 +281,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c20, 8/* int/, 8, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c20, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c20, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c20.CreationComplete();
 					}
 					))
@@ -276,6 +296,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c21, 9/* int/, 9, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c21, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c21, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c21.CreationComplete();
 					}
 					))
@@ -296,6 +317,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c22, 0/* int/, 0, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c22, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c22.CreationComplete();
 					}
 					))
@@ -316,6 +338,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c23, 1/* int/, 1, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c23, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c23.CreationComplete();
 					}
 					))
@@ -336,6 +359,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c24, 2/* int/, 2, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c24, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c24.CreationComplete();
 					}
 					))
@@ -356,6 +380,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c25, 3/* int/, 3, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c25, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c25, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c25.CreationComplete();
 					}
 					))
@@ -376,6 +401,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c26, 4/* int/, 4, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c26, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c26, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c26.CreationComplete();
 					}
 					))
@@ -396,6 +422,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 5/* int/, 5, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c27, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c27, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c27.CreationComplete();
 					}
 					))
@@ -416,6 +443,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c28, 6/* int/, 6, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c28, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c28, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c28.CreationComplete();
 					}
 					))
@@ -436,6 +464,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c29, 7/* int/, 7, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c29, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c29, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c29.CreationComplete();
 					}
 					))
@@ -456,6 +485,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c30, 8/* int/, 8, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c30, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c30, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c30.CreationComplete();
 					}
 					))
@@ -477,6 +507,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						);
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c31, 9/* int/, 9, Grid/Row */);
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c31, 1/* int/, 1, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c31, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 						c31.CreationComplete();
 					}
 					))
@@ -485,22 +516,24 @@ namespace ElevateEvansvilleUI.Controls.Messages
 			}
 			.PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f_XamlApply((PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93fXamlApplyExtensions.XamlApplyHandler3)(c32 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c32, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 				c32.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c33 => 
+			.GenericApply(((c33) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PayPalDetailMessage.xaml (Line 1:2)
 				
 				// WARNING Property c33.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}UserControl, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c34 => 
+			.GenericApply(((c34) => 
 			{
 				// Class ElevateEvansvilleUI.Controls.Messages.PayPalDetailMessage
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c34, __baseUri_PayPalDetailMessage_0aadb35cb069211028f7f4dbf499d93f);
 				c34.CreationComplete();
 			}
 			))

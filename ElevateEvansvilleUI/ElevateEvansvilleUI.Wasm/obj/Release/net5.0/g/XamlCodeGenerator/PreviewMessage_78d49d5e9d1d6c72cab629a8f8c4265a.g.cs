@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,17 +48,26 @@ namespace ElevateEvansvilleUI.Controls.Messages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class PreviewMessage : Windows.UI.Xaml.Controls.UserControl
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a = "ms-appx:///Controls/Messages/PreviewMessage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 1:2)
 			base.Content = 
 			new global::Windows.UI.Xaml.Controls.Grid
 			{
 				IsParsing = true,
-				MaxWidth = 375d/* double/, 375, Grid/MaxWidth */,
+				MaxWidth = 375f/* double/, 375, Grid/MaxWidth */,
 				RowDefinitions = 
 				{
 					new global::Windows.UI.Xaml.Controls.RowDefinition
@@ -99,6 +110,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c4 => 
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c4, 0/* int/, 0, Grid/Row */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c4, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 						c4.CreationComplete();
 					}
 					))
@@ -145,6 +157,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c8 => 
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c8, 0/* int/, 0, Grid/Column */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c8, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 								c8.CreationComplete();
 							}
 							))
@@ -169,6 +182,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 							.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler2)(c10 => 
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c10, 1/* int/, 1, Grid/Column */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 								c10.CreationComplete();
 							}
 							))
@@ -178,6 +192,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler4)(c11 => 
 					{
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c11, 1/* int/, 1, Grid/Row */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 						c11.CreationComplete();
 					}
 					))
@@ -187,7 +202,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						IsParsing = true,
 						Name = "ChangeItemsListView",
 						Margin = new global::Windows.UI.Xaml.Thickness(15,5,0,0)/* Windows.UI.Xaml.Thickness/, 15,5,0,0, ListView/Margin */,
-						Height = 75d/* double/, 75, ListView/Height */,
+						Height = 75f/* double/, 75, ListView/Height */,
 						SelectionMode = global::Windows.UI.Xaml.Controls.ListViewSelectionMode.None/* Windows.UI.Xaml.Controls.ListViewSelectionMode/, None, ListView/SelectionMode */,
 						ItemTemplate = 						new global::Windows.UI.Xaml.DataTemplate(this , __owner => 						new _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0().Build(__owner)
 						)						,
@@ -195,9 +210,10 @@ namespace ElevateEvansvilleUI.Controls.Messages
 					}
 					.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler5)(c12 => 
 					{
-						nameScope.RegisterName("ChangeItemsListView", c12);
-						this.ChangeItemsListView = c12;
+						__nameScope.RegisterName("ChangeItemsListView", c12);
+						__that.ChangeItemsListView = c12;
 						global::Windows.UI.Xaml.Controls.Grid.SetRow(c12, 2/* int/, 2, Grid/Row */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 						c12.CreationComplete();
 					}
 					))
@@ -206,22 +222,24 @@ namespace ElevateEvansvilleUI.Controls.Messages
 			}
 			.PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_XamlApply((PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265aXamlApplyExtensions.XamlApplyHandler4)(c13 => 
 			{
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 				c13.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c14 => 
+			.GenericApply(((c14) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Controls\Messages\PreviewMessage.xaml (Line 1:2)
 				
 				// WARNING Property c14.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}UserControl, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c15 => 
+			.GenericApply(((c15) => 
 			{
 				// Class ElevateEvansvilleUI.Controls.Messages.PreviewMessage
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 				c15.CreationComplete();
 			}
 			))
@@ -244,10 +262,15 @@ namespace ElevateEvansvilleUI.Controls.Messages
 		}
 		private class _PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a_ElevateEvansvilleUIControlsMessagesPreviewMessageSC0
 		{
-			public _View Build(object __ResourceOwner_15)
+			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+			private const string __baseUri_prefix_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a = "ms-appx:///";
+			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+			private const string __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a = "ms-appx:///Controls/Messages/PreviewMessage.xaml";
+			global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+			public _View Build(object __ResourceOwner_38)
 			{
-				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
+				var __that = this;
 				__rootInstance = 
 				new global::Windows.UI.Xaml.Controls.TextBlock
 				{
@@ -262,6 +285,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 						global::Windows.UI.Xaml.Controls.TextBlock.TextProperty,
 						new Windows.UI.Xaml.Data.Binding()
 					);
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c16, __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a);
 					c16.CreationComplete();
 				}
 				))
@@ -270,8 +294,8 @@ namespace ElevateEvansvilleUI.Controls.Messages
 				{
 					if (global::Windows.UI.Xaml.NameScope.GetNameScope(d) == null)
 					{
-						global::Windows.UI.Xaml.NameScope.SetNameScope(d, nameScope);
-						nameScope.Owner = d;
+						global::Windows.UI.Xaml.NameScope.SetNameScope(d, __nameScope);
+						__nameScope.Owner = d;
 					}
 					global::Uno.UI.FrameworkElementHelper.AddObjectReference(d, this);
 				}

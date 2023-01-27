@@ -3,6 +3,8 @@
 #pragma warning disable 105 // Ignore duplicate namespaces
 #pragma warning disable 1591 // Ignore missing XML comment warnings
 #pragma warning disable CS8669 // Ignore annotation for nullable reference types
+#pragma warning disable CS0114
+#pragma warning disable CS0108
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -46,10 +48,19 @@ namespace ElevateEvansvilleUI.Pages
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("dotnet", "CA1001", Justification="Generated code")]
 	partial class FinancePage : Windows.UI.Xaml.Controls.Page
 	{
-				private void InitializeComponent()
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_prefix_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///";
+		[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+		private const string __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///Pages/FinancePage.xaml";
+				global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+		private void InitializeComponent()
 		{
-			var nameScope = new global::Windows.UI.Xaml.NameScope();
-			NameScope.SetNameScope(this, nameScope);
+			InitializeComponent_0();
+		}
+		private void InitializeComponent_0()
+		{
+			NameScope.SetNameScope(this, __nameScope);
+			var __that = this;
 			base.IsParsing = true;
 			// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 1:2)
 			base.Content = 
@@ -157,16 +168,17 @@ namespace ElevateEvansvilleUI.Pages
 										new global::Windows.UI.Xaml.Controls.Image
 										{
 											IsParsing = true,
-											Source = "/Assets/Images/Logos/Paypal.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Paypal.png, Image/Source */,
+											Source = "ms-appx:///" + "Assets/Images/Logos/Paypal.png"/* Windows.UI.Xaml.Media.ImageSource/, /Assets/Images/Logos/Paypal.png, Image/Source */,
 											Margin = new global::Windows.UI.Xaml.Thickness(10,0,0,0)/* Windows.UI.Xaml.Thickness/, 10,0,0,0, Image/Margin */,
-											Height = 50d/* double/, 50, Image/Height */,
-											Width = 50d/* double/, 50, Image/Width */,
+											Height = 50f/* double/, 50, Image/Height */,
+											Width = 50f/* double/, 50, Image/Width */,
 											// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 46:22)
 										}
 										.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler2)(c9 => 
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c9, 2/* int/, 2, Grid/RowSpan */);
 											global::Windows.UI.Xaml.Controls.Grid.SetColumn(c9, 0/* int/, 0, Grid/Column */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c9, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 											c9.CreationComplete();
 										}
 										))
@@ -183,6 +195,7 @@ namespace ElevateEvansvilleUI.Pages
 										{
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c10, 0/* int/, 0, Grid/Row */);
 											global::Windows.UI.Xaml.Controls.Grid.SetColumn(c10, 1/* int/, 1, Grid/Column */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c10, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 											c10.CreationComplete();
 										}
 										))
@@ -200,10 +213,11 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c11 => 
 										{
-											nameScope.RegisterName("PayPalAccountBalance", c11);
-											this.PayPalAccountBalance = c11;
+											__nameScope.RegisterName("PayPalAccountBalance", c11);
+											__that.PayPalAccountBalance = c11;
 											global::Windows.UI.Xaml.Controls.Grid.SetRow(c11, 1/* int/, 1, Grid/Row */);
 											global::Windows.UI.Xaml.Controls.Grid.SetColumn(c11, 1/* int/, 1, Grid/Column */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c11, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 											c11.CreationComplete();
 										}
 										))
@@ -224,6 +238,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c12 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c12, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c12.CreationComplete();
 											}
 											))
@@ -231,12 +246,13 @@ namespace ElevateEvansvilleUI.Pages
 										}
 										.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler4)(c13 => 
 										{
-											nameScope.RegisterName("FAQButton", c13);
-											this.FAQButton = c13;
-											var Click_FAQButton_Click_That = (this as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+											__nameScope.RegisterName("FAQButton", c13);
+											__that.FAQButton = c13;
+											var Click_FAQButton_Click_That = (__that as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 											/* second level */ c13.Click += (FAQButton_Click_sender,FAQButton_Click_e) => (Click_FAQButton_Click_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.FAQButton_Click(FAQButton_Click_sender,FAQButton_Click_e);
 											global::Windows.UI.Xaml.Controls.Grid.SetColumn(c13, 2/* int/, 2, Grid/Column */);
 											global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c13, 2/* int/, 2, Grid/RowSpan */);
+											global::Uno.UI.FrameworkElementHelper.SetBaseUri(c13, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 											c13.CreationComplete();
 										}
 										))
@@ -245,6 +261,7 @@ namespace ElevateEvansvilleUI.Pages
 								}
 								.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c14 => 
 								{
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c14, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 									c14.CreationComplete();
 								}
 								))
@@ -252,10 +269,11 @@ namespace ElevateEvansvilleUI.Pages
 							}
 							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c15 => 
 							{
+								/* _isTopLevelDictionary:False */
+								__that._component_0 = c15;
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c15, 0/* int/, 0, Grid/Row */);
 								global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c15, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-								/* _isTopLevelDictionary:False */
-								this._component_0 = c15;
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c15, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c15.CreationComplete();
 							}
 							))
@@ -323,6 +341,7 @@ namespace ElevateEvansvilleUI.Pages
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler7)(c21 => 
 											{
 												global::Windows.UI.Xaml.Controls.Grid.SetColumn(c21, 0/* int/, 0, Grid/Column */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c21, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c21.CreationComplete();
 											}
 											))
@@ -340,6 +359,7 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler8)(c22 => 
 												{
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c22, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 													c22.CreationComplete();
 												}
 												))
@@ -349,6 +369,7 @@ namespace ElevateEvansvilleUI.Pages
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler4)(c23 => 
 											{
 												global::Windows.UI.Xaml.Controls.Grid.SetColumn(c23, 1/* int/, 1, Grid/Column */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c23, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c23.CreationComplete();
 											}
 											))
@@ -366,6 +387,7 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler8)(c24 => 
 												{
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c24, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 													c24.CreationComplete();
 												}
 												))
@@ -375,6 +397,7 @@ namespace ElevateEvansvilleUI.Pages
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler4)(c25 => 
 											{
 												global::Windows.UI.Xaml.Controls.Grid.SetColumn(c25, 2/* int/, 2, Grid/Column */);
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c25, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c25.CreationComplete();
 											}
 											))
@@ -384,6 +407,7 @@ namespace ElevateEvansvilleUI.Pages
 									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c26 => 
 									{
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c26, 0/* int/, 0, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c26, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c26.CreationComplete();
 									}
 									))
@@ -414,9 +438,10 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler9)(c27 => 
 												{
-													nameScope.RegisterName("TransactionsReceivedListView", c27);
-													this.TransactionsReceivedListView = c27;
+													__nameScope.RegisterName("TransactionsReceivedListView", c27);
+													__that.TransactionsReceivedListView = c27;
 													global::Windows.UI.Xaml.Controls.Grid.SetRow(c27, 1/* int/, 1, Grid/Row */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c27, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 													c27.CreationComplete();
 												}
 												))
@@ -424,6 +449,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler10)(c28 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c28, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c28.CreationComplete();
 											}
 											))
@@ -448,9 +474,10 @@ namespace ElevateEvansvilleUI.Pages
 												}
 												.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler9)(c29 => 
 												{
-													nameScope.RegisterName("TransactionsSentListView", c29);
-													this.TransactionsSentListView = c29;
+													__nameScope.RegisterName("TransactionsSentListView", c29);
+													__that.TransactionsSentListView = c29;
 													global::Windows.UI.Xaml.Controls.Grid.SetRow(c29, 1/* int/, 1, Grid/Row */);
+													global::Uno.UI.FrameworkElementHelper.SetBaseUri(c29, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 													c29.CreationComplete();
 												}
 												))
@@ -458,6 +485,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler10)(c30 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c30, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c30.CreationComplete();
 											}
 											))
@@ -467,6 +495,7 @@ namespace ElevateEvansvilleUI.Pages
 									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler11)(c31 => 
 									{
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c31, 1/* int/, 1, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c31, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c31.CreationComplete();
 									}
 									))
@@ -476,17 +505,18 @@ namespace ElevateEvansvilleUI.Pages
 										IsParsing = true,
 										Name = "APIProgress",
 										IsActive = true/* bool/, True, ProgressRing/IsActive */,
-										Height = 50d/* double/, 50, ProgressRing/Height */,
-										Width = 50d/* double/, 50, ProgressRing/Width */,
+										Height = 50f/* double/, 50, ProgressRing/Height */,
+										Width = 50f/* double/, 50, ProgressRing/Width */,
 										VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, ProgressRing/VerticalAlignment */,
 										HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Center/* Windows.UI.Xaml.HorizontalAlignment/, Center, ProgressRing/HorizontalAlignment */,
 										// Source ..\..\..\..\..\..\..\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 189:18)
 									}
 									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler12)(c32 => 
 									{
-										nameScope.RegisterName("APIProgress", c32);
-										this.APIProgress = c32;
+										__nameScope.RegisterName("APIProgress", c32);
+										__that.APIProgress = c32;
 										global::Windows.UI.Xaml.Controls.Grid.SetRow(c32, 2/* int/, 2, Grid/Row */);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c32, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c32.CreationComplete();
 									}
 									))
@@ -496,6 +526,7 @@ namespace ElevateEvansvilleUI.Pages
 							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c33 => 
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c33, 1/* int/, 1, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c33, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c33.CreationComplete();
 							}
 							))
@@ -504,9 +535,10 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c34 => 
 					{
-						nameScope.RegisterName("FinanceGrid", c34);
-						this.FinanceGrid = c34;
+						__nameScope.RegisterName("FinanceGrid", c34);
+						__that.FinanceGrid = c34;
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c34, 0/* int/, 0, Grid/Column */);
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c34, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 						c34.CreationComplete();
 					}
 					))
@@ -554,6 +586,7 @@ namespace ElevateEvansvilleUI.Pages
 								.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c37 => 
 								{
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c37, 0/* int/, 0, Grid/Row */);
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c37, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 									c37.CreationComplete();
 								}
 								))
@@ -596,6 +629,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c39 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c39, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c39.CreationComplete();
 													}
 													))
@@ -617,6 +651,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c41 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c41, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c41.CreationComplete();
 													}
 													))
@@ -625,6 +660,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c42 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c42, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c42.CreationComplete();
 											}
 											))
@@ -653,6 +689,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c44 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c44, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c44.CreationComplete();
 													}
 													))
@@ -674,6 +711,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c46 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c46, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c46.CreationComplete();
 													}
 													))
@@ -682,6 +720,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c47 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c47, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c47.CreationComplete();
 											}
 											))
@@ -710,6 +749,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c49 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c49, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c49.CreationComplete();
 													}
 													))
@@ -731,6 +771,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c51 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c51, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c51.CreationComplete();
 													}
 													))
@@ -752,6 +793,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c53 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c53, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c53.CreationComplete();
 													}
 													))
@@ -760,6 +802,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c54 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c54, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c54.CreationComplete();
 											}
 											))
@@ -788,6 +831,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c56 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c56, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c56.CreationComplete();
 													}
 													))
@@ -843,6 +887,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c61 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c61, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c61.CreationComplete();
 													}
 													))
@@ -884,6 +929,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c65 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c65, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c65.CreationComplete();
 													}
 													))
@@ -892,6 +938,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c66 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c66, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c66.CreationComplete();
 											}
 											))
@@ -920,6 +967,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c68 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c68, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c68.CreationComplete();
 													}
 													))
@@ -941,6 +989,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c70 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c70, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c70.CreationComplete();
 													}
 													))
@@ -949,6 +998,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c71 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c71, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c71.CreationComplete();
 											}
 											))
@@ -977,6 +1027,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c73 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c73, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c73.CreationComplete();
 													}
 													))
@@ -998,6 +1049,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c75 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c75, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c75.CreationComplete();
 													}
 													))
@@ -1019,6 +1071,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c77 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c77, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c77.CreationComplete();
 													}
 													))
@@ -1027,6 +1080,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c78 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c78, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c78.CreationComplete();
 											}
 											))
@@ -1055,6 +1109,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c80 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c80, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c80.CreationComplete();
 													}
 													))
@@ -1076,6 +1131,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c82 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c82, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c82.CreationComplete();
 													}
 													))
@@ -1097,6 +1153,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c84 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c84, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c84.CreationComplete();
 													}
 													))
@@ -1118,6 +1175,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c86 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c86, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c86.CreationComplete();
 													}
 													))
@@ -1126,6 +1184,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c87 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c87, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c87.CreationComplete();
 											}
 											))
@@ -1154,6 +1213,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c89 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c89, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c89.CreationComplete();
 													}
 													))
@@ -1175,6 +1235,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c91 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c91, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c91.CreationComplete();
 													}
 													))
@@ -1183,6 +1244,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c92 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c92, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c92.CreationComplete();
 											}
 											))
@@ -1211,6 +1273,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c94 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c94, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c94.CreationComplete();
 													}
 													))
@@ -1232,6 +1295,7 @@ namespace ElevateEvansvilleUI.Pages
 													}
 													.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c96 => 
 													{
+														global::Uno.UI.FrameworkElementHelper.SetBaseUri(c96, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 														c96.CreationComplete();
 													}
 													))
@@ -1240,6 +1304,7 @@ namespace ElevateEvansvilleUI.Pages
 											}
 											.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c97 => 
 											{
+												global::Uno.UI.FrameworkElementHelper.SetBaseUri(c97, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 												c97.CreationComplete();
 											}
 											))
@@ -1248,8 +1313,9 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler14)(c98 => 
 									{
-										nameScope.RegisterName("FAQContent", c98);
-										this.FAQContent = c98;
+										__nameScope.RegisterName("FAQContent", c98);
+										__that.FAQContent = c98;
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c98, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c98.CreationComplete();
 									}
 									))
@@ -1259,6 +1325,7 @@ namespace ElevateEvansvilleUI.Pages
 								{
 									global::Windows.UI.Xaml.Controls.Grid.SetRow(c99, 1/* int/, 1, Grid/Row */);
 									global::Windows.UI.Xaml.Controls.Grid.SetColumn(c99, 1/* int/, 1, Grid/Column */);
+									global::Uno.UI.FrameworkElementHelper.SetBaseUri(c99, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 									c99.CreationComplete();
 								}
 								))
@@ -1267,6 +1334,7 @@ namespace ElevateEvansvilleUI.Pages
 						}
 						.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c100 => 
 						{
+							global::Uno.UI.FrameworkElementHelper.SetBaseUri(c100, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 							c100.CreationComplete();
 						}
 						))
@@ -1274,12 +1342,13 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c101 => 
 					{
-						nameScope.RegisterName("FAQGrid", c101);
-						this.FAQGrid = c101;
+						/* _isTopLevelDictionary:False */
+						__that._component_1 = c101;
+						__nameScope.RegisterName("FAQGrid", c101);
+						__that.FAQGrid = c101;
 						global::Windows.UI.Xaml.Controls.Grid.SetColumn(c101, 1/* int/, 1, Grid/Column */);
 						global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c101, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-						/* _isTopLevelDictionary:False */
-						this._component_1 = c101;
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c101, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 						c101.CreationComplete();
 					}
 					))
@@ -1288,27 +1357,29 @@ namespace ElevateEvansvilleUI.Pages
 			}
 			.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c102 => 
 			{
-				nameScope.RegisterName("RootGrid", c102);
-				this.RootGrid = c102;
+				__nameScope.RegisterName("RootGrid", c102);
+				__that.RootGrid = c102;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c102, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 				c102.CreationComplete();
 			}
 			))
 			;
 			
 			this
-			.GenericApply((c103 => 
+			.GenericApply(((c103) => 
 			{
 				// Source C:\Users\wandt\source\Workspaces\ElevateEvansville\ElevateEvansvilleUI\ElevateEvansvilleUI.Shared\Pages\FinancePage.xaml (Line 1:2)
 				
 				// WARNING Property c103.base does not exist on {http://schemas.microsoft.com/winfx/2006/xaml/presentation}Page, the namespace is http://www.w3.org/XML/1998/namespace. This error was considered irrelevant by the XamlFileGenerator
 			}
 			))
-			.GenericApply((c104 => 
+			.GenericApply(((c104) => 
 			{
+				/* _isTopLevelDictionary:False */
+				__that._component_2 = c104;
 				// Class ElevateEvansvilleUI.Pages.FinancePage
 				global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c104, global::Windows.UI.Xaml.Controls.Page.BackgroundProperty, "ApplicationPageBackgroundThemeBrush", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-				/* _isTopLevelDictionary:False */
-				this._component_2 = c104;
+				global::Uno.UI.FrameworkElementHelper.SetBaseUri(c104, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 				c104.CreationComplete();
 			}
 			))
@@ -1316,9 +1387,9 @@ namespace ElevateEvansvilleUI.Pages
 			OnInitializeCompleted();
 
 			Bindings = new FinancePage_Bindings(this);
-			Loading += delegate
+			Loading += (s, e) => 
 			{
-				Bindings.UpdateResources();
+				__that.Bindings.UpdateResources();
 			}
 			;
 		}
@@ -1433,10 +1504,15 @@ namespace ElevateEvansvilleUI.Pages
 		}
 		private class _FinancePage_c389dd525b595ace9bd568be6bf9a144_ElevateEvansvilleUIPagesFinancePageSC0
 		{
-			public _View Build(object __ResourceOwner_14)
+			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+			private const string __baseUri_prefix_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///";
+			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+			private const string __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///Pages/FinancePage.xaml";
+			global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+			public _View Build(object __ResourceOwner_40)
 			{
-				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
+				var __that = this;
 				__rootInstance = 
 				new global::Uno.UI.Toolkit.ElevatedView
 				{
@@ -1509,6 +1585,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c111, 0/* int/, 0, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c111, 0/* int/, 0, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c111, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c111.CreationComplete();
 							}
 							))
@@ -1529,6 +1606,7 @@ namespace ElevateEvansvilleUI.Pages
 								);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c112, 1/* int/, 1, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c112, 0/* int/, 0, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c112, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c112.CreationComplete();
 							}
 							))
@@ -1543,6 +1621,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c113, 0/* int/, 0, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c113, 1/* int/, 1, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c113, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c113.CreationComplete();
 							}
 							))
@@ -1563,6 +1642,7 @@ namespace ElevateEvansvilleUI.Pages
 								);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c114, 1/* int/, 1, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRow(c114, 1/* int/, 1, Grid/Row */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c114, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c114.CreationComplete();
 							}
 							))
@@ -1583,6 +1663,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c115 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c115, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c115.CreationComplete();
 									}
 									))
@@ -1601,6 +1682,7 @@ namespace ElevateEvansvilleUI.Pages
 												Path = @"GrossAmount"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, GrossAmount, /_PositionalParameters */,
 											}
 										);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c116, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c116.CreationComplete();
 									}
 									))
@@ -1611,6 +1693,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c117, 2/* int/, 2, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c117, 2/* int/, 2, Grid/RowSpan */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c117, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c117.CreationComplete();
 							}
 							))
@@ -1619,7 +1702,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								IsParsing = true,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, TextBlock/HorizontalAlignment */,
-								Width = 80d/* double/, 80, TextBlock/Width */,
+								Width = 80f/* double/, 80, TextBlock/Width */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 								TextWrapping = global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/, Wrap, TextBlock/TextWrapping */,
 								TextAlignment = global::Windows.UI.Xaml.TextAlignment.Right/* Windows.UI.Xaml.TextAlignment/, Right, TextBlock/TextAlignment */,
@@ -1636,6 +1719,7 @@ namespace ElevateEvansvilleUI.Pages
 								);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c118, 3/* int/, 3, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c118, 2/* int/, 2, Grid/RowSpan */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c118, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c118.CreationComplete();
 							}
 							))
@@ -1644,6 +1728,7 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c119 => 
 					{
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c119, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 						c119.CreationComplete();
 					}
 					))
@@ -1651,17 +1736,19 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c120 => 
 				{
-					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c120, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_14 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-					/* second level */ c120.Tapped += (ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e) => (Tapped_ReceivedItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.ReceivedItem_Tapped(ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e);
 					/* _isTopLevelDictionary:False */
-					this._component_0 = c120;
+					__that._component_0 = c120;
+					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c120, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_40 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					/* second level */ c120.Tapped += (ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e) => (Tapped_ReceivedItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.ReceivedItem_Tapped(ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e);
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c120, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 					c120.CreationComplete();
 				}
 				))
 				;
 				if (__rootInstance is FrameworkElement __fe) 
 				{
+					var owner = this;
 					__fe.Loading += delegate
 					{
 						_component_0.UpdateResourceBindings();
@@ -1672,14 +1759,14 @@ namespace ElevateEvansvilleUI.Pages
 				{
 					if (global::Windows.UI.Xaml.NameScope.GetNameScope(d) == null)
 					{
-						global::Windows.UI.Xaml.NameScope.SetNameScope(d, nameScope);
-						nameScope.Owner = d;
+						global::Windows.UI.Xaml.NameScope.SetNameScope(d, __nameScope);
+						__nameScope.Owner = d;
 					}
 					global::Uno.UI.FrameworkElementHelper.AddObjectReference(d, this);
 				}
 				return __rootInstance;
 			}
-			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 			private global::Uno.UI.Toolkit.ElevatedView _component_0
 			{
 				get
@@ -1694,10 +1781,15 @@ namespace ElevateEvansvilleUI.Pages
 		}
 		private class _FinancePage_c389dd525b595ace9bd568be6bf9a144_ElevateEvansvilleUIPagesFinancePageSC1
 		{
-			public _View Build(object __ResourceOwner_16)
+			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+			private const string __baseUri_prefix_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///";
+			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+			private const string __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///Pages/FinancePage.xaml";
+			global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
+			public _View Build(object __ResourceOwner_41)
 			{
-				var nameScope = new global::Windows.UI.Xaml.NameScope();
 				_View __rootInstance = null;
+				var __that = this;
 				__rootInstance = 
 				new global::Uno.UI.Toolkit.ElevatedView
 				{
@@ -1765,6 +1857,7 @@ namespace ElevateEvansvilleUI.Pages
 							.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c126 => 
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c126, 0/* int/, 0, Grid/Column */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c126, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c126.CreationComplete();
 							}
 							))
@@ -1785,6 +1878,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 								);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c127, 1/* int/, 1, Grid/Column */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c127, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c127.CreationComplete();
 							}
 							))
@@ -1805,6 +1899,7 @@ namespace ElevateEvansvilleUI.Pages
 									}
 									.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler3)(c128 => 
 									{
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c128, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c128.CreationComplete();
 									}
 									))
@@ -1823,6 +1918,7 @@ namespace ElevateEvansvilleUI.Pages
 												Path = @"GrossAmount"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, GrossAmount, /_PositionalParameters */,
 											}
 										);
+										global::Uno.UI.FrameworkElementHelper.SetBaseUri(c129, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 										c129.CreationComplete();
 									}
 									))
@@ -1833,6 +1929,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c130, 2/* int/, 2, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c130, 2/* int/, 2, Grid/RowSpan */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c130, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c130.CreationComplete();
 							}
 							))
@@ -1841,7 +1938,7 @@ namespace ElevateEvansvilleUI.Pages
 							{
 								IsParsing = true,
 								HorizontalAlignment = global::Windows.UI.Xaml.HorizontalAlignment.Right/* Windows.UI.Xaml.HorizontalAlignment/, Right, TextBlock/HorizontalAlignment */,
-								Width = 80d/* double/, 80, TextBlock/Width */,
+								Width = 80f/* double/, 80, TextBlock/Width */,
 								VerticalAlignment = global::Windows.UI.Xaml.VerticalAlignment.Center/* Windows.UI.Xaml.VerticalAlignment/, Center, TextBlock/VerticalAlignment */,
 								TextWrapping = global::Windows.UI.Xaml.TextWrapping.Wrap/* Windows.UI.Xaml.TextWrapping/, Wrap, TextBlock/TextWrapping */,
 								TextAlignment = global::Windows.UI.Xaml.TextAlignment.Right/* Windows.UI.Xaml.TextAlignment/, Right, TextBlock/TextAlignment */,
@@ -1858,6 +1955,7 @@ namespace ElevateEvansvilleUI.Pages
 								);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c131, 3/* int/, 3, Grid/Column */);
 								global::Windows.UI.Xaml.Controls.Grid.SetRowSpan(c131, 2/* int/, 2, Grid/RowSpan */);
+								global::Uno.UI.FrameworkElementHelper.SetBaseUri(c131, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 								c131.CreationComplete();
 							}
 							))
@@ -1866,6 +1964,7 @@ namespace ElevateEvansvilleUI.Pages
 					}
 					.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler5)(c132 => 
 					{
+						global::Uno.UI.FrameworkElementHelper.SetBaseUri(c132, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 						c132.CreationComplete();
 					}
 					))
@@ -1873,17 +1972,19 @@ namespace ElevateEvansvilleUI.Pages
 				}
 				.FinancePage_c389dd525b595ace9bd568be6bf9a144_XamlApply((FinancePage_c389dd525b595ace9bd568be6bf9a144XamlApplyExtensions.XamlApplyHandler6)(c133 => 
 				{
-					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c133, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_SentItem_Tapped_That = (__ResourceOwner_16 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
-					/* second level */ c133.Tapped += (SentItem_Tapped_sender,SentItem_Tapped_e) => (Tapped_SentItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.SentItem_Tapped(SentItem_Tapped_sender,SentItem_Tapped_e);
 					/* _isTopLevelDictionary:False */
-					this._component_0 = c133;
+					__that._component_0 = c133;
+					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c133, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
+					var Tapped_SentItem_Tapped_That = (__ResourceOwner_41 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					/* second level */ c133.Tapped += (SentItem_Tapped_sender,SentItem_Tapped_e) => (Tapped_SentItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.SentItem_Tapped(SentItem_Tapped_sender,SentItem_Tapped_e);
+					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c133, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 					c133.CreationComplete();
 				}
 				))
 				;
 				if (__rootInstance is FrameworkElement __fe) 
 				{
+					var owner = this;
 					__fe.Loading += delegate
 					{
 						_component_0.UpdateResourceBindings();
@@ -1894,14 +1995,14 @@ namespace ElevateEvansvilleUI.Pages
 				{
 					if (global::Windows.UI.Xaml.NameScope.GetNameScope(d) == null)
 					{
-						global::Windows.UI.Xaml.NameScope.SetNameScope(d, nameScope);
-						nameScope.Owner = d;
+						global::Windows.UI.Xaml.NameScope.SetNameScope(d, __nameScope);
+						__nameScope.Owner = d;
 					}
 					global::Uno.UI.FrameworkElementHelper.AddObjectReference(d, this);
 				}
 				return __rootInstance;
 			}
-			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+			private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 			private global::Uno.UI.Toolkit.ElevatedView _component_0
 			{
 				get
@@ -1914,7 +2015,7 @@ namespace ElevateEvansvilleUI.Pages
 				}
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_0_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Uno.UI.Toolkit.ElevatedView _component_0
 		{
 			get
@@ -1926,7 +2027,7 @@ namespace ElevateEvansvilleUI.Pages
 				_component_0_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_1_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Uno.UI.Toolkit.ElevatedView _component_1
 		{
 			get
@@ -1938,7 +2039,7 @@ namespace ElevateEvansvilleUI.Pages
 				_component_1_Holder.Instance = value;
 			}
 		}
-		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_2_Holder = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
+		private global::Windows.UI.Xaml.Markup.ComponentHolder _component_2_Holder  = new global::Windows.UI.Xaml.Markup.ComponentHolder(isWeak: true);
 		private global::Windows.UI.Xaml.Controls.Page _component_2
 		{
 			get

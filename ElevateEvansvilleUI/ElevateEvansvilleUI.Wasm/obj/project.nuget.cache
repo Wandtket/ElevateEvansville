@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ElDYua6RqfkjNK7kXHivvVBFLjGTpmxyRrciwb8UKIeR55RgQtWV/uiacwvdmnBOJZxeqzO+T6jraC42xx3f2A==",
+  "dgSpecHash": "GkWZ8EE6wlTGLjyhlnqbREp5xurqP6yUyvdoZu/gqWnhuDCs/uoyloKNzxmpSU6AFAV7kaejR+mnn7s0GY+KKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\wandt\\source\\Workspaces\\ElevateEvansville\\ElevateEvansvilleUI\\ElevateEvansvilleUI.Wasm\\ElevateEvansvilleUI.Wasm.csproj",
   "expectedPackageFiles": [
@@ -105,17 +105,18 @@
     "C:\\Users\\wandt\\.nuget\\packages\\uno.core.extensions.logging.singleton\\4.0.1\\uno.core.extensions.logging.singleton.4.0.1.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.diagnostics.eventing\\2.0.1\\uno.diagnostics.eventing.2.0.1.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.extensions.logging.webassembly.console\\1.4.0\\uno.extensions.logging.webassembly.console.1.4.0.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.foundation.logging\\4.6.41\\uno.foundation.logging.4.6.41.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.foundation.runtime.webassembly\\4.6.41\\uno.foundation.runtime.webassembly.4.6.41.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.fonts.fluent\\2.0.0-dev.20\\uno.fonts.fluent.2.0.0-dev.20.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.foundation.logging\\4.7.30\\uno.foundation.logging.4.7.30.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.foundation.runtime.webassembly\\4.7.30\\uno.foundation.runtime.webassembly.4.7.30.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.sourcegenerationtasks\\4.2.0\\uno.sourcegenerationtasks.4.2.0.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.toolkit\\2.4.2\\uno.toolkit.2.4.2.nupkg.sha512",
     "C:\\Users\\wandt\\.nuget\\packages\\uno.toolkit.ui\\2.4.2\\uno.toolkit.ui.2.4.2.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui\\4.6.41\\uno.ui.4.6.41.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.6.41\\uno.ui.adapter.microsoft.extensions.logging.4.6.41.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.runtime.webassembly\\4.6.41\\uno.ui.runtime.webassembly.4.6.41.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.webassembly\\4.6.41\\uno.ui.webassembly.4.6.41.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap\\7.0.11\\uno.wasm.bootstrap.7.0.11.nupkg.sha512",
-    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\7.0.11\\uno.wasm.bootstrap.devserver.7.0.11.nupkg.sha512"
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui\\4.7.30\\uno.ui.4.7.30.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.adapter.microsoft.extensions.logging\\4.7.30\\uno.ui.adapter.microsoft.extensions.logging.4.7.30.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.runtime.webassembly\\4.7.30\\uno.ui.runtime.webassembly.4.7.30.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.ui.webassembly\\4.7.30\\uno.ui.webassembly.4.7.30.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap\\7.0.12\\uno.wasm.bootstrap.7.0.12.nupkg.sha512",
+    "C:\\Users\\wandt\\.nuget\\packages\\uno.wasm.bootstrap.devserver\\7.0.12\\uno.wasm.bootstrap.devserver.7.0.12.nupkg.sha512"
   ],
   "logs": []
 }
