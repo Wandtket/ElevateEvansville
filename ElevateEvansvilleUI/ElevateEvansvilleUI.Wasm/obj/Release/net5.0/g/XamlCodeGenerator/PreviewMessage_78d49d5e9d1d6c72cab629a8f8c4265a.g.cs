@@ -267,7 +267,7 @@ namespace ElevateEvansvilleUI.Controls.Messages
 			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
 			private const string __baseUri_PreviewMessage_78d49d5e9d1d6c72cab629a8f8c4265a = "ms-appx:///Controls/Messages/PreviewMessage.xaml";
 			global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
-			public _View Build(object __ResourceOwner_38)
+			public _View Build(object __ResourceOwner_14)
 			{
 				_View __rootInstance = null;
 				var __that = this;

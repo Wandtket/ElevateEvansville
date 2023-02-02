@@ -60,9 +60,24 @@ namespace ElevateEvansvilleUI
 
             await Task.Delay(1500);
             UIFadeIn.Begin();
+
+            StartTimer();
         }
 
+        private async void StartTimer()
+        {
+            await Task.Delay(150000);
+            //await Task.Delay(5000);
+            if (UI.AppFrame.Content.GetType() == typeof(PetitionPage)) { return; }
+            if (UI.AppFrame.Content.GetType() == typeof(VolunteerPortalPage)) { return; }
+            if (UI.AppFrame.Content.GetType() == typeof(VolunteerLoginPage)) { return; }
 
+            var result = await ConfirmBox.Show("Sign the Petition!", "Interested?", "Take me there", "Cancel");
+            if (result == ContentDialogResult.Primary)
+            {
+                UI.Navigate(typeof(PetitionPage));
+            }
+        }
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {

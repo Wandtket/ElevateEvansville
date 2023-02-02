@@ -124,7 +124,7 @@
                                             <TextBlock Text="{Binding PayerCensoredName}" Grid.Column="1" Grid.Row="0"/>
 
                                             <TextBlock Text="For:" Grid.Column="0" Grid.Row="1"/>
-                                            <TextBlock Text="{Binding Name}"  Grid.Column="1" Grid.Row="1" />
+                                            <TextBlock Text="{Binding Name, FallbackValue={Binding Memo}}"  Grid.Column="1" Grid.Row="1" />
 
                                             <StackPanel Orientation="Horizontal" Grid.Column="2" Grid.RowSpan="2" VerticalAlignment="Center">
                                                 <TextBlock Text="$"/>

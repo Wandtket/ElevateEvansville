@@ -1509,7 +1509,7 @@ namespace ElevateEvansvilleUI.Pages
 			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
 			private const string __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///Pages/FinancePage.xaml";
 			global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
-			public _View Build(object __ResourceOwner_40)
+			public _View Build(object __ResourceOwner_15)
 			{
 				_View __rootInstance = null;
 				var __that = this;
@@ -1638,6 +1638,7 @@ namespace ElevateEvansvilleUI.Pages
 									new Windows.UI.Xaml.Data.Binding()
 									{
 										Path = @"Name"/* Windows.UI.Xaml.PropertyPath/Windows.UI.Xaml.PropertyPath, Name, /_PositionalParameters */,
+										FallbackValue = @"Memo"/* Windows.UI.Xaml.Data.Binding/Windows.UI.Xaml.Data.Binding, Memo, /_PositionalParameters */,
 									}
 								);
 								global::Windows.UI.Xaml.Controls.Grid.SetColumn(c114, 1/* int/, 1, Grid/Column */);
@@ -1739,7 +1740,7 @@ namespace ElevateEvansvilleUI.Pages
 					/* _isTopLevelDictionary:False */
 					__that._component_0 = c120;
 					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c120, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_40 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					var Tapped_ReceivedItem_Tapped_That = (__ResourceOwner_15 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 					/* second level */ c120.Tapped += (ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e) => (Tapped_ReceivedItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.ReceivedItem_Tapped(ReceivedItem_Tapped_sender,ReceivedItem_Tapped_e);
 					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c120, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 					c120.CreationComplete();
@@ -1786,7 +1787,7 @@ namespace ElevateEvansvilleUI.Pages
 			[global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
 			private const string __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144 = "ms-appx:///Pages/FinancePage.xaml";
 			global::Windows.UI.Xaml.NameScope __nameScope = new global::Windows.UI.Xaml.NameScope();
-			public _View Build(object __ResourceOwner_41)
+			public _View Build(object __ResourceOwner_16)
 			{
 				_View __rootInstance = null;
 				var __that = this;
@@ -1975,7 +1976,7 @@ namespace ElevateEvansvilleUI.Pages
 					/* _isTopLevelDictionary:False */
 					__that._component_0 = c133;
 					global::Uno.UI.ResourceResolverSingleton.Instance.ApplyResource(c133, global::Uno.UI.Toolkit.ElevatedView.BackgroundProperty, "SubColor", isThemeResourceExtension: true, isHotReloadSupported: false, context: global::ElevateEvansvilleUI.Wasm.GlobalStaticResources.__ParseContext_);
-					var Tapped_SentItem_Tapped_That = (__ResourceOwner_41 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
+					var Tapped_SentItem_Tapped_That = (__ResourceOwner_16 as global::Uno.UI.DataBinding.IWeakReferenceProvider).WeakReference;
 					/* second level */ c133.Tapped += (SentItem_Tapped_sender,SentItem_Tapped_e) => (Tapped_SentItem_Tapped_That.Target as global::ElevateEvansvilleUI.Pages.FinancePage)?.SentItem_Tapped(SentItem_Tapped_sender,SentItem_Tapped_e);
 					global::Uno.UI.FrameworkElementHelper.SetBaseUri(c133, __baseUri_FinancePage_c389dd525b595ace9bd568be6bf9a144);
 					c133.CreationComplete();

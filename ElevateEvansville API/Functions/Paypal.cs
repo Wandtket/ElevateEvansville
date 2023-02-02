@@ -133,6 +133,14 @@ namespace ElevateEvansville_API.Functions
                     TransactionTime = Convert.ToDateTime(result.Timestamp);
                 }
 
+                if (Name == null || Name == "") 
+                { 
+                    if (InfoType.Memo != null || InfoType.Memo != "")
+                    {
+                        Name = InfoType.Memo;
+                    }
+                }
+
                 TransactionList.Add(new Transactions
                 {
                     PaypalTransactionID = result.TransactionID,

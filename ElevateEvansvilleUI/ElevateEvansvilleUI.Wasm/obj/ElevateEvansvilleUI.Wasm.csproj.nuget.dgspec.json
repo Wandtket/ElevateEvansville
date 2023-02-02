@@ -100,21 +100,25 @@
               "target": "Package",
               "version": "[4.7.30, )"
             },
+            "Uno.UI.RemoteControl": {
+              "target": "Package",
+              "version": "[4.7.30, )"
+            },
             "Uno.UI.WebAssembly": {
               "target": "Package",
               "version": "[4.7.30, )"
             },
             "Uno.Wasm.Bootstrap": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "Uno.Wasm.Bootstrap.DevServer": {
               "target": "Package",
-              "version": "[7.0.12, )"
+              "version": "[7.0.13, )"
             },
             "libphonenumber-csharp": {
               "target": "Package",
-              "version": "[8.13.4, )"
+              "version": "[8.13.5, )"
             }
           },
           "imports": [
