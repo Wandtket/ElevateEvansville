@@ -120,7 +120,7 @@
         </CommandBar>
 
         <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,10" Orientation="Horizontal" Grid.Row="1">
-            <Button x:Name="Support" Content="Support This Candidate"
+            <Button x:Name="Support" Content="Sign the Petition"
                 Background="Green" Foreground="White" FontSize="18" Padding="10" CornerRadius="10" 
                  x:FieldModifier="public">
                 <Button.Flyout>

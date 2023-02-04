@@ -787,7 +787,7 @@ namespace ElevateEvansvilleUI
 							{
 								IsParsing = true,
 								Name = "Support",
-								Content = @"Support This Candidate"/* object/, Support This Candidate, Button/Content */,
+								Content = @"Sign the Petition"/* object/, Sign the Petition, Button/Content */,
 								Background = SolidColorBrushHelper.Green/* Windows.UI.Xaml.Media.Brush/, Green, Button/Background */,
 								Foreground = SolidColorBrushHelper.White/* Windows.UI.Xaml.Media.Brush/, White, Button/Foreground */,
 								FontSize = 18d/* double/, 18, Button/FontSize */,

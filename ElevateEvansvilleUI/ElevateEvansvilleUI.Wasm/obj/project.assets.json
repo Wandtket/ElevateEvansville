@@ -304,19 +304,6 @@
           "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Primitives.targets": {}
         }
       },
-      "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -445,19 +432,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp2.0/Microsoft.Windows.Compatibility.targets": {}
-        }
-      },
-      "Newtonsoft.Json/12.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
@@ -1959,28 +1933,6 @@
           }
         }
       },
-      "Uno.UI.RemoteControl/4.7.30": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IO.RecyclableMemoryStream": "2.2.0",
-          "Newtonsoft.Json": "12.0.2",
-          "Uno.UI": "4.7.30",
-          "Uno.Wasm.WebSockets": "1.1.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Uno.UI.RemoteControl.dll": {
-            "related": ".pdb"
-          }
-        },
-        "build": {
-          "buildTransitive/Uno.UI.RemoteControl.targets": {}
-        }
-      },
       "Uno.UI.Runtime.WebAssembly/4.7.30": {
         "type": "package",
         "dependencies": {
@@ -2045,19 +1997,6 @@
         "type": "package",
         "build": {
           "build/Uno.Wasm.Bootstrap.DevServer.targets": {}
-        }
-      },
-      "Uno.Wasm.WebSockets/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Uno.Wasm.WebSockets.dll": {
-            "related": ".pdb"
-          }
         }
       }
     }
@@ -2518,27 +2457,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.IO.RecyclableMemoryStream/2.2.0": {
-      "sha512": "uyjY/cqomw1irT4L7lDeg4sJ36MsjHg3wKqpGrBAdzvZaxo85yMF+sAA9RIzTV92fDxuUzjqksMqA0+SNMkMgA==",
-      "type": "package",
-      "path": "microsoft.io.recyclablememorystream/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net462/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/net462/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/net5.0/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netcoreapp2.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netcoreapp2.1/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netstandard2.0/Microsoft.IO.RecyclableMemoryStream.xml",
-        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "lib/netstandard2.1/Microsoft.IO.RecyclableMemoryStream.xml",
-        "microsoft.io.recyclablememorystream.2.2.0.nupkg.sha512",
-        "microsoft.io.recyclablememorystream.nuspec"
-      ]
-    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -2705,36 +2623,6 @@
         "microsoft.windows.compatibility.7.0.0.nupkg.sha512",
         "microsoft.windows.compatibility.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Newtonsoft.Json/12.0.2": {
-      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
-      "type": "package",
-      "path": "newtonsoft.json/12.0.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.md",
-        "lib/net20/Newtonsoft.Json.dll",
-        "lib/net20/Newtonsoft.Json.xml",
-        "lib/net35/Newtonsoft.Json.dll",
-        "lib/net35/Newtonsoft.Json.xml",
-        "lib/net40/Newtonsoft.Json.dll",
-        "lib/net40/Newtonsoft.Json.xml",
-        "lib/net45/Newtonsoft.Json.dll",
-        "lib/net45/Newtonsoft.Json.xml",
-        "lib/netstandard1.0/Newtonsoft.Json.dll",
-        "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.3/Newtonsoft.Json.dll",
-        "lib/netstandard1.3/Newtonsoft.Json.xml",
-        "lib/netstandard2.0/Newtonsoft.Json.dll",
-        "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
-        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
       ]
     },
     "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
@@ -6895,303 +6783,6 @@
         "uno.ui.adapter.microsoft.extensions.logging.nuspec"
       ]
     },
-    "Uno.UI.RemoteControl/4.7.30": {
-      "sha512": "s3xQwmJzMWE8fulxO8A3jWebIpko7mxQZyIpKEsJms05yeoRNmVL5gTKv0Pq0W2VUH9U9MlqcKTzY4sNDUvEgQ==",
-      "type": "package",
-      "path": "uno.ui.remotecontrol/4.7.30",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net5.0-windows/_._",
-        "build/uap10.0.16299/_._",
-        "build/uap10.0.18362/_._",
-        "buildTransitive/Uno.UI.RemoteControl.targets",
-        "lib/MonoAndroid12.0/Uno.UI.RemoteControl.dll",
-        "lib/MonoAndroid12.0/Uno.UI.RemoteControl.pdb",
-        "lib/MonoAndroid13.0/Uno.UI.RemoteControl.dll",
-        "lib/MonoAndroid13.0/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-android/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-android/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-ios/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-ios/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-maccatalyst/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-maccatalyst/Uno.UI.RemoteControl.pdb",
-        "lib/net6.0-macos/Uno.UI.RemoteControl.dll",
-        "lib/net6.0-macos/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-android/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-android/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-ios/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-ios/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-maccatalyst/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-maccatalyst/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0-macos/Uno.UI.RemoteControl.dll",
-        "lib/net7.0-macos/Uno.UI.RemoteControl.pdb",
-        "lib/net7.0/Uno.UI.RemoteControl.dll",
-        "lib/net7.0/Uno.UI.RemoteControl.pdb",
-        "lib/netstandard2.0/Uno.UI.RemoteControl.dll",
-        "lib/netstandard2.0/Uno.UI.RemoteControl.pdb",
-        "lib/xamarinios10/Uno.UI.RemoteControl.dll",
-        "lib/xamarinios10/Uno.UI.RemoteControl.pdb",
-        "lib/xamarinmac20/Uno.UI.RemoteControl.dll",
-        "lib/xamarinmac20/Uno.UI.RemoteControl.pdb",
-        "tools/rc/16.0/EnvDTE.dll",
-        "tools/rc/16.0/EnvDTE100.dll",
-        "tools/rc/16.0/EnvDTE80.dll",
-        "tools/rc/16.0/EnvDTE90.dll",
-        "tools/rc/16.0/EnvDTE90a.dll",
-        "tools/rc/16.0/Microsoft.Build.Framework.dll",
-        "tools/rc/16.0/Microsoft.Build.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Composition.Configuration.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Composition.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.CoreUtility.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ImageCatalog.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Imaging.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.OLE.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ProjectSystem.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ProjectSystem.VS.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.ProjectSystem.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.15.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Framework.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.10.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.11.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.12.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.15.3.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.15.6.DesignTime.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.8.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.9.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Shell.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Text.Data.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.TextManager.Interop.8.0.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.TextManager.Interop.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Threading.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Utilities.dll",
-        "tools/rc/16.0/Microsoft.VisualStudio.Validation.dll",
-        "tools/rc/16.0/Newtonsoft.Json.dll",
-        "tools/rc/16.0/StreamJsonRpc.dll",
-        "tools/rc/16.0/System.Collections.Immutable.dll",
-        "tools/rc/16.0/System.Composition.AttributedModel.dll",
-        "tools/rc/16.0/System.Composition.Convention.dll",
-        "tools/rc/16.0/System.Composition.Hosting.dll",
-        "tools/rc/16.0/System.Composition.Runtime.dll",
-        "tools/rc/16.0/System.Composition.TypedParts.dll",
-        "tools/rc/16.0/System.Threading.Tasks.Dataflow.dll",
-        "tools/rc/16.0/System.Threading.Thread.dll",
-        "tools/rc/16.0/System.ValueTuple.dll",
-        "tools/rc/16.0/Uno.UI.RemoteControl.VS.dll",
-        "tools/rc/16.0/Uno.UI.RemoteControl.VS.pdb",
-        "tools/rc/16.0/stdole.dll",
-        "tools/rc/17.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tools/rc/17.0/Microsoft.Build.Framework.dll",
-        "tools/rc/17.0/Microsoft.Build.Tasks.Core.dll",
-        "tools/rc/17.0/Microsoft.Build.Utilities.Core.dll",
-        "tools/rc/17.0/Microsoft.Build.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Composition.NetFxAttributes.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Composition.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Interop.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.ProjectSystem.Interop.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.ProjectSystem.VS.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.ProjectSystem.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Shell.Interop.12.0.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.TemplateWizardInterface.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Threading.dll",
-        "tools/rc/17.0/Microsoft.VisualStudio.Validation.dll",
-        "tools/rc/17.0/Microsoft.Win32.Registry.dll",
-        "tools/rc/17.0/Newtonsoft.Json.dll",
-        "tools/rc/17.0/NuGet.VisualStudio.dll",
-        "tools/rc/17.0/System.Buffers.dll",
-        "tools/rc/17.0/System.Collections.Immutable.dll",
-        "tools/rc/17.0/System.Composition.AttributedModel.dll",
-        "tools/rc/17.0/System.Composition.Convention.dll",
-        "tools/rc/17.0/System.Composition.Hosting.dll",
-        "tools/rc/17.0/System.Composition.Runtime.dll",
-        "tools/rc/17.0/System.Composition.TypedParts.dll",
-        "tools/rc/17.0/System.Memory.dll",
-        "tools/rc/17.0/System.Numerics.Vectors.dll",
-        "tools/rc/17.0/System.Reflection.Metadata.dll",
-        "tools/rc/17.0/System.Runtime.CompilerServices.Unsafe.dll",
-        "tools/rc/17.0/System.Security.AccessControl.dll",
-        "tools/rc/17.0/System.Security.Principal.Windows.dll",
-        "tools/rc/17.0/System.Threading.Tasks.Dataflow.dll",
-        "tools/rc/17.0/System.Threading.Tasks.Extensions.dll",
-        "tools/rc/17.0/System.ValueTuple.dll",
-        "tools/rc/17.0/Uno.UI.RemoteControl.VS.dll",
-        "tools/rc/17.0/Uno.UI.RemoteControl.VS.pdb",
-        "tools/rc/17.0/envdte.dll",
-        "tools/rc/17.0/envdte80.dll",
-        "tools/rc/17.0/stdole.dll",
-        "tools/rc/host/net6.0/CommonServiceLocator.dll",
-        "tools/rc/host/net6.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "tools/rc/host/net6.0/Mono.Options.dll",
-        "tools/rc/host/net6.0/Newtonsoft.Json.dll",
-        "tools/rc/host/net6.0/System.Reactive.dll",
-        "tools/rc/host/net6.0/Unity.Abstractions.dll",
-        "tools/rc/host/net6.0/Unity.Container.dll",
-        "tools/rc/host/net6.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.deps.json",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.dll",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.dll.config",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.pdb",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Host.runtimeconfig.json",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Server.dll.config",
-        "tools/rc/host/net6.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/host/net7.0/CommonServiceLocator.dll",
-        "tools/rc/host/net7.0/Microsoft.IO.RecyclableMemoryStream.dll",
-        "tools/rc/host/net7.0/Mono.Options.dll",
-        "tools/rc/host/net7.0/Newtonsoft.Json.dll",
-        "tools/rc/host/net7.0/System.Reactive.dll",
-        "tools/rc/host/net7.0/Unity.Abstractions.dll",
-        "tools/rc/host/net7.0/Unity.Container.dll",
-        "tools/rc/host/net7.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.deps.json",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.dll",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.dll.config",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.pdb",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Host.runtimeconfig.json",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Server.dll.config",
-        "tools/rc/host/net7.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/host/netcoreapp3.1/CommonServiceLocator.dll",
-        "tools/rc/host/netcoreapp3.1/Microsoft.IO.RecyclableMemoryStream.dll",
-        "tools/rc/host/netcoreapp3.1/Mono.Options.dll",
-        "tools/rc/host/netcoreapp3.1/Newtonsoft.Json.dll",
-        "tools/rc/host/netcoreapp3.1/System.Reactive.dll",
-        "tools/rc/host/netcoreapp3.1/System.Reactive.xml",
-        "tools/rc/host/netcoreapp3.1/Unity.Abstractions.dll",
-        "tools/rc/host/netcoreapp3.1/Unity.Container.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.deps.json",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.dll.config",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.pdb",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.runtimeconfig.dev.json",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Host.runtimeconfig.json",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Server.dll.config",
-        "tools/rc/host/netcoreapp3.1/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/processors/net6.0/CommonServiceLocator.dll",
-        "tools/rc/processors/net6.0/Humanizer.dll",
-        "tools/rc/processors/net6.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Features.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.Workspaces.dll",
-        "tools/rc/processors/net6.0/Microsoft.CodeAnalysis.dll",
-        "tools/rc/processors/net6.0/Microsoft.DiaSymReader.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Logging.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Options.dll",
-        "tools/rc/processors/net6.0/Microsoft.Extensions.Primitives.dll",
-        "tools/rc/processors/net6.0/Microsoft.Win32.SystemEvents.dll",
-        "tools/rc/processors/net6.0/Newtonsoft.Json.dll",
-        "tools/rc/processors/net6.0/System.Composition.AttributedModel.dll",
-        "tools/rc/processors/net6.0/System.Composition.Convention.dll",
-        "tools/rc/processors/net6.0/System.Composition.Hosting.dll",
-        "tools/rc/processors/net6.0/System.Composition.Runtime.dll",
-        "tools/rc/processors/net6.0/System.Composition.TypedParts.dll",
-        "tools/rc/processors/net6.0/System.Configuration.ConfigurationManager.dll",
-        "tools/rc/processors/net6.0/System.Drawing.Common.dll",
-        "tools/rc/processors/net6.0/System.IO.Pipelines.dll",
-        "tools/rc/processors/net6.0/System.Reactive.dll",
-        "tools/rc/processors/net6.0/System.Security.Cryptography.ProtectedData.dll",
-        "tools/rc/processors/net6.0/System.Security.Permissions.dll",
-        "tools/rc/processors/net6.0/System.Windows.Extensions.dll",
-        "tools/rc/processors/net6.0/Uno.Core.Extensions.Disposables.dll",
-        "tools/rc/processors/net6.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/processors/net6.0/Uno.Core.Extensions.dll",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.Processors.dll",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.Processors.pdb",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/processors/net6.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/processors/net7.0/CommonServiceLocator.dll",
-        "tools/rc/processors/net7.0/Humanizer.dll",
-        "tools/rc/processors/net7.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.CSharp.Features.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.CSharp.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Elfie.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Features.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Scripting.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.VisualBasic.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.Workspaces.dll",
-        "tools/rc/processors/net7.0/Microsoft.CodeAnalysis.dll",
-        "tools/rc/processors/net7.0/Microsoft.DiaSymReader.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.DependencyInjection.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Logging.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Options.dll",
-        "tools/rc/processors/net7.0/Microsoft.Extensions.Primitives.dll",
-        "tools/rc/processors/net7.0/Microsoft.Win32.SystemEvents.dll",
-        "tools/rc/processors/net7.0/Newtonsoft.Json.dll",
-        "tools/rc/processors/net7.0/System.Composition.AttributedModel.dll",
-        "tools/rc/processors/net7.0/System.Composition.Convention.dll",
-        "tools/rc/processors/net7.0/System.Composition.Hosting.dll",
-        "tools/rc/processors/net7.0/System.Composition.Runtime.dll",
-        "tools/rc/processors/net7.0/System.Composition.TypedParts.dll",
-        "tools/rc/processors/net7.0/System.Configuration.ConfigurationManager.dll",
-        "tools/rc/processors/net7.0/System.Drawing.Common.dll",
-        "tools/rc/processors/net7.0/System.IO.Pipelines.dll",
-        "tools/rc/processors/net7.0/System.Reactive.dll",
-        "tools/rc/processors/net7.0/System.Security.Cryptography.ProtectedData.dll",
-        "tools/rc/processors/net7.0/System.Security.Permissions.dll",
-        "tools/rc/processors/net7.0/System.Windows.Extensions.dll",
-        "tools/rc/processors/net7.0/Uno.Core.Extensions.Disposables.dll",
-        "tools/rc/processors/net7.0/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/processors/net7.0/Uno.Core.Extensions.dll",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.Processors.dll",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.Processors.pdb",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/processors/net7.0/Uno.UI.RemoteControl.Server.pdb",
-        "tools/rc/processors/netcoreapp3.1/CommonServiceLocator.dll",
-        "tools/rc/processors/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "tools/rc/processors/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll",
-        "tools/rc/processors/netcoreapp3.1/Microsoft.Extensions.Logging.dll",
-        "tools/rc/processors/netcoreapp3.1/Newtonsoft.Json.dll",
-        "tools/rc/processors/netcoreapp3.1/System.Reactive.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.Core.Extensions.Disposables.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.Core.Extensions.Logging.Singleton.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.Core.Extensions.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.Processors.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.Processors.pdb",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.dll",
-        "tools/rc/processors/netcoreapp3.1/Uno.UI.RemoteControl.Server.pdb",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.dll",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/net7.0/skia/Uno.UI.RemoteControl.pdb",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.dll",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/net7.0/webassembly/Uno.UI.RemoteControl.pdb",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.dll",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/netstandard2.0/skia/Uno.UI.RemoteControl.pdb",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.deps.json",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.dll",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.dll.config",
-        "uno-runtime/netstandard2.0/webassembly/Uno.UI.RemoteControl.pdb",
-        "uno.png",
-        "uno.ui.remotecontrol.4.7.30.nupkg.sha512",
-        "uno.ui.remotecontrol.nuspec"
-      ]
-    },
     "Uno.UI.Runtime.WebAssembly/4.7.30": {
       "sha512": "6aSNDqf7ReMPPBQ3C6n/DJYNgWVnkJ1nKiRtZ3l5mN3tcYE5it/P+dMSdPreZI2zXUbffqfUeFY1zZbpVLixLQ==",
       "type": "package",
@@ -7402,19 +6993,6 @@
         "uno.wasm.bootstrap.devserver.7.0.13.nupkg.sha512",
         "uno.wasm.bootstrap.devserver.nuspec"
       ]
-    },
-    "Uno.Wasm.WebSockets/1.1.0": {
-      "sha512": "U2d297Z/CxP0GZ3mYCu8kdKzO7PKw5lE7j+gwgXAZS1OlZiWS9EoiBbpUmr/0nSH6wPqClMbtGi6LLs0jslOog==",
-      "type": "package",
-      "path": "uno.wasm.websockets/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Uno.Wasm.WebSockets.dll",
-        "lib/netstandard2.0/Uno.Wasm.WebSockets.pdb",
-        "uno.wasm.websockets.1.1.0.nupkg.sha512",
-        "uno.wasm.websockets.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -7431,7 +7009,6 @@
       "Uno.Toolkit.UI >= 2.4.2",
       "Uno.UI >= 4.7.30",
       "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 4.7.30",
-      "Uno.UI.RemoteControl >= 4.7.30",
       "Uno.UI.WebAssembly >= 4.7.30",
       "Uno.Wasm.Bootstrap >= 7.0.13",
       "Uno.Wasm.Bootstrap.DevServer >= 7.0.13",
@@ -7535,10 +7112,6 @@
             "version": "[4.7.30, )"
           },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
-            "target": "Package",
-            "version": "[4.7.30, )"
-          },
-          "Uno.UI.RemoteControl": {
             "target": "Package",
             "version": "[4.7.30, )"
           },
